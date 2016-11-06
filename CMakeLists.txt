@@ -3,11 +3,11 @@ cmake_minimum_required(VERSION 2.8.12)
 project(keditbookmarks)
 
 # ECM setup
-find_package(ECM 1.7.0 CONFIG REQUIRED)
+set(KF5_MIN_VERSION "5.24.0")
+find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 set(QT_MIN_VERSION "5.4.0")
-set(KF5_MIN_VERSION "5.24.0")
 
 include(ECMOptionalAddSubdirectory)
 include(ECMInstallIcons)
