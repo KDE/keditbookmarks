@@ -27,13 +27,14 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 set(KEDITBOOKMARKS_VERSION "5.97.0")
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS CoreAddons I18n KIO Bookmarks Parts WindowSystem IconThemes)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS CoreAddons I18n KIO Bookmarks Parts WindowSystem IconThemes DocTools)
 
 add_definitions(-DQT_USE_FAST_CONCATENATION)
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 
 add_subdirectory(src)
+add_subdirectory(doc)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
