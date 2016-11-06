@@ -47,7 +47,6 @@ private:
     QUrl m_url;
 };
 
-class FavIconBrowserInterface;
 
 class FavIconUpdater : public QObject
 {
