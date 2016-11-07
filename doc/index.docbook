@@ -29,7 +29,7 @@
 the <menuchoice><guimenu>Bookmarks</guimenu><guimenuitem>Edit
 Bookmarks</guimenuitem> </menuchoice> option opens the <guilabel>Bookmark
 Editor</guilabel>.</para>
-<para>Alternatively you can lauch the editor as standalone application
+<para>Alternatively you can launch the editor as standalone application
 to edit the browser bookmarks.</para>
 <para>The editor shows a tree view of your bookmarks and bookmark subfolders.
 As is usual for tree views in &kde;, subfolders are shown with a small
