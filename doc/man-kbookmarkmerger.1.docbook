@@ -12,8 +12,9 @@
 		&Frerich.Raabe;
 		&Frerich.Raabe.mail;
 	</author>
-	<date>February 1st, 2005</date>
-	<productname>kbookmarkmerger</productname>
+	<date>2016-11-07</date>
+	<releaseinfo>Applications 16.12</releaseinfo>
+	<productname>KDE Applications</productname>
 </refentryinfo>
 
 <refmeta>
@@ -30,8 +31,6 @@
 <refsynopsisdiv>
 <cmdsynopsis>
 	&kbookmarkmerger;
-	<arg choice="opt" rep="repeat">Qt Options</arg>
-	<arg choice="opt" rep="repeat">KDE Options</arg>
 	<arg choice="req">directory</arg>
 </cmdsynopsis>
 </refsynopsisdiv>
@@ -43,10 +42,10 @@ the user's set of bookmarks; if the user doesn't have any bookmarks created
 yet, a new bookmark list is created and the given bookmarks are inserted into
 it. While doing this, &kbookmarkmerger; keeps track of which files were
 merged in a previous run already, so no bookmark will get installed to the
-user's bookmarks more than once. In case &kde; is running while
+user's bookmarks more than once.<!--FIXME True in kf5? In case &kde; is running while
 &kbookmarkmerger; is executed, the &kde; bookmark subsystem will be informed
 of any changes to the user's bookmarks, so that all applications accessing
-that information (&ie; &konqueror;) will pick the changes up instantly.</para>
+that information (&ie; &konqueror;) will pick the changes up instantly.--></para>
 
 <para>The traditionally used approach to achieve something like this was to
 use carefully crafted skeleton home directories when creating a new user
@@ -72,7 +71,10 @@ files.</para>
 
 <refsect1>
 <title>See Also</title>
-<para><ulink url="help:/konqueror/index.html">&konqueror; manual</ulink></para>
+<simplelist>
+<member><ulink url="help:/konqueror/index.html">&konqueror; manual</ulink></member>
+<member>kf5options(7)</member>
+</simplelist>
 </refsect1>
 
 <refsect1>
@@ -109,4 +111,3 @@ his setup, the original bookmark file will be left unmodified.</para>
 <para>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
 </refsect1>
 </refentry>
-
