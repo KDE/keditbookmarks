@@ -290,6 +290,6 @@ private:
     QModelIndex m_rootIndex; // the index of the "Bookmarks" root
 };
 
-QTEST_GUILESS_MAIN( KBookmarkModelTest )
+QTEST_MAIN( KBookmarkModelTest )
 
 #include "kbookmarkmodeltest.moc"
