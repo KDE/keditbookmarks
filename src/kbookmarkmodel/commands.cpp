@@ -118,7 +118,7 @@ void CreateCommand::redo()
     } else if (m_group) {
         Q_ASSERT(!m_text.isEmpty());
         bk = parentGroup.createNewFolder(m_text);
-        bk.internalElement().setAttribute("folded", (m_open ? "no" : "yes"));
+        bk.internalElement().setAttribute(QStringLiteral("folded"), (m_open ? "no" : "yes"));
         if (!m_iconPath.isEmpty()) {
             bk.setIcon(m_iconPath);
         }
@@ -138,7 +138,7 @@ void CreateCommand::redo()
     if (!(text().isEmpty()) && !parentAddress.isEmpty() ) {
         // open the parent (useful if it was empty) - only for manual commands
         Q_ASSERT( parentGroup.internalElement().tagName() != "xbel" );
-        parentGroup.internalElement().setAttribute("folded", "no");
+        parentGroup.internalElement().setAttribute(QStringLiteral("folded"), QStringLiteral("no"));
     }
 
     Q_ASSERT(bk.address() == m_to);
@@ -198,8 +198,8 @@ void EditCommand::redo()
     if(mCol==-2)
     {
         if (mOldValue.isEmpty())
-            mOldValue = bk.internalElement().attribute("toolbar");
-        bk.internalElement().setAttribute("toolbar", mNewValue);
+            mOldValue = bk.internalElement().attribute(QStringLiteral("toolbar"));
+        bk.internalElement().setAttribute(QStringLiteral("toolbar"), mNewValue);
     }
     else if(mCol==-1)
     {
@@ -237,7 +237,7 @@ void EditCommand::undo()
     KBookmark bk = m_model->bookmarkManager()->findByAddress(mAddress);
     if(mCol==-2)
     {
-        bk.internalElement().setAttribute("toolbar", mOldValue);
+        bk.internalElement().setAttribute(QStringLiteral("toolbar"), mOldValue);
     }
     else if(mCol==-1)
     {
@@ -309,7 +309,7 @@ void DeleteCommand::redo()
         if (bk.isGroup()) {
             m_cmd = new CreateCommand(m_model,
                     m_from, bk.fullText(), bk.icon(),
-                    bk.internalElement().attribute("folded") == "no");
+                    bk.internalElement().attribute(QStringLiteral("folded")) == QLatin1String("no"));
             m_subCmd = deleteAll(m_model, bk.toGroup());
             m_subCmd->redo();
 
@@ -489,12 +489,12 @@ KEBMacroCommand* CmdGen::setAsToolbar(KBookmarkModel* model, const KBookmark &bk
     KBookmarkGroup oldToolbar = model->bookmarkManager()->toolbar();
     if (!oldToolbar.isNull())
     {
-        new EditCommand(model, oldToolbar.address(), -2, "no", mcmd); //toolbar
-        new EditCommand(model, oldToolbar.address(), -1, "", mcmd); //icon
+        new EditCommand(model, oldToolbar.address(), -2, QStringLiteral("no"), mcmd); //toolbar
+        new EditCommand(model, oldToolbar.address(), -1, QLatin1String(""), mcmd); //icon
     }
 
-    new EditCommand(model, bk.address(), -2, "yes", mcmd);
-    new EditCommand(model, bk.address(), -1, "bookmark-toolbar", mcmd);
+    new EditCommand(model, bk.address(), -2, QStringLiteral("yes"), mcmd);
+    new EditCommand(model, bk.address(), -1, QStringLiteral("bookmark-toolbar"), mcmd);
 
     return mcmd;
 }

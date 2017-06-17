@@ -78,7 +78,7 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
     if (!m_part) {
         QString partLoadingError;
         KParts::ReadOnlyPart *part
-            = KMimeTypeTrader::createPartInstanceFromQuery<KParts::ReadOnlyPart>("text/html", 0, this, QString(), QVariantList(), &partLoadingError);
+            = KMimeTypeTrader::createPartInstanceFromQuery<KParts::ReadOnlyPart>(QStringLiteral("text/html"), 0, this, QString(), QVariantList(), &partLoadingError);
         if (!part) {
             emit done(false, i18n("%1; no HTML component found (%2)", currentError, partLoadingError));
             return;
@@ -157,8 +157,8 @@ FavIconWebGrabber::FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url
 
     //qDebug() << "starting KIO::get() on" << m_url;
     KIO::Job *job = KIO::get(m_url, KIO::NoReload, KIO::HideProgressInfo);
-    job->addMetaData( QString("cookies"), QString("none") );
-    job->addMetaData( QString("errorPage"), QString("false") );
+    job->addMetaData( QStringLiteral("cookies"), QStringLiteral("none") );
+    job->addMetaData( QStringLiteral("errorPage"), QStringLiteral("false") );
     connect(job, SIGNAL(result(KJob*)),
             this, SLOT(slotFinished(KJob*)));
     connect(job, SIGNAL(mimetype(KIO::Job*,QString)),

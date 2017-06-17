@@ -61,7 +61,7 @@ void KBookmarkView::slotExpanded(const QModelIndex& index)
 {
     if (!m_loadingState) {
         KBookmark bk = bookmarkForIndex(index);
-        bk.internalElement().setAttribute("folded", "no");
+        bk.internalElement().setAttribute(QStringLiteral("folded"), QStringLiteral("no"));
     }
 }
 
@@ -69,7 +69,7 @@ void KBookmarkView::slotCollapsed(const QModelIndex& index)
 {
     if (!m_loadingState) {
         KBookmark bk = bookmarkForIndex(index);
-        bk.internalElement().setAttribute("folded", "yes");
+        bk.internalElement().setAttribute(QStringLiteral("folded"), QStringLiteral("yes"));
     }
 }
 

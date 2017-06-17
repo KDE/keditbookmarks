@@ -55,7 +55,7 @@ int main( int argc, char**argv )
 	KAboutData::setApplicationData(aboutData);
 
 	QCommandLineParser parser;
-	parser.addPositionalArgument(QLatin1String("directory"), i18n( "Directory to scan for extra bookmarks" ));
+	parser.addPositionalArgument(QStringLiteral("directory"), i18n( "Directory to scan for extra bookmarks" ));
 
 	aboutData.setupCommandLine(&parser);
 	parser.process(app);
@@ -75,7 +75,7 @@ int main( int argc, char**argv )
 				continue;
 			}
 
-			QString mergedFrom = bm.metaDataItem( "merged_from" );
+			QString mergedFrom = bm.metaDataItem( QStringLiteral("merged_from") );
 			if ( !mergedFrom.isNull() ) {
 				mergedFiles << mergedFrom;
 			}
@@ -85,7 +85,7 @@ int main( int argc, char**argv )
 	bool didMergeBookmark = false;
 
 	QString extraBookmarksDirName = parser.positionalArguments().at(0);
-	QDir extraBookmarksDir( extraBookmarksDirName, "*.xml" );
+	QDir extraBookmarksDir( extraBookmarksDirName, QStringLiteral("*.xml") );
 	if ( !extraBookmarksDir.isReadable() ) {
 		qCritical() << "Failed to read files in directory " << extraBookmarksDirName << endl;
 		return 1;
@@ -104,7 +104,7 @@ int main( int argc, char**argv )
 			if ( bm.isGroup() ) {
 				continue;
 			}
-			bm.setMetaDataItem( "merged_from", fileName );
+			bm.setMetaDataItem( QStringLiteral("merged_from"), fileName );
 			konqBookmarks->root().addBookmark( bm );
 			didMergeBookmark = true;
 		}

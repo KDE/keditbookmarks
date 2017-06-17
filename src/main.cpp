@@ -45,8 +45,8 @@
 // TODO - make this register() or something like that and move dialog into main
 static bool askUser(const QString& filename, bool &readonly) {
 
-    QString requestedName("keditbookmarks");
-    QString interfaceName = "org.kde.keditbookmarks";
+    QString requestedName(QStringLiteral("keditbookmarks"));
+    QString interfaceName = QStringLiteral("org.kde.keditbookmarks");
     QString appId = interfaceName + '-' +QString().setNum(getpid());
 
     QDBusConnection dbus = QDBusConnection::sessionBus();
@@ -57,7 +57,7 @@ static bool askUser(const QString& filename, bool &readonly) {
     for ( QStringList::const_iterator it = allServices.begin(), end = allServices.end() ; it != end ; ++it ) {
         const QString service = *it;
         if ( service.startsWith( interfaceName ) && service != appId ) {
-            org::kde::keditbookmarks keditbookmarks(service,"/keditbookmarks", dbus);
+            org::kde::keditbookmarks keditbookmarks(service,QStringLiteral("/keditbookmarks"), dbus);
             QDBusReply<QString> bookmarks = keditbookmarks.bookmarkFilename();
             QString name;
             if( bookmarks.isValid())
@@ -72,9 +72,9 @@ static bool askUser(const QString& filename, bool &readonly) {
                 KGuiItem(i18n("Run Another")),    /* yes */
                 KGuiItem(i18n("Continue in Same")) /*  no */);
                 if (ret == KMessageBox::No) {
-                    QDBusInterface keditinterface(service, "/keditbookmarks/MainWindow_1");
+                    QDBusInterface keditinterface(service, QStringLiteral("/keditbookmarks/MainWindow_1"));
                     //TODO fix me
-                    QDBusReply<qlonglong> value = keditinterface.call(QDBus::NoBlock, "winId");
+                    QDBusReply<qlonglong> value = keditinterface.call(QDBus::NoBlock, QStringLiteral("winId"));
                     qlonglong id = 0;
                     if( value.isValid())
                         id = value;
@@ -108,8 +108,8 @@ int main(int argc, char **argv)
                          i18n("Bookmark Organizer and Editor"),
                          KAboutLicense::GPL,
                          i18n("Copyright 2000-2007, KDE developers") );
-    aboutData.addAuthor(i18n("David Faure"), i18n("Initial author"), "faure@kde.org");
-    aboutData.addAuthor(i18n("Alexander Kellett"), i18n("Author"), "lypanov@kde.org");
+    aboutData.addAuthor(i18n("David Faure"), i18n("Initial author"), QStringLiteral("faure@kde.org"));
+    aboutData.addAuthor(i18n("Alexander Kellett"), i18n("Author"), QStringLiteral("lypanov@kde.org"));
     KAboutData::setApplicationData(aboutData);
 
     app.setWindowIcon(QIcon::fromTheme(QStringLiteral("bookmarks-organize")));
@@ -117,36 +117,36 @@ int main(int argc, char **argv)
     QCommandLineParser parser;
     parser.setApplicationDescription(aboutData.shortDescription());
 
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("importmoz"), i18n("Import bookmarks from a file in Mozilla format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("importns"), i18n("Import bookmarks from a file in Netscape (4.x and earlier) format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("importie"), i18n("Import bookmarks from a file in Internet Explorer's Favorites format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("importopera"), i18n("Import bookmarks from a file in Opera format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("importkde3"), i18n("Import bookmarks from a file in KDE2 format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("importgaleon"), i18n("Import bookmarks from a file in Galeon format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("exportmoz"), i18n("Export bookmarks to a file in Mozilla format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("exportns"), i18n("Export bookmarks to a file in Netscape (4.x and earlier) format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("exporthtml"), i18n("Export bookmarks to a file in a printable HTML format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("exportie"), i18n("Export bookmarks to a file in Internet Explorer's Favorites format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("exportopera"), i18n("Export bookmarks to a file in Opera format"), QLatin1String("filename")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("address"), i18n("Open at the given position in the bookmarks file"), QLatin1String("address")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("customcaption"), i18n("Set the user-readable caption, for example \"Konsole\""), QLatin1String("caption")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("nobrowser"), i18n("Hide all browser related functions")));
-    parser.addOption(QCommandLineOption(QStringList() << QLatin1String("dbusObjectName"), i18n("A unique name that represents this bookmark collection, usually the kinstance name.\n"
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("importmoz"), i18n("Import bookmarks from a file in Mozilla format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("importns"), i18n("Import bookmarks from a file in Netscape (4.x and earlier) format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("importie"), i18n("Import bookmarks from a file in Internet Explorer's Favorites format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("importopera"), i18n("Import bookmarks from a file in Opera format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("importkde3"), i18n("Import bookmarks from a file in KDE2 format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("importgaleon"), i18n("Import bookmarks from a file in Galeon format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("exportmoz"), i18n("Export bookmarks to a file in Mozilla format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("exportns"), i18n("Export bookmarks to a file in Netscape (4.x and earlier) format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("exporthtml"), i18n("Export bookmarks to a file in a printable HTML format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("exportie"), i18n("Export bookmarks to a file in Internet Explorer's Favorites format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("exportopera"), i18n("Export bookmarks to a file in Opera format"), QStringLiteral("filename")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("address"), i18n("Open at the given position in the bookmarks file"), QStringLiteral("address")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("customcaption"), i18n("Set the user-readable caption, for example \"Konsole\""), QStringLiteral("caption")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("nobrowser"), i18n("Hide all browser related functions")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("dbusObjectName"), i18n("A unique name that represents this bookmark collection, usually the kinstance name.\n"
                                  "This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for KFileDialog bookmarks, etc.\n"
-                                 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"), QLatin1String("name")));
-    parser.addPositionalArgument(QLatin1String("[file]"), i18n("File to edit"));
+                                 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"), QStringLiteral("name")));
+    parser.addPositionalArgument(QStringLiteral("[file]"), i18n("File to edit"));
 
     aboutData.setupCommandLine(&parser);
     parser.process(app);
     aboutData.processCommandLine(&parser);
 
-    const bool isGui = !(parser.isSet("exportmoz") || parser.isSet("exportns") || parser.isSet("exporthtml")
-                || parser.isSet("exportie") || parser.isSet("exportopera")
-                || parser.isSet("importmoz") || parser.isSet("importns")
-                || parser.isSet("importie") || parser.isSet("importopera")
-                || parser.isSet("importkde3") || parser.isSet("importgaleon"));
+    const bool isGui = !(parser.isSet(QStringLiteral("exportmoz")) || parser.isSet(QStringLiteral("exportns")) || parser.isSet(QStringLiteral("exporthtml"))
+                || parser.isSet(QStringLiteral("exportie")) || parser.isSet(QStringLiteral("exportopera"))
+                || parser.isSet(QStringLiteral("importmoz")) || parser.isSet(QStringLiteral("importns"))
+                || parser.isSet(QStringLiteral("importie")) || parser.isSet(QStringLiteral("importopera"))
+                || parser.isSet(QStringLiteral("importkde3")) || parser.isSet(QStringLiteral("importgaleon")));
 
-    const bool browser = !parser.isSet("nobrowser");
+    const bool browser = !parser.isSet(QStringLiteral("nobrowser"));
 
     // enable high dpi support
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
@@ -198,25 +198,25 @@ int main(int argc, char **argv)
         return 0; // error flag on exit?, 1?
     }
 
-    QString address = parser.isSet("address")
-        ? parser.value("address")
-        : QString("/0");
+    QString address = parser.isSet(QStringLiteral("address"))
+        ? parser.value(QStringLiteral("address"))
+        : QStringLiteral("/0");
 
-    QString caption = parser.isSet("customcaption")
-        ? parser.value("customcaption")
+    QString caption = parser.isSet(QStringLiteral("customcaption"))
+        ? parser.value(QStringLiteral("customcaption"))
         : QString();
 
     QString dbusObjectName;
-    if(parser.isSet("dbusObjectName"))
+    if(parser.isSet(QStringLiteral("dbusObjectName")))
     {
-        dbusObjectName = parser.value("dbusObjectName");
+        dbusObjectName = parser.value(QStringLiteral("dbusObjectName"));
     }
     else
     {
         if(gotFilenameArg)
           dbusObjectName = QString();
         else
-          dbusObjectName = "konqueror";
+          dbusObjectName = QStringLiteral("konqueror");
     }
 
     bool readonly = false; // passed by ref

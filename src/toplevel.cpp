@@ -61,7 +61,7 @@ KEBApp::KEBApp(
     m_caption(caption),
     m_dbusObjectName(dbusObjectName), m_readOnly(readonly),m_browser(browser)
  {
-    QDBusConnection::sessionBus().registerObject("/keditbookmarks", this, QDBusConnection::ExportScriptableSlots);
+    QDBusConnection::sessionBus().registerObject(QStringLiteral("/keditbookmarks"), this, QDBusConnection::ExportScriptableSlots);
     Q_UNUSED(address);//FIXME sets the current item
 
     m_cmdHistory = new CommandHistory(this);
@@ -76,7 +76,7 @@ KEBApp::KEBApp(
     if (m_browser)
         createGUI();
     else
-        createGUI("keditbookmarks-genui.rc");
+        createGUI(QStringLiteral("keditbookmarks-genui.rc"));
 
     connect(qApp->clipboard(), SIGNAL(dataChanged()),
                                SLOT(slotClipboardDataChanged()));
@@ -159,7 +159,7 @@ void KEBApp::startEdit( Column c )
     end = list.constEnd();
     for(it = list.constBegin(); it != end; ++it)
         if( (*it).column() == int(c) && (mBookmarkListView->model()->flags(*it) & Qt::ItemIsEditable) )
-            return mBookmarkListView->edit( *it );
+            mBookmarkListView->edit( *it );
 }
 
 //FIXME clean up and remove unneeded things
@@ -226,35 +226,35 @@ void KEBApp::setActionsEnabled(SelcAbilities sa) {
     QStringList toEnable;
 
     if (sa.multiSelect || (sa.singleSelect && !sa.root))
-        toEnable << "edit_copy";
+        toEnable << QStringLiteral("edit_copy");
 
     if (sa.multiSelect || (sa.singleSelect && !sa.root && !sa.urlIsEmpty && !sa.group && !sa.separator))
-            toEnable << "openlink";
+            toEnable << QStringLiteral("openlink");
 
     if (!m_readOnly) {
         if (sa.notEmpty)
-            toEnable << "testall" << "updateallfavicons";
+            toEnable << QStringLiteral("testall") << QStringLiteral("updateallfavicons");
 
         if ( sa.deleteEnabled && (sa.multiSelect || (sa.singleSelect && !sa.root)) )
-                toEnable << "delete" << "edit_cut";
+                toEnable << QStringLiteral("delete") << QStringLiteral("edit_cut");
 
         if( sa.singleSelect)
             if (m_canPaste)
-                toEnable << "edit_paste";
+                toEnable << QStringLiteral("edit_paste");
 
         if( sa.multiSelect || (sa.singleSelect && !sa.root && !sa.urlIsEmpty && !sa.group && !sa.separator))
-            toEnable << "testlink" << "updatefavicon";
+            toEnable << QStringLiteral("testlink") << QStringLiteral("updatefavicon");
 
         if (sa.singleSelect && !sa.root && !sa.separator) {
-            toEnable << "rename" << "changeicon" << "changecomment";
+            toEnable << QStringLiteral("rename") << QStringLiteral("changeicon") << QStringLiteral("changecomment");
             if (!sa.group)
-                toEnable << "changeurl";
+                toEnable << QStringLiteral("changeurl");
         }
 
         if (sa.singleSelect) {
-            toEnable << "newfolder" << "newbookmark" << "insertseparator";
+            toEnable << QStringLiteral("newfolder") << QStringLiteral("newbookmark") << QStringLiteral("insertseparator");
             if (sa.group)
-                toEnable << "sort" << "recursivesort" << "setastoolbar";
+                toEnable << QStringLiteral("sort") << QStringLiteral("recursivesort") << QStringLiteral("setastoolbar");
         }
     }
 
@@ -294,7 +294,7 @@ static bool lessAddress(const QString& first, const QString& second)
     if(a == b)
          return false;
 
-    QString error("ERROR");
+    QString error(QStringLiteral("ERROR"));
     if(a == error)
         return false;
     if(b == error)
@@ -317,14 +317,14 @@ static bool lessAddress(const QString& first, const QString& second)
         if(bLast +1 == bEnd)
             return false;
 
-        uint aNext = a.indexOf("/", aLast + 1);
-        uint bNext = b.indexOf("/", bLast + 1);
+        uint aNext = a.indexOf(QLatin1String("/"), aLast + 1);
+        uint bNext = b.indexOf(QLatin1String("/"), bLast + 1);
 
         bool okay;
-        uint aNum = a.mid(aLast + 1, aNext - aLast - 1).toUInt(&okay);
+        uint aNum = a.midRef(aLast + 1, aNext - aLast - 1).toUInt(&okay);
         if(!okay)
             return false;
-        uint bNum = b.mid(bLast + 1, bNext - bLast - 1).toUInt(&okay);
+        uint bNum = b.midRef(bLast + 1, bNext - bLast - 1).toUInt(&okay);
         if(!okay)
             return true;
 
@@ -420,11 +420,11 @@ KToggleAction* KEBApp::getToggleAction(const char *action) const {
 }
 
 void KEBApp::resetActions() {
-    stateChanged("disablestuff");
-    stateChanged("normal");
+    stateChanged(QStringLiteral("disablestuff"));
+    stateChanged(QStringLiteral("normal"));
 
     if (!m_readOnly)
-        stateChanged("notreadonly");
+        stateChanged(QStringLiteral("notreadonly"));
 }
 
 void  KEBApp::selectionChanged()

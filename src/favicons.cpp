@@ -46,7 +46,7 @@ FavIconsItr::~FavIconsItr()
 
 void FavIconsItr::setStatus(const QString & status)
 {
-    currentBookmark().setMetaDataItem("favstate", status);
+    currentBookmark().setMetaDataItem(QStringLiteral("favstate"), status);
     model()->emitDataChanged(currentBookmark());
 }
 
@@ -62,13 +62,13 @@ bool FavIconsItr::isApplicable(const KBookmark &bk) const
 {
     if (bk.isGroup() || bk.isSeparator())
         return false;
-    return bk.url().scheme().startsWith("http");
+    return bk.url().scheme().startsWith(QLatin1String("http"));
 }
 
 void FavIconsItr::doAction()
 {
     // //qDebug() << "FavIconsItr::doAction()";
-    m_oldStatus = currentBookmark().metaDataItem("favstate");
+    m_oldStatus = currentBookmark().metaDataItem(QStringLiteral("favstate"));
     setStatus(i18n("Updating favicon..."));
     if (!m_updater) {
         m_updater = new FavIconUpdater(this);

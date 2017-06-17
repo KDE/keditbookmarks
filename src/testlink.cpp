@@ -53,7 +53,7 @@ TestLinkItr::~TestLinkItr()
 
 void TestLinkItr::setStatus(const QString & text)
 {
-    currentBookmark().setMetaDataItem("linkstate", text);
+    currentBookmark().setMetaDataItem(QStringLiteral("linkstate"), text);
     model()->emitDataChanged(currentBookmark());
 }
 
@@ -66,12 +66,12 @@ void TestLinkItr::doAction()
 {
     //qDebug();
     m_job = KIO::get(currentBookmark().url(), KIO::Reload, KIO::HideProgressInfo);
-    m_job->addMetaData( QString("cookies"), QString("none") );
-    m_job->addMetaData( QString("errorPage"), QString("false") );
+    m_job->addMetaData( QStringLiteral("cookies"), QStringLiteral("none") );
+    m_job->addMetaData( QStringLiteral("errorPage"), QStringLiteral("false") );
 
     connect(m_job, &KIO::TransferJob::result, this, &TestLinkItr::slotJobResult);
 
-    m_oldStatus = currentBookmark().metaDataItem("linkstate");
+    m_oldStatus = currentBookmark().metaDataItem(QStringLiteral("linkstate"));
     setStatus(i18n("Checking..."));
 }
 
@@ -81,13 +81,13 @@ void TestLinkItr::slotJobResult(KJob *job)
     m_job = 0;
 
     KIO::TransferJob *transfer = static_cast<KIO::TransferJob *>(job);
-    const QString modDate = transfer->queryMetaData("modified");
+    const QString modDate = transfer->queryMetaData(QStringLiteral("modified"));
 
     if (transfer->error() || transfer->isErrorPage()) {
         //qDebug()<<"***********"<<transfer->error()<<"  "<<transfer->isErrorPage()<<endl;
         // can we assume that errorString will contain no entities?
         QString err = transfer->errorString();
-        err.replace("\n", " ");
+        err.replace(QLatin1String("\n"), QLatin1String(" "));
         setStatus(err);
     } else {
         if (!modDate.isEmpty())

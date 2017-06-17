@@ -63,13 +63,13 @@ QString ImportCommand::folder() const {
 
 ImportCommand* ImportCommand::importerFactory(KBookmarkModel* model, const QString &type)
 {
-    if (type == "Galeon") return new GaleonImportCommand(model);
-    else if (type == "IE") return new IEImportCommand(model);
-    else if (type == "KDE2") return new KDE2ImportCommand(model);
-    else if (type == "Opera") return new OperaImportCommand(model);
+    if (type == QLatin1String("Galeon")) return new GaleonImportCommand(model);
+    else if (type == QLatin1String("IE")) return new IEImportCommand(model);
+    else if (type == QLatin1String("KDE2")) return new KDE2ImportCommand(model);
+    else if (type == QLatin1String("Opera")) return new OperaImportCommand(model);
     //else if (type == "Crashes") return new CrashesImportCommand();
-    else if (type == "Moz") return new MozImportCommand(model);
-    else if (type == "NS") return new NSImportCommand(model);
+    else if (type == QLatin1String("Moz")) return new MozImportCommand(model);
+    else if (type == QLatin1String("NS")) return new NSImportCommand(model);
     else {
         qCritical() << "ImportCommand::importerFactory() - invalid type (" << type << ")!" << endl;
         return 0;
@@ -128,7 +128,7 @@ void ImportCommand::redo()
         m_cleanUpCmd->redo();
 
         // import at the root
-        m_group = "";
+        m_group = QLatin1String("");
     }
 
     doExecute(bkGroup);
@@ -251,17 +251,17 @@ void XBELImportCommand::doExecute(const KBookmarkGroup &/*bkGroup*/) {
     QDomDocument doc = GlobalBookmarkManager::self()->mgr()->internalDocument();
 
     // get the xbel
-    QDomNode subDoc = pManager->internalDocument().namedItem("xbel").cloneNode();
+    QDomNode subDoc = pManager->internalDocument().namedItem(QStringLiteral("xbel")).cloneNode();
     if (subDoc.isProcessingInstruction())
         subDoc = subDoc.nextSibling();
     if (subDoc.isDocumentType())
         subDoc = subDoc.nextSibling();
-    if (subDoc.nodeName() != "xbel")
+    if (subDoc.nodeName() != QLatin1String("xbel"))
         return;
 
     if (!folder().isEmpty()) {
         // transform into folder
-        subDoc.toElement().setTagName("folder");
+        subDoc.toElement().setTagName(QStringLiteral("folder"));
 
         // clear attributes
         QStringList tags;
@@ -270,10 +270,10 @@ void XBELImportCommand::doExecute(const KBookmarkGroup &/*bkGroup*/) {
         for (QStringList::const_iterator it = tags.constBegin(); it != tags.constEnd(); ++it)
             subDoc.attributes().removeNamedItem((*it));
 
-        subDoc.toElement().setAttribute("icon", m_icon);
+        subDoc.toElement().setAttribute(QStringLiteral("icon"), m_icon);
 
         // give the folder a name
-        QDomElement textElem = doc.createElement("title");
+        QDomElement textElem = doc.createElement(QStringLiteral("title"));
         subDoc.insertBefore(textElem, subDoc.firstChild());
         textElem.appendChild(doc.createTextNode(folder()));
     }

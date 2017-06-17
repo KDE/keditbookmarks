@@ -90,111 +90,111 @@ void KEBApp::createActions() {
     (void) KStandardAction::paste(m_actionsImpl, SLOT(slotPaste()), actionCollection());
 
     // actions
-    QAction* m_actionsImplDelete = actionCollection()->addAction("delete");
-    m_actionsImplDelete->setIcon(QIcon::fromTheme("edit-delete"));
+    QAction* m_actionsImplDelete = actionCollection()->addAction(QStringLiteral("delete"));
+    m_actionsImplDelete->setIcon(QIcon::fromTheme(QStringLiteral("edit-delete")));
     m_actionsImplDelete->setText(i18n("&Delete"));
     actionCollection()->setDefaultShortcut(m_actionsImplDelete,Qt::Key_Delete);
     connect(m_actionsImplDelete, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotDelete);
 
-    QAction* m_actionsImplRename = actionCollection()->addAction("rename");
-    m_actionsImplRename->setIcon(QIcon::fromTheme("edit-rename"));
+    QAction* m_actionsImplRename = actionCollection()->addAction(QStringLiteral("rename"));
+    m_actionsImplRename->setIcon(QIcon::fromTheme(QStringLiteral("edit-rename")));
     m_actionsImplRename->setText(i18n("Rename"));
     actionCollection()->setDefaultShortcut(m_actionsImplRename,Qt::Key_F2);
     connect(m_actionsImplRename, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotRename);
 
-    QAction* m_actionsImplChangeURL = actionCollection()->addAction("changeurl");
-    m_actionsImplChangeURL->setIcon(QIcon::fromTheme("edit-rename"));
+    QAction* m_actionsImplChangeURL = actionCollection()->addAction(QStringLiteral("changeurl"));
+    m_actionsImplChangeURL->setIcon(QIcon::fromTheme(QStringLiteral("edit-rename")));
     m_actionsImplChangeURL->setText(i18n("C&hange Location"));
     actionCollection()->setDefaultShortcut(m_actionsImplChangeURL,Qt::Key_F3);
     connect(m_actionsImplChangeURL, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotChangeURL);
 
-    QAction* m_actionsImplChangeComment = actionCollection()->addAction("changecomment");
-    m_actionsImplChangeComment->setIcon(QIcon::fromTheme("edit-rename"));
+    QAction* m_actionsImplChangeComment = actionCollection()->addAction(QStringLiteral("changecomment"));
+    m_actionsImplChangeComment->setIcon(QIcon::fromTheme(QStringLiteral("edit-rename")));
     m_actionsImplChangeComment->setText(i18n("C&hange Comment"));
     actionCollection()->setDefaultShortcut(m_actionsImplChangeComment, Qt::Key_F4);
     connect(m_actionsImplChangeComment, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotChangeComment);
 
-    QAction* m_actionsImplChangeIcon = actionCollection()->addAction("changeicon");
-    m_actionsImplChangeIcon->setIcon(QIcon::fromTheme("preferences-desktop-icons"));
+    QAction* m_actionsImplChangeIcon = actionCollection()->addAction(QStringLiteral("changeicon"));
+    m_actionsImplChangeIcon->setIcon(QIcon::fromTheme(QStringLiteral("preferences-desktop-icons")));
     m_actionsImplChangeIcon->setText(i18n("Chan&ge Icon..."));
     connect(m_actionsImplChangeIcon, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotChangeIcon);
 
-    QAction* m_actionsImplUpdateFavIcon = actionCollection()->addAction("updatefavicon");
+    QAction* m_actionsImplUpdateFavIcon = actionCollection()->addAction(QStringLiteral("updatefavicon"));
     m_actionsImplUpdateFavIcon->setText(i18n("Update Favicon"));
     connect(m_actionsImplUpdateFavIcon, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotUpdateFavIcon);
 
-    QAction* m_actionsImplRecursiveSort = actionCollection()->addAction("recursivesort");
+    QAction* m_actionsImplRecursiveSort = actionCollection()->addAction(QStringLiteral("recursivesort"));
     m_actionsImplRecursiveSort->setText(i18n("Recursive Sort"));
     connect(m_actionsImplRecursiveSort, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotRecursiveSort);
 
-    QAction* m_actionsImplNewFolder = actionCollection()->addAction("newfolder");
-    m_actionsImplNewFolder->setIcon(QIcon::fromTheme("folder-new"));
+    QAction* m_actionsImplNewFolder = actionCollection()->addAction(QStringLiteral("newfolder"));
+    m_actionsImplNewFolder->setIcon(QIcon::fromTheme(QStringLiteral("folder-new")));
     m_actionsImplNewFolder->setText(i18n("&New Folder..."));
     actionCollection()->setDefaultShortcut(m_actionsImplNewFolder,Qt::CTRL+Qt::Key_N);
     connect(m_actionsImplNewFolder, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotNewFolder);
 
-    QAction* m_actionsImplNewBookmark = actionCollection()->addAction("newbookmark");
-    m_actionsImplNewBookmark->setIcon(QIcon::fromTheme("bookmark-new"));
+    QAction* m_actionsImplNewBookmark = actionCollection()->addAction(QStringLiteral("newbookmark"));
+    m_actionsImplNewBookmark->setIcon(QIcon::fromTheme(QStringLiteral("bookmark-new")));
     m_actionsImplNewBookmark->setText(i18n("&New Bookmark"));
     connect(m_actionsImplNewBookmark, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotNewBookmark);
 
-    QAction* m_actionsImplInsertSeparator = actionCollection()->addAction("insertseparator");
+    QAction* m_actionsImplInsertSeparator = actionCollection()->addAction(QStringLiteral("insertseparator"));
     m_actionsImplInsertSeparator->setText(i18n("&Insert Separator"));
     actionCollection()->setDefaultShortcut(m_actionsImplInsertSeparator, Qt::CTRL+Qt::Key_I);
     connect(m_actionsImplInsertSeparator, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotInsertSeparator);
 
-    QAction* m_actionsImplSort = actionCollection()->addAction("sort");
+    QAction* m_actionsImplSort = actionCollection()->addAction(QStringLiteral("sort"));
     m_actionsImplSort->setText(i18n("&Sort Alphabetically"));
     connect(m_actionsImplSort, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotSort);
 
-    QAction* m_actionsImplSetAsToolbar = actionCollection()->addAction("setastoolbar");
-    m_actionsImplSetAsToolbar->setIcon(QIcon::fromTheme("bookmark-toolbar"));
+    QAction* m_actionsImplSetAsToolbar = actionCollection()->addAction(QStringLiteral("setastoolbar"));
+    m_actionsImplSetAsToolbar->setIcon(QIcon::fromTheme(QStringLiteral("bookmark-toolbar")));
     m_actionsImplSetAsToolbar->setText(i18n("Set as T&oolbar Folder"));
     connect(m_actionsImplSetAsToolbar, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotSetAsToolbar);
 
-    QAction* m_actionsImplExpandAll = actionCollection()->addAction("expandall");
+    QAction* m_actionsImplExpandAll = actionCollection()->addAction(QStringLiteral("expandall"));
     m_actionsImplExpandAll->setText(i18n("&Expand All Folders"));
     connect(m_actionsImplExpandAll, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotExpandAll);
 
-    QAction* m_actionsImplCollapseAll = actionCollection()->addAction("collapseall");
+    QAction* m_actionsImplCollapseAll = actionCollection()->addAction(QStringLiteral("collapseall"));
     m_actionsImplCollapseAll->setText(i18n("Collapse &All Folders"));
     connect(m_actionsImplCollapseAll, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotCollapseAll);
 
-    QAction* m_actionsImplOpenLink = actionCollection()->addAction("openlink");
-    m_actionsImplOpenLink->setIcon(QIcon::fromTheme("document-open"));
+    QAction* m_actionsImplOpenLink = actionCollection()->addAction(QStringLiteral("openlink"));
+    m_actionsImplOpenLink->setIcon(QIcon::fromTheme(QStringLiteral("document-open")));
     m_actionsImplOpenLink->setText(i18n("&Open in Konqueror"));
     connect(m_actionsImplOpenLink, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotOpenLink);
 
-    QAction* m_actionsImplTestSelection = actionCollection()->addAction("testlink");
-    m_actionsImplTestSelection->setIcon(QIcon::fromTheme("bookmarks"));
+    QAction* m_actionsImplTestSelection = actionCollection()->addAction(QStringLiteral("testlink"));
+    m_actionsImplTestSelection->setIcon(QIcon::fromTheme(QStringLiteral("bookmarks")));
     m_actionsImplTestSelection->setText(i18n("Check &Status"));
     connect(m_actionsImplTestSelection, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotTestSelection);
 
-    QAction* m_actionsImplTestAll = actionCollection()->addAction("testall");
+    QAction* m_actionsImplTestAll = actionCollection()->addAction(QStringLiteral("testall"));
     m_actionsImplTestAll->setText(i18n("Check Status: &All"));
     connect(m_actionsImplTestAll, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotTestAll);
 
-    QAction* m_actionsImplUpdateAllFavIcons = actionCollection()->addAction("updateallfavicons");
+    QAction* m_actionsImplUpdateAllFavIcons = actionCollection()->addAction(QStringLiteral("updateallfavicons"));
     m_actionsImplUpdateAllFavIcons->setText(i18n("Update All &Favicons"));
     connect(m_actionsImplUpdateAllFavIcons, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotUpdateAllFavIcons);
 
-    QAction* m_actionsImplCancelAllTests = actionCollection()->addAction("canceltests");
+    QAction* m_actionsImplCancelAllTests = actionCollection()->addAction(QStringLiteral("canceltests"));
     m_actionsImplCancelAllTests->setText(i18n("Cancel &Checks"));
     connect(m_actionsImplCancelAllTests, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotCancelAllTests);
 
-    QAction* m_actionsImplCancelFavIconUpdates = actionCollection()->addAction("cancelfaviconupdates");
+    QAction* m_actionsImplCancelFavIconUpdates = actionCollection()->addAction(QStringLiteral("cancelfaviconupdates"));
     m_actionsImplCancelFavIconUpdates->setText(i18n("Cancel &Favicon Updates"));
     connect(m_actionsImplCancelFavIconUpdates, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotCancelFavIconUpdates);
 
-    QAction* m_actionsImplImportNS = actionCollection()->addAction("importNS");
-    m_actionsImplImportNS->setObjectName( QLatin1String("NS" ));
-    m_actionsImplImportNS->setIcon(QIcon::fromTheme("netscape"));
+    QAction* m_actionsImplImportNS = actionCollection()->addAction(QStringLiteral("importNS"));
+    m_actionsImplImportNS->setObjectName( QStringLiteral("NS" ));
+    m_actionsImplImportNS->setIcon(QIcon::fromTheme(QStringLiteral("netscape")));
     m_actionsImplImportNS->setText(i18n("Import &Netscape Bookmarks..."));
     connect(m_actionsImplImportNS, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotImport);
 
-    QAction* m_actionsImplImportOpera = actionCollection()->addAction("importOpera");
-    m_actionsImplImportOpera->setObjectName( QLatin1String("Opera" ));
-    m_actionsImplImportOpera->setIcon(QIcon::fromTheme("opera"));
+    QAction* m_actionsImplImportOpera = actionCollection()->addAction(QStringLiteral("importOpera"));
+    m_actionsImplImportOpera->setObjectName( QStringLiteral("Opera" ));
+    m_actionsImplImportOpera->setIcon(QIcon::fromTheme(QStringLiteral("opera")));
     m_actionsImplImportOpera->setText(i18n("Import &Opera Bookmarks..."));
     connect(m_actionsImplImportOpera, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotImport);
 /*
@@ -203,50 +203,50 @@ void KEBApp::createActions() {
     m_actionsImplImportCrashes->setText(i18n("Import All &Crash Sessions as Bookmarks..."));
     connect(m_actionsImplImportCrashes, &KAction::triggered, m_actionsImpl, &ActionsImpl::slotImport);
 */
-    QAction* m_actionsImplImportGaleon = actionCollection()->addAction("importGaleon");
-    m_actionsImplImportGaleon->setObjectName( QLatin1String("Galeon" ));
+    QAction* m_actionsImplImportGaleon = actionCollection()->addAction(QStringLiteral("importGaleon"));
+    m_actionsImplImportGaleon->setObjectName( QStringLiteral("Galeon" ));
     m_actionsImplImportGaleon->setText(i18n("Import &Galeon Bookmarks..."));
     connect(m_actionsImplImportGaleon, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotImport);
 
-    QAction* m_actionsImplImportKDE2 = actionCollection()->addAction("importKDE2");
-    m_actionsImplImportKDE2->setObjectName( QLatin1String("KDE2" ));
-    m_actionsImplImportKDE2->setIcon(QIcon::fromTheme("kde"));
+    QAction* m_actionsImplImportKDE2 = actionCollection()->addAction(QStringLiteral("importKDE2"));
+    m_actionsImplImportKDE2->setObjectName( QStringLiteral("KDE2" ));
+    m_actionsImplImportKDE2->setIcon(QIcon::fromTheme(QStringLiteral("kde")));
     m_actionsImplImportKDE2->setText(i18n("Import &KDE 2 or KDE 3 Bookmarks..."));
 
     connect(m_actionsImplImportKDE2, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotImport);
 
-    QAction* m_actionsImplImportIE = actionCollection()->addAction("importIE");
-    m_actionsImplImportIE->setObjectName( QLatin1String("IE" ));
+    QAction* m_actionsImplImportIE = actionCollection()->addAction(QStringLiteral("importIE"));
+    m_actionsImplImportIE->setObjectName( QStringLiteral("IE" ));
     m_actionsImplImportIE->setText(i18n("Import &Internet Explorer Bookmarks..."));
     connect(m_actionsImplImportIE, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotImport);
 
-    QAction* m_actionsImplImportMoz = actionCollection()->addAction("importMoz");
-    m_actionsImplImportMoz->setObjectName( QLatin1String("Moz" ));
-    m_actionsImplImportMoz->setIcon(QIcon::fromTheme("mozilla"));
+    QAction* m_actionsImplImportMoz = actionCollection()->addAction(QStringLiteral("importMoz"));
+    m_actionsImplImportMoz->setObjectName( QStringLiteral("Moz" ));
+    m_actionsImplImportMoz->setIcon(QIcon::fromTheme(QStringLiteral("mozilla")));
     m_actionsImplImportMoz->setText(i18n("Import &Mozilla Bookmarks..."));
     connect(m_actionsImplImportMoz, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotImport);
 
-    QAction* m_actionsImplExportNS = actionCollection()->addAction("exportNS");
-    m_actionsImplExportNS->setIcon(QIcon::fromTheme("netscape"));
+    QAction* m_actionsImplExportNS = actionCollection()->addAction(QStringLiteral("exportNS"));
+    m_actionsImplExportNS->setIcon(QIcon::fromTheme(QStringLiteral("netscape")));
     m_actionsImplExportNS->setText(i18n("Export &Netscape Bookmarks"));
     connect(m_actionsImplExportNS, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotExportNS);
 
-    QAction* m_actionsImplExportOpera = actionCollection()->addAction("exportOpera");
-    m_actionsImplExportOpera->setIcon(QIcon::fromTheme("opera"));
+    QAction* m_actionsImplExportOpera = actionCollection()->addAction(QStringLiteral("exportOpera"));
+    m_actionsImplExportOpera->setIcon(QIcon::fromTheme(QStringLiteral("opera")));
     m_actionsImplExportOpera->setText(i18n("Export &Opera Bookmarks..."));
     connect(m_actionsImplExportOpera, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotExportOpera);
 
-    QAction* m_actionsImplExportHTML = actionCollection()->addAction("exportHTML");
-    m_actionsImplExportHTML->setIcon(QIcon::fromTheme("text-html"));
+    QAction* m_actionsImplExportHTML = actionCollection()->addAction(QStringLiteral("exportHTML"));
+    m_actionsImplExportHTML->setIcon(QIcon::fromTheme(QStringLiteral("text-html")));
     m_actionsImplExportHTML->setText(i18n("Export &HTML Bookmarks..."));
     connect(m_actionsImplExportHTML, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotExportHTML);
 
-    QAction* m_actionsImplExportIE = actionCollection()->addAction("exportIE");
+    QAction* m_actionsImplExportIE = actionCollection()->addAction(QStringLiteral("exportIE"));
     m_actionsImplExportIE->setText(i18n("Export &Internet Explorer Bookmarks..."));
     connect(m_actionsImplExportIE, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotExportIE);
 
-    QAction* m_actionsImplExportMoz = actionCollection()->addAction("exportMoz");
-    m_actionsImplExportMoz->setIcon(QIcon::fromTheme("mozilla"));
+    QAction* m_actionsImplExportMoz = actionCollection()->addAction(QStringLiteral("exportMoz"));
+    m_actionsImplExportMoz->setIcon(QIcon::fromTheme(QStringLiteral("mozilla")));
     m_actionsImplExportMoz->setText(i18n("Export &Mozilla Bookmarks..."));
     connect(m_actionsImplExportMoz, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotExportMoz);
 }
@@ -262,7 +262,7 @@ ActionsImpl::ActionsImpl(QObject* parent, KBookmarkModel* model)
 void ActionsImpl::slotLoad()
 {
     const QString bookmarksFile
-        = QFileDialog::getOpenFileName(KEBApp::self(), QString(), QString(), "KDE Bookmark Files (*.xml)");
+        = QFileDialog::getOpenFileName(KEBApp::self(), QString(), QString(), QStringLiteral("KDE Bookmark Files (*.xml)"));
     if (bookmarksFile.isNull())
         return;
     KEBApp::self()->reset(QString(), bookmarksFile);
@@ -271,7 +271,7 @@ void ActionsImpl::slotLoad()
 void ActionsImpl::slotSaveAs() {
     KEBApp::self()->bkInfo()->commitChanges();
     const QString saveFilename
-        = QFileDialog::getSaveFileName(KEBApp::self(), QString(), QString(), "KDE Bookmark Files (*.xml)");
+        = QFileDialog::getSaveFileName(KEBApp::self(), QString(), QString(), QStringLiteral("KDE Bookmark Files (*.xml)"));
     if (!saveFilename.isEmpty())
         GlobalBookmarkManager::self()->saveAs(saveFilename);
 }
@@ -328,11 +328,11 @@ void GlobalBookmarkManager::doExport(ExportType type, const QString & _path) {
 }
 
 void KEBApp::setCancelFavIconUpdatesEnabled(bool enabled) {
-    actionCollection()->action("cancelfaviconupdates")->setEnabled(enabled);
+    actionCollection()->action(QStringLiteral("cancelfaviconupdates"))->setEnabled(enabled);
 }
 
 void KEBApp::setCancelTestsEnabled(bool enabled) {
-    actionCollection()->action("canceltests")->setEnabled(enabled);
+    actionCollection()->action(QStringLiteral("canceltests"))->setEnabled(enabled);
 }
 
 void ActionsImpl::slotCut() {
@@ -382,7 +382,7 @@ void ActionsImpl::slotNewFolder()
 
     CreateCommand *cmd = new CreateCommand(m_model,
                                 KEBApp::self()->insertAddress(),
-                                str, "bookmark_folder", /*open*/ true);
+                                str, QStringLiteral("bookmark_folder"), /*open*/ true);
     commandHistory()->addCommand(cmd);
 }
 
@@ -392,7 +392,7 @@ void ActionsImpl::slotNewBookmark()
     // TODO - make a setCurrentItem(Command *) which uses finaladdress interface
     CreateCommand * cmd = new CreateCommand(m_model,
                                 KEBApp::self()->insertAddress(),
-                                QString(), "www", QUrl("http://"));
+                                QString(), QStringLiteral("www"), QUrl(QStringLiteral("http://")));
     commandHistory()->addCommand(cmd);
 }
 
@@ -507,7 +507,7 @@ void ActionsImpl::slotRecursiveSort() {
     QList<KBookmark> bookmarks = lister.getList(bk.toGroup());
     bookmarks << bk.toGroup();
     for (QList<KBookmark>::ConstIterator it = bookmarks.constBegin(); it != bookmarks.constEnd(); ++it) {
-        new SortCommand(m_model, "", (*it).address(), mcmd);
+        new SortCommand(m_model, QLatin1String(""), (*it).address(), mcmd);
     }
     commandHistory()->addCommand(mcmd);
 }

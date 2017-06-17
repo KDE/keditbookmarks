@@ -125,8 +125,8 @@ QVariant KBookmarkModel::data(const QModelIndex &index, int role) const
             case CommentColumnId:
                 return bk.description();
             case StatusColumnId: {
-                QString text1 = bk.metaDataItem("favstate"); // favicon state
-                QString text2 = bk.metaDataItem("linkstate");
+                QString text1 = bk.metaDataItem(QStringLiteral("favstate")); // favicon state
+                QString text2 = bk.metaDataItem(QStringLiteral("linkstate"));
                 if (text1.isEmpty() || text2.isEmpty())
                     return QVariant( text1 + text2 );
                 else
@@ -141,7 +141,7 @@ QVariant KBookmarkModel::data(const QModelIndex &index, int role) const
     if (role == Qt::DecorationRole && index.column() == NameColumnId) {
         KBookmark bk = bookmarkForIndex(index);
         if (bk.address().isEmpty())
-            return QIcon::fromTheme("bookmarks");
+            return QIcon::fromTheme(QStringLiteral("bookmarks"));
         return QIcon::fromTheme(bk.icon());
     }
 
@@ -356,7 +356,7 @@ bool KBookmarkModel::dropMimeData(const QMimeData * data, Qt::DropAction action,
 
     QString addr = dropDestBookmark.address();
     if (dropDestBookmark.isGroup() && !isInsertBetweenOp) {
-      addr += "/0";
+      addr += QLatin1String("/0");
     }
     // bookmarkForIndex(...) does not distinguish between the last item in the folder
     // and the point *after* the last item in the folder (and its hard to see how to
@@ -368,7 +368,7 @@ bool KBookmarkModel::dropMimeData(const QMimeData * data, Qt::DropAction action,
     }
 
     if (action == Qt::CopyAction) {
-        KEBMacroCommand * cmd = CmdGen::insertMimeSource(this, "Copy", data, addr);
+        KEBMacroCommand * cmd = CmdGen::insertMimeSource(this, QStringLiteral("Copy"), data, addr);
         d->mCommandHistory->addCommand(cmd);
     } else if (action == Qt::MoveAction) {
         if (data->hasFormat(s_mime_bookmark_addresses)) {
@@ -385,7 +385,7 @@ bool KBookmarkModel::dropMimeData(const QMimeData * data, Qt::DropAction action,
             d->mCommandHistory->addCommand(cmd);
         } else {
             qDebug()<<"NO FORMAT";
-            KEBMacroCommand * cmd = CmdGen::insertMimeSource(this, "Copy", data, addr);
+            KEBMacroCommand * cmd = CmdGen::insertMimeSource(this, QStringLiteral("Copy"), data, addr);
             d->mCommandHistory->addCommand(cmd);
         }
     }
