@@ -91,8 +91,9 @@ static bool askUser(const QString& filename, bool &readonly) {
 
 int main(int argc, char **argv)
 {
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication app(argc, argv);
-
+    app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
     Kdelibs4ConfigMigrator migrate(QStringLiteral("keditbookmarks"));
     migrate.setConfigFiles(QStringList() << QStringLiteral("keditbookmarksrc"));
     migrate.setUiFiles(QStringList() << QStringLiteral("keditbookmarksuirc"));
@@ -105,7 +106,7 @@ int main(int argc, char **argv)
                          QStringLiteral("5.0"),
                          i18n("Bookmark Organizer and Editor"),
                          KAboutLicense::GPL,
-                         i18n("Copyright 2000-2007, KDE developers") );
+                         i18n("Copyright 2000-2017, KDE developers") );
     aboutData.addAuthor(i18n("David Faure"), i18n("Initial author"), QStringLiteral("faure@kde.org"));
     aboutData.addAuthor(i18n("Alexander Kellett"), i18n("Author"), QStringLiteral("lypanov@kde.org"));
     KAboutData::setApplicationData(aboutData);
