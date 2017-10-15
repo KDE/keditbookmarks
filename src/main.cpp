@@ -109,6 +109,9 @@ int main(int argc, char **argv)
                          i18n("Copyright 2000-2017, KDE developers") );
     aboutData.addAuthor(i18n("David Faure"), i18n("Initial author"), QStringLiteral("faure@kde.org"));
     aboutData.addAuthor(i18n("Alexander Kellett"), i18n("Author"), QStringLiteral("lypanov@kde.org"));
+
+    aboutData.setOrganizationDomain(QByteArray("kde.org"));
+    aboutData.setDesktopFileName(QStringLiteral("org.kde.keditbookmarks"));
     KAboutData::setApplicationData(aboutData);
 
     app.setWindowIcon(QIcon::fromTheme(QStringLiteral("bookmarks-organize")));
