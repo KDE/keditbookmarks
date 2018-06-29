@@ -33,7 +33,6 @@ if(BUILD_TESTING)
     find_package(Qt5Test ${QT_REQUIRED_VERSION} CONFIG REQUIRED)
 endif()
 
-add_definitions(-DQT_USE_FAST_CONCATENATION)
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 
