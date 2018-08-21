@@ -25,7 +25,7 @@
 
 #include <stdlib.h>
 
-#include <QtCore/QTimer>
+#include <QTimer>
 #include <QHBoxLayout>
 #include <QFormLayout>
 

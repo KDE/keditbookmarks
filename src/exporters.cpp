@@ -22,8 +22,8 @@
 #include <QDebug>
 #include <klocalizedstring.h>
 
-#include <QtCore/QFile>
-#include <QtCore/QTextStream>
+#include <QFile>
+#include <QTextStream>
 
 HTMLExporter::HTMLExporter()
     : m_out(&m_string, QIODevice::WriteOnly) {

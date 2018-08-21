@@ -23,7 +23,7 @@
 #include "kbookmarkmodel/commands.h"
 #include <klocalizedstring.h>
 
-#include <QtCore/QObject>
+#include <QObject>
 
 class KBookmark;
 

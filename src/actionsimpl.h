@@ -21,7 +21,7 @@
 #ifndef __actionsimpl_h
 #define __actionsimpl_h
 
-#include <QtCore/QObject>
+#include <QObject>
 class FavIconsItrHolder;
 class TestLinkItrHolder;
 class CommandHistory;

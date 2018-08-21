@@ -50,7 +50,7 @@
 #include <kmessagebox.h>
 #include <kstandardaction.h>
 
-#include <QtDBus/QDBusConnection>
+#include <QDBusConnection>
 KEBApp *KEBApp::s_topLevel = 0;
 
 KEBApp::KEBApp(

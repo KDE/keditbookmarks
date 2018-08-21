@@ -19,8 +19,8 @@
 #ifndef __bookmarkiterator_h
 #define __bookmarkiterator_h
 
-#include <QtCore/QObject>
-#include <QtCore/QList>
+#include <QObject>
+#include <QList>
 #include <kbookmark.h>
 
 class KBookmarkModel;

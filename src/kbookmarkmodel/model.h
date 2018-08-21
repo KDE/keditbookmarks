@@ -19,7 +19,7 @@
 #ifndef BOOKMARKMODEL_MODEL_H
 #define BOOKMARKMODEL_MODEL_H
 
-#include <QtCore/QAbstractItemModel>
+#include <QAbstractItemModel>
 #include "kbookmarkmodel_export.h"
 
 class CommandHistory;

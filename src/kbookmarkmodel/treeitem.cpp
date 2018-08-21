@@ -16,7 +16,7 @@
 */
 
 #include "treeitem_p.h"
-#include <QtCore/QVector>
+#include <QVector>
 
 TreeItem::TreeItem(const KBookmark& bk, TreeItem * parent)
     : mParent(parent), mBookmark(bk), mInitDone(false)

@@ -28,7 +28,7 @@
 #include "kbookmarkmodel/model.h"
 
 #include <QFileDialog>
-#include <QtCore/QRegExp>
+#include <QRegExp>
 #include <QDebug>
 #include <klocalizedstring.h>
 

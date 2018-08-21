@@ -36,7 +36,7 @@
 
 #include <QClipboard>
 #include <QFileDialog>
-#include <QtCore/QMimeData>
+#include <QMimeData>
 #include <QApplication>
 #include <QDebug>
 

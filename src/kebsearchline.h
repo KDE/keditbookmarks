@@ -20,7 +20,7 @@
 
 #include <klineedit.h>
 #include <QAbstractItemView>
-#include <QtCore/QLinkedList>
+#include <QLinkedList>
 
 
 class QAction;

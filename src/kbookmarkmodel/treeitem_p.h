@@ -18,7 +18,7 @@
 #ifndef TREEITEM_P_H
 #define TREEITEM_P_H
 
-#include <QtCore/QList>
+#include <QList>
 #include <kbookmark.h>
 
 class TreeItem

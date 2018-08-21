@@ -30,8 +30,8 @@
 #include <QDebug>
 
 
-#include <QtCore/QDir>
-#include <QtXml/qdom.h>
+#include <QDir>
+#include <qdom.h>
 #include <QApplication>
 #include <QCommandLineParser>
 #include <QCommandLineOption>

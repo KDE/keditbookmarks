@@ -23,7 +23,7 @@
 #include <kbookmarkmanager.h>
 
 #include <QDebug>
-#include <QtCore/QTimer>
+#include <QTimer>
 
 BookmarkIterator::BookmarkIterator(BookmarkIteratorHolder* holder, const QList<KBookmark>& bks)
     : QObject(holder), m_bookmarkList(bks), m_holder(holder)
