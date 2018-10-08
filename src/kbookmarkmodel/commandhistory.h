@@ -31,7 +31,7 @@ class KBOOKMARKMODEL_EXPORT CommandHistory : public QObject
 {
     Q_OBJECT
 public:
-    CommandHistory(QObject* parent = 0);
+    explicit CommandHistory(QObject* parent = 0);
     virtual ~CommandHistory();
 
     // Call this before putting any commands into the history!

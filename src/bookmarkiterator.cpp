@@ -116,7 +116,7 @@ void BookmarkIteratorHolder::doIteratorListChanged()
     //qDebug() << count() << "iterators";
     emit setCancelEnabled(count() > 0);
     if(count() == 0) {
-        //qDebug() << "Notifing managers" << m_affectedBookmark;
+        //qDebug() << "Notifying managers" << m_affectedBookmark;
         KBookmarkManager* mgr = m_model->bookmarkManager();
         model()->notifyManagers(mgr->findByAddress(m_affectedBookmark).toGroup());
         m_affectedBookmark.clear();

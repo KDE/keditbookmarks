@@ -53,7 +53,7 @@ class FavIconUpdater : public QObject
     Q_OBJECT
 
 public:
-    FavIconUpdater(QObject *parent);
+    explicit FavIconUpdater(QObject *parent);
     ~FavIconUpdater();
     void downloadIcon(const KBookmark &bk);
     void downloadIconUsingWebBrowser(const KBookmark &bk, const QString& currentError);

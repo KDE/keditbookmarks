@@ -63,7 +63,7 @@ public:
      * Constructs a KViewSearchLine without any QListView/QTreeView to filter. The
      * QListView/QTreeView object has to be set later with setListView().
      */
-    KViewSearchLine(QWidget *parent);
+    explicit KViewSearchLine(QWidget *parent);
 
     /**
      * Destroys the KViewSearchLine.
@@ -118,13 +118,13 @@ public Q_SLOTS:
 
     /**
      * When a search is active on a list that's organized into a tree view if
-     * a parent or ancesestor of an item is does not match the search then it
+     * a parent or ancestor of an item is does not match the search then it
      * will be hidden and as such so too will any children that match.
      *
      * If this is set to true (the default) then the parents of matching items
      * will be shown.
      *
-     * This applys only to QTreeViews.
+     * This applies only to QTreeViews.
      *
      * @see keepParentsVisible
      */
@@ -215,7 +215,7 @@ private:
     bool anyVisible(const QModelIndex & first, const QModelIndex & last);
 
     /**
-     * rechecks indecies first-last after a dataChanged() signal
+     * rechecks indices first-last after a dataChanged() signal
      * sets their visibility and returns true if any item should be
      * visible
      */

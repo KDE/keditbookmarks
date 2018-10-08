@@ -282,7 +282,7 @@ QString KEBApp::insertAddress() const
 {
     KBookmark current = firstSelected();
     return (current.isGroup())
-        ? (current.address() + "/0") //FIXME internal represantation used
+        ? (current.address() + "/0") //FIXME internal representation used
         : KBookmark::nextAddress(current.address());
 }
 

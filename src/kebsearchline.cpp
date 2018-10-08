@@ -215,7 +215,7 @@ bool KViewSearchLine::itemMatches(const QModelIndex & item, const QString &s) co
         return true;
 
     // If the search column list is populated, search just the columns
-    // specifified.  If it is empty default to searching all of the columns.
+    // specified.  If it is empty default to searching all of the columns.
     if(d->treeView)
     {
         int columnCount = d->treeView->header()->count();
@@ -603,7 +603,7 @@ void KViewSearchLine::checkItemParentsNotVisible()
     }
 }
 
-/** Check whether \p index, its siblings and their descendents should be shown. Show or hide the items as necessary.
+/** Check whether \p index, its siblings and their descendants should be shown. Show or hide the items as necessary.
  *
  *  \p index  The list view item to start showing / hiding items at. Typically, this is the first child of another item, or the
  *              the first child of the list view.

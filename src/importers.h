@@ -32,7 +32,7 @@ class ImportCommand : public QObject, public QUndoCommand, public IKEBCommand
 {
    Q_OBJECT
 public:
-   ImportCommand(KBookmarkModel* model);
+   explicit ImportCommand(KBookmarkModel* model);
 
    virtual void import(const QString &fileName, bool folder) = 0;
 
@@ -88,7 +88,7 @@ private:
 class XBELImportCommand : public ImportCommand
 {
 public:
-   XBELImportCommand(KBookmarkModel* model) : ImportCommand(model) {}
+   explicit XBELImportCommand(KBookmarkModel* model) : ImportCommand(model) {}
    void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE = 0;
    QString requestFilename() const Q_DECL_OVERRIDE = 0;
 private:
@@ -99,7 +99,7 @@ private:
 class GaleonImportCommand : public XBELImportCommand
 {
 public:
-   GaleonImportCommand(KBookmarkModel* model) : XBELImportCommand(model) { setVisibleName(i18n("Galeon")); }
+   explicit GaleonImportCommand(KBookmarkModel* model) : XBELImportCommand(model) { setVisibleName(i18n("Galeon")); }
    void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
       init(fileName, folder, QLatin1String(""), false);
    }
@@ -109,7 +109,7 @@ public:
 class KDE2ImportCommand : public XBELImportCommand
 {
 public:
-   KDE2ImportCommand(KBookmarkModel* model) : XBELImportCommand(model) { setVisibleName(i18n("KDE")); }
+   explicit KDE2ImportCommand(KBookmarkModel* model) : XBELImportCommand(model) { setVisibleName(i18n("KDE")); }
    void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
       init(fileName, folder, QLatin1String(""), false);
    }
@@ -120,7 +120,7 @@ public:
 class HTMLImportCommand : public ImportCommand
 {
 public:
-   HTMLImportCommand(KBookmarkModel* model) : ImportCommand(model) {}
+   explicit HTMLImportCommand(KBookmarkModel* model) : ImportCommand(model) {}
    void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE = 0;
    QString requestFilename() const Q_DECL_OVERRIDE = 0;
 private:
@@ -130,7 +130,7 @@ private:
 class NSImportCommand : public HTMLImportCommand
 {
 public:
-   NSImportCommand(KBookmarkModel* model) : HTMLImportCommand(model) { setVisibleName(i18n("Netscape")); }
+   explicit NSImportCommand(KBookmarkModel* model) : HTMLImportCommand(model) { setVisibleName(i18n("Netscape")); }
    void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
       init(fileName, folder, QStringLiteral("netscape"), false);
    }
@@ -140,7 +140,7 @@ public:
 class MozImportCommand : public HTMLImportCommand
 {
 public:
-   MozImportCommand(KBookmarkModel* model) : HTMLImportCommand(model) { setVisibleName(i18n("Mozilla")); }
+   explicit MozImportCommand(KBookmarkModel* model) : HTMLImportCommand(model) { setVisibleName(i18n("Mozilla")); }
    void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
       init(fileName, folder, QStringLiteral("mozilla"), true);
    }
@@ -150,7 +150,7 @@ public:
 class IEImportCommand : public ImportCommand
 {
 public:
-   IEImportCommand(KBookmarkModel* model) : ImportCommand(model) { setVisibleName(i18n("IE")); }
+   explicit IEImportCommand(KBookmarkModel* model) : ImportCommand(model) { setVisibleName(i18n("IE")); }
    void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
       init(fileName, folder, QLatin1String(""), false);
    }
@@ -162,7 +162,7 @@ private:
 class OperaImportCommand : public ImportCommand
 {
 public:
-   OperaImportCommand(KBookmarkModel* model) : ImportCommand(model) { setVisibleName(i18n("Opera")); }
+   explicit OperaImportCommand(KBookmarkModel* model) : ImportCommand(model) { setVisibleName(i18n("Opera")); }
    void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
       init(fileName, folder, QStringLiteral("opera"), false);
    }

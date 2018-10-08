@@ -178,14 +178,14 @@ int main(int argc, char **argv)
         if (!importType && arg2) {
             Q_ASSERT(arg2);
             // TODO - maybe an xbel export???
-            if (got > 1) { // got == 0 isn't possible as !isGui is dependant on "export.*"
+            if (got > 1) { // got == 0 isn't possible as !isGui is dependent on "export.*"
                 qWarning() << i18n("You may only specify a single --export option.");
                 return 1;
             }
             QString path = parser.value(arg2);
             GlobalBookmarkManager::self()->doExport(exportType, path);
         } else if (importType) {
-            if (got > 1) { // got == 0 isn't possible as !isGui is dependant on "import.*"
+            if (got > 1) { // got == 0 isn't possible as !isGui is dependent on "import.*"
                 qWarning() << i18n("You may only specify a single --import option.");
                 return 1;
             }
