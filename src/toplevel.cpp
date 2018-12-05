@@ -89,9 +89,9 @@ KEBApp::KEBApp(
     mBookmarkListView->loadColumnSetting();
     mBookmarkListView->loadFoldedState();
 
-    KViewSearchLineWidget *searchline = new KViewSearchLineWidget(mBookmarkListView);
+    KViewSearchLineWidget *searchline = new KViewSearchLineWidget(mBookmarkListView, this);
 
-    mBookmarkFolderView = new BookmarkFolderView(mBookmarkListView);
+    mBookmarkFolderView = new BookmarkFolderView(mBookmarkListView, this);
     mBookmarkFolderView->expandAll();
 
     QWidget * rightSide = new QWidget;
