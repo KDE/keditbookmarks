@@ -36,14 +36,14 @@ class KBookmarkModel::Private
 {
 public:
     Private(KBookmarkModel* qq, const KBookmark& root, CommandHistory* commandHistory)
-        : q(qq), mRoot(root), mCommandHistory(commandHistory), mInsertionData(0), mIgnoreNext(0)
+        : q(qq), mRoot(root), mCommandHistory(commandHistory), mInsertionData(nullptr), mIgnoreNext(0)
     {
-        mRootItem = new TreeItem(root, 0);
+        mRootItem = new TreeItem(root, nullptr);
     }
     ~Private()
     {
         delete mRootItem;
-        mRootItem = 0;
+        mRootItem = nullptr;
     }
 
     void _kd_slotBookmarksChanged(const QString &groupAddress, const QString &caller = QString());
@@ -75,7 +75,7 @@ public:
 KBookmarkModel::KBookmarkModel(const KBookmark& root, CommandHistory* commandHistory, QObject* parent)
     : QAbstractItemModel(parent), d(new Private(this, root, commandHistory))
 {
-    connect(commandHistory, SIGNAL(notifyCommandExecuted(KBookmarkGroup)), this, SLOT(notifyManagers(KBookmarkGroup)));
+    connect(commandHistory, &CommandHistory::notifyCommandExecuted, this, &KBookmarkModel::notifyManagers);
     Q_ASSERT(bookmarkManager());
     // update when the model updates after a D-Bus signal, coming from this
     // process or from another one
@@ -98,7 +98,7 @@ void KBookmarkModel::resetModel()
 {
     beginResetModel();
     delete d->mRootItem;
-    d->mRootItem = new TreeItem(d->mRoot, 0);
+    d->mRootItem = new TreeItem(d->mRoot, nullptr);
     endResetModel();
 }
 
@@ -168,7 +168,7 @@ Qt::ItemFlags KBookmarkModel::flags(const QModelIndex &index) const
     static const Qt::ItemFlags groupDragEditFlags =    groupFlags | Qt::ItemIsDragEnabled | Qt::ItemIsEditable;
     static const Qt::ItemFlags groupEditFlags =        groupFlags | Qt::ItemIsEditable;
     static const Qt::ItemFlags rootFlags =             groupFlags;
-    static const Qt::ItemFlags bookmarkFlags =         0;
+    static const Qt::ItemFlags bookmarkFlags =         nullptr;
     static const Qt::ItemFlags bookmarkDragEditFlags = bookmarkFlags | Qt::ItemIsDragEnabled | Qt::ItemIsEditable;
     static const Qt::ItemFlags bookmarkEditFlags =     bookmarkFlags | Qt::ItemIsEditable;
 
@@ -414,7 +414,7 @@ void KBookmarkModel::endInsert()
     Q_ASSERT(d->mInsertionData);
     d->mInsertionData->insertChildren();
     delete d->mInsertionData;
-    d->mInsertionData = 0;
+    d->mInsertionData = nullptr;
     endInsertRows();
 }
 
@@ -442,7 +442,7 @@ void KBookmarkModel::removeBookmarks(KBookmarkGroup parent, int first, int last)
 }
 #endif
 
-void KBookmarkModel::removeBookmark(KBookmark bookmark)
+void KBookmarkModel::removeBookmark(const KBookmark &bookmark)
 {
     KBookmarkGroup parentGroup = bookmark.parentGroup();
     const QModelIndex parentIndex = indexForBookmark(parentGroup);

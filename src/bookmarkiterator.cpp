@@ -37,7 +37,7 @@ BookmarkIterator::~BookmarkIterator()
 
 void BookmarkIterator::delayedEmitNextOne()
 {
-    QTimer::singleShot(1, this, SLOT(nextOne()));
+    QTimer::singleShot(1, this, &BookmarkIterator::nextOne);
 }
 
 KBookmark BookmarkIterator::currentBookmark()

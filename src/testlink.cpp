@@ -38,7 +38,7 @@ TestLinkItrHolder::TestLinkItrHolder(QObject* parent, KBookmarkModel* model)
 /* -------------------------- */
 
 TestLinkItr::TestLinkItr(BookmarkIteratorHolder* holder, const QList<KBookmark>& bks)
-    : BookmarkIterator(holder, bks), m_job(0)
+    : BookmarkIterator(holder, bks), m_job(nullptr)
 {
 }
 
@@ -78,7 +78,7 @@ void TestLinkItr::doAction()
 void TestLinkItr::slotJobResult(KJob *job)
 {
     //qDebug();
-    m_job = 0;
+    m_job = nullptr;
 
     KIO::TransferJob *transfer = static_cast<KIO::TransferJob *>(job);
     const QString modDate = transfer->queryMetaData(QStringLiteral("modified"));

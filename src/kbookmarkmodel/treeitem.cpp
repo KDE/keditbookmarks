@@ -123,12 +123,12 @@ TreeItem * TreeItem::treeItemForBookmark(const KBookmark& bk)
             if( KBookmark::commonParent(child.address(), bk.address()) == child.address())
                     return (*it)->treeItemForBookmark(bk);
         }
-        return 0;
+        return nullptr;
     }
     else
     {
-        if(parent() == 0)
-            return 0;
+        if(parent() == nullptr)
+            return nullptr;
         return parent()->treeItemForBookmark(bk);
     }
 }

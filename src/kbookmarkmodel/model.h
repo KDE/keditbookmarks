@@ -42,7 +42,7 @@ class KBOOKMARKMODEL_EXPORT KBookmarkModel : public QAbstractItemModel
     };
 
 public:
-    KBookmarkModel(const KBookmark& root, CommandHistory* commandHistory, QObject* parent = 0);
+    KBookmarkModel(const KBookmark& root, CommandHistory* commandHistory, QObject* parent = nullptr);
     void setRoot(const KBookmark& root);
 
     virtual ~KBookmarkModel();
@@ -77,7 +77,7 @@ public:
     void endInsert();
 
     /// Remove the bookmark
-    void removeBookmark(KBookmark bookmark);
+    void removeBookmark(const KBookmark &bookmark);
 
     //drag and drop
     bool dropMimeData(const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent) Q_DECL_OVERRIDE;

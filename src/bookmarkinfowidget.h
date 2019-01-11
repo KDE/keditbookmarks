@@ -34,7 +34,7 @@ class QTimer;
 class BookmarkInfoWidget : public QWidget {
     Q_OBJECT
 public:
-    explicit BookmarkInfoWidget(BookmarkListView * lv, KBookmarkModel* model, QWidget * = 0);
+    explicit BookmarkInfoWidget(BookmarkListView * lv, KBookmarkModel* model, QWidget * = nullptr);
 
     KBookmark bookmark() { return m_bk; }
 

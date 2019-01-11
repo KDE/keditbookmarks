@@ -30,7 +30,7 @@
 class CommandHistory::Private
 {
 public:
-    Private() : m_manager(0), m_undoStack() {}
+    Private() : m_manager(nullptr), m_undoStack() {}
     KBookmarkManager* m_manager;
     QUndoStack m_undoStack;
 };
@@ -55,22 +55,22 @@ void CommandHistory::createActions(KActionCollection *actionCollection)
 {
     // TODO use QUndoView?
 
-    QAction *standardAction = KStandardAction::create(KStandardAction::Undo, 0, 0, 0);
+    QAction *standardAction = KStandardAction::create(KStandardAction::Undo, nullptr, nullptr, nullptr);
     QAction *undoAction = d->m_undoStack.createUndoAction(actionCollection);
     undoAction->setIcon(standardAction->icon());
     actionCollection->addAction(KStandardAction::name(KStandardAction::Undo), undoAction);
     actionCollection->setDefaultShortcuts(undoAction, standardAction->shortcuts());
-    disconnect(undoAction, SIGNAL(triggered()), &d->m_undoStack, 0);
-    connect(undoAction, SIGNAL(triggered()), this, SLOT(undo()));
+    disconnect(undoAction, SIGNAL(triggered()), &d->m_undoStack, nullptr);
+    connect(undoAction, &QAction::triggered, this, &CommandHistory::undo);
     delete standardAction;
 
-    standardAction = KStandardAction::create(KStandardAction::Redo, 0, 0, 0);
+    standardAction = KStandardAction::create(KStandardAction::Redo, nullptr, nullptr, nullptr);
     QAction *redoAction = d->m_undoStack.createRedoAction(actionCollection);
     redoAction->setIcon(standardAction->icon());
     actionCollection->addAction(KStandardAction::name(KStandardAction::Redo), redoAction);
     actionCollection->setDefaultShortcuts(redoAction, standardAction->shortcuts());
-    disconnect(redoAction, SIGNAL(triggered()), &d->m_undoStack, 0);
-    connect(redoAction, SIGNAL(triggered()), this, SLOT(redo()));
+    disconnect(redoAction, SIGNAL(triggered()), &d->m_undoStack, nullptr);
+    connect(redoAction, &QAction::triggered, this, &CommandHistory::redo);
     delete standardAction;
 }
 

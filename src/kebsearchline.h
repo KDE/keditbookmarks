@@ -57,7 +57,7 @@ public:
      * If \a view is null then the widget will be disabled until a listview
      * is set with setListView().
      */
-    explicit KViewSearchLine(QWidget *parent = 0, QAbstractItemView *view = 0);
+    explicit KViewSearchLine(QWidget *parent = nullptr, QAbstractItemView *view = nullptr);
 
     /**
      * Constructs a KViewSearchLine without any QListView/QTreeView to filter. The
@@ -194,7 +194,7 @@ private:
     /**
      * QListView's and QTreeView's setRowHidden are slightly different.
      */
-    void setVisible(QModelIndex index, bool v);
+    void setVisible(const QModelIndex &index, bool v);
 
     /**
      * This is used in case parent items of matching items shouldn't be
@@ -265,7 +265,7 @@ public:
      * Creates a KListViewSearchLineWidget for \a view with \a parent as the
      * parent
      */
-    explicit KViewSearchLineWidget(QAbstractItemView *view = 0, QWidget *parent = 0);
+    explicit KViewSearchLineWidget(QAbstractItemView *view = nullptr, QWidget *parent = nullptr);
 
     /**
      * Destroys the KListViewSearchLineWidget

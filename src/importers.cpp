@@ -47,7 +47,7 @@
 
 
 ImportCommand::ImportCommand(KBookmarkModel* model)
-    : QUndoCommand(), m_model(model), m_utf8(false), m_folder(false), m_cleanUpCmd(0)
+    : QUndoCommand(), m_model(model), m_utf8(false), m_folder(false), m_cleanUpCmd(nullptr)
 {
 }
 
@@ -72,7 +72,7 @@ ImportCommand* ImportCommand::importerFactory(KBookmarkModel* model, const QStri
     else if (type == QLatin1String("NS")) return new NSImportCommand(model);
     else {
         qCritical() << "ImportCommand::importerFactory() - invalid type (" << type << ")!" << endl;
-        return 0;
+        return nullptr;
     }
 }
 
@@ -85,7 +85,7 @@ ImportCommand* ImportCommand::performImport(KBookmarkModel* model, const QString
     QString mydirname = importer->requestFilename();
     if (mydirname.isEmpty()) {
         delete importer;
-        return 0;
+        return nullptr;
     }
 
     int answer =
@@ -96,7 +96,7 @@ ImportCommand* ImportCommand::performImport(KBookmarkModel* model, const QString
 
     if (answer == KMessageBox::Cancel) {
         delete importer;
-        return 0;
+        return nullptr;
     }
 
     importer->import(mydirname, answer == KMessageBox::Yes);

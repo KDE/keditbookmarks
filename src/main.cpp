@@ -62,7 +62,7 @@ static bool askUser(const QString& filename, bool &readonly) {
                 name = bookmarks;
             if( name == filename)
             {
-                int ret = KMessageBox::warningYesNo(0,
+                int ret = KMessageBox::warningYesNo(nullptr,
                 i18n("Another instance of %1 is already running. Do you really "
                 "want to open another instance or continue work in the same instance?\n"
                 "Please note that, unfortunately, duplicate views are read-only.", QGuiApplication::applicationDisplayName()),
@@ -163,7 +163,7 @@ int main(int argc, char **argv)
         GlobalBookmarkManager::self()->createManager(filename, QString(), new CommandHistory());
         GlobalBookmarkManager::ExportType exportType = GlobalBookmarkManager::MozillaExport; // uumm.. can i just set it to -1 ?
         int got = 0;
-        const char *arg, *arg2 = 0, *importType = 0;
+        const char *arg, *arg2 = nullptr, *importType = nullptr;
         if (arg = "exportmoz",  parser.isSet(arg)) { exportType = GlobalBookmarkManager::MozillaExport;  arg2 = arg; got++; }
         if (arg = "exportns",   parser.isSet(arg)) { exportType = GlobalBookmarkManager::NetscapeExport; arg2 = arg; got++; }
         if (arg = "exporthtml", parser.isSet(arg)) { exportType = GlobalBookmarkManager::HTMLExport;     arg2 = arg; got++; }

@@ -42,7 +42,7 @@ public:
 class KBOOKMARKMODEL_EXPORT KEBMacroCommand : public QUndoCommand, public IKEBCommand
 {
 public:
-   explicit KEBMacroCommand(const QString &name, QUndoCommand* parent = 0)
+   explicit KEBMacroCommand(const QString &name, QUndoCommand* parent = nullptr)
       : QUndoCommand(name, parent) {}
    virtual ~KEBMacroCommand() {}
    QString affectedBookmarks() const Q_DECL_OVERRIDE;
@@ -59,21 +59,21 @@ class KBOOKMARKMODEL_EXPORT CreateCommand : public QUndoCommand, public IKEBComm
 {
 public:
    // separator
-   CreateCommand(KBookmarkModel* model, const QString &address, QUndoCommand* parent = 0);
+   CreateCommand(KBookmarkModel* model, const QString &address, QUndoCommand* parent = nullptr);
 
    // bookmark
    CreateCommand(KBookmarkModel* model, const QString &address,
                  const QString &text, const QString &iconPath,
-                 const QUrl &url, QUndoCommand* parent = 0);
+                 const QUrl &url, QUndoCommand* parent = nullptr);
 
    // folder
    CreateCommand(KBookmarkModel* model, const QString &address,
                  const QString &text, const QString &iconPath,
-                 bool open, QUndoCommand* parent = 0);
+                 bool open, QUndoCommand* parent = nullptr);
 
    // clone existing bookmark
    CreateCommand(KBookmarkModel* model, const QString &address,
-                 const KBookmark &original, const QString &name = QString(), QUndoCommand* parent = 0);
+                 const KBookmark &original, const QString &name = QString(), QUndoCommand* parent = nullptr);
 
    QString finalAddress() const;
 
@@ -98,7 +98,7 @@ private: // TODO move it all to a d pointer
 class KBOOKMARKMODEL_EXPORT EditCommand : public QUndoCommand, public IKEBCommand
 {
 public:
-   EditCommand(KBookmarkModel* model, const QString & address, int col, const QString & newValue, QUndoCommand* parent = 0);
+   EditCommand(KBookmarkModel* model, const QString & address, int col, const QString & newValue, QUndoCommand* parent = nullptr);
    virtual ~EditCommand() {}
    void redo() Q_DECL_OVERRIDE;
    void undo() Q_DECL_OVERRIDE;
@@ -115,7 +115,7 @@ private:
 class KBOOKMARKMODEL_EXPORT DeleteCommand : public QUndoCommand, public IKEBCommand
 {
 public:
-   explicit DeleteCommand(KBookmarkModel* model, const QString &from, bool contentOnly = false, QUndoCommand* parent = 0);
+   explicit DeleteCommand(KBookmarkModel* model, const QString &from, bool contentOnly = false, QUndoCommand* parent = nullptr);
    virtual ~DeleteCommand() { delete m_cmd; delete m_subCmd; }
    void redo() Q_DECL_OVERRIDE;
    void undo() Q_DECL_OVERRIDE;
@@ -135,7 +135,7 @@ class SortItem;
 class KBOOKMARKMODEL_EXPORT SortCommand : public KEBMacroCommand
 {
 public:
-   SortCommand(KBookmarkModel* model, const QString &name, const QString &groupAddress, QUndoCommand* parent = 0);
+   SortCommand(KBookmarkModel* model, const QString &name, const QString &groupAddress, QUndoCommand* parent = nullptr);
    virtual ~SortCommand()
    {}
    void redo() Q_DECL_OVERRIDE;

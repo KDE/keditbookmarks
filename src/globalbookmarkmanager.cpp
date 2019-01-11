@@ -25,11 +25,11 @@
 #include "kbookmarkmodel/model.h"
 #include "kbookmarkmodel/commandhistory.h"
 
-GlobalBookmarkManager *GlobalBookmarkManager::s_mgr = 0;
+GlobalBookmarkManager *GlobalBookmarkManager::s_mgr = nullptr;
 
 GlobalBookmarkManager::GlobalBookmarkManager()
-    : QObject(0),
-      m_mgr(0), m_model(0)
+    : QObject(nullptr),
+      m_mgr(nullptr), m_model(nullptr)
 {
 }
 

@@ -35,7 +35,7 @@ FavIconsItrHolder::FavIconsItrHolder(QObject* parent, KBookmarkModel* model)
 /* -------------------------- */
 
 FavIconsItr::FavIconsItr(BookmarkIteratorHolder* holder, const QList<KBookmark>& bks)
-    : BookmarkIterator(holder, bks), m_updater(0)
+    : BookmarkIterator(holder, bks), m_updater(nullptr)
 {
 }
 

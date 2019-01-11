@@ -37,9 +37,9 @@
 FavIconUpdater::FavIconUpdater(QObject *parent)
     : QObject(parent)
 {
-    m_part = 0;
-    m_webGrabber = 0;
-    m_browserIface = 0;
+    m_part = nullptr;
+    m_webGrabber = nullptr;
+    m_browserIface = nullptr;
 }
 
 void FavIconUpdater::downloadIcon(const KBookmark &bk)
@@ -78,7 +78,7 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
     if (!m_part) {
         QString partLoadingError;
         KParts::ReadOnlyPart *part
-            = KMimeTypeTrader::createPartInstanceFromQuery<KParts::ReadOnlyPart>(QStringLiteral("text/html"), 0, this, QString(), QVariantList(), &partLoadingError);
+            = KMimeTypeTrader::createPartInstanceFromQuery<KParts::ReadOnlyPart>(QStringLiteral("text/html"), nullptr, this, QString(), QVariantList(), &partLoadingError);
         if (!part) {
             emit done(false, i18n("%1; no HTML component found (%2)", currentError, partLoadingError));
             return;
@@ -96,8 +96,8 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
         m_browserIface = new KParts::BrowserInterface(this);
         ext->setBrowserInterface(m_browserIface);
 
-        connect(ext, SIGNAL(setIconUrl(QUrl)),
-                this, SLOT(setIconUrl(QUrl)));
+        connect(ext, &KParts::BrowserExtension::setIconUrl,
+                this, &FavIconUpdater::setIconUrl);
 
         m_part = part;
     }
@@ -106,7 +106,7 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
     // only once.
     delete m_webGrabber;
     m_webGrabber = new FavIconWebGrabber(m_part, bk.url());
-    connect(m_webGrabber, SIGNAL(done(bool,QString)), this, SIGNAL(done(bool,QString)));
+    connect(m_webGrabber, &FavIconWebGrabber::done, this, &FavIconUpdater::done);
 }
 
 // khtml callback
@@ -117,7 +117,7 @@ void FavIconUpdater::setIconUrl(const QUrl &iconURL)
     connect(job, &KIO::FavIconRequestJob::result, this, &FavIconUpdater::slotResult);
 
     delete m_webGrabber;
-    m_webGrabber = 0;
+    m_webGrabber = nullptr;
 }
 
 void FavIconUpdater::slotResult(KJob *job)
@@ -147,8 +147,8 @@ FavIconWebGrabber::FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url
     //FIXME only connect to result?
 //  connect(part, SIGNAL(result(KIO::Job*job)),
 //          this, SLOT(slotCompleted()));
-    connect(part, SIGNAL(canceled(QString)),
-            this, SLOT(slotCanceled(QString)));
+    connect(part, &KParts::ReadOnlyPart::canceled,
+            this, &FavIconWebGrabber::slotCanceled);
     connect(part, SIGNAL(completed(bool)),
             this, SLOT(slotCompleted()));
 
@@ -159,8 +159,8 @@ FavIconWebGrabber::FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url
     KIO::Job *job = KIO::get(m_url, KIO::NoReload, KIO::HideProgressInfo);
     job->addMetaData( QStringLiteral("cookies"), QStringLiteral("none") );
     job->addMetaData( QStringLiteral("errorPage"), QStringLiteral("false") );
-    connect(job, SIGNAL(result(KJob*)),
-            this, SLOT(slotFinished(KJob*)));
+    connect(job, &KJob::result,
+            this, &FavIconWebGrabber::slotFinished);
     connect(job, SIGNAL(mimetype(KIO::Job*,QString)),
             this, SLOT(slotMimetype(KIO::Job*,QString)));
 }

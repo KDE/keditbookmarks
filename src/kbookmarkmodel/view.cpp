@@ -26,8 +26,8 @@ KBookmarkView::KBookmarkView(QWidget *parent)
 {
     setAcceptDrops(true);
     setDefaultDropAction(Qt::MoveAction);
-    connect(this, SIGNAL(expanded(QModelIndex)), this, SLOT(slotExpanded(QModelIndex)));
-    connect(this, SIGNAL(collapsed(QModelIndex)), this, SLOT(slotCollapsed(QModelIndex)));
+    connect(this, &QTreeView::expanded, this, &KBookmarkView::slotExpanded);
+    connect(this, &QTreeView::collapsed, this, &KBookmarkView::slotCollapsed);
 }
 
 KBookmarkView::~KBookmarkView()

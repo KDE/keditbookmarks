@@ -66,10 +66,10 @@ void KEBApp::createActions() {
 
     m_actionsImpl = new ActionsImpl(this, GlobalBookmarkManager::self()->model());
 
-    connect(m_actionsImpl->testLinkHolder(), SIGNAL(setCancelEnabled(bool)),
-            this, SLOT(setCancelTestsEnabled(bool)));
-    connect(m_actionsImpl->favIconHolder(), SIGNAL(setCancelEnabled(bool)),
-            this, SLOT(setCancelFavIconUpdatesEnabled(bool)));
+    connect(m_actionsImpl->testLinkHolder(), &BookmarkIteratorHolder::setCancelEnabled,
+            this, &KEBApp::setCancelTestsEnabled);
+    connect(m_actionsImpl->favIconHolder(), &BookmarkIteratorHolder::setCancelEnabled,
+            this, &KEBApp::setCancelFavIconUpdatesEnabled);
 
     // save and quit should probably not be in the toplevel???
     (void) KStandardAction::quit(

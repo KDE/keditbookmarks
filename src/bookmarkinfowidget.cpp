@@ -131,7 +131,7 @@ void BookmarkInfoWidget::commitChanges()
 void BookmarkInfoWidget::commitTitle()
 {
     // no more change compression
-    titlecmd = 0;
+    titlecmd = nullptr;
 }
 
 void BookmarkInfoWidget::slotTextChangedTitle(const QString &str)
@@ -155,7 +155,7 @@ void BookmarkInfoWidget::slotTextChangedTitle(const QString &str)
 
 void BookmarkInfoWidget::commitURL()
 {
-    urlcmd = 0;
+    urlcmd = nullptr;
 }
 
 void BookmarkInfoWidget::slotTextChangedURL(const QString &str) {
@@ -178,7 +178,7 @@ void BookmarkInfoWidget::slotTextChangedURL(const QString &str) {
 
 void BookmarkInfoWidget::commitComment()
 {
-    commentcmd = 0;
+    commentcmd = nullptr;
 }
 
 void BookmarkInfoWidget::slotTextChangedComment(const QString &str) {
@@ -214,19 +214,19 @@ void BookmarkInfoWidget::slotUpdate()
 BookmarkInfoWidget::BookmarkInfoWidget(BookmarkListView * lv, KBookmarkModel* model, QWidget *parent)
     : QWidget(parent), m_model(model), mBookmarkListView(lv) {
 
-    connect(mBookmarkListView->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)),
-            SLOT(slotUpdate()));
+    connect(mBookmarkListView->selectionModel(), &QItemSelectionModel::selectionChanged,
+            this, &BookmarkInfoWidget::slotUpdate);
 
-    connect(mBookmarkListView->model(), SIGNAL(dataChanged(QModelIndex,QModelIndex)),
-            SLOT(slotUpdate()));
+    connect(mBookmarkListView->model(), &QAbstractItemModel::dataChanged,
+            this, &BookmarkInfoWidget::slotUpdate);
 
     timer = new QTimer(this);
     timer->setSingleShot(true);
     connect(timer, &QTimer::timeout, this, &BookmarkInfoWidget::commitChanges);
 
-    titlecmd = 0;
-    urlcmd = 0;
-    commentcmd = 0;
+    titlecmd = nullptr;
+    urlcmd = nullptr;
+    commentcmd = nullptr;
 
     QHBoxLayout *layout = new QHBoxLayout(this);
     QFormLayout *form1 = new QFormLayout();

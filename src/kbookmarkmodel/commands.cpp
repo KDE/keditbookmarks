@@ -275,7 +275,7 @@ void EditCommand::modify(const QString &newValue)
 /* -------------------------------------- */
 
 DeleteCommand::DeleteCommand(KBookmarkModel* model, const QString &from, bool contentOnly, QUndoCommand* parent)
-    : QUndoCommand(parent), m_model(model), m_from(from), m_cmd(0), m_subCmd(0), m_contentOnly(contentOnly)
+    : QUndoCommand(parent), m_model(model), m_from(from), m_cmd(nullptr), m_subCmd(nullptr), m_contentOnly(contentOnly)
 {
     // NOTE - DeleteCommand needs no text, it is always embedded in a macrocommand
 }
@@ -362,7 +362,7 @@ KEBMacroCommand* DeleteCommand::deleteAll(KBookmarkModel* model, const KBookmark
 /* -------------------------------------- */
 
 MoveCommand::MoveCommand(KBookmarkModel* model, const QString &from, const QString &to, const QString &name, QUndoCommand* parent)
-       : QUndoCommand(parent), m_model(model), m_from(from), m_to(to), m_cc(0), m_dc(0)
+       : QUndoCommand(parent), m_model(model), m_from(from), m_to(to), m_cc(nullptr), m_dc(nullptr)
 {
     setText(i18nc("(qtundo-format)", "Move %1", name));
 }

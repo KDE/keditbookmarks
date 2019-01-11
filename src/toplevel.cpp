@@ -51,7 +51,7 @@
 #include <kstandardaction.h>
 
 #include <QDBusConnection>
-KEBApp *KEBApp::s_topLevel = 0;
+KEBApp *KEBApp::s_topLevel = nullptr;
 
 KEBApp::KEBApp(
     const QString &bookmarksFile, bool readonly,
@@ -78,8 +78,8 @@ KEBApp::KEBApp(
     else
         createGUI(QStringLiteral("keditbookmarks-genui.rc"));
 
-    connect(qApp->clipboard(), SIGNAL(dataChanged()),
-                               SLOT(slotClipboardDataChanged()));
+    connect(qApp->clipboard(), &QClipboard::dataChanged,
+                               this, &KEBApp::slotClipboardDataChanged);
 
     m_canPaste = false;
 
@@ -116,11 +116,11 @@ KEBApp::KEBApp(
     slotClipboardDataChanged();
     setAutoSaveSettings();
 
-    connect(mBookmarkListView->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)),
-            this, SLOT(selectionChanged()));
+    connect(mBookmarkListView->selectionModel(), &QItemSelectionModel::selectionChanged,
+            this, &KEBApp::selectionChanged);
 
-    connect(mBookmarkFolderView->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)),
-            this, SLOT(selectionChanged()));
+    connect(mBookmarkFolderView->selectionModel(), &QItemSelectionModel::selectionChanged,
+            this, &KEBApp::selectionChanged);
 
     setCancelFavIconUpdatesEnabled(false);
     setCancelTestsEnabled(false);
@@ -408,7 +408,7 @@ KEBApp::~KEBApp() {
     // Save again, just in case the user expanded/collapsed folders (#131127)
     GlobalBookmarkManager::self()->notifyManagers();
 
-    s_topLevel = 0;
+    s_topLevel = nullptr;
     delete m_cmdHistory;
     delete m_actionsImpl;
     delete mBookmarkListView;
