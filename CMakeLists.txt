@@ -9,6 +9,10 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 set(QT_MIN_VERSION "5.6.0")
 
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+
 include(ECMOptionalAddSubdirectory)
 include(ECMInstallIcons)
 include(ECMSetupVersion)
@@ -19,10 +23,6 @@ include(CMakePackageConfigHelpers)
 include(FeatureSummary)
 include(ECMAddAppIcon)
 include(CheckFunctionExists)
-
-include(KDEInstallDirs)
-include(KDECMakeSettings)
-include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 
 set(KEDITBOOKMARKS_VERSION "5.97.0")
 
