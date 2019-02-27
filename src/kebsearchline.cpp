@@ -671,7 +671,7 @@ KViewSearchLine *KViewSearchLineWidget::createSearchLine(QAbstractItemView *view
 void KViewSearchLineWidget::createWidgets()
 {
     d->layout = new QHBoxLayout(this);
-    d->layout->setMargin(0);
+    d->layout->setContentsMargins(0, 0, 0, 0);
 
     QLabel *label = new QLabel(i18n("S&earch:"));
     label->setObjectName( QStringLiteral("kde toolbar widget" ));
