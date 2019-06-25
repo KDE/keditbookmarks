@@ -24,6 +24,7 @@
 #include "toplevel.h"
 #include "importers.h"
 #include "kbookmarkmodel/commandhistory.h"
+#include "keditbookmarks_version.h"
 
 #include <QApplication>
 #include <QDebug>
@@ -103,7 +104,7 @@ int main(int argc, char **argv)
 
     KAboutData aboutData(QStringLiteral("keditbookmarks"),
                          i18n("Bookmark Editor"),
-                         QStringLiteral("5.0"),
+                         QStringLiteral(KEDITBOOKMARKS_VERSION_STRING),
                          i18n("Bookmark Organizer and Editor"),
                          KAboutLicense::GPL,
                          i18n("Copyright 2000-2017, KDE developers") );

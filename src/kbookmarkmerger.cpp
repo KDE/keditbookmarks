@@ -37,6 +37,8 @@
 #include <QCommandLineOption>
 #include <KLocalizedString>
 
+#include "keditbookmarks_version.h"
+
 int main( int argc, char**argv )
 {
 	QApplication app(argc, argv);
@@ -45,7 +47,7 @@ int main( int argc, char**argv )
 
 	KAboutData aboutData( QStringLiteral("kbookmarkmerger"),
 	                      i18n( "KBookmarkMerger" ),
-	                      QStringLiteral("1.0"),
+	                      QStringLiteral(KEDITBOOKMARKS_VERSION_STRING),
 	                      i18n("Merges bookmarks installed by 3rd parties into the user's bookmarks"),
 	                      KAboutLicense::BSDL,
 	                      i18n("Copyright © 2005 Frerich Raabe") );

@@ -4,6 +4,8 @@ add_subdirectory(kbookmarkmodel)
 
 ########### next target ###############
 
+ecm_setup_version(${KDE_APPLICATIONS_VERSION} VARIABLE_PREFIX KEDITBOOKMARKS VERSION_HEADER keditbookmarks_version.h)
+
 set(kbookmarkmerger_SRCS kbookmarkmerger.cpp )
 
 add_executable(kbookmarkmerger ${kbookmarkmerger_SRCS})
