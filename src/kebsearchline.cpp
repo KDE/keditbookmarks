@@ -63,7 +63,7 @@ KViewSearchLine::KViewSearchLine(QWidget *parent, QAbstractItemView *v) :
 {
     d = new KViewSearchLinePrivate;
 
-    setClearButtonShown(true);
+    setClearButtonEnabled(true);
 
     d->treeView = dynamic_cast<QTreeView *>(v);
     d->listView = dynamic_cast<QListView *>(v);
@@ -94,7 +94,7 @@ KViewSearchLine::KViewSearchLine(QWidget *parent) :
 {
     d = new KViewSearchLinePrivate;
 
-    setClearButtonShown(true);
+    setClearButtonEnabled(true);
 
     d->treeView = nullptr;
     d->listView = nullptr;
