@@ -34,7 +34,6 @@
 #include <qdom.h>
 #include <QApplication>
 #include <QCommandLineParser>
-#include <QCommandLineOption>
 #include <KLocalizedString>
 
 #include "keditbookmarks_version.h"

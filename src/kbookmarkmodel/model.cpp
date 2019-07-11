@@ -28,7 +28,6 @@
 
 #include <QIcon>
 #include <QDebug>
-#include <QVector>
 #include <QStringList>
 #include <QMimeData>
 

@@ -30,7 +30,6 @@
 #include <QFormLayout>
 
 #include <klocalizedstring.h>
-#include <QDebug>
 
 #include <klineedit.h>
 

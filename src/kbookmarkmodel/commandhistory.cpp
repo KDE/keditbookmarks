@@ -22,7 +22,6 @@
 #include <kactioncollection.h>
 #include <kbookmarkmanager.h>
 
-#include <QDebug>
 #include <QAction>
 #include <QUndoCommand>
 #include <QUndoStack>

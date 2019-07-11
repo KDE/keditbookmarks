@@ -28,7 +28,6 @@
 #include "kbookmarkmodel/model.h"
 
 #include <QFileDialog>
-#include <QRegExp>
 #include <QDebug>
 #include <klocalizedstring.h>
 
