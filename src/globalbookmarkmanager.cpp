@@ -96,7 +96,7 @@ QString GlobalBookmarkManager::makeTimeStr(const QString & in)
 QString GlobalBookmarkManager::makeTimeStr(int b)
 {
     QDateTime dt;
-    dt.setTime_t(b);
+    dt.fromSecsSinceEpoch(b);
     return (dt.daysTo(QDateTime::currentDateTime()) > 31)
         ? dt.date().toString(Qt::DefaultLocaleLongDate)
         : dt.toString(Qt::DefaultLocaleLongDate);

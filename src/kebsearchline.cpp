@@ -228,7 +228,7 @@ bool KViewSearchLine::itemMatches(const QModelIndex & item, const QString &s) co
             {
                 if(*it < columnCount)
                 {
-                    const QString & text = model()->data(parent.child(row, *it)).toString();
+                    const QString & text = model()->data(model()->index(row, *it, parent)).toString();
                     if(text.indexOf(s, 0, d->caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) >= 0)
                         return true;
                 }
@@ -239,7 +239,7 @@ bool KViewSearchLine::itemMatches(const QModelIndex & item, const QString &s) co
             {
                 if(d->treeView->isColumnHidden(i) == false)
                 {
-                    const QString & text = model()->data(parent.child(row, i)).toString();
+                    const QString & text = model()->data(model()->index(row, i, parent)).toString();
                     if(text.indexOf(s, 0, d->caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) >= 0)
                         return true;
                 }
@@ -526,7 +526,7 @@ bool KViewSearchLine::recheck(const QModelIndex & first, const QModelIndex & las
     while(true)
     {
         int rowCount = model()->rowCount(index);
-        if(d->keepParentsVisible && rowCount && anyVisible( index.child(0,0), index.child( rowCount-1, 0)))
+        if(d->keepParentsVisible && rowCount && anyVisible( model()->index(0,0, index), model()->index( rowCount-1, 0, index)))
         {
             visible = true;
         }
@@ -619,7 +619,7 @@ bool KViewSearchLine::checkItemParentsVisible(QModelIndex index)
     for(int i = 0; i<rowCount; ++i)
     {
         index = model()->index(i, column, index.parent());
-        if((model()->rowCount(index) && checkItemParentsVisible(index.child(0,column)))
+        if((model()->rowCount(index) && checkItemParentsVisible(model()->index(0,column, index)))
            || itemMatches(index, d->search))
         {
             visible = true;
