@@ -15,7 +15,7 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *  along with this program.  If not, see <https://www.gnu.org/licenses/>
  */
 
 #include <QAction>
@@ -93,10 +93,10 @@ private Q_SLOTS:
     // The commands modify the model, so the test code uses the commands
     void testAddBookmark()
     {
-        CreateCommand* cmd = new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("test_bk"), QStringLiteral("www"), QUrl(QStringLiteral("http://www.kde.org")));
+        CreateCommand* cmd = new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("test_bk"), QStringLiteral("www"), QUrl(QStringLiteral("https://www.kde.org")));
         cmd->redo();
         QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << "/0");
-        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager), QStringList() << "http://www.kde.org");
+        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager), QStringList() << "https://www.kde.org");
         QCOMPARE(m_model->rowCount(m_rootIndex), 1);
         cmd->undo();
         QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList());
@@ -106,7 +106,7 @@ private Q_SLOTS:
 
     void testDeleteBookmark()
     {
-        CreateCommand* cmd = new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("test_bk"), QStringLiteral("www"), QUrl(QStringLiteral("http://www.kde.org")));
+        CreateCommand* cmd = new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("test_bk"), QStringLiteral("www"), QUrl(QStringLiteral("https://www.kde.org")));
         cmd->redo();
         QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << "/0");
         DeleteCommand* deleteCmd = new DeleteCommand(m_model, QStringLiteral("/0"));
@@ -128,13 +128,13 @@ private Q_SLOTS:
         QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << "/0/");
         QCOMPARE(m_model->rowCount(m_rootIndex), 1);
 
-        const QString kde = QStringLiteral("http://www.kde.org");
+        const QString kde = QStringLiteral("https://www.kde.org");
         CreateCommand* cmd = new CreateCommand(m_model, QStringLiteral("/0/0"), QStringLiteral("test_bk"), QStringLiteral("www"), QUrl(kde));
         m_cmdHistory->addCommand(cmd); // calls redo
         QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << "/0/" << "/0/0");
 
         // Insert before this bookmark
-        const QString first = QStringLiteral("http://first.example.com");
+        const QString first = QStringLiteral("https://first.example.com");
         m_cmdHistory->addCommand(new CreateCommand(m_model, QStringLiteral("/0/0"), QStringLiteral("first_bk"), QStringLiteral("www"), QUrl(first)));
         QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << "/0/" << "/0/0" << "/0/1");
         QCOMPARE(BookmarkLister::urlList(m_bookmarkManager), QStringList() << first << kde);
@@ -190,7 +190,7 @@ private Q_SLOTS:
         QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList());
         CreateCommand* folderCmd = new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("folder"), QStringLiteral("folder"), true /*open*/);
         m_cmdHistory->addCommand(folderCmd); // calls redo
-        const QString kde = QStringLiteral("http://www.kde.org");
+        const QString kde = QStringLiteral("https://www.kde.org");
         QStringList bookmarks;
         bookmarks << QStringLiteral("Faure") << QStringLiteral("Web") << QStringLiteral("Kde") << QStringLiteral("Avatar") << QStringLiteral("David");
         for (int i = 0; i < bookmarks.count(); ++i) {

@@ -104,7 +104,7 @@ void BookmarkInfoWidget::showBookmark(const KBookmark &bk)
 
 void BookmarkInfoWidget::updateStatus()
 {
-   //FIXME we don't want every metadata element, but only that with owner "http://www.kde.org"
+   //FIXME we don't want every metadata element, but only that with owner "https://www.kde.org"
    QString visitDate =
         GlobalBookmarkManager::makeTimeStr(m_bk.metaDataItem(QStringLiteral("time_visited")));
     m_visitdate_le->setReadOnly(true);
