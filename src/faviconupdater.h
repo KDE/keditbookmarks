@@ -21,7 +21,6 @@
 #include <kbookmark.h>
 
 #include <kparts/part.h>
-#include <kparts/browserinterface.h>
 #include <KParts/ReadOnlyPart>
 #include <QUrl>
 #include <KIO/Job>
@@ -67,7 +66,6 @@ Q_SIGNALS:
 
 private:
     KParts::ReadOnlyPart *m_part;
-    KParts::BrowserInterface *m_browserIface;
     FavIconWebGrabber *m_webGrabber;
     KBookmark m_bk;
     bool webupdate;

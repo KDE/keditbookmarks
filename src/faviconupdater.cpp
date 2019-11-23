@@ -31,7 +31,7 @@
 #include <KIO/FavIconRequestJob>
 
 #include <kparts/part.h>
-#include <kparts/browserextension.h>
+#include <KParts/BrowserExtension>
 #include <kmimetypetrader.h>
 
 FavIconUpdater::FavIconUpdater(QObject *parent)
@@ -39,7 +39,6 @@ FavIconUpdater::FavIconUpdater(QObject *parent)
 {
     m_part = nullptr;
     m_webGrabber = nullptr;
-    m_browserIface = nullptr;
 }
 
 void FavIconUpdater::downloadIcon(const KBookmark &bk)
@@ -64,7 +63,6 @@ void FavIconUpdater::downloadIcon(const KBookmark &bk)
 
 FavIconUpdater::~FavIconUpdater()
 {
-    delete m_browserIface;
     delete m_webGrabber;
     delete m_part;
 }
@@ -91,10 +89,6 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
 
         KParts::BrowserExtension *ext = KParts::BrowserExtension::childObject(part);
         Q_ASSERT(ext);
-
-        // TODO: what is this useful for?
-        m_browserIface = new KParts::BrowserInterface(this);
-        ext->setBrowserInterface(m_browserIface);
 
         connect(ext, &KParts::BrowserExtension::setIconUrl,
                 this, &FavIconUpdater::setIconUrl);
