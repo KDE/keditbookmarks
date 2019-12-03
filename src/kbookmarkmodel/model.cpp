@@ -167,7 +167,7 @@ Qt::ItemFlags KBookmarkModel::flags(const QModelIndex &index) const
     static const Qt::ItemFlags groupDragEditFlags =    groupFlags | Qt::ItemIsDragEnabled | Qt::ItemIsEditable;
     static const Qt::ItemFlags groupEditFlags =        groupFlags | Qt::ItemIsEditable;
     static const Qt::ItemFlags rootFlags =             groupFlags;
-    static const Qt::ItemFlags bookmarkFlags =         nullptr;
+    static const Qt::ItemFlags bookmarkFlags =         Qt::NoItemFlags;
     static const Qt::ItemFlags bookmarkDragEditFlags = bookmarkFlags | Qt::ItemIsDragEnabled | Qt::ItemIsEditable;
     static const Qt::ItemFlags bookmarkEditFlags =     bookmarkFlags | Qt::ItemIsEditable;
 
