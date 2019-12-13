@@ -57,14 +57,14 @@ public:
     };
 
     //reimplemented functions
-    QVariant data(const QModelIndex &index, int role) const Q_DECL_OVERRIDE;
-    Qt::ItemFlags flags(const QModelIndex &index) const Q_DECL_OVERRIDE;
-    QVariant headerData(int section, Qt::Orientation, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
-    QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE;
-    QModelIndex parent(const QModelIndex &index) const Q_DECL_OVERRIDE;
-    bool setData(const QModelIndex &index, const QVariant &value, int role) Q_DECL_OVERRIDE;
-    int rowCount(const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE;
-    int columnCount(const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE;
+    QVariant data(const QModelIndex &index, int role) const override;
+    Qt::ItemFlags flags(const QModelIndex &index) const override;
+    QVariant headerData(int section, Qt::Orientation, int role = Qt::DisplayRole) const override;
+    QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const override;
+    QModelIndex parent(const QModelIndex &index) const override;
+    bool setData(const QModelIndex &index, const QVariant &value, int role) override;
+    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    int columnCount(const QModelIndex &parent = QModelIndex()) const override;
     virtual void resetModel();
 
     QModelIndex indexForBookmark(const KBookmark& bk) const;
@@ -80,10 +80,10 @@ public:
     void removeBookmark(const KBookmark &bookmark);
 
     //drag and drop
-    bool dropMimeData(const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent) Q_DECL_OVERRIDE;
-    QStringList mimeTypes() const Q_DECL_OVERRIDE;
-    QMimeData * mimeData(const QModelIndexList & indexes) const Q_DECL_OVERRIDE;
-    Qt::DropActions supportedDropActions() const Q_DECL_OVERRIDE;
+    bool dropMimeData(const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent) override;
+    QStringList mimeTypes() const override;
+    QMimeData * mimeData(const QModelIndexList & indexes) const override;
+    Qt::DropActions supportedDropActions() const override;
 
 public Q_SLOTS:
     void notifyManagers(const KBookmarkGroup& grp);

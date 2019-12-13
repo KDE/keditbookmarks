@@ -46,9 +46,9 @@ public:
    virtual ~ImportCommand()
    {}
 
-   void redo() Q_DECL_OVERRIDE;
-   void undo() Q_DECL_OVERRIDE;
-   QString affectedBookmarks() const Q_DECL_OVERRIDE;
+   void redo() override;
+   void undo() override;
+   QString affectedBookmarks() const override;
 
    QString groupAddress() const { return m_group; }
    QString folder() const;
@@ -89,31 +89,31 @@ class XBELImportCommand : public ImportCommand
 {
 public:
    explicit XBELImportCommand(KBookmarkModel* model) : ImportCommand(model) {}
-   void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE = 0;
-   QString requestFilename() const Q_DECL_OVERRIDE = 0;
+   void import(const QString &fileName, bool folder) override = 0;
+   QString requestFilename() const override = 0;
 private:
-   void doCreateHoldingFolder(KBookmarkGroup &bkGroup) Q_DECL_OVERRIDE;
-   void doExecute(const KBookmarkGroup &) Q_DECL_OVERRIDE;
+   void doCreateHoldingFolder(KBookmarkGroup &bkGroup) override;
+   void doExecute(const KBookmarkGroup &) override;
 };
 
 class GaleonImportCommand : public XBELImportCommand
 {
 public:
    explicit GaleonImportCommand(KBookmarkModel* model) : XBELImportCommand(model) { setVisibleName(i18n("Galeon")); }
-   void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
+   void import(const QString &fileName, bool folder) override {
       init(fileName, folder, QLatin1String(""), false);
    }
-   QString requestFilename() const Q_DECL_OVERRIDE;
+   QString requestFilename() const override;
 };
 
 class KDE2ImportCommand : public XBELImportCommand
 {
 public:
    explicit KDE2ImportCommand(KBookmarkModel* model) : XBELImportCommand(model) { setVisibleName(i18n("KDE")); }
-   void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
+   void import(const QString &fileName, bool folder) override {
       init(fileName, folder, QLatin1String(""), false);
    }
-   QString requestFilename() const Q_DECL_OVERRIDE;
+   QString requestFilename() const override;
 };
 
 // part pure
@@ -121,54 +121,54 @@ class HTMLImportCommand : public ImportCommand
 {
 public:
    explicit HTMLImportCommand(KBookmarkModel* model) : ImportCommand(model) {}
-   void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE = 0;
-   QString requestFilename() const Q_DECL_OVERRIDE = 0;
+   void import(const QString &fileName, bool folder) override = 0;
+   QString requestFilename() const override = 0;
 private:
-   void doExecute(const KBookmarkGroup &) Q_DECL_OVERRIDE;
+   void doExecute(const KBookmarkGroup &) override;
 };
 
 class NSImportCommand : public HTMLImportCommand
 {
 public:
    explicit NSImportCommand(KBookmarkModel* model) : HTMLImportCommand(model) { setVisibleName(i18n("Netscape")); }
-   void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
+   void import(const QString &fileName, bool folder) override {
       init(fileName, folder, QStringLiteral("netscape"), false);
    }
-   QString requestFilename() const Q_DECL_OVERRIDE;
+   QString requestFilename() const override;
 };
 
 class MozImportCommand : public HTMLImportCommand
 {
 public:
    explicit MozImportCommand(KBookmarkModel* model) : HTMLImportCommand(model) { setVisibleName(i18n("Mozilla")); }
-   void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
+   void import(const QString &fileName, bool folder) override {
       init(fileName, folder, QStringLiteral("mozilla"), true);
    }
-   QString requestFilename() const Q_DECL_OVERRIDE;
+   QString requestFilename() const override;
 };
 
 class IEImportCommand : public ImportCommand
 {
 public:
    explicit IEImportCommand(KBookmarkModel* model) : ImportCommand(model) { setVisibleName(i18n("IE")); }
-   void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
+   void import(const QString &fileName, bool folder) override {
       init(fileName, folder, QLatin1String(""), false);
    }
-   QString requestFilename() const Q_DECL_OVERRIDE;
+   QString requestFilename() const override;
 private:
-   void doExecute(const KBookmarkGroup &) Q_DECL_OVERRIDE;
+   void doExecute(const KBookmarkGroup &) override;
 };
 
 class OperaImportCommand : public ImportCommand
 {
 public:
    explicit OperaImportCommand(KBookmarkModel* model) : ImportCommand(model) { setVisibleName(i18n("Opera")); }
-   void import(const QString &fileName, bool folder) Q_DECL_OVERRIDE {
+   void import(const QString &fileName, bool folder) override {
       init(fileName, folder, QStringLiteral("opera"), false);
    }
-   QString requestFilename() const Q_DECL_OVERRIDE;
+   QString requestFilename() const override;
 private:
-   void doExecute(const KBookmarkGroup &) Q_DECL_OVERRIDE;
+   void doExecute(const KBookmarkGroup &) override;
 };
 
 #endif

@@ -162,7 +162,7 @@ protected:
     /**
     * Re-implemented for internal reasons.  API not affected.
     */
-    void contextMenuEvent( QContextMenuEvent*e ) Q_DECL_OVERRIDE;
+    void contextMenuEvent( QContextMenuEvent*e ) override;
 
 protected Q_SLOTS:
     /**

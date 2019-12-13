@@ -40,14 +40,14 @@ public:
    FavIconsItr(BookmarkIteratorHolder* holder, const QList<KBookmark>& bks);
    ~FavIconsItr();
 
-   void cancel() Q_DECL_OVERRIDE;
+   void cancel() override;
 
 public Q_SLOTS:
    void slotDone(bool succeeded, const QString& errorString);
 
 protected:
-   void doAction() Q_DECL_OVERRIDE;
-   bool isApplicable(const KBookmark &bk) const Q_DECL_OVERRIDE;
+   void doAction() override;
+   bool isApplicable(const KBookmark &bk) const override;
 
 private:
    void setStatus(const QString & status);

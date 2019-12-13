@@ -26,9 +26,9 @@ public:
    MoveCommand(KBookmarkModel* model, const QString &from, const QString &to, const QString &name = QString(), QUndoCommand* parent = nullptr);
    QString finalAddress() const;
    virtual ~MoveCommand() {}
-   void redo() Q_DECL_OVERRIDE;
-   void undo() Q_DECL_OVERRIDE;
-   QString affectedBookmarks() const Q_DECL_OVERRIDE;
+   void redo() override;
+   void undo() override;
+   QString affectedBookmarks() const override;
 private:
    KBookmarkModel* m_model;
    QString m_from;
