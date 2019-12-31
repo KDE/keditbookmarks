@@ -214,8 +214,7 @@ SelcAbilities KEBApp::getSelectionAbilities() const
         <<"\nsa.root         "<<selctionAbilities.root
         <<"\nsa.multiSelect  "<<selctionAbilities.multiSelect
         <<"\nsa.singleSelect "<<selctionAbilities.singleSelect
-        <<"\nsa.deleteEnabled"<<selctionAbilities.deleteEnabled
-        <<endl;
+        <<"\nsa.deleteEnabled"<<selctionAbilities.deleteEnabled;
 */
     return selctionAbilities;
 }

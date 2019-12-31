@@ -70,7 +70,7 @@ ImportCommand* ImportCommand::importerFactory(KBookmarkModel* model, const QStri
     else if (type == QLatin1String("Moz")) return new MozImportCommand(model);
     else if (type == QLatin1String("NS")) return new NSImportCommand(model);
     else {
-        qCritical() << "ImportCommand::importerFactory() - invalid type (" << type << ")!" << endl;
+        qCritical() << "ImportCommand::importerFactory() - invalid type (" << type << ")!";
         return nullptr;
     }
 }

@@ -84,7 +84,7 @@ void TestLinkItr::slotJobResult(KJob *job)
     const QString modDate = transfer->queryMetaData(QStringLiteral("modified"));
 
     if (transfer->error() || transfer->isErrorPage()) {
-        //qDebug()<<"***********"<<transfer->error()<<"  "<<transfer->isErrorPage()<<endl;
+        //qDebug()<<"***********"<<transfer->error()<<"  "<<transfer->isErrorPage();
         // can we assume that errorString will contain no entities?
         QString err = transfer->errorString();
         err.replace(QLatin1String("\n"), QLatin1String(" "));

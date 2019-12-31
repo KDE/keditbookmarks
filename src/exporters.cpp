@@ -32,7 +32,7 @@ HTMLExporter::HTMLExporter()
 void HTMLExporter::write(const KBookmarkGroup &grp, const QString &filename, bool showAddress) {
     QFile file(filename);
     if (!file.open(QIODevice::WriteOnly)) {
-        qCritical() << "Can't write to file " << filename << endl;
+        qCritical() << "Can't write to file " << filename;
         return;
     }
     QTextStream tstream(&file);
@@ -59,31 +59,34 @@ void HTMLExporter::visit(const KBookmark &bk) {
     // //qDebug() << "visit(" << bk.text() << ")";
     if(bk.isSeparator())
     {
-        m_out << bk.fullText() << "<br>"<<endl;
+        m_out << bk.fullText() << "<br>"<< QLatin1Char('\n');
     }
     else
     {
         if(m_showAddress)
         {
-            m_out << bk.fullText() <<"<br>"<< endl;
+            m_out << bk.fullText() <<"<br>"<< QLatin1Char('\n');
             m_out << "<i><div style =\"margin-left: 1em\">" << bk.url().url().toUtf8() << "</div></i>";
         }
         else
         {
             m_out << "<a href=\"" << bk.url().url().toUtf8() << "\">";
-            m_out << bk.fullText() << "</a><br>" << endl;
+            m_out << bk.fullText() << "</a><br>"<< QLatin1Char('\n');
         }
     }
+    m_out.flush();
 }
 
 void HTMLExporter::visitEnter(const KBookmarkGroup &grp) {
     // //qDebug() << "visitEnter(" << grp.text() << ")";
-    m_out << "<b>" << grp.fullText() << "</b><br>" << endl;
-    m_out << "<div style=\"margin-left: 2em\">"<< endl;
+    m_out << "<b>" << grp.fullText() << "</b><br>"<< QLatin1Char('\n');
+    m_out << "<div style=\"margin-left: 2em\">"<< QLatin1Char('\n');
+    m_out.flush();
 }
 
 void HTMLExporter::visitLeave(const KBookmarkGroup &) {
     // //qDebug() << "visitLeave()";
-    m_out << "</div>" << endl;
+    m_out << "</div>" << QLatin1Char('\n');
+    m_out.flush();
 }
 

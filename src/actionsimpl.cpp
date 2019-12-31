@@ -406,7 +406,7 @@ void ActionsImpl::slotInsertSeparator()
 void ActionsImpl::slotImport() {
     KEBApp::self()->bkInfo()->commitChanges();
     qDebug() << "ActionsImpl::slotImport() where sender()->name() == "
-               << sender()->objectName() << endl;
+               << sender()->objectName();
     ImportCommand* import
         = ImportCommand::performImport(m_model, sender()->objectName(), KEBApp::self());
     if (!import)
