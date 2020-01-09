@@ -1,7 +1,7 @@
 if(BUILD_TESTING)
   add_subdirectory(tests)
 endif()
-
+include_directories(${CMAKE_BINARY_DIR}/src/)
 set(kbookmarkmodel_SRCS
   commandhistory.cpp
   commands.cpp
