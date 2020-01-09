@@ -1,4 +1,7 @@
 ############ subdir ###################
+set(debug_file_common_SRCS)
+ecm_qt_declare_logging_category(debug_file_common_SRCS HEADER keditbookmarks_debug.h IDENTIFIER KEDITBOOKMARKS_LOG CATEGORY_NAME org.kde.keditbookmarks)
+
 
 add_subdirectory(kbookmarkmodel)
 
@@ -6,7 +9,7 @@ add_subdirectory(kbookmarkmodel)
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KEDITBOOKMARKS VERSION_HEADER keditbookmarks_version.h)
 
-set(kbookmarkmerger_SRCS kbookmarkmerger.cpp )
+set(kbookmarkmerger_SRCS kbookmarkmerger.cpp ${debug_file_common_SRCS})
 
 add_executable(kbookmarkmerger ${kbookmarkmerger_SRCS})
 
@@ -35,8 +38,8 @@ set(keditbookmarks_SRCS
    bookmarkinfowidget.cpp
    kebsearchline.cpp
    bookmarklistview.cpp
+   ${debug_file_common_SRCS}
 )
-
 set(toplevel_xml ${CMAKE_CURRENT_BINARY_DIR}/org.kde.keditbookmarks.xml)
 qt5_generate_dbus_interface( ${CMAKE_CURRENT_SOURCE_DIR}/toplevel.h org.kde.keditbookmarks.xml )
 

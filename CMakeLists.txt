@@ -24,7 +24,7 @@ include(ECMInstallIcons)
 include(ECMSetupVersion)
 include(ECMAddTests)
 include(ECMMarkNonGuiExecutable)
-
+include(ECMQtDeclareLoggingCategory)
 include(CMakePackageConfigHelpers)
 include(FeatureSummary)
 include(ECMAddAppIcon)
@@ -48,6 +48,6 @@ endif()
 
 add_subdirectory(src)
 add_subdirectory(doc)
-
+install(FILES keditbookmarks.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 

@@ -18,7 +18,7 @@
 */
 
 #include "kebsearchline.h"
-#include <QDebug>
+#include "keditbookmarks_debug.h"
 #include <QTimer>
 #include <QTreeView>
 #include <QListView>
@@ -407,7 +407,7 @@ void KViewSearchLine::slotColumnsRemoved(const QModelIndex &, int first, int las
         if(d->listView->modelColumn() >= first && d->listView->modelColumn()<= last)
         {
             if(d->listView->modelColumn()>last)
-                qCritical()<<"Columns were removed, the modelColumn() doesn't exist anymore. "
+                qCCritical(KEDITBOOKMARKS_LOG)<<"Columns were removed, the modelColumn() doesn't exist anymore. "
                            "K4listViewSearchLine can't cope with that.";
             updateSearch();
         }

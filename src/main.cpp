@@ -27,7 +27,7 @@
 #include "keditbookmarks_version.h"
 
 #include <QApplication>
-#include <QDebug>
+#include "keditbookmarks_debug.h"
 #include <QCommandLineParser>
 #include <QCommandLineOption>
 
@@ -77,7 +77,7 @@ static bool askUser(const QString& filename, bool &readonly) {
                     qlonglong id = 0;
                     if( value.isValid())
                         id = value;
-                    ////qDebug()<<" id !!!!!!!!!!!!!!!!!!! :"<<id;
+                    ////qCDebug(KEDITBOOKMARKS_LOG)<<" id !!!!!!!!!!!!!!!!!!! :"<<id;
                     KWindowSystem::activateWindow((WId)id);
                     return false;
                 } else if (ret == KMessageBox::Yes) {
@@ -180,14 +180,14 @@ int main(int argc, char **argv)
             Q_ASSERT(arg2);
             // TODO - maybe an xbel export???
             if (got > 1) { // got == 0 isn't possible as !isGui is dependent on "export.*"
-                qWarning() << i18n("You may only specify a single --export option.");
+                qCWarning(KEDITBOOKMARKS_LOG) << i18n("You may only specify a single --export option.");
                 return 1;
             }
             QString path = parser.value(arg2);
             GlobalBookmarkManager::self()->doExport(exportType, path);
         } else if (importType) {
             if (got > 1) { // got == 0 isn't possible as !isGui is dependent on "import.*"
-                qWarning() << i18n("You may only specify a single --import option.");
+                qCWarning(KEDITBOOKMARKS_LOG) << i18n("You may only specify a single --import option.");
                 return 1;
             }
             QString path = parser.value(arg2);

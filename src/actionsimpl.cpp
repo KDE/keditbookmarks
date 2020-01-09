@@ -38,7 +38,7 @@
 #include <QFileDialog>
 #include <QMimeData>
 #include <QApplication>
-#include <QDebug>
+#include "keditbookmarks_debug.h"
 
 #include <kactioncollection.h>
 #include <QIcon>
@@ -405,7 +405,7 @@ void ActionsImpl::slotInsertSeparator()
 
 void ActionsImpl::slotImport() {
     KEBApp::self()->bkInfo()->commitChanges();
-    qDebug() << "ActionsImpl::slotImport() where sender()->name() == "
+    qCDebug(KEDITBOOKMARKS_LOG) << "ActionsImpl::slotImport() where sender()->name() == "
                << sender()->objectName();
     ImportCommand* import
         = ImportCommand::performImport(m_model, sender()->objectName(), KEBApp::self());

@@ -27,7 +27,7 @@
 
 #include <kbookmarkmanager.h>
 
-#include <QDebug>
+#include "keditbookmarks_debug.h"
 
 
 #include <QDir>
@@ -63,7 +63,7 @@ int main( int argc, char**argv )
 	aboutData.processCommandLine(&parser);
 
 	if ( parser.positionalArguments().count() != 1 ) {
-        qCritical() << "No directory to scan for bookmarks specified.";
+        qCCritical(KEDITBOOKMARKS_LOG) << "No directory to scan for bookmarks specified.";
 		return 1;
 	}
 
@@ -88,7 +88,7 @@ int main( int argc, char**argv )
 	QString extraBookmarksDirName = parser.positionalArguments().at(0);
 	QDir extraBookmarksDir( extraBookmarksDirName, QStringLiteral("*.xml") );
 	if ( !extraBookmarksDir.isReadable() ) {
-        qCritical() << "Failed to read files in directory " << extraBookmarksDirName;
+        qCCritical(KEDITBOOKMARKS_LOG) << "Failed to read files in directory " << extraBookmarksDirName;
 		return 1;
 	}
 

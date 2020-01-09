@@ -8,8 +8,8 @@ set(kbookmarkmodel_SRCS
   model.cpp
   treeitem.cpp
   view.cpp
+  ${debug_file_common_SRCS}
 )
-
 add_library(kbookmarkmodel_private SHARED ${kbookmarkmodel_SRCS})
 target_link_libraries(kbookmarkmodel_private
 PUBLIC

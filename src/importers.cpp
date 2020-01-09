@@ -28,7 +28,7 @@
 #include "kbookmarkmodel/model.h"
 
 #include <QFileDialog>
-#include <QDebug>
+#include "keditbookmarks_debug.h"
 #include <klocalizedstring.h>
 
 #include <kmessagebox.h>
@@ -70,7 +70,7 @@ ImportCommand* ImportCommand::importerFactory(KBookmarkModel* model, const QStri
     else if (type == QLatin1String("Moz")) return new MozImportCommand(model);
     else if (type == QLatin1String("NS")) return new NSImportCommand(model);
     else {
-        qCritical() << "ImportCommand::importerFactory() - invalid type (" << type << ")!";
+        qCCritical(KEDITBOOKMARKS_LOG) << "ImportCommand::importerFactory() - invalid type (" << type << ")!";
         return nullptr;
     }
 }

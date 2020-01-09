@@ -25,7 +25,7 @@
 #include "model.h"
 #include "kinsertionsort_p.h"
 
-#include <QDebug>
+#include "keditbookmarks_debug.h"
 #include <klocalizedstring.h>
 #include <kbookmarkmanager.h>
 #include <kdesktopfile.h>
@@ -103,7 +103,7 @@ void CreateCommand::redo()
 
     QString previousSibling = KBookmark::previousAddress(m_to);
 
-    // qDebug() << "previousSibling=" << previousSibling;
+    // qCDebug(KEDITBOOKMARKS_LOG) << "previousSibling=" << previousSibling;
     KBookmark prev = (previousSibling.isEmpty())
         ? KBookmark(QDomElement())
         : m_model->bookmarkManager()->findByAddress(previousSibling);
@@ -169,7 +169,7 @@ QString CreateCommand::affectedBookmarks() const
 EditCommand::EditCommand(KBookmarkModel* model, const QString & address, int col, const QString & newValue, QUndoCommand* parent)
       : QUndoCommand(parent), m_model(model), mAddress(address), mCol(col)
 {
-    qDebug() << address << col << newValue;
+    qCDebug(KEDITBOOKMARKS_LOG) << address << col << newValue;
     if(mCol == 1)
     {
         const QUrl u(newValue);
@@ -211,7 +211,7 @@ void EditCommand::redo()
     {
         if (mOldValue.isEmpty()) // only the first time, not when compressing changes in modify()
             mOldValue = bk.fullText();
-        qDebug() << "mOldValue=" << mOldValue;
+        qCDebug(KEDITBOOKMARKS_LOG) << "mOldValue=" << mOldValue;
         bk.setFullText(mNewValue);
     }
     else if(mCol==1)
@@ -233,7 +233,7 @@ void EditCommand::redo()
 
 void EditCommand::undo()
 {
-    qDebug() << "Setting old value" << mOldValue << "in bk" << mAddress << "col" << mCol;
+    qCDebug(KEDITBOOKMARKS_LOG) << "Setting old value" << mOldValue << "in bk" << mAddress << "col" << mCol;
     KBookmark bk = m_model->bookmarkManager()->findByAddress(mAddress);
     if(mCol==-2)
     {
@@ -292,7 +292,7 @@ void DeleteCommand::redo()
         while (!n.isNull()) {
             QDomElement e = n.toElement();
             if (!e.isNull()) {
-                // qDebug() << e.tagName();
+                // qCDebug(KEDITBOOKMARKS_LOG) << e.tagName();
             }
             QDomNode next = n.nextSibling();
             groupRoot.removeChild(n);
@@ -325,7 +325,7 @@ void DeleteCommand::redo()
 
 void DeleteCommand::undo()
 {
-    // qDebug() << "DeleteCommand::undo " << m_from;
+    // qCDebug(KEDITBOOKMARKS_LOG) << "DeleteCommand::undo " << m_from;
 
     if (m_contentOnly) {
         // TODO - recover saved metadata
@@ -369,16 +369,16 @@ MoveCommand::MoveCommand(KBookmarkModel* model, const QString &from, const QStri
 
 void MoveCommand::redo()
 {
-    //qDebug() << "Moving from=" << m_from << "to=" << m_to;
+    //qCDebug(KEDITBOOKMARKS_LOG) << "Moving from=" << m_from << "to=" << m_to;
 
     KBookmark fromBk = m_model->bookmarkManager()->findByAddress( m_from );
     Q_ASSERT(fromBk.address() == m_from);
 
-    //qDebug() << "  1) creating" << m_to;
+    //qCDebug(KEDITBOOKMARKS_LOG) << "  1) creating" << m_to;
     m_cc = new CreateCommand(m_model, m_to, fromBk, QString());
     m_cc->redo();
 
-    //qDebug() << "  2) deleting" << fromBk.address();
+    //qCDebug(KEDITBOOKMARKS_LOG) << "  2) deleting" << fromBk.address();
     m_dc = new DeleteCommand(m_model, fromBk.address());
     m_dc->redo();
 }

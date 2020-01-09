@@ -30,7 +30,7 @@
 #include <QMenu>
 #include <QBrush>
 
-#include <QDebug>
+#include "keditbookmarks_debug.h"
 
 BookmarkFolderView::BookmarkFolderView( BookmarkListView * view, QWidget * parent )
     : KBookmarkView(parent), mview(view)
@@ -70,7 +70,7 @@ void BookmarkFolderView::slotReset()
 
 KBookmark BookmarkFolderView::bookmarkForIndex(const QModelIndex & idx) const
 {
-    qDebug()<<"BookmarkFolderView::bookmarkForIndex"<<idx;
+    qCDebug(KEDITBOOKMARKS_LOG)<<"BookmarkFolderView::bookmarkForIndex"<<idx;
     const QModelIndex & index = mmodel->mapToSource(idx);
     return static_cast<KBookmarkModel *>(mmodel->sourceModel())->bookmarkForIndex(index);
 }

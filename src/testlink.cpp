@@ -22,7 +22,7 @@
 #include "testlink.h"
 
 // KDE
-#include <QDebug>
+#include "keditbookmarks_debug.h"
 #include <klocalizedstring.h>
 
 // Local
@@ -45,7 +45,7 @@ TestLinkItr::TestLinkItr(BookmarkIteratorHolder* holder, const QList<KBookmark>&
 TestLinkItr::~TestLinkItr()
 {
     if (m_job) {
-        // //qDebug() << "JOB kill\n";
+        // //qCDebug(KEDITBOOKMARKS_LOG) << "JOB kill\n";
         m_job->disconnect(this);
         m_job->kill();
     }
@@ -64,7 +64,7 @@ bool TestLinkItr::isApplicable(const KBookmark &bk) const
 
 void TestLinkItr::doAction()
 {
-    //qDebug();
+    //qCDebug(KEDITBOOKMARKS_LOG);
     m_job = KIO::get(currentBookmark().url(), KIO::Reload, KIO::HideProgressInfo);
     m_job->addMetaData( QStringLiteral("cookies"), QStringLiteral("none") );
     m_job->addMetaData( QStringLiteral("errorPage"), QStringLiteral("false") );
@@ -77,14 +77,14 @@ void TestLinkItr::doAction()
 
 void TestLinkItr::slotJobResult(KJob *job)
 {
-    //qDebug();
+    //qCDebug(KEDITBOOKMARKS_LOG);
     m_job = nullptr;
 
     KIO::TransferJob *transfer = static_cast<KIO::TransferJob *>(job);
     const QString modDate = transfer->queryMetaData(QStringLiteral("modified"));
 
     if (transfer->error() || transfer->isErrorPage()) {
-        //qDebug()<<"***********"<<transfer->error()<<"  "<<transfer->isErrorPage();
+        //qCDebug(KEDITBOOKMARKS_LOG)<<"***********"<<transfer->error()<<"  "<<transfer->isErrorPage();
         // can we assume that errorString will contain no entities?
         QString err = transfer->errorString();
         err.replace(QLatin1String("\n"), QLatin1String(" "));

@@ -39,7 +39,7 @@ inline void kInsertionSort( Item& firstChild, SortHelper& sortHelper )
     while ( !j.isNull() )
     {
         Key key = Criteria::key(j);
-        //qDebug() << "Looking at j=" << key;
+        //qCDebug(KEDITBOOKMARKS_LOG) << "Looking at j=" << key;
         // Insert A[j] into the sorted sequence A[1..j-1]
         Item i = j.previousSibling();
         Item next = j.nextSibling();
@@ -50,11 +50,11 @@ inline void kInsertionSort( Item& firstChild, SortHelper& sortHelper )
             moved = true;
         }
         if ( moved ) {
-            //qDebug() << "moveAfter(" << Criteria::key(j) << "," << (i.isNull() ? "null" : Criteria::key(i)) << ")";
+            //qCDebug(KEDITBOOKMARKS_LOG) << "moveAfter(" << Criteria::key(j) << "," << (i.isNull() ? "null" : Criteria::key(i)) << ")";
             sortHelper.moveAfter( j, i ); // move j right after i. If i is null, move to first position.
         }
         j = next;
-        //qDebug() << "Now j is" << Criteria::key(next);
+        //qCDebug(KEDITBOOKMARKS_LOG) << "Now j is" << Criteria::key(next);
     }
 }
 

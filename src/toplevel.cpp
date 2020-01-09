@@ -43,7 +43,7 @@
 #include <ktoggleaction.h>
 #include <kbookmark.h>
 #include <kbookmarkmanager.h>
-#include <QDebug>
+#include "keditbookmarks_debug.h"
 #include <kedittoolbar.h>
 #include <klineedit.h>
 #include <klocalizedstring.h>
@@ -206,7 +206,7 @@ SelcAbilities KEBApp::getSelectionAbilities() const
     //FIXME check next line, if it actually works
     selctionAbilities.notEmpty = GlobalBookmarkManager::self()->root().first().hasParent();
 
-/*    //qDebug()
+/*    //qCDebug(KEDITBOOKMARKS_LOG)
         <<"\nsa.itemSelected "<<selctionAbilities.itemSelected
         <<"\nsa.group        "<<selctionAbilities.group
         <<"\nsa.separator    "<<selctionAbilities.separator
@@ -260,7 +260,7 @@ void KEBApp::setActionsEnabled(SelcAbilities sa) {
     for ( QStringList::const_iterator it = toEnable.constBegin();
             it != toEnable.constEnd(); ++it )
     {
-        ////qDebug() <<" enabling action "<<(*it);
+        ////qCDebug(KEDITBOOKMARKS_LOG) <<" enabling action "<<(*it);
         coll->action(*it)->setEnabled(true);
     }
 }
@@ -437,7 +437,7 @@ void KEBApp::updateActions() {
 }
 
 void KEBApp::slotClipboardDataChanged() {
-    // //qDebug() << "KEBApp::slotClipboardDataChanged";
+    // //qCDebug(KEDITBOOKMARKS_LOG) << "KEBApp::slotClipboardDataChanged";
     if (!m_readOnly) {
         m_canPaste = KBookmark::List::canDecode(
                         QApplication::clipboard()->mimeData());
@@ -448,7 +448,7 @@ void KEBApp::slotClipboardDataChanged() {
 /* -------------------------- */
 
 void KEBApp::notifyCommandExecuted() {
-    // //qDebug() << "KEBApp::notifyCommandExecuted()";
+    // //qCDebug(KEDITBOOKMARKS_LOG) << "KEBApp::notifyCommandExecuted()";
     updateActions();
 }
 

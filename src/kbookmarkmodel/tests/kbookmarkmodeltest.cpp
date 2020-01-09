@@ -197,7 +197,7 @@ private Q_SLOTS:
             m_cmdHistory->addCommand(new CreateCommand(m_model, "/0/" + QString::number(i), bookmarks[i], QStringLiteral("www"), QUrl(kde)));
         }
         const QStringList addresses = BookmarkLister::addressList(m_bookmarkManager);
-        //kDebug() << addresses;
+        //qCDebug(KEDITBOOKMARKS_LOG) << addresses;
         const QStringList origTitleList = BookmarkLister::titleList(m_bookmarkManager);
         QCOMPARE(addresses.count(), bookmarks.count() + 1 /* parent folder */);
         SortCommand* sortCmd = new SortCommand(m_model, QStringLiteral("Sort"), QStringLiteral("/0"));
@@ -206,7 +206,7 @@ private Q_SLOTS:
         expectedTitleList.sort();
         expectedTitleList.prepend(QStringLiteral("folder"));
         const QStringList sortedTitles = BookmarkLister::titleList(m_bookmarkManager);
-        //kDebug() << sortedTitles;
+        //qCDebug(KEDITBOOKMARKS_LOG) << sortedTitles;
         QCOMPARE(sortedTitles, expectedTitleList);
 
         sortCmd->undo();
@@ -234,7 +234,7 @@ private Q_SLOTS:
 
         const QStringList addresses = BookmarkLister::addressList(bookmarkManager);
         const QStringList origTitleList = BookmarkLister::titleList(bookmarkManager);
-        //qDebug() << addresses << origTitleList;
+        //qCDebug(KEDITBOOKMARKS_LOG) << addresses << origTitleList;
         QCOMPARE(addresses.count(), 53);
 
         CommandHistory cmdHistory;

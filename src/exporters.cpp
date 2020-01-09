@@ -19,7 +19,7 @@
 
 #include "exporters.h"
 
-#include <QDebug>
+#include "keditbookmarks_debug.h"
 #include <klocalizedstring.h>
 
 #include <QFile>
@@ -32,7 +32,7 @@ HTMLExporter::HTMLExporter()
 void HTMLExporter::write(const KBookmarkGroup &grp, const QString &filename, bool showAddress) {
     QFile file(filename);
     if (!file.open(QIODevice::WriteOnly)) {
-        qCritical() << "Can't write to file " << filename;
+        qCCritical(KEDITBOOKMARKS_LOG) << "Can't write to file " << filename;
         return;
     }
     QTextStream tstream(&file);
@@ -56,7 +56,7 @@ QString HTMLExporter::toString(const KBookmarkGroup &grp, bool showAddress)
 }
 
 void HTMLExporter::visit(const KBookmark &bk) {
-    // //qDebug() << "visit(" << bk.text() << ")";
+    // //qCDebug(KEDITBOOKMARKS_LOG) << "visit(" << bk.text() << ")";
     if(bk.isSeparator())
     {
         m_out << bk.fullText() << "<br>"<< QLatin1Char('\n');
@@ -78,14 +78,14 @@ void HTMLExporter::visit(const KBookmark &bk) {
 }
 
 void HTMLExporter::visitEnter(const KBookmarkGroup &grp) {
-    // //qDebug() << "visitEnter(" << grp.text() << ")";
+    // //qCDebug(KEDITBOOKMARKS_LOG) << "visitEnter(" << grp.text() << ")";
     m_out << "<b>" << grp.fullText() << "</b><br>"<< QLatin1Char('\n');
     m_out << "<div style=\"margin-left: 2em\">"<< QLatin1Char('\n');
     m_out.flush();
 }
 
 void HTMLExporter::visitLeave(const KBookmarkGroup &) {
-    // //qDebug() << "visitLeave()";
+    // //qCDebug(KEDITBOOKMARKS_LOG) << "visitLeave()";
     m_out << "</div>" << QLatin1Char('\n');
     m_out.flush();
 }
