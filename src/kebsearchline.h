@@ -20,7 +20,7 @@
 
 #include <klineedit.h>
 #include <QAbstractItemView>
-#include <QLinkedList>
+#include <QVector>
 
 
 class QAction;
@@ -83,7 +83,7 @@ public:
      *
      * @see setSearchColumns
      */
-    QLinkedList<int> searchColumns() const;
+    QVector<int> searchColumns() const;
 
     /**
      * If this is true (the default) then the parents of matched items will also
@@ -138,7 +138,7 @@ public Q_SLOTS:
      *
      * @see searchColumns
      */
-    void setSearchColumns(const QLinkedList<int> &columns);
+    void setSearchColumns(const QVector<int> &columns);
 
     /**
      * Sets the view that is filtered by this search line.
