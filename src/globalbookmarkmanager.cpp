@@ -20,6 +20,7 @@
 
 #include "globalbookmarkmanager.h"
 #include <QDateTime>
+#include <QLocale>
 #include "keditbookmarks_debug.h"
 #include "kbookmarkmanager.h"
 #include "kbookmarkmodel/model.h"
@@ -97,9 +98,10 @@ QString GlobalBookmarkManager::makeTimeStr(int b)
 {
     QDateTime dt;
     dt.fromSecsSinceEpoch(b);
+    QLocale l;
     return (dt.daysTo(QDateTime::currentDateTime()) > 31)
-        ? dt.date().toString(Qt::DefaultLocaleLongDate)
-        : dt.toString(Qt::DefaultLocaleLongDate);
+        ? l.toString(dt.date(), QLocale::LongFormat)
+        : l.toString(dt, QLocale::LongFormat);
 }
 
 
