@@ -161,8 +161,8 @@ void KEBApp::createActions() {
     connect(m_actionsImplCollapseAll, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotCollapseAll);
 
     QAction* m_actionsImplOpenLink = actionCollection()->addAction(QStringLiteral("openlink"));
-    m_actionsImplOpenLink->setIcon(QIcon::fromTheme(QStringLiteral("document-open")));
-    m_actionsImplOpenLink->setText(i18n("&Open in Konqueror"));
+    m_actionsImplOpenLink->setIcon(QIcon::fromTheme(QStringLiteral("internet-web-browser")));
+    m_actionsImplOpenLink->setText(i18n("&Open in Browser"));
     connect(m_actionsImplOpenLink, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotOpenLink);
 
     QAction* m_actionsImplTestSelection = actionCollection()->addAction(QStringLiteral("testlink"));
