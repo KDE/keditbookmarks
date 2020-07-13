@@ -20,7 +20,7 @@
 #ifndef BOOKMARKINFOWIDGET_H
 #define BOOKMARKINFOWIDGET_H
 
-#include <kbookmark.h>
+#include <KBookmark>
 #include <QWidget>
 
 class KBookmarkModel;

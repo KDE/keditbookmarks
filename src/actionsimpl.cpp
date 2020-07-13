@@ -40,18 +40,18 @@
 #include <QApplication>
 #include "keditbookmarks_debug.h"
 
-#include <kactioncollection.h>
+#include <KActionCollection>
 #include <QIcon>
-#include <kicondialog.h>
-#include <kiconloader.h>
-#include <klocalizedstring.h>
-#include <kstandardaction.h>
-#include <krun.h>
+#include <KIconDialog>
+#include <KIconLoader>
+#include <KLocalizedString>
+#include <KStandardAction>
+#include <KRun>
 
 #include <QInputDialog>
 
-#include <kbookmark.h>
-#include <kbookmarkmanager.h>
+#include <KBookmark>
+#include <KBookmarkManager>
 #include <kbookmarkimporter.h>
 
 #include <kbookmarkimporter_ie.h>

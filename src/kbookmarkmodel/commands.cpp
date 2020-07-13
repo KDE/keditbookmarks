@@ -26,9 +26,9 @@
 #include "kinsertionsort_p.h"
 
 #include "keditbookmarks_debug.h"
-#include <klocalizedstring.h>
-#include <kbookmarkmanager.h>
-#include <kdesktopfile.h>
+#include <KLocalizedString>
+#include <KBookmarkManager>
+#include <KDesktopFile>
 
 QString KEBMacroCommand::affectedBookmarks() const
 {

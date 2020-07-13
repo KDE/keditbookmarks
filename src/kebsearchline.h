@@ -18,7 +18,7 @@
 #ifndef __kebsearchline_h
 #define __kebsearchline_h
 
-#include <klineedit.h>
+#include <KLineEdit>
 #include <QAbstractItemView>
 #include <QVector>
 

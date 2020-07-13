@@ -29,18 +29,18 @@
 
 #include <QFileDialog>
 #include "keditbookmarks_debug.h"
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
-#include <kmessagebox.h>
+#include <KMessageBox>
 
-#include <kbookmark.h>
-#include <kbookmarkmanager.h>
+#include <KBookmark>
+#include <KBookmarkManager>
 
 #include <kbookmarkimporter.h>
 #include <kbookmarkimporter_ie.h>
 #include <kbookmarkimporter_opera.h>
 //#include <kbookmarkimporter_crash.h>
-#include <kbookmarkdombuilder.h>
+#include <KBookmarkDomBuilder>
 #include <kbookmarkimporter_ns.h>
 #include <QStandardPaths>
 

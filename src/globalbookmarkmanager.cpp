@@ -22,7 +22,7 @@
 #include <QDateTime>
 #include <QLocale>
 #include "keditbookmarks_debug.h"
-#include "kbookmarkmanager.h"
+#include <KBookmarkManager>
 #include "kbookmarkmodel/model.h"
 #include "kbookmarkmodel/commandhistory.h"
 

@@ -18,7 +18,7 @@
 #ifndef __exporters_h
 #define __exporters_h
 
-#include <kbookmark.h>
+#include <KBookmark>
 //Added by qt3to4:
 #include <QTextStream>
 

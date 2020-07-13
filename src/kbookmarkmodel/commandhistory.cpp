@@ -19,8 +19,8 @@
 #include "commandhistory.h"
 #include "commands.h"
 
-#include <kactioncollection.h>
-#include <kbookmarkmanager.h>
+#include <KActionCollection>
+#include <KBookmarkManager>
 
 #include <QAction>
 #include <QUndoCommand>

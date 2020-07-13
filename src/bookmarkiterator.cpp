@@ -20,7 +20,7 @@
 
 #include "bookmarkiterator.h"
 #include "kbookmarkmodel/model.h"
-#include <kbookmarkmanager.h>
+#include <KBookmarkManager>
 
 #include "keditbookmarks_debug.h"
 #include <QTimer>

@@ -21,7 +21,7 @@
 
 #include <QObject>
 #include <QList>
-#include <kbookmark.h>
+#include <KBookmark>
 
 class KBookmarkModel;
 class BookmarkIteratorHolder;

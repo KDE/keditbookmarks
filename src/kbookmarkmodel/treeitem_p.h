@@ -19,7 +19,7 @@
 #define TREEITEM_P_H
 
 #include <QList>
-#include <kbookmark.h>
+#include <KBookmark>
 
 class TreeItem
 {

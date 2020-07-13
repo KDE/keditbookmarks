@@ -25,7 +25,7 @@
 #include "kbookmarkmodel/model.h"
 
 #include "keditbookmarks_debug.h"
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
 FavIconsItrHolder::FavIconsItrHolder(QObject* parent, KBookmarkModel* model)
     : BookmarkIteratorHolder(parent, model)

@@ -19,7 +19,7 @@
 #ifndef GLOBALBOOKMARKMANAGER_H
 #define GLOBALBOOKMARKMANAGER_H
 
-#include <kbookmark.h>
+#include <KBookmark>
 #include <QObject>
 
 class CommandHistory;

@@ -23,8 +23,8 @@
 #include "commands.h"
 #include "commandhistory.h"
 
-#include <kbookmarkmanager.h>
-#include <klocalizedstring.h>
+#include <KBookmarkManager>
+#include <KLocalizedString>
 
 #include <QIcon>
 #include "keditbookmarks_debug.h"

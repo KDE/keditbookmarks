@@ -20,9 +20,9 @@
 #define __toplevel_h
 
 #include <kxmlguiwindow.h>
-#include <kbookmark.h>
+#include <KBookmark>
 #include <QMenu>
-#include <kxmlguifactory.h>
+#include <KXMLGUIFactory>
 #include "bookmarklistview.h"
 
 class ActionsImpl;

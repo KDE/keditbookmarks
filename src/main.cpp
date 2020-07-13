@@ -32,12 +32,12 @@
 #include <QCommandLineOption>
 
 #include <KAboutData>
-#include <kdelibs4configmigrator.h>
+#include <Kdelibs4ConfigMigrator>
 
-#include <kmessagebox.h>
-#include <kwindowsystem.h>
+#include <KMessageBox>
+#include <KWindowSystem>
 
-#include <kbookmarkmanager.h>
+#include <KBookmarkManager>
 #include <kbookmarkexporter.h>
 #include <toplevel_interface.h>
 #include <QStandardPaths>

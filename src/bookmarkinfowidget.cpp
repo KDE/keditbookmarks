@@ -29,11 +29,11 @@
 #include <QHBoxLayout>
 #include <QFormLayout>
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
-#include <klineedit.h>
+#include <KLineEdit>
 
-#include <kbookmark.h>
+#include <KBookmark>
 
 // SHUFFLE all these functions around, the order is just plain stupid
 void BookmarkInfoWidget::showBookmark(const KBookmark &bk)

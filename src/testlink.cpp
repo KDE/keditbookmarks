@@ -23,7 +23,7 @@
 
 // KDE
 #include "keditbookmarks_debug.h"
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
 // Local
 #include "kbookmarkmodel/commands.h"

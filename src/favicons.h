@@ -20,7 +20,7 @@
 #ifndef __favicons_h
 #define __favicons_h
 
-#include <kbookmark.h>
+#include <KBookmark>
 
 #include "bookmarkiterator.h"
 

@@ -21,7 +21,7 @@
 
 #include <QUndoCommand>
 #include "kbookmarkmodel_export.h"
-#include <kbookmark.h>
+#include <KBookmark>
 #include <QUrl>
 class KBookmarkModel;
 

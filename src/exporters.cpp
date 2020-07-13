@@ -20,7 +20,7 @@
 #include "exporters.h"
 
 #include "keditbookmarks_debug.h"
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
 #include <QFile>
 #include <QTextStream>

@@ -25,7 +25,7 @@
  */
 #include <KAboutData>
 
-#include <kbookmarkmanager.h>
+#include <KBookmarkManager>
 
 #include "keditbookmarks_debug.h"
 

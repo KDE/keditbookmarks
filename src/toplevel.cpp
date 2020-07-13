@@ -39,16 +39,16 @@
 #include <QSplitter>
 #include <QApplication>
 
-#include <kactioncollection.h>
-#include <ktoggleaction.h>
-#include <kbookmark.h>
-#include <kbookmarkmanager.h>
+#include <KActionCollection>
+#include <KToggleAction>
+#include <KBookmark>
+#include <KBookmarkManager>
 #include "keditbookmarks_debug.h"
-#include <kedittoolbar.h>
-#include <klineedit.h>
-#include <klocalizedstring.h>
-#include <kmessagebox.h>
-#include <kstandardaction.h>
+#include <KEditToolBar>
+#include <KLineEdit>
+#include <KLocalizedString>
+#include <KMessageBox>
+#include <KStandardAction>
 
 #include <QDBusConnection>
 KEBApp *KEBApp::s_topLevel = nullptr;

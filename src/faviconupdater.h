@@ -18,7 +18,7 @@
 #ifndef FAVICONUPDATER_H
 #define FAVICONUPDATER_H
 
-#include <kbookmark.h>
+#include <KBookmark>
 
 #include <kparts/part.h>
 #include <KParts/ReadOnlyPart>

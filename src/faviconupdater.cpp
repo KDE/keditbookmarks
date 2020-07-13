@@ -25,14 +25,14 @@
 #include "toplevel.h"
 
 #include "keditbookmarks_debug.h"
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
 #include <kio/job.h>
 #include <KIO/FavIconRequestJob>
 
 #include <kparts/part.h>
 #include <KParts/BrowserExtension>
-#include <kmimetypetrader.h>
+#include <KMimeTypeTrader>
 
 FavIconUpdater::FavIconUpdater(QObject *parent)
     : QObject(parent)

@@ -19,10 +19,10 @@
  */
 
 #include <QAction>
-#include <kactioncollection.h>
+#include <KActionCollection>
 
 #include <QTest>
-#include <kbookmarkmanager.h>
+#include <KBookmarkManager>
 #include <QStandardPaths>
 #include <QMimeData>
 #include <QTemporaryFile>

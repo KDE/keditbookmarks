@@ -19,7 +19,7 @@
 
 #include "view.h"
 
-#include <kbookmark.h>
+#include <KBookmark>
 
 KBookmarkView::KBookmarkView(QWidget *parent)
     : QTreeView(parent), m_loadingState(false)
