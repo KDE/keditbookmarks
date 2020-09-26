@@ -41,12 +41,13 @@
 #include "keditbookmarks_debug.h"
 
 #include <KActionCollection>
+#include <KIO/JobUiDelegate>
+#include <KIO/OpenUrlJob>
 #include <QIcon>
 #include <KIconDialog>
 #include <KIconLoader>
 #include <KLocalizedString>
 #include <KStandardAction>
-#include <KRun>
 
 #include <QInputDialog>
 
@@ -531,13 +532,15 @@ void ActionsImpl::slotDelete() {
 void ActionsImpl::slotOpenLink()
 {
     KEBApp::self()->bkInfo()->commitChanges();
-    QList<KBookmark> bookmarks = KEBApp::self()->selectedBookmarksExpanded();
-    QList<KBookmark>::const_iterator it, end;
-    end = bookmarks.constEnd();
-    for (it = bookmarks.constBegin(); it != end; ++it) {
-        if ((*it).isGroup() || (*it).isSeparator())
+    const QList<KBookmark> bookmarks = KEBApp::self()->selectedBookmarksExpanded();
+    for (auto &bm : bookmarks) {
+        if (bm.isGroup() || bm.isSeparator()) {
             continue;
-        (void)new KRun((*it).url(), KEBApp::self());
+        }
+
+        auto *job = new KIO::OpenUrlJob(bm.url());
+        job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, KEBApp::self()));
+        job->start();
     }
 }
 
