@@ -69,7 +69,6 @@ public:
     QString caption() const { return m_caption; }
     bool readonly() const { return m_readOnly; }
     bool browser() const { return m_browser; }
-    bool nsShown() const;
 
     BookmarkInfoWidget *bkInfo() { return m_bkinfo; }
 
