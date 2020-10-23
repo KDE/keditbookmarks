@@ -23,7 +23,6 @@
 #include <KLocalizedString>
 
 #include <QFile>
-#include <QTextStream>
 
 HTMLExporter::HTMLExporter()
     : m_out(&m_string, QIODevice::WriteOnly) {

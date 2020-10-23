@@ -33,7 +33,6 @@
 
 #include <KLineEdit>
 
-#include <KBookmark>
 
 // SHUFFLE all these functions around, the order is just plain stupid
 void BookmarkInfoWidget::showBookmark(const KBookmark &bk)

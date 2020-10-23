@@ -30,7 +30,6 @@
 #include <kio/job.h>
 #include <KIO/FavIconRequestJob>
 
-#include <kparts/part.h>
 #include <KParts/BrowserExtension>
 #include <KMimeTypeTrader>
 

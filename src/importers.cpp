@@ -23,13 +23,11 @@
 #include "importers.h"
 #include "globalbookmarkmanager.h"
 
-#include "kbookmarkmodel/commands.h"
 #include "toplevel.h" // for KEBApp
 #include "kbookmarkmodel/model.h"
 
 #include <QFileDialog>
 #include "keditbookmarks_debug.h"
-#include <KLocalizedString>
 
 #include <KMessageBox>
 

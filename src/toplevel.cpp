@@ -31,7 +31,6 @@
 #include "kbookmarkmodel/commands.h"
 #include "kbookmarkmodel/commandhistory.h"
 #include "kebsearchline.h"
-#include "bookmarklistview.h"
 
 #include <stdlib.h>
 
@@ -41,7 +40,6 @@
 
 #include <KActionCollection>
 #include <KToggleAction>
-#include <KBookmark>
 #include <KBookmarkManager>
 #include "keditbookmarks_debug.h"
 #include <KEditToolBar>

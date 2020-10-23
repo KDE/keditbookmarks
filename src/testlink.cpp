@@ -27,7 +27,6 @@
 
 // Local
 #include "kbookmarkmodel/commands.h"
-#include "bookmarkiterator.h"
 #include "kbookmarkmodel/model.h"
 
 TestLinkItrHolder::TestLinkItrHolder(QObject* parent, KBookmarkModel* model)
