@@ -1,5 +1,6 @@
-<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
-<kpartgui name="keditbookmarks" version="26">
+<?xml version="1.0"?>
+<!DOCTYPE gui SYSTEM "kpartgui.dtd">
+<gui name="keditbookmarks" version="26">
 
 <MenuBar>
 
@@ -140,4 +141,4 @@
   </Disable>
 </State>
 
-</kpartgui>
+</gui>
