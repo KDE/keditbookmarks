@@ -53,6 +53,8 @@ qt5_add_dbus_interface( keditbookmarks_SRCS ${toplevel_xml} toplevel_interface )
 
 kconfig_add_kcfg_files(keditbookmarks_SRCS settings.kcfgc )
 
+qt5_add_resources(keditbookmarks_SRCS keditbookmarks.qrc)
+
 add_executable( keditbookmarks ${keditbookmarks_SRCS})
 
 target_link_libraries(keditbookmarks kbookmarkmodel_private
@@ -67,7 +69,6 @@ install(TARGETS keditbookmarks          ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 ########### install files ###############
 
 install( FILES keditbookmarks.kcfg  DESTINATION  ${KDE_INSTALL_KCFGDIR} )
-install( FILES keditbookmarksui.rc  keditbookmarks-genui.rc  DESTINATION  ${KDE_INSTALL_KXMLGUI5DIR}/keditbookmarks )
 install( PROGRAMS org.kde.keditbookmarks.desktop DESTINATION ${KDE_INSTALL_APPDIR} )
 
 ecm_qt_install_logging_categories(
