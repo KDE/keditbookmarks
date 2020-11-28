@@ -19,16 +19,12 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 
-include(ECMOptionalAddSubdirectory)
 include(ECMInstallIcons)
 include(ECMSetupVersion)
 include(ECMAddTests)
-include(ECMMarkNonGuiExecutable)
 include(ECMQtDeclareLoggingCategory)
-include(CMakePackageConfigHelpers)
 include(FeatureSummary)
 include(ECMAddAppIcon)
-include(CheckFunctionExists)
 
 set(KEDITBOOKMARKS_VERSION "5.97.0")
 
