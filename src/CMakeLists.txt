@@ -1,6 +1,12 @@
 ############ subdir ###################
 set(debug_file_common_SRCS)
-ecm_qt_declare_logging_category(debug_file_common_SRCS HEADER keditbookmarks_debug.h IDENTIFIER KEDITBOOKMARKS_LOG CATEGORY_NAME org.kde.keditbookmarks)
+ecm_qt_declare_logging_category(debug_file_common_SRCS
+    HEADER keditbookmarks_debug.h
+    IDENTIFIER KEDITBOOKMARKS_LOG
+    CATEGORY_NAME org.kde.keditbookmarks
+    DESCRIPTION "KEditBookmarks"
+    EXPORT KEDITBOOKMARKS
+)
 
 
 add_subdirectory(kbookmarkmodel)
@@ -64,3 +70,8 @@ install( FILES keditbookmarks.kcfg  DESTINATION  ${KDE_INSTALL_KCFGDIR} )
 install( FILES keditbookmarksui.rc  keditbookmarks-genui.rc  DESTINATION  ${KDE_INSTALL_KXMLGUI5DIR}/keditbookmarks )
 install( PROGRAMS org.kde.keditbookmarks.desktop DESTINATION ${KDE_INSTALL_APPDIR} )
 
+ecm_qt_install_logging_categories(
+    EXPORT KEDITBOOKMARKS
+    FILE keditbookmarks.categories
+    DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
+)

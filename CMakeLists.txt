@@ -45,6 +45,6 @@ add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 
 add_subdirectory(src)
 add_subdirectory(doc)
-install(FILES keditbookmarks.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
