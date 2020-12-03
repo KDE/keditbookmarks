@@ -310,11 +310,12 @@ QMimeData * KBookmarkModel::mimeData(const QModelIndexList & indexes) const
     KBookmark::List bookmarks;
     QByteArray addresses;
 
-    Q_FOREACH(const QModelIndex& it, indexes) {
+    for (const auto &it : indexes) {
         if (it.column() == NameColumnId) {
             bookmarks.push_back(bookmarkForIndex(it));
-            if (!addresses.isEmpty())
+            if (!addresses.isEmpty()) {
                 addresses.append(';');
+            }
             addresses.append(bookmarkForIndex(it).address().toLatin1());
             qCDebug(KEDITBOOKMARKS_LOG) << "appended" << bookmarkForIndex(it).address();
         }
@@ -374,7 +375,7 @@ bool KBookmarkModel::dropMimeData(const QMimeData * data, Qt::DropAction action,
             KBookmark::List bookmarks;
             QList<QByteArray> addresses = data->data(s_mime_bookmark_addresses).split(';');
             std::sort(addresses.begin(), addresses.end());
-            Q_FOREACH(const QByteArray& address, addresses) {
+            for (const auto &address : qAsConst(addresses)) {
                 KBookmark bk = bookmarkManager()->findByAddress(QString::fromLatin1(address));
                 qCDebug(KEDITBOOKMARKS_LOG) << "Extracted bookmark:" << bk.address();
                 bookmarks.prepend(bk); // reverse order, so that we don't invalidate addresses (#287038)

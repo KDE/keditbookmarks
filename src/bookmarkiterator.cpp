@@ -93,7 +93,8 @@ void BookmarkIteratorHolder::removeIterator(BookmarkIterator *itr)
 
 void BookmarkIteratorHolder::cancelAllItrs()
 {
-    Q_FOREACH(BookmarkIterator* iterator, m_iterators) {
+    const auto iterList = m_iterators;
+    for (BookmarkIterator* iterator : iterList) {
         iterator->cancel();
     }
     qDeleteAll(m_iterators);

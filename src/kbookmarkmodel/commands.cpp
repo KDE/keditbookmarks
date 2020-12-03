@@ -504,8 +504,8 @@ KEBMacroCommand* CmdGen::insertMimeSource(KBookmarkModel* model, const QString &
     KEBMacroCommand *mcmd = new KEBMacroCommand(cmdName);
     QString currentAddress = addr;
     QDomDocument doc;
-    const KBookmark::List bookmarks = KBookmark::List::fromMimeData(data, doc);
-    foreach (const KBookmark &bk, bookmarks) {
+    const auto bookmarks = KBookmark::List::fromMimeData(data, doc);
+    for (const KBookmark &bk : bookmarks) {
         new CreateCommand(model, currentAddress, bk, QString(), mcmd);
         currentAddress = KBookmark::nextAddress(currentAddress);
     }
@@ -522,7 +522,7 @@ KEBMacroCommand* CmdGen::itemsMoved(KBookmarkModel* model, const QList<KBookmark
     KEBMacroCommand *mcmd = new KEBMacroCommand(copy ? i18nc("(qtundo-format)", "Copy Items")
             : i18nc("(qtundo-format)", "Move Items"));
     QString bkInsertAddr = newAddress;
-    foreach (const KBookmark &bk, items) {
+    for (const KBookmark &bk : items) {
         new CreateCommand(model, bkInsertAddr,
                           KBookmark(bk.internalElement().cloneNode(true).toElement()),
                           bk.text(), mcmd);
@@ -532,12 +532,12 @@ KEBMacroCommand* CmdGen::itemsMoved(KBookmarkModel* model, const QList<KBookmark
     // Do the copying, and get the updated addresses of the bookmarks to remove.
     mcmd->redo();
     QStringList addresses;
-    foreach (const KBookmark &bk, items) {
+    for (const KBookmark &bk : items) {
         addresses.append(bk.address());
     }
     mcmd->undo();
 
-    foreach (const QString &address, addresses) {
+    for (const auto &address : qAsConst(addresses)) {
         new DeleteCommand(model, address, false, mcmd);
     }
 
