@@ -95,7 +95,6 @@ KEBApp::KEBApp(
     QWidget * rightSide = new QWidget;
     QVBoxLayout *listLayout = new QVBoxLayout(rightSide);
     listLayout->setContentsMargins(0, 0, 0, 0);
-    rightSide->setLayout(listLayout);
     listLayout->addWidget(searchline);
     listLayout->addWidget(mBookmarkListView);
 
