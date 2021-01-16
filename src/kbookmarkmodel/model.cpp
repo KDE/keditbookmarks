@@ -78,8 +78,10 @@ KBookmarkModel::KBookmarkModel(const KBookmark& root, CommandHistory* commandHis
     Q_ASSERT(bookmarkManager());
     // update when the model updates after a D-Bus signal, coming from this
     // process or from another one
-    connect(bookmarkManager(), SIGNAL(changed(QString,QString)),
-            this, SLOT(_kd_slotBookmarksChanged(QString,QString)));
+    connect(bookmarkManager(), &KBookmarkManager::changed,
+            this, [this](const QString &groupAddress, const QString &caller) {
+        d->_kd_slotBookmarksChanged(groupAddress, caller);
+    });
 }
 
 void KBookmarkModel::setRoot(const KBookmark& root)
