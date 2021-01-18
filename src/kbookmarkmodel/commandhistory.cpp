@@ -101,7 +101,7 @@ void CommandHistory::commandExecuted(const QUndoCommand *k)
     KBookmark bk = d->m_manager->findByAddress(cmd->affectedBookmarks());
     Q_ASSERT(bk.isGroup());
 
-    emit notifyCommandExecuted(bk.toGroup());
+    Q_EMIT notifyCommandExecuted(bk.toGroup());
 }
 
 void CommandHistory::notifyDocSaved()
@@ -121,7 +121,7 @@ void CommandHistory::clearHistory()
 {
     if (d->m_undoStack.count() > 0) {
         d->m_undoStack.clear();
-        emit notifyCommandExecuted(d->m_manager->root()); // not really, but we still want to update the GUI
+        Q_EMIT notifyCommandExecuted(d->m_manager->root()); // not really, but we still want to update the GUI
     }
 }
 

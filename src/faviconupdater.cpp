@@ -50,7 +50,7 @@ void FavIconUpdater::downloadIcon(const KBookmark &bk)
         m_bk.setIcon(favicon);
         KEBApp::self()->notifyCommandExecuted();
         // //qCDebug(KEDITBOOKMARKS_LOG) << "emit done(true)";
-        emit done(true, QString());
+        Q_EMIT done(true, QString());
 
     } else {
         //qCDebug(KEDITBOOKMARKS_LOG) << "no favicon found";
@@ -77,7 +77,7 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
         KParts::ReadOnlyPart *part
             = KMimeTypeTrader::createPartInstanceFromQuery<KParts::ReadOnlyPart>(QStringLiteral("text/html"), nullptr, this, QString(), QVariantList(), &partLoadingError);
         if (!part) {
-            emit done(false, i18n("%1; no HTML component found (%2)", currentError, partLoadingError));
+            Q_EMIT done(false, i18n("%1; no HTML component found (%2)", currentError, partLoadingError));
             return;
         }
 
@@ -124,12 +124,12 @@ void FavIconUpdater::slotResult(KJob *job)
         } else {
             qCDebug(KEDITBOOKMARKS_LOG) << "favicon job failed, emit done";
             // already tried webupdater
-            emit done(false, job->errorString());
+            Q_EMIT done(false, job->errorString());
         }
         return;
     }
     m_bk.setIcon(requestJob->iconFile());
-    emit done(true, QString());
+    Q_EMIT done(true, QString());
 }
 
 /* -------------------------- */
@@ -177,7 +177,7 @@ void FavIconWebGrabber::slotFinished(KJob *job)
 {
     if (job->error()) {
         qCDebug(KEDITBOOKMARKS_LOG) << job->errorString();
-        emit done(false, job->errorString());
+        Q_EMIT done(false, job->errorString());
         return;
     }
     // On success mimetype was emitted, so no need to do anything.
@@ -186,13 +186,13 @@ void FavIconWebGrabber::slotFinished(KJob *job)
 void FavIconWebGrabber::slotCompleted()
 {
     qCDebug(KEDITBOOKMARKS_LOG);
-    emit done(true, QString());
+    Q_EMIT done(true, QString());
 }
 
 void FavIconWebGrabber::slotCanceled(const QString& errorString)
 {
     //qCDebug(KEDITBOOKMARKS_LOG) << errorString;
-    emit done(false, errorString);
+    Q_EMIT done(false, errorString);
 }
 
 

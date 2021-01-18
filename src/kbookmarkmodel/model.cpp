@@ -299,7 +299,7 @@ void KBookmarkModel::emitDataChanged(const KBookmark& bk)
 {
     QModelIndex idx = indexForBookmark(bk);
     qCDebug(KEDITBOOKMARKS_LOG) << idx;
-    emit dataChanged(idx, idx.sibling(idx.row(), columnCount()-1));
+    Q_EMIT dataChanged(idx, idx.sibling(idx.row(), columnCount()-1));
 }
 
 static const char* s_mime_bookmark_addresses = "application/x-kde-bookmarkaddresses";

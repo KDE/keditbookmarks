@@ -115,7 +115,7 @@ void BookmarkIteratorHolder::addAffectedBookmark(const QString & address)
 void BookmarkIteratorHolder::doIteratorListChanged()
 {
     //qCDebug(KEDITBOOKMARKS_LOG) << count() << "iterators";
-    emit setCancelEnabled(count() > 0);
+    Q_EMIT setCancelEnabled(count() > 0);
     if(count() == 0) {
         //qCDebug(KEDITBOOKMARKS_LOG) << "Notifying managers" << m_affectedBookmark;
         KBookmarkManager* mgr = m_model->bookmarkManager();
