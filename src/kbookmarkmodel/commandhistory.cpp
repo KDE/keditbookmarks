@@ -59,7 +59,7 @@ void CommandHistory::createActions(KActionCollection *actionCollection)
     undoAction->setIcon(standardAction->icon());
     actionCollection->addAction(KStandardAction::name(KStandardAction::Undo), undoAction);
     actionCollection->setDefaultShortcuts(undoAction, standardAction->shortcuts());
-    disconnect(undoAction, SIGNAL(triggered()), &d->m_undoStack, nullptr);
+    disconnect(undoAction, &QAction::triggered, &d->m_undoStack, nullptr);
     connect(undoAction, &QAction::triggered, this, &CommandHistory::undo);
     delete standardAction;
 
@@ -68,7 +68,7 @@ void CommandHistory::createActions(KActionCollection *actionCollection)
     redoAction->setIcon(standardAction->icon());
     actionCollection->addAction(KStandardAction::name(KStandardAction::Redo), redoAction);
     actionCollection->setDefaultShortcuts(redoAction, standardAction->shortcuts());
-    disconnect(redoAction, SIGNAL(triggered()), &d->m_undoStack, nullptr);
+    disconnect(redoAction, &QAction::triggered, &d->m_undoStack, nullptr);
     connect(redoAction, &QAction::triggered, this, &CommandHistory::redo);
     delete standardAction;
 }
