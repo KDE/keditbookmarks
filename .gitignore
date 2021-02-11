@@ -3,3 +3,4 @@
 CMakeLists.txt.user*
 *.unc-backup*
 .cmake/
+/compile_commands.json
