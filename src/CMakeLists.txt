@@ -45,6 +45,7 @@ set(keditbookmarks_SRCS
    kebsearchline.cpp
    bookmarklistview.cpp
    ${debug_file_common_SRCS}
+   keditbookmarks.qrc
 )
 set(toplevel_xml ${CMAKE_CURRENT_BINARY_DIR}/org.kde.keditbookmarks.xml)
 qt5_generate_dbus_interface( ${CMAKE_CURRENT_SOURCE_DIR}/toplevel.h org.kde.keditbookmarks.xml )
@@ -52,8 +53,6 @@ qt5_generate_dbus_interface( ${CMAKE_CURRENT_SOURCE_DIR}/toplevel.h org.kde.kedi
 qt5_add_dbus_interface( keditbookmarks_SRCS ${toplevel_xml} toplevel_interface )
 
 kconfig_add_kcfg_files(keditbookmarks_SRCS settings.kcfgc )
-
-qt5_add_resources(keditbookmarks_SRCS keditbookmarks.qrc)
 
 add_executable( keditbookmarks ${keditbookmarks_SRCS})
 
