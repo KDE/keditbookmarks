@@ -21,37 +21,38 @@
 
 #include <QObject>
 
-#include <kio/job.h>
 #include <KBookmark>
+#include <kio/job.h>
 
 #include "bookmarkiterator.h"
 class KBookmarkModel;
 
-class TestLinkItrHolder : public BookmarkIteratorHolder {
+class TestLinkItrHolder : public BookmarkIteratorHolder
+{
 public:
-   TestLinkItrHolder(QObject* parent, KBookmarkModel* model);
+    TestLinkItrHolder(QObject *parent, KBookmarkModel *model);
 };
 
 class TestLinkItr : public BookmarkIterator
 {
-   Q_OBJECT
+    Q_OBJECT
 
 public:
-   TestLinkItr(BookmarkIteratorHolder* holder, const QList<KBookmark>& bks);
-   ~TestLinkItr();
+    TestLinkItr(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks);
+    ~TestLinkItr();
 
-   void cancel() override;
+    void cancel() override;
 
 public Q_SLOTS:
-   void slotJobResult(KJob *job);
+    void slotJobResult(KJob *job);
 
 private:
-   void setStatus(const QString & text);
-   void doAction() override;
-   bool isApplicable(const KBookmark &bk) const override;
+    void setStatus(const QString &text);
+    void doAction() override;
+    bool isApplicable(const KBookmark &bk) const override;
 
-   KIO::TransferJob *m_job;
-   QString m_oldStatus;
+    KIO::TransferJob *m_job;
+    QString m_oldStatus;
 };
 
 #endif

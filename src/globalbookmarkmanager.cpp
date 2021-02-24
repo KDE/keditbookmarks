@@ -19,18 +19,19 @@
 */
 
 #include "globalbookmarkmanager.h"
-#include <QDateTime>
-#include <QLocale>
+#include "kbookmarkmodel/commandhistory.h"
+#include "kbookmarkmodel/model.h"
 #include "keditbookmarks_debug.h"
 #include <KBookmarkManager>
-#include "kbookmarkmodel/model.h"
-#include "kbookmarkmodel/commandhistory.h"
+#include <QDateTime>
+#include <QLocale>
 
 GlobalBookmarkManager *GlobalBookmarkManager::s_mgr = nullptr;
 
 GlobalBookmarkManager::GlobalBookmarkManager()
-    : QObject(nullptr),
-      m_mgr(nullptr), m_model(nullptr)
+    : QObject(nullptr)
+    , m_mgr(nullptr)
+    , m_model(nullptr)
 {
 }
 
@@ -48,43 +49,61 @@ KBookmark GlobalBookmarkManager::bookmarkAt(const QString &a)
     return self()->mgr()->findByAddress(a);
 }
 
-bool GlobalBookmarkManager::managerSave() { return mgr()->save(); }
-void GlobalBookmarkManager::saveAs(const QString &fileName) { mgr()->saveAs(fileName); }
-void GlobalBookmarkManager::setUpdate(bool update) { mgr()->setUpdate(update); }
-QString GlobalBookmarkManager::path() const { return mgr()->path(); }
+bool GlobalBookmarkManager::managerSave()
+{
+    return mgr()->save();
+}
 
-void GlobalBookmarkManager::createManager(const QString &filename, const QString &dbusObjectName, CommandHistory* commandHistory) {
+void GlobalBookmarkManager::saveAs(const QString &fileName)
+{
+    mgr()->saveAs(fileName);
+}
+
+void GlobalBookmarkManager::setUpdate(bool update)
+{
+    mgr()->setUpdate(update);
+}
+
+QString GlobalBookmarkManager::path() const
+{
+    return mgr()->path();
+}
+
+void GlobalBookmarkManager::createManager(const QString &filename, const QString &dbusObjectName, CommandHistory *commandHistory)
+{
     if (m_mgr) {
-        //qCDebug(KEDITBOOKMARKS_LOG)<<"createManager called twice";
+        // qCDebug(KEDITBOOKMARKS_LOG)<<"createManager called twice";
         delete m_mgr;
     }
 
-    //qCDebug(KEDITBOOKMARKS_LOG)<<"DBus Object name: "<<dbusObjectName;
+    // qCDebug(KEDITBOOKMARKS_LOG)<<"DBus Object name: "<<dbusObjectName;
     m_mgr = KBookmarkManager::managerForFile(filename, dbusObjectName);
 
     commandHistory->setBookmarkManager(m_mgr);
 
-    if ( m_model ) {
+    if (m_model) {
         m_model->setRoot(root());
     } else {
         m_model = new KBookmarkModel(root(), commandHistory, this);
     }
 }
 
-void GlobalBookmarkManager::notifyManagers(const KBookmarkGroup& grp)
+void GlobalBookmarkManager::notifyManagers(const KBookmarkGroup &grp)
 {
     m_model->notifyManagers(grp);
 }
 
-void GlobalBookmarkManager::notifyManagers() {
-    notifyManagers( root() );
+void GlobalBookmarkManager::notifyManagers()
+{
+    notifyManagers(root());
 }
 
-void GlobalBookmarkManager::reloadConfig() {
+void GlobalBookmarkManager::reloadConfig()
+{
     mgr()->emitConfigChanged();
 }
 
-QString GlobalBookmarkManager::makeTimeStr(const QString & in)
+QString GlobalBookmarkManager::makeTimeStr(const QString &in)
 {
     int secs;
     bool ok;
@@ -99,9 +118,5 @@ QString GlobalBookmarkManager::makeTimeStr(int b)
     QDateTime dt;
     dt.fromSecsSinceEpoch(b);
     QLocale l;
-    return (dt.daysTo(QDateTime::currentDateTime()) > 31)
-        ? l.toString(dt.date(), QLocale::LongFormat)
-        : l.toString(dt, QLocale::LongFormat);
+    return (dt.daysTo(QDateTime::currentDateTime()) > 31) ? l.toString(dt.date(), QLocale::LongFormat) : l.toString(dt, QLocale::LongFormat);
 }
-
-

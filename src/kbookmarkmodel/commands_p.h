@@ -23,18 +23,21 @@
 class MoveCommand : public QUndoCommand, public IKEBCommand
 {
 public:
-   MoveCommand(KBookmarkModel* model, const QString &from, const QString &to, const QString &name = QString(), QUndoCommand* parent = nullptr);
-   QString finalAddress() const;
-   virtual ~MoveCommand() {}
-   void redo() override;
-   void undo() override;
-   QString affectedBookmarks() const override;
+    MoveCommand(KBookmarkModel *model, const QString &from, const QString &to, const QString &name = QString(), QUndoCommand *parent = nullptr);
+    QString finalAddress() const;
+    virtual ~MoveCommand()
+    {
+    }
+    void redo() override;
+    void undo() override;
+    QString affectedBookmarks() const override;
+
 private:
-   KBookmarkModel* m_model;
-   QString m_from;
-   QString m_to;
-   CreateCommand * m_cc;
-   DeleteCommand * m_dc;
+    KBookmarkModel *m_model;
+    QString m_from;
+    QString m_to;
+    CreateCommand *m_cc;
+    DeleteCommand *m_dc;
 };
 
 #endif /* KBOOKMARKMODEL_COMMANDS_P_H */

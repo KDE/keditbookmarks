@@ -31,15 +31,15 @@ class KBOOKMARKMODEL_EXPORT KBookmarkView : public QTreeView
 public:
     explicit KBookmarkView(QWidget *parent = nullptr);
     virtual ~KBookmarkView();
-    virtual KBookmark bookmarkForIndex(const QModelIndex & idx) const = 0;
+    virtual KBookmark bookmarkForIndex(const QModelIndex &idx) const = 0;
     void loadFoldedState();
 
 private Q_SLOTS:
-    void slotExpanded(const QModelIndex& index);
-    void slotCollapsed(const QModelIndex& index);
+    void slotExpanded(const QModelIndex &index);
+    void slotCollapsed(const QModelIndex &index);
 
 private:
-    void loadFoldedState(const QModelIndex& parentIndex);
+    void loadFoldedState(const QModelIndex &parentIndex);
     bool m_loadingState;
 };
 

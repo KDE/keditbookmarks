@@ -31,24 +31,36 @@ class GlobalBookmarkManager : public QObject
 {
     Q_OBJECT
 public:
-    typedef enum {HTMLExport, OperaExport, IEExport, MozillaExport, NetscapeExport} ExportType;
+    typedef enum { HTMLExport, OperaExport, IEExport, MozillaExport, NetscapeExport } ExportType;
 
     // TODO port to K_GLOBAL_STATIC if we keep this class
-    static GlobalBookmarkManager* self() { if (!s_mgr) { s_mgr = new GlobalBookmarkManager(); } return s_mgr; }
+    static GlobalBookmarkManager *self()
+    {
+        if (!s_mgr) {
+            s_mgr = new GlobalBookmarkManager();
+        }
+        return s_mgr;
+    }
     ~GlobalBookmarkManager();
     KBookmarkGroup root();
-    static KBookmark bookmarkAt(const QString & a);
+    static KBookmark bookmarkAt(const QString &a);
 
-    KBookmarkModel* model() const { return m_model; }
-    KBookmarkManager* mgr() const { return m_mgr; }
+    KBookmarkModel *model() const
+    {
+        return m_model;
+    }
+    KBookmarkManager *mgr() const
+    {
+        return m_mgr;
+    }
     QString path() const;
 
-    void createManager(const QString &filename, const QString &dbusObjectName, CommandHistory* commandHistory);
-    void notifyManagers(const KBookmarkGroup& grp);
+    void createManager(const QString &filename, const QString &dbusObjectName, CommandHistory *commandHistory);
+    void notifyManagers(const KBookmarkGroup &grp);
     void notifyManagers();
     bool managerSave();
     void saveAs(const QString &fileName);
-    void doExport(ExportType type, const QString & path = QString());
+    void doExport(ExportType type, const QString &path = QString());
     void setUpdate(bool update);
 
     void reloadConfig();
@@ -65,4 +77,3 @@ private:
 };
 
 #endif /* GLOBALBOOKMARKMANAGER_H */
-

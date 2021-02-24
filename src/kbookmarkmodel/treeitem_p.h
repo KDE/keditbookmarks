@@ -18,28 +18,29 @@
 #ifndef TREEITEM_P_H
 #define TREEITEM_P_H
 
-#include <QList>
 #include <KBookmark>
+#include <QList>
 
 class TreeItem
 {
 public:
-    TreeItem(const KBookmark& bk, TreeItem * parent);
+    TreeItem(const KBookmark &bk, TreeItem *parent);
     ~TreeItem();
-    TreeItem * child(int row);
-    TreeItem * parent() const;
+    TreeItem *child(int row);
+    TreeItem *parent() const;
 
     void insertChildren(int first, int last);
     void deleteChildren(int first, int last);
-    void moveChildren(int first, int last, TreeItem * newParent, int position);
+    void moveChildren(int first, int last, TreeItem *newParent, int position);
     KBookmark bookmark() const;
     int childCount();
-    TreeItem * treeItemForBookmark(const KBookmark& bk);
+    TreeItem *treeItemForBookmark(const KBookmark &bk);
+
 private:
     void initChildren();
 
     QList<TreeItem *> children;
-    TreeItem * mParent;
+    TreeItem *mParent;
     KBookmark mBookmark;
     bool mInitDone;
 };

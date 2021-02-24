@@ -25,10 +25,12 @@
 #include <QFile>
 
 HTMLExporter::HTMLExporter()
-    : m_out(&m_string, QIODevice::WriteOnly) {
+    : m_out(&m_string, QIODevice::WriteOnly)
+{
 }
 
-void HTMLExporter::write(const KBookmarkGroup &grp, const QString &filename, bool showAddress) {
+void HTMLExporter::write(const KBookmarkGroup &grp, const QString &filename, bool showAddress)
+{
     QFile file(filename);
     if (!file.open(QIODevice::WriteOnly)) {
         qCCritical(KEDITBOOKMARKS_LOG) << "Can't write to file " << filename;
@@ -56,38 +58,34 @@ QString HTMLExporter::toString(const KBookmarkGroup &grp, bool showAddress)
            "</body>\n</html>\n";
 }
 
-void HTMLExporter::visit(const KBookmark &bk) {
+void HTMLExporter::visit(const KBookmark &bk)
+{
     // //qCDebug(KEDITBOOKMARKS_LOG) << "visit(" << bk.text() << ")";
-    if(bk.isSeparator())
-    {
-        m_out << bk.fullText() << "<br>"<< QLatin1Char('\n');
-    }
-    else
-    {
-        if(m_showAddress)
-        {
-            m_out << bk.fullText() <<"<br>"<< QLatin1Char('\n');
+    if (bk.isSeparator()) {
+        m_out << bk.fullText() << "<br>" << QLatin1Char('\n');
+    } else {
+        if (m_showAddress) {
+            m_out << bk.fullText() << "<br>" << QLatin1Char('\n');
             m_out << "<i><div style =\"margin-left: 1em\">" << bk.url().url().toUtf8() << "</div></i>";
-        }
-        else
-        {
+        } else {
             m_out << "<a href=\"" << bk.url().url().toUtf8() << "\">";
-            m_out << bk.fullText() << "</a><br>"<< QLatin1Char('\n');
+            m_out << bk.fullText() << "</a><br>" << QLatin1Char('\n');
         }
     }
     m_out.flush();
 }
 
-void HTMLExporter::visitEnter(const KBookmarkGroup &grp) {
+void HTMLExporter::visitEnter(const KBookmarkGroup &grp)
+{
     // //qCDebug(KEDITBOOKMARKS_LOG) << "visitEnter(" << grp.text() << ")";
-    m_out << "<b>" << grp.fullText() << "</b><br>"<< QLatin1Char('\n');
-    m_out << "<div style=\"margin-left: 2em\">"<< QLatin1Char('\n');
+    m_out << "<b>" << grp.fullText() << "</b><br>" << QLatin1Char('\n');
+    m_out << "<div style=\"margin-left: 2em\">" << QLatin1Char('\n');
     m_out.flush();
 }
 
-void HTMLExporter::visitLeave(const KBookmarkGroup &) {
+void HTMLExporter::visitLeave(const KBookmarkGroup &)
+{
     // //qCDebug(KEDITBOOKMARKS_LOG) << "visitLeave()";
     m_out << "</div>" << QLatin1Char('\n');
     m_out.flush();
 }
-

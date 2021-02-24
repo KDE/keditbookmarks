@@ -21,15 +21,15 @@
 */
 
 #include "globalbookmarkmanager.h"
-#include "toplevel.h"
 #include "importers.h"
 #include "kbookmarkmodel/commandhistory.h"
 #include "keditbookmarks_version.h"
+#include "toplevel.h"
 
-#include <QApplication>
 #include "keditbookmarks_debug.h"
-#include <QCommandLineParser>
+#include <QApplication>
 #include <QCommandLineOption>
+#include <QCommandLineParser>
 
 #include <KAboutData>
 #include <Kdelibs4ConfigMigrator>
@@ -38,44 +38,44 @@
 #include <KWindowSystem>
 
 #include <KBookmarkManager>
+#include <QStandardPaths>
 #include <kbookmarkexporter.h>
 #include <toplevel_interface.h>
-#include <QStandardPaths>
 
 // TODO - make this register() or something like that and move dialog into main
-static bool askUser(const QString& filename, bool &readonly) {
-
+static bool askUser(const QString &filename, bool &readonly)
+{
     QString interfaceName = QStringLiteral("org.kde.keditbookmarks");
-    QString appId = interfaceName + '-' +QString().setNum(QApplication::applicationPid());
+    QString appId = interfaceName + '-' + QString().setNum(QApplication::applicationPid());
 
     QDBusConnection dbus = QDBusConnection::sessionBus();
     QDBusReply<QStringList> reply = dbus.interface()->registeredServiceNames();
-    if ( !reply.isValid() )
+    if (!reply.isValid())
         return true;
     const QStringList allServices = reply;
-    for ( QStringList::const_iterator it = allServices.begin(), end = allServices.end() ; it != end ; ++it ) {
+    for (QStringList::const_iterator it = allServices.begin(), end = allServices.end(); it != end; ++it) {
         const QString service = *it;
-        if ( service.startsWith( interfaceName ) && service != appId ) {
-            org::kde::keditbookmarks keditbookmarks(service,QStringLiteral("/keditbookmarks"), dbus);
+        if (service.startsWith(interfaceName) && service != appId) {
+            org::kde::keditbookmarks keditbookmarks(service, QStringLiteral("/keditbookmarks"), dbus);
             QDBusReply<QString> bookmarks = keditbookmarks.bookmarkFilename();
             QString name;
-            if( bookmarks.isValid())
+            if (bookmarks.isValid())
                 name = bookmarks;
-            if( name == filename)
-            {
+            if (name == filename) {
                 int ret = KMessageBox::warningYesNo(nullptr,
-                i18n("Another instance of %1 is already running. Do you really "
-                "want to open another instance or continue work in the same instance?\n"
-                "Please note that, unfortunately, duplicate views are read-only.", QGuiApplication::applicationDisplayName()),
-                i18nc("@title:window", "Warning"),
-                KGuiItem(i18n("Run Another")),    /* yes */
-                KGuiItem(i18n("Continue in Same")) /*  no */);
+                                                    i18n("Another instance of %1 is already running. Do you really "
+                                                         "want to open another instance or continue work in the same instance?\n"
+                                                         "Please note that, unfortunately, duplicate views are read-only.",
+                                                         QGuiApplication::applicationDisplayName()),
+                                                    i18nc("@title:window", "Warning"),
+                                                    KGuiItem(i18n("Run Another")), /* yes */
+                                                    KGuiItem(i18n("Continue in Same")) /*  no */);
                 if (ret == KMessageBox::No) {
                     QDBusInterface keditinterface(service, QStringLiteral("/keditbookmarks/MainWindow_1"));
-                    //TODO fix me
+                    // TODO fix me
                     QDBusReply<qlonglong> value = keditinterface.call(QDBus::NoBlock, QStringLiteral("winId"));
                     qlonglong id = 0;
-                    if( value.isValid())
+                    if (value.isValid())
                         id = value;
                     ////qCDebug(KEDITBOOKMARKS_LOG)<<" id !!!!!!!!!!!!!!!!!!! :"<<id;
                     KWindowSystem::activateWindow((WId)id);
@@ -88,7 +88,6 @@ static bool askUser(const QString& filename, bool &readonly) {
     }
     return true;
 }
-
 
 int main(int argc, char **argv)
 {
@@ -107,7 +106,7 @@ int main(int argc, char **argv)
                          QStringLiteral(KEDITBOOKMARKS_VERSION_STRING),
                          i18n("Bookmark Organizer and Editor"),
                          KAboutLicense::GPL,
-                         i18n("Copyright 2000-2017, KDE developers") );
+                         i18n("Copyright 2000-2017, KDE developers"));
     aboutData.addAuthor(i18n("David Faure"), i18n("Initial author"), QStringLiteral("faure@kde.org"));
     aboutData.addAuthor(i18n("Alexander Kellett"), i18n("Author"), QStringLiteral("lypanov@kde.org"));
 
@@ -145,10 +144,10 @@ int main(int argc, char **argv)
     aboutData.processCommandLine(&parser);
 
     const bool isGui = !(parser.isSet(QStringLiteral("exportmoz")) || parser.isSet(QStringLiteral("exportns")) || parser.isSet(QStringLiteral("exporthtml")) //
-                || parser.isSet(QStringLiteral("exportie")) || parser.isSet(QStringLiteral("exportopera")) //
-                || parser.isSet(QStringLiteral("importmoz")) || parser.isSet(QStringLiteral("importns")) //
-                || parser.isSet(QStringLiteral("importie")) || parser.isSet(QStringLiteral("importopera")) //
-                || parser.isSet(QStringLiteral("importkde3")) || parser.isSet(QStringLiteral("importgaleon")));
+                         || parser.isSet(QStringLiteral("exportie")) || parser.isSet(QStringLiteral("exportopera")) //
+                         || parser.isSet(QStringLiteral("importmoz")) || parser.isSet(QStringLiteral("importns")) //
+                         || parser.isSet(QStringLiteral("importie")) || parser.isSet(QStringLiteral("importopera")) //
+                         || parser.isSet(QStringLiteral("importkde3")) || parser.isSet(QStringLiteral("importgaleon")));
 
     const bool browser = !parser.isSet(QStringLiteral("nobrowser"));
 
@@ -157,26 +156,69 @@ int main(int argc, char **argv)
 
     const bool gotFilenameArg = (parser.positionalArguments().count() == 1);
 
-    QString filename = gotFilenameArg
-        ? parser.positionalArguments().at(0)
-        : QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
+    QString filename = gotFilenameArg ? parser.positionalArguments().at(0)
+                                      : QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
 
     if (!isGui) {
         GlobalBookmarkManager::self()->createManager(filename, QString(), new CommandHistory());
         GlobalBookmarkManager::ExportType exportType = GlobalBookmarkManager::MozillaExport; // uumm.. can i just set it to -1 ?
         int got = 0;
         const char *arg, *arg2 = nullptr, *importType = nullptr;
-        if (arg = "exportmoz",  parser.isSet(arg)) { exportType = GlobalBookmarkManager::MozillaExport;  arg2 = arg; got++; }
-        if (arg = "exportns",   parser.isSet(arg)) { exportType = GlobalBookmarkManager::NetscapeExport; arg2 = arg; got++; }
-        if (arg = "exporthtml", parser.isSet(arg)) { exportType = GlobalBookmarkManager::HTMLExport;     arg2 = arg; got++; }
-        if (arg = "exportie",   parser.isSet(arg)) { exportType = GlobalBookmarkManager::IEExport;       arg2 = arg; got++; }
-        if (arg = "exportopera", parser.isSet(arg)) { exportType = GlobalBookmarkManager::OperaExport;    arg2 = arg; got++; }
-        if (arg = "importmoz",  parser.isSet(arg)) { importType = "Moz";   arg2 = arg; got++; }
-        if (arg = "importns",   parser.isSet(arg)) { importType = "NS";    arg2 = arg; got++; }
-        if (arg = "importie",   parser.isSet(arg)) { importType = "IE";    arg2 = arg; got++; }
-        if (arg = "importopera", parser.isSet(arg)) { importType = "Opera"; arg2 = arg; got++; }
-        if (arg = "importgaleon", parser.isSet(arg)) { importType = "Galeon"; arg2 = arg; got++; }
-        if (arg = "importkde3", parser.isSet(arg)) { importType = "KDE2"; arg2 = arg; got++; }
+        if (arg = "exportmoz", parser.isSet(arg)) {
+            exportType = GlobalBookmarkManager::MozillaExport;
+            arg2 = arg;
+            got++;
+        }
+        if (arg = "exportns", parser.isSet(arg)) {
+            exportType = GlobalBookmarkManager::NetscapeExport;
+            arg2 = arg;
+            got++;
+        }
+        if (arg = "exporthtml", parser.isSet(arg)) {
+            exportType = GlobalBookmarkManager::HTMLExport;
+            arg2 = arg;
+            got++;
+        }
+        if (arg = "exportie", parser.isSet(arg)) {
+            exportType = GlobalBookmarkManager::IEExport;
+            arg2 = arg;
+            got++;
+        }
+        if (arg = "exportopera", parser.isSet(arg)) {
+            exportType = GlobalBookmarkManager::OperaExport;
+            arg2 = arg;
+            got++;
+        }
+        if (arg = "importmoz", parser.isSet(arg)) {
+            importType = "Moz";
+            arg2 = arg;
+            got++;
+        }
+        if (arg = "importns", parser.isSet(arg)) {
+            importType = "NS";
+            arg2 = arg;
+            got++;
+        }
+        if (arg = "importie", parser.isSet(arg)) {
+            importType = "IE";
+            arg2 = arg;
+            got++;
+        }
+        if (arg = "importopera", parser.isSet(arg)) {
+            importType = "Opera";
+            arg2 = arg;
+            got++;
+        }
+        if (arg = "importgaleon", parser.isSet(arg)) {
+            importType = "Galeon";
+            arg2 = arg;
+            got++;
+        }
+        if (arg = "importkde3", parser.isSet(arg)) {
+            importType = "KDE2";
+            arg2 = arg;
+            got++;
+        }
         if (!importType && arg2) {
             Q_ASSERT(arg2);
             // TODO - maybe an xbel export???
@@ -192,7 +234,7 @@ int main(int argc, char **argv)
                 return 1;
             }
             QString path = parser.value(arg2);
-            KBookmarkModel* model = GlobalBookmarkManager::self()->model();
+            KBookmarkModel *model = GlobalBookmarkManager::self()->model();
             ImportCommand *importer = ImportCommand::importerFactory(model, importType);
             importer->import(path, true);
             importer->redo();
@@ -202,25 +244,18 @@ int main(int argc, char **argv)
         return 0; // error flag on exit?, 1?
     }
 
-    QString address = parser.isSet(QStringLiteral("address"))
-        ? parser.value(QStringLiteral("address"))
-        : QStringLiteral("/0");
+    QString address = parser.isSet(QStringLiteral("address")) ? parser.value(QStringLiteral("address")) : QStringLiteral("/0");
 
-    QString caption = parser.isSet(QStringLiteral("customcaption"))
-        ? parser.value(QStringLiteral("customcaption"))
-        : QString();
+    QString caption = parser.isSet(QStringLiteral("customcaption")) ? parser.value(QStringLiteral("customcaption")) : QString();
 
     QString dbusObjectName;
-    if(parser.isSet(QStringLiteral("dbusObjectName")))
-    {
+    if (parser.isSet(QStringLiteral("dbusObjectName"))) {
         dbusObjectName = parser.value(QStringLiteral("dbusObjectName"));
-    }
-    else
-    {
-        if(gotFilenameArg)
-          dbusObjectName = QString();
+    } else {
+        if (gotFilenameArg)
+            dbusObjectName = QString();
         else
-          dbusObjectName = QStringLiteral("konqueror");
+            dbusObjectName = QStringLiteral("konqueror");
     }
 
     bool readonly = false; // passed by ref

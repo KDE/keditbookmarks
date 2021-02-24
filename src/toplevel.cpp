@@ -19,48 +19,48 @@
 */
 
 #include "toplevel.h"
-#include <QVBoxLayout>
 #include "globalbookmarkmanager.h"
+#include <QVBoxLayout>
 
 #include "kbookmarkmodel/model.h"
 
-#include "bookmarkinfowidget.h"
 #include "actionsimpl.h"
+#include "bookmarkinfowidget.h"
 #include "exporters.h"
-#include "settings.h"
-#include "kbookmarkmodel/commands.h"
 #include "kbookmarkmodel/commandhistory.h"
+#include "kbookmarkmodel/commands.h"
 #include "kebsearchline.h"
+#include "settings.h"
 
 #include <stdlib.h>
 
+#include <QApplication>
 #include <QClipboard>
 #include <QSplitter>
-#include <QApplication>
 
-#include <KActionCollection>
-#include <KToggleAction>
-#include <KBookmarkManager>
 #include "keditbookmarks_debug.h"
+#include <KActionCollection>
+#include <KBookmarkManager>
 #include <KEditToolBar>
 #include <KLineEdit>
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KStandardAction>
+#include <KToggleAction>
 
 #include <QDBusConnection>
 KEBApp *KEBApp::s_topLevel = nullptr;
 
-KEBApp::KEBApp(
-    const QString &bookmarksFile, bool readonly,
-    const QString &address, bool browser, const QString &caption,
-    const QString &dbusObjectName
-) : KXmlGuiWindow(), m_bookmarksFilename(bookmarksFile),
-    m_caption(caption),
-    m_dbusObjectName(dbusObjectName), m_readOnly(readonly),m_browser(browser)
- {
+KEBApp::KEBApp(const QString &bookmarksFile, bool readonly, const QString &address, bool browser, const QString &caption, const QString &dbusObjectName)
+    : KXmlGuiWindow()
+    , m_bookmarksFilename(bookmarksFile)
+    , m_caption(caption)
+    , m_dbusObjectName(dbusObjectName)
+    , m_readOnly(readonly)
+    , m_browser(browser)
+{
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/keditbookmarks"), this, QDBusConnection::ExportScriptableSlots);
-    Q_UNUSED(address);//FIXME sets the current item
+    Q_UNUSED(address); // FIXME sets the current item
 
     m_cmdHistory = new CommandHistory(this);
     m_cmdHistory->createActions(actionCollection());
@@ -76,13 +76,12 @@ KEBApp::KEBApp(
     else
         createGUI(QStringLiteral("keditbookmarks-genui.rc"));
 
-    connect(qApp->clipboard(), &QClipboard::dataChanged,
-                               this, &KEBApp::slotClipboardDataChanged);
+    connect(qApp->clipboard(), &QClipboard::dataChanged, this, &KEBApp::slotClipboardDataChanged);
 
     m_canPaste = false;
 
     mBookmarkListView = new BookmarkListView();
-    mBookmarkListView->setModel( GlobalBookmarkManager::self()->model() );
+    mBookmarkListView->setModel(GlobalBookmarkManager::self()->model());
     mBookmarkListView->setSelectionMode(QAbstractItemView::ExtendedSelection);
     mBookmarkListView->loadColumnSetting();
     mBookmarkListView->loadFoldedState();
@@ -92,7 +91,7 @@ KEBApp::KEBApp(
     mBookmarkFolderView = new BookmarkFolderView(mBookmarkListView, this);
     mBookmarkFolderView->expandAll();
 
-    QWidget * rightSide = new QWidget;
+    QWidget *rightSide = new QWidget;
     QVBoxLayout *listLayout = new QVBoxLayout(rightSide);
     listLayout->setContentsMargins(0, 0, 0, 0);
     listLayout->addWidget(searchline);
@@ -106,18 +105,16 @@ KEBApp::KEBApp(
     hsplitter->setOrientation(Qt::Horizontal);
     hsplitter->addWidget(mBookmarkFolderView);
     hsplitter->addWidget(rightSide);
-    hsplitter->setStretchFactor(1,1);
+    hsplitter->setStretchFactor(1, 1);
 
     setCentralWidget(hsplitter);
 
     slotClipboardDataChanged();
     setAutoSaveSettings();
 
-    connect(mBookmarkListView->selectionModel(), &QItemSelectionModel::selectionChanged,
-            this, &KEBApp::selectionChanged);
+    connect(mBookmarkListView->selectionModel(), &QItemSelectionModel::selectionChanged, this, &KEBApp::selectionChanged);
 
-    connect(mBookmarkFolderView->selectionModel(), &QItemSelectionModel::selectionChanged,
-            this, &KEBApp::selectionChanged);
+    connect(mBookmarkFolderView->selectionModel(), &QItemSelectionModel::selectionChanged, this, &KEBApp::selectionChanged);
 
     setCancelFavIconUpdatesEnabled(false);
     setCancelTestsEnabled(false);
@@ -136,88 +133,87 @@ void KEBApp::collapseAll()
 
 QString KEBApp::bookmarkFilename()
 {
-   return m_bookmarksFilename;
+    return m_bookmarksFilename;
 }
 
-void KEBApp::reset(const QString & caption, const QString & bookmarksFileName)
+void KEBApp::reset(const QString &caption, const QString &bookmarksFileName)
 {
-    //FIXME check this code, probably should be model()->setRoot instead of resetModel()
+    // FIXME check this code, probably should be model()->setRoot instead of resetModel()
     m_caption = caption;
     m_bookmarksFilename = bookmarksFileName;
-    GlobalBookmarkManager::self()->createManager(m_bookmarksFilename, m_dbusObjectName, m_cmdHistory); //FIXME this is still a memory leak (iff called by slotLoad)
+    GlobalBookmarkManager::self()->createManager(m_bookmarksFilename,
+                                                 m_dbusObjectName,
+                                                 m_cmdHistory); // FIXME this is still a memory leak (iff called by slotLoad)
     GlobalBookmarkManager::self()->model()->resetModel();
     updateActions();
 }
 
-void KEBApp::startEdit( Column c )
+void KEBApp::startEdit(Column c)
 {
-    const QModelIndexList & list = mBookmarkListView->selectionModel()->selectedIndexes();
+    const QModelIndexList &list = mBookmarkListView->selectionModel()->selectedIndexes();
     QModelIndexList::const_iterator it, end;
     end = list.constEnd();
-    for(it = list.constBegin(); it != end; ++it)
-        if( (*it).column() == int(c) && (mBookmarkListView->model()->flags(*it) & Qt::ItemIsEditable) )
-            mBookmarkListView->edit( *it );
+    for (it = list.constBegin(); it != end; ++it)
+        if ((*it).column() == int(c) && (mBookmarkListView->model()->flags(*it) & Qt::ItemIsEditable))
+            mBookmarkListView->edit(*it);
 }
 
-//FIXME clean up and remove unneeded things
+// FIXME clean up and remove unneeded things
 SelcAbilities KEBApp::getSelectionAbilities() const
 {
     SelcAbilities selctionAbilities;
-    selctionAbilities.itemSelected   = false;
-    selctionAbilities.group          = false;
-    selctionAbilities.separator      = false;
-    selctionAbilities.urlIsEmpty     = false;
-    selctionAbilities.root           = false;
-    selctionAbilities.multiSelect    = false;
-    selctionAbilities.singleSelect   = false;
-    selctionAbilities.notEmpty       = false;
-    selctionAbilities.deleteEnabled  = false;
+    selctionAbilities.itemSelected = false;
+    selctionAbilities.group = false;
+    selctionAbilities.separator = false;
+    selctionAbilities.urlIsEmpty = false;
+    selctionAbilities.root = false;
+    selctionAbilities.multiSelect = false;
+    selctionAbilities.singleSelect = false;
+    selctionAbilities.notEmpty = false;
+    selctionAbilities.deleteEnabled = false;
 
     KBookmark nbk;
     QModelIndexList sel = mBookmarkListView->selectionModel()->selectedIndexes();
     int columnCount;
-    if(sel.count())
-    {
+    if (sel.count()) {
         nbk = mBookmarkListView->bookmarkForIndex(sel.first());
         columnCount = mBookmarkListView->model()->columnCount();
-    }
-    else
-    {
+    } else {
         sel = mBookmarkFolderView->selectionModel()->selectedIndexes();
-        if(sel.count())
+        if (sel.count())
             nbk = mBookmarkFolderView->bookmarkForIndex(sel.first());
         columnCount = mBookmarkFolderView->model()->columnCount();
     }
 
-    if ( sel.count() > 0)
-    {
+    if (sel.count() > 0) {
         selctionAbilities.deleteEnabled = true;
-        selctionAbilities.itemSelected   = true;
-        selctionAbilities.group          = nbk.isGroup();
-        selctionAbilities.separator      = nbk.isSeparator();
-        selctionAbilities.urlIsEmpty     = nbk.url().isEmpty();
-        selctionAbilities.root           = nbk.address() == GlobalBookmarkManager::self()->root().address();
-        selctionAbilities.multiSelect    = (sel.count() > columnCount);
-        selctionAbilities.singleSelect   = (!selctionAbilities.multiSelect && selctionAbilities.itemSelected);
+        selctionAbilities.itemSelected = true;
+        selctionAbilities.group = nbk.isGroup();
+        selctionAbilities.separator = nbk.isSeparator();
+        selctionAbilities.urlIsEmpty = nbk.url().isEmpty();
+        selctionAbilities.root = nbk.address() == GlobalBookmarkManager::self()->root().address();
+        selctionAbilities.multiSelect = (sel.count() > columnCount);
+        selctionAbilities.singleSelect = (!selctionAbilities.multiSelect && selctionAbilities.itemSelected);
     }
-    //FIXME check next line, if it actually works
+    // FIXME check next line, if it actually works
     selctionAbilities.notEmpty = GlobalBookmarkManager::self()->root().first().hasParent();
 
-/*    //qCDebug(KEDITBOOKMARKS_LOG)
-        <<"\nsa.itemSelected "<<selctionAbilities.itemSelected
-        <<"\nsa.group        "<<selctionAbilities.group
-        <<"\nsa.separator    "<<selctionAbilities.separator
-        <<"\nsa.urlIsEmpty   "<<selctionAbilities.urlIsEmpty
-        <<"\nsa.root         "<<selctionAbilities.root
-        <<"\nsa.multiSelect  "<<selctionAbilities.multiSelect
-        <<"\nsa.singleSelect "<<selctionAbilities.singleSelect
-        <<"\nsa.deleteEnabled"<<selctionAbilities.deleteEnabled;
-*/
+    /*    //qCDebug(KEDITBOOKMARKS_LOG)
+            <<"\nsa.itemSelected "<<selctionAbilities.itemSelected
+            <<"\nsa.group        "<<selctionAbilities.group
+            <<"\nsa.separator    "<<selctionAbilities.separator
+            <<"\nsa.urlIsEmpty   "<<selctionAbilities.urlIsEmpty
+            <<"\nsa.root         "<<selctionAbilities.root
+            <<"\nsa.multiSelect  "<<selctionAbilities.multiSelect
+            <<"\nsa.singleSelect "<<selctionAbilities.singleSelect
+            <<"\nsa.deleteEnabled"<<selctionAbilities.deleteEnabled;
+    */
     return selctionAbilities;
 }
 
-void KEBApp::setActionsEnabled(SelcAbilities sa) {
-    KActionCollection * coll = actionCollection();
+void KEBApp::setActionsEnabled(SelcAbilities sa)
+{
+    KActionCollection *coll = actionCollection();
 
     QStringList toEnable;
 
@@ -225,20 +221,20 @@ void KEBApp::setActionsEnabled(SelcAbilities sa) {
         toEnable << QStringLiteral("edit_copy");
 
     if (sa.multiSelect || (sa.singleSelect && !sa.root && !sa.urlIsEmpty && !sa.group && !sa.separator))
-            toEnable << QStringLiteral("openlink");
+        toEnable << QStringLiteral("openlink");
 
     if (!m_readOnly) {
         if (sa.notEmpty)
             toEnable << QStringLiteral("testall") << QStringLiteral("updateallfavicons");
 
-        if ( sa.deleteEnabled && (sa.multiSelect || (sa.singleSelect && !sa.root)) )
-                toEnable << QStringLiteral("delete") << QStringLiteral("edit_cut");
+        if (sa.deleteEnabled && (sa.multiSelect || (sa.singleSelect && !sa.root)))
+            toEnable << QStringLiteral("delete") << QStringLiteral("edit_cut");
 
-        if( sa.singleSelect)
+        if (sa.singleSelect)
             if (m_canPaste)
                 toEnable << QStringLiteral("edit_paste");
 
-        if( sa.multiSelect || (sa.singleSelect && !sa.root && !sa.urlIsEmpty && !sa.group && !sa.separator))
+        if (sa.multiSelect || (sa.singleSelect && !sa.root && !sa.urlIsEmpty && !sa.group && !sa.separator))
             toEnable << QStringLiteral("testlink") << QStringLiteral("updatefavicon");
 
         if (sa.singleSelect && !sa.root && !sa.separator) {
@@ -254,9 +250,7 @@ void KEBApp::setActionsEnabled(SelcAbilities sa) {
         }
     }
 
-    for ( QStringList::const_iterator it = toEnable.constBegin();
-            it != toEnable.constEnd(); ++it )
-    {
+    for (QStringList::const_iterator it = toEnable.constBegin(); it != toEnable.constEnd(); ++it) {
         ////qCDebug(KEDITBOOKMARKS_LOG) <<" enabling action "<<(*it);
         coll->action(*it)->setEnabled(true);
     }
@@ -265,35 +259,34 @@ void KEBApp::setActionsEnabled(SelcAbilities sa) {
 KBookmark KEBApp::firstSelected() const
 {
     QModelIndex index;
-    const QModelIndexList & list = mBookmarkListView->selectionModel()->selectedIndexes();
-    if(list.count()) // selection in main listview, return bookmark for firstSelected
+    const QModelIndexList &list = mBookmarkListView->selectionModel()->selectedIndexes();
+    if (list.count()) // selection in main listview, return bookmark for firstSelected
         return mBookmarkListView->bookmarkForIndex(*list.constBegin());
 
     // no selection in main listview, fall back to selection in left tree
-    const QModelIndexList & list2 = mBookmarkFolderView->selectionModel()->selectedIndexes();
+    const QModelIndexList &list2 = mBookmarkFolderView->selectionModel()->selectedIndexes();
     return mBookmarkFolderView->bookmarkForIndex(*list2.constBegin());
 }
 
 QString KEBApp::insertAddress() const
 {
     KBookmark current = firstSelected();
-    return (current.isGroup())
-        ? (current.address() + "/0") //FIXME internal representation used
-        : KBookmark::nextAddress(current.address());
+    return (current.isGroup()) ? (current.address() + "/0") // FIXME internal representation used
+                               : KBookmark::nextAddress(current.address());
 }
 
-static bool lessAddress(const QString& first, const QString& second)
+static bool lessAddress(const QString &first, const QString &second)
 {
     QString a = first;
     QString b = second;
 
-    if(a == b)
-         return false;
+    if (a == b)
+        return false;
 
     QString error(QStringLiteral("ERROR"));
-    if(a == error)
+    if (a == error)
         return false;
-    if(b == error)
+    if (b == error)
         return true;
 
     a += '/';
@@ -305,12 +298,11 @@ static bool lessAddress(const QString& first, const QString& second)
     uint bEnd = b.length();
     // Each iteration checks one "/"-delimeted part of the address
     // "" is treated correctly
-    while(true)
-    {
+    while (true) {
         // Invariant: a[0 ... aLast] == b[0 ... bLast]
-        if(aLast + 1 == aEnd) //The last position was the last slash
+        if (aLast + 1 == aEnd) // The last position was the last slash
             return true; // That means a is shorter than b
-        if(bLast +1 == bEnd)
+        if (bLast + 1 == bEnd)
             return false;
 
         uint aNext = a.indexOf(QLatin1String("/"), aLast + 1);
@@ -318,13 +310,13 @@ static bool lessAddress(const QString& first, const QString& second)
 
         bool okay;
         uint aNum = a.midRef(aLast + 1, aNext - aLast - 1).toUInt(&okay);
-        if(!okay)
+        if (!okay)
             return false;
         uint bNum = b.midRef(bLast + 1, bNext - bLast - 1).toUInt(&okay);
-        if(!okay)
+        if (!okay)
             return true;
 
-        if(aNum != bNum)
+        if (aNum != bNum)
             return aNum < bNum;
 
         aLast = aNext;
@@ -332,7 +324,7 @@ static bool lessAddress(const QString& first, const QString& second)
     }
 }
 
-static bool lessBookmark(const KBookmark & first, const KBookmark & second) //FIXME Using internal represantation
+static bool lessBookmark(const KBookmark &first, const KBookmark &second) // FIXME Using internal represantation
 {
     return lessAddress(first.address(), second.address());
 }
@@ -347,18 +339,19 @@ KBookmark::List KEBApp::allBookmarks() const
 KBookmark::List KEBApp::selectedBookmarks() const
 {
     KBookmark::List bookmarks;
-    const QModelIndexList & list = mBookmarkListView->selectionModel()->selectedIndexes();
+    const QModelIndexList &list = mBookmarkListView->selectionModel()->selectedIndexes();
     if (!list.isEmpty()) {
-      QModelIndexList::const_iterator it, end;
-      end = list.constEnd();
-      for( it = list.constBegin(); it != end; ++it) {
-	  if((*it).column() != 0)
-	      continue;
-	  KBookmark bk = mBookmarkListView->bookmarkModel()->bookmarkForIndex(*it);;
-	  if(bk.address() != GlobalBookmarkManager::self()->root().address())
-              bookmarks.push_back( bk );
-      }
-      std::sort(bookmarks.begin(), bookmarks.end(), lessBookmark);
+        QModelIndexList::const_iterator it, end;
+        end = list.constEnd();
+        for (it = list.constBegin(); it != end; ++it) {
+            if ((*it).column() != 0)
+                continue;
+            KBookmark bk = mBookmarkListView->bookmarkModel()->bookmarkForIndex(*it);
+            ;
+            if (bk.address() != GlobalBookmarkManager::self()->root().address())
+                bookmarks.push_back(bk);
+        }
+        std::sort(bookmarks.begin(), bookmarks.end(), lessBookmark);
     } else {
         bookmarks.push_back(firstSelected());
     }
@@ -372,35 +365,30 @@ KBookmark::List KEBApp::selectedBookmarksExpanded() const
     KBookmark::List result;
     KBookmark::List::const_iterator it, end;
     end = bookmarks.constEnd();
-    for(it = bookmarks.constBegin(); it != end; ++it)
-    {
-        selectedBookmarksExpandedHelper( *it, result );
+    for (it = bookmarks.constBegin(); it != end; ++it) {
+        selectedBookmarksExpandedHelper(*it, result);
     }
     return result;
 }
 
-void KEBApp::selectedBookmarksExpandedHelper(const KBookmark& bk, KBookmark::List & bookmarks) const
+void KEBApp::selectedBookmarksExpandedHelper(const KBookmark &bk, KBookmark::List &bookmarks) const
 {
-    //FIXME in which order parents should ideally be: parent then child
+    // FIXME in which order parents should ideally be: parent then child
     // or child and then parents
-    if(bk.isGroup())
-    {
+    if (bk.isGroup()) {
         KBookmarkGroup parent = bk.toGroup();
         KBookmark child = parent.first();
-        while(!child.isNull())
-        {
+        while (!child.isNull()) {
             selectedBookmarksExpandedHelper(child, bookmarks);
             child = parent.next(child);
         }
-    }
-    else
-    {
-        bookmarks.push_back( bk );
+    } else {
+        bookmarks.push_back(bk);
     }
 }
 
-KEBApp::~KEBApp() {
-
+KEBApp::~KEBApp()
+{
     // Save again, just in case the user expanded/collapsed folders (#131127)
     GlobalBookmarkManager::self()->notifyManagers();
 
@@ -411,11 +399,13 @@ KEBApp::~KEBApp() {
     delete GlobalBookmarkManager::self();
 }
 
-KToggleAction* KEBApp::getToggleAction(const char *action) const {
-    return static_cast<KToggleAction*>(actionCollection()->action(action));
+KToggleAction *KEBApp::getToggleAction(const char *action) const
+{
+    return static_cast<KToggleAction *>(actionCollection()->action(action));
 }
 
-void KEBApp::resetActions() {
+void KEBApp::resetActions()
+{
     stateChanged(QStringLiteral("disablestuff"));
     stateChanged(QStringLiteral("normal"));
 
@@ -423,48 +413,49 @@ void KEBApp::resetActions() {
         stateChanged(QStringLiteral("notreadonly"));
 }
 
-void  KEBApp::selectionChanged()
+void KEBApp::selectionChanged()
 {
     updateActions();
 }
 
-void KEBApp::updateActions() {
+void KEBApp::updateActions()
+{
     resetActions();
     setActionsEnabled(getSelectionAbilities());
 }
 
-void KEBApp::slotClipboardDataChanged() {
+void KEBApp::slotClipboardDataChanged()
+{
     // //qCDebug(KEDITBOOKMARKS_LOG) << "KEBApp::slotClipboardDataChanged";
     if (!m_readOnly) {
-        m_canPaste = KBookmark::List::canDecode(
-                        QApplication::clipboard()->mimeData());
+        m_canPaste = KBookmark::List::canDecode(QApplication::clipboard()->mimeData());
         updateActions();
     }
 }
 
 /* -------------------------- */
 
-void KEBApp::notifyCommandExecuted() {
+void KEBApp::notifyCommandExecuted()
+{
     // //qCDebug(KEDITBOOKMARKS_LOG) << "KEBApp::notifyCommandExecuted()";
     updateActions();
 }
 
 /* -------------------------- */
 
-void KEBApp::slotConfigureToolbars() {
-    //PORT TO QT5 saveMainWindowSettings(KConfigGroup( KSharedConfig::openConfig(), "MainWindow") );
+void KEBApp::slotConfigureToolbars()
+{
+    // PORT TO QT5 saveMainWindowSettings(KConfigGroup( KSharedConfig::openConfig(), "MainWindow") );
     KEditToolBar dlg(actionCollection(), this);
     connect(&dlg, &KEditToolBar::newToolBarConfig, this, &KEBApp::slotNewToolbarConfig);
     dlg.exec();
 }
 
-void KEBApp::slotNewToolbarConfig() {
+void KEBApp::slotNewToolbarConfig()
+{
     // called when OK or Apply is clicked
     createGUI();
-    applyMainWindowSettings(KConfigGroup(KSharedConfig::openConfig(), "MainWindow") );
+    applyMainWindowSettings(KConfigGroup(KSharedConfig::openConfig(), "MainWindow"));
 }
 
 /* -------------------------- */
-
-
-

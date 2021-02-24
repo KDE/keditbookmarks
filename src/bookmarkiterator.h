@@ -19,9 +19,9 @@
 #ifndef __bookmarkiterator_h
 #define __bookmarkiterator_h
 
-#include <QObject>
-#include <QList>
 #include <KBookmark>
+#include <QList>
+#include <QObject>
 
 class KBookmarkModel;
 class BookmarkIteratorHolder;
@@ -35,10 +35,13 @@ class BookmarkIterator : public QObject
     Q_OBJECT
 
 public:
-    BookmarkIterator(BookmarkIteratorHolder* holder, const QList<KBookmark>& bks);
+    BookmarkIterator(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks);
     virtual ~BookmarkIterator();
-    BookmarkIteratorHolder* holder() const { return m_holder; }
-    KBookmarkModel* model();
+    BookmarkIteratorHolder *holder() const
+    {
+        return m_holder;
+    }
+    KBookmarkModel *model();
     void delayedEmitNextOne();
     virtual void cancel() = 0;
 
@@ -53,7 +56,7 @@ protected:
 private:
     KBookmark m_bk;
     QList<KBookmark> m_bookmarkList;
-    BookmarkIteratorHolder* m_holder;
+    BookmarkIteratorHolder *m_holder;
 };
 
 /**
@@ -67,20 +70,28 @@ class BookmarkIteratorHolder : public QObject
     Q_OBJECT
 public:
     void cancelAllItrs();
-    void removeIterator(BookmarkIterator*);
-    void insertIterator(BookmarkIterator*);
-    void addAffectedBookmark(const QString & address);
-    KBookmarkModel* model() { return m_model; }
+    void removeIterator(BookmarkIterator *);
+    void insertIterator(BookmarkIterator *);
+    void addAffectedBookmark(const QString &address);
+    KBookmarkModel *model()
+    {
+        return m_model;
+    }
 
 Q_SIGNALS:
     void setCancelEnabled(bool canCancel);
 
 protected:
-    BookmarkIteratorHolder(QObject* parent, KBookmarkModel* model);
-    virtual ~BookmarkIteratorHolder() {}
+    BookmarkIteratorHolder(QObject *parent, KBookmarkModel *model);
+    virtual ~BookmarkIteratorHolder()
+    {
+    }
     void doIteratorListChanged();
-    int count() const { return m_iterators.count(); }
-    KBookmarkModel* m_model;
+    int count() const
+    {
+        return m_iterators.count();
+    }
+    KBookmarkModel *m_model;
 
 private:
     QString m_affectedBookmark;

@@ -19,19 +19,17 @@
 
 #include "kebsearchline.h"
 #include "keditbookmarks_debug.h"
+#include <QContextMenuEvent>
+#include <QHBoxLayout>
+#include <QLabel>
+#include <QListView>
 #include <QTimer>
 #include <QTreeView>
-#include <QListView>
-#include <QLabel>
-#include <QHBoxLayout>
-#include <QContextMenuEvent>
 
 #include <KLocalizedString>
 
 #include <QHeaderView>
 #include <QMenu>
-
-
 
 ////////////////////////////////////////////////////////////////////////////////
 // public methods
@@ -39,16 +37,18 @@
 class KViewSearchLine::KViewSearchLinePrivate
 {
 public:
-    KViewSearchLinePrivate() :
-        listView(nullptr),
-        treeView(nullptr),
-        caseSensitive(false),
-        activeSearch(false),
-        keepParentsVisible(true),
-        queuedSearches(0) {}
+    KViewSearchLinePrivate()
+        : listView(nullptr)
+        , treeView(nullptr)
+        , caseSensitive(false)
+        , activeSearch(false)
+        , keepParentsVisible(true)
+        , queuedSearches(0)
+    {
+    }
 
-    QListView * listView;
-    QTreeView * treeView;
+    QListView *listView;
+    QTreeView *treeView;
     bool caseSensitive;
     bool activeSearch;
     bool keepParentsVisible;
@@ -57,9 +57,8 @@ public:
     QVector<int> searchColumns;
 };
 
-
-KViewSearchLine::KViewSearchLine(QWidget *parent, QAbstractItemView *v) :
-    KLineEdit(parent)
+KViewSearchLine::KViewSearchLine(QWidget *parent, QAbstractItemView *v)
+    : KLineEdit(parent)
 {
     d = new KViewSearchLinePrivate;
 
@@ -70,27 +69,20 @@ KViewSearchLine::KViewSearchLine(QWidget *parent, QAbstractItemView *v) :
 
     connect(this, &KViewSearchLine::textChanged, this, &KViewSearchLine::queueSearch);
 
-    if(view()) {
-        connect(view(), &QObject::destroyed,
-                this, &KViewSearchLine::listViewDeleted);
-        connect(model(), &QAbstractItemModel::dataChanged,
-                this, &KViewSearchLine::slotDataChanged);
-        connect(model(), &QAbstractItemModel::rowsInserted,
-                this, &KViewSearchLine::slotRowsInserted);
-        connect(model(), &QAbstractItemModel::rowsRemoved,
-                this, &KViewSearchLine::slotRowsRemoved);
-        connect(model(), &QAbstractItemModel::columnsInserted,
-                this, &KViewSearchLine::slotColumnsInserted);
-        connect(model(), &QAbstractItemModel::columnsRemoved,
-                this, &KViewSearchLine::slotColumnsRemoved);
+    if (view()) {
+        connect(view(), &QObject::destroyed, this, &KViewSearchLine::listViewDeleted);
+        connect(model(), &QAbstractItemModel::dataChanged, this, &KViewSearchLine::slotDataChanged);
+        connect(model(), &QAbstractItemModel::rowsInserted, this, &KViewSearchLine::slotRowsInserted);
+        connect(model(), &QAbstractItemModel::rowsRemoved, this, &KViewSearchLine::slotRowsRemoved);
+        connect(model(), &QAbstractItemModel::columnsInserted, this, &KViewSearchLine::slotColumnsInserted);
+        connect(model(), &QAbstractItemModel::columnsRemoved, this, &KViewSearchLine::slotColumnsRemoved);
         connect(model(), &QAbstractItemModel::modelReset, this, &KViewSearchLine::slotModelReset);
-    }
-    else
+    } else
         setEnabled(false);
 }
 
-KViewSearchLine::KViewSearchLine(QWidget *parent) :
-    KLineEdit(parent)
+KViewSearchLine::KViewSearchLine(QWidget *parent)
+    : KLineEdit(parent)
 {
     d = new KViewSearchLinePrivate;
 
@@ -109,9 +101,9 @@ KViewSearchLine::~KViewSearchLine()
     delete d;
 }
 
-QAbstractItemView * KViewSearchLine::view() const
+QAbstractItemView *KViewSearchLine::view() const
 {
-    if(d->treeView)
+    if (d->treeView)
         return d->treeView;
     else
         return d->listView;
@@ -133,17 +125,17 @@ bool KViewSearchLine::keepParentsVisible() const
 
 void KViewSearchLine::updateSearch(const QString &s)
 {
-    if(!view())
+    if (!view())
         return;
 
     d->search = s.isNull() ? text() : s;
 
     // If there's a selected item that is visible, make sure that it's visible
     // when the search changes too (assuming that it still matches).
-    //FIXME reimplement
+    // FIXME reimplement
 
-    if(d->keepParentsVisible)
-        checkItemParentsVisible(model()->index(0,0, QModelIndex()));
+    if (d->keepParentsVisible)
+        checkItemParentsVisible(model()->index(0, 0, QModelIndex()));
     else
         checkItemParentsNotVisible();
 }
@@ -165,41 +157,28 @@ void KViewSearchLine::setSearchColumns(const QVector<int> &columns)
 
 void KViewSearchLine::setView(QAbstractItemView *v)
 {
-    if(view()) {
-        disconnect(view(), &QObject::destroyed,
-                   this, &KViewSearchLine::listViewDeleted);
-        disconnect(model(), &QAbstractItemModel::dataChanged,
-                this, &KViewSearchLine::slotDataChanged);
-        disconnect(model(), &QAbstractItemModel::rowsInserted,
-                this, &KViewSearchLine::slotRowsInserted);
-        disconnect(model(), &QAbstractItemModel::rowsRemoved,
-                this, &KViewSearchLine::slotRowsRemoved);
-        disconnect(model(), &QAbstractItemModel::columnsInserted,
-                this, &KViewSearchLine::slotColumnsInserted);
-        disconnect(model(), &QAbstractItemModel::columnsRemoved,
-                this, &KViewSearchLine::slotColumnsRemoved);
+    if (view()) {
+        disconnect(view(), &QObject::destroyed, this, &KViewSearchLine::listViewDeleted);
+        disconnect(model(), &QAbstractItemModel::dataChanged, this, &KViewSearchLine::slotDataChanged);
+        disconnect(model(), &QAbstractItemModel::rowsInserted, this, &KViewSearchLine::slotRowsInserted);
+        disconnect(model(), &QAbstractItemModel::rowsRemoved, this, &KViewSearchLine::slotRowsRemoved);
+        disconnect(model(), &QAbstractItemModel::columnsInserted, this, &KViewSearchLine::slotColumnsInserted);
+        disconnect(model(), &QAbstractItemModel::columnsRemoved, this, &KViewSearchLine::slotColumnsRemoved);
         disconnect(model(), &QAbstractItemModel::modelReset, this, &KViewSearchLine::slotModelReset);
     }
 
     d->treeView = dynamic_cast<QTreeView *>(v);
     d->listView = dynamic_cast<QListView *>(v);
 
-    if(view()) {
-        connect(view(), &QObject::destroyed,
-                this, &KViewSearchLine::listViewDeleted);
+    if (view()) {
+        connect(view(), &QObject::destroyed, this, &KViewSearchLine::listViewDeleted);
 
-        connect(model(), &QAbstractItemModel::dataChanged,
-                this, &KViewSearchLine::slotDataChanged);
-        connect(model(), &QAbstractItemModel::rowsInserted,
-                this, &KViewSearchLine::slotRowsInserted);
-        connect(model(), &QAbstractItemModel::rowsRemoved,
-                this, &KViewSearchLine::slotRowsRemoved);
-        connect(model(), &QAbstractItemModel::columnsInserted,
-                this, &KViewSearchLine::slotColumnsInserted);
-        connect(model(), &QAbstractItemModel::columnsRemoved,
-                this, &KViewSearchLine::slotColumnsRemoved);
+        connect(model(), &QAbstractItemModel::dataChanged, this, &KViewSearchLine::slotDataChanged);
+        connect(model(), &QAbstractItemModel::rowsInserted, this, &KViewSearchLine::slotRowsInserted);
+        connect(model(), &QAbstractItemModel::rowsRemoved, this, &KViewSearchLine::slotRowsRemoved);
+        connect(model(), &QAbstractItemModel::columnsInserted, this, &KViewSearchLine::slotColumnsInserted);
+        connect(model(), &QAbstractItemModel::columnsRemoved, this, &KViewSearchLine::slotColumnsRemoved);
         connect(model(), &QAbstractItemModel::modelReset, this, &KViewSearchLine::slotModelReset);
-
     }
 
     setEnabled(bool(view()));
@@ -209,99 +188,86 @@ void KViewSearchLine::setView(QAbstractItemView *v)
 // protected members
 ////////////////////////////////////////////////////////////////////////////////
 
-bool KViewSearchLine::itemMatches(const QModelIndex & item, const QString &s) const
+bool KViewSearchLine::itemMatches(const QModelIndex &item, const QString &s) const
 {
-    if(s.isEmpty())
+    if (s.isEmpty())
         return true;
 
     // If the search column list is populated, search just the columns
     // specified.  If it is empty default to searching all of the columns.
-    if(d->treeView)
-    {
+    if (d->treeView) {
         int columnCount = d->treeView->header()->count();
         int row = item.row();
         QModelIndex parent = item.parent();
-        if(!d->searchColumns.isEmpty()) {
+        if (!d->searchColumns.isEmpty()) {
             QVector<int>::const_iterator it, end;
             end = d->searchColumns.constEnd();
-            for(it = d->searchColumns.constBegin(); it != end; ++it)
-            {
-                if(*it < columnCount)
-                {
-                    const QString & text = model()->data(model()->index(row, *it, parent)).toString();
-                    if(text.indexOf(s, 0, d->caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) >= 0)
+            for (it = d->searchColumns.constBegin(); it != end; ++it) {
+                if (*it < columnCount) {
+                    const QString &text = model()->data(model()->index(row, *it, parent)).toString();
+                    if (text.indexOf(s, 0, d->caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) >= 0)
                         return true;
                 }
             }
-        }
-        else {
-            for(int i = 0; i < columnCount; i++)
-            {
-                if(d->treeView->isColumnHidden(i) == false)
-                {
-                    const QString & text = model()->data(model()->index(row, i, parent)).toString();
-                    if(text.indexOf(s, 0, d->caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) >= 0)
+        } else {
+            for (int i = 0; i < columnCount; i++) {
+                if (d->treeView->isColumnHidden(i) == false) {
+                    const QString &text = model()->data(model()->index(row, i, parent)).toString();
+                    if (text.indexOf(s, 0, d->caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) >= 0)
                         return true;
                 }
             }
         }
         return false;
-    }
-    else
-    {
+    } else {
         QString text = model()->data(item).toString();
-        if(text.indexOf(s, 0, d->caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) >= 0)
+        if (text.indexOf(s, 0, d->caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) >= 0)
             return true;
         else
             return false;
     }
 }
 
-void KViewSearchLine::contextMenuEvent( QContextMenuEvent*e )
+void KViewSearchLine::contextMenuEvent(QContextMenuEvent *e)
 {
     qDeleteAll(actions);
     QMenu *popup = KLineEdit::createStandardContextMenu();
-    if(d->treeView)
-    {
+    if (d->treeView) {
         int columnCount = d->treeView->header()->count();
         actions.resize(columnCount + 1);
-        if(columnCount)
-        {
+        if (columnCount) {
             QMenu *submenu = new QMenu(i18n("Search Columns"), popup);
             popup->addMenu(submenu);
             bool allVisibleColumsCheked = true;
-            QAction * allVisibleAct = new QAction(i18n("All Visible Columns"), nullptr);
+            QAction *allVisibleAct = new QAction(i18n("All Visible Columns"), nullptr);
             allVisibleAct->setCheckable(true);
             submenu->addAction(allVisibleAct);
             submenu->addSeparator();
-            for(int i=0; i<columnCount; ++i)
-            {
+            for (int i = 0; i < columnCount; ++i) {
                 int logicalIndex = d->treeView->header()->logicalIndex(i);
                 QString columnText = model()->headerData(logicalIndex, Qt::Horizontal).toString();
-                if(columnText.isEmpty())
-                    columnText = i18nc("Column number %1","Column No. %1", i);
-                QAction * act = new QAction(columnText, nullptr);
+                if (columnText.isEmpty())
+                    columnText = i18nc("Column number %1", "Column No. %1", i);
+                QAction *act = new QAction(columnText, nullptr);
                 act->setCheckable(true);
-                if( d->searchColumns.isEmpty() || d->searchColumns.contains(logicalIndex) )
+                if (d->searchColumns.isEmpty() || d->searchColumns.contains(logicalIndex))
                     act->setChecked(true);
 
                 actions[logicalIndex] = act;
-                if( !d->treeView || (d->treeView->isColumnHidden(i) == false) )
-                {
+                if (!d->treeView || (d->treeView->isColumnHidden(i) == false)) {
                     submenu->addAction(act);
                     allVisibleColumsCheked = allVisibleColumsCheked && act->isChecked();
                 }
             }
             actions[columnCount] = allVisibleAct;
-            if(d->searchColumns.isEmpty() || allVisibleColumsCheked)
-            {
+            if (d->searchColumns.isEmpty() || allVisibleColumsCheked) {
                 allVisibleAct->setChecked(true);
                 d->searchColumns.clear();
             }
             connect(submenu, &QMenu::triggered, this, &KViewSearchLine::searchColumnsMenuActivated);
         }
     }
-    popup->exec( e->globalPos() );
+    popup->exec(e->globalPos());
     delete popup;
 }
 
@@ -320,7 +286,7 @@ void KViewSearchLine::activateSearch()
 {
     --(d->queuedSearches);
 
-    if(d->queuedSearches == 0)
+    if (d->queuedSearches == 0)
         updateSearch(d->search);
 }
 
@@ -335,80 +301,69 @@ void KViewSearchLine::listViewDeleted()
     setEnabled(false);
 }
 
-void KViewSearchLine::searchColumnsMenuActivated(QAction * action)
+void KViewSearchLine::searchColumnsMenuActivated(QAction *action)
 {
     int index = 0;
     int count = actions.count();
-    for(int i=0; i<count; ++i)
-    {
-        if(action == actions[i])
-        {
+    for (int i = 0; i < count; ++i) {
+        if (action == actions[i]) {
             index = i;
             break;
         }
     }
     int columnCount = d->treeView->header()->count();
-    if(index == columnCount)
-    {
-        if(d->searchColumns.isEmpty()) //all columns was checked
+    if (index == columnCount) {
+        if (d->searchColumns.isEmpty()) // all columns was checked
             d->searchColumns.append(0);
         else
             d->searchColumns.clear();
-    }
-    else
-    {
-        if(d->searchColumns.contains(index))
+    } else {
+        if (d->searchColumns.contains(index))
             d->searchColumns.removeAll(index);
-        else
-        {
-            if(d->searchColumns.isEmpty()) //all columns was checked
+        else {
+            if (d->searchColumns.isEmpty()) // all columns was checked
             {
-                for(int i=0; i<columnCount; ++i)
-                    if(i != index)
+                for (int i = 0; i < columnCount; ++i)
+                    if (i != index)
                         d->searchColumns.append(i);
-            }
-            else
+            } else
                 d->searchColumns.append(index);
         }
     }
     updateSearch();
 }
 
-
 void KViewSearchLine::slotRowsRemoved(const QModelIndex &parent, int, int)
 {
-    if(!d->keepParentsVisible)
+    if (!d->keepParentsVisible)
         return;
 
     QModelIndex p = parent;
-    while(p.isValid())
-    {
+    while (p.isValid()) {
         int count = model()->rowCount(p);
-        if(count && anyVisible( model()->index(0,0, p), model()->index( count-1, 0, p)))
+        if (count && anyVisible(model()->index(0, 0, p), model()->index(count - 1, 0, p)))
             return;
-        if(itemMatches(p, d->search))
+        if (itemMatches(p, d->search))
             return;
         setVisible(p, false);
         p = p.parent();
     }
 }
 
-void KViewSearchLine::slotColumnsInserted(const QModelIndex &, int, int )
+void KViewSearchLine::slotColumnsInserted(const QModelIndex &, int, int)
 {
     updateSearch();
 }
 
 void KViewSearchLine::slotColumnsRemoved(const QModelIndex &, int first, int last)
 {
-    if(d->treeView)
+    if (d->treeView)
         updateSearch();
-    else
-    {
-        if(d->listView->modelColumn() >= first && d->listView->modelColumn()<= last)
-        {
-            if(d->listView->modelColumn()>last)
-                qCCritical(KEDITBOOKMARKS_LOG)<<"Columns were removed, the modelColumn() doesn't exist anymore. "
-                           "K4listViewSearchLine can't cope with that.";
+    else {
+        if (d->listView->modelColumn() >= first && d->listView->modelColumn() <= last) {
+            if (d->listView->modelColumn() > last)
+                qCCritical(KEDITBOOKMARKS_LOG) << "Columns were removed, the modelColumn() doesn't exist anymore. "
+                                                  "K4listViewSearchLine can't cope with that.";
             updateSearch();
         }
     }
@@ -416,7 +371,7 @@ void KViewSearchLine::slotColumnsRemoved(const QModelIndex &, int first, int las
 
 void KViewSearchLine::slotModelReset()
 {
-    //FIXME Is there a way to ensure that the view
+    // FIXME Is there a way to ensure that the view
     // has already responded to the reset signal?
     updateSearch();
 }
@@ -425,52 +380,48 @@ void KViewSearchLine::slotDataChanged(const QModelIndex &topLeft, const QModelIn
 {
     QModelIndex parent = topLeft.parent();
     int column = 0;
-    if(d->listView)
+    if (d->listView)
         column = d->listView->modelColumn();
-    bool match = recheck( model()->index(topLeft.row(), column, parent), model()->index(bottomRight.row(), column, parent));
-    if(!d->keepParentsVisible)
+    bool match = recheck(model()->index(topLeft.row(), column, parent), model()->index(bottomRight.row(), column, parent));
+    if (!d->keepParentsVisible)
         return;
-    if(!parent.isValid()) // includes listview
+    if (!parent.isValid()) // includes listview
         return;
-    if(match)
-    {
+    if (match) {
         QModelIndex p = parent;
-        while(p.isValid())
-        {
+        while (p.isValid()) {
             setVisible(p, true);
             p = p.parent();
         }
-    }
-    else //no match => might need to hide parents (this is ugly)
+    } else // no match => might need to hide parents (this is ugly)
     {
-        if(isVisible(parent) == false) // parent is already hidden
-                return;
-        //parent is visible => implies all parents visible
+        if (isVisible(parent) == false) // parent is already hidden
+            return;
+        // parent is visible => implies all parents visible
 
         // first check if all of the unchanged rows are hidden
         match = false;
-        if(topLeft.row() >= 1)
-            match = match || anyVisible( model()->index(0,0, parent), model()->index(topLeft.row()-1, 0, parent));
+        if (topLeft.row() >= 1)
+            match = match || anyVisible(model()->index(0, 0, parent), model()->index(topLeft.row() - 1, 0, parent));
         int rowCount = model()->rowCount(parent);
-        if(bottomRight.row() + 1 <= rowCount - 1)
-            match = match || anyVisible( model()->index(bottomRight.row()+1, 0, parent), model()->index(rowCount-1, 0, parent));
-        if(!match) //all child rows hidden
+        if (bottomRight.row() + 1 <= rowCount - 1)
+            match = match || anyVisible(model()->index(bottomRight.row() + 1, 0, parent), model()->index(rowCount - 1, 0, parent));
+        if (!match) // all child rows hidden
         {
-            if(itemMatches(parent, d->search))
+            if (itemMatches(parent, d->search))
                 return;
             // and parent didn't match, hide it
             setVisible(parent, false);
 
             // need to check all the way up to root
             QModelIndex p = parent.parent();
-            while(p.isValid())
-            {
-                //hide p if no children of p isVisible and it doesn't match
+            while (p.isValid()) {
+                // hide p if no children of p isVisible and it doesn't match
                 int count = model()->rowCount(p);
-                if(anyVisible( model()->index(0, 0, p), model()->index(count-1, 0, p)))
+                if (anyVisible(model()->index(0, 0, p), model()->index(count - 1, 0, p)))
                     return;
 
-                if(itemMatches(p, d->search))
+                if (itemMatches(p, d->search))
                     return;
                 setVisible(p, false);
                 p = p.parent();
@@ -482,61 +433,56 @@ void KViewSearchLine::slotDataChanged(const QModelIndex &topLeft, const QModelIn
 ////////////////////////////////////////////////////////////////////////////////
 // private methods
 ////////////////////////////////////////////////////////////////////////////////
-QAbstractItemModel * KViewSearchLine::model() const
+QAbstractItemModel *KViewSearchLine::model() const
 {
-    if(d->treeView)
+    if (d->treeView)
         return d->treeView->model();
     else
         return d->listView->model();
 }
 
-
-bool KViewSearchLine::anyVisible(const QModelIndex & first, const QModelIndex & last)
+bool KViewSearchLine::anyVisible(const QModelIndex &first, const QModelIndex &last)
 {
     Q_ASSERT(d->treeView);
     QModelIndex index = first;
-    while(true)
-    {
-        if( isVisible(index))
+    while (true) {
+        if (isVisible(index))
             return true;
-        if(index == last)
+        if (index == last)
             break;
         index = nextRow(index);
     }
     return false;
 }
 
-bool KViewSearchLine::isVisible(const QModelIndex & index)
+bool KViewSearchLine::isVisible(const QModelIndex &index)
 {
-    if(d->treeView)
+    if (d->treeView)
         return !d->treeView->isRowHidden(index.row(), index.parent());
     else
         return d->listView->isRowHidden(index.row());
 }
 
-QModelIndex KViewSearchLine::nextRow(const QModelIndex & index)
+QModelIndex KViewSearchLine::nextRow(const QModelIndex &index)
 {
-    return model()->index(index.row()+1, index.column(), index.parent());
+    return model()->index(index.row() + 1, index.column(), index.parent());
 }
 
-bool KViewSearchLine::recheck(const QModelIndex & first, const QModelIndex & last)
+bool KViewSearchLine::recheck(const QModelIndex &first, const QModelIndex &last)
 {
     bool visible = false;
     QModelIndex index = first;
-    while(true)
-    {
+    while (true) {
         int rowCount = model()->rowCount(index);
-        if(d->keepParentsVisible && rowCount && anyVisible( model()->index(0,0, index), model()->index( rowCount-1, 0, index)))
-        {
+        if (d->keepParentsVisible && rowCount && anyVisible(model()->index(0, 0, index), model()->index(rowCount - 1, 0, index))) {
             visible = true;
-        }
-        else // no children visible
+        } else // no children visible
         {
             bool match = itemMatches(index, d->search);
             setVisible(index, match);
             visible = visible || match;
         }
-        if(index == last)
+        if (index == last)
             break;
         index = nextRow(index);
     }
@@ -547,32 +493,27 @@ void KViewSearchLine::slotRowsInserted(const QModelIndex &parent, int first, int
 {
     bool visible = false;
     int column = 0;
-    if(d->listView)
+    if (d->listView)
         column = d->listView->modelColumn();
 
     QModelIndex index = model()->index(first, column, parent);
     QModelIndex end = model()->index(last, column, parent);
-    while(true)
-    {
-        if(itemMatches(index, d->search))
-        {
+    while (true) {
+        if (itemMatches(index, d->search)) {
             visible = true;
             setVisible(index, true);
-        }
-        else
+        } else
             setVisible(index, false);
-        if(index == end)
+        if (index == end)
             break;
         index = nextRow(index);
     }
 
-    if(!d->keepParentsVisible)
+    if (!d->keepParentsVisible)
         return;
-    if(visible)
-    {
+    if (visible) {
         QModelIndex p = parent;
-        while(p.isValid())
-        {
+        while (p.isValid()) {
             setVisible(p, true);
             p = p.parent();
         }
@@ -581,7 +522,7 @@ void KViewSearchLine::slotRowsInserted(const QModelIndex &parent, int first, int
 
 void KViewSearchLine::setVisible(const QModelIndex &index, bool v)
 {
-    if(d->treeView)
+    if (d->treeView)
         d->treeView->setRowHidden(index.row(), index.parent(), !v);
     else
         d->listView->setRowHidden(index.row(), !v);
@@ -589,14 +530,13 @@ void KViewSearchLine::setVisible(const QModelIndex &index, bool v)
 
 void KViewSearchLine::checkItemParentsNotVisible()
 {
-    int rowCount = model()->rowCount( QModelIndex() );
+    int rowCount = model()->rowCount(QModelIndex());
     int column = 0;
-    if(d->listView)
+    if (d->listView)
         column = d->listView->modelColumn();
-    for(int i = 0; i < rowCount; ++i)
-    {
+    for (int i = 0; i < rowCount; ++i) {
         QModelIndex it = model()->index(i, column, QModelIndex());
-        if(itemMatches(it, d->search))
+        if (itemMatches(it, d->search))
             setVisible(it, true);
         else
             setVisible(it, false);
@@ -614,23 +554,18 @@ bool KViewSearchLine::checkItemParentsVisible(QModelIndex index)
     bool visible = false;
     int rowCount = model()->rowCount(index.parent());
     int column = 0;
-    if(d->listView)
+    if (d->listView)
         column = d->listView->modelColumn();
-    for(int i = 0; i<rowCount; ++i)
-    {
+    for (int i = 0; i < rowCount; ++i) {
         index = model()->index(i, column, index.parent());
-        if((model()->rowCount(index) && checkItemParentsVisible(model()->index(0,column, index)))
-           || itemMatches(index, d->search))
-        {
+        if ((model()->rowCount(index) && checkItemParentsVisible(model()->index(0, column, index))) || itemMatches(index, d->search)) {
             visible = true;
             setVisible(index, true);
-        }
-        else
+        } else
             setVisible(index, false);
     }
     return visible;
 }
-
 
 ////////////////////////////////////////////////////////////////////////////////
 // KViewSearchLineWidget
@@ -639,15 +574,19 @@ bool KViewSearchLine::checkItemParentsVisible(QModelIndex index)
 class KViewSearchLineWidget::KViewSearchLineWidgetPrivate
 {
 public:
-    KViewSearchLineWidgetPrivate() : view(nullptr), searchLine(nullptr), layout(nullptr) {}
+    KViewSearchLineWidgetPrivate()
+        : view(nullptr)
+        , searchLine(nullptr)
+        , layout(nullptr)
+    {
+    }
     QAbstractItemView *view;
     KViewSearchLine *searchLine;
     QHBoxLayout *layout;
 };
 
-KViewSearchLineWidget::KViewSearchLineWidget(QAbstractItemView *view,
-                                             QWidget *parent) :
-    QWidget(parent)
+KViewSearchLineWidget::KViewSearchLineWidget(QAbstractItemView *view, QWidget *parent)
+    : QWidget(parent)
 {
     d = new KViewSearchLineWidgetPrivate;
     d->view = view;
@@ -663,7 +602,7 @@ KViewSearchLineWidget::~KViewSearchLineWidget()
 
 KViewSearchLine *KViewSearchLineWidget::createSearchLine(QAbstractItemView *view)
 {
-    if(!d->searchLine)
+    if (!d->searchLine)
         d->searchLine = new KViewSearchLine(nullptr, view);
     return d->searchLine;
 }
@@ -674,7 +613,7 @@ void KViewSearchLineWidget::createWidgets()
     d->layout->setContentsMargins(0, 0, 0, 0);
 
     QLabel *label = new QLabel(i18n("S&earch:"));
-    label->setObjectName( QStringLiteral("kde toolbar widget" ));
+    label->setObjectName(QStringLiteral("kde toolbar widget"));
     d->layout->addWidget(label);
 
     d->searchLine = createSearchLine(d->view);
@@ -689,5 +628,3 @@ KViewSearchLine *KViewSearchLineWidget::searchLine() const
 {
     return d->searchLine;
 }
-
-

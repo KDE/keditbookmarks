@@ -29,13 +29,18 @@
 class CommandHistory::Private
 {
 public:
-    Private() : m_manager(nullptr), m_undoStack() {}
-    KBookmarkManager* m_manager;
+    Private()
+        : m_manager(nullptr)
+        , m_undoStack()
+    {
+    }
+    KBookmarkManager *m_manager;
     QUndoStack m_undoStack;
 };
 
-CommandHistory::CommandHistory(QObject* parent)
-    : QObject(parent), d(new CommandHistory::Private)
+CommandHistory::CommandHistory(QObject *parent)
+    : QObject(parent)
+    , d(new CommandHistory::Private)
 {
 }
 
@@ -44,7 +49,7 @@ CommandHistory::~CommandHistory()
     delete d;
 }
 
-void CommandHistory::setBookmarkManager(KBookmarkManager* manager)
+void CommandHistory::setBookmarkManager(KBookmarkManager *manager)
 {
     clearHistory(); // we can't keep old commands pointing to the wrong model/manager...
     d->m_manager = manager;
@@ -76,7 +81,7 @@ void CommandHistory::createActions(KActionCollection *actionCollection)
 void CommandHistory::undo()
 {
     const int idx = d->m_undoStack.index();
-    const QUndoCommand* cmd = d->m_undoStack.command(idx-1);
+    const QUndoCommand *cmd = d->m_undoStack.command(idx - 1);
     if (cmd) {
         d->m_undoStack.undo();
         commandExecuted(cmd);
@@ -86,7 +91,7 @@ void CommandHistory::undo()
 void CommandHistory::redo()
 {
     const int idx = d->m_undoStack.index();
-    const QUndoCommand* cmd = d->m_undoStack.command(idx);
+    const QUndoCommand *cmd = d->m_undoStack.command(idx);
     if (cmd) {
         d->m_undoStack.redo();
         commandExecuted(cmd);
@@ -95,7 +100,7 @@ void CommandHistory::redo()
 
 void CommandHistory::commandExecuted(const QUndoCommand *k)
 {
-    const IKEBCommand * cmd = dynamic_cast<const IKEBCommand *>(k);
+    const IKEBCommand *cmd = dynamic_cast<const IKEBCommand *>(k);
     Q_ASSERT(cmd);
 
     KBookmark bk = d->m_manager->findByAddress(cmd->affectedBookmarks());
@@ -125,9 +130,7 @@ void CommandHistory::clearHistory()
     }
 }
 
-KBookmarkManager* CommandHistory::bookmarkManager()
+KBookmarkManager *CommandHistory::bookmarkManager()
 {
     return d->m_manager;
 }
-
-

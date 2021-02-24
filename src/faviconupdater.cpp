@@ -27,11 +27,11 @@
 #include "keditbookmarks_debug.h"
 #include <KLocalizedString>
 
-#include <kio/job.h>
 #include <KIO/FavIconRequestJob>
+#include <kio/job.h>
 
-#include <KParts/BrowserExtension>
 #include <KMimeTypeTrader>
+#include <KParts/BrowserExtension>
 
 FavIconUpdater::FavIconUpdater(QObject *parent)
     : QObject(parent)
@@ -46,14 +46,14 @@ void FavIconUpdater::downloadIcon(const KBookmark &bk)
     const QUrl url = bk.url();
     const QString favicon = KIO::favIconForUrl(url);
     if (!favicon.isEmpty()) {
-        //qCDebug(KEDITBOOKMARKS_LOG) << "got favicon" << favicon;
+        // qCDebug(KEDITBOOKMARKS_LOG) << "got favicon" << favicon;
         m_bk.setIcon(favicon);
         KEBApp::self()->notifyCommandExecuted();
         // //qCDebug(KEDITBOOKMARKS_LOG) << "emit done(true)";
         Q_EMIT done(true, QString());
 
     } else {
-        //qCDebug(KEDITBOOKMARKS_LOG) << "no favicon found";
+        // qCDebug(KEDITBOOKMARKS_LOG) << "no favicon found";
         webupdate = false;
         KIO::FavIconRequestJob *job = new KIO::FavIconRequestJob(url, KIO::Reload);
         connect(job, &KIO::FavIconRequestJob::result, this, &FavIconUpdater::slotResult);
@@ -66,16 +66,20 @@ FavIconUpdater::~FavIconUpdater()
     delete m_part;
 }
 
-void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QString& currentError)
+void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QString &currentError)
 {
-    //qCDebug(KEDITBOOKMARKS_LOG);
+    // qCDebug(KEDITBOOKMARKS_LOG);
     m_bk = bk;
     webupdate = true;
 
     if (!m_part) {
         QString partLoadingError;
-        KParts::ReadOnlyPart *part
-            = KMimeTypeTrader::createPartInstanceFromQuery<KParts::ReadOnlyPart>(QStringLiteral("text/html"), nullptr, this, QString(), QVariantList(), &partLoadingError);
+        KParts::ReadOnlyPart *part = KMimeTypeTrader::createPartInstanceFromQuery<KParts::ReadOnlyPart>(QStringLiteral("text/html"),
+                                                                                                        nullptr,
+                                                                                                        this,
+                                                                                                        QString(),
+                                                                                                        QVariantList(),
+                                                                                                        &partLoadingError);
         if (!part) {
             Q_EMIT done(false, i18n("%1; no HTML component found (%2)", currentError, partLoadingError));
             return;
@@ -89,8 +93,7 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
         KParts::BrowserExtension *ext = KParts::BrowserExtension::childObject(part);
         Q_ASSERT(ext);
 
-        connect(ext, &KParts::BrowserExtension::setIconUrl,
-                this, &FavIconUpdater::setIconUrl);
+        connect(ext, &KParts::BrowserExtension::setIconUrl, this, &FavIconUpdater::setIconUrl);
 
         m_part = part;
     }
@@ -135,13 +138,13 @@ void FavIconUpdater::slotResult(KJob *job)
 /* -------------------------- */
 
 FavIconWebGrabber::FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url)
-    : m_part(part), m_url(url) {
-
-    //FIXME only connect to result?
-//  connect(part, SIGNAL(result(KIO::Job*job)),
-//          this, SLOT(slotCompleted()));
-    connect(part, &KParts::ReadOnlyPart::canceled,
-            this, &FavIconWebGrabber::slotCanceled);
+    : m_part(part)
+    , m_url(url)
+{
+    // FIXME only connect to result?
+    //  connect(part, SIGNAL(result(KIO::Job*job)),
+    //          this, SLOT(slotCompleted()));
+    connect(part, &KParts::ReadOnlyPart::canceled, this, &FavIconWebGrabber::slotCanceled);
     // clang-format off
     connect(part, SIGNAL(completed(bool)), this, SLOT(slotCompleted()));
     // clang-format on
@@ -149,12 +152,11 @@ FavIconWebGrabber::FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url
     // the use of KIO rather than directly using KHTML is to allow silently abort on error
     // TODO: an alternative would be to derive from KHTMLPart and reimplement showError(KJob*).
 
-    //qCDebug(KEDITBOOKMARKS_LOG) << "starting KIO::get() on" << m_url;
+    // qCDebug(KEDITBOOKMARKS_LOG) << "starting KIO::get() on" << m_url;
     KIO::Job *job = KIO::get(m_url, KIO::NoReload, KIO::HideProgressInfo);
-    job->addMetaData( QStringLiteral("cookies"), QStringLiteral("none") );
-    job->addMetaData( QStringLiteral("errorPage"), QStringLiteral("false") );
-    connect(job, &KJob::result,
-            this, &FavIconWebGrabber::slotFinished);
+    job->addMetaData(QStringLiteral("cookies"), QStringLiteral("none"));
+    job->addMetaData(QStringLiteral("errorPage"), QStringLiteral("false"));
+    connect(job, &KJob::result, this, &FavIconWebGrabber::slotFinished);
     // clang-format off
     connect(job, SIGNAL(mimetype(KIO::Job*,QString)), this, SLOT(slotMimetype(KIO::Job*,QString)));
     // clang-format on
@@ -191,10 +193,8 @@ void FavIconWebGrabber::slotCompleted()
     Q_EMIT done(true, QString());
 }
 
-void FavIconWebGrabber::slotCanceled(const QString& errorString)
+void FavIconWebGrabber::slotCanceled(const QString &errorString)
 {
-    //qCDebug(KEDITBOOKMARKS_LOG) << errorString;
+    // qCDebug(KEDITBOOKMARKS_LOG) << errorString;
     Q_EMIT done(false, errorString);
 }
-
-

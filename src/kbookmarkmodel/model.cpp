@@ -19,23 +19,27 @@
 */
 
 #include "model.h"
-#include "treeitem_p.h"
-#include "commands.h"
 #include "commandhistory.h"
+#include "commands.h"
+#include "treeitem_p.h"
 
 #include <KBookmarkManager>
 #include <KLocalizedString>
 
-#include <QIcon>
 #include "keditbookmarks_debug.h"
-#include <QStringList>
+#include <QIcon>
 #include <QMimeData>
+#include <QStringList>
 
 class KBookmarkModel::Private
 {
 public:
-    Private(KBookmarkModel* qq, const KBookmark& root, CommandHistory* commandHistory)
-        : q(qq), mRoot(root), mCommandHistory(commandHistory), mInsertionData(nullptr), mIgnoreNext(0)
+    Private(KBookmarkModel *qq, const KBookmark &root, CommandHistory *commandHistory)
+        : q(qq)
+        , mRoot(root)
+        , mCommandHistory(commandHistory)
+        , mInsertionData(nullptr)
+        , mIgnoreNext(0)
     {
         mRootItem = new TreeItem(root, nullptr);
     }
@@ -47,15 +51,17 @@ public:
 
     void _kd_slotBookmarksChanged(const QString &groupAddress, const QString &caller = QString());
 
-    KBookmarkModel* q;
-    TreeItem * mRootItem;
+    KBookmarkModel *q;
+    TreeItem *mRootItem;
     KBookmark mRoot;
-    CommandHistory* mCommandHistory;
+    CommandHistory *mCommandHistory;
 
-    class InsertionData {
+    class InsertionData
+    {
     public:
-        InsertionData(const QModelIndex& parent, int first, int last)
-            : mFirst(first), mLast(last)
+        InsertionData(const QModelIndex &parent, int first, int last)
+            : mFirst(first)
+            , mLast(last)
         {
             mParentItem = static_cast<TreeItem *>(parent.internalPointer());
         }
@@ -63,28 +69,28 @@ public:
         {
             mParentItem->insertChildren(mFirst, mLast);
         }
-        TreeItem* mParentItem;
+        TreeItem *mParentItem;
         int mFirst;
         int mLast;
     };
-    InsertionData* mInsertionData;
+    InsertionData *mInsertionData;
     int mIgnoreNext;
 };
 
-KBookmarkModel::KBookmarkModel(const KBookmark& root, CommandHistory* commandHistory, QObject* parent)
-    : QAbstractItemModel(parent), d(new Private(this, root, commandHistory))
+KBookmarkModel::KBookmarkModel(const KBookmark &root, CommandHistory *commandHistory, QObject *parent)
+    : QAbstractItemModel(parent)
+    , d(new Private(this, root, commandHistory))
 {
     connect(commandHistory, &CommandHistory::notifyCommandExecuted, this, &KBookmarkModel::notifyManagers);
     Q_ASSERT(bookmarkManager());
     // update when the model updates after a D-Bus signal, coming from this
     // process or from another one
-    connect(bookmarkManager(), &KBookmarkManager::changed,
-            this, [this](const QString &groupAddress, const QString &caller) {
+    connect(bookmarkManager(), &KBookmarkManager::changed, this, [this](const QString &groupAddress, const QString &caller) {
         d->_kd_slotBookmarksChanged(groupAddress, caller);
     });
 }
 
-void KBookmarkModel::setRoot(const KBookmark& root)
+void KBookmarkModel::setRoot(const KBookmark &root)
 {
     d->mRoot = root;
     resetModel();
@@ -108,7 +114,7 @@ QVariant KBookmarkModel::data(const QModelIndex &index, int role) const
     if (!index.isValid())
         return QVariant();
 
-    //Text
+    // Text
     if (role == Qt::DisplayRole || role == Qt::EditRole) {
         const KBookmark bk = bookmarkForIndex(index);
         if (bk.address().isEmpty()) {
@@ -118,27 +124,27 @@ QVariant KBookmarkModel::data(const QModelIndex &index, int role) const
                 return QVariant();
         }
 
-        switch(index.column()) {
-            case NameColumnId:
-                return bk.fullText();
-            case UrlColumnId:
-                return bk.url().url(QUrl::PreferLocalFile);
-            case CommentColumnId:
-                return bk.description();
-            case StatusColumnId: {
-                QString text1 = bk.metaDataItem(QStringLiteral("favstate")); // favicon state
-                QString text2 = bk.metaDataItem(QStringLiteral("linkstate"));
-                if (text1.isEmpty() || text2.isEmpty())
-                    return QVariant( text1 + text2 );
-                else
-                    return QVariant( text1 + "  --  " + text2 );
-            }
-            default:
-                return QVariant(); //can't happen
+        switch (index.column()) {
+        case NameColumnId:
+            return bk.fullText();
+        case UrlColumnId:
+            return bk.url().url(QUrl::PreferLocalFile);
+        case CommentColumnId:
+            return bk.description();
+        case StatusColumnId: {
+            QString text1 = bk.metaDataItem(QStringLiteral("favstate")); // favicon state
+            QString text2 = bk.metaDataItem(QStringLiteral("linkstate"));
+            if (text1.isEmpty() || text2.isEmpty())
+                return QVariant(text1 + text2);
+            else
+                return QVariant(text1 + "  --  " + text2);
+        }
+        default:
+            return QVariant(); // can't happen
         }
     }
 
-    //Icon
+    // Icon
     if (role == Qt::DecorationRole && index.column() == NameColumnId) {
         KBookmark bk = bookmarkForIndex(index);
         if (bk.address().isEmpty())
@@ -146,7 +152,7 @@ QVariant KBookmarkModel::data(const QModelIndex &index, int role) const
         return QIcon::fromTheme(bk.icon());
     }
 
-    //Special roles
+    // Special roles
     if (role == KBookmarkRole) {
         KBookmark bk = bookmarkForIndex(index);
         return QVariant::fromValue(bk);
@@ -154,9 +160,8 @@ QVariant KBookmarkModel::data(const QModelIndex &index, int role) const
     return QVariant();
 }
 
-//FIXME QModelIndex KBookmarkModel::buddy(const QModelIndex & index) //return parent for empty folder padders
+// FIXME QModelIndex KBookmarkModel::buddy(const QModelIndex & index) //return parent for empty folder padders
 // no empty folder padders atm
-
 
 Qt::ItemFlags KBookmarkModel::flags(const QModelIndex &index) const
 {
@@ -165,33 +170,29 @@ Qt::ItemFlags KBookmarkModel::flags(const QModelIndex &index) const
     if (!index.isValid())
         return (Qt::ItemIsDropEnabled | baseFlags);
 
-    static const Qt::ItemFlags groupFlags =            Qt::ItemIsDropEnabled;
-    static const Qt::ItemFlags groupDragEditFlags =    groupFlags | Qt::ItemIsDragEnabled | Qt::ItemIsEditable;
-    static const Qt::ItemFlags groupEditFlags =        groupFlags | Qt::ItemIsEditable;
-    static const Qt::ItemFlags rootFlags =             groupFlags;
-    static const Qt::ItemFlags bookmarkFlags =         Qt::NoItemFlags;
+    static const Qt::ItemFlags groupFlags = Qt::ItemIsDropEnabled;
+    static const Qt::ItemFlags groupDragEditFlags = groupFlags | Qt::ItemIsDragEnabled | Qt::ItemIsEditable;
+    static const Qt::ItemFlags groupEditFlags = groupFlags | Qt::ItemIsEditable;
+    static const Qt::ItemFlags rootFlags = groupFlags;
+    static const Qt::ItemFlags bookmarkFlags = Qt::NoItemFlags;
     static const Qt::ItemFlags bookmarkDragEditFlags = bookmarkFlags | Qt::ItemIsDragEnabled | Qt::ItemIsEditable;
-    static const Qt::ItemFlags bookmarkEditFlags =     bookmarkFlags | Qt::ItemIsEditable;
+    static const Qt::ItemFlags bookmarkEditFlags = bookmarkFlags | Qt::ItemIsEditable;
 
     Qt::ItemFlags result = baseFlags;
 
     const int column = index.column();
     const KBookmark bookmark = bookmarkForIndex(index);
-    if (bookmark.isGroup())
-    {
+    if (bookmark.isGroup()) {
         const bool isRoot = bookmark.address().isEmpty();
-        result |=
-            (isRoot) ?                    rootFlags :
-            (column == NameColumnId) ?    groupDragEditFlags :
-            (column == CommentColumnId) ? groupEditFlags :
-            /*else*/                      groupFlags;
-    }
-    else
-    {
-        result |=
-            (column == NameColumnId) ?   bookmarkDragEditFlags :
-            (column != StatusColumnId) ? bookmarkEditFlags
-            /* else */                 : bookmarkFlags;
+        result |= (isRoot) ? rootFlags
+                           : (column == NameColumnId) ? groupDragEditFlags
+                                                      : (column == CommentColumnId) ? groupEditFlags :
+                                                                                    /*else*/ groupFlags;
+    } else {
+        result |= (column == NameColumnId) ? bookmarkDragEditFlags
+                                           : (column != StatusColumnId) ? bookmarkEditFlags
+                                                                        /* else */
+                                                                        : bookmarkFlags;
     }
 
     return result;
@@ -199,8 +200,7 @@ Qt::ItemFlags KBookmarkModel::flags(const QModelIndex &index) const
 
 bool KBookmarkModel::setData(const QModelIndex &index, const QVariant &value, int role)
 {
-    if (index.isValid() && role == Qt::EditRole)
-    {
+    if (index.isValid() && role == Qt::EditRole) {
         qCDebug(KEDITBOOKMARKS_LOG) << value.toString();
         d->mCommandHistory->addCommand(new EditCommand(this, bookmarkForIndex(index).address(), index.column(), value.toString()));
         return true;
@@ -210,31 +210,24 @@ bool KBookmarkModel::setData(const QModelIndex &index, const QVariant &value, in
 
 QVariant KBookmarkModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
-    if (role == Qt::DisplayRole && orientation == Qt::Horizontal)
-    {
+    if (role == Qt::DisplayRole && orientation == Qt::Horizontal) {
         QString result;
-        switch(section)
-        {
-            case NameColumnId:
-                result = i18nc("@title:column name of a bookmark",
-                               "Name");
-                break;
-            case UrlColumnId:
-                result = i18nc("@title:column name of a bookmark",
-                               "Location");
-                break;
-            case CommentColumnId:
-                result = i18nc("@title:column comment for a bookmark",
-                               "Comment");
-                break;
-            case StatusColumnId:
-                result = i18nc("@title:column status of a bookmark",
-                               "Status");
-                break;
+        switch (section) {
+        case NameColumnId:
+            result = i18nc("@title:column name of a bookmark", "Name");
+            break;
+        case UrlColumnId:
+            result = i18nc("@title:column name of a bookmark", "Location");
+            break;
+        case CommentColumnId:
+            result = i18nc("@title:column comment for a bookmark", "Comment");
+            break;
+        case StatusColumnId:
+            result = i18nc("@title:column status of a bookmark", "Status");
+            break;
         }
         return result;
-    }
-    else
+    } else
         return QVariant();
 }
 
@@ -243,9 +236,9 @@ QModelIndex KBookmarkModel::index(int row, int column, const QModelIndex &parent
     if (!parent.isValid())
         return createIndex(row, column, d->mRootItem);
 
-    TreeItem * item = static_cast<TreeItem *>(parent.internalPointer());
-    if (row == item->childCount()) {// Received drop below last row, simulate drop on last row
-        return createIndex(row-1, column, item->child(row-1));
+    TreeItem *item = static_cast<TreeItem *>(parent.internalPointer());
+    if (row == item->childCount()) { // Received drop below last row, simulate drop on last row
+        return createIndex(row - 1, column, item->child(row - 1));
     }
 
     return createIndex(row, column, item->child(row));
@@ -260,17 +253,18 @@ QModelIndex KBookmarkModel::parent(const QModelIndex &index) const
         // what itemAt() returned
         return index;
     }
-    KBookmark bk = bookmarkForIndex(index);;
+    KBookmark bk = bookmarkForIndex(index);
+    ;
     const QString rootAddress = d->mRoot.address();
 
     if (bk.address() == rootAddress)
         return QModelIndex();
 
     KBookmarkGroup parent = bk.parentGroup();
-    TreeItem * item = static_cast<TreeItem *>(index.internalPointer());
+    TreeItem *item = static_cast<TreeItem *>(index.internalPointer());
     if (parent.address() != rootAddress)
         return createIndex(parent.positionInParent(), 0, item->parent());
-    else //parent is root
+    else // parent is root
         return createIndex(0, 0, item->parent());
 }
 
@@ -278,7 +272,7 @@ int KBookmarkModel::rowCount(const QModelIndex &parent) const
 {
     if (parent.isValid())
         return static_cast<TreeItem *>(parent.internalPointer())->childCount();
-    else //root case
+    else // root case
         return 1; // Only one child: "Bookmarks"
 }
 
@@ -287,26 +281,26 @@ int KBookmarkModel::columnCount(const QModelIndex &) const
     return NoOfColumnIds;
 }
 
-QModelIndex KBookmarkModel::indexForBookmark(const KBookmark& bk) const
+QModelIndex KBookmarkModel::indexForBookmark(const KBookmark &bk) const
 {
     TreeItem *item = d->mRootItem->treeItemForBookmark(bk);
     if (!item) {
         qCWarning(KEDITBOOKMARKS_LOG) << "Bookmark not found" << bk.address();
         Q_ASSERT(item);
     }
-    return createIndex(KBookmark::positionInParent(bk.address()) , 0, item);
+    return createIndex(KBookmark::positionInParent(bk.address()), 0, item);
 }
 
-void KBookmarkModel::emitDataChanged(const KBookmark& bk)
+void KBookmarkModel::emitDataChanged(const KBookmark &bk)
 {
     QModelIndex idx = indexForBookmark(bk);
     qCDebug(KEDITBOOKMARKS_LOG) << idx;
-    Q_EMIT dataChanged(idx, idx.sibling(idx.row(), columnCount()-1));
+    Q_EMIT dataChanged(idx, idx.sibling(idx.row(), columnCount() - 1));
 }
 
-static const char* s_mime_bookmark_addresses = "application/x-kde-bookmarkaddresses";
+static const char *s_mime_bookmark_addresses = "application/x-kde-bookmarkaddresses";
 
-QMimeData * KBookmarkModel::mimeData(const QModelIndexList & indexes) const
+QMimeData *KBookmarkModel::mimeData(const QModelIndexList &indexes) const
 {
     QMimeData *mimeData = new QMimeData;
     KBookmark::List bookmarks;
@@ -338,7 +332,7 @@ QStringList KBookmarkModel::mimeTypes() const
     return KBookmark::List::mimeDataTypes();
 }
 
-bool KBookmarkModel::dropMimeData(const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent)
+bool KBookmarkModel::dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent)
 {
     QModelIndex dropDestIndex;
     bool isInsertBetweenOp = false;
@@ -358,19 +352,18 @@ bool KBookmarkModel::dropMimeData(const QMimeData * data, Qt::DropAction action,
 
     QString addr = dropDestBookmark.address();
     if (dropDestBookmark.isGroup() && !isInsertBetweenOp) {
-      addr += QLatin1String("/0");
+        addr += QLatin1String("/0");
     }
     // bookmarkForIndex(...) does not distinguish between the last item in the folder
     // and the point *after* the last item in the folder (and its hard to see how to
     // modify it so it does), so do the check here.
-    if (isInsertBetweenOp && row == dropDestBookmark.positionInParent() + 1)
-    {
+    if (isInsertBetweenOp && row == dropDestBookmark.positionInParent() + 1) {
         // Attempting to insert underneath the last item in a folder; adjust the address.
         addr = KBookmark::nextAddress(addr);
     }
 
     if (action == Qt::CopyAction) {
-        KEBMacroCommand * cmd = CmdGen::insertMimeSource(this, QStringLiteral("Copy"), data, addr);
+        KEBMacroCommand *cmd = CmdGen::insertMimeSource(this, QStringLiteral("Copy"), data, addr);
         d->mCommandHistory->addCommand(cmd);
     } else if (action == Qt::MoveAction) {
         if (data->hasFormat(s_mime_bookmark_addresses)) {
@@ -383,11 +376,11 @@ bool KBookmarkModel::dropMimeData(const QMimeData * data, Qt::DropAction action,
                 bookmarks.prepend(bk); // reverse order, so that we don't invalidate addresses (#287038)
             }
 
-            KEBMacroCommand * cmd = CmdGen::itemsMoved(this, bookmarks, addr, false);
+            KEBMacroCommand *cmd = CmdGen::itemsMoved(this, bookmarks, addr, false);
             d->mCommandHistory->addCommand(cmd);
         } else {
-            qCDebug(KEDITBOOKMARKS_LOG)<<"NO FORMAT";
-            KEBMacroCommand * cmd = CmdGen::insertMimeSource(this, QStringLiteral("Copy"), data, addr);
+            qCDebug(KEDITBOOKMARKS_LOG) << "NO FORMAT";
+            KEBMacroCommand *cmd = CmdGen::insertMimeSource(this, QStringLiteral("Copy"), data, addr);
             d->mCommandHistory->addCommand(cmd);
         }
     }
@@ -395,15 +388,15 @@ bool KBookmarkModel::dropMimeData(const QMimeData * data, Qt::DropAction action,
     return true;
 }
 
-KBookmark KBookmarkModel::bookmarkForIndex(const QModelIndex& index) const
+KBookmark KBookmarkModel::bookmarkForIndex(const QModelIndex &index) const
 {
     if (!index.isValid()) {
-      return KBookmark();
+        return KBookmark();
     }
     return static_cast<TreeItem *>(index.internalPointer())->bookmark();
 }
 
-void KBookmarkModel::beginInsert(const KBookmarkGroup& group, int first, int last)
+void KBookmarkModel::beginInsert(const KBookmarkGroup &group, int first, int last)
 {
     Q_ASSERT(!d->mInsertionData);
     const QModelIndex parent = indexForBookmark(group);
@@ -451,7 +444,7 @@ void KBookmarkModel::removeBookmark(const KBookmark &bookmark)
     Q_ASSERT(parentIndex.isValid());
     const int pos = bookmark.positionInParent();
     beginRemoveRows(parentIndex, pos, pos);
-    TreeItem* parentItem = static_cast<TreeItem *>(parentIndex.internalPointer());
+    TreeItem *parentItem = static_cast<TreeItem *>(parentIndex.internalPointer());
     Q_ASSERT(parentItem);
 
     parentGroup.deleteBookmark(bookmark);
@@ -460,36 +453,36 @@ void KBookmarkModel::removeBookmark(const KBookmark &bookmark)
     endRemoveRows();
 }
 
-CommandHistory* KBookmarkModel::commandHistory()
+CommandHistory *KBookmarkModel::commandHistory()
 {
     return d->mCommandHistory;
 }
 
-KBookmarkManager* KBookmarkModel::bookmarkManager()
+KBookmarkManager *KBookmarkModel::bookmarkManager()
 {
     return d->mCommandHistory->bookmarkManager();
 }
 
-void KBookmarkModel::Private::_kd_slotBookmarksChanged(const QString& groupAddress, const QString& caller)
+void KBookmarkModel::Private::_kd_slotBookmarksChanged(const QString &groupAddress, const QString &caller)
 {
     Q_UNUSED(groupAddress);
     Q_UNUSED(caller);
-    //qCDebug(KEDITBOOKMARKS_LOG) << "_kd_slotBookmarksChanged" << groupAddress << "caller=" << caller << "mIgnoreNext=" << mIgnoreNext;
+    // qCDebug(KEDITBOOKMARKS_LOG) << "_kd_slotBookmarksChanged" << groupAddress << "caller=" << caller << "mIgnoreNext=" << mIgnoreNext;
     if (mIgnoreNext > 0) { // We ignore the first changed signal after every change we did
         --mIgnoreNext;
         return;
     }
 
-    //qCDebug(KEDITBOOKMARKS_LOG) << " setRoot!";
+    // qCDebug(KEDITBOOKMARKS_LOG) << " setRoot!";
     q->setRoot(q->bookmarkManager()->root());
 
     mCommandHistory->clearHistory();
 }
 
-void KBookmarkModel::notifyManagers(const KBookmarkGroup& grp)
+void KBookmarkModel::notifyManagers(const KBookmarkGroup &grp)
 {
     ++d->mIgnoreNext;
-    //qCDebug(KEDITBOOKMARKS_LOG) << "notifyManagers -> mIgnoreNext=" << d->mIgnoreNext;
+    // qCDebug(KEDITBOOKMARKS_LOG) << "notifyManagers -> mIgnoreNext=" << d->mIgnoreNext;
     bookmarkManager()->emitChanged(grp);
 }
 

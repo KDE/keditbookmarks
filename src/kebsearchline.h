@@ -22,7 +22,6 @@
 #include <QAbstractItemView>
 #include <QVector>
 
-
 class QAction;
 class KViewSearchLinePrivate;
 /**
@@ -44,7 +43,7 @@ class KViewSearchLinePrivate;
  * Note: You need to call updateSearch() if you called QListView::setModelColumn()
  */
 
-//FIXME delete KViewSearchLine if there is a replacement in kdelibs
+// FIXME delete KViewSearchLine if there is a replacement in kdelibs
 class KViewSearchLine : public KLineEdit
 {
     Q_OBJECT
@@ -150,19 +149,18 @@ public Q_SLOTS:
     void setView(QAbstractItemView *v);
 
 protected:
-
     /**
      * Returns true if the row including \a item matches the search \a s.
      * This will be evaluated based on the value of caseSensitive() and
      * searchColumns().  This can be overridden in subclasses to implement
      * more complicated matching schemes.
      */
-    virtual bool itemMatches(const QModelIndex & item, const QString &s) const;
+    virtual bool itemMatches(const QModelIndex &item, const QString &s) const;
 
     /**
-    * Re-implemented for internal reasons.  API not affected.
-    */
-    void contextMenuEvent( QContextMenuEvent*e ) override;
+     * Re-implemented for internal reasons.  API not affected.
+     */
+    void contextMenuEvent(QContextMenuEvent *e) override;
 
 protected Q_SLOTS:
     /**
@@ -212,29 +210,29 @@ private:
     /**
      * returns whether any row between first and last is visible
      */
-    bool anyVisible(const QModelIndex & first, const QModelIndex & last);
+    bool anyVisible(const QModelIndex &first, const QModelIndex &last);
 
     /**
      * rechecks indices first-last after a dataChanged() signal
      * sets their visibility and returns true if any item should be
      * visible
      */
-    bool recheck(const QModelIndex & first, const QModelIndex & last);
+    bool recheck(const QModelIndex &first, const QModelIndex &last);
 
     /**
      * Hide QListView/QTreeView's different isRowHidden
      */
-    bool isVisible(const QModelIndex & index);
+    bool isVisible(const QModelIndex &index);
 
     /**
      * returns the model() of the view()
      */
-    QAbstractItemModel * model() const;
+    QAbstractItemModel *model() const;
 
     /**
      * returns the index exactly one row below \p index
      */
-    QModelIndex nextRow(const QModelIndex & index);
+    QModelIndex nextRow(const QModelIndex &index);
 
 private Q_SLOTS:
     void listViewDeleted();
@@ -244,12 +242,12 @@ private Q_SLOTS:
     void slotColumnsInserted(const QModelIndex &parent, int first, int last);
     void slotColumnsRemoved(const QModelIndex &parent, int first, int last);
     void slotModelReset();
-    void searchColumnsMenuActivated(QAction * act);
+    void searchColumnsMenuActivated(QAction *act);
 
 private:
     class KViewSearchLinePrivate;
     KViewSearchLinePrivate *d;
-        QVector<QAction *> actions;
+    QVector<QAction *> actions;
 };
 
 /**
@@ -296,6 +294,5 @@ private:
     class KViewSearchLineWidgetPrivate;
     KViewSearchLineWidgetPrivate *d;
 };
-
 
 #endif

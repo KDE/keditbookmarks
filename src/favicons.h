@@ -24,9 +24,10 @@
 
 #include "bookmarkiterator.h"
 
-class FavIconsItrHolder : public BookmarkIteratorHolder {
+class FavIconsItrHolder : public BookmarkIteratorHolder
+{
 public:
-   FavIconsItrHolder(QObject* parent, KBookmarkModel* model);
+    FavIconsItrHolder(QObject *parent, KBookmarkModel *model);
 };
 
 class KBookmarkModel;
@@ -34,26 +35,25 @@ class FavIconUpdater;
 
 class FavIconsItr : public BookmarkIterator
 {
-   Q_OBJECT
+    Q_OBJECT
 
 public:
-   FavIconsItr(BookmarkIteratorHolder* holder, const QList<KBookmark>& bks);
-   ~FavIconsItr();
+    FavIconsItr(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks);
+    ~FavIconsItr();
 
-   void cancel() override;
+    void cancel() override;
 
 public Q_SLOTS:
-   void slotDone(bool succeeded, const QString& errorString);
+    void slotDone(bool succeeded, const QString &errorString);
 
 protected:
-   void doAction() override;
-   bool isApplicable(const KBookmark &bk) const override;
+    void doAction() override;
+    bool isApplicable(const KBookmark &bk) const override;
 
 private:
-   void setStatus(const QString & status);
-   FavIconUpdater *m_updater;
-   QString m_oldStatus;
+    void setStatus(const QString &status);
+    FavIconUpdater *m_updater;
+    QString m_oldStatus;
 };
 
 #endif
-

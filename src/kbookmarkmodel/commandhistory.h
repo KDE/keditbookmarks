@@ -31,12 +31,12 @@ class KBOOKMARKMODEL_EXPORT CommandHistory : public QObject
 {
     Q_OBJECT
 public:
-    explicit CommandHistory(QObject* parent = nullptr);
+    explicit CommandHistory(QObject *parent = nullptr);
     virtual ~CommandHistory();
 
     // Call this before putting any commands into the history!
-    void setBookmarkManager(KBookmarkManager* manager);
-    KBookmarkManager* bookmarkManager();
+    void setBookmarkManager(KBookmarkManager *manager);
+    KBookmarkManager *bookmarkManager();
 
     void createActions(KActionCollection *collection);
 
@@ -46,7 +46,7 @@ public:
     void addCommand(QUndoCommand *);
 
 Q_SIGNALS:
-    void notifyCommandExecuted(const KBookmarkGroup&);
+    void notifyCommandExecuted(const KBookmarkGroup &);
 
 public Q_SLOTS:
     void undo();
@@ -57,8 +57,7 @@ private:
 
 private:
     class Private;
-    Private * const d;
+    Private *const d;
 };
 
 #endif /* COMMANDHISTORY_H */
-

@@ -26,15 +26,16 @@
 #include "keditbookmarks_debug.h"
 #include <KLocalizedString>
 
-FavIconsItrHolder::FavIconsItrHolder(QObject* parent, KBookmarkModel* model)
+FavIconsItrHolder::FavIconsItrHolder(QObject *parent, KBookmarkModel *model)
     : BookmarkIteratorHolder(parent, model)
 {
 }
 
 /* -------------------------- */
 
-FavIconsItr::FavIconsItr(BookmarkIteratorHolder* holder, const QList<KBookmark>& bks)
-    : BookmarkIterator(holder, bks), m_updater(nullptr)
+FavIconsItr::FavIconsItr(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks)
+    : BookmarkIterator(holder, bks)
+    , m_updater(nullptr)
 {
 }
 
@@ -43,13 +44,13 @@ FavIconsItr::~FavIconsItr()
     delete m_updater;
 }
 
-void FavIconsItr::setStatus(const QString & status)
+void FavIconsItr::setStatus(const QString &status)
 {
     currentBookmark().setMetaDataItem(QStringLiteral("favstate"), status);
     model()->emitDataChanged(currentBookmark());
 }
 
-void FavIconsItr::slotDone(bool succeeded, const QString& errorString)
+void FavIconsItr::slotDone(bool succeeded, const QString &errorString)
 {
     // //qCDebug(KEDITBOOKMARKS_LOG) << "FavIconsItr::slotDone()";
     setStatus(succeeded ? i18n("OK") : errorString);
@@ -80,5 +81,3 @@ void FavIconsItr::cancel()
 {
     setStatus(m_oldStatus);
 }
-
-

@@ -19,23 +19,28 @@
 #define __exporters_h
 
 #include <KBookmark>
-//Added by qt3to4:
+// Added by qt3to4:
 #include <QTextStream>
 
-class HTMLExporter : private KBookmarkGroupTraverser {
+class HTMLExporter : private KBookmarkGroupTraverser
+{
 public:
-   HTMLExporter();
-   virtual ~HTMLExporter(){}
-   QString toString(const KBookmarkGroup &, bool showAddress = false);
-   void write(const KBookmarkGroup &, const QString &, bool showAddress = false);
+    HTMLExporter();
+    virtual ~HTMLExporter()
+    {
+    }
+    QString toString(const KBookmarkGroup &, bool showAddress = false);
+    void write(const KBookmarkGroup &, const QString &, bool showAddress = false);
+
 private:
-   void visit(const KBookmark &) override;
-   void visitEnter(const KBookmarkGroup &) override;
-   void visitLeave(const KBookmarkGroup &) override;
+    void visit(const KBookmark &) override;
+    void visitEnter(const KBookmarkGroup &) override;
+    void visitLeave(const KBookmarkGroup &) override;
+
 private:
-   QString m_string;
-   QTextStream m_out;
-   bool m_showAddress;
+    QString m_string;
+    QTextStream m_out;
+    bool m_showAddress;
 };
 
 #endif

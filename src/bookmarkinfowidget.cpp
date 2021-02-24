@@ -18,21 +18,20 @@
 
 #include "bookmarkinfowidget.h"
 #include "bookmarklistview.h"
-#include "kbookmarkmodel/commands.h"
-#include "kbookmarkmodel/commandhistory.h"
 #include "globalbookmarkmanager.h"
+#include "kbookmarkmodel/commandhistory.h"
+#include "kbookmarkmodel/commands.h"
 #include "kbookmarkmodel/model.h"
 
 #include <stdlib.h>
 
-#include <QTimer>
-#include <QHBoxLayout>
 #include <QFormLayout>
+#include <QHBoxLayout>
+#include <QTimer>
 
 #include <KLocalizedString>
 
 #include <KLineEdit>
-
 
 // SHUFFLE all these functions around, the order is just plain stupid
 void BookmarkInfoWidget::showBookmark(const KBookmark &bk)
@@ -69,15 +68,14 @@ void BookmarkInfoWidget::showBookmark(const KBookmark &bk)
     }
 
     // read/write fields
-    m_title_le->setReadOnly( (bk.isSeparator()|| !bk.hasParent() )? true : false);
+    m_title_le->setReadOnly((bk.isSeparator() || !bk.hasParent()) ? true : false);
     if (bk.fullText() != m_title_le->text())
         m_title_le->setText(bk.fullText());
 
     m_url_le->setReadOnly(bk.isGroup() || bk.isSeparator());
     if (bk.isGroup()) {
-         m_url_le->setText(QString());
-    }
-    else {
+        m_url_le->setText(QString());
+    } else {
         // Update the text if and only if the text represents a different URL to that
         // of the current bookmark - the old method, "m_url_le->text() != bk.url().pathOrUrl()",
         // created difficulties due to the ambiguity of converting URLs to text. (#172647)
@@ -88,7 +86,7 @@ void BookmarkInfoWidget::showBookmark(const KBookmark &bk)
         }
     }
 
-    m_comment_le->setReadOnly((bk.isSeparator()|| !bk.hasParent()) ? true : false );
+    m_comment_le->setReadOnly((bk.isSeparator() || !bk.hasParent()) ? true : false);
     QString commentText = bk.description();
     if (m_comment_le->text() != commentText) {
         const int cursorPosition = m_comment_le->cursorPosition();
@@ -98,19 +96,16 @@ void BookmarkInfoWidget::showBookmark(const KBookmark &bk)
 
     // readonly fields
     updateStatus();
-
 }
 
 void BookmarkInfoWidget::updateStatus()
 {
-   //FIXME we don't want every metadata element, but only that with owner "https://www.kde.org"
-   QString visitDate =
-        GlobalBookmarkManager::makeTimeStr(m_bk.metaDataItem(QStringLiteral("time_visited")));
+    // FIXME we don't want every metadata element, but only that with owner "https://www.kde.org"
+    QString visitDate = GlobalBookmarkManager::makeTimeStr(m_bk.metaDataItem(QStringLiteral("time_visited")));
     m_visitdate_le->setReadOnly(true);
     m_visitdate_le->setText(visitDate);
 
-    QString creationDate =
-        GlobalBookmarkManager::makeTimeStr(m_bk.metaDataItem(QStringLiteral("time_added")));
+    QString creationDate = GlobalBookmarkManager::makeTimeStr(m_bk.metaDataItem(QStringLiteral("time_added")));
     m_credate_le->setReadOnly(true);
     m_credate_le->setText(creationDate);
 
@@ -139,13 +134,10 @@ void BookmarkInfoWidget::slotTextChangedTitle(const QString &str)
 
     timer->start(1000);
 
-    if(titlecmd)
-    {
+    if (titlecmd) {
         titlecmd->modify(str);
         titlecmd->redo();
-    }
-    else
-    {
+    } else {
         titlecmd = new EditCommand(m_model, m_bk.address(), 0, str);
         m_model->commandHistory()->addCommand(titlecmd);
     }
@@ -156,19 +148,17 @@ void BookmarkInfoWidget::commitURL()
     urlcmd = nullptr;
 }
 
-void BookmarkInfoWidget::slotTextChangedURL(const QString &str) {
+void BookmarkInfoWidget::slotTextChangedURL(const QString &str)
+{
     if (m_bk.isNull() || !m_url_le->isModified())
         return;
 
     timer->start(1000);
 
-    if(urlcmd)
-    {
+    if (urlcmd) {
         urlcmd->modify(str);
         urlcmd->redo();
-    }
-    else
-    {
+    } else {
         urlcmd = new EditCommand(m_model, m_bk.address(), 1, str);
         m_model->commandHistory()->addCommand(urlcmd);
     }
@@ -179,19 +169,17 @@ void BookmarkInfoWidget::commitComment()
     commentcmd = nullptr;
 }
 
-void BookmarkInfoWidget::slotTextChangedComment(const QString &str) {
+void BookmarkInfoWidget::slotTextChangedComment(const QString &str)
+{
     if (m_bk.isNull() || !m_comment_le->isModified())
         return;
 
     timer->start(1000);
 
-    if(commentcmd)
-    {
+    if (commentcmd) {
         commentcmd->modify(str);
         commentcmd->redo();
-    }
-    else
-    {
+    } else {
         commentcmd = new EditCommand(m_model, m_bk.address(), 2, str);
         m_model->commandHistory()->addCommand(commentcmd);
     }
@@ -199,24 +187,22 @@ void BookmarkInfoWidget::slotTextChangedComment(const QString &str) {
 
 void BookmarkInfoWidget::slotUpdate()
 {
-    const QModelIndexList & list = mBookmarkListView->selectionModel()->selectedRows();
-    if( list.count() == 1)
-    {
+    const QModelIndexList &list = mBookmarkListView->selectionModel()->selectedRows();
+    if (list.count() == 1) {
         QModelIndex index = *list.constBegin();
-        showBookmark( mBookmarkListView->bookmarkModel()->bookmarkForIndex(index) );
-    }
-    else
-        showBookmark( KBookmark() );
+        showBookmark(mBookmarkListView->bookmarkModel()->bookmarkForIndex(index));
+    } else
+        showBookmark(KBookmark());
 }
 
-BookmarkInfoWidget::BookmarkInfoWidget(BookmarkListView * lv, KBookmarkModel* model, QWidget *parent)
-    : QWidget(parent), m_model(model), mBookmarkListView(lv) {
+BookmarkInfoWidget::BookmarkInfoWidget(BookmarkListView *lv, KBookmarkModel *model, QWidget *parent)
+    : QWidget(parent)
+    , m_model(model)
+    , mBookmarkListView(lv)
+{
+    connect(mBookmarkListView->selectionModel(), &QItemSelectionModel::selectionChanged, this, &BookmarkInfoWidget::slotUpdate);
 
-    connect(mBookmarkListView->selectionModel(), &QItemSelectionModel::selectionChanged,
-            this, &BookmarkInfoWidget::slotUpdate);
-
-    connect(mBookmarkListView->model(), &QAbstractItemModel::dataChanged,
-            this, &BookmarkInfoWidget::slotUpdate);
+    connect(mBookmarkListView->model(), &QAbstractItemModel::dataChanged, this, &BookmarkInfoWidget::slotUpdate);
 
     timer = new QTimer(this);
     timer->setSingleShot(true);
@@ -264,6 +250,3 @@ BookmarkInfoWidget::BookmarkInfoWidget(BookmarkListView * lv, KBookmarkModel* mo
 
     showBookmark(KBookmark());
 }
-
-
-

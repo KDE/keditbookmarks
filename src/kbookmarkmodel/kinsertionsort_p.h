@@ -31,30 +31,29 @@
 // Item must define isNull(), previousSibling(), nextSibling()
 // SortHelper must define  moveAfter( const Item &, const Item & )
 // Criteria must define  static Key key(const Item &)
-template <class Item, class Criteria, class Key, class SortHelper>
-inline void kInsertionSort( Item& firstChild, SortHelper& sortHelper )
+template<class Item, class Criteria, class Key, class SortHelper>
+inline void kInsertionSort(Item &firstChild, SortHelper &sortHelper)
 {
-    if (firstChild.isNull()) return;
+    if (firstChild.isNull())
+        return;
     Item j = firstChild.nextSibling();
-    while ( !j.isNull() )
-    {
+    while (!j.isNull()) {
         Key key = Criteria::key(j);
-        //qCDebug(KEDITBOOKMARKS_LOG) << "Looking at j=" << key;
+        // qCDebug(KEDITBOOKMARKS_LOG) << "Looking at j=" << key;
         // Insert A[j] into the sorted sequence A[1..j-1]
         Item i = j.previousSibling();
         Item next = j.nextSibling();
         bool moved = false;
-        while ( !i.isNull() && Criteria::key(i) > key )
-        {
+        while (!i.isNull() && Criteria::key(i) > key) {
             i = i.previousSibling();
             moved = true;
         }
-        if ( moved ) {
-            //qCDebug(KEDITBOOKMARKS_LOG) << "moveAfter(" << Criteria::key(j) << "," << (i.isNull() ? "null" : Criteria::key(i)) << ")";
-            sortHelper.moveAfter( j, i ); // move j right after i. If i is null, move to first position.
+        if (moved) {
+            // qCDebug(KEDITBOOKMARKS_LOG) << "moveAfter(" << Criteria::key(j) << "," << (i.isNull() ? "null" : Criteria::key(i)) << ")";
+            sortHelper.moveAfter(j, i); // move j right after i. If i is null, move to first position.
         }
         j = next;
-        //qCDebug(KEDITBOOKMARKS_LOG) << "Now j is" << Criteria::key(next);
+        // qCDebug(KEDITBOOKMARKS_LOG) << "Now j is" << Criteria::key(next);
     }
 }
 

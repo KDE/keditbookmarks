@@ -25,8 +25,10 @@
 #include "keditbookmarks_debug.h"
 #include <QTimer>
 
-BookmarkIterator::BookmarkIterator(BookmarkIteratorHolder* holder, const QList<KBookmark>& bks)
-    : QObject(holder), m_bookmarkList(bks), m_holder(holder)
+BookmarkIterator::BookmarkIterator(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks)
+    : QObject(holder)
+    , m_bookmarkList(bks)
+    , m_holder(holder)
 {
     delayedEmitNextOne();
 }
@@ -65,15 +67,16 @@ void BookmarkIterator::nextOne()
     }
 }
 
-KBookmarkModel* BookmarkIterator::model()
+KBookmarkModel *BookmarkIterator::model()
 {
     return m_holder->model();
 }
 
 /* --------------------------- */
 
-BookmarkIteratorHolder::BookmarkIteratorHolder(QObject* parent, KBookmarkModel* model)
-    : QObject(parent), m_model(model)
+BookmarkIteratorHolder::BookmarkIteratorHolder(QObject *parent, KBookmarkModel *model)
+    : QObject(parent)
+    , m_model(model)
 {
     Q_ASSERT(m_model);
 }
@@ -94,7 +97,7 @@ void BookmarkIteratorHolder::removeIterator(BookmarkIterator *itr)
 void BookmarkIteratorHolder::cancelAllItrs()
 {
     const auto iterList = m_iterators;
-    for (BookmarkIterator* iterator : iterList) {
+    for (BookmarkIterator *iterator : iterList) {
         iterator->cancel();
     }
     qDeleteAll(m_iterators);
@@ -102,26 +105,24 @@ void BookmarkIteratorHolder::cancelAllItrs()
     doIteratorListChanged();
 }
 
-void BookmarkIteratorHolder::addAffectedBookmark(const QString & address)
+void BookmarkIteratorHolder::addAffectedBookmark(const QString &address)
 {
-    //qCDebug(KEDITBOOKMARKS_LOG) << address;
-    if(m_affectedBookmark.isNull())
+    // qCDebug(KEDITBOOKMARKS_LOG) << address;
+    if (m_affectedBookmark.isNull())
         m_affectedBookmark = address;
     else
         m_affectedBookmark = KBookmark::commonParent(m_affectedBookmark, address);
-    //qCDebug(KEDITBOOKMARKS_LOG) << "m_affectedBookmark is now" << m_affectedBookmark;
+    // qCDebug(KEDITBOOKMARKS_LOG) << "m_affectedBookmark is now" << m_affectedBookmark;
 }
 
 void BookmarkIteratorHolder::doIteratorListChanged()
 {
-    //qCDebug(KEDITBOOKMARKS_LOG) << count() << "iterators";
+    // qCDebug(KEDITBOOKMARKS_LOG) << count() << "iterators";
     Q_EMIT setCancelEnabled(count() > 0);
-    if(count() == 0) {
-        //qCDebug(KEDITBOOKMARKS_LOG) << "Notifying managers" << m_affectedBookmark;
-        KBookmarkManager* mgr = m_model->bookmarkManager();
+    if (count() == 0) {
+        // qCDebug(KEDITBOOKMARKS_LOG) << "Notifying managers" << m_affectedBookmark;
+        KBookmarkManager *mgr = m_model->bookmarkManager();
         model()->notifyManagers(mgr->findByAddress(m_affectedBookmark).toGroup());
         m_affectedBookmark.clear();
     }
 }
-
-

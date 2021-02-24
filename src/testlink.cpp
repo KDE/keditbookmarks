@@ -29,15 +29,16 @@
 #include "kbookmarkmodel/commands.h"
 #include "kbookmarkmodel/model.h"
 
-TestLinkItrHolder::TestLinkItrHolder(QObject* parent, KBookmarkModel* model)
+TestLinkItrHolder::TestLinkItrHolder(QObject *parent, KBookmarkModel *model)
     : BookmarkIteratorHolder(parent, model)
 {
 }
 
 /* -------------------------- */
 
-TestLinkItr::TestLinkItr(BookmarkIteratorHolder* holder, const QList<KBookmark>& bks)
-    : BookmarkIterator(holder, bks), m_job(nullptr)
+TestLinkItr::TestLinkItr(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks)
+    : BookmarkIterator(holder, bks)
+    , m_job(nullptr)
 {
 }
 
@@ -50,7 +51,7 @@ TestLinkItr::~TestLinkItr()
     }
 }
 
-void TestLinkItr::setStatus(const QString & text)
+void TestLinkItr::setStatus(const QString &text)
 {
     currentBookmark().setMetaDataItem(QStringLiteral("linkstate"), text);
     model()->emitDataChanged(currentBookmark());
@@ -63,10 +64,10 @@ bool TestLinkItr::isApplicable(const KBookmark &bk) const
 
 void TestLinkItr::doAction()
 {
-    //qCDebug(KEDITBOOKMARKS_LOG);
+    // qCDebug(KEDITBOOKMARKS_LOG);
     m_job = KIO::get(currentBookmark().url(), KIO::Reload, KIO::HideProgressInfo);
-    m_job->addMetaData( QStringLiteral("cookies"), QStringLiteral("none") );
-    m_job->addMetaData( QStringLiteral("errorPage"), QStringLiteral("false") );
+    m_job->addMetaData(QStringLiteral("cookies"), QStringLiteral("none"));
+    m_job->addMetaData(QStringLiteral("errorPage"), QStringLiteral("false"));
 
     connect(m_job, &KIO::TransferJob::result, this, &TestLinkItr::slotJobResult);
 
@@ -76,14 +77,14 @@ void TestLinkItr::doAction()
 
 void TestLinkItr::slotJobResult(KJob *job)
 {
-    //qCDebug(KEDITBOOKMARKS_LOG);
+    // qCDebug(KEDITBOOKMARKS_LOG);
     m_job = nullptr;
 
     KIO::TransferJob *transfer = static_cast<KIO::TransferJob *>(job);
     const QString modDate = transfer->queryMetaData(QStringLiteral("modified"));
 
     if (transfer->error() || transfer->isErrorPage()) {
-        //qCDebug(KEDITBOOKMARKS_LOG)<<"***********"<<transfer->error()<<"  "<<transfer->isErrorPage();
+        // qCDebug(KEDITBOOKMARKS_LOG)<<"***********"<<transfer->error()<<"  "<<transfer->isErrorPage();
         // can we assume that errorString will contain no entities?
         QString err = transfer->errorString();
         err.replace(QLatin1String("\n"), QLatin1String(" "));
@@ -103,5 +104,3 @@ void TestLinkItr::cancel()
 {
     setStatus(m_oldStatus);
 }
-
-

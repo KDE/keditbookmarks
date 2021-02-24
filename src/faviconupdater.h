@@ -20,32 +20,33 @@
 
 #include <KBookmark>
 
-#include <kparts/part.h>
+#include <KIO/Job>
 #include <KParts/ReadOnlyPart>
 #include <QUrl>
-#include <KIO/Job>
+#include <kparts/part.h>
 
 class FavIconWebGrabber : public QObject
 {
     Q_OBJECT
 public:
     FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url);
-    ~FavIconWebGrabber() {}
+    ~FavIconWebGrabber()
+    {
+    }
 
 Q_SIGNALS:
-    void done(bool succeeded, const QString& errorString);
+    void done(bool succeeded, const QString &errorString);
 
 private Q_SLOTS:
     void slotMimetype(KIO::Job *job, const QString &_type);
     void slotFinished(KJob *job);
-    void slotCanceled(const QString& errorString);
+    void slotCanceled(const QString &errorString);
     void slotCompleted();
 
 private:
     KParts::ReadOnlyPart *m_part;
     QUrl m_url;
 };
-
 
 class FavIconUpdater : public QObject
 {
@@ -55,14 +56,14 @@ public:
     explicit FavIconUpdater(QObject *parent);
     ~FavIconUpdater();
     void downloadIcon(const KBookmark &bk);
-    void downloadIconUsingWebBrowser(const KBookmark &bk, const QString& currentError);
+    void downloadIconUsingWebBrowser(const KBookmark &bk, const QString &currentError);
 
 private Q_SLOTS:
     void setIconUrl(const QUrl &iconURL);
     void slotResult(KJob *job);
 
 Q_SIGNALS:
-    void done(bool succeeded, const QString& error);
+    void done(bool succeeded, const QString &error);
 
 private:
     KParts::ReadOnlyPart *m_part;
@@ -72,4 +73,3 @@ private:
 };
 
 #endif
-

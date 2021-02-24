@@ -22,7 +22,8 @@
 #include <KBookmark>
 
 KBookmarkView::KBookmarkView(QWidget *parent)
-    : QTreeView(parent), m_loadingState(false)
+    : QTreeView(parent)
+    , m_loadingState(false)
 {
     setAcceptDrops(true);
     setDefaultDropAction(Qt::MoveAction);
@@ -41,7 +42,7 @@ void KBookmarkView::loadFoldedState()
     m_loadingState = false;
 }
 
-void KBookmarkView::loadFoldedState(const QModelIndex& parentIndex)
+void KBookmarkView::loadFoldedState(const QModelIndex &parentIndex)
 {
     const int count = model()->rowCount(parentIndex);
     for (int row = 0; row < count; ++row) {
@@ -49,15 +50,14 @@ void KBookmarkView::loadFoldedState(const QModelIndex& parentIndex)
         const KBookmark bk = bookmarkForIndex(index);
         if (bk.isNull()) {
             expand(index);
-        }
-        else if (bk.isGroup()) {
+        } else if (bk.isGroup()) {
             setExpanded(index, bk.toGroup().isOpen());
             loadFoldedState(index);
         }
     }
 }
 
-void KBookmarkView::slotExpanded(const QModelIndex& index)
+void KBookmarkView::slotExpanded(const QModelIndex &index)
 {
     if (!m_loadingState) {
         KBookmark bk = bookmarkForIndex(index);
@@ -65,12 +65,10 @@ void KBookmarkView::slotExpanded(const QModelIndex& index)
     }
 }
 
-void KBookmarkView::slotCollapsed(const QModelIndex& index)
+void KBookmarkView::slotCollapsed(const QModelIndex &index)
 {
     if (!m_loadingState) {
         KBookmark bk = bookmarkForIndex(index);
         bk.internalElement().setAttribute(QStringLiteral("folded"), QStringLiteral("yes"));
     }
 }
-
-

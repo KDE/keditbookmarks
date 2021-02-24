@@ -23,11 +23,11 @@
 #include "importers.h"
 #include "globalbookmarkmanager.h"
 
-#include "toplevel.h" // for KEBApp
 #include "kbookmarkmodel/model.h"
+#include "toplevel.h" // for KEBApp
 
-#include <QFileDialog>
 #include "keditbookmarks_debug.h"
+#include <QFileDialog>
 
 #include <KMessageBox>
 
@@ -39,41 +39,51 @@
 #include <kbookmarkimporter_opera.h>
 //#include <kbookmarkimporter_crash.h>
 #include <KBookmarkDomBuilder>
-#include <kbookmarkimporter_ns.h>
 #include <QStandardPaths>
+#include <kbookmarkimporter_ns.h>
 
-
-ImportCommand::ImportCommand(KBookmarkModel* model)
-    : QUndoCommand(), m_model(model), m_utf8(false), m_folder(false), m_cleanUpCmd(nullptr)
+ImportCommand::ImportCommand(KBookmarkModel *model)
+    : QUndoCommand()
+    , m_model(model)
+    , m_utf8(false)
+    , m_folder(false)
+    , m_cleanUpCmd(nullptr)
 {
 }
 
-void ImportCommand::setVisibleName(const QString& visibleName)
+void ImportCommand::setVisibleName(const QString &visibleName)
 {
     m_visibleName = visibleName;
     setText(i18nc("(qtundo-format)", "Import %1 Bookmarks", visibleName));
 }
 
-QString ImportCommand::folder() const {
+QString ImportCommand::folder() const
+{
     return m_folder ? i18n("%1 Bookmarks", visibleName()) : QString();
 }
 
-ImportCommand* ImportCommand::importerFactory(KBookmarkModel* model, const QString &type)
+ImportCommand *ImportCommand::importerFactory(KBookmarkModel *model, const QString &type)
 {
-    if (type == QLatin1String("Galeon")) return new GaleonImportCommand(model);
-    else if (type == QLatin1String("IE")) return new IEImportCommand(model);
-    else if (type == QLatin1String("KDE2")) return new KDE2ImportCommand(model);
-    else if (type == QLatin1String("Opera")) return new OperaImportCommand(model);
-    //else if (type == "Crashes") return new CrashesImportCommand();
-    else if (type == QLatin1String("Moz")) return new MozImportCommand(model);
-    else if (type == QLatin1String("NS")) return new NSImportCommand(model);
+    if (type == QLatin1String("Galeon"))
+        return new GaleonImportCommand(model);
+    else if (type == QLatin1String("IE"))
+        return new IEImportCommand(model);
+    else if (type == QLatin1String("KDE2"))
+        return new KDE2ImportCommand(model);
+    else if (type == QLatin1String("Opera"))
+        return new OperaImportCommand(model);
+    // else if (type == "Crashes") return new CrashesImportCommand();
+    else if (type == QLatin1String("Moz"))
+        return new MozImportCommand(model);
+    else if (type == QLatin1String("NS"))
+        return new NSImportCommand(model);
     else {
         qCCritical(KEDITBOOKMARKS_LOG) << "ImportCommand::importerFactory() - invalid type (" << type << ")!";
         return nullptr;
     }
 }
 
-ImportCommand* ImportCommand::performImport(KBookmarkModel* model, const QString &type, QWidget *top)
+ImportCommand *ImportCommand::performImport(KBookmarkModel *model, const QString &type, QWidget *top)
 {
     ImportCommand *importer = ImportCommand::importerFactory(model, type);
 
@@ -85,11 +95,11 @@ ImportCommand* ImportCommand::performImport(KBookmarkModel* model, const QString
         return nullptr;
     }
 
-    int answer =
-        KMessageBox::questionYesNoCancel(
-                top, i18n("Import as a new subfolder or replace all the current bookmarks?"),
-                i18nc("@title:window", "%1 Import", importer->visibleName()),
-                KGuiItem(i18n("As New Folder")), KGuiItem(i18n("Replace")));
+    int answer = KMessageBox::questionYesNoCancel(top,
+                                                  i18n("Import as a new subfolder or replace all the current bookmarks?"),
+                                                  i18nc("@title:window", "%1 Import", importer->visibleName()),
+                                                  KGuiItem(i18n("As New Folder")),
+                                                  KGuiItem(i18n("Replace")));
 
     if (answer == KMessageBox::Cancel) {
         delete importer;
@@ -100,9 +110,9 @@ ImportCommand* ImportCommand::performImport(KBookmarkModel* model, const QString
     return importer;
 }
 
-void ImportCommand::doCreateHoldingFolder(KBookmarkGroup &bkGroup) {
-    bkGroup = GlobalBookmarkManager::self()->mgr()
-        ->root().createNewFolder(folder());
+void ImportCommand::doCreateHoldingFolder(KBookmarkGroup &bkGroup)
+{
+    bkGroup = GlobalBookmarkManager::self()->mgr()->root().createNewFolder(folder());
     bkGroup.setIcon(m_icon);
     m_group = bkGroup.address();
 }
@@ -120,8 +130,7 @@ void ImportCommand::redo()
         delete m_cleanUpCmd;
         m_cleanUpCmd = DeleteCommand::deleteAll(m_model, bkGroup);
 
-        new DeleteCommand(m_model, bkGroup.address(),
-                          true /* contentOnly */, m_cleanUpCmd);
+        new DeleteCommand(m_model, bkGroup.address(), true /* contentOnly */, m_cleanUpCmd);
         m_cleanUpCmd->redo();
 
         // import at the root
@@ -140,7 +149,7 @@ void ImportCommand::redo()
 
 void ImportCommand::undo()
 {
-    if ( !folder().isEmpty() ) {
+    if (!folder().isEmpty()) {
         // we created a group -> just delete it
         DeleteCommand cmd(m_model, m_group);
         cmd.redo();
@@ -161,7 +170,7 @@ void ImportCommand::undo()
 QString ImportCommand::affectedBookmarks() const
 {
     QString rootAdr = GlobalBookmarkManager::self()->root().address();
-    if(m_group == rootAdr)
+    if (m_group == rootAdr)
         return m_group;
     else
         return KBookmark::parentAddress(m_group);
@@ -169,65 +178,70 @@ QString ImportCommand::affectedBookmarks() const
 
 /* -------------------------------------- */
 
-QString MozImportCommand::requestFilename() const {
+QString MozImportCommand::requestFilename() const
+{
     static KMozillaBookmarkImporterImpl importer;
     return importer.findDefaultLocation();
 }
 
-QString NSImportCommand::requestFilename() const {
+QString NSImportCommand::requestFilename() const
+{
     static KNSBookmarkImporterImpl importer;
     return importer.findDefaultLocation();
 }
 
-QString OperaImportCommand::requestFilename() const {
+QString OperaImportCommand::requestFilename() const
+{
     static KOperaBookmarkImporterImpl importer;
     return importer.findDefaultLocation();
 }
 
-QString IEImportCommand::requestFilename() const {
+QString IEImportCommand::requestFilename() const
+{
     static KIEBookmarkImporterImpl importer;
     return importer.findDefaultLocation();
 }
 
 // following two are really just xbel
 
-QString GaleonImportCommand::requestFilename() const {
-    return QFileDialog::getOpenFileName(
-            KEBApp::self(),
-            QString(),
-            QString(QDir::homePath() + "/.galeon"),
-            i18n("Galeon Bookmark Files (*.xbel)"));
+QString GaleonImportCommand::requestFilename() const
+{
+    return QFileDialog::getOpenFileName(KEBApp::self(), QString(), QString(QDir::homePath() + "/.galeon"), i18n("Galeon Bookmark Files (*.xbel)"));
 }
 
-QString KDE2ImportCommand::requestFilename() const {
-    return QFileDialog::getOpenFileName(
-            KEBApp::self(),
-            QString(),
-            QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror"),
-            i18n("KDE Bookmark Files (*.xml)"));
+QString KDE2ImportCommand::requestFilename() const
+{
+    return QFileDialog::getOpenFileName(KEBApp::self(),
+                                        QString(),
+                                        QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror"),
+                                        i18n("KDE Bookmark Files (*.xml)"));
 }
 
 /* -------------------------------------- */
 
-static void parseInto(const KBookmarkGroup &bkGroup, KBookmarkImporterBase *importer) {
+static void parseInto(const KBookmarkGroup &bkGroup, KBookmarkImporterBase *importer)
+{
     KBookmarkDomBuilder builder(bkGroup, GlobalBookmarkManager::self()->mgr());
     builder.connectImporter(importer);
     importer->parse();
 }
 
-void OperaImportCommand::doExecute(const KBookmarkGroup &bkGroup) {
+void OperaImportCommand::doExecute(const KBookmarkGroup &bkGroup)
+{
     KOperaBookmarkImporterImpl importer;
     importer.setFilename(m_fileName);
     parseInto(bkGroup, &importer);
 }
 
-void IEImportCommand::doExecute(const KBookmarkGroup &bkGroup) {
+void IEImportCommand::doExecute(const KBookmarkGroup &bkGroup)
+{
     KIEBookmarkImporterImpl importer;
     importer.setFilename(m_fileName);
     parseInto(bkGroup, &importer);
 }
 
-void HTMLImportCommand::doExecute(const KBookmarkGroup &bkGroup) {
+void HTMLImportCommand::doExecute(const KBookmarkGroup &bkGroup)
+{
     KNSBookmarkImporterImpl importer;
     importer.setFilename(m_fileName);
     importer.setUtf8(m_utf8);
@@ -236,12 +250,14 @@ void HTMLImportCommand::doExecute(const KBookmarkGroup &bkGroup) {
 
 /* -------------------------------------- */
 
-void XBELImportCommand::doCreateHoldingFolder(KBookmarkGroup &) {
+void XBELImportCommand::doCreateHoldingFolder(KBookmarkGroup &)
+{
     // rather than reuse the old group node we transform the
     // root xbel node into the group when doing an xbel import
 }
 
-void XBELImportCommand::doExecute(const KBookmarkGroup &/*bkGroup*/) {
+void XBELImportCommand::doExecute(const KBookmarkGroup & /*bkGroup*/)
+{
     // check if already open first???
     KBookmarkManager *pManager = KBookmarkManager::managerForFile(m_fileName, QString());
 
@@ -297,9 +313,7 @@ void XBELImportCommand::doExecute(const KBookmarkGroup &/*bkGroup*/) {
 
         QList<QDomElement>::Iterator it = childList.begin();
         QList<QDomElement>::Iterator end = childList.end();
-        for (; it!= end ; ++it)
+        for (; it != end; ++it)
             root.appendChild((*it));
     }
 }
-
-

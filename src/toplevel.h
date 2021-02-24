@@ -19,11 +19,11 @@
 #ifndef __toplevel_h
 #define __toplevel_h
 
-#include <kxmlguiwindow.h>
-#include <KBookmark>
-#include <QMenu>
-#include <KXMLGUIFactory>
 #include "bookmarklistview.h"
+#include <KBookmark>
+#include <KXMLGUIFactory>
+#include <QMenu>
+#include <kxmlguiwindow.h>
 
 class ActionsImpl;
 class CommandHistory;
@@ -32,56 +32,67 @@ class BookmarkInfoWidget;
 class BookmarkListView;
 
 struct SelcAbilities {
-    bool itemSelected:1;
-    bool group:1;
-    bool root:1;
-    bool separator:1;
-    bool urlIsEmpty:1;
-    bool multiSelect:1;
-    bool singleSelect:1;
-    bool notEmpty:1;
-    bool deleteEnabled:1;
+    bool itemSelected : 1;
+    bool group : 1;
+    bool root : 1;
+    bool separator : 1;
+    bool urlIsEmpty : 1;
+    bool multiSelect : 1;
+    bool singleSelect : 1;
+    bool notEmpty : 1;
+    bool deleteEnabled : 1;
 };
 
-class KEBApp : public KXmlGuiWindow {
+class KEBApp : public KXmlGuiWindow
+{
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.kde.keditbookmarks")
 public:
-    static KEBApp* self() { return s_topLevel; }
+    static KEBApp *self()
+    {
+        return s_topLevel;
+    }
 
-    KEBApp(const QString & bookmarksFile, bool readonly, const QString &address, bool browser, const QString &caption, const QString& dbusObjectName);
+    KEBApp(const QString &bookmarksFile, bool readonly, const QString &address, bool browser, const QString &caption, const QString &dbusObjectName);
     virtual ~KEBApp();
 
-    void reset(const QString & caption, const QString & bookmarksFileName);
+    void reset(const QString &caption, const QString &bookmarksFileName);
 
     void updateActions();
     SelcAbilities getSelectionAbilities() const;
     void setActionsEnabled(SelcAbilities);
 
-    QMenu* popupMenuFactory(const char *type)
+    QMenu *popupMenuFactory(const char *type)
     {
-        QWidget * menu = factory()->container(type, this);
+        QWidget *menu = factory()->container(type, this);
         return dynamic_cast<QMenu *>(menu);
     }
 
-    KToggleAction* getToggleAction(const char *) const;
+    KToggleAction *getToggleAction(const char *) const;
 
-    QString caption() const { return m_caption; }
-    bool readonly() const { return m_readOnly; }
-    bool browser() const { return m_browser; }
+    QString caption() const
+    {
+        return m_caption;
+    }
+    bool readonly() const
+    {
+        return m_readOnly;
+    }
+    bool browser() const
+    {
+        return m_browser;
+    }
 
-    BookmarkInfoWidget *bkInfo() { return m_bkinfo; }
+    BookmarkInfoWidget *bkInfo()
+    {
+        return m_bkinfo;
+    }
 
     void expandAll();
     void collapseAll();
 
-    enum Column {
-      NameColumn = 0,
-      UrlColumn = 1,
-      CommentColumn = 2,
-      StatusColumn = 3
-    };
-    void startEdit( Column c );
+    enum Column { NameColumn = 0, UrlColumn = 1, CommentColumn = 2, StatusColumn = 3 };
+    void startEdit(Column c);
     KBookmark firstSelected() const;
     QString insertAddress() const;
     KBookmark::List selectedBookmarks() const;
@@ -104,18 +115,17 @@ private Q_SLOTS:
     void setCancelTestsEnabled(bool);
 
 private:
-    void selectedBookmarksExpandedHelper(const KBookmark& bk,
-                                         KBookmark::List & bookmarks) const;
-    BookmarkListView * mBookmarkListView;
-    BookmarkFolderView * mBookmarkFolderView;
-private:
+    void selectedBookmarksExpandedHelper(const KBookmark &bk, KBookmark::List &bookmarks) const;
+    BookmarkListView *mBookmarkListView;
+    BookmarkFolderView *mBookmarkFolderView;
 
+private:
     void resetActions();
     void createActions();
 
     static KEBApp *s_topLevel;
 
-    ActionsImpl* m_actionsImpl;
+    ActionsImpl *m_actionsImpl;
     CommandHistory *m_cmdHistory;
     QString m_bookmarksFilename;
     QString m_caption;
@@ -123,9 +133,9 @@ private:
 
     BookmarkInfoWidget *m_bkinfo;
 
-    bool m_canPaste:1;
-    bool m_readOnly:1;
-    bool m_browser:1;
+    bool m_canPaste : 1;
+    bool m_readOnly : 1;
+    bool m_browser : 1;
 };
 
 #endif
