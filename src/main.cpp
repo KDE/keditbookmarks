@@ -119,7 +119,7 @@ int main(int argc, char **argv)
 
     QCommandLineParser parser;
     parser.setApplicationDescription(aboutData.shortDescription());
-
+    // clang-format off
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("importmoz"), i18n("Import bookmarks from a file in Mozilla format"), QStringLiteral("filename")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("importns"), i18n("Import bookmarks from a file in Netscape (4.x and earlier) format"), QStringLiteral("filename")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("importie"), i18n("Import bookmarks from a file in Internet Explorer's Favorites format"), QStringLiteral("filename")));
@@ -137,16 +137,17 @@ int main(int argc, char **argv)
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("dbusObjectName"), i18n("A unique name that represents this bookmark collection, usually the kinstance name.\n"
                                  "This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for KFileDialog bookmarks, etc.\n"
                                  "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"), QStringLiteral("name")));
+    // clang-format on
     parser.addPositionalArgument(QStringLiteral("[file]"), i18n("File to edit"));
 
     aboutData.setupCommandLine(&parser);
     parser.process(app);
     aboutData.processCommandLine(&parser);
 
-    const bool isGui = !(parser.isSet(QStringLiteral("exportmoz")) || parser.isSet(QStringLiteral("exportns")) || parser.isSet(QStringLiteral("exporthtml"))
-                || parser.isSet(QStringLiteral("exportie")) || parser.isSet(QStringLiteral("exportopera"))
-                || parser.isSet(QStringLiteral("importmoz")) || parser.isSet(QStringLiteral("importns"))
-                || parser.isSet(QStringLiteral("importie")) || parser.isSet(QStringLiteral("importopera"))
+    const bool isGui = !(parser.isSet(QStringLiteral("exportmoz")) || parser.isSet(QStringLiteral("exportns")) || parser.isSet(QStringLiteral("exporthtml")) //
+                || parser.isSet(QStringLiteral("exportie")) || parser.isSet(QStringLiteral("exportopera")) //
+                || parser.isSet(QStringLiteral("importmoz")) || parser.isSet(QStringLiteral("importns")) //
+                || parser.isSet(QStringLiteral("importie")) || parser.isSet(QStringLiteral("importopera")) //
                 || parser.isSet(QStringLiteral("importkde3")) || parser.isSet(QStringLiteral("importgaleon")));
 
     const bool browser = !parser.isSet(QStringLiteral("nobrowser"));

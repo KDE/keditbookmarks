@@ -142,8 +142,9 @@ FavIconWebGrabber::FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url
 //          this, SLOT(slotCompleted()));
     connect(part, &KParts::ReadOnlyPart::canceled,
             this, &FavIconWebGrabber::slotCanceled);
-    connect(part, SIGNAL(completed(bool)),
-            this, SLOT(slotCompleted()));
+    // clang-format off
+    connect(part, SIGNAL(completed(bool)), this, SLOT(slotCompleted()));
+    // clang-format on
 
     // the use of KIO rather than directly using KHTML is to allow silently abort on error
     // TODO: an alternative would be to derive from KHTMLPart and reimplement showError(KJob*).
@@ -154,8 +155,9 @@ FavIconWebGrabber::FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url
     job->addMetaData( QStringLiteral("errorPage"), QStringLiteral("false") );
     connect(job, &KJob::result,
             this, &FavIconWebGrabber::slotFinished);
-    connect(job, SIGNAL(mimetype(KIO::Job*,QString)),
-            this, SLOT(slotMimetype(KIO::Job*,QString)));
+    // clang-format off
+    connect(job, SIGNAL(mimetype(KIO::Job*,QString)), this, SLOT(slotMimetype(KIO::Job*,QString)));
+    // clang-format on
 }
 
 void FavIconWebGrabber::slotMimetype(KIO::Job *job, const QString &type)

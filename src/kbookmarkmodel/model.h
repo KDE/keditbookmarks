@@ -38,7 +38,7 @@ class KBOOKMARKMODEL_EXPORT KBookmarkModel : public QAbstractItemModel
         CommentColumnId = 2,
         StatusColumnId = 3,
         LastColumnId = 3,
-        NoOfColumnIds = LastColumnId+1
+        NoOfColumnIds = LastColumnId+1,
     };
 
 public:
@@ -53,7 +53,7 @@ public:
     enum AdditionalRoles {
         // Note: use   printf "0x%08X\n" $(($RANDOM*$RANDOM))
         // to define additional roles.
-        KBookmarkRole = 0x161BEC30
+        KBookmarkRole = 0x161BEC30,
     };
 
     //reimplemented functions
