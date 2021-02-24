@@ -4,3 +4,6 @@ CMakeLists.txt.user*
 *.unc-backup*
 .cmake/
 /compile_commands.json
+/.clang-format
+.idea
+cmake-build-*
