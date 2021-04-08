@@ -24,7 +24,6 @@
 
 class CommandHistory;
 class KBookmarkModel;
-class KBookmark;
 class KBookmarkManager;
 
 class GlobalBookmarkManager : public QObject
