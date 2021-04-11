@@ -30,8 +30,8 @@
 #include <KIO/FavIconRequestJob>
 #include <kio/job.h>
 
-#include <KMimeTypeTrader>
 #include <KParts/BrowserExtension>
+#include <KParts/PartLoader>
 
 FavIconUpdater::FavIconUpdater(QObject *parent)
     : QObject(parent)
@@ -74,12 +74,12 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
 
     if (!m_part) {
         QString partLoadingError;
-        KParts::ReadOnlyPart *part = KMimeTypeTrader::createPartInstanceFromQuery<KParts::ReadOnlyPart>(QStringLiteral("text/html"),
-                                                                                                        nullptr,
-                                                                                                        this,
-                                                                                                        QString(),
-                                                                                                        QVariantList(),
-                                                                                                        &partLoadingError);
+        /* clang-format off */
+        KParts::ReadOnlyPart *part = KParts::PartLoader::createPartInstanceForMimeType<KParts::ReadOnlyPart>(QStringLiteral("text/html"),
+                                                                                                             nullptr,
+                                                                                                             this,
+                                                                                                             &partLoadingError);
+        /* clang-format on */
         if (!part) {
             Q_EMIT done(false, i18n("%1; no HTML component found (%2)", currentError, partLoadingError));
             return;
