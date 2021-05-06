@@ -7,3 +7,5 @@ CMakeLists.txt.user*
 /.clang-format
 .idea
 cmake-build-*
+.clangd
+.cache
