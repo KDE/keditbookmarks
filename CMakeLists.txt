@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.16)
 
 # KDE Application Version, managed by release script
 set(RELEASE_SERVICE_VERSION_MAJOR "21")
@@ -9,11 +9,11 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 project(keditbookmarks VERSION ${RELEASE_SERVICE_VERSION})
 
 # ECM setup
-set(KF5_MIN_VERSION "5.71.0")
+set(KF5_MIN_VERSION "5.83.0")
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
-set(QT_MIN_VERSION "5.12.0")
+set(QT_MIN_VERSION "5.15.0")
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
@@ -25,10 +25,7 @@ include(ECMAddTests)
 include(ECMQtDeclareLoggingCategory)
 include(FeatureSummary)
 include(ECMAddAppIcon)
-if(ECM_VERSION VERSION_GREATER_EQUAL 5.79)
-    include(KDEClangFormat)
-    include(KDEGitCommitHooks)
-endif()
+include(KDEGitCommitHooks)
 
 set(KEDITBOOKMARKS_VERSION "5.97.0")
 
@@ -50,8 +47,4 @@ kdoctools_install(po)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
-if(ECM_VERSION VERSION_GREATER_EQUAL 5.79)
-    file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
-    kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
-    kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
-endif()
+kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
