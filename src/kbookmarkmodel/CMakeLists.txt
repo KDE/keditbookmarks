@@ -13,7 +13,7 @@ set(kbookmarkmodel_SRCS
 add_library(kbookmarkmodel_private SHARED ${kbookmarkmodel_SRCS})
 target_link_libraries(kbookmarkmodel_private
 PUBLIC
-   Qt5::Widgets
+   Qt::Widgets
    KF5::XmlGui # KActionCollection
 PRIVATE
    KF5::Bookmarks
