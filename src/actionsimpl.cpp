@@ -35,6 +35,8 @@
 #include <stdlib.h>
 
 #include "keditbookmarks_debug.h"
+#include <kxmlgui_version.h>
+
 #include <QApplication>
 #include <QClipboard>
 #include <QFileDialog>
@@ -72,7 +74,13 @@ void KEBApp::createActions()
 
     // save and quit should probably not be in the toplevel???
     (void)KStandardAction::quit(this, SLOT(close()), actionCollection());
+
+#if KXMLGUI_VERSION >= QT_VERSION_CHECK(5, 84, 0)
+    KStandardAction::keyBindings(guiFactory(), &KXMLGUIFactory::showConfigureShortcutsDialog, actionCollection());
+#else
     KStandardAction::keyBindings(guiFactory(), SLOT(configureShortcuts()), actionCollection());
+#endif
+
     (void)KStandardAction::configureToolbars(this, SLOT(slotConfigureToolbars()), actionCollection());
 
     if (m_browser) {
