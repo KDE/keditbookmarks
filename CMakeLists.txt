@@ -9,15 +9,15 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 project(keditbookmarks VERSION ${RELEASE_SERVICE_VERSION})
 
 # ECM setup
-set(KF5_MIN_VERSION "5.83.0")
+set(KF5_MIN_VERSION "5.85.0")
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
-set(QT_MIN_VERSION "5.15.0")
+set(QT_MIN_VERSION "5.15.2")
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
-include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+include(KDECompilerSettings NO_POLICY_SCOPE)
 
 include(ECMInstallIcons)
 include(ECMSetupVersion)
@@ -39,6 +39,14 @@ endif()
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 add_definitions(-DQT_NO_FOREACH)
+
+add_definitions(
+    -DQT_DISABLE_DEPRECATED_BEFORE=0x050F02
+    -DQT_DEPRECATED_WARNINGS_SINCE=0x060000
+    -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055500
+    -DKNOTIFICATIONS_DISABLE_DEPRECATED_BEFORE_AND_AT=0x054E00 # KPassivePopup
+    -DKF_DEPRECATED_WARNINGS_SINCE=0x060000
+)
 
 add_subdirectory(src)
 add_subdirectory(doc)
