@@ -545,7 +545,7 @@ KEBMacroCommand *CmdGen::itemsMoved(KBookmarkModel *model, const QList<KBookmark
     }
     mcmd->undo();
 
-    for (const auto &address : qAsConst(addresses)) {
+    for (const auto &address : std::as_const(addresses)) {
         new DeleteCommand(model, address, false, mcmd);
     }
 

@@ -370,7 +370,7 @@ bool KBookmarkModel::dropMimeData(const QMimeData *data, Qt::DropAction action, 
             KBookmark::List bookmarks;
             QList<QByteArray> addresses = data->data(s_mime_bookmark_addresses).split(';');
             std::sort(addresses.begin(), addresses.end());
-            for (const auto &address : qAsConst(addresses)) {
+            for (const auto &address : std::as_const(addresses)) {
                 KBookmark bk = bookmarkManager()->findByAddress(QString::fromLatin1(address));
                 qCDebug(KEDITBOOKMARKS_LOG) << "Extracted bookmark:" << bk.address();
                 bookmarks.prepend(bk); // reverse order, so that we don't invalidate addresses (#287038)
