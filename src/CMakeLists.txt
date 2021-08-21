@@ -15,9 +15,7 @@ add_subdirectory(kbookmarkmodel)
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KEDITBOOKMARKS VERSION_HEADER keditbookmarks_version.h)
 
-set(kbookmarkmerger_SRCS kbookmarkmerger.cpp ${debug_file_common_SRCS})
-
-add_executable(kbookmarkmerger ${kbookmarkmerger_SRCS})
+add_executable(kbookmarkmerger kbookmarkmerger.cpp ${debug_file_common_SRCS})
 
 target_link_libraries(kbookmarkmerger
    KF5::KIOCore
@@ -29,8 +27,14 @@ install(TARGETS kbookmarkmerger ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 
 ########### next target ###############
+add_executable( keditbookmarks)
+set(toplevel_xml ${CMAKE_CURRENT_BINARY_DIR}/org.kde.keditbookmarks.xml)
+qt_generate_dbus_interface( ${CMAKE_CURRENT_SOURCE_DIR}/toplevel.h org.kde.keditbookmarks.xml )
 
-set(keditbookmarks_SRCS
+qt_add_dbus_interface( keditbookmarks_SRCS ${toplevel_xml} toplevel_interface )
+
+kconfig_add_kcfg_files(keditbookmarks_SRCS settings.kcfgc )
+target_sources(keditbookmarks PRIVATE
    main.cpp
    toplevel.cpp
    globalbookmarkmanager.cpp
@@ -45,16 +49,9 @@ set(keditbookmarks_SRCS
    kebsearchline.cpp
    bookmarklistview.cpp
    ${debug_file_common_SRCS}
+   ${keditbookmarks_SRCS}
    keditbookmarks.qrc
 )
-set(toplevel_xml ${CMAKE_CURRENT_BINARY_DIR}/org.kde.keditbookmarks.xml)
-qt_generate_dbus_interface( ${CMAKE_CURRENT_SOURCE_DIR}/toplevel.h org.kde.keditbookmarks.xml )
-
-qt_add_dbus_interface( keditbookmarks_SRCS ${toplevel_xml} toplevel_interface )
-
-kconfig_add_kcfg_files(keditbookmarks_SRCS settings.kcfgc )
-
-add_executable( keditbookmarks ${keditbookmarks_SRCS})
 
 target_link_libraries(keditbookmarks kbookmarkmodel_private
    KF5::Parts

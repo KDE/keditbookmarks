@@ -2,7 +2,8 @@ if(BUILD_TESTING)
   add_subdirectory(tests)
 endif()
 include_directories(${CMAKE_BINARY_DIR}/src/)
-set(kbookmarkmodel_SRCS
+add_library(kbookmarkmodel_private SHARED)
+target_sources(kbookmarkmodel_private PRIVATE
   commandhistory.cpp
   commands.cpp
   model.cpp
@@ -10,7 +11,6 @@ set(kbookmarkmodel_SRCS
   view.cpp
   ${debug_file_common_SRCS}
 )
-add_library(kbookmarkmodel_private SHARED ${kbookmarkmodel_SRCS})
 target_link_libraries(kbookmarkmodel_private
 PUBLIC
    Qt::Widgets
