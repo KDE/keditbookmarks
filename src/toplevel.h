@@ -62,13 +62,11 @@ public:
     SelcAbilities getSelectionAbilities() const;
     void setActionsEnabled(SelcAbilities);
 
-    QMenu *popupMenuFactory(const char *type)
+    QMenu *popupMenuFactory(const QString &type)
     {
         QWidget *menu = factory()->container(type, this);
         return dynamic_cast<QMenu *>(menu);
     }
-
-    KToggleAction *getToggleAction(const char *) const;
 
     QString caption() const
     {

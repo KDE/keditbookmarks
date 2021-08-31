@@ -137,7 +137,7 @@ QVariant KBookmarkModel::data(const QModelIndex &index, int role) const
             if (text1.isEmpty() || text2.isEmpty())
                 return QVariant(text1 + text2);
             else
-                return QVariant(text1 + "  --  " + text2);
+                return QVariant(text1 + QLatin1String("  --  ") + text2);
         }
         default:
             return QVariant(); // can't happen
@@ -318,7 +318,7 @@ QMimeData *KBookmarkModel::mimeData(const QModelIndexList &indexes) const
     }
 
     bookmarks.populateMimeData(mimeData);
-    mimeData->setData(s_mime_bookmark_addresses, addresses);
+    mimeData->setData(QLatin1String(s_mime_bookmark_addresses), addresses);
     return mimeData;
 }
 
@@ -366,9 +366,9 @@ bool KBookmarkModel::dropMimeData(const QMimeData *data, Qt::DropAction action, 
         KEBMacroCommand *cmd = CmdGen::insertMimeSource(this, QStringLiteral("Copy"), data, addr);
         d->mCommandHistory->addCommand(cmd);
     } else if (action == Qt::MoveAction) {
-        if (data->hasFormat(s_mime_bookmark_addresses)) {
+        if (data->hasFormat(QLatin1String(s_mime_bookmark_addresses))) {
             KBookmark::List bookmarks;
-            QList<QByteArray> addresses = data->data(s_mime_bookmark_addresses).split(';');
+            QList<QByteArray> addresses = data->data(QLatin1String(s_mime_bookmark_addresses)).split(';');
             std::sort(addresses.begin(), addresses.end());
             for (const auto &address : std::as_const(addresses)) {
                 KBookmark bk = bookmarkManager()->findByAddress(QString::fromLatin1(address));

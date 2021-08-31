@@ -47,15 +47,10 @@ QString HTMLExporter::toString(const KBookmarkGroup &grp, bool showAddress)
 {
     m_showAddress = showAddress;
     traverse(grp);
-    return "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-           "<html><head><title>"+i18n("My Bookmarks")+"</title>\n"
-           "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">"
-           "</head>\n"
-           "<body>\n"
-           "<div>"
-         + m_string +
-           "</div>\n"
-           "</body>\n</html>\n";
+    return QStringLiteral("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n")
+        + QStringLiteral("<html><head><title>") + i18n("My Bookmarks") + QStringLiteral("</title>\n")
+        + QStringLiteral("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">") + QStringLiteral("</head>\n") + QStringLiteral("<body>\n")
+        + QStringLiteral("<div>") + m_string + QStringLiteral("</div>\n") + QStringLiteral("</body>\n</html>\n");
 }
 
 void HTMLExporter::visit(const KBookmark &bk)

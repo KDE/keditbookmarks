@@ -132,7 +132,7 @@ void CreateCommand::redo()
     } else if (m_group) {
         Q_ASSERT(!m_text.isEmpty());
         bk = parentGroup.createNewFolder(m_text);
-        bk.internalElement().setAttribute(QStringLiteral("folded"), (m_open ? "no" : "yes"));
+        bk.internalElement().setAttribute(QStringLiteral("folded"), (m_open ? QLatin1String("no") : QLatin1String("yes")));
         if (!m_iconPath.isEmpty()) {
             bk.setIcon(m_iconPath);
         }
@@ -151,7 +151,7 @@ void CreateCommand::redo()
     // Q_ASSERT(ok);
     if (!(text().isEmpty()) && !parentAddress.isEmpty()) {
         // open the parent (useful if it was empty) - only for manual commands
-        Q_ASSERT(parentGroup.internalElement().tagName() != "xbel");
+        Q_ASSERT(parentGroup.internalElement().tagName() != QLatin1String("xbel"));
         parentGroup.internalElement().setAttribute(QStringLiteral("folded"), QStringLiteral("no"));
     }
 
@@ -443,7 +443,7 @@ class SortByName
 public:
     static QString key(const SortItem &item)
     {
-        return (item.bookmark().isGroup() ? "a" : "b") + (item.bookmark().fullText().toLower());
+        return (item.bookmark().isGroup() ? QStringLiteral("a") : QStringLiteral("b")) + (item.bookmark().fullText().toLower());
     }
 };
 
@@ -476,7 +476,7 @@ void SortCommand::moveAfter(const SortItem &moveMe, const SortItem &afterMe)
 {
     const QString destAddress = afterMe.isNull()
         // move as first child
-        ? KBookmark::parentAddress(moveMe.bookmark().address()) + "/0"
+        ? KBookmark::parentAddress(moveMe.bookmark().address()) + QStringLiteral("/0")
         // move after "afterMe"
         : KBookmark::nextAddress(afterMe.bookmark().address());
 

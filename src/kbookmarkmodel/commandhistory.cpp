@@ -62,7 +62,7 @@ void CommandHistory::createActions(KActionCollection *actionCollection)
     QAction *standardAction = KStandardAction::create(KStandardAction::Undo, nullptr, nullptr, nullptr);
     QAction *undoAction = d->m_undoStack.createUndoAction(actionCollection);
     undoAction->setIcon(standardAction->icon());
-    actionCollection->addAction(KStandardAction::name(KStandardAction::Undo), undoAction);
+    actionCollection->addAction(QLatin1String(KStandardAction::name(KStandardAction::Undo)), undoAction);
     actionCollection->setDefaultShortcuts(undoAction, standardAction->shortcuts());
     disconnect(undoAction, &QAction::triggered, &d->m_undoStack, nullptr);
     connect(undoAction, &QAction::triggered, this, &CommandHistory::undo);
@@ -71,7 +71,7 @@ void CommandHistory::createActions(KActionCollection *actionCollection)
     standardAction = KStandardAction::create(KStandardAction::Redo, nullptr, nullptr, nullptr);
     QAction *redoAction = d->m_undoStack.createRedoAction(actionCollection);
     redoAction->setIcon(standardAction->icon());
-    actionCollection->addAction(KStandardAction::name(KStandardAction::Redo), redoAction);
+    actionCollection->addAction(QLatin1String(KStandardAction::name(KStandardAction::Redo)), redoAction);
     actionCollection->setDefaultShortcuts(redoAction, standardAction->shortcuts());
     disconnect(redoAction, &QAction::triggered, &d->m_undoStack, nullptr);
     connect(redoAction, &QAction::triggered, this, &CommandHistory::redo);

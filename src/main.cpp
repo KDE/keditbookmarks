@@ -46,7 +46,7 @@
 static bool askUser(const QString &filename, bool &readonly)
 {
     QString interfaceName = QStringLiteral("org.kde.keditbookmarks");
-    QString appId = interfaceName + '-' + QString().setNum(QApplication::applicationPid());
+    QString appId = interfaceName + QLatin1Char('-') + QString().setNum(QApplication::applicationPid());
 
     QDBusConnection dbus = QDBusConnection::sessionBus();
     QDBusReply<QStringList> reply = dbus.interface()->registeredServiceNames();
@@ -163,64 +163,65 @@ int main(int argc, char **argv)
         GlobalBookmarkManager::self()->createManager(filename, QString(), new CommandHistory());
         GlobalBookmarkManager::ExportType exportType = GlobalBookmarkManager::MozillaExport; // uumm.. can i just set it to -1 ?
         int got = 0;
-        const char *arg, *arg2 = nullptr, *importType = nullptr;
-        if (arg = "exportmoz", parser.isSet(arg)) {
+        QString arg;
+        QString arg2;
+        QString importType;
+        if (arg = QStringLiteral("exportmoz"), parser.isSet(arg)) {
             exportType = GlobalBookmarkManager::MozillaExport;
             arg2 = arg;
             got++;
         }
-        if (arg = "exportns", parser.isSet(arg)) {
+        if (arg = QStringLiteral("exportns"), parser.isSet(arg)) {
             exportType = GlobalBookmarkManager::NetscapeExport;
             arg2 = arg;
             got++;
         }
-        if (arg = "exporthtml", parser.isSet(arg)) {
+        if (arg = QStringLiteral("exporthtml"), parser.isSet(arg)) {
             exportType = GlobalBookmarkManager::HTMLExport;
             arg2 = arg;
             got++;
         }
-        if (arg = "exportie", parser.isSet(arg)) {
+        if (arg = QStringLiteral("exportie"), parser.isSet(arg)) {
             exportType = GlobalBookmarkManager::IEExport;
             arg2 = arg;
             got++;
         }
-        if (arg = "exportopera", parser.isSet(arg)) {
+        if (arg = QStringLiteral("exportopera"), parser.isSet(arg)) {
             exportType = GlobalBookmarkManager::OperaExport;
             arg2 = arg;
             got++;
         }
-        if (arg = "importmoz", parser.isSet(arg)) {
-            importType = "Moz";
+        if (arg = QStringLiteral("importmoz"), parser.isSet(arg)) {
+            importType = QStringLiteral("Moz");
             arg2 = arg;
             got++;
         }
-        if (arg = "importns", parser.isSet(arg)) {
-            importType = "NS";
+        if (arg = QStringLiteral("importns"), parser.isSet(arg)) {
+            importType = QStringLiteral("NS");
             arg2 = arg;
             got++;
         }
-        if (arg = "importie", parser.isSet(arg)) {
-            importType = "IE";
+        if (arg = QStringLiteral("importie"), parser.isSet(arg)) {
+            importType = QStringLiteral("IE");
             arg2 = arg;
             got++;
         }
-        if (arg = "importopera", parser.isSet(arg)) {
-            importType = "Opera";
+        if (arg = QStringLiteral("importopera"), parser.isSet(arg)) {
+            importType = QStringLiteral("Opera");
             arg2 = arg;
             got++;
         }
-        if (arg = "importgaleon", parser.isSet(arg)) {
-            importType = "Galeon";
+        if (arg = QStringLiteral("importgaleon"), parser.isSet(arg)) {
+            importType = QStringLiteral("Galeon");
             arg2 = arg;
             got++;
         }
-        if (arg = "importkde3", parser.isSet(arg)) {
-            importType = "KDE2";
+        if (arg = QStringLiteral("importkde3"), parser.isSet(arg)) {
+            importType = QStringLiteral("KDE2");
             arg2 = arg;
             got++;
         }
-        if (!importType && arg2) {
-            Q_ASSERT(arg2);
+        if (importType.isEmpty() && !arg2.isEmpty()) {
             // TODO - maybe an xbel export???
             if (got > 1) { // got == 0 isn't possible as !isGui is dependent on "export.*"
                 qCWarning(KEDITBOOKMARKS_LOG) << i18n("You may only specify a single --export option.");
@@ -228,7 +229,7 @@ int main(int argc, char **argv)
             }
             QString path = parser.value(arg2);
             GlobalBookmarkManager::self()->doExport(exportType, path);
-        } else if (importType) {
+        } else if (!importType.isEmpty()) {
             if (got > 1) { // got == 0 isn't possible as !isGui is dependent on "import.*"
                 qCWarning(KEDITBOOKMARKS_LOG) << i18n("You may only specify a single --import option.");
                 return 1;

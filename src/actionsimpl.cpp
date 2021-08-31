@@ -361,7 +361,7 @@ void ActionsImpl::slotPaste()
     QString addr;
     KBookmark bk = KEBApp::self()->firstSelected();
     if (bk.isGroup())
-        addr = bk.address() + "/0"; // FIXME internal
+        addr = bk.address() + QStringLiteral("/0"); // FIXME internal
     else
         addr = bk.address();
 

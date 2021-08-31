@@ -112,9 +112,9 @@ void BookmarkListView::contextMenuEvent(QContextMenuEvent *e)
     QMenu *popup;
     if (!index.isValid() || (bk.address() == GlobalBookmarkManager::self()->root().address()) || (bk.isGroup())) // FIXME add empty folder padder
     {
-        popup = KEBApp::self()->popupMenuFactory("popup_folder");
+        popup = KEBApp::self()->popupMenuFactory(QStringLiteral("popup_folder"));
     } else {
-        popup = KEBApp::self()->popupMenuFactory("popup_bookmark");
+        popup = KEBApp::self()->popupMenuFactory(QStringLiteral("popup_bookmark"));
     }
     if (popup)
         popup->popup(e->globalPos());

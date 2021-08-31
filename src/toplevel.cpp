@@ -258,7 +258,6 @@ void KEBApp::setActionsEnabled(SelcAbilities sa)
 
 KBookmark KEBApp::firstSelected() const
 {
-    QModelIndex index;
     const QModelIndexList &list = mBookmarkListView->selectionModel()->selectedIndexes();
     if (list.count()) // selection in main listview, return bookmark for firstSelected
         return mBookmarkListView->bookmarkForIndex(*list.constBegin());
@@ -271,7 +270,7 @@ KBookmark KEBApp::firstSelected() const
 QString KEBApp::insertAddress() const
 {
     KBookmark current = firstSelected();
-    return (current.isGroup()) ? (current.address() + "/0") // FIXME internal representation used
+    return (current.isGroup()) ? (current.address() + QStringLiteral("/0")) // FIXME internal representation used
                                : KBookmark::nextAddress(current.address());
 }
 
@@ -289,8 +288,8 @@ static bool lessAddress(const QString &first, const QString &second)
     if (b == error)
         return true;
 
-    a += '/';
-    b += '/';
+    a += QLatin1Char('/');
+    b += QLatin1Char('/');
 
     uint aLast = 0;
     uint bLast = 0;
@@ -397,11 +396,6 @@ KEBApp::~KEBApp()
     delete m_actionsImpl;
     delete mBookmarkListView;
     delete GlobalBookmarkManager::self();
-}
-
-KToggleAction *KEBApp::getToggleAction(const char *action) const
-{
-    return static_cast<KToggleAction *>(actionCollection()->action(action));
 }
 
 void KEBApp::resetActions()
