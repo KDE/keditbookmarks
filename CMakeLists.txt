@@ -37,8 +37,6 @@ if(BUILD_TESTING)
 endif()
 
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
-add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
-add_definitions(-DQT_NO_FOREACH)
 
 add_definitions(
     -DQT_DISABLE_DEPRECATED_BEFORE=0x050F02
