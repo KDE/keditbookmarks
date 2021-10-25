@@ -33,7 +33,7 @@ class ActionsImpl : public QObject
 
 public:
     ActionsImpl(QObject *parent, KBookmarkModel *model);
-    ~ActionsImpl();
+    ~ActionsImpl() override;
     bool save();
 
     TestLinkItrHolder *testLinkHolder()

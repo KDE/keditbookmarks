@@ -54,7 +54,7 @@ public:
     }
 
     KEBApp(const QString &bookmarksFile, bool readonly, const QString &address, bool browser, const QString &caption, const QString &dbusObjectName);
-    virtual ~KEBApp();
+    ~KEBApp() override;
 
     void reset(const QString &caption, const QString &bookmarksFileName);
 

@@ -30,7 +30,7 @@ class KBOOKMARKMODEL_EXPORT KBookmarkView : public QTreeView
     Q_OBJECT
 public:
     explicit KBookmarkView(QWidget *parent = nullptr);
-    virtual ~KBookmarkView();
+    ~KBookmarkView() override;
     virtual KBookmark bookmarkForIndex(const QModelIndex &idx) const = 0;
     void loadFoldedState();
 

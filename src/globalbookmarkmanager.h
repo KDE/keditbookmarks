@@ -40,7 +40,7 @@ public:
         }
         return s_mgr;
     }
-    ~GlobalBookmarkManager();
+    ~GlobalBookmarkManager() override;
     KBookmarkGroup root();
     static KBookmark bookmarkAt(const QString &a);
 

@@ -33,7 +33,7 @@ class BookmarkFolderView : public KBookmarkView
     Q_OBJECT
 public:
     explicit BookmarkFolderView(BookmarkListView *view, QWidget *parent = nullptr);
-    virtual ~BookmarkFolderView();
+    ~BookmarkFolderView() override;
     void selectionChanged(const QItemSelection &selected, const QItemSelection &deselected) override;
     KBookmark bookmarkForIndex(const QModelIndex &idx) const override;
 private Q_SLOTS:
@@ -49,7 +49,7 @@ class BookmarkListView : public KBookmarkView
     Q_OBJECT
 public:
     explicit BookmarkListView(QWidget *parent = nullptr);
-    virtual ~BookmarkListView();
+    ~BookmarkListView() override;
     void loadColumnSetting();
     void saveColumnSetting();
     void setModel(QAbstractItemModel *model) override;
@@ -65,7 +65,7 @@ class BookmarkFolderViewFilterModel : public QSortFilterProxyModel
     Q_OBJECT
 public:
     explicit BookmarkFolderViewFilterModel(QObject *parent = nullptr);
-    virtual ~BookmarkFolderViewFilterModel();
+    ~BookmarkFolderViewFilterModel() override;
     QStringList mimeTypes() const override;
     bool dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent) override;
 

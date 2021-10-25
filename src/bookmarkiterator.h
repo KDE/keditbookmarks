@@ -36,7 +36,7 @@ class BookmarkIterator : public QObject
 
 public:
     BookmarkIterator(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks);
-    virtual ~BookmarkIterator();
+    ~BookmarkIterator() override;
     BookmarkIteratorHolder *holder() const
     {
         return m_holder;
@@ -83,7 +83,7 @@ Q_SIGNALS:
 
 protected:
     BookmarkIteratorHolder(QObject *parent, KBookmarkModel *model);
-    virtual ~BookmarkIteratorHolder()
+    ~BookmarkIteratorHolder() override
     {
     }
     void doIteratorListChanged();

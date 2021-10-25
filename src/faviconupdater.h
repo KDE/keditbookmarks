@@ -30,7 +30,7 @@ class FavIconWebGrabber : public QObject
     Q_OBJECT
 public:
     FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url);
-    ~FavIconWebGrabber()
+    ~FavIconWebGrabber() override
     {
     }
 
@@ -54,7 +54,7 @@ class FavIconUpdater : public QObject
 
 public:
     explicit FavIconUpdater(QObject *parent);
-    ~FavIconUpdater();
+    ~FavIconUpdater() override;
     void downloadIcon(const KBookmark &bk);
     void downloadIconUsingWebBrowser(const KBookmark &bk, const QString &currentError);
 

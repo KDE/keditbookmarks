@@ -67,7 +67,7 @@ public:
     /**
      * Destroys the KViewSearchLine.
      */
-    virtual ~KViewSearchLine();
+    ~KViewSearchLine() override;
 
     /**
      * Returns true if the search is case sensitive.  This defaults to false.
@@ -268,7 +268,7 @@ public:
     /**
      * Destroys the KListViewSearchLineWidget
      */
-    ~KViewSearchLineWidget();
+    ~KViewSearchLineWidget() override;
 
     /**
      * Creates the search line.  This can be useful to reimplement in cases where

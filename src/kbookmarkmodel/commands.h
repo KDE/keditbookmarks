@@ -50,7 +50,7 @@ public:
         : QUndoCommand(name, parent)
     {
     }
-    virtual ~KEBMacroCommand()
+    ~KEBMacroCommand() override
     {
     }
     QString affectedBookmarks() const override;
@@ -60,7 +60,7 @@ class KBOOKMARKMODEL_EXPORT DeleteManyCommand : public KEBMacroCommand
 {
 public:
     DeleteManyCommand(KBookmarkModel *model, const QString &name, const QList<KBookmark> &bookmarks);
-    virtual ~DeleteManyCommand()
+    ~DeleteManyCommand() override
     {
     }
 };
@@ -82,7 +82,7 @@ public:
 
     QString finalAddress() const;
 
-    virtual ~CreateCommand()
+    ~CreateCommand() override
     {
     }
     void redo() override;
@@ -106,7 +106,7 @@ class KBOOKMARKMODEL_EXPORT EditCommand : public QUndoCommand, public IKEBComman
 {
 public:
     EditCommand(KBookmarkModel *model, const QString &address, int col, const QString &newValue, QUndoCommand *parent = nullptr);
-    virtual ~EditCommand()
+    ~EditCommand() override
     {
     }
     void redo() override;
@@ -129,7 +129,7 @@ class KBOOKMARKMODEL_EXPORT DeleteCommand : public QUndoCommand, public IKEBComm
 {
 public:
     explicit DeleteCommand(KBookmarkModel *model, const QString &from, bool contentOnly = false, QUndoCommand *parent = nullptr);
-    virtual ~DeleteCommand()
+    ~DeleteCommand() override
     {
         delete m_cmd;
         delete m_subCmd;
@@ -153,7 +153,7 @@ class KBOOKMARKMODEL_EXPORT SortCommand : public KEBMacroCommand
 {
 public:
     SortCommand(KBookmarkModel *model, const QString &name, const QString &groupAddress, QUndoCommand *parent = nullptr);
-    virtual ~SortCommand()
+    ~SortCommand() override
     {
     }
     void redo() override;

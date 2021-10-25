@@ -44,7 +44,7 @@ public:
     KBookmarkModel(const KBookmark &root, CommandHistory *commandHistory, QObject *parent = nullptr);
     void setRoot(const KBookmark &root);
 
-    virtual ~KBookmarkModel();
+    ~KBookmarkModel() override;
 
     KBookmarkManager *bookmarkManager();
     CommandHistory *commandHistory();

@@ -39,7 +39,7 @@ class TestLinkItr : public BookmarkIterator
 
 public:
     TestLinkItr(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks);
-    ~TestLinkItr();
+    ~TestLinkItr() override;
 
     void cancel() override;
 

@@ -26,7 +26,7 @@ class HTMLExporter : private KBookmarkGroupTraverser
 {
 public:
     HTMLExporter();
-    virtual ~HTMLExporter()
+    ~HTMLExporter() override
     {
     }
     QString toString(const KBookmarkGroup &, bool showAddress = false);

@@ -39,7 +39,7 @@ class FavIconsItr : public BookmarkIterator
 
 public:
     FavIconsItr(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks);
-    ~FavIconsItr();
+    ~FavIconsItr() override;
 
     void cancel() override;
 

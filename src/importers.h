@@ -46,7 +46,7 @@ public:
     static ImportCommand *performImport(KBookmarkModel *model, const QString &, QWidget *);
     static ImportCommand *importerFactory(KBookmarkModel *model, const QString &);
 
-    virtual ~ImportCommand()
+    ~ImportCommand() override
     {
     }
 

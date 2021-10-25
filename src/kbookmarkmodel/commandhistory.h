@@ -32,7 +32,7 @@ class KBOOKMARKMODEL_EXPORT CommandHistory : public QObject
     Q_OBJECT
 public:
     explicit CommandHistory(QObject *parent = nullptr);
-    virtual ~CommandHistory();
+    ~CommandHistory() override;
 
     // Call this before putting any commands into the history!
     void setBookmarkManager(KBookmarkManager *manager);
