@@ -48,6 +48,18 @@ target_sources(keditbookmarks PRIVATE
    bookmarkinfowidget.cpp
    kebsearchline.cpp
    bookmarklistview.cpp
+   toplevel.h
+   globalbookmarkmanager.h
+   actionsimpl.h
+   importers.h
+   bookmarkiterator.h
+   testlink.h
+   favicons.h
+   faviconupdater.h
+   exporters.h
+   bookmarkinfowidget.h
+   kebsearchline.h
+   bookmarklistview.h
    ${debug_file_common_SRCS}
    ${keditbookmarks_SRCS}
    keditbookmarks.qrc

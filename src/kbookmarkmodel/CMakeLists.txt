@@ -9,6 +9,11 @@ target_sources(kbookmarkmodel_private PRIVATE
   model.cpp
   treeitem.cpp
   view.cpp
+  commandhistory.h
+  commands.h
+  model.h
+  treeitem_p.h
+  view.h
   ${debug_file_common_SRCS}
 )
 target_link_libraries(kbookmarkmodel_private
