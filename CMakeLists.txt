@@ -33,8 +33,12 @@ kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 set(KEDITBOOKMARKS_VERSION "5.97.0")
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS CoreAddons I18n KIO Bookmarks Parts WindowSystem IconThemes DocTools)
-
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS CoreAddons I18n KIO Bookmarks Parts WindowSystem IconThemes)
+find_package(KF5DocTools ${KF5_MIN_VERSION})
+set_package_properties(KF5DocTools PROPERTIES DESCRIPTION
+    "Tools to generate documentation"
+    TYPE OPTIONAL
+)
 if(BUILD_TESTING)
     find_package(Qt5Test ${QT_REQUIRED_VERSION} CONFIG REQUIRED)
 endif()
@@ -48,9 +52,11 @@ add_definitions(
 )
 
 add_subdirectory(src)
-add_subdirectory(doc)
 ki18n_install(po)
-kdoctools_install(po)
+if (KF5DocTools_FOUND)
+    kdoctools_install(po)
+    add_subdirectory(doc)
+endif()
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
