@@ -91,9 +91,14 @@ static bool askUser(const QString &filename, bool &readonly)
 
 int main(int argc, char **argv)
 {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+#endif
     QApplication app(argc, argv);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    // enable high dpi support
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
+#endif
     Kdelibs4ConfigMigrator migrate(QStringLiteral("keditbookmarks"));
     migrate.setConfigFiles(QStringList() << QStringLiteral("keditbookmarksrc"));
     migrate.setUiFiles(QStringList() << QStringLiteral("keditbookmarksuirc"));
@@ -150,10 +155,6 @@ int main(int argc, char **argv)
                          || parser.isSet(QStringLiteral("importkde3")) || parser.isSet(QStringLiteral("importgaleon")));
 
     const bool browser = !parser.isSet(QStringLiteral("nobrowser"));
-
-    // enable high dpi support
-    app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-
     const bool gotFilenameArg = (parser.positionalArguments().count() == 1);
 
     QString filename = gotFilenameArg ? parser.positionalArguments().at(0)
