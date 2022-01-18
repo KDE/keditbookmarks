@@ -32,7 +32,9 @@
 #include <QCommandLineParser>
 
 #include <KAboutData>
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <Kdelibs4ConfigMigrator>
+#endif
 
 #include <KMessageBox>
 #include <KWindowSystem>
@@ -98,11 +100,11 @@ int main(int argc, char **argv)
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     // enable high dpi support
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-#endif
     Kdelibs4ConfigMigrator migrate(QStringLiteral("keditbookmarks"));
     migrate.setConfigFiles(QStringList() << QStringLiteral("keditbookmarksrc"));
     migrate.setUiFiles(QStringList() << QStringLiteral("keditbookmarksuirc"));
     migrate.migrate();
+#endif
 
     KLocalizedString::setApplicationDomain("keditbookmarks");
 
