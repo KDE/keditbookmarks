@@ -128,7 +128,7 @@ void KEBApp::createActions()
     QAction *m_actionsImplNewFolder = actionCollection()->addAction(QStringLiteral("newfolder"));
     m_actionsImplNewFolder->setIcon(QIcon::fromTheme(QStringLiteral("folder-new")));
     m_actionsImplNewFolder->setText(i18n("&New Folder..."));
-    actionCollection()->setDefaultShortcut(m_actionsImplNewFolder, Qt::CTRL + Qt::Key_N);
+    actionCollection()->setDefaultShortcut(m_actionsImplNewFolder, Qt::CTRL | Qt::Key_N);
     connect(m_actionsImplNewFolder, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotNewFolder);
 
     QAction *m_actionsImplNewBookmark = actionCollection()->addAction(QStringLiteral("newbookmark"));
@@ -138,7 +138,7 @@ void KEBApp::createActions()
 
     QAction *m_actionsImplInsertSeparator = actionCollection()->addAction(QStringLiteral("insertseparator"));
     m_actionsImplInsertSeparator->setText(i18n("&Insert Separator"));
-    actionCollection()->setDefaultShortcut(m_actionsImplInsertSeparator, Qt::CTRL + Qt::Key_I);
+    actionCollection()->setDefaultShortcut(m_actionsImplInsertSeparator, Qt::CTRL | Qt::Key_I);
     connect(m_actionsImplInsertSeparator, &QAction::triggered, m_actionsImpl, &ActionsImpl::slotInsertSeparator);
 
     QAction *m_actionsImplSort = actionCollection()->addAction(QStringLiteral("sort"));
