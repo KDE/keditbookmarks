@@ -42,7 +42,12 @@
 #include <QMimeData>
 
 #include <KActionCollection>
+#include <kio_version.h>
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 98, 0)
+#include <KIO/JobUiDelegateFactory>
+#else
 #include <KIO/JobUiDelegate>
+#endif
 #include <KIO/OpenUrlJob>
 #include <KIconDialog>
 #include <KIconLoader>
@@ -556,7 +561,11 @@ void ActionsImpl::slotOpenLink()
         }
 
         auto *job = new KIO::OpenUrlJob(bm.url());
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 98, 0)
+        job->setUiDelegate(KIO::createDefaultJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, KEBApp::self()));
+#else
         job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, KEBApp::self()));
+#endif
         job->start();
     }
 }
