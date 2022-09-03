@@ -117,7 +117,6 @@ int main(int argc, char **argv)
     aboutData.addAuthor(i18n("David Faure"), i18n("Initial author"), QStringLiteral("faure@kde.org"));
     aboutData.addAuthor(i18n("Alexander Kellett"), i18n("Author"), QStringLiteral("lypanov@kde.org"));
 
-    aboutData.setOrganizationDomain(QByteArray("kde.org"));
     aboutData.setDesktopFileName(QStringLiteral("org.kde.keditbookmarks"));
     KAboutData::setApplicationData(aboutData);
 
