@@ -24,7 +24,6 @@
 #include "settings.h"
 #include "toplevel.h" // for KEBApp
 
-#include <QBrush>
 #include <QContextMenuEvent>
 #include <QHeaderView>
 #include <QItemSelection>

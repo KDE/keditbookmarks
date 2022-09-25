@@ -27,7 +27,6 @@
 
 #include "keditbookmarks_debug.h"
 #include <KBookmarkManager>
-#include <KDesktopFile>
 #include <KLocalizedString>
 
 QString KEBMacroCommand::affectedBookmarks() const

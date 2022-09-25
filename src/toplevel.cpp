@@ -40,13 +40,8 @@
 
 #include "keditbookmarks_debug.h"
 #include <KActionCollection>
-#include <KBookmarkManager>
 #include <KEditToolBar>
-#include <KLineEdit>
 #include <KLocalizedString>
-#include <KMessageBox>
-#include <KStandardAction>
-#include <KToggleAction>
 
 #include <QDBusConnection>
 KEBApp *KEBApp::s_topLevel = nullptr;
