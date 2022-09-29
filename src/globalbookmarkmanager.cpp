@@ -21,7 +21,6 @@
 #include "globalbookmarkmanager.h"
 #include "kbookmarkmodel/commandhistory.h"
 #include "kbookmarkmodel/model.h"
-#include "keditbookmarks_debug.h"
 #include <KBookmarkManager>
 #include <QDateTime>
 #include <QLocale>

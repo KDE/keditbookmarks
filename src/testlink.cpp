@@ -22,11 +22,9 @@
 #include "testlink.h"
 
 // KDE
-#include "keditbookmarks_debug.h"
 #include <KLocalizedString>
 
 // Local
-#include "kbookmarkmodel/commands.h"
 #include "kbookmarkmodel/model.h"
 
 TestLinkItrHolder::TestLinkItrHolder(QObject *parent, KBookmarkModel *model)

@@ -19,7 +19,6 @@
 
 #include "bookmarklistview.h"
 #include "globalbookmarkmanager.h"
-#include "kbookmarkmodel/commands.h"
 #include "kbookmarkmodel/model.h"
 #include "settings.h"
 #include "toplevel.h" // for KEBApp

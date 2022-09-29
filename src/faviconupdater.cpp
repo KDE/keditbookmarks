@@ -21,7 +21,6 @@
 
 #include "faviconupdater.h"
 
-#include "bookmarkiterator.h"
 #include "toplevel.h"
 
 #include "keditbookmarks_debug.h"

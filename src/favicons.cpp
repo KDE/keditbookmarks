@@ -20,10 +20,8 @@
 #include "favicons.h"
 
 #include "faviconupdater.h"
-#include "kbookmarkmodel/commands.h"
 #include "kbookmarkmodel/model.h"
 
-#include "keditbookmarks_debug.h"
 #include <KLocalizedString>
 
 FavIconsItrHolder::FavIconsItrHolder(QObject *parent, KBookmarkModel *model)

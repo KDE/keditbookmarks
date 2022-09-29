@@ -22,7 +22,6 @@
 #include "kbookmarkmodel/model.h"
 #include <KBookmarkManager>
 
-#include "keditbookmarks_debug.h"
 #include <QTimer>
 
 BookmarkIterator::BookmarkIterator(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks)

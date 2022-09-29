@@ -26,11 +26,8 @@
 
 #include "actionsimpl.h"
 #include "bookmarkinfowidget.h"
-#include "exporters.h"
 #include "kbookmarkmodel/commandhistory.h"
-#include "kbookmarkmodel/commands.h"
 #include "kebsearchline.h"
-#include "settings.h"
 
 #include <stdlib.h>
 
@@ -38,10 +35,11 @@
 #include <QClipboard>
 #include <QSplitter>
 
-#include "keditbookmarks_debug.h"
 #include <KActionCollection>
+#include <KConfigGroup>
 #include <KEditToolBar>
 #include <KLocalizedString>
+#include <KSharedConfig>
 
 #include <QDBusConnection>
 KEBApp *KEBApp::s_topLevel = nullptr;
