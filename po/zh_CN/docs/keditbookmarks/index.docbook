@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % Continental-Chinese "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<!--moved from konqueror docbook -->
+
+<article id="keditbookmarks" lang="&language;">
+<articleinfo>
+<title
+>书签编辑器</title>
+<authorgroup>
+<author
+>&Pamela.Roberts;</author>
+<author
+><firstname
+>Funda</firstname
+> <surname
+>Wang</surname
+></author
+> 
+</authorgroup>
+
+<date
+>2016-11-04</date>
+
+<releaseinfo
+>应用版本 16.12</releaseinfo>
+
+<keywordset>
+<keyword
+>书签</keyword>
+<keyword
+>editor;编辑器</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>许多应用程序中 (例如 &konqueror;，&konsole; 和 &konversation;) 的 <menuchoice
+><guimenu
+>书签</guimenu
+><guimenuitem
+>编辑书签</guimenuitem
+> </menuchoice
+> 菜单项会打开 <guilabel
+>书签编辑器</guilabel
+>。</para>
+<para
+>另一方面，您可以将这个编辑器作为独立程序打开，用于编辑浏览器书签。</para>
+<para
+>本编辑器会以树形显示您的书签以及书签目录。就像 &kde; 中其他的树形显示一样，子目录会以目录名附带左边的一个小 <keycap
+>&gt;</keycap
+> 箭头来显示；<mousebutton
+>左键</mousebutton
+> 点击它可展开并显示子目录中的内容，并且 <keycap
+>&gt;</keycap
+> 箭头会变为 <keycap
+>v</keycap
+>；<mousebutton
+>左键</mousebutton
+> 点击 <keycap
+>v</keycap
+> 箭头会折叠这个子目录。</para>
+
+<para
+>要从列表中选择一个项目，您可以使用 <mousebutton
+>左键</mousebutton
+> 点击它，或者您也可以使用 <keysym
+>上</keysym
+> <keysym
+>下</keysym
+> 键来在列表中移动，用 <keysym
+>右</keysym
+> 键来展开一个子目录，用 <keysym
+>左</keysym
+> 键来折叠它。</para>
+
+<para
+>如需将列表中的一个项目移到另一个位置，您可以通过一般的拖放的方法，或者使用 <guimenuitem
+>剪切</guimenuitem
+> 和 <guimenuitem
+>粘帖</guimenuitem
+> 方法。这些项目在 <guilabel
+>书签编辑器</guilabel
+> 中的顺序就是它们在 <guimenu
+>书签</guimenu
+> 下拉列表中的顺序。<menuchoice
+><guimenu
+>文件夹</guimenu
+><guimenuitem
+>插入分隔符</guimenuitem
+></menuchoice
+> 菜单项可用于在列表中您期望的地方插入分隔符。</para>
+
+<para
+>有几种方法可以在列表中当前选中的位置建立新子文件夹，包括通过 <guimenu
+>文件夹</guimenu
+> 菜单中的 <guimenuitem
+>新建文件夹...</guimenuitem
+> 菜单项，通过在窗口的主要部份 <mousebutton
+>右键</mousebutton
+> 点击弹出的下拉菜单中的选项，或者通过 <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </para>
+
+<para
+>要改变一个书签或者文件夹的名字，您可以选中它并按下 <keycap
+>F2</keycap
+>，或者选择 <guimenu
+>编辑</guimenu
+> 菜单中或者在您 <mousebutton
+>右键</mousebutton
+>点击这个项目时出现的弹出菜单中的 <guimenuitem
+>重命名</guimenuitem
+> 菜单项。类似地，您可以通过按下 <keycap
+>F3</keycap
+> 或者选择 <guimenuitem
+>更改地址</guimenuitem
+> 菜单项来修改 &URL;。</para>
+
+<para
+><guilabel
+>书签编辑器</guilabel
+> 允许您从其他浏览器中导入书签到 &konqueror; 的书签列表中，将它们放入一个新文件夹，或者替换掉目前的所有书签。如需进行这个操作，从 <guimenu
+>文件</guimenu
+> 菜单中选择 <guisubmenu
+>导入</guisubmenu
+>。<menuchoice
+><guimenu
+>文件</guimenu
+><guisubmenu
+>导出</guisubmenu
+></menuchoice
+> 菜单项可用于导出 &konqueror; 的书签到 Mozilla 浏览器。</para>
+
+<para
+>如要选择哪个书签子文件夹会被用于保存书签工具栏的内容，选择某个子文件夹，随后选择 <guimenu
+>文件夹</guimenu
+> 目录中的 <guimenuitem
+>设置为工具栏文件夹</guimenuitem
+>。</para>
+
+<para
+>如果您在整理书签时忘了某个网页是什么，在 <guilabel
+>书签编辑器</guilabel
+> 中您可以通过 <mousebutton
+>右键</mousebutton
+> 点击它并且选择弹出菜单中的 <guimenuitem
+>在 Konqueror 中打开</guimenuitem
+> 来简单地打开它。如果您只是想检查这个 &URL; 是否依旧有效，您可以转而选择 <guimenuitem
+>检查状态</guimenuitem
+>。</para>
+
+<note
+><para
+>您的所有修改在关闭 <guilabel
+>书签编辑器</guilabel
+> 时自动保存。 </para
+></note>
+
+<para
+><ulink url="http://i18n.linux.net.cn"
+>开源软件国际化之简体中文组</ulink
+></para
+> 
+
+&underFDL;
+&underGPL;
+
+</article>

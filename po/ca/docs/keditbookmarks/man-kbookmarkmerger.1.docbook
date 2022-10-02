@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Catalan  "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Manual d'usuari del kbookmarkmerger</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>7 de novembre de 2016</date>
+	<releaseinfo
+>Aplicacions 16.12</releaseinfo>
+	<productname
+>Aplicacions del KDE</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Un programa per a fusionar un conjunt d'adreces d'interès a una llista d'usuari d'adreces d'interès.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>directori</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Descripció</title>
+<para
+>El &kbookmarkmerger; és un programa per a fusionar el conjunt d'adreces d'interès que se li indiqui a dins d'un altre conjunt d'adreces d'interès que pertany a l'usuari; si l'usuari encara no ha creat cap adreça d'interès, aquestes seran creades en una nova llista a on s'inseriran les indicades. Mentre fa això, el &kbookmarkmerger; segueix qualsevol adreça d'interès fusionada amb anterioritat, de manera que no es dupliquin les entrades més d'una vegada.</para>
+
+<para
+>L'ús tradicional és mantenir un conjunt d'adreces d'interès i emprar-lo com a esquelet per als directoris d'inici quan es crea un nou compte d'usuari i d'aquesta manera proveir-lo d'un conjunt d'adreces d'interès comunes. El problema d'aquesta solució és que una vegada ha estat creat el compte les noves adreces d'interès no es poden difondre.</para>
+
+<para
+>Aquest mecanisme és d'utilitat per administradors de sistema que els cal difondre una adreça d'interès que enllaci amb un cert document (per exemple, notes importants quant al sistema) a tots els usuaris. Els distribuïdors també poden trobar això d'utilitat, per exemple per fer augmentar els paquets de programari que subministren amb fitxers d'adreces d'interès que siguin fusionats pel &kbookmarkmerger; a una llista d'usuari d'adreces d'interès d'usuari quan el paquet sigui instal·lat. D'aquesta manera la documentació que acompanya a un paquet de programari seria visiblement accessible després que aquest hagi estat instal·lat.</para>
+
+<para
+>L'únic paràmetre requerit pel &kbookmarkmerger; és el nom d'un directori per explorar els fitxers d'adreces d'interès. Tots els fitxers sota el directori indicat seran considerats com a candidats a ser fusionats. Dits fitxers hauran de ser fitxers en format <acronym
+>XBEL</acronym
+> vàlid.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Vegeu també</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>Manual del &konqueror;</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Exemples</title>
+<screen
+>jordi@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Fusiona tots els fitxers d'adreces d'interès desats a <filename
+>/usr/local/extra-bookmarks</filename
+> en una llista d'adreces d'interès per a l'usuari jordi.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Estàndards</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+>Especificació <acronym
+>XBEL</acronym
+></ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Restriccions</title>
+<para
+>Quan es determina si un fitxer d'adreces d'interès ha estat o no fusionat amb les adreces d'interès de l'usuari, el &kbookmarkmerger; simplement mira en el nom del fitxer d'adreces d'interès -el contingut no es comprova en tots-. Això vol dir que si es modifica un fitxer d'adreces d'interès que ja ha estat fusionat en les adreces d'interès d'un usuari no podreu fusionar els canvis.</para>
+
+<para
+>Tingueu també en compte que en el cas que un usuari modifiqui una adreça d'interès que ja ha estat fusionada, el fitxer d'adreces d'interès original restarà sense modificar.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Autor</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>

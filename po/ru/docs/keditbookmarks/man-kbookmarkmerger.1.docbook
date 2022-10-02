@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Russian "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Руководство пользователя kbookmarkmerger</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>7 ноября 2016 г.</date>
+	<releaseinfo
+>Приложения KDE 16.12</releaseinfo>
+	<productname
+>Приложения KDE</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Программа для добавления набора закладок в пользовательский список закладок.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>каталог</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Описание</title>
+<para
+>&kbookmarkmerger; — программа для добавления указанного набора закладок в пользовательский список закладок. Если пользователь ещё не создавал закладки, будет создан новый список закладок и в него будут добавлены указанные закладки. &kbookmarkmerger; учитывает, какие файлы уже были добавлены к закладкам ранее, так что ни одна закладка не будет добавлена в пользовательский список дважды.</para>
+
+<para
+>Традиционно для решения таких задач использовался тщательно проработанный скелет домашнего каталога, который использовался при создании пользовательской учётной записи, и предоставлял стандартный набор закладок. При таком подходе новые закладки не будут унаследованы пользователями.</para>
+
+<para
+>Этот механизм удобен для системных администраторов, желающих автоматически сделать новые закладки доступными для всех пользователей (например, важные заметки о системе). Дистрибьюторы могут также использовать этот механизм, например, для добавления программных пакетов, предоставляющих файлы закладок, которые &kbookmarkmerger; сможет объединять с пользовательским списком закладок при установке пакета. Таким образом, поставляющаяся с приложением документация будет легко доступна сразу после установки пакета.</para>
+
+<para
+>Единственный параметр, необходимый &kbookmarkmerger; - имя каталога, который будет просканировал на наличие файлов закладок. Все файлы закладок в этом каталоге будут добавлены в список закладок пользователя. Файлы в указанном каталоге должны быть правильными файлами формата <acronym
+>XBEL</acronym
+>.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Смотрите также</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>Руководство пользователя &konqueror;</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Примеры</title>
+<screen
+>joe@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Добавляет все файлы закладок из каталога <filename
+>/usr/local/extra-bookmarks</filename
+> в список закладок пользователя joe.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Стандарты</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+>Спецификация <acronym
+>XBEL</acronym
+> </ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Ограничения</title>
+<para
+>Когда &kbookmarkmerger; проверяет, был ли добавлен файл закладок в список пользовательских закладок, он просто проверяет имя файла, но не тестирует его содержимое. Изменённый файл закладки не будет повторно добавлен в список, если там уже содержится предыдущая версия.</para>
+
+<para
+>Также обратите внимание, что если пользователь изменит закладку, добавленную в его набор, исходный файл закладок не будет изменён.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Авторы</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>

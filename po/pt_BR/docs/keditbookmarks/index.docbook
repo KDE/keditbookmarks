@@ -1,0 +1,199 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % Brazilian-Portuguese "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<!--moved from konqueror docbook -->
+
+<article id="keditbookmarks" lang="&language;">
+<articleinfo>
+<title
+>O Editor de Favoritos</title>
+<authorgroup>
+<author
+>&Pamela.Roberts;</author>
+<othercredit role="translator"
+><firstname
+>Marcus</firstname
+><surname
+>Gama</surname
+><affiliation
+><address
+><email
+>marcus.gama@gmail.com</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>André Marcelo</firstname
+><surname
+>Alvarenga</surname
+><affiliation
+><address
+><email
+>alvarenga@kde.org</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>04/11/2016</date>
+
+<releaseinfo
+>Applications 16.12</releaseinfo>
+
+<keywordset>
+<keyword
+>favoritos</keyword>
+<keyword
+>editor</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>Em muitos aplicativos (&eg; &konqueror;, &konsole;, &konversation;) A opção <menuchoice
+><guimenu
+>Favoritos</guimenu
+><guimenuitem
+>Editar favoritos</guimenuitem
+></menuchoice
+> abre o <guilabel
+>Editor de favoritos</guilabel
+>.</para>
+<para
+>Alternativamente você poderá executar o editor como um aplicativo autônomo para editar os favoritos do navegador.</para>
+<para
+>O editor mostra uma visão em árvore dos seus favoritos e respectivas subpastas. Como é comum para visões em árvore no &kde;, as subpastas são mostradas com uma pequena <keycap
+>&gt;</keycap
+> seta à esquerda do seu nome; ao clicar com o botão <mousebutton
+>esquerdo</mousebutton
+> do mouse, a exibição será expandida para mostrar o conteúdo da subpasta e a <keycap
+>&gt;</keycap
+> seta será alterada para <keycap
+>v</keycap
+>; ao clicar com o botão <mousebutton
+>esquerdo</mousebutton
+> do mouse na seta <keycap
+>v</keycap
+> irá recolher a exibição da subpasta.</para>
+
+<para
+>Para selecionar um item na lista você pode clicar com o botão <mousebutton
+>esquerdo</mousebutton
+> nele, ou pode navegar através da lista usando as teclas <keysym
+>Seta acima</keysym
+> e <keysym
+>Seta abaixo</keysym
+> para mover pela lista, <keysym
+>Seta à direita</keysym
+> para expandir uma subpasta e <keysym
+>Seta à esquerda</keysym
+> para recolhê-la.</para>
+
+<para
+>Você pode mover um item para um local diferente na lista usando o Arrastar e Soltar ou métodos de <guimenuitem
+>Recortar</guimenuitem
+> e <guimenuitem
+>Colar</guimenuitem
+>. A ordem em que os itens aparecem no <guilabel
+>Editor de Favoritos</guilabel
+> é a ordem em que eles aparecerão na lista combinada <guimenu
+>Favoritos</guimenu
+>. A opção <menuchoice
+><guimenu
+>Pasta </guimenu
+><guimenuitem
+>Inserir separador</guimenuitem
+></menuchoice
+> pode ser usada para inserir linhas separadores na lista onde você desejar.</para>
+
+<para
+>Uma nova subpasta pode ser criada no ponto selecionado da lista usando a opção <guimenuitem
+>Nova pasta...</guimenuitem
+> no menu <guimenu
+>Pasta</guimenu
+> ou a partir do menu combinado que você obtém quando dá um clique <mousebutton
+>direito</mousebutton
+> num item na parte principal da janela, ou com <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </para>
+
+<para
+>Para mudar o nome de uma marcador ou pasta selecione-o e então pressione <keycap
+>F2</keycap
+> ou escolha o item <guimenuitem
+>Renomear</guimenuitem
+> do menu <guimenu
+>Editar</guimenu
+> ou do menu instantâneo que aparece quando você dá um clique <mousebutton
+>direito</mousebutton
+> no item. Da mesma maneira, você pode editar a &URL; pressionando <keycap
+>F3</keycap
+> ou escolhendo o item de menu <guimenuitem
+>Mudar localização</guimenuitem
+>.</para>
+
+<para
+>O <guilabel
+>Editor de Favoritos</guilabel
+> permite importar favoritos de uma variedade de outros navegadores para a lista de favoritos do &konqueror;, colocando-os numa nova pasta ou substituindo todos os favoritos atuais. Para fazer isto selecione <guisubmenu
+>Importar</guisubmenu
+> no menu <guimenu
+>Arquivo</guimenu
+>. A opção <menuchoice
+><guimenu
+>Arquivo</guimenu
+><guisubmenu
+>Exportar </guisubmenu
+></menuchoice
+> pode ser usada para exportar favoritos do &konqueror; para um navegador Mozilla.</para>
+
+<para
+>Para selecionar qual subpasta dos favoritos será usada para manter os itens da Barra de Favoritos selecione a subpasta e então escolha <guimenuitem
+>Marcar como Pasta da Barra de Ferramentas</guimenuitem
+> a partir do menu <guimenu
+>Pasta</guimenu
+>.</para>
+
+<para
+>Se você está arrumando seus marcadores e esqueceu o que uma página web em particular é, você pode facilmente abri-la a partir do <guilabel
+>Editor de Favoritos</guilabel
+> com um clique <mousebutton
+>direito</mousebutton
+> no item e selecionando <guimenuitem
+>Abrir no Konqueror</guimenuitem
+> no menu instantâneo. Se você apenas deseja verificar se a &URL; ainda é válida selecione <guimenuitem
+>Verificar Status</guimenuitem
+> ao invés da ação anterior.</para>
+
+<note
+><para
+>Todas as suas alterações são automaticamente salvas se você fechar o <guilabel
+>Editor de favoritos</guilabel
+>. </para
+></note>
+
+<para
+>Tradução de Marcus Gama <email
+>marcus.gama@gmail.com</email
+> e André Marcelo Alvarenga <email
+>alvarenga@kde.org</email
+></para
+> 
+
+&underFDL;
+&underGPL;
+
+</article>

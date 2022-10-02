@@ -1,0 +1,758 @@
+# translation of keditbookmarks.po to Swedish
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2007, 2008, 2009, 2010, 2011, 2016, 2017, 2020.
+# Arve Eriksson <031299870@telia.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: keditbookmarks\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2020-03-16 20:37+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.04.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stefan Asserhäll"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "stefan.asserhall@bredband.net"
+
+#: actionsimpl.cpp:98
+#, kde-format
+msgid "&Delete"
+msgstr "&Ta bort"
+
+#: actionsimpl.cpp:104
+#, kde-format
+msgid "Rename"
+msgstr "Byt namn"
+
+#: actionsimpl.cpp:110
+#, kde-format
+msgid "C&hange Location"
+msgstr "Ä&ndra plats"
+
+#: actionsimpl.cpp:116
+#, kde-format
+msgid "C&hange Comment"
+msgstr "&Ändra kommentar"
+
+#: actionsimpl.cpp:122
+#, kde-format
+msgid "Chan&ge Icon..."
+msgstr "&Ändra ikon..."
+
+#: actionsimpl.cpp:126
+#, kde-format
+msgid "Update Favicon"
+msgstr "Uppdatera favoritikon"
+
+#: actionsimpl.cpp:130
+#, kde-format
+msgid "Recursive Sort"
+msgstr "Rekursiv sortering"
+
+#: actionsimpl.cpp:135
+#, kde-format
+msgid "&New Folder..."
+msgstr "&Ny korg..."
+
+#: actionsimpl.cpp:141
+#, kde-format
+msgid "&New Bookmark"
+msgstr "&Nytt bokmärke"
+
+#: actionsimpl.cpp:145
+#, kde-format
+msgid "&Insert Separator"
+msgstr "&Infoga avskiljare"
+
+#: actionsimpl.cpp:150
+#, kde-format
+msgid "&Sort Alphabetically"
+msgstr "&Sortera i bokstavsordning"
+
+#: actionsimpl.cpp:155
+#, kde-format
+msgid "Set as T&oolbar Folder"
+msgstr "Använd s&om verktygsradskatalog"
+
+#: actionsimpl.cpp:159
+#, kde-format
+msgid "&Expand All Folders"
+msgstr "&Expandera alla kataloger"
+
+#: actionsimpl.cpp:163
+#, kde-format
+msgid "Collapse &All Folders"
+msgstr "Komprimera &alla kataloger"
+
+#: actionsimpl.cpp:168
+#, kde-format
+msgid "&Open in Browser"
+msgstr "Ö&ppna i webbläsare"
+
+#: actionsimpl.cpp:173
+#, kde-format
+msgid "Check &Status"
+msgstr "Kontrollera &status"
+
+#: actionsimpl.cpp:177
+#, kde-format
+msgid "Check Status: &All"
+msgstr "Kontrollera status: &Alla"
+
+#: actionsimpl.cpp:181
+#, kde-format
+msgid "Update All &Favicons"
+msgstr "Uppdatera alla &favoritikoner"
+
+#: actionsimpl.cpp:185
+#, kde-format
+msgid "Cancel &Checks"
+msgstr "Avbr&yt kontroll"
+
+#: actionsimpl.cpp:189
+#, kde-format
+msgid "Cancel &Favicon Updates"
+msgstr "Avbryt alla uppdateringar av &favikoner"
+
+#: actionsimpl.cpp:195
+#, kde-format
+msgid "Import &Netscape Bookmarks..."
+msgstr "Importera bokmärken från &Netscape..."
+
+#: actionsimpl.cpp:201
+#, kde-format
+msgid "Import &Opera Bookmarks..."
+msgstr "Importera bokmärken från &Opera..."
+
+#: actionsimpl.cpp:211
+#, kde-format
+msgid "Import &Galeon Bookmarks..."
+msgstr "Importera bokmärken från &Galeon..."
+
+#: actionsimpl.cpp:217
+#, kde-format
+msgid "Import &KDE 2 or KDE 3 Bookmarks..."
+msgstr "Importera bokmärken från &KDE 2 eller KDE 3..."
+
+#: actionsimpl.cpp:223
+#, kde-format
+msgid "Import &Internet Explorer Bookmarks..."
+msgstr "Importera bokmärken från &Internet Explorer..."
+
+#: actionsimpl.cpp:229
+#, kde-format
+msgid "Import &Mozilla Bookmarks..."
+msgstr "Importera bokmärken från &Mozilla..."
+
+#: actionsimpl.cpp:234
+#, kde-format
+msgid "Export &Netscape Bookmarks"
+msgstr "Exportera bokmärken till &Netscape"
+
+#: actionsimpl.cpp:239
+#, kde-format
+msgid "Export &Opera Bookmarks..."
+msgstr "Exportera bokmärken till &Opera..."
+
+#: actionsimpl.cpp:244
+#, kde-format
+msgid "Export &HTML Bookmarks..."
+msgstr "Exportera bokmärken till &HTML..."
+
+#: actionsimpl.cpp:248
+#, kde-format
+msgid "Export &Internet Explorer Bookmarks..."
+msgstr "Exportera bokmärken till &Internet Explorer..."
+
+#: actionsimpl.cpp:253
+#, kde-format
+msgid "Export &Mozilla Bookmarks..."
+msgstr "Exportera bokmärken till &Mozilla..."
+
+#: actionsimpl.cpp:298
+#, kde-format
+msgid "HTML Bookmark Listing (*.html)"
+msgstr "HTML-bokmärkeslista (*.html)"
+
+#: actionsimpl.cpp:343
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Cut Items"
+msgstr "Klipp ut objekt"
+
+#: actionsimpl.cpp:368
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "Klistra in"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgid "New folder:"
+msgstr "Ny katalog:"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgctxt "@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Skapa nytt bokmärkeskatalog"
+
+#: actionsimpl.cpp:526
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Recursive Sort"
+msgstr "Rekursiv sortering"
+
+#: actionsimpl.cpp:541
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Sort Alphabetically"
+msgstr "Sortera i bokstavsordning"
+
+#: actionsimpl.cpp:550
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Delete Items"
+msgstr "Ta bort objekt"
+
+#: bookmarkinfowidget.cpp:223
+#, kde-format
+msgid "Name:"
+msgstr "Namn:"
+
+#: bookmarkinfowidget.cpp:230
+#, kde-format
+msgid "Location:"
+msgstr "Plats:"
+
+#: bookmarkinfowidget.cpp:237
+#, kde-format
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#: bookmarkinfowidget.cpp:243
+#, kde-format
+msgid "First viewed:"
+msgstr "Först visad:"
+
+#: bookmarkinfowidget.cpp:246
+#, kde-format
+msgid "Viewed last:"
+msgstr "Senast visad:"
+
+#: bookmarkinfowidget.cpp:249
+#, kde-format
+msgid "Times visited:"
+msgstr "Antal besök:"
+
+#: exporters.cpp:51
+#, kde-format
+msgid "My Bookmarks"
+msgstr "Mina bokmärken"
+
+#: favicons.cpp:54 testlink.cpp:94
+#, kde-format
+msgid "OK"
+msgstr "Ok"
+
+#: favicons.cpp:70
+#, kde-format
+msgid "Updating favicon..."
+msgstr "Uppdaterar favoritikon..."
+
+#: faviconupdater.cpp:79
+#, kde-format
+msgid "%1; no HTML component found (%2)"
+msgstr "%1; ingen HTML-komponent hittades (%2)"
+
+#: importers.cpp:57
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Import %1 Bookmarks"
+msgstr "Importera %1 bokmärken"
+
+#: importers.cpp:62
+#, kde-format
+msgid "%1 Bookmarks"
+msgstr "%1 bokmärken"
+
+#: importers.cpp:99
+#, kde-format
+msgid "Import as a new subfolder or replace all the current bookmarks?"
+msgstr "Importera som ny undermeny eller ersätta alla aktuella bokmärken?"
+
+#: importers.cpp:100
+#, kde-format
+msgctxt "@title:window"
+msgid "%1 Import"
+msgstr "%1 import"
+
+#: importers.cpp:101
+#, kde-format
+msgid "As New Folder"
+msgstr "Som ny undermeny"
+
+#: importers.cpp:102
+#, kde-format
+msgid "Replace"
+msgstr "Ersätt"
+
+#: importers.cpp:212
+#, kde-format
+msgid "Galeon Bookmark Files (*.xbel)"
+msgstr "Galeon-bokmärkesfiler (*.xbel)"
+
+#: importers.cpp:220
+#, kde-format
+msgid "KDE Bookmark Files (*.xml)"
+msgstr "KDE-bokmärkesfiler (*.xml)"
+
+#: importers.h:116
+#, kde-format
+msgid "Galeon"
+msgstr "Galeon"
+
+#: importers.h:131
+#, kde-format
+msgid "KDE"
+msgstr "KDE"
+
+#: importers.h:161
+#, kde-format
+msgid "Netscape"
+msgstr "Netscape"
+
+#: importers.h:176
+#, kde-format
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#: importers.h:191
+#, kde-format
+msgid "IE"
+msgstr "IE"
+
+#: importers.h:209
+#, kde-format
+msgid "Opera"
+msgstr "Opera"
+
+#: kbookmarkmerger.cpp:47
+#, kde-format
+msgid "KBookmarkMerger"
+msgstr "Bokmärkessammanslagning"
+
+#: kbookmarkmerger.cpp:49
+#, kde-format
+msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
+msgstr ""
+"Sammanfogar bokmärken installerade av tredje part i användarens bokmärken"
+
+#: kbookmarkmerger.cpp:51
+#, kde-format
+msgid "Copyright © 2005 Frerich Raabe"
+msgstr "Copyright © 2005 Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Frerich Raabe"
+msgstr "Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Original author"
+msgstr "Ursprunglig upphovsman"
+
+#: kbookmarkmerger.cpp:57
+#, kde-format
+msgid "Directory to scan for extra bookmarks"
+msgstr "Katalog att söka efter extra bokmärken i"
+
+#: kbookmarkmodel/commands.cpp:70
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Insert Separator"
+msgstr "Infoga avskiljare"
+
+#: kbookmarkmodel/commands.cpp:84
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Bookmark"
+msgstr "Skapa bokmärke"
+
+#: kbookmarkmodel/commands.cpp:98
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Folder"
+msgstr "Skapa katalog"
+
+#: kbookmarkmodel/commands.cpp:111
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy %1"
+msgstr "Kopiera %1"
+
+#: kbookmarkmodel/commands.cpp:200
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Icon Change"
+msgstr "Ikonändring"
+
+#: kbookmarkmodel/commands.cpp:202
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Title Change"
+msgstr "Namnändring"
+
+#: kbookmarkmodel/commands.cpp:204
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "URL Change"
+msgstr "Webbadressändring"
+
+#: kbookmarkmodel/commands.cpp:206
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Comment Change"
+msgstr "Kommentarändring"
+
+#: kbookmarkmodel/commands.cpp:365
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move %1"
+msgstr "Flytta %1"
+
+#: kbookmarkmodel/commands.cpp:500
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Set as Bookmark Toolbar"
+msgstr "Använd som bokmärkesverktygsrad"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy Items"
+msgstr "Kopiera objekt"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move Items"
+msgstr "Flytta objekt"
+
+#: kbookmarkmodel/model.cpp:122
+#, kde-format
+msgctxt "name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Bokmärken"
+
+#: kbookmarkmodel/model.cpp:217
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Name"
+msgstr "Namn"
+
+#: kbookmarkmodel/model.cpp:220
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Location"
+msgstr "Plats"
+
+#: kbookmarkmodel/model.cpp:223
+#, kde-format
+msgctxt "@title:column comment for a bookmark"
+msgid "Comment"
+msgstr "Kommentar"
+
+#: kbookmarkmodel/model.cpp:226
+#, kde-format
+msgctxt "@title:column status of a bookmark"
+msgid "Status"
+msgstr "Status"
+
+#: kebsearchline.cpp:239
+#, kde-format
+msgid "Search Columns"
+msgstr "Sök i kolumner"
+
+#: kebsearchline.cpp:242
+#, kde-format
+msgid "All Visible Columns"
+msgstr "Alla synliga kolumner"
+
+#: kebsearchline.cpp:250
+#, kde-format
+msgctxt "Column number %1"
+msgid "Column No. %1"
+msgstr "Kolumn nummer %1"
+
+#: kebsearchline.cpp:615
+#, kde-format
+msgid "S&earch:"
+msgstr "&Sök:"
+
+#. i18n: ectx: Menu (file)
+#: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "&Arkiv"
+
+#. i18n: ectx: Menu (edit)
+#: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
+#, kde-format
+msgid "&Edit"
+msgstr "&Redigera"
+
+#. i18n: ectx: Menu (view)
+#: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
+#, kde-format
+msgid "&View"
+msgstr "&Visa"
+
+#. i18n: ectx: Menu (folder)
+#: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
+#, kde-format
+msgid "&Folder"
+msgstr "&Katalog"
+
+#. i18n: ectx: Menu (bookmark)
+#: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
+#, kde-format
+msgid "&Bookmark"
+msgstr "&Bokmärke"
+
+#. i18n: ectx: Menu (settings)
+#: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
+#, kde-format
+msgid "&Settings"
+msgstr "In&ställningar"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Huvudverktygsrad"
+
+#. i18n: ectx: Menu (import)
+#: keditbookmarksui.rc:11
+#, kde-format
+msgid "&Import"
+msgstr "&Importera"
+
+#. i18n: ectx: Menu (export)
+#: keditbookmarksui.rc:21
+#, kde-format
+msgid "&Export"
+msgstr "&Exportera"
+
+#. i18n: ectx: Menu (tools)
+#: keditbookmarksui.rc:67
+#, kde-format
+msgid "&Tools"
+msgstr "Verk&tyg"
+
+#: main.cpp:68
+#, kde-format
+msgid ""
+"Another instance of %1 is already running. Do you really want to open "
+"another instance or continue work in the same instance?\n"
+"Please note that, unfortunately, duplicate views are read-only."
+msgstr ""
+"En annan instans av %1 körs redan. Vill du verkligen öppna ytterligare en, "
+"eller vill du fortsätta att arbeta i samma?\n"
+"Observera att duplicerade vyer tyvärr saknar skrivmöjligheter."
+
+#: main.cpp:72
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning"
+msgstr "Varning"
+
+#: main.cpp:73
+#, kde-format
+msgid "Run Another"
+msgstr "Starta ytterligare en"
+
+#: main.cpp:74
+#, kde-format
+msgid "Continue in Same"
+msgstr "Fortsätt i samma"
+
+#: main.cpp:112
+#, kde-format
+msgid "Bookmark Editor"
+msgstr "Bokmärkeseditor"
+
+#: main.cpp:114
+#, kde-format
+msgid "Bookmark Organizer and Editor"
+msgstr "Bokmärkesorganisering och editor"
+
+#: main.cpp:116
+#, kde-format
+msgid "Copyright 2000-2017, KDE developers"
+msgstr "Copyright 2000-2017, KDE-utvecklarna"
+
+#: main.cpp:117
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: main.cpp:117
+#, kde-format
+msgid "Initial author"
+msgstr "Ursprunglig upphovsman"
+
+#: main.cpp:118
+#, kde-format
+msgid "Alexander Kellett"
+msgstr "Alexander Kellett"
+
+#: main.cpp:118
+#, kde-format
+msgid "Author"
+msgstr "Upphovsman"
+
+#: main.cpp:128
+#, kde-format
+msgid "Import bookmarks from a file in Mozilla format"
+msgstr "Importera bokmärken från en fil i Mozilla-format"
+
+#: main.cpp:129
+#, kde-format
+msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
+msgstr "Importera bokmärken från en fil i Netscape-format (4.x och tidigare)"
+
+#: main.cpp:130
+#, kde-format
+msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
+msgstr "Importera bokmärken från en fil i Internet Explorers Favoriter-format"
+
+#: main.cpp:131
+#, kde-format
+msgid "Import bookmarks from a file in Opera format"
+msgstr "Importera bokmärken från en fil i Opera-format"
+
+#: main.cpp:132
+#, kde-format
+msgid "Import bookmarks from a file in KDE2 format"
+msgstr "Importera bokmärken från en fil i KDE2-format"
+
+#: main.cpp:133
+#, kde-format
+msgid "Import bookmarks from a file in Galeon format"
+msgstr "Importera bokmärken från en fil i Galeon-format"
+
+#: main.cpp:134
+#, kde-format
+msgid "Export bookmarks to a file in Mozilla format"
+msgstr "Exportera bokmärken till en fil i Mozilla-format"
+
+#: main.cpp:135
+#, kde-format
+msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
+msgstr "Exportera bokmärken till en fil i Netscape-format (4.x och tidigare)"
+
+#: main.cpp:136
+#, kde-format
+msgid "Export bookmarks to a file in a printable HTML format"
+msgstr "Exportera bokmärken till en fil i utskrivbart HTML-format"
+
+#: main.cpp:137
+#, kde-format
+msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
+msgstr "Exportera bokmärken till en fil i Internet Explorers Favoriter-format"
+
+#: main.cpp:138
+#, kde-format
+msgid "Export bookmarks to a file in Opera format"
+msgstr "Exportera bokmärken till en fil i Opera-format"
+
+#: main.cpp:139
+#, kde-format
+msgid "Open at the given position in the bookmarks file"
+msgstr "Öppna vid angiven plats i bokmärkesfilen"
+
+#: main.cpp:140
+#, kde-format
+msgid "Set the user-readable caption, for example \"Konsole\""
+msgstr "Ange rubriken som användaren ser, till exempel \"Terminal\""
+
+#: main.cpp:141
+#, kde-format
+msgid "Hide all browser related functions"
+msgstr "Dölj alla funktioner relaterade till webbläsning"
+
+#: main.cpp:142
+#, kde-format
+msgid ""
+"A unique name that represents this bookmark collection, usually the "
+"kinstance name.\n"
+"This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
+"KFileDialog bookmarks, etc.\n"
+"The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
+msgstr ""
+"Ett unikt namn som representerar den här bokmärkessamlingen, oftast "
+"instansnamnet.\n"
+"Det ska vara \"konqueror\" för bokmärken i Konqueror, \"kfile\" för "
+"bokmärken i fildialogrutor, etc.\n"
+"Den slutliga D-Bus objektsökvägen är /KBookmarkManager/<DBus_objektnamn>"
+
+#: main.cpp:146
+#, kde-format
+msgid "File to edit"
+msgstr "Fil att redigera"
+
+#: main.cpp:229
+#, kde-format
+msgid "You may only specify a single --export option."
+msgstr "Du kan bara ange en ensam --export-väljare."
+
+#: main.cpp:236
+#, kde-format
+msgid "You may only specify a single --import option."
+msgstr "Du kan bara ange en ensam --import-väljare."
+
+#: testlink.cpp:73
+#, kde-format
+msgid "Checking..."
+msgstr "Kontrollerar..."
+
+#~ msgid "Import All &Crash Sessions as Bookmarks..."
+#~ msgstr "Importera alla &kraschade sessioner som bokmärken..."
+
+#~ msgid "No favicon found"
+#~ msgstr "Någon favoritikon hittades inte"
+
+#~ msgid "Local file"
+#~ msgstr "Lokal fil"
+
+#~ msgid "Crashes"
+#~ msgstr "Krascher"
+
+#~ msgid "Bookmark"
+#~ msgstr "Bokmärke"
+
+#~ msgid "URL"
+#~ msgstr "Webbadress"
+
+#~ msgid "Icon"
+#~ msgstr "Ikon"
+
+#~ msgid "Title"
+#~ msgstr "Titel"

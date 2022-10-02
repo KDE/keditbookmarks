@@ -1,0 +1,737 @@
+# Vietnamese translation for K Edit Bookmarks.
+# Copyright © 2007 KDE i18n Project for Vietnamese.
+#
+# Clytie Siddall <clytie@riverland.net.au>, 2007.
+# Phu Hung Nguyen <phu.nguyen@kdemail.net>, 2020, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: keditbookmarks\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2022-05-12 12:11+0200\n"
+"Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
+"Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Nguyễn Hùng Phú,Clytie Siddall"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "phu.nguyen@kdemail.net,clytie@riverland.net.au"
+
+#: actionsimpl.cpp:98
+#, kde-format
+msgid "&Delete"
+msgstr "&Xoá"
+
+#: actionsimpl.cpp:104
+#, kde-format
+msgid "Rename"
+msgstr "Đổi tên"
+
+#: actionsimpl.cpp:110
+#, kde-format
+msgid "C&hange Location"
+msgstr "Đổ&i địa điểm"
+
+#: actionsimpl.cpp:116
+#, kde-format
+msgid "C&hange Comment"
+msgstr "Đổ&i chú thích"
+
+#: actionsimpl.cpp:122
+#, kde-format
+msgid "Chan&ge Icon..."
+msgstr "Đổi biểu tượn&g..."
+
+#: actionsimpl.cpp:126
+#, kde-format
+msgid "Update Favicon"
+msgstr "Cập nhật biểu tượng trang"
+
+#: actionsimpl.cpp:130
+#, kde-format
+msgid "Recursive Sort"
+msgstr "Sắp xếp đệ quy"
+
+#: actionsimpl.cpp:135
+#, kde-format
+msgid "&New Folder..."
+msgstr "Thư mục &mới..."
+
+#: actionsimpl.cpp:141
+#, kde-format
+msgid "&New Bookmark"
+msgstr "Dấu nhớ &mới"
+
+#: actionsimpl.cpp:145
+#, kde-format
+msgid "&Insert Separator"
+msgstr "C&hèn phần phân cách"
+
+#: actionsimpl.cpp:150
+#, kde-format
+msgid "&Sort Alphabetically"
+msgstr "&Sắp xếp theo bảng chữ cái"
+
+#: actionsimpl.cpp:155
+#, kde-format
+msgid "Set as T&oolbar Folder"
+msgstr "Đặt làm \"Thư mục th&anh công cụ\""
+
+#: actionsimpl.cpp:159
+#, kde-format
+msgid "&Expand All Folders"
+msgstr "Mở &rộng tất cả các thư mục"
+
+#: actionsimpl.cpp:163
+#, kde-format
+msgid "Collapse &All Folders"
+msgstr "Thu &gọn tất cả các thư mục"
+
+#: actionsimpl.cpp:168
+#, kde-format
+msgid "&Open in Browser"
+msgstr "&Mở trong trình duyệt"
+
+#: actionsimpl.cpp:173
+#, kde-format
+msgid "Check &Status"
+msgstr "Kiểm tra t&rạng thái"
+
+#: actionsimpl.cpp:177
+#, kde-format
+msgid "Check Status: &All"
+msgstr "Kiểm tr&a trạng thái: tất cả"
+
+#: actionsimpl.cpp:181
+#, kde-format
+msgid "Update All &Favicons"
+msgstr "Cập nhật tất cả các &biểu tượng trang"
+
+#: actionsimpl.cpp:185
+#, kde-format
+msgid "Cancel &Checks"
+msgstr "Huỷ &kiểm tra"
+
+#: actionsimpl.cpp:189
+#, kde-format
+msgid "Cancel &Favicon Updates"
+msgstr "Huỷ cập nhật &biểu tượng trang"
+
+#: actionsimpl.cpp:195
+#, kde-format
+msgid "Import &Netscape Bookmarks..."
+msgstr "Nhập khẩu dấu nhớ &Netscape..."
+
+#: actionsimpl.cpp:201
+#, kde-format
+msgid "Import &Opera Bookmarks..."
+msgstr "Nhập khẩu dấu nhớ &Opera..."
+
+#: actionsimpl.cpp:211
+#, kde-format
+msgid "Import &Galeon Bookmarks..."
+msgstr "Nhập khẩu dấu nhớ &Galeon..."
+
+#: actionsimpl.cpp:217
+#, kde-format
+msgid "Import &KDE 2 or KDE 3 Bookmarks..."
+msgstr "Nhập khẩu dấu nhớ &KDE2 hoặc KDE3..."
+
+#: actionsimpl.cpp:223
+#, kde-format
+msgid "Import &Internet Explorer Bookmarks..."
+msgstr "Nhập khẩu dấu nhớ &Internet Explorer..."
+
+#: actionsimpl.cpp:229
+#, kde-format
+msgid "Import &Mozilla Bookmarks..."
+msgstr "Nhập khẩu dấu nhớ &Mozilla..."
+
+#: actionsimpl.cpp:234
+#, kde-format
+msgid "Export &Netscape Bookmarks"
+msgstr "Xuất khẩu dấu nhớ &Netscape"
+
+#: actionsimpl.cpp:239
+#, kde-format
+msgid "Export &Opera Bookmarks..."
+msgstr "Xuất khẩu dấu nhớ &Opera..."
+
+#: actionsimpl.cpp:244
+#, kde-format
+msgid "Export &HTML Bookmarks..."
+msgstr "Xuất khẩu dấu nhớ &HTML..."
+
+#: actionsimpl.cpp:248
+#, kde-format
+msgid "Export &Internet Explorer Bookmarks..."
+msgstr "Xuất khẩu dấu nhớ &Internet Explorer..."
+
+#: actionsimpl.cpp:253
+#, kde-format
+msgid "Export &Mozilla Bookmarks..."
+msgstr "Xuất khẩu dấu nhớ &Mozilla..."
+
+#: actionsimpl.cpp:298
+#, kde-format
+msgid "HTML Bookmark Listing (*.html)"
+msgstr "Liệt kê dấu nhớ HTML (*.html)"
+
+#: actionsimpl.cpp:343
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Cut Items"
+msgstr "Cắt các mục"
+
+#: actionsimpl.cpp:368
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "Dán"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgid "New folder:"
+msgstr "Thư mục mới:"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgctxt "@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Tạo thư mục dấu nhớ mới"
+
+#: actionsimpl.cpp:526
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Recursive Sort"
+msgstr "Sắp xếp đệ quy"
+
+#: actionsimpl.cpp:541
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Sort Alphabetically"
+msgstr "Sắp xếp theo bảng chữ cái"
+
+#: actionsimpl.cpp:550
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Delete Items"
+msgstr "Xoá các mục"
+
+#: bookmarkinfowidget.cpp:223
+#, kde-format
+msgid "Name:"
+msgstr "Tên:"
+
+#: bookmarkinfowidget.cpp:230
+#, kde-format
+msgid "Location:"
+msgstr "Địa điểm:"
+
+#: bookmarkinfowidget.cpp:237
+#, kde-format
+msgid "Comment:"
+msgstr "Chú thích:"
+
+#: bookmarkinfowidget.cpp:243
+#, kde-format
+msgid "First viewed:"
+msgstr "Xem lần đầu:"
+
+#: bookmarkinfowidget.cpp:246
+#, kde-format
+msgid "Viewed last:"
+msgstr "Xem lần cuối:"
+
+#: bookmarkinfowidget.cpp:249
+#, kde-format
+msgid "Times visited:"
+msgstr "Số lần mở:"
+
+#: exporters.cpp:51
+#, kde-format
+msgid "My Bookmarks"
+msgstr "Dấu nhớ của tôi"
+
+#: favicons.cpp:54 testlink.cpp:94
+#, kde-format
+msgid "OK"
+msgstr "OK"
+
+#: favicons.cpp:70
+#, kde-format
+msgid "Updating favicon..."
+msgstr "Đang cập nhật biểu tượng trang..."
+
+#: faviconupdater.cpp:79
+#, kde-format
+msgid "%1; no HTML component found (%2)"
+msgstr "%1; không tìm thấy thành phần HTML nào (%2)"
+
+#: importers.cpp:57
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Import %1 Bookmarks"
+msgstr "Nhập khẩu dấu nhớ %1"
+
+#: importers.cpp:62
+#, kde-format
+msgid "%1 Bookmarks"
+msgstr "Dấu nhớ %1"
+
+#: importers.cpp:99
+#, kde-format
+msgid "Import as a new subfolder or replace all the current bookmarks?"
+msgstr ""
+"Nhập khẩu thành một thư mục con mới hay thay thế tất cả các dấu nhớ hiện tại?"
+
+#: importers.cpp:100
+#, kde-format
+msgctxt "@title:window"
+msgid "%1 Import"
+msgstr "Nhập khẩu %1"
+
+#: importers.cpp:101
+#, kde-format
+msgid "As New Folder"
+msgstr "Thành thư mục mới"
+
+#: importers.cpp:102
+#, kde-format
+msgid "Replace"
+msgstr "Thay thế"
+
+#: importers.cpp:212
+#, kde-format
+msgid "Galeon Bookmark Files (*.xbel)"
+msgstr "Tệp dấu nhớ Galeon (*.xbel)"
+
+#: importers.cpp:220
+#, kde-format
+msgid "KDE Bookmark Files (*.xml)"
+msgstr "Tệp dấu nhớ KDE (*.xml)"
+
+#: importers.h:116
+#, kde-format
+msgid "Galeon"
+msgstr "Galeon"
+
+#: importers.h:131
+#, kde-format
+msgid "KDE"
+msgstr "KDE"
+
+#: importers.h:161
+#, kde-format
+msgid "Netscape"
+msgstr "Netscape"
+
+#: importers.h:176
+#, kde-format
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#: importers.h:191
+#, kde-format
+msgid "IE"
+msgstr "IE"
+
+#: importers.h:209
+#, kde-format
+msgid "Opera"
+msgstr "Opera"
+
+#: kbookmarkmerger.cpp:47
+#, kde-format
+msgid "KBookmarkMerger"
+msgstr "KBookmarkMerger"
+
+#: kbookmarkmerger.cpp:49
+#, kde-format
+msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
+msgstr ""
+"Trộn các dấu nhớ được cài đặt bởi các bên thứ ba vào các dấu nhớ của người "
+"dùng."
+
+#: kbookmarkmerger.cpp:51
+#, kde-format
+msgid "Copyright © 2005 Frerich Raabe"
+msgstr "Bản quyền © 2005 Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Frerich Raabe"
+msgstr "Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Original author"
+msgstr "Tác giả gốc"
+
+#: kbookmarkmerger.cpp:57
+#, kde-format
+msgid "Directory to scan for extra bookmarks"
+msgstr "Thư mục để quét tìm thêm dấu nhớ"
+
+#: kbookmarkmodel/commands.cpp:70
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Insert Separator"
+msgstr "Chèn phần phân cách"
+
+#: kbookmarkmodel/commands.cpp:84
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Bookmark"
+msgstr "Tạo dấu nhớ"
+
+#: kbookmarkmodel/commands.cpp:98
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Folder"
+msgstr "Tạo thư mục"
+
+#: kbookmarkmodel/commands.cpp:111
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy %1"
+msgstr "Chép %1"
+
+#: kbookmarkmodel/commands.cpp:200
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Icon Change"
+msgstr "Thay đổi biểu tượng"
+
+#: kbookmarkmodel/commands.cpp:202
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Title Change"
+msgstr "Thay đổi tiêu đề"
+
+#: kbookmarkmodel/commands.cpp:204
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "URL Change"
+msgstr "Thay đổi URL"
+
+#: kbookmarkmodel/commands.cpp:206
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Comment Change"
+msgstr "Thay đổi chú thích"
+
+#: kbookmarkmodel/commands.cpp:365
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move %1"
+msgstr "Chuyển %1"
+
+#: kbookmarkmodel/commands.cpp:500
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Set as Bookmark Toolbar"
+msgstr "Đặt làm \"Thanh công cụ dấu nhớ\""
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy Items"
+msgstr "Chép các mục"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move Items"
+msgstr "Chuyển các mục"
+
+#: kbookmarkmodel/model.cpp:122
+#, kde-format
+msgctxt "name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Dấu nhớ"
+
+#: kbookmarkmodel/model.cpp:217
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Name"
+msgstr "Tên"
+
+#: kbookmarkmodel/model.cpp:220
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Location"
+msgstr "Địa điểm"
+
+#: kbookmarkmodel/model.cpp:223
+#, kde-format
+msgctxt "@title:column comment for a bookmark"
+msgid "Comment"
+msgstr "Chú thích"
+
+#: kbookmarkmodel/model.cpp:226
+#, kde-format
+msgctxt "@title:column status of a bookmark"
+msgid "Status"
+msgstr "Trạng thái"
+
+#: kebsearchline.cpp:239
+#, kde-format
+msgid "Search Columns"
+msgstr "Tìm trong các cột"
+
+#: kebsearchline.cpp:242
+#, kde-format
+msgid "All Visible Columns"
+msgstr "Tất cả các cột thấy được"
+
+#: kebsearchline.cpp:250
+#, kde-format
+msgctxt "Column number %1"
+msgid "Column No. %1"
+msgstr "Cột số %1"
+
+#: kebsearchline.cpp:615
+#, kde-format
+msgid "S&earch:"
+msgstr "Tìm &kiếm:"
+
+#. i18n: ectx: Menu (file)
+#: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "&Tệp"
+
+#. i18n: ectx: Menu (edit)
+#: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
+#, kde-format
+msgid "&Edit"
+msgstr "&Sửa"
+
+#. i18n: ectx: Menu (view)
+#: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
+#, kde-format
+msgid "&View"
+msgstr "&Xem"
+
+#. i18n: ectx: Menu (folder)
+#: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
+#, kde-format
+msgid "&Folder"
+msgstr "Thư &mục"
+
+#. i18n: ectx: Menu (bookmark)
+#: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
+#, kde-format
+msgid "&Bookmark"
+msgstr "&Dấu nhớ"
+
+#. i18n: ectx: Menu (settings)
+#: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
+#, kde-format
+msgid "&Settings"
+msgstr "Thiết &lập"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Thanh công cụ chính"
+
+#. i18n: ectx: Menu (import)
+#: keditbookmarksui.rc:11
+#, kde-format
+msgid "&Import"
+msgstr "&Nhập khẩu"
+
+#. i18n: ectx: Menu (export)
+#: keditbookmarksui.rc:21
+#, kde-format
+msgid "&Export"
+msgstr "&Xuất khẩu"
+
+#. i18n: ectx: Menu (tools)
+#: keditbookmarksui.rc:67
+#, kde-format
+msgid "&Tools"
+msgstr "&Công cụ"
+
+#: main.cpp:68
+#, kde-format
+msgid ""
+"Another instance of %1 is already running. Do you really want to open "
+"another instance or continue work in the same instance?\n"
+"Please note that, unfortunately, duplicate views are read-only."
+msgstr ""
+"Một hiện thể %1 khác cũng đang chạy. Bạn có thật sự muốn mở một hiện thể "
+"nữa, hay tiếp tục công việc trong cùng hiện thể này?\n"
+"Vui lòng lưu ý rằng, không may là, các khung xem trùng lặp đều chỉ có thể "
+"đọc."
+
+#: main.cpp:72
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning"
+msgstr "Cảnh báo"
+
+#: main.cpp:73
+#, kde-format
+msgid "Run Another"
+msgstr "Chạy cái nữa"
+
+#: main.cpp:74
+#, kde-format
+msgid "Continue in Same"
+msgstr "Tiếp tục cùng cái"
+
+#: main.cpp:112
+#, kde-format
+msgid "Bookmark Editor"
+msgstr "Trình sửa dấu nhớ"
+
+#: main.cpp:114
+#, kde-format
+msgid "Bookmark Organizer and Editor"
+msgstr "Trình tổ chức và sửa dấu nhớ"
+
+#: main.cpp:116
+#, kde-format
+msgid "Copyright 2000-2017, KDE developers"
+msgstr "Bản quyền 2000-2017, các nhà phát triển KDE"
+
+#: main.cpp:117
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: main.cpp:117
+#, kde-format
+msgid "Initial author"
+msgstr "Tác giả ban đầu"
+
+#: main.cpp:118
+#, kde-format
+msgid "Alexander Kellett"
+msgstr "Alexander Kellett"
+
+#: main.cpp:118
+#, kde-format
+msgid "Author"
+msgstr "Tác giả"
+
+#: main.cpp:128
+#, kde-format
+msgid "Import bookmarks from a file in Mozilla format"
+msgstr "Nhập khẩu các dấu nhớ từ một tệp ở định dạng Mozilla"
+
+#: main.cpp:129
+#, kde-format
+msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
+msgstr "Nhập khẩu các dấu nhớ từ một tệp ở định dạng Netscape (4.x và sớm hơn)"
+
+#: main.cpp:130
+#, kde-format
+msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
+msgstr ""
+"Nhập khẩu các dấu nhớ từ một tệp ở định dạng Favorites của Internet Explorer"
+
+#: main.cpp:131
+#, kde-format
+msgid "Import bookmarks from a file in Opera format"
+msgstr "Nhập khẩu các dấu nhớ từ một tệp ở định dạng Opera"
+
+#: main.cpp:132
+#, kde-format
+msgid "Import bookmarks from a file in KDE2 format"
+msgstr "Nhập khẩu các dấu nhớ từ một tệp ở định dạng KDE2"
+
+#: main.cpp:133
+#, kde-format
+msgid "Import bookmarks from a file in Galeon format"
+msgstr "Nhập khẩu các dấu nhớ từ một tệp ở định dạng Galeon"
+
+#: main.cpp:134
+#, kde-format
+msgid "Export bookmarks to a file in Mozilla format"
+msgstr "Xuất khẩu các dấu nhớ ra một tệp ở định dạng Mozilla"
+
+#: main.cpp:135
+#, kde-format
+msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
+msgstr "Xuất khẩu các dấu nhớ ra một tệp ở định dạng Netscape (4.x và sớm hơn)"
+
+#: main.cpp:136
+#, kde-format
+msgid "Export bookmarks to a file in a printable HTML format"
+msgstr "Xuất khẩu các dấu nhớ ra một tệp ở định dạng HTML in được"
+
+#: main.cpp:137
+#, kde-format
+msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
+msgstr ""
+"Xuất khẩu các dấu nhớ ra một tệp ở định dạng Favorites của Internet Explorer"
+
+#: main.cpp:138
+#, kde-format
+msgid "Export bookmarks to a file in Opera format"
+msgstr "Xuất khẩu các dấu nhớ ra một tệp ở định dạng Opera"
+
+#: main.cpp:139
+#, kde-format
+msgid "Open at the given position in the bookmarks file"
+msgstr "Mở ở vị trí được đưa ra trong tệp dấu nhớ"
+
+#: main.cpp:140
+#, kde-format
+msgid "Set the user-readable caption, for example \"Konsole\""
+msgstr "Đặt phụ đề người dùng đọc được, ví dụ \"Konsole\""
+
+#: main.cpp:141
+#, kde-format
+msgid "Hide all browser related functions"
+msgstr "Ẩn tất cả các chức năng liên quan đến trình duyệt"
+
+#: main.cpp:142
+#, kde-format
+msgid ""
+"A unique name that represents this bookmark collection, usually the "
+"kinstance name.\n"
+"This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
+"KFileDialog bookmarks, etc.\n"
+"The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
+msgstr ""
+"Một tên độc nhất đại diện cho bộ dấu nhớ này, thường là tên của kinstance.\n"
+"Nó nên là \"konqueror\" cho các dấu nhớ Konqueror, \"kfile\" cho các dấu nhớ "
+"KFileDialog, v.v.\n"
+"Đường dẫn đến đối tượng D-Bus cuối cùng là /KBookmarkManager/<dbusObjectName>"
+
+#: main.cpp:146
+#, kde-format
+msgid "File to edit"
+msgstr "Tệp để sửa"
+
+#: main.cpp:229
+#, kde-format
+msgid "You may only specify a single --export option."
+msgstr "Bạn chỉ có thể chỉ định một lựa chọn --export duy nhất."
+
+#: main.cpp:236
+#, kde-format
+msgid "You may only specify a single --import option."
+msgstr "Bạn chỉ có thể chỉ định một lựa chọn --import duy nhất."
+
+#: testlink.cpp:73
+#, kde-format
+msgid "Checking..."
+msgstr "Đang kiểm tra..."

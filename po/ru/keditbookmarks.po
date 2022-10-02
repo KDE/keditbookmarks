@@ -1,0 +1,763 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Nick Shaforostoff <shaforostoff@kde.ru>, 2007.
+# Artem Sereda <overmind88@gmail.com>, 2008.
+# Andrey Cherepanov <skull@kde.ru>, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2010, 2011, 2017.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2019, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: keditbookmarks\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2021-02-02 09:47+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.12.1\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Олег Ключкин, Николай Шафоростов"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "oleg.kluchkin@gmail.com, shaforostoff@kde.ru"
+
+#: actionsimpl.cpp:98
+#, kde-format
+msgid "&Delete"
+msgstr "&Удалить"
+
+#: actionsimpl.cpp:104
+#, kde-format
+msgid "Rename"
+msgstr "Переименовать"
+
+#: actionsimpl.cpp:110
+#, kde-format
+msgid "C&hange Location"
+msgstr "Изменить &адрес"
+
+#: actionsimpl.cpp:116
+#, kde-format
+msgid "C&hange Comment"
+msgstr "Изменить &комментарий"
+
+#: actionsimpl.cpp:122
+#, kde-format
+msgid "Chan&ge Icon..."
+msgstr "Изменить &значок..."
+
+#: actionsimpl.cpp:126
+#, kde-format
+msgid "Update Favicon"
+msgstr "Обновить значок сайта"
+
+#: actionsimpl.cpp:130
+#, kde-format
+msgid "Recursive Sort"
+msgstr "Рекурсивная сортировка"
+
+#: actionsimpl.cpp:135
+#, kde-format
+msgid "&New Folder..."
+msgstr "&Создать папку..."
+
+#: actionsimpl.cpp:141
+#, kde-format
+msgid "&New Bookmark"
+msgstr "&Новая закладка"
+
+#: actionsimpl.cpp:145
+#, kde-format
+msgid "&Insert Separator"
+msgstr "&Вставить разделитель"
+
+#: actionsimpl.cpp:150
+#, kde-format
+msgid "&Sort Alphabetically"
+msgstr "&Сортировка по алфавиту"
+
+#: actionsimpl.cpp:155
+#, kde-format
+msgid "Set as T&oolbar Folder"
+msgstr "Сделать папкой &панели закладок"
+
+#: actionsimpl.cpp:159
+#, kde-format
+msgid "&Expand All Folders"
+msgstr "&Развернуть все папки"
+
+#: actionsimpl.cpp:163
+#, kde-format
+msgid "Collapse &All Folders"
+msgstr "&Свернуть все папки"
+
+#: actionsimpl.cpp:168
+#, kde-format
+msgid "&Open in Browser"
+msgstr "&Открыть в браузере"
+
+#: actionsimpl.cpp:173
+#, kde-format
+msgid "Check &Status"
+msgstr "Проверить &доступность"
+
+#: actionsimpl.cpp:177
+#, kde-format
+msgid "Check Status: &All"
+msgstr "Проверить: &все"
+
+#: actionsimpl.cpp:181
+#, kde-format
+msgid "Update All &Favicons"
+msgstr "Обновить все зна&чки сайтов"
+
+#: actionsimpl.cpp:185
+#, kde-format
+msgid "Cancel &Checks"
+msgstr "&Отменить проверку"
+
+#: actionsimpl.cpp:189
+#, kde-format
+msgid "Cancel &Favicon Updates"
+msgstr "Отменить о&бновление значков сайтов"
+
+#: actionsimpl.cpp:195
+#, kde-format
+msgid "Import &Netscape Bookmarks..."
+msgstr "Импорт закладок из &Netscape..."
+
+#: actionsimpl.cpp:201
+#, kde-format
+msgid "Import &Opera Bookmarks..."
+msgstr "Импорт закладок из &Opera..."
+
+#: actionsimpl.cpp:211
+#, kde-format
+msgid "Import &Galeon Bookmarks..."
+msgstr "Импорт закладок из &Galeon..."
+
+#: actionsimpl.cpp:217
+#, kde-format
+msgid "Import &KDE 2 or KDE 3 Bookmarks..."
+msgstr "Импорт закладок из &KDE 2 или KDE 3..."
+
+#: actionsimpl.cpp:223
+#, kde-format
+msgid "Import &Internet Explorer Bookmarks..."
+msgstr "Импорт закладок из &Internet Explorer"
+
+#: actionsimpl.cpp:229
+#, kde-format
+msgid "Import &Mozilla Bookmarks..."
+msgstr "Импорт закладок из &Mozilla..."
+
+#: actionsimpl.cpp:234
+#, kde-format
+msgid "Export &Netscape Bookmarks"
+msgstr "Экспорт закладок в &Netscape..."
+
+#: actionsimpl.cpp:239
+#, kde-format
+msgid "Export &Opera Bookmarks..."
+msgstr "Экспорт закладок в &Opera..."
+
+#: actionsimpl.cpp:244
+#, kde-format
+msgid "Export &HTML Bookmarks..."
+msgstr "Экспорт закладок в &HTML..."
+
+#: actionsimpl.cpp:248
+#, kde-format
+msgid "Export &Internet Explorer Bookmarks..."
+msgstr "Экспорт закладок в &Internet Explorer..."
+
+#: actionsimpl.cpp:253
+#, kde-format
+msgid "Export &Mozilla Bookmarks..."
+msgstr "Экспорт закладок в &Mozilla..."
+
+#: actionsimpl.cpp:298
+#, kde-format
+msgid "HTML Bookmark Listing (*.html)"
+msgstr "Закладки в HTML (*.html)"
+
+#: actionsimpl.cpp:343
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Cut Items"
+msgstr "вырезку объектов"
+
+#: actionsimpl.cpp:368
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "вставку"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgid "New folder:"
+msgstr "Новая папка:"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgctxt "@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Создание новой папки закладок"
+
+# BUGME: рекурсивную сортировку -> "включение рекурсивной сортировки"? (сортировка выполняется 1 раз, или же сортировка списка поддерживается?) --aspotashev
+#: actionsimpl.cpp:526
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Recursive Sort"
+msgstr "рекурсивную сортировку"
+
+#: actionsimpl.cpp:541
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Sort Alphabetically"
+msgstr "сортировку по алфавиту"
+
+#: actionsimpl.cpp:550
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Delete Items"
+msgstr "удаление объектов"
+
+#: bookmarkinfowidget.cpp:223
+#, kde-format
+msgid "Name:"
+msgstr "Название:"
+
+#: bookmarkinfowidget.cpp:230
+#, kde-format
+msgid "Location:"
+msgstr "Адрес:"
+
+#: bookmarkinfowidget.cpp:237
+#, kde-format
+msgid "Comment:"
+msgstr "Комментарий:"
+
+#: bookmarkinfowidget.cpp:243
+#, kde-format
+msgid "First viewed:"
+msgstr "Первый просмотр:"
+
+#: bookmarkinfowidget.cpp:246
+#, kde-format
+msgid "Viewed last:"
+msgstr "Последний просмотр:"
+
+#: bookmarkinfowidget.cpp:249
+#, kde-format
+msgid "Times visited:"
+msgstr "Количество посещений:"
+
+#: exporters.cpp:51
+#, kde-format
+msgid "My Bookmarks"
+msgstr "Закладки"
+
+#: favicons.cpp:54 testlink.cpp:94
+#, kde-format
+msgid "OK"
+msgstr "ОК"
+
+#: favicons.cpp:70
+#, kde-format
+msgid "Updating favicon..."
+msgstr "Обновление значка сайта..."
+
+#: faviconupdater.cpp:79
+#, kde-format
+msgid "%1; no HTML component found (%2)"
+msgstr "%1; не найдено компонента для работы с HTML (%2)"
+
+#: importers.cpp:57
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Import %1 Bookmarks"
+msgstr "импорт закладок %1"
+
+#: importers.cpp:62
+#, kde-format
+msgid "%1 Bookmarks"
+msgstr "Закладки %1"
+
+#: importers.cpp:99
+#, kde-format
+msgid "Import as a new subfolder or replace all the current bookmarks?"
+msgstr "Импортировать как новую папку или заменить все текущие закладки?"
+
+#: importers.cpp:100
+#, kde-format
+msgctxt "@title:window"
+msgid "%1 Import"
+msgstr "Импорт %1"
+
+#: importers.cpp:101
+#, kde-format
+msgid "As New Folder"
+msgstr "Как новую папку"
+
+#: importers.cpp:102
+#, kde-format
+msgid "Replace"
+msgstr "Заменить"
+
+#: importers.cpp:212
+#, kde-format
+msgid "Galeon Bookmark Files (*.xbel)"
+msgstr "Закладки Galeon (*.xbel)"
+
+#: importers.cpp:220
+#, kde-format
+msgid "KDE Bookmark Files (*.xml)"
+msgstr "Закладки KDE (*.xml)"
+
+#: importers.h:116
+#, kde-format
+msgid "Galeon"
+msgstr "Galeon"
+
+#: importers.h:131
+#, kde-format
+msgid "KDE"
+msgstr "KDE"
+
+#: importers.h:161
+#, kde-format
+msgid "Netscape"
+msgstr "Netscape"
+
+#: importers.h:176
+#, kde-format
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#: importers.h:191
+#, kde-format
+msgid "IE"
+msgstr "IE"
+
+#: importers.h:209
+#, kde-format
+msgid "Opera"
+msgstr "Opera"
+
+#: kbookmarkmerger.cpp:47
+#, kde-format
+msgid "KBookmarkMerger"
+msgstr "KBookmarkMerger"
+
+#: kbookmarkmerger.cpp:49
+#, kde-format
+msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
+msgstr "Объединяет закладки сторонних приложений с закладками пользователя"
+
+#: kbookmarkmerger.cpp:51
+#, kde-format
+msgid "Copyright © 2005 Frerich Raabe"
+msgstr "© Frerich Raabe, 2005"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Frerich Raabe"
+msgstr "Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Original author"
+msgstr "Первоначальный автор"
+
+#: kbookmarkmerger.cpp:57
+#, kde-format
+msgid "Directory to scan for extra bookmarks"
+msgstr "Каталог для поиска дополнительных закладок"
+
+#: kbookmarkmodel/commands.cpp:70
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Insert Separator"
+msgstr "вставку разделителя"
+
+#: kbookmarkmodel/commands.cpp:84
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Bookmark"
+msgstr "создание закладки"
+
+#: kbookmarkmodel/commands.cpp:98
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Folder"
+msgstr "создание папки"
+
+#: kbookmarkmodel/commands.cpp:111
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy %1"
+msgstr "копирование %1"
+
+#: kbookmarkmodel/commands.cpp:200
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Icon Change"
+msgstr "изменение значка"
+
+#: kbookmarkmodel/commands.cpp:202
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Title Change"
+msgstr "изменение названия"
+
+#: kbookmarkmodel/commands.cpp:204
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "URL Change"
+msgstr "изменение адреса"
+
+#: kbookmarkmodel/commands.cpp:206
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Comment Change"
+msgstr "изменение комментария"
+
+#: kbookmarkmodel/commands.cpp:365
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move %1"
+msgstr "перемещение %1"
+
+#: kbookmarkmodel/commands.cpp:500
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Set as Bookmark Toolbar"
+msgstr "показ на панели закладок"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy Items"
+msgstr "копирование объектов"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move Items"
+msgstr "перемещение объектов"
+
+#: kbookmarkmodel/model.cpp:122
+#, kde-format
+msgctxt "name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Закладки"
+
+#: kbookmarkmodel/model.cpp:217
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Name"
+msgstr "Название"
+
+#: kbookmarkmodel/model.cpp:220
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Location"
+msgstr "Адрес"
+
+#: kbookmarkmodel/model.cpp:223
+#, kde-format
+msgctxt "@title:column comment for a bookmark"
+msgid "Comment"
+msgstr "Комментарий"
+
+#: kbookmarkmodel/model.cpp:226
+#, kde-format
+msgctxt "@title:column status of a bookmark"
+msgid "Status"
+msgstr "Состояние"
+
+#: kebsearchline.cpp:239
+#, kde-format
+msgid "Search Columns"
+msgstr "Столбцы для поиска"
+
+#: kebsearchline.cpp:242
+#, kde-format
+msgid "All Visible Columns"
+msgstr "Все видимые столбцы"
+
+#: kebsearchline.cpp:250
+#, kde-format
+msgctxt "Column number %1"
+msgid "Column No. %1"
+msgstr "Столбец № %1"
+
+#: kebsearchline.cpp:615
+#, kde-format
+msgid "S&earch:"
+msgstr "&Поиск:"
+
+#. i18n: ectx: Menu (file)
+#: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "&Файл"
+
+#. i18n: ectx: Menu (edit)
+#: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
+#, kde-format
+msgid "&Edit"
+msgstr "&Правка"
+
+#. i18n: ectx: Menu (view)
+#: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
+#, kde-format
+msgid "&View"
+msgstr "&Вид"
+
+#. i18n: ectx: Menu (folder)
+#: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
+#, kde-format
+msgid "&Folder"
+msgstr "П&апка"
+
+#. i18n: ectx: Menu (bookmark)
+#: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
+#, kde-format
+msgid "&Bookmark"
+msgstr "&Закладка"
+
+#. i18n: ectx: Menu (settings)
+#: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
+#, kde-format
+msgid "&Settings"
+msgstr "&Настройка"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Основная панель инструментов"
+
+#. i18n: ectx: Menu (import)
+#: keditbookmarksui.rc:11
+#, kde-format
+msgid "&Import"
+msgstr "&Импорт"
+
+#. i18n: ectx: Menu (export)
+#: keditbookmarksui.rc:21
+#, kde-format
+msgid "&Export"
+msgstr "&Экспорт"
+
+#. i18n: ectx: Menu (tools)
+#: keditbookmarksui.rc:67
+#, kde-format
+msgid "&Tools"
+msgstr "С&ервис"
+
+#: main.cpp:68
+#, kde-format
+msgid ""
+"Another instance of %1 is already running. Do you really want to open "
+"another instance or continue work in the same instance?\n"
+"Please note that, unfortunately, duplicate views are read-only."
+msgstr ""
+"Запущен ещё один экземпляр %1. Вы хотите запустить ещё один экземпляр или "
+"продолжить работать в первом?\n"
+"Учтите, что новые экземпляры запускаются в режиме только для чтения."
+
+#: main.cpp:72
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning"
+msgstr "Предупреждение"
+
+#: main.cpp:73
+#, kde-format
+msgid "Run Another"
+msgstr "Запустить второй"
+
+#: main.cpp:74
+#, kde-format
+msgid "Continue in Same"
+msgstr "Работать с уже открытым"
+
+#: main.cpp:112
+#, kde-format
+msgid "Bookmark Editor"
+msgstr "Редактор закладок"
+
+#: main.cpp:114
+#, kde-format
+msgid "Bookmark Organizer and Editor"
+msgstr "Управление закладками"
+
+#: main.cpp:116
+#, kde-format
+msgid "Copyright 2000-2017, KDE developers"
+msgstr "© Разработчики KDE, 2000-2017"
+
+#: main.cpp:117
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: main.cpp:117
+#, kde-format
+msgid "Initial author"
+msgstr "Первоначальный автор"
+
+#: main.cpp:118
+#, kde-format
+msgid "Alexander Kellett"
+msgstr "Alexander Kellett"
+
+#: main.cpp:118
+#, kde-format
+msgid "Author"
+msgstr "Автор"
+
+#: main.cpp:128
+#, kde-format
+msgid "Import bookmarks from a file in Mozilla format"
+msgstr "Импорт закладок из файла в формате Mozilla"
+
+#: main.cpp:129
+#, kde-format
+msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
+msgstr "Импорт закладок из файла в формате Netscape (4.x и ранее)"
+
+#: main.cpp:130
+#, kde-format
+msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
+msgstr "Импорт закладок из файла в формате Internet Explorer"
+
+#: main.cpp:131
+#, kde-format
+msgid "Import bookmarks from a file in Opera format"
+msgstr "Импорт закладок из файла в формате Opera"
+
+#: main.cpp:132
+#, kde-format
+msgid "Import bookmarks from a file in KDE2 format"
+msgstr "Импортировать закладки из файла в формате KDE2"
+
+#: main.cpp:133
+#, kde-format
+msgid "Import bookmarks from a file in Galeon format"
+msgstr "Импортировать закладки из файла в формате Galeon"
+
+#: main.cpp:134
+#, kde-format
+msgid "Export bookmarks to a file in Mozilla format"
+msgstr "Экспорт закладок в файл в формате Mozilla"
+
+#: main.cpp:135
+#, kde-format
+msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
+msgstr "Экспорт закладок в файл в формате Netscape (4.x и ранее)"
+
+#: main.cpp:136
+#, kde-format
+msgid "Export bookmarks to a file in a printable HTML format"
+msgstr "Экспорт закладок в файл в HTML-формате для печати"
+
+#: main.cpp:137
+#, kde-format
+msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
+msgstr "Экспорт закладок в файл в формате Internet Explorer"
+
+#: main.cpp:138
+#, kde-format
+msgid "Export bookmarks to a file in Opera format"
+msgstr "Экспорт закладок в файл в формате Opera"
+
+#: main.cpp:139
+#, kde-format
+msgid "Open at the given position in the bookmarks file"
+msgstr "Открыть указанную позиция в файле закладок"
+
+#: main.cpp:140
+#, kde-format
+msgid "Set the user-readable caption, for example \"Konsole\""
+msgstr "Укажите заголовок, например «Терминал»"
+
+#: main.cpp:141
+#, kde-format
+msgid "Hide all browser related functions"
+msgstr "Скрыть все функции, связанные с браузером"
+
+#: main.cpp:142
+#, kde-format
+msgid ""
+"A unique name that represents this bookmark collection, usually the "
+"kinstance name.\n"
+"This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
+"KFileDialog bookmarks, etc.\n"
+"The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
+msgstr ""
+"Уникальное имя, связанное с этой коллекцией закладок, обычно это \n"
+"имя приложения. Например, «konqueror» для закладок Konqueror, \n"
+"«kfile» для закладок диалога файлов и так далее.\n"
+"Полный путь к объекту D-Bus: /KBookmarkManager/<имя объекта DBus>"
+
+#: main.cpp:146
+#, kde-format
+msgid "File to edit"
+msgstr "Файл для редактирования"
+
+#: main.cpp:229
+#, kde-format
+msgid "You may only specify a single --export option."
+msgstr "Возможно указание только одного аргумента для --export."
+
+#: main.cpp:236
+#, kde-format
+msgid "You may only specify a single --import option."
+msgstr "Возможно указание только одного аргумента для --import."
+
+#: testlink.cpp:73
+#, kde-format
+msgid "Checking..."
+msgstr "Проверка..."
+
+#~ msgid "Import All &Crash Sessions as Bookmarks..."
+#~ msgstr "Импорт всех некорректно завершённых &сеансов как закладок..."
+
+#~ msgid "No favicon found"
+#~ msgstr "Значки не найдены"
+
+#~ msgid "Local file"
+#~ msgstr "Локальный файл"
+
+#~ msgid "Crashes"
+#~ msgstr "Сбои"
+
+#~ msgid "Bookmark"
+#~ msgstr "Закладка"
+
+#~ msgid "URL"
+#~ msgstr "адреса"
+
+#~ msgid "Icon"
+#~ msgstr "значка"
+
+#~ msgid "Title"
+#~ msgstr "названия"

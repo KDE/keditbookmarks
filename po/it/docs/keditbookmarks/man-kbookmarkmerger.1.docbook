@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Italian "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Manuale utente di kbookmarkmerger</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>07/11/2016</date>
+	<releaseinfo
+>Applications 16.12</releaseinfo>
+	<productname
+>KDE Applications</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Un programma per fondere un insieme specifico di segnalibri con la lista dei segnalibri dell'utente.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>cartella</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Descrizione</title>
+<para
+>&kbookmarkmerger; è un programma per l'integrazione di una raccolta di segnalibri con la raccolta di segnalibri dell'utente; se l'utente non ha ancora creato dei segnalibri verrà creato un nuovo elenco, nel quale verrà inserita la raccolta di segnalibri fornita. Mentre fa questo, &kbookmarkmerger; tiene traccia di quali file sono già stati integrati nelle precedenti esecuzioni, in modo che i segnalibri non vengano installati nella raccolta dell'utente più di una volta.</para>
+
+<para
+>L'approccio usato tradizionalmente per ottenere qualcosa di simile a questo era usare degli scheletri di cartelle home confezionati con cura alla creazione degli account utente; essi fornivano agli utenti una raccolta standard di segnalibri. Il problema, però, è che una volta che l'account è stato creato, non è possibile propagare le modifiche ai segnalibri.</para>
+
+<para
+>Questo meccanismo è utile agli amministratori di sistema che vogliano propagare a tutti gli utenti un segnalibro che fa riferimento ad un certo documento (ad esempio delle note importanti sul sistema). Anche i distributori possono trovarlo utile, ad esempio per integrare i pacchetti software che forniscono con dei file di segnalibri da integrare mediante &kbookmarkmerger; nell'elenco dei segnalibri dell'utente durante l'installazione del pacchetto. In questo modo, la documentazione fornita con un pacchetto software è facilmente e visibilmente accessibile subito dopo che esso è stato installato.</para>
+
+<para
+>L'unico parametro richiesto da &kbookmarkmerger; è il nome della cartella in cui cercare i file dei segnalibri; tutti i file nella cartella data saranno presi in considerazione per l'integrazione nella configurazione dell'utente. I file nella cartella fornita devono essere file <acronym
+>XBEL</acronym
+> validi.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Vedi anche</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>Il manuale di &konqueror;</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Esempi</title>
+<screen
+>joe@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Integra tutti i file di segnalibri conservati sotto <filename
+>/usr/local/extra-bookmarks</filename
+> nell'elenco dei segnalibri di joe.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standard</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+>Specifiche <acronym
+>XBEL</acronym
+></ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Limitazioni</title>
+<para
+>Per determinare se un file di segnalibri è già stato integrato fra i segnalibri dell'utente, &kbookmarkmerger; controlla semplicemente il nome del file, mentre il contenuto non viene controllato. Ciò significa che il cambiamento di un file di segnalibri che è già stato integrato non farà scattare una nuova integrazione.</para>
+
+<para
+>Tieni inoltre presente che nel caso in cui un utente modifichi un segnalibro che è stato integrato nella sua configurazione, il file dei segnalibri originali rimarrà invariato.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Autore</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>

@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Norwegian-Bokmal "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>KDE brukerhåndbok</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>1. februar 2005</date>
+	<productname
+>KDE skrivebordsmiljø</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Et program som fletter en gitt bokmerkeliste inn i brukerens bokmerkeliste.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="opt" rep="repeat"
+>Qt-valg</arg
+> <arg choice="opt" rep="repeat"
+>KDE-valg</arg
+> <arg choice="req"
+>mappe</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beskrivelse</title>
+<para
+>&kbookmarkmerger; er et program som fletter en gitt bokmerkeliste inn i brukerens bokmerker. Hvis brukeren ikke har noen bokmerker ennå blir det opprettet en ny bokmerkeliste og de gitte bokmerkene blir satt inn i lista. Mens flettingen skjer holder &kbookmarkmerger; styr på hvilke filer som er blitt flettet inn i tidligere kjøringer, så ingen bokmerker blir lagt inn i brukerens bokmerkeliste mer enn én gang. Hvis &kde; kjører mens &kbookmarkmerger; kjøres får &kde;s bokmerkesystem vite om alle endringer i brukerens bokmerker, slik at alle programmer som bruker denne informasjonen (dvs. &konqueror;) får tak i endringene øyeblikkelig.</para>
+
+<para
+>Den tradisjonelle måten å forsøke å ordne noe slikt var å bruke nøye oppbygde strukturer for hjemmemapper når nye brukere ble opprettet, slik at brukeren fikk en standard bokmerkeliste. Problemet med dette er at etter at brukerkontoen er opprettet kan ikke nye bokmerker spres til brukerne.</para>
+
+<para
+>Denne mekanismen er til nytte for systemadministratorer som vil dele ut et bokmerke som peker på et bestemt dokument (viktige merknader om systemet, for eksempel). Distributører kan også dra nytte av det, for eksempel ved å legge til bokmerkefiler i programpakkene de leverer, som &kbookmarkmerger; fletter inn i brukerens bokmerkeliste når pakka installeres. På den måten kan dokumentasjon som leveres med en programpakke lett finnes og vises straks etter at pakka er installert.</para>
+
+<para
+>Den eneste parameteren som &kbookmarkmerger; trenger er navnet på en mappe som skal gjennomsøkes etter bpkmerkefiler. Alle filer i den oppgitte mappa blir undersøkt etter bokmerker som skal flettes inn i brukerens oppsett. Filene i mappa skal være gyldige <acronym
+>XBEL</acronym
+>-filer.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Se også</title>
+<para
+><ulink url="help:/konqueror/index.html"
+>&konqueror;-håndboka</ulink
+></para>
+</refsect1>
+
+<refsect1>
+<title
+>Eksempler</title>
+<screen
+>espen@nusse:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Fletter alle bokmerker lagret i <filename
+>/usr/local/extra-bookmarks</filename
+> inn i espens bokmerkeliste.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standarder</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+><acronym
+>XBEL</acronym
+>-spesifikasjon</ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Restriksjoner</title>
+<para
+>Når det skal bestemmes om en gitt bokmerkefil alt er blitt flettet inn i brukerens liste eller ikke, så ser &kbookmarkmerger; bare på filnavnet til bokmerkefila ‒ innholdet sjekkes ikke i det hele tatt. Dette betyr at om en bokmerkefil blir endret etter at den er flettet inn i en brukers bokmerker, så blir ikke ny fletting utløst igjen.</para>
+
+<para
+>Merk også at hvis en bruker endrer et bokmerke som ble flettet inn i hans oppsett, så blir den opprinnelige bokmerkefila uendret.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Forfatter</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>
+

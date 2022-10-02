@@ -1,0 +1,802 @@
+# translation of keditbookmarks.po to Belarusian Latin
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: keditbookmarks\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2008-10-04 23:44+0300\n"
+"Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
+"Language-Team: Belarusian Latin <i18n@mova.org>\n"
+"Language: be@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+"%100>=11 && n%100<=14 ? 2 : 3);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Ihar Hračyška"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ihar.hrachyshka@gmail.com"
+
+#: actionsimpl.cpp:98
+#, kde-format
+msgid "&Delete"
+msgstr "&Vydali"
+
+#: actionsimpl.cpp:104
+#, kde-format
+msgid "Rename"
+msgstr "Źmiani nazvu"
+
+#: actionsimpl.cpp:110
+#, fuzzy, kde-format
+#| msgid "C&hange URL"
+msgid "C&hange Location"
+msgstr "&Źmiani adras"
+
+#: actionsimpl.cpp:116
+#, kde-format
+msgid "C&hange Comment"
+msgstr "&Źmiani kamentar"
+
+#: actionsimpl.cpp:122
+#, kde-format
+msgid "Chan&ge Icon..."
+msgstr "&Źmiani ikonu..."
+
+#: actionsimpl.cpp:126
+#, kde-format
+msgid "Update Favicon"
+msgstr "Aktualizuj ikonu sajta"
+
+#: actionsimpl.cpp:130
+#, kde-format
+msgid "Recursive Sort"
+msgstr "Rekursiŭny paradak"
+
+#: actionsimpl.cpp:135
+#, kde-format
+msgid "&New Folder..."
+msgstr "&Novy kataloh..."
+
+#: actionsimpl.cpp:141
+#, kde-format
+msgid "&New Bookmark"
+msgstr "&Novaja zakładka"
+
+#: actionsimpl.cpp:145
+#, kde-format
+msgid "&Insert Separator"
+msgstr "&Uklej dzielnik"
+
+#: actionsimpl.cpp:150
+#, kde-format
+msgid "&Sort Alphabetically"
+msgstr "&Paradkuj pavodle alfabetu"
+
+#: actionsimpl.cpp:155
+#, kde-format
+msgid "Set as T&oolbar Folder"
+msgstr "&Źmiaści ŭ paneli zakładak"
+
+#: actionsimpl.cpp:159
+#, kde-format
+msgid "&Expand All Folders"
+msgstr "&Razharni ŭsie katalohi"
+
+#: actionsimpl.cpp:163
+#, kde-format
+msgid "Collapse &All Folders"
+msgstr "Zharni &ŭsie katalohi"
+
+#: actionsimpl.cpp:168
+#, fuzzy, kde-format
+#| msgid "&Open in Konqueror"
+msgid "&Open in Browser"
+msgstr "&Adčyni ŭ prahramie „Konqueror”"
+
+#: actionsimpl.cpp:173
+#, kde-format
+msgid "Check &Status"
+msgstr "Spraŭdź &stan"
+
+#: actionsimpl.cpp:177
+#, kde-format
+msgid "Check Status: &All"
+msgstr "Spraŭdź stan dla &ŭsich"
+
+#: actionsimpl.cpp:181
+#, kde-format
+msgid "Update All &Favicons"
+msgstr "Aktualizuj usie &ikony sajtaŭ"
+
+#: actionsimpl.cpp:185
+#, kde-format
+msgid "Cancel &Checks"
+msgstr "Anuluj &spraŭdžvańni"
+
+#: actionsimpl.cpp:189
+#, kde-format
+msgid "Cancel &Favicon Updates"
+msgstr "Anuluj &aktualizacyju ikonaŭ sajtaŭ"
+
+#: actionsimpl.cpp:195
+#, kde-format
+msgid "Import &Netscape Bookmarks..."
+msgstr "Zimpartuj zakładki „&Netscape”..."
+
+#: actionsimpl.cpp:201
+#, kde-format
+msgid "Import &Opera Bookmarks..."
+msgstr "Zimpartuj zakładki „&Opera”..."
+
+#: actionsimpl.cpp:211
+#, kde-format
+msgid "Import &Galeon Bookmarks..."
+msgstr "Zimpartuj zakładki „&Galeon”..."
+
+#: actionsimpl.cpp:217
+#, kde-format
+msgid "Import &KDE 2 or KDE 3 Bookmarks..."
+msgstr "Zimpartuj zakładki „&KDE 2” ci „KDE 3”..."
+
+#: actionsimpl.cpp:223
+#, kde-format
+msgid "Import &Internet Explorer Bookmarks..."
+msgstr "Zimpartuj zakładki „&Internet Explorer”..."
+
+#: actionsimpl.cpp:229
+#, kde-format
+msgid "Import &Mozilla Bookmarks..."
+msgstr "Zimpartuj zakładki „&Mozilla”..."
+
+#: actionsimpl.cpp:234
+#, kde-format
+msgid "Export &Netscape Bookmarks"
+msgstr "Zekspartuj zakładki „&Netscape”"
+
+#: actionsimpl.cpp:239
+#, kde-format
+msgid "Export &Opera Bookmarks..."
+msgstr "Zekspartuj zakładki „&Opera”..."
+
+#: actionsimpl.cpp:244
+#, kde-format
+msgid "Export &HTML Bookmarks..."
+msgstr "Zekspartuj zakładki „&HTML”..."
+
+#: actionsimpl.cpp:248
+#, kde-format
+msgid "Export &Internet Explorer Bookmarks..."
+msgstr "Zekspartuj zakładki „&Internet Explorer”..."
+
+#: actionsimpl.cpp:253
+#, kde-format
+msgid "Export &Mozilla Bookmarks..."
+msgstr "Zekspartuj zakładki „&Mozilla”..."
+
+#: actionsimpl.cpp:298
+#, fuzzy, kde-format
+#| msgid "*.html|HTML Bookmark Listing"
+msgid "HTML Bookmark Listing (*.html)"
+msgstr "*.html|Śpis zakładak u farmacie „HTML”"
+
+#: actionsimpl.cpp:343
+#, fuzzy, kde-format
+#| msgid "Cut Items"
+msgctxt "(qtundo-format)"
+msgid "Cut Items"
+msgstr "Vytni elementy"
+
+#: actionsimpl.cpp:368
+#, fuzzy, kde-format
+#| msgid "Paste"
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "Uklej"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgid "New folder:"
+msgstr "Novy kataloh:"
+
+#: actionsimpl.cpp:379
+#, fuzzy, kde-format
+#| msgid "Create New Bookmark Folder"
+msgctxt "@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Stvary novy kataloh dla zakładak"
+
+#: actionsimpl.cpp:526
+#, fuzzy, kde-format
+#| msgid "Recursive Sort"
+msgctxt "(qtundo-format)"
+msgid "Recursive Sort"
+msgstr "Rekursiŭny paradak"
+
+#: actionsimpl.cpp:541
+#, fuzzy, kde-format
+#| msgid "Sort Alphabetically"
+msgctxt "(qtundo-format)"
+msgid "Sort Alphabetically"
+msgstr "Paradkuj pavodle alfabetu"
+
+#: actionsimpl.cpp:550
+#, fuzzy, kde-format
+#| msgid "Delete Items"
+msgctxt "(qtundo-format)"
+msgid "Delete Items"
+msgstr "Vydali elementy"
+
+#: bookmarkinfowidget.cpp:223
+#, kde-format
+msgid "Name:"
+msgstr "Nazva:"
+
+#: bookmarkinfowidget.cpp:230
+#, kde-format
+msgid "Location:"
+msgstr "Miesca:"
+
+#: bookmarkinfowidget.cpp:237
+#, kde-format
+msgid "Comment:"
+msgstr "Kamentar:"
+
+#: bookmarkinfowidget.cpp:243
+#, kde-format
+msgid "First viewed:"
+msgstr "Pieršy prahlad:"
+
+#: bookmarkinfowidget.cpp:246
+#, kde-format
+msgid "Viewed last:"
+msgstr "Apošni prahlad:"
+
+#: bookmarkinfowidget.cpp:249
+#, kde-format
+msgid "Times visited:"
+msgstr "Kolkaść naviedvańniaŭ:"
+
+#: exporters.cpp:51
+#, kde-format
+msgid "My Bookmarks"
+msgstr "Maje zakładki"
+
+#: favicons.cpp:54 testlink.cpp:94
+#, kde-format
+msgid "OK"
+msgstr "Ok"
+
+#: favicons.cpp:70
+#, kde-format
+msgid "Updating favicon..."
+msgstr "Aktualizacyja ikony sajta..."
+
+#: faviconupdater.cpp:79
+#, kde-format
+msgid "%1; no HTML component found (%2)"
+msgstr ""
+
+#: importers.cpp:57
+#, fuzzy, kde-format
+#| msgid "Import %1 Bookmarks"
+msgctxt "(qtundo-format)"
+msgid "Import %1 Bookmarks"
+msgstr "Zimpartuj zakładki „%1”"
+
+#: importers.cpp:62
+#, kde-format
+msgid "%1 Bookmarks"
+msgstr "Zakładki „%1”"
+
+#: importers.cpp:99
+#, kde-format
+msgid "Import as a new subfolder or replace all the current bookmarks?"
+msgstr "Zimpartavać jak novy padkataloh albo zamianić usie dziejnyja zakładki?"
+
+#: importers.cpp:100
+#, fuzzy, kde-format
+#| msgid "%1 Import"
+msgctxt "@title:window"
+msgid "%1 Import"
+msgstr "Impartavańnie „%1”"
+
+#: importers.cpp:101
+#, kde-format
+msgid "As New Folder"
+msgstr "Jak novy kataloh"
+
+#: importers.cpp:102
+#, kde-format
+msgid "Replace"
+msgstr "Zamiani"
+
+#: importers.cpp:212
+#, fuzzy, kde-format
+#| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
+msgid "Galeon Bookmark Files (*.xbel)"
+msgstr "*.xbel|Fajły zakładak „Galeon” (*.xbel)"
+
+#: importers.cpp:220
+#, fuzzy, kde-format
+#| msgid "*.xml|KDE Bookmark Files (*.xml)"
+msgid "KDE Bookmark Files (*.xml)"
+msgstr "*.xml|Fajły zakładak „KDE” (*.xml)"
+
+#: importers.h:116
+#, kde-format
+msgid "Galeon"
+msgstr "Galeon"
+
+#: importers.h:131
+#, kde-format
+msgid "KDE"
+msgstr "KDE"
+
+#: importers.h:161
+#, kde-format
+msgid "Netscape"
+msgstr "Netscape"
+
+#: importers.h:176
+#, kde-format
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#: importers.h:191
+#, kde-format
+msgid "IE"
+msgstr "IE"
+
+#: importers.h:209
+#, kde-format
+msgid "Opera"
+msgstr "Opera"
+
+#: kbookmarkmerger.cpp:47
+#, kde-format
+msgid "KBookmarkMerger"
+msgstr "KBookmarkMerger"
+
+#: kbookmarkmerger.cpp:49
+#, kde-format
+msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
+msgstr ""
+"Źmiaščaje zakładki, zainstalavanyja inšymi asobami, u schoviščy karystańnika"
+
+#: kbookmarkmerger.cpp:51
+#, kde-format
+msgid "Copyright © 2005 Frerich Raabe"
+msgstr "Copyright © 2005 Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Frerich Raabe"
+msgstr "Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Original author"
+msgstr "Pieršy aŭtar"
+
+#: kbookmarkmerger.cpp:57
+#, kde-format
+msgid "Directory to scan for extra bookmarks"
+msgstr "Kataloh, dzie treba šukać dadatkovyja zakładki"
+
+#: kbookmarkmodel/commands.cpp:70
+#, fuzzy, kde-format
+#| msgid "Insert Separator"
+msgctxt "(qtundo-format)"
+msgid "Insert Separator"
+msgstr "Uklej dzielnik"
+
+#: kbookmarkmodel/commands.cpp:84
+#, fuzzy, kde-format
+#| msgid "Create Bookmark"
+msgctxt "(qtundo-format)"
+msgid "Create Bookmark"
+msgstr "Stvary zakładku"
+
+#: kbookmarkmodel/commands.cpp:98
+#, fuzzy, kde-format
+#| msgid "Create Folder"
+msgctxt "(qtundo-format)"
+msgid "Create Folder"
+msgstr "Stvary kataloh"
+
+#: kbookmarkmodel/commands.cpp:111
+#, fuzzy, kde-format
+#| msgid "Copy %1"
+msgctxt "(qtundo-format)"
+msgid "Copy %1"
+msgstr "Skapijuj „%1”"
+
+#: kbookmarkmodel/commands.cpp:200
+#, fuzzy, kde-format
+#| msgid "%1 Change"
+msgctxt "(qtundo-format)"
+msgid "Icon Change"
+msgstr "Źmiena „%1”"
+
+#: kbookmarkmodel/commands.cpp:202
+#, fuzzy, kde-format
+#| msgid "%1 Change"
+msgctxt "(qtundo-format)"
+msgid "Title Change"
+msgstr "Źmiena „%1”"
+
+#: kbookmarkmodel/commands.cpp:204
+#, fuzzy, kde-format
+#| msgid "%1 Change"
+msgctxt "(qtundo-format)"
+msgid "URL Change"
+msgstr "Źmiena „%1”"
+
+#: kbookmarkmodel/commands.cpp:206
+#, fuzzy, kde-format
+#| msgid "Comment"
+msgctxt "(qtundo-format)"
+msgid "Comment Change"
+msgstr "Kamentar"
+
+#: kbookmarkmodel/commands.cpp:365
+#, fuzzy, kde-format
+#| msgid "Move %1"
+msgctxt "(qtundo-format)"
+msgid "Move %1"
+msgstr "Pieraniasi „%1”"
+
+#: kbookmarkmodel/commands.cpp:500
+#, fuzzy, kde-format
+#| msgid "Set as Bookmark Toolbar"
+msgctxt "(qtundo-format)"
+msgid "Set as Bookmark Toolbar"
+msgstr "Źmiaści ŭ paneli zakładak"
+
+#: kbookmarkmodel/commands.cpp:532
+#, fuzzy, kde-format
+#| msgid "Copy Items"
+msgctxt "(qtundo-format)"
+msgid "Copy Items"
+msgstr "Skapijuj"
+
+#: kbookmarkmodel/commands.cpp:532
+#, fuzzy, kde-format
+#| msgid "Move Items"
+msgctxt "(qtundo-format)"
+msgid "Move Items"
+msgstr "Pieraniasi"
+
+#: kbookmarkmodel/model.cpp:122
+#, fuzzy, kde-format
+#| msgid "Bookmarks"
+msgctxt "name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Zakładki"
+
+#: kbookmarkmodel/model.cpp:217
+#, fuzzy, kde-format
+#| msgid "Name:"
+msgctxt "@title:column name of a bookmark"
+msgid "Name"
+msgstr "Nazva:"
+
+#: kbookmarkmodel/model.cpp:220
+#, fuzzy, kde-format
+#| msgid "Location:"
+msgctxt "@title:column name of a bookmark"
+msgid "Location"
+msgstr "Miesca:"
+
+#: kbookmarkmodel/model.cpp:223
+#, fuzzy, kde-format
+#| msgid "Comment"
+msgctxt "@title:column comment for a bookmark"
+msgid "Comment"
+msgstr "Kamentar"
+
+#: kbookmarkmodel/model.cpp:226
+#, fuzzy, kde-format
+#| msgid "Status"
+msgctxt "@title:column status of a bookmark"
+msgid "Status"
+msgstr "Stan"
+
+#: kebsearchline.cpp:239
+#, kde-format
+msgid "Search Columns"
+msgstr "Słupki pošuku"
+
+#: kebsearchline.cpp:242
+#, kde-format
+msgid "All Visible Columns"
+msgstr "Usie vidočnyja słupki"
+
+#: kebsearchline.cpp:250
+#, kde-format
+msgctxt "Column number %1"
+msgid "Column No. %1"
+msgstr "Słupok %1"
+
+#: kebsearchline.cpp:615
+#, kde-format
+msgid "S&earch:"
+msgstr "&Šukaj:"
+
+#. i18n: ectx: Menu (file)
+#: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "&Fajł"
+
+#. i18n: ectx: Menu (edit)
+#: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
+#, kde-format
+msgid "&Edit"
+msgstr "&Redahuj"
+
+#. i18n: ectx: Menu (view)
+#: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
+#, kde-format
+msgid "&View"
+msgstr "&Vyhlad"
+
+#. i18n: ectx: Menu (folder)
+#: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
+#, kde-format
+msgid "&Folder"
+msgstr "&Kataloh"
+
+#. i18n: ectx: Menu (bookmark)
+#: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
+#, kde-format
+msgid "&Bookmark"
+msgstr "&Zakładka"
+
+#. i18n: ectx: Menu (settings)
+#: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
+#, kde-format
+msgid "&Settings"
+msgstr "&Nałady"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Hałoŭnaja panel pryładździa"
+
+#. i18n: ectx: Menu (import)
+#: keditbookmarksui.rc:11
+#, kde-format
+msgid "&Import"
+msgstr "&Zimpartuj"
+
+#. i18n: ectx: Menu (export)
+#: keditbookmarksui.rc:21
+#, kde-format
+msgid "&Export"
+msgstr "&Zekspartuj"
+
+#. i18n: ectx: Menu (tools)
+#: keditbookmarksui.rc:67
+#, kde-format
+msgid "&Tools"
+msgstr "&Pryładździe"
+
+#: main.cpp:68
+#, kde-format
+msgid ""
+"Another instance of %1 is already running. Do you really want to open "
+"another instance or continue work in the same instance?\n"
+"Please note that, unfortunately, duplicate views are read-only."
+msgstr ""
+"Užo pracuje inšaja kopija prahramy „%1”. Sapraŭdy treba adčynić inšuju "
+"kopiju albo praciahvać pracavać u toj samaj kopii?\n"
+"Nažal, paŭtornyja kopii dastupnyja tolki dla čytańnia."
+
+#: main.cpp:72
+#, fuzzy, kde-format
+#| msgid "Warning"
+msgctxt "@title:window"
+msgid "Warning"
+msgstr "Uvaha"
+
+#: main.cpp:73
+#, kde-format
+msgid "Run Another"
+msgstr "Uklučy inšuju kopiju"
+
+#: main.cpp:74
+#, kde-format
+msgid "Continue in Same"
+msgstr "Praciahvaj u toj samaj kopii"
+
+#: main.cpp:112
+#, kde-format
+msgid "Bookmark Editor"
+msgstr "Redaktar zakładak"
+
+#: main.cpp:114
+#, kde-format
+msgid "Bookmark Organizer and Editor"
+msgstr "Kiraŭnik i redaktar zakładak"
+
+#: main.cpp:116
+#, fuzzy, kde-format
+#| msgid "Copyright 2000-2007, KDE developers"
+msgid "Copyright 2000-2017, KDE developers"
+msgstr "Copyright © 2000-2007, Raspracoŭniki KDE"
+
+#: main.cpp:117
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: main.cpp:117
+#, kde-format
+msgid "Initial author"
+msgstr "Pieršy aŭtar"
+
+#: main.cpp:118
+#, kde-format
+msgid "Alexander Kellett"
+msgstr "Alexander Kellett"
+
+#: main.cpp:118
+#, kde-format
+msgid "Author"
+msgstr "Aŭtar"
+
+#: main.cpp:128
+#, kde-format
+msgid "Import bookmarks from a file in Mozilla format"
+msgstr "Zimpartuj zakładki z fajła ŭ farmacie „Mozilla”"
+
+#: main.cpp:129
+#, kde-format
+msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
+msgstr ""
+"Zimpartuj zakładki z fajła ŭ farmacie „Netscape” (4.x ci raniejšaj versii)"
+
+#: main.cpp:130
+#, kde-format
+msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
+msgstr "Zimpartuj zakładki z fajła ŭ farmacie „Internet Explorer”"
+
+#: main.cpp:131
+#, kde-format
+msgid "Import bookmarks from a file in Opera format"
+msgstr "Zimpartuj zakładki z fajła ŭ farmacie „Opera”"
+
+#: main.cpp:132
+#, fuzzy, kde-format
+#| msgid "Import bookmarks from a file in Opera format"
+msgid "Import bookmarks from a file in KDE2 format"
+msgstr "Zimpartuj zakładki z fajła ŭ farmacie „Opera”"
+
+#: main.cpp:133
+#, fuzzy, kde-format
+#| msgid "Import bookmarks from a file in Opera format"
+msgid "Import bookmarks from a file in Galeon format"
+msgstr "Zimpartuj zakładki z fajła ŭ farmacie „Opera”"
+
+#: main.cpp:134
+#, kde-format
+msgid "Export bookmarks to a file in Mozilla format"
+msgstr "Zekspartuj zakładki ŭ fajł u farmacie „Mozilla”"
+
+#: main.cpp:135
+#, kde-format
+msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
+msgstr ""
+"Zekspartuj zakładki ŭ fajł u farmacie „Netscape” (4.x ci raniejšaj versii)"
+
+#: main.cpp:136
+#, kde-format
+msgid "Export bookmarks to a file in a printable HTML format"
+msgstr ""
+"Zekspartuj zakładki ŭ fajł u farmacie „HTML”, padrychtavanym dla vydruku"
+
+#: main.cpp:137
+#, kde-format
+msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
+msgstr "Zekspartuj zakładki ŭ fajł u farmacie „Internet Explorer”"
+
+#: main.cpp:138
+#, kde-format
+msgid "Export bookmarks to a file in Opera format"
+msgstr "Zekspartuj zakładki ŭ fajł u farmacie „Opera”"
+
+#: main.cpp:139
+#, kde-format
+msgid "Open at the given position in the bookmarks file"
+msgstr "Adčyni ŭ peŭnym miescy fajła z zakładkami"
+
+#: main.cpp:140
+#, kde-format
+msgid "Set the user-readable caption, for example \"Konsole\""
+msgstr "Aznač podpis, naprykład, „Konsole”"
+
+#: main.cpp:141
+#, kde-format
+msgid "Hide all browser related functions"
+msgstr "Schavaj usie aperacyi, źviazanyja z hartańniem sieciva"
+
+#: main.cpp:142
+#, fuzzy, kde-format
+#| msgid ""
+#| "A unique name that represents this bookmark collection, usually the "
+#| "kinstance name.\n"
+#| "This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
+#| "KFileDialog bookmarks, etc.\n"
+#| "The final DBus object path is /KBookmarkManager/dbusObjectName"
+msgid ""
+"A unique name that represents this bookmark collection, usually the "
+"kinstance name.\n"
+"This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
+"KFileDialog bookmarks, etc.\n"
+"The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
+msgstr ""
+"Niepaŭtornaja nazva, jakaja identyfikuje hety zbor zakładak, zvyčajna heta "
+"nazva „kinstance”.\n"
+"Heta „konqueror” dla zakładak prahramy „Konqueror”, „kfile” dla zakładak "
+"dyjalohavych voknaŭ „KFileDialog” itp.\n"
+"Kančatkovaja ściežka abjekta „D-Bus”: /KBookmarkManager/dbusObjectName"
+
+#: main.cpp:146
+#, kde-format
+msgid "File to edit"
+msgstr "Fajł dla redahavańnia"
+
+#: main.cpp:229
+#, kde-format
+msgid "You may only specify a single --export option."
+msgstr "Možna padać tolki adnu opcyju „--export”."
+
+#: main.cpp:236
+#, kde-format
+msgid "You may only specify a single --import option."
+msgstr "Možna padać tolki adnu opcyju „--import”."
+
+#: testlink.cpp:73
+#, kde-format
+msgid "Checking..."
+msgstr "Spraŭdžvańnie..."
+
+#~ msgid "Import All &Crash Sessions as Bookmarks..."
+#~ msgstr "Zimpartuj usie &złamanyja sesii jak zakładki..."
+
+#~ msgid "No favicon found"
+#~ msgstr "Ikona sajta nia znojdzienaja."
+
+#~ msgid "Local file"
+#~ msgstr "Miascovy fajł"
+
+#~ msgid "Crashes"
+#~ msgstr "Złomy"
+
+#~ msgid "Bookmark"
+#~ msgstr "Zakładka"
+
+#~ msgid "URL"
+#~ msgstr "Adras"
+
+#~ msgid "Icon"
+#~ msgstr "Ikona"
+
+#~ msgid "Title"
+#~ msgstr "Nazva"

@@ -1,0 +1,732 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Lukáš Tinkl <ltinkl@redhat.com>, 2010.
+# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2013, 2014, 2016, 2017, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keditbookmarks\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2020-05-24 19:05+0200\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.04.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Klára Cihlářová"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "koty@seznam.cz"
+
+#: actionsimpl.cpp:98
+#, kde-format
+msgid "&Delete"
+msgstr "&Smazat"
+
+#: actionsimpl.cpp:104
+#, kde-format
+msgid "Rename"
+msgstr "Přejmenovat"
+
+#: actionsimpl.cpp:110
+#, kde-format
+msgid "C&hange Location"
+msgstr "Změnit u&místění"
+
+#: actionsimpl.cpp:116
+#, kde-format
+msgid "C&hange Comment"
+msgstr "Změnit &komentář"
+
+#: actionsimpl.cpp:122
+#, kde-format
+msgid "Chan&ge Icon..."
+msgstr "Z&měnit ikonu..."
+
+#: actionsimpl.cpp:126
+#, kde-format
+msgid "Update Favicon"
+msgstr "Aktualizovat Favicon"
+
+#: actionsimpl.cpp:130
+#, kde-format
+msgid "Recursive Sort"
+msgstr "Rekurzivní třídění"
+
+#: actionsimpl.cpp:135
+#, kde-format
+msgid "&New Folder..."
+msgstr "&Nová složka..."
+
+#: actionsimpl.cpp:141
+#, kde-format
+msgid "&New Bookmark"
+msgstr "&Nová záložka"
+
+#: actionsimpl.cpp:145
+#, kde-format
+msgid "&Insert Separator"
+msgstr "Vlož&it oddělovač"
+
+#: actionsimpl.cpp:150
+#, kde-format
+msgid "&Sort Alphabetically"
+msgstr "&Seřadit podle abecedy"
+
+#: actionsimpl.cpp:155
+#, kde-format
+msgid "Set as T&oolbar Folder"
+msgstr "Nastavit jako sl&ožku pro panel nástrojů"
+
+#: actionsimpl.cpp:159
+#, kde-format
+msgid "&Expand All Folders"
+msgstr "Rozbalit vš&echny složky"
+
+#: actionsimpl.cpp:163
+#, kde-format
+msgid "Collapse &All Folders"
+msgstr "Sb&alit všechny složky"
+
+#: actionsimpl.cpp:168
+#, kde-format
+msgid "&Open in Browser"
+msgstr "&Otevřít v prohlížeči"
+
+#: actionsimpl.cpp:173
+#, kde-format
+msgid "Check &Status"
+msgstr "Zkontrolovat &stav"
+
+#: actionsimpl.cpp:177
+#, kde-format
+msgid "Check Status: &All"
+msgstr "Zkontrolovat st&av: vše"
+
+#: actionsimpl.cpp:181
+#, kde-format
+msgid "Update All &Favicons"
+msgstr "Aktualizovat všechny &Favicony"
+
+#: actionsimpl.cpp:185
+#, kde-format
+msgid "Cancel &Checks"
+msgstr "Zrušit &kontrolu"
+
+#: actionsimpl.cpp:189
+#, kde-format
+msgid "Cancel &Favicon Updates"
+msgstr "Zrušit aktualizaci &Favicon"
+
+#: actionsimpl.cpp:195
+#, kde-format
+msgid "Import &Netscape Bookmarks..."
+msgstr "Importovat záložky z &Netscape..."
+
+#: actionsimpl.cpp:201
+#, kde-format
+msgid "Import &Opera Bookmarks..."
+msgstr "Importovat záložky z &Opery..."
+
+#: actionsimpl.cpp:211
+#, kde-format
+msgid "Import &Galeon Bookmarks..."
+msgstr "Importovat záložky z &Galeonu..."
+
+#: actionsimpl.cpp:217
+#, kde-format
+msgid "Import &KDE 2 or KDE 3 Bookmarks..."
+msgstr "Importovat záložky z &KDE 2/3..."
+
+#: actionsimpl.cpp:223
+#, kde-format
+msgid "Import &Internet Explorer Bookmarks..."
+msgstr "&Importovat záložky z IE..."
+
+#: actionsimpl.cpp:229
+#, kde-format
+msgid "Import &Mozilla Bookmarks..."
+msgstr "Importovat záložky z &Mozilly..."
+
+#: actionsimpl.cpp:234
+#, kde-format
+msgid "Export &Netscape Bookmarks"
+msgstr "Exportovat do záložek &Netscape"
+
+#: actionsimpl.cpp:239
+#, kde-format
+msgid "Export &Opera Bookmarks..."
+msgstr "Exportovat do záložek &Opery..."
+
+#: actionsimpl.cpp:244
+#, kde-format
+msgid "Export &HTML Bookmarks..."
+msgstr "Exportovat do &HTML záložek..."
+
+#: actionsimpl.cpp:248
+#, kde-format
+msgid "Export &Internet Explorer Bookmarks..."
+msgstr "Exportovat do záložek &IE..."
+
+#: actionsimpl.cpp:253
+#, kde-format
+msgid "Export &Mozilla Bookmarks..."
+msgstr "Exportovat do záložek &Mozilly..."
+
+#: actionsimpl.cpp:298
+#, kde-format
+msgid "HTML Bookmark Listing (*.html)"
+msgstr "Výpis záložek v HTML (*.html)"
+
+#: actionsimpl.cpp:343
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Cut Items"
+msgstr "Vyjmout položky"
+
+#: actionsimpl.cpp:368
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "Vložit"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgid "New folder:"
+msgstr "Nová složka:"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgctxt "@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Vytvořit novou složku se záložkami"
+
+#: actionsimpl.cpp:526
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Recursive Sort"
+msgstr "Rekurzivní třídění"
+
+#: actionsimpl.cpp:541
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Sort Alphabetically"
+msgstr "Seřadit podle abecedy"
+
+#: actionsimpl.cpp:550
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Delete Items"
+msgstr "Smazat položky"
+
+#: bookmarkinfowidget.cpp:223
+#, kde-format
+msgid "Name:"
+msgstr "Jméno:"
+
+#: bookmarkinfowidget.cpp:230
+#, kde-format
+msgid "Location:"
+msgstr "Umístění:"
+
+#: bookmarkinfowidget.cpp:237
+#, kde-format
+msgid "Comment:"
+msgstr "Komentář:"
+
+#: bookmarkinfowidget.cpp:243
+#, kde-format
+msgid "First viewed:"
+msgstr "Poprvé zobrazeno:"
+
+#: bookmarkinfowidget.cpp:246
+#, kde-format
+msgid "Viewed last:"
+msgstr "Naposledy zobrazeno:"
+
+#: bookmarkinfowidget.cpp:249
+#, kde-format
+msgid "Times visited:"
+msgstr "Počet návštěv:"
+
+#: exporters.cpp:51
+#, kde-format
+msgid "My Bookmarks"
+msgstr "Moje záložky"
+
+#: favicons.cpp:54 testlink.cpp:94
+#, kde-format
+msgid "OK"
+msgstr "OK"
+
+#: favicons.cpp:70
+#, kde-format
+msgid "Updating favicon..."
+msgstr "Aktualizuje se favicon..."
+
+#: faviconupdater.cpp:79
+#, kde-format
+msgid "%1; no HTML component found (%2)"
+msgstr "%1; nenalezena žádná komponenta HTML (%2)"
+
+#: importers.cpp:57
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Import %1 Bookmarks"
+msgstr "Importovat záložky z %1"
+
+#: importers.cpp:62
+#, kde-format
+msgid "%1 Bookmarks"
+msgstr "Záložky %1"
+
+#: importers.cpp:99
+#, kde-format
+msgid "Import as a new subfolder or replace all the current bookmarks?"
+msgstr ""
+"Importovat jako novou podsložku nebo nahradit všechny stávající záložky?"
+
+#: importers.cpp:100
+#, kde-format
+msgctxt "@title:window"
+msgid "%1 Import"
+msgstr "%1 import"
+
+#: importers.cpp:101
+#, kde-format
+msgid "As New Folder"
+msgstr "Jako nová složka"
+
+#: importers.cpp:102
+#, kde-format
+msgid "Replace"
+msgstr "Nahradit"
+
+#: importers.cpp:212
+#, kde-format
+msgid "Galeon Bookmark Files (*.xbel)"
+msgstr "Soubory záložek Galeonu (*.xbel)"
+
+#: importers.cpp:220
+#, kde-format
+msgid "KDE Bookmark Files (*.xml)"
+msgstr "Soubory záložek KDE (*.xml)"
+
+#: importers.h:116
+#, kde-format
+msgid "Galeon"
+msgstr "Galeon"
+
+#: importers.h:131
+#, kde-format
+msgid "KDE"
+msgstr "KDE"
+
+#: importers.h:161
+#, kde-format
+msgid "Netscape"
+msgstr "Netscape"
+
+#: importers.h:176
+#, kde-format
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#: importers.h:191
+#, kde-format
+msgid "IE"
+msgstr "IE"
+
+#: importers.h:209
+#, kde-format
+msgid "Opera"
+msgstr "Opera"
+
+#: kbookmarkmerger.cpp:47
+#, kde-format
+msgid "KBookmarkMerger"
+msgstr "KBookmarkMerger"
+
+#: kbookmarkmerger.cpp:49
+#, kde-format
+msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
+msgstr "Sloučí záložky instalované třetí stranou do uživatelských záložek"
+
+#: kbookmarkmerger.cpp:51
+#, kde-format
+msgid "Copyright © 2005 Frerich Raabe"
+msgstr "Copyright © 2005 Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Frerich Raabe"
+msgstr "Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Original author"
+msgstr "Původní autor"
+
+#: kbookmarkmerger.cpp:57
+#, kde-format
+msgid "Directory to scan for extra bookmarks"
+msgstr "Adresář, který prohledávat pro další záložky"
+
+#: kbookmarkmodel/commands.cpp:70
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Insert Separator"
+msgstr "Vložit oddělovač"
+
+#: kbookmarkmodel/commands.cpp:84
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Bookmark"
+msgstr "Vytvořit záložku"
+
+#: kbookmarkmodel/commands.cpp:98
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Folder"
+msgstr "Vytvořit složku"
+
+#: kbookmarkmodel/commands.cpp:111
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy %1"
+msgstr "Kopírovat %1"
+
+#: kbookmarkmodel/commands.cpp:200
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Icon Change"
+msgstr "Změna ikony"
+
+#: kbookmarkmodel/commands.cpp:202
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Title Change"
+msgstr "Změna titulku"
+
+#: kbookmarkmodel/commands.cpp:204
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "URL Change"
+msgstr "Změna URL"
+
+#: kbookmarkmodel/commands.cpp:206
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Comment Change"
+msgstr "Změna komentáře"
+
+#: kbookmarkmodel/commands.cpp:365
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move %1"
+msgstr "Přesunout %1"
+
+#: kbookmarkmodel/commands.cpp:500
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Set as Bookmark Toolbar"
+msgstr "Nastavit jako panel nástrojů se záložkami"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy Items"
+msgstr "Kopírovat položky"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move Items"
+msgstr "Přesunout položky"
+
+#: kbookmarkmodel/model.cpp:122
+#, kde-format
+msgctxt "name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Záložky"
+
+#: kbookmarkmodel/model.cpp:217
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Name"
+msgstr "Jméno"
+
+#: kbookmarkmodel/model.cpp:220
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Location"
+msgstr "Umístění"
+
+#: kbookmarkmodel/model.cpp:223
+#, kde-format
+msgctxt "@title:column comment for a bookmark"
+msgid "Comment"
+msgstr "Komentář"
+
+#: kbookmarkmodel/model.cpp:226
+#, kde-format
+msgctxt "@title:column status of a bookmark"
+msgid "Status"
+msgstr "Stav"
+
+#: kebsearchline.cpp:239
+#, kde-format
+msgid "Search Columns"
+msgstr "Prohledávat sloupce"
+
+#: kebsearchline.cpp:242
+#, kde-format
+msgid "All Visible Columns"
+msgstr "Všechny viditelné sloupce"
+
+#: kebsearchline.cpp:250
+#, kde-format
+msgctxt "Column number %1"
+msgid "Column No. %1"
+msgstr "Sloupec č. %1"
+
+#: kebsearchline.cpp:615
+#, kde-format
+msgid "S&earch:"
+msgstr "Hl&edat:"
+
+#. i18n: ectx: Menu (file)
+#: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "&Soubor"
+
+#. i18n: ectx: Menu (edit)
+#: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
+#, kde-format
+msgid "&Edit"
+msgstr "Ú&pravy"
+
+#. i18n: ectx: Menu (view)
+#: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
+#, kde-format
+msgid "&View"
+msgstr "Po&hled"
+
+#. i18n: ectx: Menu (folder)
+#: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
+#, kde-format
+msgid "&Folder"
+msgstr "S&ložka"
+
+#. i18n: ectx: Menu (bookmark)
+#: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
+#, kde-format
+msgid "&Bookmark"
+msgstr "&Záložka"
+
+#. i18n: ectx: Menu (settings)
+#: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
+#, kde-format
+msgid "&Settings"
+msgstr "Nastav&ení"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Hlavní panel nástrojů"
+
+#. i18n: ectx: Menu (import)
+#: keditbookmarksui.rc:11
+#, kde-format
+msgid "&Import"
+msgstr "&Importovat"
+
+#. i18n: ectx: Menu (export)
+#: keditbookmarksui.rc:21
+#, kde-format
+msgid "&Export"
+msgstr "&Exportovat"
+
+#. i18n: ectx: Menu (tools)
+#: keditbookmarksui.rc:67
+#, kde-format
+msgid "&Tools"
+msgstr "&Nástroje"
+
+#: main.cpp:68
+#, kde-format
+msgid ""
+"Another instance of %1 is already running. Do you really want to open "
+"another instance or continue work in the same instance?\n"
+"Please note that, unfortunately, duplicate views are read-only."
+msgstr ""
+"Jedna instance %1 je již spuštěna. Přejete si spustit další instanci nebo "
+"pokračovat v práci v současné instanci?\n"
+"Uvědomte si prosím, že duplikátní pohledy jsou naneštěstí pouze pro čtení."
+
+#: main.cpp:72
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning"
+msgstr "Varování"
+
+#: main.cpp:73
+#, kde-format
+msgid "Run Another"
+msgstr "Spustit znovu"
+
+#: main.cpp:74
+#, kde-format
+msgid "Continue in Same"
+msgstr "Pokračovat v původní"
+
+#: main.cpp:112
+#, kde-format
+msgid "Bookmark Editor"
+msgstr "Editor záložek"
+
+#: main.cpp:114
+#, kde-format
+msgid "Bookmark Organizer and Editor"
+msgstr "Editor a organizátor záložek"
+
+#: main.cpp:116
+#, kde-format
+msgid "Copyright 2000-2017, KDE developers"
+msgstr "(c) 2000 - 2017, vývojáři KDE"
+
+#: main.cpp:117
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: main.cpp:117
+#, kde-format
+msgid "Initial author"
+msgstr "Původní autor"
+
+#: main.cpp:118
+#, kde-format
+msgid "Alexander Kellett"
+msgstr "Alexander Kellett"
+
+#: main.cpp:118
+#, kde-format
+msgid "Author"
+msgstr "Autor"
+
+#: main.cpp:128
+#, kde-format
+msgid "Import bookmarks from a file in Mozilla format"
+msgstr "Importovat záložky ze souboru ve formátu pro Mozilla"
+
+#: main.cpp:129
+#, kde-format
+msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
+msgstr "Importovat záložky ze souboru ve formátu pro Netscape (4.x a dřívější)"
+
+#: main.cpp:130
+#, kde-format
+msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
+msgstr "Importovat záložky ze souboru ve formátu Oblíbené Internet Exploreru"
+
+#: main.cpp:131
+#, kde-format
+msgid "Import bookmarks from a file in Opera format"
+msgstr "Importovat záložky ze souboru ve formátu pro Operu"
+
+#: main.cpp:132
+#, kde-format
+msgid "Import bookmarks from a file in KDE2 format"
+msgstr "Importovat záložky ze souboru ve formátu KDE2"
+
+#: main.cpp:133
+#, kde-format
+msgid "Import bookmarks from a file in Galeon format"
+msgstr "Importovat záložky ze souboru ve formátu pro Galeon"
+
+#: main.cpp:134
+#, kde-format
+msgid "Export bookmarks to a file in Mozilla format"
+msgstr "Exportovat záložky do souboru ve formátu pro Mozilla"
+
+#: main.cpp:135
+#, kde-format
+msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
+msgstr "Exportovat záložky do souboru ve formátu pro Netscape (4.x a dřívější)"
+
+#: main.cpp:136
+#, kde-format
+msgid "Export bookmarks to a file in a printable HTML format"
+msgstr "Exportovat záložky do souboru ve formátu tisknutelného HTML"
+
+#: main.cpp:137
+#, kde-format
+msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
+msgstr "Exportovat záložky do souboru ve formátu Oblíbené Internet Exploreru"
+
+#: main.cpp:138
+#, kde-format
+msgid "Export bookmarks to a file in Opera format"
+msgstr "Exportovat záložky do souboru ve formátu pro Operu"
+
+#: main.cpp:139
+#, kde-format
+msgid "Open at the given position in the bookmarks file"
+msgstr "Otevřít na dané pozici v souboru záložek"
+
+#: main.cpp:140
+#, kde-format
+msgid "Set the user-readable caption, for example \"Konsole\""
+msgstr "Nastavit uživatelem čitelný titulek. Například \"Konsole\""
+
+#: main.cpp:141
+#, kde-format
+msgid "Hide all browser related functions"
+msgstr "Skrýt všechny funkce prohlížeče"
+
+#: main.cpp:142
+#, kde-format
+msgid ""
+"A unique name that represents this bookmark collection, usually the "
+"kinstance name.\n"
+"This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
+"KFileDialog bookmarks, etc.\n"
+"The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
+msgstr ""
+"Jedinečné jméno reprezentující tuto sbírku záložek.\n"
+"Může to být \"konqueror\" pro záložky Konqueroru, \"kfile\" pro záložky "
+"dialogových oken apod.\n"
+"Finální cesta pro objekt D-Bus je /KBookmarkManager/<dbusObjectName>"
+
+#: main.cpp:146
+#, kde-format
+msgid "File to edit"
+msgstr "Soubor k úpravě"
+
+#: main.cpp:229
+#, kde-format
+msgid "You may only specify a single --export option."
+msgstr "Můžete použít pouze samotnou volbu --export."
+
+#: main.cpp:236
+#, kde-format
+msgid "You may only specify a single --import option."
+msgstr "Můžete použít pouze samotnou volbu --import."
+
+#: testlink.cpp:73
+#, kde-format
+msgid "Checking..."
+msgstr "Kontroluji..."

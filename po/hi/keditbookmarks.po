@@ -1,0 +1,751 @@
+# translation of keditbookmarks.po to Hindi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ravishankar Shrivastava <raviratlami@yahoo.com>, 2007.
+# Raghavendra Kamath <raghu@raghukamath.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: keditbookmarks\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2021-09-17 20:07+0530\n"
+"Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
+"Language-Team: kde-hindi\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 21.08.1\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "रविशंकर श्रीवास्तव, जी. करूणाकर, राघवेंद्र कामत"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "raviratlami@aol.in, karunakar@indlinux.org, raghu@raghukamath.com"
+
+#: actionsimpl.cpp:98
+#, kde-format
+msgid "&Delete"
+msgstr "मिटाएँ (&D)"
+
+#: actionsimpl.cpp:104
+#, kde-format
+msgid "Rename"
+msgstr "नाम बदलें"
+
+#: actionsimpl.cpp:110
+#, kde-format
+msgid "C&hange Location"
+msgstr "स्थान बदलें (&h)"
+
+#: actionsimpl.cpp:116
+#, kde-format
+msgid "C&hange Comment"
+msgstr "टिप्पणी बदलें (&h)"
+
+#: actionsimpl.cpp:122
+#, kde-format
+msgid "Chan&ge Icon..."
+msgstr "प्रतीक बदलें...(&g)"
+
+#: actionsimpl.cpp:126
+#, kde-format
+msgid "Update Favicon"
+msgstr "फेविकॉन अद्यतन करें"
+
+#: actionsimpl.cpp:130
+#, kde-format
+msgid "Recursive Sort"
+msgstr "रिकर्सिव क्रमबद्ध"
+
+#: actionsimpl.cpp:135
+#, kde-format
+msgid "&New Folder..."
+msgstr "नया फ़ोल्डर...(&N)"
+
+#: actionsimpl.cpp:141
+#, kde-format
+msgid "&New Bookmark"
+msgstr "नया पुस्तचिन्ह (&N)"
+
+#: actionsimpl.cpp:145
+#, kde-format
+msgid "&Insert Separator"
+msgstr "सेपरेटर शामिल करें (&I)"
+
+#: actionsimpl.cpp:150
+#, kde-format
+msgid "&Sort Alphabetically"
+msgstr "वर्णमाला में क्रमबद्ध करें (&S)"
+
+#: actionsimpl.cpp:155
+#, kde-format
+msgid "Set as T&oolbar Folder"
+msgstr "औज़ार पट्टी की तरह नियत करें (&o)"
+
+#: actionsimpl.cpp:159
+#, kde-format
+msgid "&Expand All Folders"
+msgstr "सारे फ़ोल्डर फैलाएँ (&E)"
+
+#: actionsimpl.cpp:163
+#, kde-format
+msgid "Collapse &All Folders"
+msgstr "सारे फ़ोल्डर कोलेप्स करें (&A)"
+
+#: actionsimpl.cpp:168
+#, kde-format
+msgid "&Open in Browser"
+msgstr "ब्राउज़र में खोलें (&O)"
+
+#: actionsimpl.cpp:173
+#, kde-format
+msgid "Check &Status"
+msgstr "स्थिति जाँचें (&S)"
+
+#: actionsimpl.cpp:177
+#, kde-format
+msgid "Check Status: &All"
+msgstr "स्थिति जाँचः सभी (&A)"
+
+#: actionsimpl.cpp:181
+#, kde-format
+msgid "Update All &Favicons"
+msgstr "सभी फेविकॉन अद्यतन करें (&F)"
+
+#: actionsimpl.cpp:185
+#, kde-format
+msgid "Cancel &Checks"
+msgstr "जाँच रद्द (&C)"
+
+#: actionsimpl.cpp:189
+#, kde-format
+msgid "Cancel &Favicon Updates"
+msgstr "फेविकॉन अद्यतन रद्द करें (&F)"
+
+#: actionsimpl.cpp:195
+#, kde-format
+msgid "Import &Netscape Bookmarks..."
+msgstr "नेटस्केप  पुस्तचिन्ह  आयात करें....(&N)"
+
+#: actionsimpl.cpp:201
+#, kde-format
+msgid "Import &Opera Bookmarks..."
+msgstr "ओपेरा  पुस्तचिन्ह  आयात करें....(&O)"
+
+#: actionsimpl.cpp:211
+#, kde-format
+msgid "Import &Galeon Bookmarks..."
+msgstr "गेलियन  पुस्तचिन्ह  आयात करें....(&G)"
+
+#: actionsimpl.cpp:217
+#, kde-format
+msgid "Import &KDE 2 or KDE 3 Bookmarks..."
+msgstr "केडीई २ या केडीई ३ पुस्तचिन्ह आयात करें...(&K)"
+
+#: actionsimpl.cpp:223
+#, kde-format
+msgid "Import &Internet Explorer Bookmarks..."
+msgstr "इंटरनेट एक्सप्लोरर पुस्तचिन्ह आयात करें...(&I)"
+
+#: actionsimpl.cpp:229
+#, kde-format
+msgid "Import &Mozilla Bookmarks..."
+msgstr "मोज़िला पुस्तचिन्ह आयात करें....(&M)"
+
+#: actionsimpl.cpp:234
+#, kde-format
+msgid "Export &Netscape Bookmarks"
+msgstr "नेटस्केप पुस्तचिन्ह निर्यात करें (&N)"
+
+#: actionsimpl.cpp:239
+#, kde-format
+msgid "Export &Opera Bookmarks..."
+msgstr "ओपेरा पुस्तचिन्ह निर्यात करें...(&O)"
+
+#: actionsimpl.cpp:244
+#, kde-format
+msgid "Export &HTML Bookmarks..."
+msgstr "एचटीएमएल पुस्तचिन्ह निर्यात करें ...(&H)"
+
+#: actionsimpl.cpp:248
+#, kde-format
+msgid "Export &Internet Explorer Bookmarks..."
+msgstr "इंटरनेट एक्सप्लोरर पुस्तचिन्ह निर्यात करें...(&I)"
+
+#: actionsimpl.cpp:253
+#, kde-format
+msgid "Export &Mozilla Bookmarks..."
+msgstr "मोज़िला पुस्तचिन्ह निर्यात करें...(&M)"
+
+#: actionsimpl.cpp:298
+#, kde-format
+msgid "HTML Bookmark Listing (*.html)"
+msgstr "एचटीएमएल पुस्तचिन्ह सूचीकरण (*.html)"
+
+#: actionsimpl.cpp:343
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Cut Items"
+msgstr "वस्तुएँ काटें"
+
+#: actionsimpl.cpp:368
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "चिपकाएँ"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgid "New folder:"
+msgstr "नया फ़ोल्डर: "
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgctxt "@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "नया पुस्तचिन्ह फ़ोल्डर बनाएँ"
+
+#: actionsimpl.cpp:526
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Recursive Sort"
+msgstr "रिकर्सिव क्रमबद्ध"
+
+#: actionsimpl.cpp:541
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Sort Alphabetically"
+msgstr "वर्णमाला में क्रमबद्ध करें"
+
+#: actionsimpl.cpp:550
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Delete Items"
+msgstr "वस्तुएँ मिटाएँ"
+
+#: bookmarkinfowidget.cpp:223
+#, kde-format
+msgid "Name:"
+msgstr "नाम:"
+
+#: bookmarkinfowidget.cpp:230
+#, kde-format
+msgid "Location:"
+msgstr "स्थानः"
+
+#: bookmarkinfowidget.cpp:237
+#, kde-format
+msgid "Comment:"
+msgstr "टिप्पणीः"
+
+#: bookmarkinfowidget.cpp:243
+#, kde-format
+msgid "First viewed:"
+msgstr "प्रथम बार देखा गयाः"
+
+#: bookmarkinfowidget.cpp:246
+#, kde-format
+msgid "Viewed last:"
+msgstr "अंतिम बार देखा गयाः"
+
+#: bookmarkinfowidget.cpp:249
+#, kde-format
+msgid "Times visited:"
+msgstr "इतनी बार देखा गयाः"
+
+#: exporters.cpp:51
+#, kde-format
+msgid "My Bookmarks"
+msgstr "मेरे पुस्तचिन्ह"
+
+#: favicons.cpp:54 testlink.cpp:94
+#, kde-format
+msgid "OK"
+msgstr "ठीक है"
+
+#: favicons.cpp:70
+#, kde-format
+msgid "Updating favicon..."
+msgstr "फेविकॉन अद्यतन करें"
+
+#: faviconupdater.cpp:79
+#, kde-format
+msgid "%1; no HTML component found (%2)"
+msgstr "%1; कोई एचटीएमएल घटक नहीं मिला (%2)"
+
+#: importers.cpp:57
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Import %1 Bookmarks"
+msgstr "%1पुस्तचिन्ह आयात करें"
+
+#: importers.cpp:62
+#, kde-format
+msgid "%1 Bookmarks"
+msgstr "%1  पुस्तचिन्ह "
+
+#: importers.cpp:99
+#, kde-format
+msgid "Import as a new subfolder or replace all the current bookmarks?"
+msgstr "एक नए सब फ़ोल्डर की तरह आयात करें या वर्तमान सभी पसंद को बदलें?"
+
+#: importers.cpp:100
+#, kde-format
+msgctxt "@title:window"
+msgid "%1 Import"
+msgstr "%1 आयात"
+
+#: importers.cpp:101
+#, kde-format
+msgid "As New Folder"
+msgstr "नया फ़ोल्डर जैसे"
+
+#: importers.cpp:102
+#, kde-format
+msgid "Replace"
+msgstr "बदलें"
+
+#: importers.cpp:212
+#, kde-format
+msgid "Galeon Bookmark Files (*.xbel)"
+msgstr "गेलियन पुस्तचिन्ह फ़ाइलें (*.xbel)"
+
+#: importers.cpp:220
+#, kde-format
+msgid "KDE Bookmark Files (*.xml)"
+msgstr "केडीई पुस्तचिन्ह फ़ाइलें (*.xml)"
+
+#: importers.h:116
+#, kde-format
+msgid "Galeon"
+msgstr "गेलियन"
+
+#: importers.h:131
+#, kde-format
+msgid "KDE"
+msgstr "केडीई"
+
+#: importers.h:161
+#, kde-format
+msgid "Netscape"
+msgstr "नेटस्केप"
+
+#: importers.h:176
+#, kde-format
+msgid "Mozilla"
+msgstr "मोज़िला"
+
+#: importers.h:191
+#, kde-format
+msgid "IE"
+msgstr "इंटरनेट एक्सप्लोरर"
+
+#: importers.h:209
+#, kde-format
+msgid "Opera"
+msgstr "ऑपेरा"
+
+#: kbookmarkmerger.cpp:47
+#, kde-format
+msgid "KBookmarkMerger"
+msgstr "के_बुकमार्क_मर्जर"
+
+#: kbookmarkmerger.cpp:49
+#, kde-format
+msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
+msgstr ""
+"उपयोक्ता के पसंदीदा में तृतीय पार्टी द्वारा संस्थापित किए गए पसंदीदा को सम्मिलित करता है"
+
+#: kbookmarkmerger.cpp:51
+#, kde-format
+msgid "Copyright © 2005 Frerich Raabe"
+msgstr "सर्वाधिकार © 2005 फ्रेरिक राबे"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Frerich Raabe"
+msgstr "फ्रेरिक राबे"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Original author"
+msgstr "मूल लेखक"
+
+#: kbookmarkmerger.cpp:57
+#, kde-format
+msgid "Directory to scan for extra bookmarks"
+msgstr "अतिरिक्त पसंदीदा के लिए स्कैन करने हेतु डिरेक्ट्री"
+
+#: kbookmarkmodel/commands.cpp:70
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Insert Separator"
+msgstr "विभाजक प्रविष्ट करें"
+
+#: kbookmarkmodel/commands.cpp:84
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Bookmark"
+msgstr "पुस्तचिन्ह बनाएँ"
+
+#: kbookmarkmodel/commands.cpp:98
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Folder"
+msgstr "फ़ोल्डर बनाएँ"
+
+#: kbookmarkmodel/commands.cpp:111
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy %1"
+msgstr "%1की नक़ल करें"
+
+#: kbookmarkmodel/commands.cpp:200
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Icon Change"
+msgstr "प्रतीक बदलें"
+
+#: kbookmarkmodel/commands.cpp:202
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Title Change"
+msgstr "शीर्षक बदलें"
+
+#: kbookmarkmodel/commands.cpp:204
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "URL Change"
+msgstr "यूआरएल बदलें"
+
+#: kbookmarkmodel/commands.cpp:206
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Comment Change"
+msgstr "टिप्पणी बदलें"
+
+#: kbookmarkmodel/commands.cpp:365
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move %1"
+msgstr "%1 स्थानेंतरित करें"
+
+#: kbookmarkmodel/commands.cpp:500
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Set as Bookmark Toolbar"
+msgstr "पुस्तचिन्ह पट्टी की तरह नियत करें"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy Items"
+msgstr "वस्तुओं की नक़ल करें"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move Items"
+msgstr "वस्तुएँ स्थानांतरित करें"
+
+#: kbookmarkmodel/model.cpp:122
+#, kde-format
+msgctxt "name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "पुस्तचिन्ह"
+
+#: kbookmarkmodel/model.cpp:217
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Name"
+msgstr "नाम"
+
+#: kbookmarkmodel/model.cpp:220
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Location"
+msgstr "स्थान"
+
+#: kbookmarkmodel/model.cpp:223
+#, kde-format
+msgctxt "@title:column comment for a bookmark"
+msgid "Comment"
+msgstr "टिप्पणी"
+
+#: kbookmarkmodel/model.cpp:226
+#, kde-format
+msgctxt "@title:column status of a bookmark"
+msgid "Status"
+msgstr "स्थिति"
+
+#: kebsearchline.cpp:239
+#, kde-format
+msgid "Search Columns"
+msgstr "खोज स्तम्भ"
+
+#: kebsearchline.cpp:242
+#, kde-format
+msgid "All Visible Columns"
+msgstr "सभी द्ष्टिगोचर स्तम्भ"
+
+#: kebsearchline.cpp:250
+#, kde-format
+msgctxt "Column number %1"
+msgid "Column No. %1"
+msgstr "स्तम्भ सं. %1"
+
+#: kebsearchline.cpp:615
+#, kde-format
+msgid "S&earch:"
+msgstr "ढूंढें: (&e)"
+
+#. i18n: ectx: Menu (file)
+#: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "फ़ाइल (&F)"
+
+#. i18n: ectx: Menu (edit)
+#: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
+#, kde-format
+msgid "&Edit"
+msgstr "संपादन (&E)"
+
+#. i18n: ectx: Menu (view)
+#: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
+#, kde-format
+msgid "&View"
+msgstr "देखें (&V)"
+
+#. i18n: ectx: Menu (folder)
+#: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
+#, kde-format
+msgid "&Folder"
+msgstr "फ़ोल्डर (&F)"
+
+#. i18n: ectx: Menu (bookmark)
+#: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
+#, kde-format
+msgid "&Bookmark"
+msgstr "पुस्तचिन्ह  (&B)"
+
+#. i18n: ectx: Menu (settings)
+#: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
+#, kde-format
+msgid "&Settings"
+msgstr "विन्यास (&S)"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
+#, kde-format
+msgid "Main Toolbar"
+msgstr "मुख्य औज़ार पट्टी"
+
+#. i18n: ectx: Menu (import)
+#: keditbookmarksui.rc:11
+#, kde-format
+msgid "&Import"
+msgstr "आयात (&I)"
+
+#. i18n: ectx: Menu (export)
+#: keditbookmarksui.rc:21
+#, kde-format
+msgid "&Export"
+msgstr "निर्यात (&E)"
+
+#. i18n: ectx: Menu (tools)
+#: keditbookmarksui.rc:67
+#, kde-format
+msgid "&Tools"
+msgstr "औज़ार (&T)"
+
+#: main.cpp:68
+#, kde-format
+msgid ""
+"Another instance of %1 is already running. Do you really want to open "
+"another instance or continue work in the same instance?\n"
+"Please note that, unfortunately, duplicate views are read-only."
+msgstr ""
+"%1 का  एक अनुप्रयोग पहले से ही चल रहा है, क्या आप सचमुच इसका एक और अनुप्रयोग "
+"खोलनाचाहते हैं या इसी चल रहे अनुप्रयोग में कार्य करना चाहते हैं?\n"
+"कृपया ध्यान दें कि दुर्भाग्य से अनुकृति दृश्य सिर्फ पढ़ने योग्य हैं।"
+
+#: main.cpp:72
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning"
+msgstr "चेतावनी"
+
+#: main.cpp:73
+#, kde-format
+msgid "Run Another"
+msgstr "एक और चलाएँ"
+
+#: main.cpp:74
+#, kde-format
+msgid "Continue in Same"
+msgstr "उसी में जारी रखें "
+
+#: main.cpp:112
+#, kde-format
+msgid "Bookmark Editor"
+msgstr "पसंद संपादक "
+
+#: main.cpp:114
+#, kde-format
+msgid "Bookmark Organizer and Editor"
+msgstr "पुस्तचिन्ह ऑर्गेनाइज़र तथा संपादक"
+
+#: main.cpp:116
+#, kde-format
+msgid "Copyright 2000-2017, KDE developers"
+msgstr "सर्वाधिकार २०००-२००७, केडीई विकासकर्ता"
+
+#: main.cpp:117
+#, kde-format
+msgid "David Faure"
+msgstr "डेविड फॉउरे"
+
+#: main.cpp:117
+#, kde-format
+msgid "Initial author"
+msgstr "प्रारंभिक लेखक"
+
+#: main.cpp:118
+#, kde-format
+msgid "Alexander Kellett"
+msgstr "अलेक्ज़ेंडर केलेट"
+
+#: main.cpp:118
+#, kde-format
+msgid "Author"
+msgstr "लेखक"
+
+#: main.cpp:128
+#, kde-format
+msgid "Import bookmarks from a file in Mozilla format"
+msgstr "फ़ाइल से पसंद को मोज़िला फॉर्मेट में आयात करें"
+
+#: main.cpp:129
+#, kde-format
+msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
+msgstr "फ़ाइल से पसंद को नेटस्केप (4.x या पहले का) फॉर्मेट में आयात करें"
+
+#: main.cpp:130
+#, kde-format
+msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
+msgstr "फ़ाइल से पसंद को इंटरनेट एक्सप्लोरर पसंद फॉर्मेट में आयात करें"
+
+#: main.cpp:131
+#, kde-format
+msgid "Import bookmarks from a file in Opera format"
+msgstr "फ़ाइल से पसंद को ऑपेरा फॉर्मेट में आयात करें"
+
+#: main.cpp:132
+#, kde-format
+msgid "Import bookmarks from a file in KDE2 format"
+msgstr "एक फ़ाइल से पुस्तचिन्ह को केडिई२ प्रारूप में आयात करें"
+
+#: main.cpp:133
+#, kde-format
+msgid "Import bookmarks from a file in Galeon format"
+msgstr "एक फ़ाइल से पुस्तचिन्ह को गेलियन प्रारूप में आयात करें"
+
+#: main.cpp:134
+#, kde-format
+msgid "Export bookmarks to a file in Mozilla format"
+msgstr "पसंद को मोज़िला फॉर्मेट में एक फ़ाइल में निर्यात करें"
+
+#: main.cpp:135
+#, kde-format
+msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
+msgstr "पसंद को नेटस्केप (4.x या पहले का) फॉर्मेट में एक फ़ाइल में निर्यात करें"
+
+#: main.cpp:136
+#, kde-format
+msgid "Export bookmarks to a file in a printable HTML format"
+msgstr "पसंद को छपाई लायक एचटीएमएल फॉर्मेट में एक फ़ाइल में निर्यात करें"
+
+#: main.cpp:137
+#, kde-format
+msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
+msgstr "पसंद को इंटरनेट एक्सप्लोरर पसंद फॉर्मेट में एक फ़ाइल में निर्यात करें"
+
+#: main.cpp:138
+#, kde-format
+msgid "Export bookmarks to a file in Opera format"
+msgstr "पसंद को ओपेरा फॉर्मेट में एक फ़ाइल में निर्यात करें"
+
+#: main.cpp:139
+#, kde-format
+msgid "Open at the given position in the bookmarks file"
+msgstr "पसंद फ़ाइल में दी गई स्थिति पर खोलें "
+
+#: main.cpp:140
+#, kde-format
+msgid "Set the user-readable caption, for example \"Konsole\""
+msgstr "उपयोक्ता के पढ़ने लायक अनुशीर्षक नियत करे जैसे  \"कंसोल\""
+
+#: main.cpp:141
+#, kde-format
+msgid "Hide all browser related functions"
+msgstr "सभी ब्राउज़र सम्बन्धी फंक्शन छुपाएँ"
+
+#: main.cpp:142
+#, kde-format
+msgid ""
+"A unique name that represents this bookmark collection, usually the "
+"kinstance name.\n"
+"This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
+"KFileDialog bookmarks, etc.\n"
+"The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
+msgstr ""
+"एक अनूठा नाम जो इस पुस्तचिन्ह संग्रह का प्रतिनिधित्व करता है, आमतौर पर केइन्स्टंस नाम।\n"
+" यह कॉन्करर पुस्तचिन्हों के लिए \"कॉन्करर\" होना चाहिए, केफ़ाइलडैलोग पुस्तचिन्हों के लिए "
+"\"केफ़ाइल\", इत्यादि।\n"
+" अंतिम डी-बस ऑब्जेक्ट पथ /केबुकमार्कमेनेजर/ है< dbusObjectName>"
+
+#: main.cpp:146
+#, kde-format
+msgid "File to edit"
+msgstr "संपादन के लिए फ़ाइल"
+
+#: main.cpp:229
+#, kde-format
+msgid "You may only specify a single --export option."
+msgstr "आप सिर्फ एक ही उल्लेखित कर सकते हैं --export  विकल्प."
+
+#: main.cpp:236
+#, kde-format
+msgid "You may only specify a single --import option."
+msgstr "आप सिर्फ एक ही उल्लेखित कर सकते हैं --import विकल्प."
+
+#: testlink.cpp:73
+#, kde-format
+msgid "Checking..."
+msgstr "जाँच में..."
+
+#~ msgid "Import All &Crash Sessions as Bookmarks..."
+#~ msgstr "सभी क्रेश सत्रों को  पसंदीदा  की तरह आयात करें...(&C)"
+
+#~ msgid "Crashes"
+#~ msgstr "क्रैश"
+
+#~ msgid "Bookmark"
+#~ msgstr " पसंदीदा "
+
+#~ msgid "URL"
+#~ msgstr "यूआरएल"
+
+#~ msgid "Icon"
+#~ msgstr "प्रतीक"
+
+#~ msgid "Title"
+#~ msgstr "शीर्षक"

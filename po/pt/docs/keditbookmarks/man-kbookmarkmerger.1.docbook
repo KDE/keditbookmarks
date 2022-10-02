@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Portuguese "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Manual do Utilizador do kbookmarkmerger</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>2016-11-07</date>
+	<releaseinfo
+>Aplicações 16.12</releaseinfo>
+	<productname
+>Aplicações do KDE</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Um programa para reunir um dado conjunto de favoritos na lista de favoritos do utilizador.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>pasta</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Descrição</title>
+<para
+>O &kbookmarkmerger; é um programa para reunir um dado conjunto de favoritos com o conjunto de favoritos do utilizador; se o mesmo não tiver criado ainda nenhuns favoritos, é criada uma nova lista de favoritos e os favoritos indicados são inseridos nela. Ao fazer isto, o &kbookmarkmerger; mantém um registo dos ficheiros que já foram reunidos numa execução anterior, pelo que nenhum favorito será instalado nos favoritos do utilizador mais que uma vez.</para>
+
+<para
+>A aproximação usada tradicionalmente, para obter algo deste género, foi usar pastas-esqueleto de utilizadores ao criar uma nova conta de utilizador, para fornecer a este um conjunto normal de favoritos. O problema com esta aproximação é que, depois de a conta do utilizador ter sido criada, os favoritos novos não são propagados.</para>
+
+<para
+>Este mecanismo é útil para os administradores de sistemas que queiram propagar um determinado favorito que aponte para um determinado documento (como, por exemplo, as notas importantes sobre o sistema) para todos os utilizadores. Os distribuidores poderão também achar útil, por exemplo, aumentando os pacotes de 'software' que eles oferecem com os ficheiros de favoritos que o &kbookmarkmerger; irá reunir à lista de favoritos do utilizador, quando o pacote for instalado. Desta forma, a documentação que vem com um determinado pacote de 'software' fica fácil e visivelmente acessível, logo após a instalação do pacote.</para>
+
+<para
+>O único parâmetro necessário pelo &kbookmarkmerger; é o nome da pasta que deverá ser pesquisada para obter os ficheiros de favoritos. Todos os ficheiros na pasta indicada serão considerados para serem reunidos na configuração do utilizador. Os ficheiros na pasta indicada deverão ser ficheiros <acronym
+>XBEL</acronym
+> válidos.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Veja Também</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>Manual do &konqueror;</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Exemplos</title>
+<screen
+>ze@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/favoritos-extra</filename
+></command
+></screen>
+<para
+>Reune todos os ficheiros de favoritos guardados em <filename
+>/usr/local/favoritos-extra</filename
+> à lista de favoritos do Zé.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Normas</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+>Especificação do <acronym
+>XBEL</acronym
+></ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Restrições</title>
+<para
+>Ao determinar se um dado ficheiro de favorito foi reunido com os favoritos do utilizador ou não, o &kbookmarkmerger; simplesmente olha para o nome do ficheiro de favoritos - o conteúdo não é verificado de todo. Isto significa que, se mudar um ficheiro de favorito que já foi reunido aos favoritos de um utilizador, não irá despoletar a sua junção de novo.</para>
+
+<para
+>Repare também que, no caso de um utilizador modificar um favorito que foi reunido à sua configuração, o ficheiro original do favorito será deixado sem modificações.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Autoria</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>

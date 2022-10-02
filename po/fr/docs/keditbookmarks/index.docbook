@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % French "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<!--moved from konqueror docbook -->
+
+<article id="keditbookmarks" lang="&language;">
+<articleinfo>
+<title
+>L'éditeur de signets</title>
+<authorgroup>
+<author
+>&Pamela.Roberts;</author>
+&traducteurJoelleCornavin; &traducteurGerardDelafond;&traducteurLudovicGrossard; &relecteurLudovicGrossard; 
+</authorgroup>
+
+<date
+>04-11-2016</date>
+
+<releaseinfo
+>Applications 16.12</releaseinfo>
+
+<keywordset>
+<keyword
+>signets</keyword>
+<keyword
+>éditeur</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>Dans de nombreuses applications (&pex; &konqueror;, &konsole;, &konversation;) l'option <menuchoice
+><guimenu
+>Signets</guimenu
+><guimenuitem
+>Modifier les signets</guimenuitem
+> </menuchoice
+> ouvre <guilabel
+>l'Éditeur de signets</guilabel
+>.</para>
+<para
+>De façon alternative, vous pouvez lancer l'éditeur comme une application isolée pour modifier les signets du navigateur.</para>
+<para
+>L'éditeur affiche une arborescence de vos signets et de vos sous-dossiers de signets. Comme d'habitude avec les arborescences de &kde;, les sous-dossiers sont affichés avec une petite <keycap
+>&gt;</keycap
+> flèche placée à gauche du nom de dossier. Un clic <mousebutton
+>gauche</mousebutton
+> dessus développera l'arborescence pour afficher le contenu de ce sous-dossier et la flèche <keycap
+>
+></keycap
+> se transforme en <keycap
+>v</keycap
+>, un clic <mousebutton
+>gauche</mousebutton
+> sur la flèche <keycap
+>v</keycap
+> réduit l'affichage du sous-dossier.</para>
+
+<para
+>Pour sélectionner un élément dans la liste, vous pouvez cliquer dessus avec le &BGS; ou naviguer dans la liste à l'aide des touches <keysym
+>Flèche haut</keysym
+> et <keysym
+>Flèche bas</keysym
+> pour vous déplacer, <keysym
+>Flèche droite</keysym
+> pour développer un sous-dossier et <keysym
+>Flèche gauche</keysym
+> pour le réduire.</para>
+
+<para
+>Vous pouvez déplacer un élément vers un autre endroit de la liste à l'aide du glisser-déposer normal ou des méthodes <guimenuitem
+>Couper</guimenuitem
+> et <guimenuitem
+>Coller</guimenuitem
+>. L'ordre dans lequel les éléments apparaissent dans l'<guilabel
+>Éditeur de signets</guilabel
+> est celui dans lequel ils apparaîtront dans la liste déroulante <guimenu
+>Signets</guimenu
+>. L'option <menuchoice
+><guimenu
+>Insertion</guimenu
+><guimenu
+>Dossier</guimenu
+><guimenuitem
+>insérer un séparateur</guimenuitem
+></menuchoice
+> peut servir à insérer des lignes de séparation dans la liste à n'importe quel endroit de votre choix.</para>
+
+<para
+>Un nouveau sous-dossier peut être créé à l'endroit choisi de la liste à l'aide de l'option <guimenuitem
+>Nouveau dossier...</guimenuitem
+> dans le menu <guimenu
+>Dossier</guimenu
+> dans le menu déroulant que vous obtenez lors d'un clic <mousebutton
+>droit</mousebutton
+> sur un élément dans la partie principale de la fenêtre, ou avec <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </para>
+
+<para
+>Pour changer le nom d'un dossier, d'un signet ou d'un dossier, sélectionnez-le en appuyant sur <keycap
+>F2</keycap
+> ou choisissez l'élément <guimenuitem
+>Renommer</guimenuitem
+> dans le menu <guimenu
+>Édition</guimenu
+> ou le menu déroulant qui apparaît lors d'un clic <mousebutton
+>droit</mousebutton
+> sur l'élément. De la même manière, vous pouvez modifier l'&URL; en appuyant sur <keycap
+>F3</keycap
+> ou en choisissant l'élément de menu <guimenuitem
+>Modifier l'emplacement</guimenuitem
+>.</para>
+
+<para
+>L'<guilabel
+>Éditeur de signets</guilabel
+> vous permet d'importer des signets à partir d'une palette de navigateurs dans la liste de signets de &konqueror;, en les plaçant dans un nouveau dossier ou en remplaçant tous les signets actuels. Pour le faire, choisissez <guisubmenu
+>Importer</guisubmenu
+> dans le menu <guimenu
+>Fichier</guimenu
+>. L'option <menuchoice
+><guimenu
+>Fichier</guimenu
+><guisubmenu
+>Exporter</guisubmenu
+> </menuchoice
+> peut être utilisée pour exporter les signets de &konqueror; vers un navigateur de Mozilla.</para>
+
+<para
+>Pour choisir le sous-dossier de signets qui servira à contenir les éléments de la barre de signets, sélectionnez le sous-dossier, puis choisissez <guimenuitem
+>Définir comme dossier de barre d'outils</guimenuitem
+> dans le menu <guimenu
+>Dossier</guimenu
+>.</para>
+
+<para
+>Lorsque vous mettez de l'ordre dans vos signets et que vous avez oublié de quelle page web il s'agit, vous pouvez aisément l'ouvrir dans l'<guilabel
+>Éditeur de signets</guilabel
+> en cliquant avec le &BDS; sur l'élément et en choisissant <guimenuitem
+>Ouvrir dans Konqueror</guimenuitem
+> dans le menu déroulant. Si vous désirez simplement vérifier si l'&URL; est encore valable, choisissez plutôt <guimenuitem
+>Vérifier l'état</guimenuitem
+>.</para>
+
+<note
+><para
+>Tous vos changements sont automatiquement enregistrés si vous fermez l'<guilabel
+>éditeur de signet</guilabel
+>. </para
+></note>
+
+<para
+>Traduction française par &JoelleCornavin;, &GerardDelafond; et &LudovicGrossard;</para
+> <para
+>Relecture par &LudovicGrossard;.</para
+> 
+
+&underFDL;
+&underGPL;
+
+</article>

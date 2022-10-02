@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Serbian "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Кориснички приручник КДЕ-а</title>
+	<author
+><personname
+><firstname
+>Фрерих</firstname
+> <surname
+>Рабе</surname
+></personname
+> &Frerich.Raabe.mail; </author>
+	<date
+>1.2.2005.</date>
+	<productname
+>КДЕ</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+><command
+>kbookmarkmerger</command
+></refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Програм за стапање датог скупа обележивача у корисников списак обележивача.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kbookmarkmerger</command
+> <arg choice="opt" rep="repeat"
+>КуТ опције</arg
+> <arg choice="opt" rep="repeat"
+>КДЕ опције</arg
+> <arg choice="req"
+>фасцикла</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Опис</title>
+<para
+>К-стапач-обележивача је програм за стапање датог скупа обележивача у корисникове обележиваче. Ако корисник до сада није додао ниједан обележивач, биће створен нов списак обележивача и дати обележивачи уметнути у њега. К-стапач-обележивача притом памти који су фајлови већ били стопљени раније, те једном додати обележивачи неће бити додати поново као дупликати. У случају да је <acronym
+>КДЕ</acronym
+> у погону док се извршава К-стапач-обележивача, <acronym
+>КДЕ-ов</acronym
+> подсистем обележивача биће обавештен о изменама у корисниковим обележивачима, те ће сви програми који им приступају (нпр. <application
+>К-освајач</application
+>) одмах уочити измене.</para>
+
+<para
+>Традиционално се нешто налик овоме изводило тако што би се при отварању новог корисничког налога користио пажљиво састављени костур домаће фасцикле, који већ садржи стандардни скуп обележивача. Проблем с овим приступом јесте што се после стварања налога не могу ширити нови обележивачи свим корисницима.</para>
+
+<para
+>Механизам К-стапача-обележивача користан је систем-администраторима када желе да свим корисницима рашире обележивач који указује на одређени документ (на пример, важне напомене о систему). Може бити користан и дистрибутерима, на пример за прилагање фајлова обележивача у пакете тако да их К-стапач-обележивача стопи у корисников списак обележивача при инсталирању пакета. Овако документација за софтверски пакет може постати лако и видљиво приступачна одмах након његовог инсталирања. </para>
+
+<para
+>Једини параметар неопходан К-стапачу-обележивача јесте име фасцикле у којој ће бити потражени фајлови обележивача. Сви фајлови у датој фасцикли биће узети у обзир за стапање у корисникову поставу. Фајлови обележивача морају бити правилни ИксБЕЛ фајлови.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Види још</title>
+<para
+><ulink url="help:/konqueror/index.html"
+>Приручник за <application
+>К-освајач</application
+></ulink
+></para>
+</refsect1>
+
+<refsect1>
+<title
+>Примери</title>
+<screen
+>pera@hal9000 <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Стапа све фајлове обележивача ускладиштене у <filename
+>/usr/local/extra-bookmarks</filename
+> у Перин списак обележивача.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Стандарди</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+>Спецификација ИксБЕЛ-а</ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Ограничења</title>
+<para
+>При одређивању да ли је дати фајл обележивача већ стопљен у корисников списак обележивача, К-стапач-обележивача просто разматра име фајла; садржај се уопште не проверава. То значи да измена фајла обележивача који је већ једном стопљен са корисниковим обележивачима неће окинути поновно стапање.</para>
+
+<para
+>Такође имајте у виду да ће, у случају да корисник измени обележивач који је стопљен у његову поставу, изворни фајл обележивача остати неизмењен.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Аутор</title>
+<para
+><personname
+><firstname
+>Фрерих</firstname
+> <surname
+>Рабе</surname
+></personname
+> &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>
+

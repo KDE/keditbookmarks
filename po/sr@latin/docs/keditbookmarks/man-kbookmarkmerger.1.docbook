@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Serbian-Latin "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Korisnički priručnik KDE-a</title>
+	<author
+><personname
+><firstname
+>Frerih</firstname
+> <surname
+>Rabe</surname
+></personname
+> &Frerich.Raabe.mail; </author>
+	<date
+>1.2.2005.</date>
+	<productname
+>KDE</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+><command
+>kbookmarkmerger</command
+></refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Program za stapanje datog skupa obeleživača u korisnikov spisak obeleživača.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kbookmarkmerger</command
+> <arg choice="opt" rep="repeat"
+>Qt opcije</arg
+> <arg choice="opt" rep="repeat"
+>KDE opcije</arg
+> <arg choice="req"
+>fascikla</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Opis</title>
+<para
+>K-stapač-obeleživača je program za stapanje datog skupa obeleživača u korisnikove obeleživače. Ako korisnik do sada nije dodao nijedan obeleživač, biće stvoren nov spisak obeleživača i dati obeleživači umetnuti u njega. K-stapač-obeleživača pritom pamti koji su fajlovi već bili stopljeni ranije, te jednom dodati obeleživači neće biti dodati ponovo kao duplikati. U slučaju da je <acronym
+>KDE</acronym
+> u pogonu dok se izvršava K-stapač-obeleživača, <acronym
+>KDE-ov</acronym
+> podsistem obeleživača biće obavešten o izmenama u korisnikovim obeleživačima, te će svi programi koji im pristupaju (npr. <application
+>K-osvajač</application
+>) odmah uočiti izmene.</para>
+
+<para
+>Tradicionalno se nešto nalik ovome izvodilo tako što bi se pri otvaranju novog korisničkog naloga koristio pažljivo sastavljeni kostur domaće fascikle, koji već sadrži standardni skup obeleživača. Problem s ovim pristupom jeste što se posle stvaranja naloga ne mogu širiti novi obeleživači svim korisnicima.</para>
+
+<para
+>Mehanizam K-stapača-obeleživača koristan je sistem-administratorima kada žele da svim korisnicima rašire obeleživač koji ukazuje na određeni dokument (na primer, važne napomene o sistemu). Može biti koristan i distributerima, na primer za prilaganje fajlova obeleživača u pakete tako da ih K-stapač-obeleživača stopi u korisnikov spisak obeleživača pri instaliranju paketa. Ovako dokumentacija za softverski paket može postati lako i vidljivo pristupačna odmah nakon njegovog instaliranja. </para>
+
+<para
+>Jedini parametar neophodan K-stapaču-obeleživača jeste ime fascikle u kojoj će biti potraženi fajlovi obeleživača. Svi fajlovi u datoj fascikli biće uzeti u obzir za stapanje u korisnikovu postavu. Fajlovi obeleživača moraju biti pravilni XBEL fajlovi.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Vidi još</title>
+<para
+><ulink url="help:/konqueror/index.html"
+>Priručnik za <application
+>K-osvajač</application
+></ulink
+></para>
+</refsect1>
+
+<refsect1>
+<title
+>Primeri</title>
+<screen
+>pera@hal9000 <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Stapa sve fajlove obeleživača uskladištene u <filename
+>/usr/local/extra-bookmarks</filename
+> u Perin spisak obeleživača.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standardi</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+>Specifikacija XBEL-a</ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Ograničenja</title>
+<para
+>Pri određivanju da li je dati fajl obeleživača već stopljen u korisnikov spisak obeleživača, K-stapač-obeleživača prosto razmatra ime fajla; sadržaj se uopšte ne proverava. To znači da izmena fajla obeleživača koji je već jednom stopljen sa korisnikovim obeleživačima neće okinuti ponovno stapanje.</para>
+
+<para
+>Takođe imajte u vidu da će, u slučaju da korisnik izmeni obeleživač koji je stopljen u njegovu postavu, izvorni fajl obeleživača ostati neizmenjen.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Autor</title>
+<para
+><personname
+><firstname
+>Frerih</firstname
+> <surname
+>Rabe</surname
+></personname
+> &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>
+

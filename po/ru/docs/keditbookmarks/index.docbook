@@ -1,0 +1,221 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % Russian "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<!--moved from konqueror docbook -->
+
+<article id="keditbookmarks" lang="&language;">
+<articleinfo>
+<title
+>Редактор закладок</title>
+<authorgroup>
+<author
+>&Pamela.Roberts;</author>
+<othercredit role="translator"
+><firstname
+>Kernel</firstname
+><surname
+>Panic</surname
+><affiliation
+><address
+><email
+>rzhevskiy@mail.ru</email
+></address
+></affiliation
+><contrib
+>Перевод на русский язык</contrib
+></othercredit
+><othercredit role="reviewer"
+><firstname
+>Григорий</firstname
+><surname
+>Мохин</surname
+><affiliation
+><address
+><email
+>mok@kde.ru</email
+></address
+></affiliation
+><contrib
+>Редакция перевода на русский язык</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Олеся</firstname
+><surname
+>Герасименко</surname
+><affiliation
+><address
+><email
+>translation-team@basealt.ru</email
+></address
+></affiliation
+><contrib
+>Обновление перевода на русский язык</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2016-11-04</date>
+
+<releaseinfo
+>Приложения KDE 16.12</releaseinfo>
+
+<keywordset>
+<keyword
+>закладки</keyword>
+<keyword
+>редактор</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>Во многих приложениях (например, &konqueror;, &konsole;, &konversation;) возможно открыть окно <guilabel
+>Редактора закладок</guilabel
+>, выбрав пункт меню <menuchoice
+><guimenu
+>Закладки</guimenu
+><guimenuitem
+>Изменить закладки...</guimenuitem
+> </menuchoice
+>.</para>
+<para
+>Также возможно запустить редактор как автономное приложение для редактирования закладок браузера.</para>
+<para
+>В окне редактора закладки и папки показаны в виде дерева. Наличие вложенных папок обозначается маленькой стрелкой <keycap
+>&gt;</keycap
+>, расположенной слева от названия папки; чтобы просмотреть вложенные папки, щёлкните по этой стрелке <mousebutton
+>левой</mousebutton
+> кнопкой мыши. При этом стрелка <keycap
+>&gt;</keycap
+> сменится на знак <keycap
+>v</keycap
+>; если снова щёлкнуть по нему <mousebutton
+>левой</mousebutton
+> кнопкой мыши, папка будет свёрнута.</para>
+
+<para
+>Чтобы выбрать в списке нужный объект, щёлкните по нему <mousebutton
+>левой</mousebutton
+> кнопкой мыши. Клавиши со стрелками <keysym
+>вверх</keysym
+> и <keysym
+>вниз</keysym
+> позволяют перемещаться по списку. Чтобы раскрыть папку, воспользуйтесь клавишей со стрелкой <keysym
+>вправо</keysym
+>, а чтобы свернуть её — клавишей со стрелкой <keysym
+>влево</keysym
+>.</para>
+
+<para
+>Закладки и папки возможно перетаскивать мышью, а также перемещать с помощью команд <guimenuitem
+>Вырезать</guimenuitem
+> и <guimenuitem
+>Вставить</guimenuitem
+>. В главном меню закладки будут располагаться точно в таком же порядке, как и в данном окне. Чтобы вставить в меню разделительную черту, воспользуйтесь пунктом меню <menuchoice
+><guimenu
+>Папка</guimenu
+><guimenuitem
+>Вставить разделитель</guimenuitem
+></menuchoice
+>.</para>
+
+<para
+>Чтобы создать новую папку, выберите пункт меню <menuchoice
+><guimenu
+>Папка</guimenu
+><guimenuitem
+>Создать папку...</guimenuitem
+></menuchoice
+> или щёлкните <mousebutton
+>правой</mousebutton
+> кнопкой мыши по любому объекту в основной части окна редактора и выберите в контекстном меню пункт <guimenuitem
+>Создать папку...</guimenuitem
+>. Также возможно использовать комбинацию клавиш <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+>. </para>
+
+<para
+>Чтобы изменить название закладки или папки, выделите её, а затем нажмите клавишу <keycap
+>F2</keycap
+> или выберите пункт меню <menuchoice
+><guimenu
+>Правка</guimenu
+><guimenuitem
+>Переименовать</guimenuitem
+></menuchoice
+>. Также возможно щёлкнуть по закладке <mousebutton
+>правой</mousebutton
+> кнопкой мыши и выбрать в контекстном меню пункт <guimenuitem
+>Переименовать</guimenuitem
+>. Чтобы изменить адрес страницы, на которую указывает закладка, нажмите клавишу <keycap
+>F3</keycap
+> или выберите пункт меню <guimenuitem
+>Изменить адрес</guimenuitem
+>.</para>
+
+<para
+><guilabel
+>Редактор закладок</guilabel
+> позволяет импортировать закладки из других браузеров, добавляя их в список закладок &konqueror;, помещая их в новую папку или замещая ими все уже существующие. Чтобы воспользоваться этой возможностью, выберите пункт меню <menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Импорт</guisubmenu
+></menuchoice
+>. С помощью пункта меню <menuchoice
+><guimenu
+>Файл</guimenu
+><guisubmenu
+>Экспорт</guisubmenu
+></menuchoice
+> закладки &konqueror; возможно экспортировать в браузер Mozilla.</para>
+
+<para
+>Чтобы выбрать папку для отображения в качестве панели закладок, выделите её, а затем выберите в меню <guimenu
+>Папка</guimenu
+> пункт <guimenuitem
+>Сделать папкой панели закладок</guimenuitem
+>.</para>
+
+<para
+>Если требуется узнать, куда ссылается определённая закладка, щёлкните по ней <mousebutton
+>правой</mousebutton
+> кнопкой мыши и в появившемся меню выберите пункт <guimenuitem
+>Открыть в Konqueror</guimenuitem
+>. Если необходимо только убедиться, что адрес всё ещё доступен, выберите пункт <guimenuitem
+>Проверить доступность</guimenuitem
+>.</para>
+
+<note
+><para
+>При закрытии <guilabel
+>Редактора закладок</guilabel
+> все изменения автоматически сохраняются. </para
+></note>
+
+<para
+>Перевод на русский язык: Kernel Panic <email
+>rzhevskiy@mail.ru</email
+></para
+><para
+>Редакция перевода на русский язык: Григорий Мохин <email
+>mok@kde.ru</email
+></para
+><para
+>Обновление перевода на русский язык: Олеся Герасименко<email
+>translation-team@basealt.ru</email
+></para
+> 
+
+&underFDL;
+&underGPL;
+
+</article>

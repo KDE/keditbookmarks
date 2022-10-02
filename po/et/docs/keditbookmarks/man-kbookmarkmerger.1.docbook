@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Estonian  "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>KDE kasutaja käsiraamat</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>1. veebruar 2005</date>
+	<productname
+>KDE töökeskkond</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Programm mingi järjehoidjate komplekti ühendamiseks kasutaja järjehoidjatega.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="opt" rep="repeat"
+>Qt võtmed</arg
+> <arg choice="opt" rep="repeat"
+>KDE võtmed</arg
+> <arg choice="req"
+>directory</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Kirjeldus</title>
+<para
+>&kbookmarkmerger; on programm mingi järjehoidjate komplekti ühendamiseks kasutaja järjehoidjatega. Kui kasutajal pole veel järjehoidjaid, siis luuakse talle uus järjehoidjate nimekiri ning sellesse lisatakse ühendamiseks mõeldud järjehoidjad. Operatsioonide käigus jätab &kbookmarkmerger; meelde, millised failid on juba varem ühendatud, mis tagab selle, et järjehoidjaid ei ühendata topelt. Kui &kde; töötab ajal, mis käivitatakse &kbookmarkmerger;, antakse &kde; järjehoidjate alamsüsteemile teada kõigist muudatustest kasutaja järjehoidjates, et neid kasutavad rakendused (&ie; &konqueror;) saaks uuendused kohe tarvitusele võtta.</para>
+
+<para
+>Traditsiooniliselt kasutati selliste probleemide lahendamiseks uue kasutaja loomisel teatud hoolikalt valitud mall-kodukatalooge, mis pidid tagama ka uuele kasutajale standardse järjehoidjate valiku. Probleemiks oli aga see, et pärast uue kasutaja konto loomist ei saanud enam uusi järjehoidjaid levitada.</para>
+
+<para
+>Käesolev süsteem sobib väga hästi näiteks süsteemiadministraatoritele, kes tahavad teatud dokumendile (näiteks olulistele märkustele süsteemi kohta) viitava järjehoidja teha kättesaadavaks kõigile kasutajatele. See sobib hästi ka distributsioonide loojatele, kes saavad enda pakutavale tarkvarale osutavaid järjehoidjaid distributsiooniga kaasa panna, olles samas kindlad, et &kbookmarkmerger; hoolitseb paketi paigaldamisel nende ühendamise eest kasutaja järjehoidjate nimekirjaga. Nii saab näiteks tarkvara dokumentatsiooni muuta kohe pärast tarkvara paigaldamist kõigile hõlpsasti kättesaadavaks.</para>
+
+<para
+>Ainus parameeter, mida &kbookmarkmerger; vajab, on kataloogi nimi, kust otsida järjehoidjafaile. Ühendamisel ühendatakse kasutaja järjehoidjate nimekirja kõik antud kataloogist leitud järjehoidjafailid. Need peavad olema korrektsed <acronym
+>XBEL</acronym
+>-failid.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Vaata ka</title>
+<para
+><ulink url="help:/konqueror/index.html"
+>&konqueror;i käsiraamat</ulink
+></para>
+</refsect1>
+
+<refsect1>
+<title
+>Näited</title>
+<screen
+>joe@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Ühendab kõik kataloogis <filename
+>/usr/local/extra-bookmarks</filename
+> leiduvad järjehoidjafailid kasutaja joe järjehoidjate nimekirjaga.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standardid</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+><acronym
+>XBEL</acronym
+> spetsifikatsioon</ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Piirangud</title>
+<para
+>Selgitamisel, kas järjehoidjafail on juba ühendatud kasutaja järjehoidjate nimekirjaga või mitte, uurib &kbookmarkmerger; ainult järjehoidjafaili nime ega kontrolli mingil määral selle sisu. See tähendab, et kui ka juba kasutaja järjehoidjatega ühendatud järjehoidjafaili sisu on muutunud, ei ühendata seda siiski uuesti.</para>
+
+<para
+>Pane tähele, et kui kasutaja muudab ühendamisel lisandunud järjehoidjat, ei muuda see kuidagi algupärast järjehoidjafaili.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Autor</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>
+

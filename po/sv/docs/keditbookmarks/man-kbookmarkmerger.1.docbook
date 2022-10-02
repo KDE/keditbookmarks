@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Swedish "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Kbookmarkmerger användarhandbok</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>2016-11-07</date>
+	<releaseinfo
+>Program 16.12</releaseinfo>
+	<productname
+>KDE-program</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Ett program för att infoga en given uppsättning bokmärken i en användares lista med bokmärken.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>katalog</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beskrivning</title>
+<para
+>&kbookmarkmerger; är ett program för att sammanfoga en given bokmärkesuppsättning med användarens bokmärkesuppsättning. Om användaren ännu inte har några bokmärken skapade, skapas en ny bokmärkeslista och givna bokmärken infogas i den. Medan detta görs håller &kbookmarkmerger; reda på vilka filer som redan infogats under en tidigare körning, så att inga bokmärken infogas i användarens bokmärken mer än en gång.</para>
+
+<para
+>Sättet som traditionellt används för att åstadkomma något som liknar det här är att använda noggrant framtagna hemkataloger när ett nytt användarkonto skapas för att ge användaren en standarduppsättning med bokmärken. Problemet med tillvägagångssättet är att efter användarens konto har skapats, kan inga nya bokmärken spridas.</para>
+
+<para
+>Mekanismen är användbar för systemadministratörer som vill sprida ett bokmärke som pekar på ett visst dokument (till exempel viktig information om systemet) till alla användare. Distributörer kan också ha nytta av det, genom att till exempel utvidga programpaketen de tillhandahåller med bokmärkesfiler som &kbookmarkmerger; infogar i användarens bokmärkeslista när programpaketet infogas. På så sätt blir dokumentation som levereras med ett programpaket enkelt och synligt tillgänglig efter paketet har installerats.</para>
+
+<para
+>Det enda argument som &kbookmarkmerger; kräver är namnet på en katalog som ska sökas igenom efter bokmärkesfiler. Alla filer i en given katalog övervägs för att infogas i användarens inställning. Filerna i den givna katalogen ska vara giltiga <acronym
+>XBEL</acronym
+>-filer.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Se också</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>Handbok &konqueror;</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Exempel</title>
+<screen
+>joe@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Sammanfogar alla bokmärkesfiler som är lagrade i <filename
+>/usr/local/extra-bookmarks</filename
+> med Joes bokmärkeslista.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standarder</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+><acronym
+>XBEL</acronym
+>-specifikation</ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Begränsningar</title>
+<para
+>För att avgöra om en given bokmärkesfil redan har infogats i en användares bokmärken, tittar &kbookmarkmerger; enbart på bokmärkesfilens filnamn. Innehållet kontrolleras inte alls. Det betyder att ändring av en bokmärkesfil som redan har infogats i en användares bokmärken inte utlöser en ny infogning.</para>
+
+<para
+>Observera också att om en användare ändrar ett bokmärke som infogades i hans inställning, förblir den ursprungliga bokmärkesfilen oförändrad.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Upphovsman</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>

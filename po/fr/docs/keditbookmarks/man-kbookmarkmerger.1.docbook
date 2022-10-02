@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % French "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Manuel de l'utilisateur de kbookmarkmerger</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>07-11-2016</date>
+	<releaseinfo
+>Applications 16.12</releaseinfo>
+	<productname
+>Applications KDE</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Un programme pour fusionner un ensemble donné de signets dans la liste des signets de l'utilisateur.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><arg choice="req"
+>dossier</arg
+> &kbookmarkmerger;  </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Description</title>
+<para
+>&kbookmarkmerger; est un programme pour fusionner un ensemble de signets dans les signets de l'utilisateur. Si l'utilisateur n'a encore créé aucun signet, une nouvelle liste de signets est créée et les signets donnés sont insérés dans celle-ci. En faisant ceci, &kbookmarkmerger; garde une trace des fichiers qui ont été fusionnés lors une fusion précédente. Ainsi, aucun signet ne sera installé plusieurs fois dans les signets de l'utilisateur.</para>
+
+<para
+>L'approche traditionellement utilisée pour réaliser ceci était d'utiliser avec prudence les dossiers utilisateurs squelettes lors de la création d'un nouveau compte utilisateur, pour lui fournir un ensemble standard de signets. Le problème avec cette approche est qu'une fois que le compte utilisateur a été créé, aucun signet ne peut être propagé.</para>
+
+<para
+>Ce mécanisme est utile pour les administrateurs système qui veulent propager un signet pointant vers un certain document (par exemple des notes à propos du système) pour tous les utilisateurs. Les distributeurs peuvent également trouver cela utile, par exemple pour ajouter aux paquets de logiciels qu'ils fournissent des fichiers de signets qui seront fusionnés avec &kbookmarkmerger; avec les signets de l'utilisateur lorsque le paquet est installé. De cette façon, la documentation fournie avec le paquet est facilement est clairement accessible juste après l'installation du paquet.</para>
+
+<para
+>Le seul paramètre requis par &kbookmarkmerger; est le nom d'un dossier dans lequel les fichiers de signets seront cherchés. Tous les fichiers dans ce dossier seront pris en compte pour être fusionnés. Les fichiers de ce dossier doivent être des fichiers <acronym
+>XBEL</acronym
+> valables.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Voir également</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>le manuel de l'utilisateur de &konqueror;</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Exemples</title>
+<screen
+>jean@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>fusionne tous les fichiers de signets stockés dans <filename
+>/usr/local/extra-bookmarks</filename
+> dans la listes des signets de jean.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standards</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+>Spécification <acronym
+>XBEL</acronym
+></ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Restrictions</title>
+<para
+>Lorsque &kbookmarkmerger; détermine si un fichier de signets a été fusionné avec les signets de l'utilisateur ou non, il regarde simplement le nom de fichier - le contenu n'est pas vérifié du tout. Ceci signifie que modifier le contenu d'un fichier de signets qui a déjà été fusionné ne déclenchera pas de nouvelle fusion.</para>
+
+<para
+>Notez également que si l'utilisateur modifie un signet qui a été fusionné dans sa configuration, le fichier de signets d'origine ne sera pas modifié.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Auteur</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>

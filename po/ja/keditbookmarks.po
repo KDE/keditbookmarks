@@ -1,0 +1,769 @@
+# Translation of keditbookmarks into Japanese.
+# This file is distributed under the same license as the kdebase package.
+# Noboru Sinohara <shinobo@leo.bekkoame.ne.jp>, 2002, 2003.
+# Taiki Komoda <kom@kde.gr.jp>, 2002, 2003, 2004, 2010.
+# Kenshi Muto <kmuto@debian.org>, 2004.
+# Kurose Shushi <md81@bird.email.ne.jp>, 2004.
+# Ryuichi Kakuda <ryuk@user.script.nu>, 2004.
+# Seiji Hoshiba <hoshiyan@mint.ocn.ne.jp>, 2004.
+# Shinsaku Nakagawa <shinsaku@users.sourceforge.jp>, 2004.
+# Toyohiro Asukai <toyohiro@ksmplus.com>, 2004.
+# UTUMI Hirosi <utuhiro78@yahoo.co.jp>, 2004.
+# AWASHIRO Ikuya <ikuya@good-day.co.jp>, 2005.
+# Shinichi Tsunoda <tsuno@ngy.1st.ne.jp>, 2005.
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2006, 2007, 2008, 2009.
+# Fumiaki Okushi <okushi@kde.gr.jp>, 2005, 2006, 2007, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keditbookmarks\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2014-09-20 16:53-0700\n"
+"Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
+"Language-Team: Japanese <kde-jp@kde.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 1.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Noboru Sinohara,Ryuichi Kakuda, Fumiaki Okushi,Shinichi Tsunoda"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"shinobo@leo.bekkoame.ne.jp,ryuk@user.script.nu, fumiaki@okushi.com,"
+"tsuno@ngy.1st.ne.jp"
+
+#: actionsimpl.cpp:98
+#, kde-format
+msgid "&Delete"
+msgstr "削除(&D)"
+
+# ACCELERATOR added by translator
+#: actionsimpl.cpp:104
+#, kde-format
+msgid "Rename"
+msgstr "名前変更(&E)"
+
+#: actionsimpl.cpp:110
+#, kde-format
+msgid "C&hange Location"
+msgstr "場所を変更(&H)"
+
+# ACCELERATOR changed by translator
+#: actionsimpl.cpp:116
+#, kde-format
+msgid "C&hange Comment"
+msgstr "コメントを変更(&A)"
+
+#: actionsimpl.cpp:122
+#, kde-format
+msgid "Chan&ge Icon..."
+msgstr "アイコンを変更(&G)..."
+
+# ACCELERATOR added by translator
+#: actionsimpl.cpp:126
+#, kde-format
+msgid "Update Favicon"
+msgstr "ファビコンを更新(&F)"
+
+# ACCELERATOR added by translator
+#: actionsimpl.cpp:130
+#, kde-format
+msgid "Recursive Sort"
+msgstr "再帰的にソート(&R)"
+
+#: actionsimpl.cpp:135
+#, kde-format
+msgid "&New Folder..."
+msgstr "新しいフォルダ(&N)..."
+
+#: actionsimpl.cpp:141
+#, kde-format
+msgid "&New Bookmark"
+msgstr "新しいブックマーク(&N)"
+
+#: actionsimpl.cpp:145
+#, kde-format
+msgid "&Insert Separator"
+msgstr "セパレータを挿入(&I)"
+
+#: actionsimpl.cpp:150
+#, kde-format
+msgid "&Sort Alphabetically"
+msgstr "アルファベット順にソート(&S)"
+
+#: actionsimpl.cpp:155
+#, kde-format
+msgid "Set as T&oolbar Folder"
+msgstr "ツールバーフォルダとして設定(&O)"
+
+#: actionsimpl.cpp:159
+#, kde-format
+msgid "&Expand All Folders"
+msgstr "すべてのフォルダを展開(&E)"
+
+#: actionsimpl.cpp:163
+#, kde-format
+msgid "Collapse &All Folders"
+msgstr "すべてのフォルダを閉じる(&A)"
+
+#: actionsimpl.cpp:168
+#, fuzzy, kde-format
+#| msgid "&Open in Konqueror"
+msgid "&Open in Browser"
+msgstr "Konqueror で開く(&O)"
+
+#: actionsimpl.cpp:173
+#, kde-format
+msgid "Check &Status"
+msgstr "ステータスをチェック(&S)"
+
+#: actionsimpl.cpp:177
+#, kde-format
+msgid "Check Status: &All"
+msgstr "すべてのステータスをチェック(&A)"
+
+#: actionsimpl.cpp:181
+#, kde-format
+msgid "Update All &Favicons"
+msgstr "すべてのファビコンを更新(&U)"
+
+#: actionsimpl.cpp:185
+#, kde-format
+msgid "Cancel &Checks"
+msgstr "チェックをキャンセル(&C)"
+
+#: actionsimpl.cpp:189
+#, kde-format
+msgid "Cancel &Favicon Updates"
+msgstr "ファビコンの更新をキャンセル(&F)"
+
+#: actionsimpl.cpp:195
+#, kde-format
+msgid "Import &Netscape Bookmarks..."
+msgstr "&Netscape のブックマークをインポート..."
+
+#: actionsimpl.cpp:201
+#, kde-format
+msgid "Import &Opera Bookmarks..."
+msgstr "&Opera のブックマークをインポート..."
+
+#: actionsimpl.cpp:211
+#, kde-format
+msgid "Import &Galeon Bookmarks..."
+msgstr "&Galeon のブックマークをインポート..."
+
+#: actionsimpl.cpp:217
+#, kde-format
+msgid "Import &KDE 2 or KDE 3 Bookmarks..."
+msgstr "&KDE 2/KDE 3 のブックマークをインポート..."
+
+#: actionsimpl.cpp:223
+#, kde-format
+msgid "Import &Internet Explorer Bookmarks..."
+msgstr "&Internet Explorer のブックマークをインポート..."
+
+#: actionsimpl.cpp:229
+#, kde-format
+msgid "Import &Mozilla Bookmarks..."
+msgstr "&Mozilla のブックマークをインポート..."
+
+#: actionsimpl.cpp:234
+#, kde-format
+msgid "Export &Netscape Bookmarks"
+msgstr "&Netscape へブックマークをエクスポート"
+
+#: actionsimpl.cpp:239
+#, kde-format
+msgid "Export &Opera Bookmarks..."
+msgstr "&Opera へブックマークをエクスポート..."
+
+#: actionsimpl.cpp:244
+#, kde-format
+msgid "Export &HTML Bookmarks..."
+msgstr "&HTML でブックマークをエクスポート..."
+
+#: actionsimpl.cpp:248
+#, kde-format
+msgid "Export &Internet Explorer Bookmarks..."
+msgstr "&Internet Explorer へブックマークをエクスポート..."
+
+#: actionsimpl.cpp:253
+#, kde-format
+msgid "Export &Mozilla Bookmarks..."
+msgstr "&Mozilla へブックマークをエクスポート..."
+
+#: actionsimpl.cpp:298
+#, fuzzy, kde-format
+#| msgid "*.html|HTML Bookmark Listing"
+msgid "HTML Bookmark Listing (*.html)"
+msgstr "*.html|ブックマークを列挙した HTML ファイル"
+
+#: actionsimpl.cpp:343
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Cut Items"
+msgstr "項目を切り取り"
+
+#: actionsimpl.cpp:368
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "貼り付け"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgid "New folder:"
+msgstr "新しいフォルダ:"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgctxt "@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "新しいブックマークフォルダを作成"
+
+# ACCELERATOR added by translator
+#: actionsimpl.cpp:526
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Recursive Sort"
+msgstr "再帰的にソート(&R)"
+
+#: actionsimpl.cpp:541
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Sort Alphabetically"
+msgstr "アルファベット順にソート"
+
+#: actionsimpl.cpp:550
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Delete Items"
+msgstr "項目を削除"
+
+#: bookmarkinfowidget.cpp:223
+#, kde-format
+msgid "Name:"
+msgstr "名前:"
+
+#: bookmarkinfowidget.cpp:230
+#, kde-format
+msgid "Location:"
+msgstr "場所:"
+
+#: bookmarkinfowidget.cpp:237
+#, kde-format
+msgid "Comment:"
+msgstr "コメント:"
+
+#: bookmarkinfowidget.cpp:243
+#, kde-format
+msgid "First viewed:"
+msgstr "初回訪問:"
+
+#: bookmarkinfowidget.cpp:246
+#, kde-format
+msgid "Viewed last:"
+msgstr "前回訪問:"
+
+#: bookmarkinfowidget.cpp:249
+#, kde-format
+msgid "Times visited:"
+msgstr "訪問回数:"
+
+#: exporters.cpp:51
+#, kde-format
+msgid "My Bookmarks"
+msgstr "マイブックマーク"
+
+#: favicons.cpp:54 testlink.cpp:94
+#, kde-format
+msgid "OK"
+msgstr "OK"
+
+#: favicons.cpp:70
+#, kde-format
+msgid "Updating favicon..."
+msgstr "ファビコンを更新中..."
+
+#: faviconupdater.cpp:79
+#, kde-format
+msgid "%1; no HTML component found (%2)"
+msgstr "%1; HTML コンポーネントが見つかりません (%2)"
+
+#: importers.cpp:57
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Import %1 Bookmarks"
+msgstr "%1 のブックマークをインポート"
+
+#: importers.cpp:62
+#, kde-format
+msgid "%1 Bookmarks"
+msgstr "%1 のブックマーク"
+
+#: importers.cpp:99
+#, kde-format
+msgid "Import as a new subfolder or replace all the current bookmarks?"
+msgstr ""
+"新しいサブフォルダとしてインポートしますか？それとも現在のブックマークをすべ"
+"て置き換えますか？"
+
+#: importers.cpp:100
+#, kde-format
+msgctxt "@title:window"
+msgid "%1 Import"
+msgstr "%1 のインポート"
+
+#: importers.cpp:101
+#, kde-format
+msgid "As New Folder"
+msgstr "新しいフォルダとして"
+
+#: importers.cpp:102
+#, kde-format
+msgid "Replace"
+msgstr "置換"
+
+#: importers.cpp:212
+#, fuzzy, kde-format
+#| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
+msgid "Galeon Bookmark Files (*.xbel)"
+msgstr "*.xbel|Galeon ブックマークファイル (*.xbel)"
+
+#: importers.cpp:220
+#, fuzzy, kde-format
+#| msgid "*.xml|KDE Bookmark Files (*.xml)"
+msgid "KDE Bookmark Files (*.xml)"
+msgstr "*.xml|KDE ブックマークファイル (*.xml)"
+
+#: importers.h:116
+#, kde-format
+msgid "Galeon"
+msgstr "Galeon"
+
+#: importers.h:131
+#, kde-format
+msgid "KDE"
+msgstr "KDE"
+
+#: importers.h:161
+#, kde-format
+msgid "Netscape"
+msgstr "Netscape"
+
+#: importers.h:176
+#, kde-format
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#: importers.h:191
+#, kde-format
+msgid "IE"
+msgstr "IE"
+
+#: importers.h:209
+#, kde-format
+msgid "Opera"
+msgstr "Opera"
+
+#: kbookmarkmerger.cpp:47
+#, kde-format
+msgid "KBookmarkMerger"
+msgstr "KBookmarkMerger"
+
+#: kbookmarkmerger.cpp:49
+#, kde-format
+msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
+msgstr ""
+"サードパーティによってインストールされたブックマークをユーザのブックマークに"
+"マージします"
+
+#: kbookmarkmerger.cpp:51
+#, kde-format
+msgid "Copyright © 2005 Frerich Raabe"
+msgstr "Copyright © 2005 Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Frerich Raabe"
+msgstr "Frerich Raabe"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Original author"
+msgstr "オリジナルの作者"
+
+#: kbookmarkmerger.cpp:57
+#, kde-format
+msgid "Directory to scan for extra bookmarks"
+msgstr "他のブックマークを探すディレクトリ"
+
+#: kbookmarkmodel/commands.cpp:70
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Insert Separator"
+msgstr "セパレータを挿入"
+
+#: kbookmarkmodel/commands.cpp:84
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Bookmark"
+msgstr "ブックマークを作成"
+
+#: kbookmarkmodel/commands.cpp:98
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Create Folder"
+msgstr "フォルダを作成"
+
+#: kbookmarkmodel/commands.cpp:111
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy %1"
+msgstr "%1 をコピー"
+
+#: kbookmarkmodel/commands.cpp:200
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Icon Change"
+msgstr "アイコンの変更"
+
+#: kbookmarkmodel/commands.cpp:202
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Title Change"
+msgstr "タイトルの変更"
+
+#: kbookmarkmodel/commands.cpp:204
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "URL Change"
+msgstr "URL の変更"
+
+#: kbookmarkmodel/commands.cpp:206
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Comment Change"
+msgstr "コメントの変更"
+
+#: kbookmarkmodel/commands.cpp:365
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move %1"
+msgstr "%1 を移動"
+
+#: kbookmarkmodel/commands.cpp:500
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Set as Bookmark Toolbar"
+msgstr "ブックマークツールバーとして設定"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Copy Items"
+msgstr "項目をコピー"
+
+#: kbookmarkmodel/commands.cpp:532
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move Items"
+msgstr "項目を移動"
+
+#: kbookmarkmodel/model.cpp:122
+#, kde-format
+msgctxt "name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "ブックマーク"
+
+#: kbookmarkmodel/model.cpp:217
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Name"
+msgstr "名前"
+
+#: kbookmarkmodel/model.cpp:220
+#, kde-format
+msgctxt "@title:column name of a bookmark"
+msgid "Location"
+msgstr "場所"
+
+#: kbookmarkmodel/model.cpp:223
+#, kde-format
+msgctxt "@title:column comment for a bookmark"
+msgid "Comment"
+msgstr "コメント"
+
+#: kbookmarkmodel/model.cpp:226
+#, kde-format
+msgctxt "@title:column status of a bookmark"
+msgid "Status"
+msgstr "ステータス"
+
+#: kebsearchline.cpp:239
+#, kde-format
+msgid "Search Columns"
+msgstr "カラム検索"
+
+#: kebsearchline.cpp:242
+#, kde-format
+msgid "All Visible Columns"
+msgstr "表示されている全カラム"
+
+#: kebsearchline.cpp:250
+#, kde-format
+msgctxt "Column number %1"
+msgid "Column No. %1"
+msgstr "カラム番号 %1"
+
+#: kebsearchline.cpp:615
+#, kde-format
+msgid "S&earch:"
+msgstr "検索(&E):"
+
+#. i18n: ectx: Menu (file)
+#: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "ファイル(&F)"
+
+#. i18n: ectx: Menu (edit)
+#: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
+#, kde-format
+msgid "&Edit"
+msgstr "編集(&E)"
+
+#. i18n: ectx: Menu (view)
+#: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
+#, kde-format
+msgid "&View"
+msgstr "表示(&V)"
+
+#. i18n: ectx: Menu (folder)
+#: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
+#, kde-format
+msgid "&Folder"
+msgstr "フォルダ(&F)"
+
+#. i18n: ectx: Menu (bookmark)
+#: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
+#, kde-format
+msgid "&Bookmark"
+msgstr "ブックマーク(&B)"
+
+#. i18n: ectx: Menu (settings)
+#: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
+#, kde-format
+msgid "&Settings"
+msgstr "設定(&S)"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
+#, kde-format
+msgid "Main Toolbar"
+msgstr "メインツールバー"
+
+#. i18n: ectx: Menu (import)
+#: keditbookmarksui.rc:11
+#, kde-format
+msgid "&Import"
+msgstr "インポート(&I)"
+
+#. i18n: ectx: Menu (export)
+#: keditbookmarksui.rc:21
+#, kde-format
+msgid "&Export"
+msgstr "エクスポート(&E)"
+
+#. i18n: ectx: Menu (tools)
+#: keditbookmarksui.rc:67
+#, kde-format
+msgid "&Tools"
+msgstr "ツール(&T)"
+
+#: main.cpp:68
+#, kde-format
+msgid ""
+"Another instance of %1 is already running. Do you really want to open "
+"another instance or continue work in the same instance?\n"
+"Please note that, unfortunately, duplicate views are read-only."
+msgstr ""
+"%1 の他のインスタンスが既に実行中です。本当にもう一つインスタンスを起動します"
+"か？それとも現在のインスタンスで作業しますか？\n"
+"残念ながら重複したビューは読み取り専用になります。"
+
+#: main.cpp:72
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning"
+msgstr "注意"
+
+#: main.cpp:73
+#, kde-format
+msgid "Run Another"
+msgstr "他を実行"
+
+#: main.cpp:74
+#, kde-format
+msgid "Continue in Same"
+msgstr "同じもので続行"
+
+#: main.cpp:112
+#, kde-format
+msgid "Bookmark Editor"
+msgstr "ブックマークエディタ"
+
+#: main.cpp:114
+#, kde-format
+msgid "Bookmark Organizer and Editor"
+msgstr "ブックマーク管理"
+
+#: main.cpp:116
+#, fuzzy, kde-format
+#| msgid "Copyright 2000-2007, KDE developers"
+msgid "Copyright 2000-2017, KDE developers"
+msgstr "(c) 2000 - 2007, KDE 開発チーム"
+
+#: main.cpp:117
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: main.cpp:117
+#, kde-format
+msgid "Initial author"
+msgstr "最初の作者"
+
+#: main.cpp:118
+#, kde-format
+msgid "Alexander Kellett"
+msgstr "Alexander Kellett"
+
+#: main.cpp:118
+#, kde-format
+msgid "Author"
+msgstr "作者"
+
+#: main.cpp:128
+#, kde-format
+msgid "Import bookmarks from a file in Mozilla format"
+msgstr "Mozilla 形式のファイルからブックマークをインポート"
+
+#: main.cpp:129
+#, kde-format
+msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
+msgstr "Netscape (4.x かそれ以前の) 形式のファイルからブックマークをインポート"
+
+#: main.cpp:130
+#, kde-format
+msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
+msgstr ""
+"Internet Explorer のお気に入り形式のファイルからブックマークをインポート"
+
+#: main.cpp:131
+#, kde-format
+msgid "Import bookmarks from a file in Opera format"
+msgstr "Opera 形式のファイルからブックマークをインポート"
+
+#: main.cpp:132
+#, kde-format
+msgid "Import bookmarks from a file in KDE2 format"
+msgstr "KDE2 形式のファイルからブックマークをインポート"
+
+#: main.cpp:133
+#, kde-format
+msgid "Import bookmarks from a file in Galeon format"
+msgstr "Galeon 形式のファイルからブックマークをインポート"
+
+#: main.cpp:134
+#, kde-format
+msgid "Export bookmarks to a file in Mozilla format"
+msgstr "ブックマークを Mozilla 形式のファイルにエクスポート"
+
+#: main.cpp:135
+#, kde-format
+msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
+msgstr ""
+"ブックマークを Netscape (4.x かそれ以前の) 形式のファイルにエクスポート"
+
+#: main.cpp:136
+#, kde-format
+msgid "Export bookmarks to a file in a printable HTML format"
+msgstr "ブックマークを印刷可能な HTML 形式のファイルにエクスポート"
+
+#: main.cpp:137
+#, kde-format
+msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
+msgstr ""
+"ブックマークを Internet Explorer のお気に入り形式のファイルにエクスポート"
+
+#: main.cpp:138
+#, kde-format
+msgid "Export bookmarks to a file in Opera format"
+msgstr "ブックマークを Opera 形式のファイルにエクスポート"
+
+#: main.cpp:139
+#, kde-format
+msgid "Open at the given position in the bookmarks file"
+msgstr "ブックマークファイル内の指定した場所を開く"
+
+#: main.cpp:140
+#, kde-format
+msgid "Set the user-readable caption, for example \"Konsole\""
+msgstr "(例えば “Konsole” のような) 読みやすい見出しを付けます"
+
+#: main.cpp:141
+#, kde-format
+msgid "Hide all browser related functions"
+msgstr "ブラウザ関連の機能をすべて隠す"
+
+#: main.cpp:142
+#, fuzzy, kde-format
+#| msgid ""
+#| "A unique name that represents this bookmark collection, usually the "
+#| "kinstance name.\n"
+#| "This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
+#| "KFileDialog bookmarks, etc.\n"
+#| "The final D-Bus object path is /KBookmarkManager/dbusObjectName"
+msgid ""
+"A unique name that represents this bookmark collection, usually the "
+"kinstance name.\n"
+"This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
+"KFileDialog bookmarks, etc.\n"
+"The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
+msgstr ""
+"このブックマークコレクションの内容を表す一意の名前 (通常は kinstance 名)。\n"
+"例: Konqueror のブックマークには “konqueror”、KFileDialog のブックマークには "
+"“kfile” など。\n"
+"最終的な D-Bus オブジェクトのパスは /KBookmarkManager/dbusObjectName"
+
+#: main.cpp:146
+#, kde-format
+msgid "File to edit"
+msgstr "編集するファイル"
+
+#: main.cpp:229
+#, kde-format
+msgid "You may only specify a single --export option."
+msgstr "--export オプションは一つだけしか指定できません。"
+
+#: main.cpp:236
+#, kde-format
+msgid "You may only specify a single --import option."
+msgstr "--import オプションは一つだけしか指定できません。"
+
+#: testlink.cpp:73
+#, kde-format
+msgid "Checking..."
+msgstr "チェック中..."

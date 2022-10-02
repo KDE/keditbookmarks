@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Danish "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>KDE's brugerhåndbog</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+<date
+>1. februar, 2005</date
+> <productname
+>K Desktopmiljøet</productname
+> </refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Et program til at indflette et givet sæt af bogmærker i brugerens list af bogmærker.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="opt" rep="repeat"
+>Qt tilvalg</arg
+> <arg choice="opt" rep="repeat"
+>KDE tilvalg</arg
+> <arg choice="req"
+>katalog</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beskrivelse</title>
+<para
+>&kbookmarkmerger; er et program til at indflette et givet sæt af bogmærker i brugerens bogmærker. Hvis brugeren ikke har lavet nogle bogmærker endnu, oprettes en ny bogmærkeliste og de givne bogmærker indsættes i den. Mens dette gøres, holder &kbookmarkmerger; styr på hvilke filer der er indflettet i en tidligere kørsel allerede, så ingen bogmærker vil blive installeret i brugerens  bogmærker mere end en gang. I tilfælde af at &kde; kører mens &kbookmarkmerger; udføres, vil &kde;'s undersystem af bogmærker blive informeret om ændringer af brugerens bogmærker, så alle programmer der har adgang til denne information (&ie; &konqueror;) vil samle ændringerne op med det samme.</para>
+
+<para
+>Den traditionelt brugte metode til at opnå noget sådant var at bruge et omhyggeligt lavet skelet-hjemmekatalog når brugerens konto oprettes, til at give brugeren med et standardsæt af bogmærker. Problem med denne metode er at efter brugerkontoen er blevet oprettet, kan ingen nye bogmærker tilføjes.</para>
+
+<para
+>Denne mekanisme er  nyttig for systemadministratorer der ønsker at udbrede et bogmærke der peger på et bestemt dokument (for eksempel, vigtige notitser om systemet) til alle brugere. Distributorer kunne også finde dette nyttigt, for eksempel udvide de software-pakker de sørger for med bogmærkefiler som &kbookmarkmerger; indfletter i brugerens bogmærkeliste når pakken installeres. På den måde er der nem og synlig adgang til den dokumentation der leveres med en software-pakke lige efter at pakken er blevet installeret.</para>
+
+<para
+>Den eneste parameter der kræves af &kbookmarkmerger; er navnet på et katalog som skal skannes for bogmærkefiler. Alle filer i det givne katalog vil blive betragtet med henblik på indfletning i brugerens opsætning. Filerne i det givne katalog skal være gyldige <acronym
+>XBEL</acronym
+>-filer.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Se også</title>
+<para
+><ulink url="help:/konqueror/index.html"
+>&konqueror;'s manual</ulink
+></para>
+</refsect1>
+
+<refsect1>
+<title
+>Eksempler</title>
+<screen
+>joe@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Indfletter alle bogmærker opbevaret i <filename
+>/usr/local/extra-bookmarks</filename
+> i joe's liste af bogmærker.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standarder</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+><acronym
+>XBEL</acronym
+>-specifikation</ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Restriktioner</title>
+<para
+>Når det skal afgøres om en given bogmærkefil er blevet indflettet i brugerens bogmærker allerede eller ej, kigger &kbookmarkmerger; blot på filnavnet for bogmærkefilen - indholdet tjekkes slet ikke. Dette betyder at ændring af en bogmærkefil som allerede var indflettet i en brugers bogmærker ikke vil udløse en ny indfletning igen.</para>
+
+<para
+>Bemærk også at i tilfælde af at en bruger ændrer et bogmærke som blev indflettet i hans opsætning, så vil den originale bogmærkefil blive efterladt uforandret.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Forfatter</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>
+

@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Brazilian-Portuguese "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Manual do usuário do kbookmarkmerger</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>07/11/2016</date>
+	<releaseinfo
+>Applications 16.12</releaseinfo>
+	<productname
+>KDE Applications</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Um programa para mesclar um determinado conjunto de favoritos na lista de favoritos do usuário.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>diretório</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Descrição</title>
+<para
+>O &kbookmarkmerger; é um programa para mesclar um determinado conjunto de favoritos ao conjunto atual de favoritos do usuário; se ele não tiver ainda nenhum favorito criado, será criada uma nova lista e os favoritos indicados serão introduzidos nela. Ao fazer isto, o &kbookmarkmerger; mantém um registro de todos os arquivos que já foram mesclados numa execução anterior, de modo que nenhum favorito seja instalado no usuário mais de uma vez.</para>
+
+<para
+>A abordagem usada tradicionalmente, para obter algo deste gênero, foi usar pastas-esqueleto de usuários ao criar uma nova conta de usuário, para fornecer a ele um conjunto padrão de favoritos. O problema com esta abordagem é que, depois da conta do usuário ter sido criada, os favoritos novos não são propagados.</para>
+
+<para
+>Este mecanismo é útil para os administradores de sistemas que queiram propagar um determinado favorito que aponte para um determinado documento (como, por exemplo, as notas importantes sobre o sistema) para todos os usuários. Os distribuidores poderão também achar útil, por exemplo, aumentando os pacotes de 'software' que eles oferecem com os arquivos de favoritos que o &kbookmarkmerger; irá mesclar à lista de favoritos do usuário, quando o pacote for instalado. Desta forma, a documentação que vem com um determinado pacote de 'software' fica fácil e visivelmente acessível, logo após a instalação do pacote.</para>
+
+<para
+>O único parâmetro necessário pelo &kbookmarkmerger; é o nome da pasta que deverá ser pesquisada para obter os arquivos de favoritos. Todos os arquivos na pasta indicada serão considerados para serem mesclados na configuração do usuário. Os arquivos na pasta indicada deverão ser arquivos <acronym
+>XBEL</acronym
+> válidos.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Veja também</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>Manual do &konqueror;</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Exemplos</title>
+<screen
+>jose@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/favoritos-extra</filename
+></command
+></screen>
+<para
+>Mescla todos os arquivos de favoritos guardados em <filename
+>/usr/local/favoritos-extra</filename
+> à lista de favoritos do José.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Normas</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+>Especificação do <acronym
+>XBEL</acronym
+></ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Restrições</title>
+<para
+>Ao determinar se um determinado arquivo de favorito foi mesclado com os favoritos do usuário ou não, o &kbookmarkmerger; simplesmente olha para o nome do arquivo de favoritos - o conteúdo não é verificado. Isto significa que, se mudar um arquivo de favorito que já foi reunido aos favoritos de um usuário, não irá disparar a sua junção novamente.</para>
+
+<para
+>Repare também que, no caso de um usuário modificar um favorito que foi mesclado à sua configuração, o arquivo original do favorito será deixado sem modificações.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Autor</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>

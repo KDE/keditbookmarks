@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Dutch "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Gebruikershandleiding kbookmarkmerger</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>2016-11-07</date>
+	<releaseinfo
+>Applications 16.12</releaseinfo>
+	<productname
+>KDE Applications</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Een programma om een gegeven set van bladwijzers te mengen in de lijst van bladwijzers van de gebruiker.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>map</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beschrijving</title>
+<para
+>&kbookmarkmerger; is een programma voor het mengen van een gegeven set bladwijzers in de set bladwijzers van de gebruiker; als de gebruiker nog geen bladwijzers heeft aangemaakt, dan wordt een nieuwe lijst bladwijzers aangemaakt en de gegeven bladwijzers er ingevoegd. &kbookmarkmerger; houdt bij welke bestanden in een vorige keer zijn gemengd, zodat geen bladwijzer meer dan één keer geïnstalleerd wordt in de bladwijzers van de gebruiker.</para>
+
+<para
+>De traditioneel gebruikte benadering om zoiets te bereiken was het gebruik van een zorgvuldig opgezet skelet van thuismappen bij het aanmaken van een nieuw gebruikersaccount om zo de gebruiker te voorzien van een standaard set bladwijzers. Het probleem met deze benadering is dat nadat het gebruikersaccount is aangemaakt, er geen nieuwe bladwijzers kunnen worden gepropageerd.</para>
+
+<para
+>Dit mechanisme is bruikbaar voor systeembeheerders die een bladwijzer, die naar een bepaald document verwijst, willen propageren (bijvoorbeeld belangrijke notities over het systeem) aan alle gebruikers. Distributeurs kunnen het ook bruikbaar vinden voor commentaar bij software pakketten die zijn geleverd met bladwijzerbestanden die &kbookmarkmerger; mengt in de lijst met bladwijzers van de gebruikers bij het installeren van het pakket. Op die manier kan documentatie die met een software pakket wordt meegeleverd gemakkelijk en zichtbaar beschikbaar zijn meteen nadat het pakket is geïnstalleerd.</para>
+
+<para
+>De enige parameter die &kbookmarkmerger; vereist is de naam van een map die gescand zal worden op bladwijzerbestanden. Alle bestanden in de gegeven map zullen beschouwd worden om te worden gemengd in de bladwijzers van de gebruiker. De bestanden in de gegeven map zouden geldige <acronym
+>XBEL</acronym
+> bestanden moeten zijn.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Zie ook</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>Handleiding van &konqueror;</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Voorbeelden</title>
+<screen
+>joe@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Mengt alle bladwijzerbestanden opgeslagen in <filename
+>/usr/local/extra-bookmarks</filename
+> in de lijst bladwijzers van joe.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standaarden</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+><acronym
+>XBEL</acronym
+> specificatie</ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Restricties</title>
+<para
+>Bij het bepalen van of een gegeven bladwijzerbestand al gemengd is in de lijst van bladwijzers van de gebruiker of niet, zal &kbookmarkmerger; kijken naar de bestandsnaam van het bladwijzerbestand - de inhoud wordt in het geheel niet gecontroleerd. Dit betekent dat het wijzigen van een bladwijzerbestand dat al was gemengd in de lijst met bladwijzers van een gebruiker niet nog eens het mengen zal starten.</para>
+
+<para
+>Merk ook op dat in het geval een gebruiker een bladwijzer wijzigt die was gemengd in zijn setup, het originele bladwijzerbestand ongewijzigd zal blijven.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Auteur</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>

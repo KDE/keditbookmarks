@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % German "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>kbookmarkmerger-Benutzerhandbuch</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>2016-11-07</date>
+	<releaseinfo
+>Anwendungen 16.12</releaseinfo>
+	<productname
+>KDE-Anwendungen</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Ein Programm zum Zusammenführen mehrerer vorgegebener Lesezeichenlisten zu einer Lesezeichenliste für den Benutzer.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>directory</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beschreibung</title>
+<para
+>&kbookmarkmerger; ist ein Programm zum Zusammenführen mehrerer vorgegebener Lesezeichenlisten zu einer einzigen Lesezeichenliste für den Benutzer. Wenn der Benutzer noch keine Lesezeichen erzeugt hat, wird eine neue Lesezeichenliste erzeugt und die vorgegebenen Lesezeichen werden in diese Liste  abgelegt. Beim Zusammenführen achtet &kbookmarkmerger; darauf, welche Dateien in einem vorherigen Lauf bereits zusammengeführt worden sind, sodass kein Lesezeichen in der Lesezeichenliste des Benutzers mehr als einmal eingebaut wird.</para>
+
+<para
+>Die traditionelle Herangehensweise, um so etwas zu erreichen, bestand darin, bei der Erzeugung von neuen Benutzer-Accounts ein sorgfältig gestaltetes Gerüst von persönlichen Verzeichnissen zu nutzen, um dem Benutzer einen Standardsatz von Lesezeichen zur Verfügung zu stellen. Das Problem bei diesem Zugang bestand darin, dass nach der Erzeugung des Benutzer-Accounts keine neuen Lesezeichen verteilt werden konnten.</para>
+
+<para
+>Dieser Mechanismus ist nützlich für Systemadministratoren, die ein Lesezeichen, das auf ein bestimmtes Dokument verweist (zum Beispiel wichtige Anmerkungen zum System), an alle Benutzer verteilen wollen. Auch für Distributoren kann es nützlich sein, ihren Softwarepaketen Lesezeichendateien beizulegen, die während der Installation von &kbookmarkmerger; in die Lesezeichenliste des Benutzers eingefügt werden. So kann man unmittelbar nachdem das Softwarepaket installiert wurde, auf die mitgelieferte Dokumentation auf einfache und klare Weise zugreifen.</para>
+
+<para
+>Der einzige von &kbookmarkmerger; benötigte Parameter ist der Name eines Verzeichnisses, das nach Lesezeichendateien durchsucht werden soll. Alle Dateien im angegebenen Verzeichnis werden für die Zusammenlegung in die Einrichtungsdateien des Benutzers berücksichtigt. Die Dateien im angegebenen Verzeichnis sollten gültige<acronym
+>XBEL</acronym
+>-Dateien sein.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Siehe auch</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>Handbuch zu &konqueror;</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Beispiele</title>
+<screen
+>joe@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Fasst alle unter <filename
+>/usr/local/extra-bookmarks</filename
+> abgelegten Lesezeichendateien in die Lesezeichenliste des Benutzers joe zusammen.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standards</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+><acronym
+>XBEL</acronym
+>-Spezifikation</ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Einschränkungen</title>
+<para
+>Um herauszufinden, ob eine gegebene Lesezeichendatei bereits in die Lesezeichendatei des Benutzers eingearbeitet wurde oder nicht, betrachtet &kbookmarkmerger; nur den Dateinamen der Lesezeichendatei - Inhalte werden nicht berücksichtigt. Das bedeutet, dass Änderungen an einer Lesezeichendatei, die bereits in eine Lesezeichendatei des Benutzers eingearbeitet wurde, keine erneute Verarbeitung dieser Datei auslösen.</para>
+
+<para
+>Beachten Sie auch, dass, wenn ein Benutzer eine Datei bearbeitet, die für ihn zusammengefügt wurde, die ursprüngliche Lesezeichendatei unverändert bleibt.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Autor</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>

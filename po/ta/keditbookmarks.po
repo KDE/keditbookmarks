@@ -1,0 +1,806 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keditbookmarks\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"PO-Revision-Date: 2008-03-13 15:33+0530\n"
+"Last-Translator: ஆமாச்சு <amachu@ubuntu.com>\n"
+"Language-Team: Tamil <ubuntu-l10n-tam@lists.ubuntu.com>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Tamil\n"
+"X-Poedit-Country: INDIA\n"
+
+#, fuzzy, kde-format
+#| msgid "Your names"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "தங்களது பெயர்கள்"
+
+#, fuzzy, kde-format
+#| msgid "Your emails"
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "தங்களது மின்னஞ்சல்கள்"
+
+#: actionsimpl.cpp:98
+#, kde-format
+msgid "&Delete"
+msgstr "&அகற்றுக"
+
+#: actionsimpl.cpp:104
+#, kde-format
+msgid "Rename"
+msgstr "மறுபெயரிடுக"
+
+#: actionsimpl.cpp:110
+#, fuzzy, kde-format
+#| msgid "C&hange URL"
+msgid "C&hange Location"
+msgstr "யுஆர்எல்லை &மாற்றுக"
+
+#: actionsimpl.cpp:116
+#, kde-format
+msgid "C&hange Comment"
+msgstr "கருத்தை &மாற்றுக"
+
+#: actionsimpl.cpp:122
+#, kde-format
+msgid "Chan&ge Icon..."
+msgstr "முகவுருவை &மாற்றுக"
+
+#: actionsimpl.cpp:126
+#, kde-format
+msgid "Update Favicon"
+msgstr "சின்னத்தை புதுப்பி"
+
+#: actionsimpl.cpp:130
+#, kde-format
+msgid "Recursive Sort"
+msgstr "மீளவரிசைப்படுத்துக"
+
+#: actionsimpl.cpp:135
+#, kde-format
+msgid "&New Folder..."
+msgstr "&புதிய அடைவு"
+
+#: actionsimpl.cpp:141
+#, kde-format
+msgid "&New Bookmark"
+msgstr "&புதிய நினைவுக்குறி"
+
+#: actionsimpl.cpp:145
+#, kde-format
+msgid "&Insert Separator"
+msgstr "பிரிப்பாரை &நுழைக்க"
+
+#: actionsimpl.cpp:150
+#, kde-format
+msgid "&Sort Alphabetically"
+msgstr "&அகர வரிசைப்படுத்து"
+
+#: actionsimpl.cpp:155
+#, kde-format
+msgid "Set as T&oolbar Folder"
+msgstr "&கருவிப்பட்டி அடைவாக அமைக்க"
+
+#: actionsimpl.cpp:159
+#, kde-format
+msgid "&Expand All Folders"
+msgstr "அனைத்து அடைவுகளையும் &விரிக்க"
+
+#: actionsimpl.cpp:163
+#, kde-format
+msgid "Collapse &All Folders"
+msgstr "&அனைத்து அடைவுகளையும் மூடுக"
+
+#: actionsimpl.cpp:168
+#, fuzzy, kde-format
+#| msgid "&Open in Konqueror"
+msgid "&Open in Browser"
+msgstr "கான்கொயரரில் &திறக்க"
+
+#: actionsimpl.cpp:173
+#, kde-format
+msgid "Check &Status"
+msgstr "&நிலையின் சரிபார்க்க"
+
+#: actionsimpl.cpp:177
+#, kde-format
+msgid "Check Status: &All"
+msgstr "&அனைத்து நிலைகளையும் சரிபார்க்க"
+
+#: actionsimpl.cpp:181
+#, kde-format
+msgid "Update All &Favicons"
+msgstr "சின்னங்கள்&அனைத்தையும் புதுப்பிக்க"
+
+#: actionsimpl.cpp:185
+#, kde-format
+msgid "Cancel &Checks"
+msgstr "&சோதனைகளை திரும்பப்பெறுக"
+
+#: actionsimpl.cpp:189
+#, kde-format
+msgid "Cancel &Favicon Updates"
+msgstr "&சின்னங்கள் புதுப்பித்தலை தவிர்க்க"
+
+#: actionsimpl.cpp:195
+#, kde-format
+msgid "Import &Netscape Bookmarks..."
+msgstr "&நெட்ஸ்கேப் நினைவுக்குறிகளை இறக்குக"
+
+#: actionsimpl.cpp:201
+#, kde-format
+msgid "Import &Opera Bookmarks..."
+msgstr "&ஓபரா நினைவுக்குறிகளை இறக்குக"
+
+#: actionsimpl.cpp:211
+#, kde-format
+msgid "Import &Galeon Bookmarks..."
+msgstr "&கேலியோன் நினைவுக்குறிகளை இறக்குக..."
+
+#: actionsimpl.cpp:217
+#, kde-format
+msgid "Import &KDE 2 or KDE 3 Bookmarks..."
+msgstr "&கேபசூ2 அ 3 நினைவுக்குறிகளை இறக்குக..."
+
+#: actionsimpl.cpp:223
+#, kde-format
+msgid "Import &Internet Explorer Bookmarks..."
+msgstr "&இன்டர்நெட் எக்ஸ்புளோரர் நினைவுக்குறிகளை இறக்குக..."
+
+#: actionsimpl.cpp:229
+#, kde-format
+msgid "Import &Mozilla Bookmarks..."
+msgstr "&மொசில்லா நினைவுக்குறிகளை இறக்குக..."
+
+#: actionsimpl.cpp:234
+#, kde-format
+msgid "Export &Netscape Bookmarks"
+msgstr "&நெட்ஸ்கேப் நினைவுக்குறிகளை ஏற்றுக"
+
+#: actionsimpl.cpp:239
+#, kde-format
+msgid "Export &Opera Bookmarks..."
+msgstr "&ஓபரா நினைவுக்குறிகளை ஏற்றுக"
+
+#: actionsimpl.cpp:244
+#, kde-format
+msgid "Export &HTML Bookmarks..."
+msgstr "&ஹச்டிஎம்எல் நினைவுக்குறிகளை ஏற்றுக"
+
+#: actionsimpl.cpp:248
+#, kde-format
+msgid "Export &Internet Explorer Bookmarks..."
+msgstr "&இன்டர்நெட் எக்ஸ்புளோரர் நினைவுக்குறிகளை ஏற்றுக..."
+
+#: actionsimpl.cpp:253
+#, kde-format
+msgid "Export &Mozilla Bookmarks..."
+msgstr "&மொசில்லா நினைவுக்குறிகளை ஏற்றுக..."
+
+#: actionsimpl.cpp:298
+#, fuzzy, kde-format
+#| msgid "*.html|HTML Bookmark Listing"
+msgid "HTML Bookmark Listing (*.html)"
+msgstr "*.html|ஹச்டிஎம்எல் நினைவுக்குறி பட்டியலிடுதல்"
+
+#: actionsimpl.cpp:343
+#, fuzzy, kde-format
+#| msgid "Cut Items"
+msgctxt "(qtundo-format)"
+msgid "Cut Items"
+msgstr "உருப்படிகளை வெட்டுக"
+
+#: actionsimpl.cpp:368
+#, fuzzy, kde-format
+#| msgid "Paste"
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "ஒட்டுக"
+
+#: actionsimpl.cpp:379
+#, kde-format
+msgid "New folder:"
+msgstr "புதிய அடைவு:"
+
+#: actionsimpl.cpp:379
+#, fuzzy, kde-format
+#| msgid "Create New Bookmark Folder"
+msgctxt "@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "புதிய நினைவுக்குறி அடைவினை உருவாக்குக"
+
+#: actionsimpl.cpp:526
+#, fuzzy, kde-format
+#| msgid "Recursive Sort"
+msgctxt "(qtundo-format)"
+msgid "Recursive Sort"
+msgstr "மீளவரிசைப்படுத்துக"
+
+#: actionsimpl.cpp:541
+#, fuzzy, kde-format
+#| msgid "Sort Alphabetically"
+msgctxt "(qtundo-format)"
+msgid "Sort Alphabetically"
+msgstr "அகர வரிசைப்படுத்துக"
+
+#: actionsimpl.cpp:550
+#, fuzzy, kde-format
+#| msgid "Delete Items"
+msgctxt "(qtundo-format)"
+msgid "Delete Items"
+msgstr "உருப்படிகளை அகற்றுக"
+
+#: bookmarkinfowidget.cpp:223
+#, kde-format
+msgid "Name:"
+msgstr "பெயர்:"
+
+#: bookmarkinfowidget.cpp:230
+#, kde-format
+msgid "Location:"
+msgstr "இடம்:"
+
+#: bookmarkinfowidget.cpp:237
+#, kde-format
+msgid "Comment:"
+msgstr "கருத்து:"
+
+#: bookmarkinfowidget.cpp:243
+#, kde-format
+msgid "First viewed:"
+msgstr "முதலில் பார்க்கப்பட்டது:"
+
+#: bookmarkinfowidget.cpp:246
+#, kde-format
+msgid "Viewed last:"
+msgstr "கடைசியாகப் பார்க்கப்பட்டது:"
+
+#: bookmarkinfowidget.cpp:249
+#, kde-format
+msgid "Times visited:"
+msgstr "பார்க்கப்பட்ட தடவைகள்:"
+
+#: exporters.cpp:51
+#, kde-format
+msgid "My Bookmarks"
+msgstr "எமது நினைவுக்குறிகள்"
+
+#: favicons.cpp:54 testlink.cpp:94
+#, kde-format
+msgid "OK"
+msgstr "சரி"
+
+#: favicons.cpp:70
+#, kde-format
+msgid "Updating favicon..."
+msgstr "சின்னங்கள் புதுப்பிக்கப்படுகின்றன"
+
+#: faviconupdater.cpp:79
+#, kde-format
+msgid "%1; no HTML component found (%2)"
+msgstr ""
+
+#: importers.cpp:57
+#, fuzzy, kde-format
+#| msgid "Import %1 Bookmarks"
+msgctxt "(qtundo-format)"
+msgid "Import %1 Bookmarks"
+msgstr "%1 நினைவுக்குறிகளை இறக்குக"
+
+#: importers.cpp:62
+#, kde-format
+msgid "%1 Bookmarks"
+msgstr "%1 நினைவுக்குறிகள்"
+
+#: importers.cpp:99
+#, kde-format
+msgid "Import as a new subfolder or replace all the current bookmarks?"
+msgstr "புதிய துணையடைவாக இறக்குக அ தற்போதைய அனைத்து நினைவுக்குறிகளையும் மாற்றுக"
+
+#: importers.cpp:100
+#, fuzzy, kde-format
+#| msgid "%1 Import"
+msgctxt "@title:window"
+msgid "%1 Import"
+msgstr "%1 இறக்குக"
+
+#: importers.cpp:101
+#, kde-format
+msgid "As New Folder"
+msgstr "புதிய அடைவாக"
+
+#: importers.cpp:102
+#, kde-format
+msgid "Replace"
+msgstr "மாற்றுக"
+
+#: importers.cpp:212
+#, fuzzy, kde-format
+#| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
+msgid "Galeon Bookmark Files (*.xbel)"
+msgstr "*.xbel|கேலியோன் நினைவுக்குறி கோப்புகள் (*.xbel)"
+
+#: importers.cpp:220
+#, fuzzy, kde-format
+#| msgid "*.xml|KDE Bookmark Files (*.xml)"
+msgid "KDE Bookmark Files (*.xml)"
+msgstr "*.xml|கேபசூ நினைவுக்குறி கோப்புகள் (*.xml)"
+
+#: importers.h:116
+#, kde-format
+msgid "Galeon"
+msgstr "கேலியோன்"
+
+#: importers.h:131
+#, kde-format
+msgid "KDE"
+msgstr "கேபசூ"
+
+#: importers.h:161
+#, kde-format
+msgid "Netscape"
+msgstr "நெட்ஸ்கேப்"
+
+#: importers.h:176
+#, kde-format
+msgid "Mozilla"
+msgstr "மொசில்லா"
+
+#: importers.h:191
+#, kde-format
+msgid "IE"
+msgstr "ஐஇ"
+
+#: importers.h:209
+#, kde-format
+msgid "Opera"
+msgstr "ஒபரா"
+
+#: kbookmarkmerger.cpp:47
+#, kde-format
+msgid "KBookmarkMerger"
+msgstr "கேநினைவுக்குறிஇணைப்பான்"
+
+#: kbookmarkmerger.cpp:49
+#, kde-format
+msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
+msgstr "மூன்றாமவர்களால் நிறுவப்பட்ட நினைவுக்குறிகளை பயனருடையதுடன் இணைக்கும்"
+
+#: kbookmarkmerger.cpp:51
+#, kde-format
+msgid "Copyright © 2005 Frerich Raabe"
+msgstr "பதிப்புரிமம் © 2005 ப்ரெரிச் ராபே"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Frerich Raabe"
+msgstr "ப்ரெரிச் ராபே"
+
+#: kbookmarkmerger.cpp:52
+#, kde-format
+msgid "Original author"
+msgstr "முதலில் இயற்றியவர்"
+
+#: kbookmarkmerger.cpp:57
+#, kde-format
+msgid "Directory to scan for extra bookmarks"
+msgstr "கூடுதல் நினைவுக் குறிகளைதேடுதற்கான அடைவு"
+
+#: kbookmarkmodel/commands.cpp:70
+#, fuzzy, kde-format
+#| msgid "Insert Separator"
+msgctxt "(qtundo-format)"
+msgid "Insert Separator"
+msgstr "பிரிப்பானை நுழைக்க"
+
+#: kbookmarkmodel/commands.cpp:84
+#, fuzzy, kde-format
+#| msgid "Create Bookmark"
+msgctxt "(qtundo-format)"
+msgid "Create Bookmark"
+msgstr "நினைவுக்குறிகளை உருவாக்குக"
+
+#: kbookmarkmodel/commands.cpp:98
+#, fuzzy, kde-format
+#| msgid "Create Folder"
+msgctxt "(qtundo-format)"
+msgid "Create Folder"
+msgstr "அடைவினை உருவாக்குக"
+
+#: kbookmarkmodel/commands.cpp:111
+#, fuzzy, kde-format
+#| msgid "Copy %1"
+msgctxt "(qtundo-format)"
+msgid "Copy %1"
+msgstr "%1 நகலெடுக்க"
+
+#: kbookmarkmodel/commands.cpp:200
+#, fuzzy, kde-format
+#| msgid "%1 Change"
+msgctxt "(qtundo-format)"
+msgid "Icon Change"
+msgstr "%1 மாற்றுக"
+
+#: kbookmarkmodel/commands.cpp:202
+#, fuzzy, kde-format
+#| msgid "%1 Change"
+msgctxt "(qtundo-format)"
+msgid "Title Change"
+msgstr "%1 மாற்றுக"
+
+#: kbookmarkmodel/commands.cpp:204
+#, fuzzy, kde-format
+#| msgid "%1 Change"
+msgctxt "(qtundo-format)"
+msgid "URL Change"
+msgstr "%1 மாற்றுக"
+
+#: kbookmarkmodel/commands.cpp:206
+#, fuzzy, kde-format
+#| msgid "Comment"
+msgctxt "(qtundo-format)"
+msgid "Comment Change"
+msgstr "கருத்து"
+
+#: kbookmarkmodel/commands.cpp:365
+#, fuzzy, kde-format
+#| msgid "Move %1"
+msgctxt "(qtundo-format)"
+msgid "Move %1"
+msgstr "%1 நகர்த்துக"
+
+#: kbookmarkmodel/commands.cpp:500
+#, fuzzy, kde-format
+#| msgid "Set as Bookmark Toolbar"
+msgctxt "(qtundo-format)"
+msgid "Set as Bookmark Toolbar"
+msgstr "நினைவுக்குறி கருவிப்ட்டியாக வைத்திருக்க"
+
+#: kbookmarkmodel/commands.cpp:532
+#, fuzzy, kde-format
+#| msgid "Copy Items"
+msgctxt "(qtundo-format)"
+msgid "Copy Items"
+msgstr "உருப்படிகளை நகலெடுக்க"
+
+#: kbookmarkmodel/commands.cpp:532
+#, fuzzy, kde-format
+#| msgid "Move Items"
+msgctxt "(qtundo-format)"
+msgid "Move Items"
+msgstr "உருப்படிகளை நகர்த்துக"
+
+#: kbookmarkmodel/model.cpp:122
+#, fuzzy, kde-format
+#| msgid "Bookmarks"
+msgctxt "name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "நினைவுக்குறிகள்"
+
+#: kbookmarkmodel/model.cpp:217
+#, fuzzy, kde-format
+#| msgid "Name:"
+msgctxt "@title:column name of a bookmark"
+msgid "Name"
+msgstr "பெயர்:"
+
+#: kbookmarkmodel/model.cpp:220
+#, fuzzy, kde-format
+#| msgid "Location:"
+msgctxt "@title:column name of a bookmark"
+msgid "Location"
+msgstr "இடம்:"
+
+#: kbookmarkmodel/model.cpp:223
+#, fuzzy, kde-format
+#| msgid "Comment"
+msgctxt "@title:column comment for a bookmark"
+msgid "Comment"
+msgstr "கருத்து"
+
+#: kbookmarkmodel/model.cpp:226
+#, fuzzy, kde-format
+#| msgid "Status"
+msgctxt "@title:column status of a bookmark"
+msgid "Status"
+msgstr "நிலை"
+
+#: kebsearchline.cpp:239
+#, kde-format
+msgid "Search Columns"
+msgstr "நெடுவரிசைகளில் தேடுக"
+
+#: kebsearchline.cpp:242
+#, kde-format
+msgid "All Visible Columns"
+msgstr "தெரியக் கூடிய அனைத்து நெடுவரிசைகளும்"
+
+#: kebsearchline.cpp:250
+#, fuzzy, kde-format
+#| msgid "Column No. %1"
+msgctxt "Column number %1"
+msgid "Column No. %1"
+msgstr "வரிசை எண். %1"
+
+#: kebsearchline.cpp:615
+#, kde-format
+msgid "S&earch:"
+msgstr "தேடுக"
+
+#. i18n: ectx: Menu (file)
+#: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "&கோப்பு"
+
+#. i18n: ectx: Menu (edit)
+#: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
+#, kde-format
+msgid "&Edit"
+msgstr "&தொகுக்க"
+
+#. i18n: ectx: Menu (view)
+#: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
+#, kde-format
+msgid "&View"
+msgstr "&காண்க"
+
+#. i18n: ectx: Menu (folder)
+#: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
+#, kde-format
+msgid "&Folder"
+msgstr "&அடைவு"
+
+#. i18n: ectx: Menu (bookmark)
+#: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
+#, kde-format
+msgid "&Bookmark"
+msgstr "&நினைவுக்குறி"
+
+#. i18n: ectx: Menu (settings)
+#: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
+#, kde-format
+msgid "&Settings"
+msgstr "&அமைப்புகள்"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
+#, kde-format
+msgid "Main Toolbar"
+msgstr "பிரதானக் கருவிப்பட்டை"
+
+#. i18n: ectx: Menu (import)
+#: keditbookmarksui.rc:11
+#, kde-format
+msgid "&Import"
+msgstr "&இறக்குக"
+
+#. i18n: ectx: Menu (export)
+#: keditbookmarksui.rc:21
+#, kde-format
+msgid "&Export"
+msgstr "&ஏற்றுக"
+
+#. i18n: ectx: Menu (tools)
+#: keditbookmarksui.rc:67
+#, kde-format
+msgid "&Tools"
+msgstr "&கருவிகள்"
+
+#: main.cpp:68
+#, fuzzy, kde-format
+#| msgid ""
+#| "Another instance of %1 is already running, do you really want to open "
+#| "another instance or continue work in the same instance?\n"
+#| "Please note that, unfortunately, duplicate views are read-only."
+msgid ""
+"Another instance of %1 is already running. Do you really want to open "
+"another instance or continue work in the same instance?\n"
+"Please note that, unfortunately, duplicate views are read-only."
+msgstr ""
+"%1 னினுடைய மற்றொரு நிகழ்வு நடைபெற்றுக் கொண்டிருக்கிறது, இன்னொரு நிகழ்வை துவக்க "
+"விரும்புகிறீர்களா அ அதே நிகழ்வில் தொடர விரும்புகிறீர்களா?\n"
+"துரதிருஷ்டவசமாக போலி காட்சிகளில் வாசிக்க மட்டுமே இயலும் என்பதை குறித்து கொள்க."
+
+#: main.cpp:72
+#, fuzzy, kde-format
+#| msgid "Warning"
+msgctxt "@title:window"
+msgid "Warning"
+msgstr "எச்சரிக்கை"
+
+#: main.cpp:73
+#, kde-format
+msgid "Run Another"
+msgstr "மற்றொன்றை இயக்குக"
+
+#: main.cpp:74
+#, kde-format
+msgid "Continue in Same"
+msgstr "அதனுள்ளேயே தொடர்க"
+
+#: main.cpp:112
+#, kde-format
+msgid "Bookmark Editor"
+msgstr "நினைவுக்குறி தொகுப்பர்"
+
+#: main.cpp:114
+#, kde-format
+msgid "Bookmark Organizer and Editor"
+msgstr "நினைவுக்குறி ஒருங்கிணைப்பாளர் மற்றும் தொகுப்பர்"
+
+#: main.cpp:116
+#, fuzzy, kde-format
+#| msgid "Copyright 2000-2007, KDE developers"
+msgid "Copyright 2000-2017, KDE developers"
+msgstr "பதிப்புரிமை 2000-2007, கேபசூ உருவாக்குவோர்"
+
+#: main.cpp:117
+#, kde-format
+msgid "David Faure"
+msgstr "டேவிட் பவுர்"
+
+#: main.cpp:117
+#, kde-format
+msgid "Initial author"
+msgstr "முதலில் இயற்றியவர்"
+
+#: main.cpp:118
+#, kde-format
+msgid "Alexander Kellett"
+msgstr "அலெக்ஸாண்டர் கெல்லட்"
+
+#: main.cpp:118
+#, kde-format
+msgid "Author"
+msgstr "இயற்றியவர்"
+
+#: main.cpp:128
+#, kde-format
+msgid "Import bookmarks from a file in Mozilla format"
+msgstr "மொசிலா முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
+
+#: main.cpp:129
+#, kde-format
+msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
+msgstr "நெட்ஸ்கேப் (4.x மற்றும் முந்தைய) முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
+
+#: main.cpp:130
+#, kde-format
+msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
+msgstr ""
+"இன்டர்நெட் எக்ஸ்புளோரரின் விருப்பங்கள் முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
+
+#: main.cpp:131
+#, kde-format
+msgid "Import bookmarks from a file in Opera format"
+msgstr "ஓபரா முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
+
+#: main.cpp:132
+#, fuzzy, kde-format
+#| msgid "Import bookmarks from a file in Opera format"
+msgid "Import bookmarks from a file in KDE2 format"
+msgstr "ஓபரா முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
+
+#: main.cpp:133
+#, fuzzy, kde-format
+#| msgid "Import bookmarks from a file in Opera format"
+msgid "Import bookmarks from a file in Galeon format"
+msgstr "ஓபரா முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
+
+#: main.cpp:134
+#, kde-format
+msgid "Export bookmarks to a file in Mozilla format"
+msgstr "மொசிலா முறையில் நினைவுக்குறிகளை கோப்பொன்றுக்கு ஏற்றுக"
+
+#: main.cpp:135
+#, kde-format
+msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
+msgstr "நெட்ஸ்கேப் (4.x மற்றும் முந்தைய) முறையில் நினைவுக்குறிகளை கோப்பொன்றுக்கு ஏற்றுக"
+
+#: main.cpp:136
+#, kde-format
+msgid "Export bookmarks to a file in a printable HTML format"
+msgstr "அச்சுக்குகந்த ஹச்டிஎம்எல் முறையில் நினைவுக்குறிகளை கோப்பொன்றுக்கு ஏற்றுக"
+
+#: main.cpp:137
+#, kde-format
+msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
+msgstr "மொசிலா முறையில் நினைவுக்குறிகளை கோப்பொன்றுக்கு ஏற்றுக"
+
+#: main.cpp:138
+#, kde-format
+msgid "Export bookmarks to a file in Opera format"
+msgstr "ஓபரா முறையில் நினைவுக்குறிகளை கோப்பொன்றுக்கு ஏற்றுக"
+
+#: main.cpp:139
+#, kde-format
+msgid "Open at the given position in the bookmarks file"
+msgstr "நினைவுக்குறிக் கோப்பில் குறிப்பிடப்பட்ட இடத்தில் திறக்க"
+
+#: main.cpp:140
+#, fuzzy, kde-format
+#| msgid "Set the user readable caption for example \"Konsole\""
+msgid "Set the user-readable caption, for example \"Konsole\""
+msgstr "\"Konsole\" போன்று பயனர் வாசிக்கவல்ல தலைப்பினைத் தருக"
+
+#: main.cpp:141
+#, kde-format
+msgid "Hide all browser related functions"
+msgstr "உலாவி பற்றிய அனைத்து செயற்பாடுகளையும் மறைக்க"
+
+#: main.cpp:142
+#, fuzzy, kde-format
+#| msgid ""
+#| "A unique name that represents this bookmark collection, usually the "
+#| "kinstance name.\n"
+#| "This should be \"konqueror\" for the konqueror bookmarks, \"kfile\" for "
+#| "KFileDialog bookmarks, etc.\n"
+#| "The final DBus object path is /KBookmarkManager/dbusObjectName"
+msgid ""
+"A unique name that represents this bookmark collection, usually the "
+"kinstance name.\n"
+"This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
+"KFileDialog bookmarks, etc.\n"
+"The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
+msgstr ""
+"இந்நினைவுக்குறி தொகுப்பினை வழங்க விரும்பும் பெயர், பொதுவாக கேநிகழ்வின் பெயராக "
+"இருக்கலாம்.\n"
+"இது \"konqueror\" என கான்கொயரர் நினைவுக் குறிகளுக்கும், \"kfile\" என கேகோப்புபலக "
+"நினைவுக்குறிகளுக்கும் இருக்கும்.\n"
+"இறுதி DBus பொருட்பாதையாவது /KBookmarkManager/dbusObjectName"
+
+#: main.cpp:146
+#, kde-format
+msgid "File to edit"
+msgstr "தொகுக்கப்படவேண்டிய கோப்பு"
+
+#: main.cpp:229
+#, kde-format
+msgid "You may only specify a single --export option."
+msgstr "ஒரு --export தேர்வை மட்டுமே தங்களால் தர இயலும்."
+
+#: main.cpp:236
+#, kde-format
+msgid "You may only specify a single --import option."
+msgstr "ஒரு --import தேர்வை மட்டுமே தங்களால் தர இயலும்."
+
+#: testlink.cpp:73
+#, kde-format
+msgid "Checking..."
+msgstr "சோதிக்கப்படுகிறது..."
+
+#~ msgid "Import All &Crash Sessions as Bookmarks..."
+#~ msgstr "&வீழ்ச்சியடைந்த அனைத்து அமர்வுகளையும் நினைவுக்குறிகளாக இறக்குக..."
+
+#~ msgid "No favicon found"
+#~ msgstr "சின்னங்கள் எதுவும் இல்லை"
+
+#~ msgid "Local file"
+#~ msgstr "அகக் கோப்பு"
+
+#~ msgid "Crashes"
+#~ msgstr "வீழ்ச்சிகள்"
+
+#~ msgid "Bookmark"
+#~ msgstr "நினைவுக்குறி"
+
+#~ msgid "URL"
+#~ msgstr "யுஆர்எல்"
+
+#~ msgid "Icon"
+#~ msgstr "முகவுரு"
+
+#~ msgid "Title"
+#~ msgstr "தலைப்பு"
