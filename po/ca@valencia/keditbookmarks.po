@@ -579,7 +579,7 @@ msgid ""
 "Please note that, unfortunately, duplicate views are read-only."
 msgstr ""
 "Ja s'està executant una altra instància de %1. Segur que voleu obrir una "
-"altra instància o continueu treballant a la mateixa instància?\n"
+"altra instància o continueu treballant en la mateixa instància?\n"
 "Cal tindre en compte que les vistes duplicades són només de lectura."
 
 #: main.cpp:72
