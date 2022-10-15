@@ -42,6 +42,7 @@
 #include <KBookmarkManager>
 #include <QStandardPaths>
 #include <kbookmarkexporter.h>
+#include <kwidgetsaddons_version.h>
 #include <toplevel_interface.h>
 
 // TODO - make this register() or something like that and move dialog into main
@@ -64,15 +65,23 @@ static bool askUser(const QString &filename, bool &readonly)
             if (bookmarks.isValid())
                 name = bookmarks;
             if (name == filename) {
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+                int ret = KMessageBox::warningTwoActions(nullptr,
+#else
                 int ret = KMessageBox::warningYesNo(nullptr,
-                                                    i18n("Another instance of %1 is already running. Do you really "
-                                                         "want to open another instance or continue work in the same instance?\n"
-                                                         "Please note that, unfortunately, duplicate views are read-only.",
-                                                         QGuiApplication::applicationDisplayName()),
-                                                    i18nc("@title:window", "Warning"),
-                                                    KGuiItem(i18n("Run Another")), /* yes */
-                                                    KGuiItem(i18n("Continue in Same")) /*  no */);
+#endif
+                                                         i18n("Another instance of %1 is already running. Do you really "
+                                                              "want to open another instance or continue work in the same instance?\n"
+                                                              "Please note that, unfortunately, duplicate views are read-only.",
+                                                              QGuiApplication::applicationDisplayName()),
+                                                         i18nc("@title:window", "Warning"),
+                                                         KGuiItem(i18n("Run Another")), /* yes */
+                                                         KGuiItem(i18n("Continue in Same")) /*  no */);
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+                if (ret == KMessageBox::ButtonCode::SecondaryAction) {
+#else
                 if (ret == KMessageBox::No) {
+#endif
                     QDBusInterface keditinterface(service, QStringLiteral("/keditbookmarks/MainWindow_1"));
                     // TODO fix me
                     QDBusReply<qlonglong> value = keditinterface.call(QDBus::NoBlock, QStringLiteral("winId"));
@@ -82,7 +91,11 @@ static bool askUser(const QString &filename, bool &readonly)
                     ////qCDebug(KEDITBOOKMARKS_LOG)<<" id !!!!!!!!!!!!!!!!!!! :"<<id;
                     KWindowSystem::activateWindow((WId)id);
                     return false;
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+                } else if (ret == KMessageBox::ButtonCode::PrimaryAction) {
+#else
                 } else if (ret == KMessageBox::Yes) {
+#endif
                     readonly = true;
                 }
             }
