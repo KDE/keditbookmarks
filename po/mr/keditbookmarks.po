@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"POT-Creation-Date: 2022-10-16 00:50+0000\n"
 "PO-Revision-Date: 2013-02-23 16:49+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -286,45 +286,45 @@ msgstr "फेव्हिकॉन अद्ययावत करत आहे
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; एकही HTML घटक सापडला नाही (%2)"
 
-#: importers.cpp:57
+#: importers.cpp:58
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "%1 ओळखचिन्हे आयात करा"
 
-#: importers.cpp:62
+#: importers.cpp:63
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 ओळखचिन्हे"
 
-#: importers.cpp:99
+#: importers.cpp:104
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "नवीन उपसंचयीका म्हणून आयात करा किंवा सर्व वर्तमान ओळखचिन्हे बदलायचे आहेत का?"
 
-#: importers.cpp:100
+#: importers.cpp:105
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 आयात करा"
 
-#: importers.cpp:101
+#: importers.cpp:106
 #, kde-format
 msgid "As New Folder"
 msgstr "नवीन संचयीका प्रमाणे"
 
-#: importers.cpp:102
+#: importers.cpp:107
 #, kde-format
 msgid "Replace"
 msgstr "बदला"
 
-#: importers.cpp:212
+#: importers.cpp:221
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "गॅलिऑन ओळखचिन्ह फाईल (*.xbel)"
 
-#: importers.cpp:220
+#: importers.cpp:229
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"
@@ -574,7 +574,7 @@ msgstr "निर्यात (&E)"
 msgid "&Tools"
 msgstr "साधने (&T)"
 
-#: main.cpp:68
+#: main.cpp:73
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -582,129 +582,129 @@ msgid ""
 "Please note that, unfortunately, duplicate views are read-only."
 msgstr ""
 
-#: main.cpp:72
+#: main.cpp:77
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "इशारा"
 
-#: main.cpp:73
+#: main.cpp:78
 #, kde-format
 msgid "Run Another"
 msgstr "इतर चालवा"
 
-#: main.cpp:74
+#: main.cpp:79
 #, kde-format
 msgid "Continue in Same"
 msgstr "हेच चालू ठेवा"
 
-#: main.cpp:112
+#: main.cpp:125
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "ओळखचिन्ह संपादक"
 
-#: main.cpp:114
+#: main.cpp:127
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "ओळखचिन्ह आयोजक व संपादक"
 
-#: main.cpp:116
+#: main.cpp:129
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
 msgid "Copyright 2000-2017, KDE developers"
 msgstr "सर्वाधिकार 2000-2007, केडीई विकासकर्ते"
 
-#: main.cpp:117
+#: main.cpp:130
 #, kde-format
 msgid "David Faure"
 msgstr "डेविड फ़ॉउर"
 
-#: main.cpp:117
+#: main.cpp:130
 #, kde-format
 msgid "Initial author"
 msgstr "प्रारंभीक लेखक"
 
-#: main.cpp:118
+#: main.cpp:131
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "अलेक्झांडर केल्लेट्ट"
 
-#: main.cpp:118
+#: main.cpp:131
 #, kde-format
 msgid "Author"
 msgstr "लेखक"
 
-#: main.cpp:128
+#: main.cpp:141
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "मोजिला स्वरूप फाईल पासून ओळखचिन्ह आयात करा"
 
-#: main.cpp:129
+#: main.cpp:142
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "नेटस्केप (4.x व पूर्वीचे) स्वरूप फाईल पासून ओळखचिन्ह आयात करा"
 
-#: main.cpp:130
+#: main.cpp:143
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "इंटरनेट एक्सप्लोरर पसंतीचे स्वरूप फाईल पासून ओळखचिन्ह आयात करा"
 
-#: main.cpp:131
+#: main.cpp:144
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "ओपेरा स्वरूप फाईल पासून ओळखचिन्ह आयात करा"
 
-#: main.cpp:132
+#: main.cpp:145
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "केडीई2 स्वरूप फाईल पासून ओळखचिन्ह आयात करा"
 
-#: main.cpp:133
+#: main.cpp:146
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "गेलिओन स्वरूप फाईल पासून ओळखचिन्ह आयात करा"
 
-#: main.cpp:134
+#: main.cpp:147
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "मोजिला स्वरूप फाईल मध्ये ओळखचिन्ह निर्यात करा"
 
-#: main.cpp:135
+#: main.cpp:148
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "नेटस्केप (4.x व पूर्वीचे) स्वरूप फाईल मध्ये ओळखचिन्ह निर्यात करा"
 
-#: main.cpp:136
+#: main.cpp:149
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "छपाईयोग्य HTML स्वरूप फाईल मध्ये ओळखचिन्ह निर्यात करा"
 
-#: main.cpp:137
+#: main.cpp:150
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "इंटरनेट एक्सप्लोरर पसंतीचे स्वरूप फाईल मध्ये ओळखचिन्ह निर्यात करा"
 
-#: main.cpp:138
+#: main.cpp:151
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "ओपेरा स्वरूप फाईल मध्ये ओळखचिन्ह निर्यात करा"
 
-#: main.cpp:139
+#: main.cpp:152
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "ओळखचिन्ह फाईल दिलेल्या स्थानावर उघडा"
 
-#: main.cpp:140
+#: main.cpp:153
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "वापरकर्ता-वाचण्यायोग्य कॅप्शन निश्चित करा, उदाहरणार्थ \"कन्सोल\""
 
-#: main.cpp:141
+#: main.cpp:154
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "सर्व ब्राऊजर संबंधित कार्यपद्धती लपवा"
 
-#: main.cpp:142
+#: main.cpp:155
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -714,17 +714,17 @@ msgid ""
 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
 msgstr ""
 
-#: main.cpp:146
+#: main.cpp:159
 #, kde-format
 msgid "File to edit"
 msgstr "संपादन करण्याकरिता फाईल"
 
-#: main.cpp:229
+#: main.cpp:242
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "तुम्ही फक्त एकच --export पर्याय निर्देशीत करू शकता."
 
-#: main.cpp:236
+#: main.cpp:249
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "तुम्ही फक्त एकच --import पर्याय निर्देशीत करू शकता."

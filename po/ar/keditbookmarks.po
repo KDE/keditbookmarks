@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"POT-Creation-Date: 2022-10-16 00:50+0000\n"
 "PO-Revision-Date: 2021-06-27 22:41+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -282,44 +282,44 @@ msgstr "يحدّث أيقونة الموقع..."
 msgid "%1; no HTML component found (%2)"
 msgstr "%1؛ لم يُعثر على مكوّن HTML ‏(%2)"
 
-#: importers.cpp:57
+#: importers.cpp:58
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "استيراد علامات %1"
 
-#: importers.cpp:62
+#: importers.cpp:63
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "علامات %1"
 
-#: importers.cpp:99
+#: importers.cpp:104
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "أأستوردد كمجلد فرعي أو أستبدل العلامات الحالية؟"
 
-#: importers.cpp:100
+#: importers.cpp:105
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "استورد %1"
 
-#: importers.cpp:101
+#: importers.cpp:106
 #, kde-format
 msgid "As New Folder"
 msgstr "كمجلد جديد"
 
-#: importers.cpp:102
+#: importers.cpp:107
 #, kde-format
 msgid "Replace"
 msgstr "استبدل"
 
-#: importers.cpp:212
+#: importers.cpp:221
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "ملفات علامات جاليون (*.xbel)"
 
-#: importers.cpp:220
+#: importers.cpp:229
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "ملفات علامات كدي (*.xml)"
@@ -567,7 +567,7 @@ msgstr "&صدّر"
 msgid "&Tools"
 msgstr "أ&دوات"
 
-#: main.cpp:68
+#: main.cpp:73
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -578,128 +578,128 @@ msgstr ""
 "العمل في نفس السيرورة؟\n"
 "من فضلك لاحظ أنّ المناظير المتكرّرة للقراءة فقط للأسف."
 
-#: main.cpp:72
+#: main.cpp:77
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "تحذير"
 
-#: main.cpp:73
+#: main.cpp:78
 #, kde-format
 msgid "Run Another"
 msgstr "نفّذ آخر"
 
-#: main.cpp:74
+#: main.cpp:79
 #, kde-format
 msgid "Continue in Same"
 msgstr "استمر في نفس السيرورة"
 
-#: main.cpp:112
+#: main.cpp:125
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "محرّر علامات"
 
-#: main.cpp:114
+#: main.cpp:127
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "منظّم ومحرّر علامات"
 
-#: main.cpp:116
+#: main.cpp:129
 #, kde-format
 msgid "Copyright 2000-2017, KDE developers"
 msgstr "حقوق النسخ محفوظة © 2000-2017، مطوري كدي"
 
-#: main.cpp:117
+#: main.cpp:130
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:117
+#: main.cpp:130
 #, kde-format
 msgid "Initial author"
 msgstr "أولّ مؤلّف"
 
-#: main.cpp:118
+#: main.cpp:131
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:118
+#: main.cpp:131
 #, kde-format
 msgid "Author"
 msgstr "المؤلّف"
 
-#: main.cpp:128
+#: main.cpp:141
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "استورد علامات من ملف بهيئة موزيلا"
 
-#: main.cpp:129
+#: main.cpp:142
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "استورد علامات من ملف بهيئة نِت​سكيب (4 وأقدم)"
 
-#: main.cpp:130
+#: main.cpp:143
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "استورد علامات من ملف بهيئة مفضّلات إنترنت إكسبلورر"
 
-#: main.cpp:131
+#: main.cpp:144
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "استورد علامات من ملف بهيئة أوبرا"
 
-#: main.cpp:132
+#: main.cpp:145
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "استورد علامات من ملف بهيئة كدي2"
 
-#: main.cpp:133
+#: main.cpp:146
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "استورد علامات من ملف بهيئة صيغة جاليون"
 
-#: main.cpp:134
+#: main.cpp:147
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "صدّر علامات إلى ملف بهيئة موزيلا"
 
-#: main.cpp:135
+#: main.cpp:148
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "صدّر علامات إلى ملف بهيئة نِت​سكيب (4 وأقدم)"
 
-#: main.cpp:136
+#: main.cpp:149
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "صدّر علامات إلى ملف بهيئة HTML قابل للطباعة"
 
-#: main.cpp:137
+#: main.cpp:150
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "صدّر علامات إلى ملف بهيئة مفضّلات إنترنت إكسبلورر"
 
-#: main.cpp:138
+#: main.cpp:151
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "صدّر علامات إلى ملف بهيئة أوبرا"
 
-#: main.cpp:139
+#: main.cpp:152
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "افتح عند الموضع المعطى في ملف علامات المواقع"
 
-#: main.cpp:140
+#: main.cpp:153
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "استخدم واصفة يمكن للمستخدِم قراءتها، مثلًا \"كونسول\""
 
-#: main.cpp:141
+#: main.cpp:154
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "أخفِ كلّ الدوال المتعلّقة بالمتصفّح"
 
-#: main.cpp:142
+#: main.cpp:155
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -713,17 +713,17 @@ msgstr ""
 "KFileDialog وما إلى ذلك.\n"
 "المسار النهائي لكوائن DBus هو /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:146
+#: main.cpp:159
 #, kde-format
 msgid "File to edit"
 msgstr "الملف لتحريره"
 
-#: main.cpp:229
+#: main.cpp:242
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "يمكنك تحديد خيار ‎--export واحد فقط."
 
-#: main.cpp:236
+#: main.cpp:249
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "يمكنك تحديد خيار ‎--import واحد فقط."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"POT-Creation-Date: 2022-10-16 00:50+0000\n"
 "PO-Revision-Date: 2020-11-06 00:04+0100\n"
 "Last-Translator: enolp <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -278,44 +278,44 @@ msgstr "Anovando'l favicon…"
 msgid "%1; no HTML component found (%2)"
 msgstr ""
 
-#: importers.cpp:57
+#: importers.cpp:58
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr ""
 
-#: importers.cpp:62
+#: importers.cpp:63
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr ""
 
-#: importers.cpp:99
+#: importers.cpp:104
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 
-#: importers.cpp:100
+#: importers.cpp:105
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "Importación de %1"
 
-#: importers.cpp:101
+#: importers.cpp:106
 #, kde-format
 msgid "As New Folder"
 msgstr ""
 
-#: importers.cpp:102
+#: importers.cpp:107
 #, kde-format
 msgid "Replace"
 msgstr ""
 
-#: importers.cpp:212
+#: importers.cpp:221
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Ficheros de marcadores de Galeon (*.xbel)"
 
-#: importers.cpp:220
+#: importers.cpp:229
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "Ficheros de marcadores de KDE (*.xml)"
@@ -563,7 +563,7 @@ msgstr "&Esportación"
 msgid "&Tools"
 msgstr "&Ferramientes"
 
-#: main.cpp:68
+#: main.cpp:73
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -571,132 +571,132 @@ msgid ""
 "Please note that, unfortunately, duplicate views are read-only."
 msgstr ""
 
-#: main.cpp:72
+#: main.cpp:77
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Alvertencia"
 
-#: main.cpp:73
+#: main.cpp:78
 #, kde-format
 msgid "Run Another"
 msgstr ""
 
-#: main.cpp:74
+#: main.cpp:79
 #, kde-format
 msgid "Continue in Same"
 msgstr ""
 
-#: main.cpp:112
+#: main.cpp:125
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Editor de marcadores"
 
-#: main.cpp:114
+#: main.cpp:127
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Organizador y editor de marcadores"
 
-#: main.cpp:116
+#: main.cpp:129
 #, kde-format
 msgid "Copyright 2000-2017, KDE developers"
 msgstr "Copyright 2000-2017, Los desendolcadores de KDE"
 
-#: main.cpp:117
+#: main.cpp:130
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:117
+#: main.cpp:130
 #, kde-format
 msgid "Initial author"
 msgstr "Autor inicial"
 
-#: main.cpp:118
+#: main.cpp:131
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:118
+#: main.cpp:131
 #, kde-format
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:128
+#: main.cpp:141
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Importa marcadores de magar un ficheru nel formatu de Mozilla"
 
-#: main.cpp:129
+#: main.cpp:142
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Importa marcadores de magar un ficheru nel formatu de Netscape (4.x y menor)"
 
-#: main.cpp:130
+#: main.cpp:143
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Importa marcadores de magar un ficheru nel formatu de favoritos d'Internet "
 "Explorer"
 
-#: main.cpp:131
+#: main.cpp:144
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Importa marcadores de magar un ficheru nel formatu d'Opera"
 
-#: main.cpp:132
+#: main.cpp:145
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Importa marcadores de magar un ficheru nel formatu de KDE2"
 
-#: main.cpp:133
+#: main.cpp:146
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Importa marcadores de magar un ficheru nel formatu de Galeon"
 
-#: main.cpp:134
+#: main.cpp:147
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Esporta marcadores a un ficheru nel formatu de Mozilla"
 
-#: main.cpp:135
+#: main.cpp:148
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Esporta marcadores a un ficheru nel formatu de Netscape (4.x y menor)"
 
-#: main.cpp:136
+#: main.cpp:149
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr ""
 
-#: main.cpp:137
+#: main.cpp:150
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "Esporta marcadores a un ficheru nel formatu de favoritos d'Internet Explorer"
 
-#: main.cpp:138
+#: main.cpp:151
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Esporta marcadores a un ficheru nel formatu d'Opera"
 
-#: main.cpp:139
+#: main.cpp:152
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr ""
 
-#: main.cpp:140
+#: main.cpp:153
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr ""
 
-#: main.cpp:141
+#: main.cpp:154
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Anubre toles funciones venceyaes a los restoladores"
 
-#: main.cpp:142
+#: main.cpp:155
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -711,17 +711,17 @@ msgstr ""
 "marcadores de KFileDialog… etc.\n"
 "El camín final del oxetu de D-Bus ye /KBookmarkManager/<NomeOxetuDbus>"
 
-#: main.cpp:146
+#: main.cpp:159
 #, kde-format
 msgid "File to edit"
 msgstr "Ficheru a editar"
 
-#: main.cpp:229
+#: main.cpp:242
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr ""
 
-#: main.cpp:236
+#: main.cpp:249
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr ""

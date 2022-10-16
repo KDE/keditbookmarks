@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-30 00:48+0000\n"
+"POT-Creation-Date: 2022-10-16 00:50+0000\n"
 "PO-Revision-Date: 2020-09-09 09:26+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -277,45 +277,45 @@ msgstr "Webseiten-Symbol wird aktualisiert ..."
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; keine HTML-Komponente gefunden (%2)"
 
-#: importers.cpp:57
+#: importers.cpp:58
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "%1-Lesezeichen importieren"
 
-#: importers.cpp:62
+#: importers.cpp:63
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1-Lesezeichen"
 
-#: importers.cpp:99
+#: importers.cpp:104
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 "Als neuen Unterordner importieren oder alle aktuellen Lesezeichen ersetzen?"
 
-#: importers.cpp:100
+#: importers.cpp:105
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1-Import"
 
-#: importers.cpp:101
+#: importers.cpp:106
 #, kde-format
 msgid "As New Folder"
 msgstr "Als neuen Ordner"
 
-#: importers.cpp:102
+#: importers.cpp:107
 #, kde-format
 msgid "Replace"
 msgstr "Ersetzen"
 
-#: importers.cpp:212
+#: importers.cpp:221
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Galeon-Lesezeichendateien (*.xbel)"
 
-#: importers.cpp:220
+#: importers.cpp:229
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "KDE-Lesezeichendateien (*.xml)"
@@ -565,7 +565,7 @@ msgstr "Ex&portieren"
 msgid "&Tools"
 msgstr "E&xtras"
 
-#: main.cpp:68
+#: main.cpp:73
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -577,136 +577,136 @@ msgstr ""
 "Bitte beachten Sie, dass zusätzliche Ausgaben automatisch auf „Nur-Lesen“ "
 "eingestellt sind."
 
-#: main.cpp:72
+#: main.cpp:77
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Warnung"
 
-#: main.cpp:73
+#: main.cpp:78
 #, kde-format
 msgid "Run Another"
 msgstr "Weitere Ausgabe starten"
 
-#: main.cpp:74
+#: main.cpp:79
 #, kde-format
 msgid "Continue in Same"
 msgstr "Ausgabe beibehalten"
 
-#: main.cpp:112
+#: main.cpp:125
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Lesezeichen-Editor"
 
-#: main.cpp:114
+#: main.cpp:127
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Lesezeichen-Verwaltung und -Editor"
 
-#: main.cpp:116
+#: main.cpp:129
 #, kde-format
 msgid "Copyright 2000-2017, KDE developers"
 msgstr "Copyright 2000–2017, die KDE-Entwickler"
 
-#: main.cpp:117
+#: main.cpp:130
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:117
+#: main.cpp:130
 #, kde-format
 msgid "Initial author"
 msgstr "Ursprünglicher Autor"
 
-#: main.cpp:118
+#: main.cpp:131
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:118
+#: main.cpp:131
 #, kde-format
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:128
+#: main.cpp:141
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Lesezeichen aus einer Datei im Mozilla-Format importieren"
 
-#: main.cpp:129
+#: main.cpp:142
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Lesezeichen aus einer Datei im Netscape-Format importieren (Version 4 oder "
 "älter)"
 
-#: main.cpp:130
+#: main.cpp:143
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Lesezeichen aus einer Datei im Favoriten-Format des Internet Explorers "
 "importieren"
 
-#: main.cpp:131
+#: main.cpp:144
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Lesezeichen aus einer Datei im Opera-Format importieren"
 
-#: main.cpp:132
+#: main.cpp:145
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Lesezeichen aus einer Datei im KDE-2-Format importieren"
 
-#: main.cpp:133
+#: main.cpp:146
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Lesezeichen aus einer Datei im Galeon-Format importieren"
 
-#: main.cpp:134
+#: main.cpp:147
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Lesezeichen in eine Datei im Mozilla-Format exportieren"
 
-#: main.cpp:135
+#: main.cpp:148
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Lesezeichen in eine Datei im Netscape-Format exportieren (Version 4 oder "
 "älter)"
 
-#: main.cpp:136
+#: main.cpp:149
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Lesezeichen in eine Datei im druckfähigen HTML-Format exportieren"
 
-#: main.cpp:137
+#: main.cpp:150
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "Lesezeichen in eine Datei im Favoriten-Format des Internet Explorers "
 "exportieren"
 
-#: main.cpp:138
+#: main.cpp:151
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Lesezeichen in eine Datei im Opera-Format exportieren"
 
-#: main.cpp:139
+#: main.cpp:152
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "An der angegebenen Position in der Lesezeichendatei öffnen"
 
-#: main.cpp:140
+#: main.cpp:153
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Titel/Beschriftung festlegen, z. B. „Konsole“"
 
-#: main.cpp:141
+#: main.cpp:154
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Alle browser-typischen Funktionen ausblenden"
 
-#: main.cpp:142
+#: main.cpp:155
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -721,17 +721,17 @@ msgstr ""
 "„kfile“ für KFileDialog-Lesezeichen usw.\n"
 "Der endgültige D-Bus-Objektpfad lautet /KBookmarkManager/<dbusObjectName>."
 
-#: main.cpp:146
+#: main.cpp:159
 #, kde-format
 msgid "File to edit"
 msgstr "Zu bearbeitende Datei"
 
-#: main.cpp:229
+#: main.cpp:242
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Sie können nur eine Option für --export festlegen."
 
-#: main.cpp:236
+#: main.cpp:249
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Sie können nur eine Option für --import festlegen."
