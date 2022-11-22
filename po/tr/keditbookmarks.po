@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:50+0000\n"
-"PO-Revision-Date: 2022-04-01 13:49+0300\n"
+"PO-Revision-Date: 2022-11-21 22:30+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -517,13 +517,13 @@ msgstr "A&ra:"
 #: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
 #, kde-format
 msgid "&File"
-msgstr "Do&sya"
+msgstr "&Dosya"
 
 #. i18n: ectx: Menu (edit)
 #: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
 #, kde-format
 msgid "&Edit"
-msgstr "&Düzenle"
+msgstr "Dü&zen"
 
 #. i18n: ectx: Menu (view)
 #: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
@@ -547,7 +547,7 @@ msgstr "&Yer İmi"
 #: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
 #, kde-format
 msgid "&Settings"
-msgstr "&Ayarlar"
+msgstr "Ayar&lar"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
