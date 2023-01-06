@@ -1,125 +1,113 @@
 <?xml version="1.0" ?>
 <!-- vim:set ts=4 noet syntax=xml: -->
 <!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
-<!ENTITY % German "INCLUDE">
-<!ENTITY kbookmarkmerger "<command
->kbookmarkmerger</command
->">
+<!ENTITY % English "INCLUDE">
+<!ENTITY kbookmarkmerger "<command>kbookmarkmerger</command>">
 ]>
 
 <refentry lang="&language;">
 <refentryinfo>
-	<title
->kbookmarkmerger-Benutzerhandbuch</title>
-	<author
->&Frerich.Raabe; &Frerich.Raabe.mail; </author>
-	<date
->2016-11-07</date>
-	<releaseinfo
->Anwendungen 16.12</releaseinfo>
-	<productname
->KDE-Anwendungen</productname>
+	<title>kbookmarkmerger User's Manual</title>
+	<author>
+		&Frerich.Raabe;
+		&Frerich.Raabe.mail;
+	</author>
+	<date>2016-11-07</date>
+	<releaseinfo>Applications 16.12</releaseinfo>
+	<productname>KDE Applications</productname>
 </refentryinfo>
 
 <refmeta>
-	<refentrytitle
->&kbookmarkmerger;</refentrytitle>
-	<manvolnum
->1</manvolnum>
+	<refentrytitle>&kbookmarkmerger;</refentrytitle>
+	<manvolnum>1</manvolnum>
 </refmeta>
 
 <refnamediv>
-	<refname
->&kbookmarkmerger;</refname>
-	<refpurpose
->Ein Programm zum Zusammenführen mehrerer vorgegebener Lesezeichenlisten zu einer Lesezeichenliste für den Benutzer.</refpurpose>
+	<refname>&kbookmarkmerger;</refname>
+	<refpurpose>A program for merging a given set of bookmarks into the
+	user's list of bookmarks.</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
-<cmdsynopsis
->&kbookmarkmerger; <arg choice="req"
->directory</arg
-> </cmdsynopsis>
+<cmdsynopsis>
+	&kbookmarkmerger;
+	<arg choice="req">directory</arg>
+</cmdsynopsis>
 </refsynopsisdiv>
 
 <refsect1>
-<title
->Beschreibung</title>
-<para
->&kbookmarkmerger; ist ein Programm zum Zusammenführen mehrerer vorgegebener Lesezeichenlisten zu einer einzigen Lesezeichenliste für den Benutzer. Wenn der Benutzer noch keine Lesezeichen erzeugt hat, wird eine neue Lesezeichenliste erzeugt und die vorgegebenen Lesezeichen werden in diese Liste  abgelegt. Beim Zusammenführen achtet &kbookmarkmerger; darauf, welche Dateien in einem vorherigen Lauf bereits zusammengeführt worden sind, sodass kein Lesezeichen in der Lesezeichenliste des Benutzers mehr als einmal eingebaut wird.</para>
+<title>Description</title>
+<para>&kbookmarkmerger; is a program for merging a given set of bookmarks into
+the user's set of bookmarks; if the user doesn't have any bookmarks created
+yet, a new bookmark list is created and the given bookmarks are inserted into
+it. While doing this, &kbookmarkmerger; keeps track of which files were
+merged in a previous run already, so no bookmark will get installed to the
+user's bookmarks more than once.<!--FIXME True in kf5? In case &kde; is running while
+&kbookmarkmerger; is executed, the &kde; bookmark subsystem will be informed
+of any changes to the user's bookmarks, so that all applications accessing
+that information (&ie; &konqueror;) will pick the changes up instantly.--></para>
 
-<para
->Die traditionelle Herangehensweise, um so etwas zu erreichen, bestand darin, bei der Erzeugung von neuen Benutzer-Accounts ein sorgfältig gestaltetes Gerüst von persönlichen Verzeichnissen zu nutzen, um dem Benutzer einen Standardsatz von Lesezeichen zur Verfügung zu stellen. Das Problem bei diesem Zugang bestand darin, dass nach der Erzeugung des Benutzer-Accounts keine neuen Lesezeichen verteilt werden konnten.</para>
+<para>The traditionally used approach to achieve something like this was to
+use carefully crafted skeleton home directories when creating a new user
+account, to provide the user with a standard set of bookmarks. The problem
+with this approach is that after the user account has been created, no new
+bookmarks can be propagated.</para>
 
-<para
->Dieser Mechanismus ist nützlich für Systemadministratoren, die ein Lesezeichen, das auf ein bestimmtes Dokument verweist (zum Beispiel wichtige Anmerkungen zum System), an alle Benutzer verteilen wollen. Auch für Distributoren kann es nützlich sein, ihren Softwarepaketen Lesezeichendateien beizulegen, die während der Installation von &kbookmarkmerger; in die Lesezeichenliste des Benutzers eingefügt werden. So kann man unmittelbar nachdem das Softwarepaket installiert wurde, auf die mitgelieferte Dokumentation auf einfache und klare Weise zugreifen.</para>
+<para>This mechanism is useful for system administrators who want to propagate
+a bookmark pointing to a certain document (for instance, important notes about
+the system) to all users. Distributors might find it useful as well, for
+instance by augmenting the software packages they supply with bookmark files
+which &kbookmarkmerger; merges into the user's bookmark list when the
+package is installed. That way, documentation shipped with a software package
+is easily and visibly accessible right after the package has been
+installed.</para>
 
-<para
->Der einzige von &kbookmarkmerger; benötigte Parameter ist der Name eines Verzeichnisses, das nach Lesezeichendateien durchsucht werden soll. Alle Dateien im angegebenen Verzeichnis werden für die Zusammenlegung in die Einrichtungsdateien des Benutzers berücksichtigt. Die Dateien im angegebenen Verzeichnis sollten gültige<acronym
->XBEL</acronym
->-Dateien sein.</para>
+<para>The only parameter required by &kbookmarkmerger; is the name of a
+directory which shall be scanned for bookmark files. All files in the given
+directory will be considered for being merged into the user's setup. The
+files in the given directory should be valid <acronym>XBEL</acronym>
+files.</para>
 </refsect1>
 
 <refsect1>
-<title
->Siehe auch</title>
+<title>See Also</title>
 <simplelist>
-<member
-><ulink url="help:/konqueror/index.html"
->Handbuch zu &konqueror;</ulink
-></member>
-<member
->kf5options(7)</member>
+<member><ulink url="help:/konqueror/index.html">&konqueror; manual</ulink></member>
+<member>kf5options(7)</member>
 </simplelist>
 </refsect1>
 
 <refsect1>
-<title
->Beispiele</title>
-<screen
->joe@hal9000:~
-> <command
->kbookmarkmerger <filename
->/usr/local/extra-bookmarks</filename
-></command
-></screen>
-<para
->Fasst alle unter <filename
->/usr/local/extra-bookmarks</filename
-> abgelegten Lesezeichendateien in die Lesezeichenliste des Benutzers joe zusammen.</para>
+<title>Examples</title>
+<screen>joe@hal9000:~> <command>kbookmarkmerger <filename>/usr/local/extra-bookmarks</filename></command></screen>
+<para>Merges all bookmark files stored in
+<filename>/usr/local/extra-bookmarks</filename> into joe's list of
+bookmarks.</para>
 </refsect1>
 
 <refsect1>
-<title
->Standards</title>
+<title>Standards</title>
 <variablelist>
-<varlistentry
-><term/><listitem
-><para>
-	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
-><acronym
->XBEL</acronym
->-Spezifikation</ulink>
-</para
-></listitem
-></varlistentry>
+<varlistentry><term/><listitem><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"><acronym>XBEL</acronym> specification</ulink>
+</para></listitem></varlistentry>
 </variablelist>
 </refsect1>
 
 <refsect1>
-<title
->Einschränkungen</title>
-<para
->Um herauszufinden, ob eine gegebene Lesezeichendatei bereits in die Lesezeichendatei des Benutzers eingearbeitet wurde oder nicht, betrachtet &kbookmarkmerger; nur den Dateinamen der Lesezeichendatei - Inhalte werden nicht berücksichtigt. Das bedeutet, dass Änderungen an einer Lesezeichendatei, die bereits in eine Lesezeichendatei des Benutzers eingearbeitet wurde, keine erneute Verarbeitung dieser Datei auslösen.</para>
+<title>Restrictions</title>
+<para>When determining whether a given bookmark file has been merged into the
+user's bookmarks already or not, &kbookmarkmerger; merely looks at the
+filename of the bookmark file - the contents are not checked at all. This means
+that changing a bookmark file which was already merged into a user's bookmarks
+will not trigger merging it once again.</para>
 
-<para
->Beachten Sie auch, dass, wenn ein Benutzer eine Datei bearbeitet, die für ihn zusammengefügt wurde, die ursprüngliche Lesezeichendatei unverändert bleibt.</para>
+<para>Also note that in case a user modifies a bookmark which was merged into
+his setup, the original bookmark file will be left unmodified.</para>
 </refsect1>
 
 <refsect1>
-<title
->Autor</title>
-<para
->&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+<title>Author</title>
+<para>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
 </refsect1>
 </refentry>

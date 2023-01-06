@@ -2,222 +2,94 @@
 <!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
 "dtd/kdedbx45.dtd" [
 <!ENTITY % addindex "IGNORE">
-<!ENTITY % German "INCLUDE"
-> <!-- change language only here -->
+<!ENTITY % English "INCLUDE" > <!-- change language only here -->
 ]>
 
 <!--moved from konqueror docbook -->
 
 <article id="keditbookmarks" lang="&language;">
 <articleinfo>
-<title
->Der Lesezeichen-Editor</title>
+<title>The Bookmark Editor</title>
 <authorgroup>
-<author
->&Pamela.Roberts;</author>
-<othercredit role="translator"
-><firstname
->Thomas</firstname
-><surname
->Diehl</surname
-><affiliation
-><address
-><email
->thd@kde.org</email
-></address
-></affiliation
-><contrib
->Übersetzung der Benutzeroberfläche</contrib
-></othercredit
-> <othercredit role="translator"
-><firstname
->Stefan</firstname
-><surname
->Winter</surname
-><affiliation
-><address
-><email
->kickdown@online.de</email
-></address
-></affiliation
-> <contrib
->Übersetzung des Handbuches</contrib
-></othercredit
-> <othercredit role="translator"
-><firstname
->Uwe</firstname
-><surname
->Krieg</surname
-><affiliation
-><address
-><email
->u.krieg@gmx.de</email
-></address
-></affiliation
-> <contrib
->Übersetzung des Handbuches</contrib
-></othercredit
-> 
+<author>&Pamela.Roberts;</author>
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
 </authorgroup>
 
-<date
->2016-11-04</date>
+<date>2016-11-04</date>
 
-<releaseinfo
->Anwendungen 16.12</releaseinfo>
+<releaseinfo>Applications 16.12</releaseinfo>
 
 <keywordset>
-<keyword
->Lesezeichen</keyword>
-<keyword
->Editor</keyword>
+<keyword>bookmarks</keyword>
+<keyword>editor</keyword>
 </keywordset>
 </articleinfo>
 
-<para
->In vielen Anwendungen wie &eg; &konqueror;, &konsole; oder &konversation; öffnen Sie mit <menuchoice
-><guimenu
->Lesezeichen</guimenu
-> <guimenuitem
->Lesezeichen bearbeiten</guimenuitem
-> </menuchoice
-> den <guilabel
->Lesezeichen-Editor</guilabel
->.</para>
-<para
->Alternative können Sie den Editor als eigenständige Anwendung starten, um die Lesezeichen des Browsers zu bearbeiten.</para>
-<para
->Der Editor zeigte eine Baumansicht Ihres Lesezeichenordners mit seinen Unterordnern. Wie bei den Baumansichten in &kde; üblich, werden Unterordner mit einem kleinen Kästchen links vor dem Namen dargestellt. Wenn das Kästchen ein <keycap
->&gt;</keycap
->-Zeichen enthält, können Sie die Ansicht mit einem Linksklick auf das Zeichen ausklappen, sodass alle Unterordner angezeigt werden, wobei das <keycap
->&gt;</keycap
->-Zeichen durch ein<keycap
->v</keycap
->-Zeichen ersetzt wird. Ein Linksklick auf das <keycap
->v</keycap
->-Zeichen klappt die Ansicht mit den Unterordnern wieder zusammen.</para>
+<para>In many applications (&eg; &konqueror;, &konsole;, &konversation;)
+the <menuchoice><guimenu>Bookmarks</guimenu><guimenuitem>Edit
+Bookmarks</guimenuitem> </menuchoice> option opens the <guilabel>Bookmark
+Editor</guilabel>.</para>
+<para>Alternatively you can launch the editor as standalone application
+to edit the browser bookmarks.</para>
+<para>The editor shows a tree view of your bookmarks and bookmark subfolders.
+As is usual for tree views in &kde;, subfolders are shown with a small
+<keycap>&gt;</keycap> arrow at the left of the folder name;
+<mousebutton>left</mousebutton> clicking on it will expand the view to
+show the contents of that subfolder and the <keycap>&gt;</keycap> arrow will
+change to <keycap>v</keycap>; <mousebutton>left</mousebutton> clicking on the
+<keycap>v</keycap> arrow will collapse the subfolder view.</para>
 
-<para
->Um einen Eintrag aus der Liste auszuwählen, klicken Sie mit der <mousebutton
->linken Maustaste</mousebutton
-> darauf. Sie können auch mit den Tasten <keysym
->Pfeil aufwärts</keysym
-> and <keysym
->Pfeil abwärts</keysym
-> durch die Liste navigieren oder mit den Tasten <keysym
->Pfeil rechts</keysym
-> einen Unterordner ausklappen bzw. mit <keysym
->Pfeil links</keysym
-> zusammenklappen.</para>
+<para>To select an item in the list you can <mousebutton>left</mousebutton>
+click on it, or you can navigate through the list by using the <keysym>Up</keysym>
+and <keysym>Down</keysym> keys to move around, <keysym>Right</keysym> to expand a subfolder and
+<keysym>Left</keysym> to collapse it.</para>
 
-<para
->Sie können Objekte mit <quote
->Ziehen und Ablegen</quote
-> oder durch <guimenuitem
->Ausschneiden</guimenuitem
-> und <guimenuitem
->Einfügen</guimenuitem
-> in der Liste umplatzieren. Die Reihenfolge, in der die Einträge im <guilabel
->Lesezeicheneditor</guilabel
-> angezeigt werden, ist auch die Reihenfolge, in der sie später im Lesezeichenmenü dargestellt werden. Sie können die Liste sogar noch verschönern, indem Sie mit Hilfe der Funktion <menuchoice
-><guimenu
->Ordner</guimenu
-><guimenuitem
->Trennlinie einfügen</guimenuitem
-></menuchoice
-> zwischen zwei Lesezeichen Trennlinien einfügen. </para>
+<para>You can move an item to a different place in the list by using the
+normal Drag and Drop or <guimenuitem>Cut</guimenuitem> and <guimenuitem>
+Paste</guimenuitem> methods. The order in which the items appear in
+the <guilabel>Bookmark Editor</guilabel> is the order they will appear in the
+<guimenu>Bookmarks</guimenu> drop down list. The <menuchoice><guimenu>Folder
+</guimenu><guimenuitem>Insert Separator</guimenuitem></menuchoice> option can
+be used to insert separating lines into the list wherever you wish.</para>
 
-<para
->Neue Ordner und Unterordner können am ausgewählten Punkt in der Liste mit der Option <guimenuitem
->Neuer Ordner ...</guimenuitem
-> im Menü <guimenu
->Ordner</guimenu
-> oder im Kontextmenü des Hauptfensters (das Sie mit einem Rechtsklick auf den Hauptteil des Editorfensters öffnen) erstellt werden oder Sie betätigen einfach die Tastenkombination <keycombo action="simul"
->&Ctrl;<keycap
->N</keycap
-></keycombo
->. </para>
+<para>A new subfolder can be created at the selected point in the list by
+using the <guimenuitem>New Folder...</guimenuitem> option in the
+<guimenu>Folder</guimenu> menu or from the drop down menu you get when you
+<mousebutton>right</mousebutton> click on an item in the main part of the
+window, or with <keycombo action="simul">&Ctrl;<keycap>N</keycap></keycombo>
+</para>
 
-<para
->Um den Namen eines Lesezeichens oder Ordners zu ändern, wählen Sie ihn aus und drücken dann <keycap
->F2</keycap
->. Oder Sie wählen den Eintrag <guimenuitem
->Umbenennen</guimenuitem
-> aus dem Menü <guimenu
->Bearbeiten</guimenu
-> oder aus dem Kontextmenü, das nach einem Rechtsklick auf einen Eintrag erscheint. Entsprechend können Sie eine Adresse (&URL;) bearbeiten, indem Sie <keycap
->F3</keycap
-> drücken, oder den Menüeintrag <guimenuitem
->Adresse ändern</guimenuitem
-> auswählen.</para>
+<para>To change the name of a bookmark or folder select it then press
+<keycap>F2</keycap> or choose the <guimenuitem>Rename</guimenuitem> item from
+the <guimenu>Edit</guimenu> menu or the pop up menu that appears when you
+<mousebutton>right</mousebutton> click on the item. Similarly, you can edit
+the &URL; by pressing <keycap>F3</keycap> or choosing the <guimenuitem>
+Change Location</guimenuitem> menu item.</para>
 
-<para
->Mit dem <guilabel
->Lesezeichen-Editor</guilabel
-> können Sie Lesezeichen von einer Reihe anderer Browser in &konqueror;s Lesezeichenliste importieren. Sie werden wahlweise in einen neuen Ordner platziert oder ersetzen alle aktuellen Lesezeichen. Hierzu müssen Sie <guisubmenu
->Importieren</guisubmenu
-> aus dem Menü <guimenu
->Datei</guimenu
-> aufrufen. Mit der Option <menuchoice
-><guimenu
->Datei</guimenu
-><guisubmenu
->Exportieren</guisubmenu
-> </menuchoice
-> können Sie &konqueror;s Lesezeichen für einen Mozilla-Browser exportieren.</para>
+<para>The <guilabel>Bookmark Editor</guilabel> lets you import bookmarks from
+a range of other browsers into &konqueror;'s bookmark list, putting them into
+ a new folder or replacing all current bookmarks. To do this select
+<guisubmenu>Import</guisubmenu> from the <guimenu>File</guimenu> menu. The
+<menuchoice><guimenu>File</guimenu><guisubmenu>Export</guisubmenu>
+</menuchoice> option can be used to export &konqueror;'s bookmarks to a
+Mozilla browser.</para>
 
-<para
->Um auszuwählen, welcher Lesezeichen-Unterordner die Lesezeichen für die Anzeige in der Werkzeugleiste enthält, wählen Sie zuerst den Unterordner aus und rufen dann <guimenuitem
->Als Ordner in Werkzeugleiste anzeigen</guimenuitem
-> im Menü <guimenu
->Ordner</guimenu
-> auf.</para>
+<para>To select which bookmark subfolder is used to hold the Bookmark
+Toolbar items select the subfolder then choose <guimenuitem>Set as Toolbar
+Folder</guimenuitem> from the <guimenu>Folder</guimenu> menu.</para>
 
-<para
->Wenn Sie Ihre Lesezeichen aufräumen und vergessen haben, was eine bestimmte Webseite eigentlich enthielt, können Sie sie ganz einfach aus dem <guilabel
->Lesezeichen-Editor</guilabel
-> heraus öffnen, indem Sie nach einem Rechtsklick auf den Eintrag im Kontextmenü <guimenuitem
->In Konqueror öffnen</guimenuitem
-> auswählen. Wenn Sie nur überprüfen wollen, ob die &URL; noch gültig ist, wählen Sie stattdessen <guimenuitem
->Status überprüfen</guimenuitem
->.</para>
+<para>If you are tidying up your bookmarks and have forgotten what a
+particular web page is, you can easily open it from within the <guilabel>
+Bookmark Editor</guilabel> by <mousebutton>right</mousebutton> clicking
+on the item and selecting <guimenuitem>Open in Konqueror</guimenuitem> from
+the pop up menu. If you just want to check that the &URL; is still valid
+select <guimenuitem>Check Status</guimenuitem> instead.</para>
 
-<note
-><para
->Alle Änderungen werden automatisch gespeichert, wenn Sie den <guilabel
->Lesezeichen-Editor</guilabel
-> schließen. </para
-></note>
+<note><para>All your changes are automatically saved if you close
+the <guilabel>Bookmark Editor</guilabel>.
+</para></note>
 
-<para
->Übersetzungen von:</para
-><itemizedlist
-><listitem
-><para
->Thomas Diehl<email
->thd@kde.org</email
-><emphasis
->GUI-Übersetzung</emphasis
-></para
-></listitem
-><listitem
-><para
->Stefan Winter<email
->kickdown@online.de</email
-><emphasis
->Übersetzung der Dokumentation</emphasis
-></para
-></listitem
-><listitem
-><para
->Uwe Krieg<email
->u.krieg@gmx.de</email
-><emphasis
->Übersetzung der Dokumentation</emphasis
-></para
-></listitem
-></itemizedlist
-> 
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
 
 &underFDL;
 &underGPL;
