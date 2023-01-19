@@ -6,6 +6,7 @@ add_library(kbookmarkmodel_private SHARED)
 target_sources(kbookmarkmodel_private PRIVATE
   commandhistory.cpp
   commands.cpp
+  commands_p.h
   model.cpp
   treeitem.cpp
   view.cpp
@@ -13,6 +14,7 @@ target_sources(kbookmarkmodel_private PRIVATE
   commands.h
   model.h
   treeitem_p.h
+  kinsertionsort_p.h
   view.h
   ${debug_file_common_SRCS}
 )
