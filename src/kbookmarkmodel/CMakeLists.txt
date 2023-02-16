@@ -21,10 +21,10 @@ target_sources(kbookmarkmodel_private PRIVATE
 target_link_libraries(kbookmarkmodel_private
 PUBLIC
    Qt::Widgets
-   KF5::XmlGui # KActionCollection
+   KF${KF_MAJOR_VERSION}::XmlGui # KActionCollection
 PRIVATE
-   KF5::Bookmarks
-   KF5::I18n
+   KF${KF_MAJOR_VERSION}::Bookmarks
+   KF${KF_MAJOR_VERSION}::I18n
 )
 
 include(GenerateExportHeader)
