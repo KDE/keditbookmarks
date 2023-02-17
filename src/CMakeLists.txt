@@ -18,9 +18,9 @@ ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KEDITBOOKMARKS VERS
 add_executable(kbookmarkmerger kbookmarkmerger.cpp ${debug_file_common_SRCS})
 
 target_link_libraries(kbookmarkmerger
-   KF${KF_MAJOR_VERSION}::KIOCore
-   KF${KF_MAJOR_VERSION}::I18n
-   KF${KF_MAJOR_VERSION}::Bookmarks
+   KF5::KIOCore
+   KF5::I18n
+   KF5::Bookmarks
 )
 
 install(TARGETS kbookmarkmerger ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
@@ -66,12 +66,11 @@ target_sources(keditbookmarks PRIVATE
 )
 
 target_link_libraries(keditbookmarks kbookmarkmodel_private
-   KF${KF_MAJOR_VERSION}::Parts
-   KF${KF_MAJOR_VERSION}::Bookmarks
-   KF${KF_MAJOR_VERSION}::WindowSystem
-   KF${KF_MAJOR_VERSION}::IconThemes
-   KF${KF_MAJOR_VERSION}::Completion
-   KF${KF_MAJOR_VERSION}::KIOGui)
+   KF5::Parts
+   KF5::Bookmarks
+   KF5::WindowSystem
+   KF5::IconThemes
+   KF5::KIOGui)
 
 install(TARGETS keditbookmarks          ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 

@@ -38,10 +38,7 @@
 
 #include <KMessageBox>
 #include <KWindowSystem>
-#include <kwindowsystem_version.h>
-#if KWINDOWSYSTEM_VERSION >= QT_VERSION_CHECK(5, 101, 0)
-#include <KX11Extras>
-#endif
+
 #include <KBookmarkManager>
 #include <QStandardPaths>
 #include <kbookmarkexporter.h>
@@ -92,11 +89,7 @@ static bool askUser(const QString &filename, bool &readonly)
                     if (value.isValid())
                         id = value;
                     ////qCDebug(KEDITBOOKMARKS_LOG)<<" id !!!!!!!!!!!!!!!!!!! :"<<id;
-#if KWINDOWSYSTEM_VERSION >= QT_VERSION_CHECK(5, 101, 0)
-                    KX11Extras::activateWindow((WId)id);
-#else
                     KWindowSystem::activateWindow((WId)id);
-#endif
                     return false;
 #if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
                 } else if (ret == KMessageBox::ButtonCode::PrimaryAction) {

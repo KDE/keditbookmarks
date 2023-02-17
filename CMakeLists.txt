@@ -9,8 +9,8 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 project(keditbookmarks VERSION ${RELEASE_SERVICE_VERSION})
 
 # ECM setup
-set(KF${KF_MAJOR_VERSION}_MIN_VERSION "5.91.0")
-find_package(ECM ${KF${KF_MAJOR_VERSION}_MIN_VERSION} CONFIG REQUIRED)
+set(KF5_MIN_VERSION "5.91.0")
+find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 set(QT_MIN_VERSION "5.15.2")
@@ -28,13 +28,6 @@ include(ECMAddAppIcon)
 include(KDEGitCommitHooks)
 include(KDEClangFormat)
 include(ECMDeprecationSettings)
-if (QT_MAJOR_VERSION STREQUAL "6")
-    set(QT_REQUIRED_VERSION "6.4.0")
-    set(KF_MIN_VERSION "5.240.0")
-    set(KF_MAJOR_VERSION "6")
-else()
-    set(KF_MAJOR_VERSION "5")
-endif()
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h *.c)
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 
@@ -44,9 +37,9 @@ find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS Core)
 if (QT_MAJOR_VERSION STREQUAL "6")
     find_package(Qt6Core5Compat)
 endif()
-find_package(KF${KF_MAJOR_VERSION} ${KF${KF_MAJOR_VERSION}_MIN_VERSION} REQUIRED COMPONENTS CoreAddons I18n KIO Bookmarks Parts WindowSystem IconThemes)
-find_package(KF${KF_MAJOR_VERSION}DocTools ${KF${KF_MAJOR_VERSION}_MIN_VERSION})
-set_package_properties(KF${KF_MAJOR_VERSION}DocTools PROPERTIES DESCRIPTION
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS CoreAddons I18n KIO Bookmarks Parts WindowSystem IconThemes)
+find_package(KF5DocTools ${KF5_MIN_VERSION})
+set_package_properties(KF5DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
     TYPE OPTIONAL
 )
@@ -54,13 +47,13 @@ if(BUILD_TESTING)
     find_package(Qt${QT_MAJOR_VERSION}Test ${QT_REQUIRED_VERSION} CONFIG REQUIRED)
 endif()
 
-ecm_set_disabled_deprecation_versions(QT 6.4
+ecm_set_disabled_deprecation_versions(QT 5.15.2
     KF 5.100.0
     )
 
 add_subdirectory(src)
 ki18n_install(po)
-if (KF${KF_MAJOR_VERSION}DocTools_FOUND)
+if (KF5DocTools_FOUND)
     kdoctools_install(po)
     add_subdirectory(doc)
 endif()
