@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:50+0000\n"
+"POT-Creation-Date: 2023-02-17 01:01+0000\n"
 "PO-Revision-Date: 2022-05-12 12:11+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -567,7 +567,7 @@ msgstr "&Xuất khẩu"
 msgid "&Tools"
 msgstr "&Công cụ"
 
-#: main.cpp:73
+#: main.cpp:76
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -579,130 +579,130 @@ msgstr ""
 "Vui lòng lưu ý rằng, không may là, các khung xem trùng lặp đều chỉ có thể "
 "đọc."
 
-#: main.cpp:77
+#: main.cpp:80
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Cảnh báo"
 
-#: main.cpp:78
+#: main.cpp:81
 #, kde-format
 msgid "Run Another"
 msgstr "Chạy cái nữa"
 
-#: main.cpp:79
+#: main.cpp:82
 #, kde-format
 msgid "Continue in Same"
 msgstr "Tiếp tục cùng cái"
 
-#: main.cpp:125
+#: main.cpp:132
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Trình sửa dấu nhớ"
 
-#: main.cpp:127
+#: main.cpp:134
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Trình tổ chức và sửa dấu nhớ"
 
-#: main.cpp:129
+#: main.cpp:136
 #, kde-format
 msgid "Copyright 2000-2017, KDE developers"
 msgstr "Bản quyền 2000-2017, các nhà phát triển KDE"
 
-#: main.cpp:130
+#: main.cpp:137
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:130
+#: main.cpp:137
 #, kde-format
 msgid "Initial author"
 msgstr "Tác giả ban đầu"
 
-#: main.cpp:131
+#: main.cpp:138
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:131
+#: main.cpp:138
 #, kde-format
 msgid "Author"
 msgstr "Tác giả"
 
-#: main.cpp:141
+#: main.cpp:148
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Nhập khẩu các dấu nhớ từ một tệp ở định dạng Mozilla"
 
-#: main.cpp:142
+#: main.cpp:149
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Nhập khẩu các dấu nhớ từ một tệp ở định dạng Netscape (4.x và sớm hơn)"
 
-#: main.cpp:143
+#: main.cpp:150
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Nhập khẩu các dấu nhớ từ một tệp ở định dạng Favorites của Internet Explorer"
 
-#: main.cpp:144
+#: main.cpp:151
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Nhập khẩu các dấu nhớ từ một tệp ở định dạng Opera"
 
-#: main.cpp:145
+#: main.cpp:152
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Nhập khẩu các dấu nhớ từ một tệp ở định dạng KDE2"
 
-#: main.cpp:146
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Nhập khẩu các dấu nhớ từ một tệp ở định dạng Galeon"
 
-#: main.cpp:147
+#: main.cpp:154
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Xuất khẩu các dấu nhớ ra một tệp ở định dạng Mozilla"
 
-#: main.cpp:148
+#: main.cpp:155
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Xuất khẩu các dấu nhớ ra một tệp ở định dạng Netscape (4.x và sớm hơn)"
 
-#: main.cpp:149
+#: main.cpp:156
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Xuất khẩu các dấu nhớ ra một tệp ở định dạng HTML in được"
 
-#: main.cpp:150
+#: main.cpp:157
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "Xuất khẩu các dấu nhớ ra một tệp ở định dạng Favorites của Internet Explorer"
 
-#: main.cpp:151
+#: main.cpp:158
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Xuất khẩu các dấu nhớ ra một tệp ở định dạng Opera"
 
-#: main.cpp:152
+#: main.cpp:159
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Mở ở vị trí được đưa ra trong tệp dấu nhớ"
 
-#: main.cpp:153
+#: main.cpp:160
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Đặt phụ đề người dùng đọc được, ví dụ \"Konsole\""
 
-#: main.cpp:154
+#: main.cpp:161
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Ẩn tất cả các chức năng liên quan đến trình duyệt"
 
-#: main.cpp:155
+#: main.cpp:162
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -716,17 +716,17 @@ msgstr ""
 "KFileDialog, v.v.\n"
 "Đường dẫn đến đối tượng D-Bus cuối cùng là /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:159
+#: main.cpp:166
 #, kde-format
 msgid "File to edit"
 msgstr "Tệp để sửa"
 
-#: main.cpp:242
+#: main.cpp:249
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Bạn chỉ có thể chỉ định một lựa chọn --export duy nhất."
 
-#: main.cpp:249
+#: main.cpp:256
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Bạn chỉ có thể chỉ định một lựa chọn --import duy nhất."

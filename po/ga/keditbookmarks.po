@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase/keditbookmarks.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:50+0000\n"
+"POT-Creation-Date: 2023-02-17 01:01+0000\n"
 "PO-Revision-Date: 2007-06-27 10:27-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -573,7 +573,7 @@ msgstr "&Easpórtáil"
 msgid "&Tools"
 msgstr "&Uirlisí"
 
-#: main.cpp:73
+#: main.cpp:76
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -584,137 +584,137 @@ msgstr ""
 "leanadh ar aghaidh sa chóip chéanna?\n"
 "Tabhair faoi deara nach féidir ach léamh a dhéanamh in amhairc dhúbailte."
 
-#: main.cpp:77
+#: main.cpp:80
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Rabhadh"
 
-#: main.cpp:78
+#: main.cpp:81
 #, kde-format
 msgid "Run Another"
 msgstr "Rith Ceann Eile"
 
-#: main.cpp:79
+#: main.cpp:82
 #, kde-format
 msgid "Continue in Same"
 msgstr "Lean sa Cheann Seo"
 
-#: main.cpp:125
+#: main.cpp:132
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Eagarthóir Leabharmharcanna"
 
-#: main.cpp:127
+#: main.cpp:134
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Eagraí agus Eagarthóir Leabharmharcanna"
 
-#: main.cpp:129
+#: main.cpp:136
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
 msgid "Copyright 2000-2017, KDE developers"
 msgstr "© 2000 - 2007, Forbróirí KDE"
 
-#: main.cpp:130
+#: main.cpp:137
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:130
+#: main.cpp:137
 #, kde-format
 msgid "Initial author"
 msgstr "An chéad údar"
 
-#: main.cpp:131
+#: main.cpp:138
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:131
+#: main.cpp:138
 #, kde-format
 msgid "Author"
 msgstr "Údar"
 
-#: main.cpp:141
+#: main.cpp:148
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Iompórtáil leabharmharcanna ó chomhad i bhformáid Mozilla"
 
-#: main.cpp:142
+#: main.cpp:149
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Iompórtáil leabharmharcanna ó chomhad i bhformáid Netscape (4.x nó níos "
 "túisce)"
 
-#: main.cpp:143
+#: main.cpp:150
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Iompórtáil leabharmharcanna ó chomhad i bhformáid 'Ceanáin' Internet Explorer"
 
-#: main.cpp:144
+#: main.cpp:151
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Iompórtáil leabharmharcanna ó chomhad i bhformáid Opera"
 
-#: main.cpp:145
+#: main.cpp:152
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Iompórtáil leabharmharcanna ó chomhad i bhformáid KDE2"
 
-#: main.cpp:146
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Iompórtáil leabharmharcanna ó chomhad i bhformáid Galeon"
 
-#: main.cpp:147
+#: main.cpp:154
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Easpórtáil leabharmharcanna go comhad i bhformáid Mozilla"
 
-#: main.cpp:148
+#: main.cpp:155
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Easpórtáil leabharmharcanna go comhad i bhformáid Netscape (4.x agus níos "
 "túisce)"
 
-#: main.cpp:149
+#: main.cpp:156
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Easpórtáil leabharmharcanna go comhad i bhformáid inphriontáilte HTML"
 
-#: main.cpp:150
+#: main.cpp:157
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "Easpórtáil leabharmharcanna go comhad i bhformáid 'Ceanáin' Internet Explorer"
 
-#: main.cpp:151
+#: main.cpp:158
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Easpórtáil leabharmharcanna go comhad i bhformáid Opera"
 
-#: main.cpp:152
+#: main.cpp:159
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Oscail ag an ionad roghnaithe sa chomhad leabharmharcanna"
 
-#: main.cpp:153
+#: main.cpp:160
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr ""
 "Roghnaigh ceannteideal a bheidh inléite ag an úsáideoir, mar shampla "
 "\"Konsole\""
 
-#: main.cpp:154
+#: main.cpp:161
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Folaigh gach feidhm a bhaineann le brabhsálaí"
 
-#: main.cpp:155
+#: main.cpp:162
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -736,17 +736,17 @@ msgstr ""
 "Is é /KBookmarkManager/dbusObjectName an chonair dheiridh le haghaidh réada "
 "D-Bus"
 
-#: main.cpp:159
+#: main.cpp:166
 #, kde-format
 msgid "File to edit"
 msgstr "Comhad le cur in eagar"
 
-#: main.cpp:242
+#: main.cpp:249
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Ní féidir ach rogha '--export' amháin a shonrú."
 
-#: main.cpp:249
+#: main.cpp:256
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Ní féidir ach rogha '--import' amháin a shonrú."

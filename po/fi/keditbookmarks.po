@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:50+0000\n"
+"POT-Creation-Date: 2023-02-17 01:01+0000\n"
 "PO-Revision-Date: 2020-07-12 23:43+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -581,7 +581,7 @@ msgstr "&Vie"
 msgid "&Tools"
 msgstr "&Työkalut"
 
-#: main.cpp:73
+#: main.cpp:76
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -592,130 +592,130 @@ msgstr ""
 "vai jatkaa samaa?\n"
 "Huomaa, että monistetut näkymät ovat varustettuja vain lukuoikeuksin."
 
-#: main.cpp:77
+#: main.cpp:80
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Varoitus"
 
-#: main.cpp:78
+#: main.cpp:81
 #, kde-format
 msgid "Run Another"
 msgstr "Suorita toinen"
 
-#: main.cpp:79
+#: main.cpp:82
 #, kde-format
 msgid "Continue in Same"
 msgstr "Jatka samassa"
 
 # pmap: =/gen=Kirjanmerkkimuokkaimen/
 # pmap: =/elat=Kirjanmerkkimuokkaimesta/
-#: main.cpp:125
+#: main.cpp:132
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Kirjanmerkkimuokkain"
 
-#: main.cpp:127
+#: main.cpp:134
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Kirjanmerkkimuokkain ja -järjestelijä"
 
-#: main.cpp:129
+#: main.cpp:136
 #, kde-format
 msgid "Copyright 2000-2017, KDE developers"
 msgstr "Tekijänoikeudet 2000–2017 KDE:n kehittäjät"
 
-#: main.cpp:130
+#: main.cpp:137
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:130
+#: main.cpp:137
 #, kde-format
 msgid "Initial author"
 msgstr "Ensimmäinen tekijä"
 
-#: main.cpp:131
+#: main.cpp:138
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:131
+#: main.cpp:138
 #, kde-format
 msgid "Author"
 msgstr "Tekijä"
 
-#: main.cpp:141
+#: main.cpp:148
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Tuo kirjanmerkit Mozilla-muotoisesta tiedostosta."
 
-#: main.cpp:142
+#: main.cpp:149
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Tuo kirjanmerkit Netscape-muotoisesta tiedostosta"
 
-#: main.cpp:143
+#: main.cpp:150
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Tuo kirjanmerkit Internet Explorer-muotoisesta tiedostosta"
 
-#: main.cpp:144
+#: main.cpp:151
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Tuo kirjanmerkit Opera-muotoisesta tiedostosta"
 
-#: main.cpp:145
+#: main.cpp:152
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Tuo kirjanmerkit KDE 2 -muotoisesta tiedostosta"
 
-#: main.cpp:146
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Tuo kirjanmerkit Galeon-muotoisesta tiedostosta"
 
-#: main.cpp:147
+#: main.cpp:154
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Vie kirjanmerkit Mozilla-muotoiseen tiedostoon"
 
-#: main.cpp:148
+#: main.cpp:155
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Vie kirjanmerkit Netscape-muotoiseen tiedostoon"
 
-#: main.cpp:149
+#: main.cpp:156
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Vie kirjanmerkit tulostuskelpoiseen HTML-tiedostoon"
 
-#: main.cpp:150
+#: main.cpp:157
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Vie kirjanmerkit Internet Explorer -muotoiseen tiedostoon"
 
-#: main.cpp:151
+#: main.cpp:158
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Vie kirjanmerkit Opera-muotoiseen tiedostoon"
 
-#: main.cpp:152
+#: main.cpp:159
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Avaa tietyssä kohtaa kirjanmerkkitiedostoa"
 
-#: main.cpp:153
+#: main.cpp:160
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Aseta käyttäjälle näkyvä otsikko, kuten esimerkiksi ”Konsole”"
 
-#: main.cpp:154
+#: main.cpp:161
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Kätke kaikki selainriippuvaiset toiminnot"
 
-#: main.cpp:155
+#: main.cpp:162
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -729,17 +729,17 @@ msgstr ""
 "tiedostonvalintaikkunan kirjanmerkeille jne.\n"
 "Lopullinen DBus-polku on /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:159
+#: main.cpp:166
 #, kde-format
 msgid "File to edit"
 msgstr "Muokattava tiedosto"
 
-#: main.cpp:242
+#: main.cpp:249
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Voit antaa vain yhden --export -valinnan"
 
-#: main.cpp:249
+#: main.cpp:256
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Voit antaa vain yhden --import -valinnan"
