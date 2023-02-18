@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-17 01:01+0000\n"
+"POT-Creation-Date: 2023-02-18 01:02+0000\n"
 "PO-Revision-Date: 2011-06-20 18:44+0300\n"
 "Last-Translator: Tomas Straupis <tomasstraupis@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -568,7 +568,7 @@ msgstr "&Eksportuoti"
 msgid "&Tools"
 msgstr "Įrank&iai"
 
-#: main.cpp:76
+#: main.cpp:73
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -580,129 +580,129 @@ msgstr ""
 "Atsižvelkite į tai, kad, deja, pakartotini rodymai atveriami tik skaitymo "
 "veiksena."
 
-#: main.cpp:80
+#: main.cpp:77
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Dėmesio"
 
-#: main.cpp:81
+#: main.cpp:78
 #, kde-format
 msgid "Run Another"
 msgstr "Leisti kitą"
 
-#: main.cpp:82
+#: main.cpp:79
 #, kde-format
 msgid "Continue in Same"
 msgstr "Tęsti tame pačiame"
 
-#: main.cpp:132
+#: main.cpp:125
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Žymelių redaktorius"
 
-#: main.cpp:134
+#: main.cpp:127
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Žymelių tvarkyklė ir redaktorius"
 
-#: main.cpp:136
+#: main.cpp:129
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
 msgid "Copyright 2000-2017, KDE developers"
 msgstr "Copyright 2000-2007, KDE programuotojai"
 
-#: main.cpp:137
+#: main.cpp:130
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:137
+#: main.cpp:130
 #, kde-format
 msgid "Initial author"
 msgstr "Pirminis autorius"
 
-#: main.cpp:138
+#: main.cpp:131
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:138
+#: main.cpp:131
 #, kde-format
 msgid "Author"
 msgstr "Autorius"
 
-#: main.cpp:148
+#: main.cpp:141
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Importuoti žymeles iš Mozilla formato failo"
 
-#: main.cpp:149
+#: main.cpp:142
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Importuoti žymeles iš Netscape (4.x ir ankstesnio) formato failo"
 
-#: main.cpp:150
+#: main.cpp:143
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Importuoti Internet Explorer Favorites formato žymeles"
 
-#: main.cpp:151
+#: main.cpp:144
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Importuoti žymeles iš Opera formato failo"
 
-#: main.cpp:152
+#: main.cpp:145
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Importuoti žymeles iš KDE2 formato failo"
 
-#: main.cpp:153
+#: main.cpp:146
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Importuoti žymeles iš Galeon formato failo"
 
-#: main.cpp:154
+#: main.cpp:147
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Eksportuoti žymeles į Mozilla formato failą"
 
-#: main.cpp:155
+#: main.cpp:148
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Eksportuoti žymeles į Netscape (4.x ir ankstesnio) formato failą"
 
-#: main.cpp:156
+#: main.cpp:149
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Eksportuoti žymeles į spausdintino HTML formato failą"
 
-#: main.cpp:157
+#: main.cpp:150
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Eksportuoti žymeles į Internet Explorer Favorites formatą"
 
-#: main.cpp:158
+#: main.cpp:151
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Eksportuoti žymeles į Opera formato failą"
 
-#: main.cpp:159
+#: main.cpp:152
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Atverti nurodytoje žymelių failo vietoje"
 
-#: main.cpp:160
+#: main.cpp:153
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Nurodyti naudotojui įskaitomą antraštę, pvz., „Konsole“"
 
-#: main.cpp:161
+#: main.cpp:154
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Slėpti visas su naršykle susijusias funkcijas"
 
-#: main.cpp:162
+#: main.cpp:155
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -723,17 +723,17 @@ msgstr ""
 "žymelių atveju, ir t.t.\n"
 "Failų D-Bus objekto kelias yra /KBookmarkManager/dbusObjektoPavadinimas"
 
-#: main.cpp:166
+#: main.cpp:159
 #, kde-format
 msgid "File to edit"
 msgstr "Redaguojamas failas"
 
-#: main.cpp:249
+#: main.cpp:242
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Galite nurodyti tik vieną --export parinktį."
 
-#: main.cpp:256
+#: main.cpp:249
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Galite nurodyti tik vieną --import parinktį."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-17 01:01+0000\n"
+"POT-Creation-Date: 2023-02-18 01:02+0000\n"
 "PO-Revision-Date: 2020-03-21 18:43+0100\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -569,7 +569,7 @@ msgstr "&Esporta"
 msgid "&Tools"
 msgstr "S&trumenti"
 
-#: main.cpp:76
+#: main.cpp:73
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -580,129 +580,129 @@ msgstr ""
 "o vuoi continuare il lavoro nella stessa?\n"
 "Nota che le visualizzazioni duplicate sono purtroppo in sola lettura."
 
-#: main.cpp:80
+#: main.cpp:77
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Avviso"
 
-#: main.cpp:81
+#: main.cpp:78
 #, kde-format
 msgid "Run Another"
 msgstr "Eseguine un'altra"
 
-#: main.cpp:82
+#: main.cpp:79
 #, kde-format
 msgid "Continue in Same"
 msgstr "Continua nella stessa"
 
-#: main.cpp:132
+#: main.cpp:125
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Editor di segnalibri"
 
-#: main.cpp:134
+#: main.cpp:127
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Editor e gestore di segnalibri"
 
-#: main.cpp:136
+#: main.cpp:129
 #, kde-format
 msgid "Copyright 2000-2017, KDE developers"
 msgstr "Copyright 2000-2017 degli sviluppatori di KDE"
 
-#: main.cpp:137
+#: main.cpp:130
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:137
+#: main.cpp:130
 #, kde-format
 msgid "Initial author"
 msgstr "Autore originale"
 
-#: main.cpp:138
+#: main.cpp:131
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:138
+#: main.cpp:131
 #, kde-format
 msgid "Author"
 msgstr "Autore"
 
-#: main.cpp:148
+#: main.cpp:141
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Importa segnalibri da un file in formato Mozilla"
 
-#: main.cpp:149
+#: main.cpp:142
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Importa segnalibri da un file in formato Netscape (4.x e precedenti)"
 
-#: main.cpp:150
+#: main.cpp:143
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Importa segnalibri da un file in formato Internet Explorer"
 
-#: main.cpp:151
+#: main.cpp:144
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Importa segnalibri da un file in formato Opera"
 
-#: main.cpp:152
+#: main.cpp:145
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Importa segnalibri da un file in formato KDE2"
 
-#: main.cpp:153
+#: main.cpp:146
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Importa segnalibri da un file in formato Galeon"
 
-#: main.cpp:154
+#: main.cpp:147
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Esporta segnalibri come file in formato Mozilla"
 
-#: main.cpp:155
+#: main.cpp:148
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Esporta segnalibri come file in formato Netscape (4.x e precedenti)"
 
-#: main.cpp:156
+#: main.cpp:149
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Esporta segnalibri come file in formato HTML stampabile"
 
-#: main.cpp:157
+#: main.cpp:150
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Esporta segnalibri come file in formato Internet Explorer"
 
-#: main.cpp:158
+#: main.cpp:151
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Esporta segnalibri come file in formato Opera"
 
-#: main.cpp:159
+#: main.cpp:152
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Apri nel file di segnalibri alla posizione data"
 
-#: main.cpp:160
+#: main.cpp:153
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr ""
 "Imposta la didascalia come leggibile dell'utente, per esempio «Konsole»"
 
-#: main.cpp:161
+#: main.cpp:154
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Nascondi tutte le funzioni del browser"
 
-#: main.cpp:162
+#: main.cpp:155
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -717,17 +717,17 @@ msgstr ""
 "segnalibri del selettore dei file di KDE, e così via.\n"
 "Il percorso finale dell'oggetto D-Bus è /KBookmarkManager/<dbusObjectName>."
 
-#: main.cpp:166
+#: main.cpp:159
 #, kde-format
 msgid "File to edit"
 msgstr "File da modificare"
 
-#: main.cpp:249
+#: main.cpp:242
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Si può specificare una sola opzione --export."
 
-#: main.cpp:256
+#: main.cpp:249
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Si può specificare una sola opzione --import."
