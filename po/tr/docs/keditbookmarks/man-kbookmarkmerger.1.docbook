@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Turkish "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>kbookmarkmerger Kullanıcı Kılavuzu</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>2016-11-07</date>
+	<releaseinfo
+>Uygulamalar 16.12</releaseinfo>
+	<productname
+>KDE Uygulamaları</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Belirli bir yer imi kümesini kullanıcının yer imi listesinde birleştiren bir program.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>dizini</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Açıklama</title>
+<para
+>&kbookmarkmerger; belirli bir yer işareti kümesini, kullanıcının yer imi kümesinde birleştirmek için kullanılan bir programdır; kullanıcı henüz oluşturulmuş yer imlerine sahip değilse yeni bir yer imi listesi oluşturulur ve yer imlerine eklenir. Bunu yaparken &kbookmarkmerger;, hangi dosyaların bir önceki çalışmada zaten birleştirildiğini izler; dolayısıyla hiç yer imi, kullanıcının yer imlerine birden fazla kez eklenmez.</para>
+
+<para
+>Böyle bir şeye ulaşmak için geleneksel olarak kullanılan yaklaşım, kullanıcıya yeni bir kullanıcı hesabı oluştururken, kullanıcıya standart yer imi takımı sağlamak için dikkatle hazırlanmış ev dizinleri kullanmaktır. Bu yaklaşımla ilgili sorun, kullanıcı hesabı oluşturulduktan sonra hiçbir yeni yer iminin çoğaltılamaz olmasıdır.</para>
+
+<para
+>Bu mekanizma, belirli bir belgeye işaret eden bir yer imi (örneğin, sistemle ilgili önemli notlar) yaymak isteyen sistem yöneticileri için ve tüm kullanıcılar için yararlıdır. Dağıtıcılar, örneğin, paketin kurulu olduğu sırada &kbookmarkmerger;'ın kullanıcının yer imi listesine eklediği yer imi dosyasıyla sağladıkları yazılım paketlerini genişleterek de kullanabilirler. Bu yolla, bir yazılım paketiyle gönderilen belgeler, paket kurulduktan hemen sonra kolayca ve gözle görülür şekilde erişilebilir olacaktır.</para>
+
+<para
+>&kbookmarkmerger; tarafından gereken tek parametre, yer imi dosyaları için taranacak bir dizinin adıdır. Verilen dizindeki tüm dosyalar, kullanıcının kurulumunda birleştirilmek üzere değerlendirilecektir. Verilen dizindeki dosyalar geçerli <acronym
+>XBEL</acronym
+> dosyaları olmalıdır.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Ayrıca Bakınız</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>&konqueror; kılavuzu</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Örnekler</title>
+<screen
+>yamtar@kde9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+><filename
+>/usr/local/extra-bookmarks</filename
+> içinde depolanmış tüm yer imi dosyalarını Yamtar'ın yer imleri listesiyle birleştirir.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standartlar</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+><acronym
+>XBEL</acronym
+> belirtimi</ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Kısıtlamalar</title>
+<para
+>Belirli bir yer imi dosyasının kullanıcının yer imlerine zaten birleştirilip birleştirilmediğini belirlerken &kbookmarkmerger;, yalnızca yer imi dosyasının adına bakar - içerikler hiç denetlenmez. Bu, zaten bir kullanıcının yer imlerine birleştirilen bir yer imi dosyasını değiştirmesinin, onu bir kez daha birleştirmeye başlamayacağı anlamına gelmektedir.</para>
+
+<para
+>Ayrıca bir kullanıcının kurulumunda birleştirilen bir yer imini değiştirmesi durumunda, özgün yer imi dosyasının değiştirilmeyeceğini unutmayın.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Yazar</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>
