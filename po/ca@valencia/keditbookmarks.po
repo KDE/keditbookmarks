@@ -164,27 +164,27 @@ msgstr "Importa les adreces d'interés de &Mozilla..."
 #: actionsimpl.cpp:234
 #, kde-format
 msgid "Export &Netscape Bookmarks"
-msgstr "Exporta a adreces d'interés de &Netscape"
+msgstr "Exporta cap a adreces d'interés de &Netscape"
 
 #: actionsimpl.cpp:239
 #, kde-format
 msgid "Export &Opera Bookmarks..."
-msgstr "Exporta a adreces d'interés d'&Opera..."
+msgstr "Exporta cap a adreces d'interés d'&Opera..."
 
 #: actionsimpl.cpp:244
 #, kde-format
 msgid "Export &HTML Bookmarks..."
-msgstr "Exporta a adreces d'interés en &HTML..."
+msgstr "Exporta cap a adreces d'interés en &HTML..."
 
 #: actionsimpl.cpp:248
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
-msgstr "Exporta a adreces d'interés d'&Internet Explorer..."
+msgstr "Exporta cap a adreces d'interés d'&Internet Explorer..."
 
 #: actionsimpl.cpp:253
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
-msgstr "Exporta a adreces d'interés de &Mozilla..."
+msgstr "Exporta cap a adreces d'interés de &Mozilla..."
 
 #: actionsimpl.cpp:298
 #, kde-format
