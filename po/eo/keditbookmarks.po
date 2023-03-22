@@ -1,6 +1,6 @@
 # translation of keditbookmarks.po to Esperanto
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the keditbookmarks package.
 # Cindy McKee <cfmckee@gmail.com>, 2007.
 #
 msgid ""
@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-18 01:02+0000\n"
-"PO-Revision-Date: 2007-12-19 13:49-0600\n"
-"Last-Translator: Cindy McKee <cfmckee@gmail.com>\n"
+"PO-Revision-Date: 2023-03-20 22:43+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -39,10 +39,9 @@ msgid "Rename"
 msgstr "Renomi"
 
 #: actionsimpl.cpp:110
-#, fuzzy, kde-format
-#| msgid "C&hange URL"
+#, kde-format
 msgid "C&hange Location"
-msgstr "Ŝanĝi &retadreson"
+msgstr ""
 
 #: actionsimpl.cpp:116
 #, kde-format
@@ -100,10 +99,9 @@ msgid "Collapse &All Folders"
 msgstr "&Maletendi ĉiujn dosierujojn"
 
 #: actionsimpl.cpp:168
-#, fuzzy, kde-format
-#| msgid "&Open in Konqueror"
+#, kde-format
 msgid "&Open in Browser"
-msgstr "Mal&fermi en Konkeranto"
+msgstr ""
 
 #: actionsimpl.cpp:173
 #, kde-format
@@ -186,10 +184,9 @@ msgid "Export &Mozilla Bookmarks..."
 msgstr "Eksporti &Mozilla-legosignojn..."
 
 #: actionsimpl.cpp:298
-#, fuzzy, kde-format
-#| msgid "*.html|HTML Bookmark Listing"
+#, kde-format
 msgid "HTML Bookmark Listing (*.html)"
-msgstr "*.html|HTML-legosigna listo"
+msgstr ""
 
 #: actionsimpl.cpp:343
 #, kde-format
@@ -316,16 +313,14 @@ msgid "Replace"
 msgstr "Anstataŭigi"
 
 #: importers.cpp:221
-#, fuzzy, kde-format
-#| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
+#, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
-msgstr "*.xbel|Galeon-legosignaj dosieroj (*.xbel)"
+msgstr ""
 
 #: importers.cpp:229
-#, fuzzy, kde-format
-#| msgid "*.xml|KDE Bookmark Files (*.xml)"
+#, kde-format
 msgid "KDE Bookmark Files (*.xml)"
-msgstr "*.xml|KDE-legosignaj dosieroj (*.xml)"
+msgstr ""
 
 #: importers.h:116
 #, kde-format
@@ -414,32 +409,28 @@ msgid "Copy %1"
 msgstr "Kopii %1"
 
 #: kbookmarkmodel/commands.cpp:200
-#, fuzzy, kde-format
-#| msgid "%1 Change"
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Icon Change"
-msgstr "%1 ŝanĝo"
+msgstr ""
 
 #: kbookmarkmodel/commands.cpp:202
-#, fuzzy, kde-format
-#| msgid "%1 Change"
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Title Change"
-msgstr "%1 ŝanĝo"
+msgstr ""
 
 #: kbookmarkmodel/commands.cpp:204
-#, fuzzy, kde-format
-#| msgid "%1 Change"
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "URL Change"
-msgstr "%1 ŝanĝo"
+msgstr ""
 
 #: kbookmarkmodel/commands.cpp:206
-#, fuzzy, kde-format
-#| msgid "Comment"
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Comment Change"
-msgstr "Komento"
+msgstr ""
 
 #: kbookmarkmodel/commands.cpp:365
 #, kde-format
@@ -472,18 +463,16 @@ msgid "Bookmarks"
 msgstr "Legosignoj"
 
 #: kbookmarkmodel/model.cpp:217
-#, fuzzy, kde-format
-#| msgid "Name:"
+#, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
-msgstr "Nomo:"
+msgstr "Nomo"
 
 #: kbookmarkmodel/model.cpp:220
-#, fuzzy, kde-format
-#| msgid "Location:"
+#, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
-msgstr "Loko:"
+msgstr "Loko"
 
 #: kbookmarkmodel/model.cpp:223
 #, kde-format
@@ -616,10 +605,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "Legosigna ordigilo kaj modifilo"
 
 #: main.cpp:129
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2007, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2017, KDE developers"
-msgstr "Copyright 2000-2007, KDE developers"
+msgstr ""
 
 #: main.cpp:130
 #, kde-format
@@ -663,16 +651,14 @@ msgid "Import bookmarks from a file in Opera format"
 msgstr "Importi legosignojn de dosiero en Opera-formo"
 
 #: main.cpp:145
-#, fuzzy, kde-format
-#| msgid "Import bookmarks from a file in Opera format"
+#, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
-msgstr "Importi legosignojn de dosiero en Opera-formo"
+msgstr ""
 
 #: main.cpp:146
-#, fuzzy, kde-format
-#| msgid "Import bookmarks from a file in Opera format"
+#, kde-format
 msgid "Import bookmarks from a file in Galeon format"
-msgstr "Importi legosignojn de dosiero en Opera-formo"
+msgstr ""
 
 #: main.cpp:147
 #, kde-format
@@ -706,8 +692,7 @@ msgid "Open at the given position in the bookmarks file"
 msgstr "Malfermiĝi ĉe la difinita pozicio en la legosigna dosiero"
 
 #: main.cpp:153
-#, fuzzy, kde-format
-#| msgid "Set the user readable caption for example \"Konsole\""
+#, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Difini la apudskribon kiun uzantoj povas legi, ekz. \"Konsole\""
 
@@ -717,13 +702,7 @@ msgid "Hide all browser related functions"
 msgstr "Kaŝi ĉiun funkcion kiu rilatas al la retumilo"
 
 #: main.cpp:155
-#, fuzzy, kde-format
-#| msgid ""
-#| "A unique name that represents this bookmark collection, usually the "
-#| "kinstance name.\n"
-#| "This should be \"konqueror\" for the konqueror bookmarks, \"kfile\" for "
-#| "KFileDialog bookmarks, etc.\n"
-#| "The final DBus object path is /KBookmarkManager/dbusObjectName"
+#, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
 "kinstance name.\n"
@@ -731,11 +710,6 @@ msgid ""
 "KFileDialog bookmarks, etc.\n"
 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
 msgstr ""
-"Unika nomo kiu bone simbolas ĉi tiun legosignan kolekton, kutime la "
-"kinstance-nomon.\n"
-"Tiuj nomoj devus esti \"konqueror\" por la konqueror-legosignoj, \"kfile\" "
-"por la KFileDialog-legosignoj, ktp.\n"
-"La fina DBus-objektovojo estas /KBookmarkManager/dbusObjektoNomo"
 
 #: main.cpp:159
 #, kde-format
@@ -756,27 +730,3 @@ msgstr "Nur specifu unu --importan opcion."
 #, kde-format
 msgid "Checking..."
 msgstr "Kontrolas..."
-
-#~ msgid "Import All &Crash Sessions as Bookmarks..."
-#~ msgstr "Importi ĉiujn kolapsitajn &seancojn kiel legosignojn..."
-
-#~ msgid "No favicon found"
-#~ msgstr "Ne trovis retejan piktogramon"
-
-#~ msgid "Local file"
-#~ msgstr "Loka dosiero"
-
-#~ msgid "Crashes"
-#~ msgstr "Kolapsoj"
-
-#~ msgid "Bookmark"
-#~ msgstr "Legosigno"
-
-#~ msgid "URL"
-#~ msgstr "Retadreso"
-
-#~ msgid "Icon"
-#~ msgstr "Piktogramo"
-
-#~ msgid "Title"
-#~ msgstr "Titolo"
