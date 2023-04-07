@@ -2,94 +2,180 @@
 <!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
 "dtd/kdedbx45.dtd" [
 <!ENTITY % addindex "IGNORE">
-<!ENTITY % English "INCLUDE" > <!-- change language only here -->
+<!ENTITY % Turkish "INCLUDE"
+> <!-- change language only here -->
 ]>
 
 <!--moved from konqueror docbook -->
 
 <article id="keditbookmarks" lang="&language;">
 <articleinfo>
-<title>The Bookmark Editor</title>
+<title
+>Yer İmi Düzenleyici</title>
 <authorgroup>
-<author>&Pamela.Roberts;</author>
-<!-- TRANS:ROLES_OF_TRANSLATORS -->
+<author
+>&Pamela.Roberts;</author>
+<othercredit role="translator"
+><firstname
+>Kaan</firstname
+><surname
+>Özdinçer</surname
+><affiliation
+><address
+><email
+>kaanozdincer@gmail.com</email
+></address
+></affiliation
+><contrib
+>Çeviri</contrib
+></othercredit
+> 
 </authorgroup>
 
-<date>2016-11-04</date>
+<date
+>2016-11-04</date>
 
-<releaseinfo>Applications 16.12</releaseinfo>
+<releaseinfo
+>Uygulamalar 16.12</releaseinfo>
 
 <keywordset>
-<keyword>bookmarks</keyword>
-<keyword>editor</keyword>
+<keyword
+>yer imleri</keyword>
+<keyword
+>düzenleyici</keyword>
 </keywordset>
 </articleinfo>
 
-<para>In many applications (&eg; &konqueror;, &konsole;, &konversation;)
-the <menuchoice><guimenu>Bookmarks</guimenu><guimenuitem>Edit
-Bookmarks</guimenuitem> </menuchoice> option opens the <guilabel>Bookmark
-Editor</guilabel>.</para>
-<para>Alternatively you can launch the editor as standalone application
-to edit the browser bookmarks.</para>
-<para>The editor shows a tree view of your bookmarks and bookmark subfolders.
-As is usual for tree views in &kde;, subfolders are shown with a small
-<keycap>&gt;</keycap> arrow at the left of the folder name;
-<mousebutton>left</mousebutton> clicking on it will expand the view to
-show the contents of that subfolder and the <keycap>&gt;</keycap> arrow will
-change to <keycap>v</keycap>; <mousebutton>left</mousebutton> clicking on the
-<keycap>v</keycap> arrow will collapse the subfolder view.</para>
+<para
+>Bir çok uygulamada (&eg; &konqueror;, &konsole;, &konversation;), <menuchoice
+><guimenu
+>Yer İmleri</guimenu
+><guimenuitem
+>Yer İmlerini Düzenle</guimenuitem
+> </menuchoice
+> seçeneği, <guilabel
+>Yer İmi Düzenleyici</guilabel
+>'yi açar.</para>
+<para
+>Alternatif olarak, tarayıcı yer imlerini düzenlemek için düzenleyiciyi bağımsız uygulama olarak başlatabilirsiniz.</para>
+<para
+>Düzenleyici, yer imlerinizin ve yer imi alt klasörlerinin ağaç görünümünü gösterir. Ağaç görünümleri için her zamanki gibi, &kde;'de, alt klasörler, klasör adının solundaki küçük bir <keycap
+>&gt;</keycap
+> oku ile gösterilir; <mousebutton
+>sol</mousebutton
+> tıklama, o alt klasörün içeriğini göstermek için görünümü genişletecektir ve <keycap
+>&gt;</keycap
+> oku, <keycap
+>v</keycap
+> değiştirir; <keycap
+>v</keycap
+> oku üstüne <mousebutton
+>sol</mousebutton
+> tıklama, alt klasör görünümünü daraltır.</para>
 
-<para>To select an item in the list you can <mousebutton>left</mousebutton>
-click on it, or you can navigate through the list by using the <keysym>Up</keysym>
-and <keysym>Down</keysym> keys to move around, <keysym>Right</keysym> to expand a subfolder and
-<keysym>Left</keysym> to collapse it.</para>
+<para
+>Listeden bir öge seçmek için, <mousebutton
+>sol</mousebutton
+> tıklayın, veya <keysym
+>Yukarı</keysym
+> ve <keysym
+>Aşağı</keysym
+> ok düğmelerini kullanarak listede gezinin. <keysym
+>Sağ</keysym
+> ok düğmesi, alt klasörü genişletirken, <keysym
+>Sol</keysym
+> görünümü daraltacaktır.</para>
 
-<para>You can move an item to a different place in the list by using the
-normal Drag and Drop or <guimenuitem>Cut</guimenuitem> and <guimenuitem>
-Paste</guimenuitem> methods. The order in which the items appear in
-the <guilabel>Bookmark Editor</guilabel> is the order they will appear in the
-<guimenu>Bookmarks</guimenu> drop down list. The <menuchoice><guimenu>Folder
-</guimenu><guimenuitem>Insert Separator</guimenuitem></menuchoice> option can
-be used to insert separating lines into the list wherever you wish.</para>
+<para
+>Bir ögeyi normal Sürükle ve Bırak kullanarak veya <guimenuitem
+>Kes</guimenuitem
+> ve <guimenuitem
+> Yapıştır</guimenuitem
+> yöntemiyle listedeki farklı bir yere taşıyabilirsiniz. Ögelerin <guilabel
+>Yer İmi Düzenleyici</guilabel
+>'de görünme sırası, <guimenu
+>Yer İmleri</guimenu
+> açılır listesinde görünecekleri sıralamadır. The <menuchoice
+><guimenu
+>Klasör </guimenu
+><guimenuitem
+>Ayırıcı Ekle</guimenuitem
+></menuchoice
+> seçeneği, istediğiniz bir listeye ayırıcı çizgiler eklemek için kullanılabilir.</para>
 
-<para>A new subfolder can be created at the selected point in the list by
-using the <guimenuitem>New Folder...</guimenuitem> option in the
-<guimenu>Folder</guimenu> menu or from the drop down menu you get when you
-<mousebutton>right</mousebutton> click on an item in the main part of the
-window, or with <keycombo action="simul">&Ctrl;<keycap>N</keycap></keycombo>
-</para>
+<para
+><guimenuitem
+>Yeni Klasör...</guimenuitem
+> seçeneğini <guimenu
+>Klasör</guimenu
+> menüsünden kullanılarak veya açılır menüden, pencerenin ana bölümündeki bir ögeye <mousebutton
+>sağ</mousebutton
+> tıklayarak veya <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> ile listenin seçilen noktasında bir alt klasör oluşturulabilir. </para>
 
-<para>To change the name of a bookmark or folder select it then press
-<keycap>F2</keycap> or choose the <guimenuitem>Rename</guimenuitem> item from
-the <guimenu>Edit</guimenu> menu or the pop up menu that appears when you
-<mousebutton>right</mousebutton> click on the item. Similarly, you can edit
-the &URL; by pressing <keycap>F3</keycap> or choosing the <guimenuitem>
-Change Location</guimenuitem> menu item.</para>
+<para
+>Yer iminin adını veya klasörün adını değiştirmek için, <keycap
+>F2</keycap
+> düğmesine basın ya da ögenin üstüne <mousebutton
+>sağ</mousebutton
+> tıkladığınızda çıkacak olan açılır menüden <guimenu
+>Düzenle</guimenu
+> menüsünden <guimenuitem
+>Yeniden Adlandır</guimenuitem
+> ögesini kullanın. Benzer şekilde, <keycap
+>F3</keycap
+> düğmesine basarak veya <guimenuitem
+>Konum Değiştir</guimenuitem
+> menü ögesini seçerek &URL;'yi düzenleyebilirsiniz.</para>
 
-<para>The <guilabel>Bookmark Editor</guilabel> lets you import bookmarks from
-a range of other browsers into &konqueror;'s bookmark list, putting them into
- a new folder or replacing all current bookmarks. To do this select
-<guisubmenu>Import</guisubmenu> from the <guimenu>File</guimenu> menu. The
-<menuchoice><guimenu>File</guimenu><guisubmenu>Export</guisubmenu>
-</menuchoice> option can be used to export &konqueror;'s bookmarks to a
-Mozilla browser.</para>
+<para
+><guilabel
+>Yer İmi Düzenleyici</guilabel
+>, bir dizi başka tarayıcıdan yer imlerini &konqueror;'un yer imi listesine almanıza, bunları yeni bir klasöre koymanıza veya var olan tüm yer imlerinizi değiştirmenize olanak tanır. Bunu yapmak için <guimenu
+>Dosya</guimenu
+> menüsünden, <guisubmenu
+>İçe Aktar</guisubmenu
+> ögesini seçin. <menuchoice
+><guimenu
+>Dosya</guimenu
+><guisubmenu
+>Dışa Aktar</guisubmenu
+> </menuchoice
+> seçeneği, &konqueror; yer imlerini, Mozilla tarayıcısına aktarmanıza yardımcı olacaktır.</para>
 
-<para>To select which bookmark subfolder is used to hold the Bookmark
-Toolbar items select the subfolder then choose <guimenuitem>Set as Toolbar
-Folder</guimenuitem> from the <guimenu>Folder</guimenu> menu.</para>
+<para
+>Yer İmi Araç Çubuğu ögelerini tutmak için yer imi alt klasörünü seçin ve <guimenu
+>Klasör</guimenu
+> menüsünden <guimenuitem
+>Araç Çubuğu Klasörü olarak Ayarla</guimenuitem
+> ögesini seçin.</para>
 
-<para>If you are tidying up your bookmarks and have forgotten what a
-particular web page is, you can easily open it from within the <guilabel>
-Bookmark Editor</guilabel> by <mousebutton>right</mousebutton> clicking
-on the item and selecting <guimenuitem>Open in Konqueror</guimenuitem> from
-the pop up menu. If you just want to check that the &URL; is still valid
-select <guimenuitem>Check Status</guimenuitem> instead.</para>
+<para
+>Yer imlerini topladıysanız ve belirli bir web sayfasının ne olduğunu unuttuysanız ögenin üstüne <mousebutton
+>sağ</mousebutton
+> tıklayarak, <guilabel
+>Yer İmi Düzenleyici</guilabel
+> ve açılır menüden <guimenuitem
+>Konqueror'da Aç</guimenuitem
+>'ı seçerseniz bunu kolayca açabilirsiniz. Bunun yerine &URL;'nin hala geçerli olup olmadığını denetlemek isterseniz onun yerine <guimenuitem
+>Durumunu Denetle</guimenuitem
+> ögesini seçin.</para>
 
-<note><para>All your changes are automatically saved if you close
-the <guilabel>Bookmark Editor</guilabel>.
-</para></note>
+<note
+><para
+><guilabel
+>Yer İmi Düzenleyici</guilabel
+>'yi kapatırsanız tüm değişiklikleriniz otomatik olarak kaydedilecektir. </para
+></note>
 
-<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+<para
+>Kaan Özdinçer<email
+>kaanozdincer@gmail.com</email
+></para
+> 
 
 &underFDL;
 &underGPL;
