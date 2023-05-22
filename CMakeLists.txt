@@ -58,6 +58,12 @@ ecm_set_disabled_deprecation_versions(QT 6.4
     KF 5.100.0
     )
 
+if(NOT APPLE)
+    find_package(X11)
+    set_package_properties(X11 PROPERTIES TYPE OPTIONAL)
+    set(HAVE_X11 ${X11_FOUND})
+endif()
+
 add_subdirectory(src)
 ki18n_install(po)
 if (KF${KF_MAJOR_VERSION}DocTools_FOUND)

@@ -20,6 +20,7 @@
    Boston, MA 02110-1301, USA.
 */
 
+#include "config-keditbookmarks.h"
 #include "globalbookmarkmanager.h"
 #include "importers.h"
 #include "kbookmarkmodel/commandhistory.h"
@@ -40,7 +41,9 @@
 #include <KWindowSystem>
 #include <kwindowsystem_version.h>
 #if KWINDOWSYSTEM_VERSION >= QT_VERSION_CHECK(5, 101, 0)
+#if HAVE_X11
 #include <KX11Extras>
+#endif
 #endif
 #include <KBookmarkManager>
 #include <QStandardPaths>
@@ -93,7 +96,9 @@ static bool askUser(const QString &filename, bool &readonly)
                         id = value;
                     ////qCDebug(KEDITBOOKMARKS_LOG)<<" id !!!!!!!!!!!!!!!!!!! :"<<id;
 #if KWINDOWSYSTEM_VERSION >= QT_VERSION_CHECK(5, 101, 0)
+#if HAVE_X11
                     KX11Extras::activateWindow((WId)id);
+#endif
 #else
                     KWindowSystem::activateWindow((WId)id);
 #endif
@@ -133,7 +138,7 @@ int main(int argc, char **argv)
                          QStringLiteral(KEDITBOOKMARKS_VERSION_STRING),
                          i18n("Bookmark Organizer and Editor"),
                          KAboutLicense::GPL,
-                         i18n("Copyright 2000-2017, KDE developers"));
+                         i18n("Copyright 2000-2023, KDE developers"));
     aboutData.addAuthor(i18n("David Faure"), i18n("Initial author"), QStringLiteral("faure@kde.org"));
     aboutData.addAuthor(i18n("Alexander Kellett"), i18n("Author"), QStringLiteral("lypanov@kde.org"));
 
@@ -177,6 +182,11 @@ int main(int argc, char **argv)
 
     const bool browser = !parser.isSet(QStringLiteral("nobrowser"));
     const bool gotFilenameArg = (parser.positionalArguments().count() == 1);
+
+    if (!gotFilenameArg) {
+        const QString location = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/");
+        QDir().mkpath(location);
+    }
 
     QString filename = gotFilenameArg ? parser.positionalArguments().at(0)
                                       : QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
