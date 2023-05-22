@@ -1,3 +1,6 @@
+configure_file(config-keditbookmarks.h.cmake
+              ${CMAKE_CURRENT_BINARY_DIR}/config-keditbookmarks.h)
+
 ############ subdir ###################
 set(debug_file_common_SRCS)
 ecm_qt_declare_logging_category(debug_file_common_SRCS
