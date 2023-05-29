@@ -9,8 +9,8 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 project(keditbookmarks VERSION ${RELEASE_SERVICE_VERSION})
 
 # ECM setup
-set(KF${KF_MAJOR_VERSION}_MIN_VERSION "5.91.0")
-find_package(ECM ${KF${KF_MAJOR_VERSION}_MIN_VERSION} CONFIG REQUIRED)
+set(KF_MIN_VERSION "5.91.0")
+find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 set(QT_MIN_VERSION "5.15.2")
@@ -44,8 +44,8 @@ find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS Core)
 if (QT_MAJOR_VERSION STREQUAL "6")
     find_package(Qt6Core5Compat)
 endif()
-find_package(KF${KF_MAJOR_VERSION} ${KF${KF_MAJOR_VERSION}_MIN_VERSION} REQUIRED COMPONENTS CoreAddons I18n KIO Bookmarks Parts WindowSystem IconThemes)
-find_package(KF${KF_MAJOR_VERSION}DocTools ${KF${KF_MAJOR_VERSION}_MIN_VERSION})
+find_package(KF${KF_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons I18n KIO Bookmarks Parts WindowSystem IconThemes)
+find_package(KF${KF_MAJOR_VERSION}DocTools ${KF_MIN_VERSION})
 set_package_properties(KF${KF_MAJOR_VERSION}DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
     TYPE OPTIONAL
@@ -60,8 +60,10 @@ ecm_set_disabled_deprecation_versions(QT 6.4
 
 if(NOT APPLE)
     find_package(X11)
-    set_package_properties(X11 PROPERTIES TYPE OPTIONAL)
     set(HAVE_X11 ${X11_FOUND})
+    if (HAVE_X11)
+       set_package_properties(X11 PROPERTIES TYPE OPTIONAL)
+    endif()
 endif()
 
 add_subdirectory(src)
