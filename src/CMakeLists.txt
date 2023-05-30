@@ -76,6 +76,10 @@ target_link_libraries(keditbookmarks kbookmarkmodel_private
    KF${KF_MAJOR_VERSION}::Completion
    KF${KF_MAJOR_VERSION}::KIOGui)
 
+if (QT_MAJOR_VERSION STREQUAL "6")
+   target_link_libraries( keditbookmarks KF6::IconWidgets)
+endif()
+
 install(TARGETS keditbookmarks          ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ########### install files ###############
