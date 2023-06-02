@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 01:02+0000\n"
+"POT-Creation-Date: 2023-06-02 00:50+0000\n"
 "PO-Revision-Date: 2009-01-02 18:31+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -283,7 +283,7 @@ msgstr "ঠিক আছে"
 msgid "Updating favicon..."
 msgstr "ফেভ-আইকন আপডেট করা হচ্ছে..."
 
-#: faviconupdater.cpp:79
+#: faviconupdater.cpp:82
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr ""
@@ -596,7 +596,7 @@ msgstr "এক্সপোর্ট করুন (&E)"
 msgid "&Tools"
 msgstr "সরঞ্জাম (&T)"
 
-#: main.cpp:73
+#: main.cpp:79
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -604,134 +604,134 @@ msgid ""
 "Please note that, unfortunately, duplicate views are read-only."
 msgstr ""
 
-#: main.cpp:77
+#: main.cpp:83
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "সতর্কবার্তা"
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgid "Run Another"
 msgstr "একটি পৃথক সঞ্চালন করা হবে"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "Continue in Same"
 msgstr "এটি মধ্যে চালানো হবে"
 
-#: main.cpp:125
+#: main.cpp:137
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "বুকমার্ক পরিচালন ব্যবস্থা"
 
-#: main.cpp:127
+#: main.cpp:139
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "বুকমার্ক পরিচালনা ও সম্পাদন ব্যবস্থা"
 
-#: main.cpp:129
+#: main.cpp:141
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
-msgid "Copyright 2000-2017, KDE developers"
+msgid "Copyright 2000-2023, KDE developers"
 msgstr "স্বত্বাধিকার ২০০০-২০০৭, KDE-র নির্মাতাবৃন্দ"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "David Faure"
 msgstr "ডেভিড ফেউরে"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "Initial author"
 msgstr "মূল নির্মাতা"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "আলেক্সান্ডার কেলেট"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Author"
 msgstr "নির্মাতা"
 
-#: main.cpp:141
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Mozilla বিন্যাসে উপস্থিত ফাইল থেকে বুকমার্ক ইম্পোর্ট করুন"
 
-#: main.cpp:142
+#: main.cpp:154
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Netscape (4.x ও পূর্ববর্তী সংস্করণের) বিন্যাসে উপস্থিত ফাইল থেকে বুকমার্ক ইম্পোর্ট করুন"
 
-#: main.cpp:143
+#: main.cpp:155
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Internet Explorer-র Favorites বিন্যাসে উপস্থিত ফাইল থেকে বুকমার্ক ইম্পোর্ট করুন"
 
-#: main.cpp:144
+#: main.cpp:156
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Opera বিন্যাসে উপস্থিত ফাইল থেকে বুকমার্ক ইম্পোর্ট করুন"
 
-#: main.cpp:145
+#: main.cpp:157
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Opera বিন্যাসে উপস্থিত ফাইল থেকে বুকমার্ক ইম্পোর্ট করুন"
 
-#: main.cpp:146
+#: main.cpp:158
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Opera বিন্যাসে উপস্থিত ফাইল থেকে বুকমার্ক ইম্পোর্ট করুন"
 
-#: main.cpp:147
+#: main.cpp:159
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Mozilla বিন্যাসের ফাইলে বুকমার্ক এক্সপোর্ট করুন"
 
-#: main.cpp:148
+#: main.cpp:160
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Netscape (4.x প পূর্ববর্তী সংস্করণের) বিন্যাসের ফাইলে বুকমার্ক এক্সপোর্ট করুন"
 
-#: main.cpp:149
+#: main.cpp:161
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "প্রিন্ট করার যোগ্য HTML বিন্যাসের ফাইলে বুকমার্ক এক্সপোর্ট করুন"
 
-#: main.cpp:150
+#: main.cpp:162
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Internet Explorer-র Favorites বিন্যাসের ফাইলে বুকমার্ক এক্সপোর্ট করুন"
 
-#: main.cpp:151
+#: main.cpp:163
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Opera বিন্যাসের ফাইলে বুকমার্ক এক্সপোর্ট করুন"
 
-#: main.cpp:152
+#: main.cpp:164
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "বুকমার্ক ফাইলের কোনো সুনির্দিষ্ট অবস্থানে খোলা হবে"
 
-#: main.cpp:153
+#: main.cpp:165
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "ব্যবহারকারীদের দ্বারা পাঠযোগ্য শিরোনাম নির্ধারণ করা হবে, যেমন \"Konsole\""
 
-#: main.cpp:154
+#: main.cpp:166
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "ব্রাউজার সংক্রান্ত সকল কর্ম আড়াল করা হবে"
 
-#: main.cpp:155
+#: main.cpp:167
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -741,17 +741,17 @@ msgid ""
 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
 msgstr ""
 
-#: main.cpp:159
+#: main.cpp:171
 #, kde-format
 msgid "File to edit"
 msgstr "সম্পাদনযোগ্য ফাইল"
 
-#: main.cpp:242
+#: main.cpp:259
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "শুধুমাত্র একটি --export বিকল্প উল্লেখ করা যাবে।"
 
-#: main.cpp:249
+#: main.cpp:266
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "শুধুমাত্র একটি --import বিকল্প উল্লেখ করা যাবে।"

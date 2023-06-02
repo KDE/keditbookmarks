@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 01:02+0000\n"
+"POT-Creation-Date: 2023-06-02 00:50+0000\n"
 "PO-Revision-Date: 2020-05-03 12:02+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -277,7 +277,7 @@ msgstr "Εντάξει"
 msgid "Updating favicon..."
 msgstr "Ενημέρωση favicon..."
 
-#: faviconupdater.cpp:79
+#: faviconupdater.cpp:82
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; δεν βρέθηκε HTML συστατικό (%2)"
@@ -571,7 +571,7 @@ msgstr "&Εξαγωγή"
 msgid "&Tools"
 msgstr "Ερ&γαλεία"
 
-#: main.cpp:73
+#: main.cpp:79
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -583,132 +583,133 @@ msgstr ""
 "Παρακαλώ σημειώστε ότι, δυστυχώς, οι πολλαπλές προβολές είναι μόνο για "
 "ανάγνωση."
 
-#: main.cpp:77
+#: main.cpp:83
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Προειδοποίηση"
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgid "Run Another"
 msgstr "Εκτέλεση άλλης"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "Continue in Same"
 msgstr "Συνέχεια στην ίδια"
 
-#: main.cpp:125
+#: main.cpp:137
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Επεξεργαστής σελιδοδεικτών"
 
-#: main.cpp:127
+#: main.cpp:139
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Οργανωτής και επεξεργαστής σελιδοδεικτών"
 
-#: main.cpp:129
-#, kde-format
-msgid "Copyright 2000-2017, KDE developers"
+#: main.cpp:141
+#, fuzzy, kde-format
+#| msgid "Copyright 2000-2017, KDE developers"
+msgid "Copyright 2000-2023, KDE developers"
 msgstr "Copyright 2000-2017, οι προγραμματιστές του KDE"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "Initial author"
 msgstr "Αρχικός συγγραφέας"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Author"
 msgstr "Συγγραφέας"
 
-#: main.cpp:141
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Εισαγωγή σελιδοδεικτών από ένα αρχείο τύπου αποθήκευσης Mozilla"
 
-#: main.cpp:142
+#: main.cpp:154
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Εισαγωγή σελιδοδεικτών από ένα αρχείο τύπου Netscape (4.x και παλαιότερη)"
 
-#: main.cpp:143
+#: main.cpp:155
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Εισαγωγή σελιδοδεικτών από ένα αρχείο τύπου Αγαπημένων του Internet Explorer"
 
-#: main.cpp:144
+#: main.cpp:156
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Εισαγωγή σελιδοδεικτών από ένα αρχείο τύπου αποθήκευσης Opera"
 
-#: main.cpp:145
+#: main.cpp:157
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Εισαγωγή σελιδοδεικτών από ένα αρχείο τύπου αποθήκευσης KDE2"
 
-#: main.cpp:146
+#: main.cpp:158
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Εισαγωγή σελιδοδεικτών από ένα αρχείο τύπου αποθήκευσης Galeon"
 
-#: main.cpp:147
+#: main.cpp:159
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Εξαγωγή σελιδοδεικτών σε ένα αρχείο τύπου αποθήκευσης Mozilla"
 
-#: main.cpp:148
+#: main.cpp:160
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Εξαγωγή σελιδοδεικτών σε ένα αρχείο τύπου Netscape (4.x και παλαιότερη)"
 
-#: main.cpp:149
+#: main.cpp:161
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Εξαγωγή σελιδοδεικτών σε ένα αρχείο εκτυπώσιμου τύπου αποθήκευσης HTML"
 
-#: main.cpp:150
+#: main.cpp:162
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "Εξαγωγή σελιδοδεικτών σε ένα αρχείο τύπου Αγαπημένων του Internet Explorer"
 
-#: main.cpp:151
+#: main.cpp:163
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Εξαγωγή σελιδοδεικτών σε ένα αρχείο τύπου αποθήκευσης Opera"
 
-#: main.cpp:152
+#: main.cpp:164
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Άνοιγμα στη δοσμένη θέση στο αρχείο σελιδοδεικτών"
 
-#: main.cpp:153
+#: main.cpp:165
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Ορισμός της ορατής στο χρήστη επεξήγησης, για παράδειγμα \"Konsole\""
 
-#: main.cpp:154
+#: main.cpp:166
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Απόκρυψη όλων των σχετικών με τον περιηγητή λειτουργιών"
 
-#: main.cpp:155
+#: main.cpp:167
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -723,17 +724,17 @@ msgstr ""
 "\"kfile\" για σελιδοδείκτες του KFileDialog, κτλ.\n"
 "Η τελική διαδρομή αντικειμένου D-Bus είναι /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:159
+#: main.cpp:171
 #, kde-format
 msgid "File to edit"
 msgstr "Αρχείο για επεξεργασία"
 
-#: main.cpp:242
+#: main.cpp:259
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Μπορείτε να ορίσετε μόνο μία --export επιλογή."
 
-#: main.cpp:249
+#: main.cpp:266
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Μπορείτε να ορίσετε μόνο μία --import επιλογή."

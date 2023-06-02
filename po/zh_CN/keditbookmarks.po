@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 01:02+0000\n"
+"POT-Creation-Date: 2023-06-02 00:50+0000\n"
 "PO-Revision-Date: 2023-05-22 14:00\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -273,7 +273,7 @@ msgstr "确定"
 msgid "Updating favicon..."
 msgstr "更新收藏夹图标..."
 
-#: faviconupdater.cpp:79
+#: faviconupdater.cpp:82
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1；找不到 HTML 组件(%2)"
@@ -563,7 +563,7 @@ msgstr "导出(&E)"
 msgid "&Tools"
 msgstr "工具(&T)"
 
-#: main.cpp:73
+#: main.cpp:79
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -573,128 +573,129 @@ msgstr ""
 "%1 的另一实例正在运行，您是想要打开另外一个实例，还是在同一实例中继续工作？\n"
 "但是请注意，非常不幸，这些实例视图的副本都是只读的。"
 
-#: main.cpp:77
+#: main.cpp:83
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "警告"
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgid "Run Another"
 msgstr "另开实例"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "Continue in Same"
 msgstr "在同一实例中继续"
 
-#: main.cpp:125
+#: main.cpp:137
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "书签编辑器"
 
-#: main.cpp:127
+#: main.cpp:139
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "书签组织和编辑器"
 
-#: main.cpp:129
-#, kde-format
-msgid "Copyright 2000-2017, KDE developers"
+#: main.cpp:141
+#, fuzzy, kde-format
+#| msgid "Copyright 2000-2017, KDE developers"
+msgid "Copyright 2000-2023, KDE developers"
 msgstr "Copyright 2000-2017, KDE developers"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "Initial author"
 msgstr "第一个作者"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Author"
 msgstr "作者"
 
-#: main.cpp:141
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "从一个 Mozilla 格式的文件导入书签"
 
-#: main.cpp:142
+#: main.cpp:154
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "从一个 Netscape (4.x 或更早) 格式的文件导入书签"
 
-#: main.cpp:143
+#: main.cpp:155
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "从一个 Internet Explorer 收藏夹格式的文件导入书签"
 
-#: main.cpp:144
+#: main.cpp:156
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "从一个 Opera 格式的文件导入书签"
 
-#: main.cpp:145
+#: main.cpp:157
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "从一个 KDE2 格式的文件导入书签"
 
-#: main.cpp:146
+#: main.cpp:158
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "从一个 Galeon 格式的文件导入书签"
 
-#: main.cpp:147
+#: main.cpp:159
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "导出书签为一个 Mozilla 格式的文件"
 
-#: main.cpp:148
+#: main.cpp:160
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "导出书签为一个 Netscape (4.x 或更早) 格式的文件"
 
-#: main.cpp:149
+#: main.cpp:161
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "导出书签为一个可打印的 HTML 格式的文件"
 
-#: main.cpp:150
+#: main.cpp:162
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "导出书签为一个 Internet Explorer 的收藏夹格式的文件"
 
-#: main.cpp:151
+#: main.cpp:163
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "导出书签为一个 Opera 格式的文件"
 
-#: main.cpp:152
+#: main.cpp:164
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "打开书签文件的指定位置"
 
-#: main.cpp:153
+#: main.cpp:165
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "设置用户可读的标题，如“Konsole”"
 
-#: main.cpp:154
+#: main.cpp:166
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "隐藏所有浏览器相关的功能"
 
-#: main.cpp:155
+#: main.cpp:167
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -708,17 +709,17 @@ msgstr ""
 "是“kfile”，以此类推。\n"
 "其最终的 D-Bus 对象路径是 /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:159
+#: main.cpp:171
 #, kde-format
 msgid "File to edit"
 msgstr "要编辑的文件"
 
-#: main.cpp:242
+#: main.cpp:259
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "您只可以设定一个 --export 选项。"
 
-#: main.cpp:249
+#: main.cpp:266
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "您只可以设定一个 --import 选项。"

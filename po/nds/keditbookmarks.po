@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 01:02+0000\n"
+"POT-Creation-Date: 2023-06-02 00:50+0000\n"
 "PO-Revision-Date: 2011-06-13 07:34+0200\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -277,7 +277,7 @@ msgstr "OK"
 msgid "Updating favicon..."
 msgstr "Sietlüttbild warrt opfrischt..."
 
-#: faviconupdater.cpp:79
+#: faviconupdater.cpp:82
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; keen HTML-Komponent funnen (%2)"
@@ -569,7 +569,7 @@ msgstr "&Exporteren"
 msgid "&Tools"
 msgstr "&Warktüüch"
 
-#: main.cpp:73
+#: main.cpp:79
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -580,129 +580,129 @@ msgstr ""
 "oder dat bruken, wat al apen is?\n"
 "Wohrschoen: Dubbelt opmaakt Ansichten laat sik nich ännern."
 
-#: main.cpp:77
+#: main.cpp:83
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Wohrschoen"
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgid "Run Another"
 msgstr "Nochmaal starten"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "Continue in Same"
 msgstr "Binnen dat sülve wiedermaken"
 
-#: main.cpp:125
+#: main.cpp:137
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Leesteken-Editor"
 
-#: main.cpp:127
+#: main.cpp:139
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Leestekenpleger un -editor"
 
-#: main.cpp:129
+#: main.cpp:141
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
-msgid "Copyright 2000-2017, KDE developers"
+msgid "Copyright 2000-2023, KDE developers"
 msgstr "© 2000 - 2007, de KDE-Schrievers"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "Initial author"
 msgstr "Eerst Autor"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:141
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Leestekens ut en Datei in Mozilla-Formaat importeren"
 
-#: main.cpp:142
+#: main.cpp:154
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Leestekens ut en Datei in Netscape-Formaat (4.x oder öller) importeren"
 
-#: main.cpp:143
+#: main.cpp:155
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Leestekens ut en Datei in Internet-Explorer-Formaat importeren"
 
-#: main.cpp:144
+#: main.cpp:156
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Leestekens ut en Datei in Opera-Formaat importeren"
 
-#: main.cpp:145
+#: main.cpp:157
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Leestekens ut en Datei in KDE2-Formaat importeren"
 
-#: main.cpp:146
+#: main.cpp:158
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Leestekens ut en Datei in Galeon-Formaat importeren"
 
-#: main.cpp:147
+#: main.cpp:159
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Leestekens na en Datei in Mozilla-Formaat exporteren"
 
-#: main.cpp:148
+#: main.cpp:160
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Leestekens na en Datei in Netscape-Formaat (4.x oder öller) exporteren"
 
-#: main.cpp:149
+#: main.cpp:161
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Leestekens na en Datei in druckbor HTML-Formaat exporteren"
 
-#: main.cpp:150
+#: main.cpp:162
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Leestekens na en Datei in Internet-Explorer-Formaat exporteren"
 
-#: main.cpp:151
+#: main.cpp:163
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Leestekens na en Datei in Opera-Formaat exporteren"
 
-#: main.cpp:152
+#: main.cpp:164
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Bi de angeven Steed in de Leestekendatei opmaken"
 
-#: main.cpp:153
+#: main.cpp:165
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Den Titel fastleggen, den de Bruker süht, a.B. \"Konsole\""
 
-#: main.cpp:154
+#: main.cpp:166
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "All Nettkieker-Funkschonen versteken"
 
-#: main.cpp:155
+#: main.cpp:167
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -723,17 +723,17 @@ msgstr ""
 "Leestekens, usw.\n"
 "Op't Enn heet de D-Bus-Objektpadd \"/KBookmarkManager/dbusObjektNaam\""
 
-#: main.cpp:159
+#: main.cpp:171
 #, kde-format
 msgid "File to edit"
 msgstr "Datei, de Du bewerken wullt"
 
-#: main.cpp:242
+#: main.cpp:259
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Du kannst bloots een --export-Optschoon angeven."
 
-#: main.cpp:249
+#: main.cpp:266
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Du kannst bloots een --import-Optschoon angeven."

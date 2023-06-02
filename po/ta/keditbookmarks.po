@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 01:02+0000\n"
+"POT-Creation-Date: 2023-06-02 00:50+0000\n"
 "PO-Revision-Date: 2008-03-13 15:33+0530\n"
 "Last-Translator: ஆமாச்சு <amachu@ubuntu.com>\n"
 "Language-Team: Tamil <ubuntu-l10n-tam@lists.ubuntu.com>\n"
@@ -286,7 +286,7 @@ msgstr "சரி"
 msgid "Updating favicon..."
 msgstr "சின்னங்கள் புதுப்பிக்கப்படுகின்றன"
 
-#: faviconupdater.cpp:79
+#: faviconupdater.cpp:82
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr ""
@@ -598,7 +598,7 @@ msgstr "&ஏற்றுக"
 msgid "&Tools"
 msgstr "&கருவிகள்"
 
-#: main.cpp:73
+#: main.cpp:79
 #, fuzzy, kde-format
 #| msgid ""
 #| "Another instance of %1 is already running, do you really want to open "
@@ -613,134 +613,134 @@ msgstr ""
 "விரும்புகிறீர்களா அ அதே நிகழ்வில் தொடர விரும்புகிறீர்களா?\n"
 "துரதிருஷ்டவசமாக போலி காட்சிகளில் வாசிக்க மட்டுமே இயலும் என்பதை குறித்து கொள்க."
 
-#: main.cpp:77
+#: main.cpp:83
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "எச்சரிக்கை"
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgid "Run Another"
 msgstr "மற்றொன்றை இயக்குக"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "Continue in Same"
 msgstr "அதனுள்ளேயே தொடர்க"
 
-#: main.cpp:125
+#: main.cpp:137
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "நினைவுக்குறி தொகுப்பர்"
 
-#: main.cpp:127
+#: main.cpp:139
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "நினைவுக்குறி ஒருங்கிணைப்பாளர் மற்றும் தொகுப்பர்"
 
-#: main.cpp:129
+#: main.cpp:141
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
-msgid "Copyright 2000-2017, KDE developers"
+msgid "Copyright 2000-2023, KDE developers"
 msgstr "பதிப்புரிமை 2000-2007, கேபசூ உருவாக்குவோர்"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "David Faure"
 msgstr "டேவிட் பவுர்"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "Initial author"
 msgstr "முதலில் இயற்றியவர்"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "அலெக்ஸாண்டர் கெல்லட்"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Author"
 msgstr "இயற்றியவர்"
 
-#: main.cpp:141
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "மொசிலா முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
 
-#: main.cpp:142
+#: main.cpp:154
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "நெட்ஸ்கேப் (4.x மற்றும் முந்தைய) முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
 
-#: main.cpp:143
+#: main.cpp:155
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "இன்டர்நெட் எக்ஸ்புளோரரின் விருப்பங்கள் முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
 
-#: main.cpp:144
+#: main.cpp:156
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "ஓபரா முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
 
-#: main.cpp:145
+#: main.cpp:157
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "ஓபரா முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
 
-#: main.cpp:146
+#: main.cpp:158
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "ஓபரா முறையில் கோப்பிலிருந்து நினைவுக்குறிகளை இறக்குக"
 
-#: main.cpp:147
+#: main.cpp:159
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "மொசிலா முறையில் நினைவுக்குறிகளை கோப்பொன்றுக்கு ஏற்றுக"
 
-#: main.cpp:148
+#: main.cpp:160
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "நெட்ஸ்கேப் (4.x மற்றும் முந்தைய) முறையில் நினைவுக்குறிகளை கோப்பொன்றுக்கு ஏற்றுக"
 
-#: main.cpp:149
+#: main.cpp:161
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "அச்சுக்குகந்த ஹச்டிஎம்எல் முறையில் நினைவுக்குறிகளை கோப்பொன்றுக்கு ஏற்றுக"
 
-#: main.cpp:150
+#: main.cpp:162
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "மொசிலா முறையில் நினைவுக்குறிகளை கோப்பொன்றுக்கு ஏற்றுக"
 
-#: main.cpp:151
+#: main.cpp:163
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "ஓபரா முறையில் நினைவுக்குறிகளை கோப்பொன்றுக்கு ஏற்றுக"
 
-#: main.cpp:152
+#: main.cpp:164
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "நினைவுக்குறிக் கோப்பில் குறிப்பிடப்பட்ட இடத்தில் திறக்க"
 
-#: main.cpp:153
+#: main.cpp:165
 #, fuzzy, kde-format
 #| msgid "Set the user readable caption for example \"Konsole\""
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "\"Konsole\" போன்று பயனர் வாசிக்கவல்ல தலைப்பினைத் தருக"
 
-#: main.cpp:154
+#: main.cpp:166
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "உலாவி பற்றிய அனைத்து செயற்பாடுகளையும் மறைக்க"
 
-#: main.cpp:155
+#: main.cpp:167
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -761,17 +761,17 @@ msgstr ""
 "நினைவுக்குறிகளுக்கும் இருக்கும்.\n"
 "இறுதி DBus பொருட்பாதையாவது /KBookmarkManager/dbusObjectName"
 
-#: main.cpp:159
+#: main.cpp:171
 #, kde-format
 msgid "File to edit"
 msgstr "தொகுக்கப்படவேண்டிய கோப்பு"
 
-#: main.cpp:242
+#: main.cpp:259
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "ஒரு --export தேர்வை மட்டுமே தங்களால் தர இயலும்."
 
-#: main.cpp:249
+#: main.cpp:266
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "ஒரு --import தேர்வை மட்டுமே தங்களால் தர இயலும்."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 01:02+0000\n"
+"POT-Creation-Date: 2023-06-02 00:50+0000\n"
 "PO-Revision-Date: 2009-12-20 18:48+0100\n"
 "Last-Translator: Mark Kwidzińśczi <mark@linuxcsb.org>\n"
 "Language-Team: Kaszëbsczi <i18n-csb@linuxcsb.org>\n"
@@ -285,7 +285,7 @@ msgstr "OK"
 msgid "Updating favicon..."
 msgstr "Aktualizëjë favicon..."
 
-#: faviconupdater.cpp:79
+#: faviconupdater.cpp:82
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr ""
@@ -597,7 +597,7 @@ msgstr "&Ekspòrtëjë"
 msgid "&Tools"
 msgstr "&Nôrzãdza"
 
-#: main.cpp:73
+#: main.cpp:79
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -608,132 +608,132 @@ msgstr ""
 "robic dali na tim co ju je?\n"
 "Bôczë, że dëbeltné òtemknłi dokùmentë są blós do òdczëtu."
 
-#: main.cpp:77
+#: main.cpp:83
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Òstrzéga"
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgid "Run Another"
 msgstr "Zrëszë pòãtãpną"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "Continue in Same"
 msgstr "Kòntinuùje w ti sami"
 
-#: main.cpp:125
+#: main.cpp:137
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Editor załóżków"
 
-#: main.cpp:127
+#: main.cpp:139
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Sprôwiôcz a editor załóżków"
 
-#: main.cpp:129
+#: main.cpp:141
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
-msgid "Copyright 2000-2017, KDE developers"
+msgid "Copyright 2000-2023, KDE developers"
 msgstr "Copyright 2000 - 2007, programisce KDE"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "Initial author"
 msgstr "Pierszi aùtor"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Author"
 msgstr "Aùtor"
 
-#: main.cpp:141
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Impòrtëjë załóżczi z lopkù w fòrmace Mozilli"
 
-#: main.cpp:142
+#: main.cpp:154
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Impòrtëjë załóżczi z lopkù w fòrmace Netscpae (4.x ë wczasniészi)"
 
-#: main.cpp:143
+#: main.cpp:155
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Impòrtëjë załóżczi z lopka w fòrmace Ùlubionëch Internet Explorera"
 
-#: main.cpp:144
+#: main.cpp:156
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Impòrtëjë załóżczi z lopka w fòrmace Operë"
 
-#: main.cpp:145
+#: main.cpp:157
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Impòrtëjë załóżczi z lopka w fòrmace Operë"
 
-#: main.cpp:146
+#: main.cpp:158
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Impòrtëjë załóżczi z lopka w fòrmace Operë"
 
-#: main.cpp:147
+#: main.cpp:159
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Ekspòrtëjë załóżczi do lopkù w fòrmace Mozilla"
 
-#: main.cpp:148
+#: main.cpp:160
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Ekspòrtëjë załóżczi do lopkù w fòrmace Netscape (4.x ë wczasniészi)"
 
-#: main.cpp:149
+#: main.cpp:161
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Ekspòrtëjë załóżczi do lopkù w drëkòwónlnym fòrmace HTML"
 
-#: main.cpp:150
+#: main.cpp:162
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Ekspòrtëjë załóżczi do lopkù w fòrmace Ùlubionëch Internet Explorera"
 
-#: main.cpp:151
+#: main.cpp:163
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Ekspòrtëjë załóżczi do lopkù w fòrmace Operë"
 
-#: main.cpp:152
+#: main.cpp:164
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Òtemkni na dóny pizyceji w lopkù załóżków"
 
-#: main.cpp:153
+#: main.cpp:165
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Ùstôwi letczé dô òdczëtaniô nôdpisë jak np. \"Konsole\""
 
-#: main.cpp:154
+#: main.cpp:166
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Zatacë wszëtczé fùnkcëje sparłãczoné z przezéraniem"
 
-#: main.cpp:155
+#: main.cpp:167
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -754,17 +754,17 @@ msgstr ""
 "\"załóżków KFileDialog, ëtd.\n"
 "Kùńcowô stegna òbiektów DBus to /KBookmarkManager/dbusObjectName"
 
-#: main.cpp:159
+#: main.cpp:171
 #, kde-format
 msgid "File to edit"
 msgstr "Lopk do edicëji"
 
-#: main.cpp:242
+#: main.cpp:259
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Mòżesz le dac jedną òptacëjã --export."
 
-#: main.cpp:249
+#: main.cpp:266
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Mòżesz le dac jedną òptacëjã --import."

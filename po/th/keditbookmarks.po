@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 01:02+0000\n"
+"POT-Creation-Date: 2023-06-02 00:50+0000\n"
 "PO-Revision-Date: 2010-07-07 15:03+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -283,7 +283,7 @@ msgstr "ตกลง"
 msgid "Updating favicon..."
 msgstr "กำลังปรับปรุง favicon..."
 
-#: faviconupdater.cpp:79
+#: faviconupdater.cpp:82
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; ไม่พบส่วนประกอบ HTML (%2)"
@@ -589,7 +589,7 @@ msgstr "&ส่งออก"
 msgid "&Tools"
 msgstr "เ&ครื่องมือ"
 
-#: main.cpp:73
+#: main.cpp:79
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -600,130 +600,130 @@ msgstr ""
 "หรือจะเปิดโดยใช้โพรเซสเดียวกันกับตัวที่ทำงานอยู่ก่อน ?\n"
 "โปรดจำ มุมมองที่ซ้ำกันจะอ่านได้อย่างเดียว"
 
-#: main.cpp:77
+#: main.cpp:83
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "คำเตือน"
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgid "Run Another"
 msgstr "ประมวลผลตัวอื่น"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "Continue in Same"
 msgstr "ทำต่อไปในแบบเดียวกัน"
 
-#: main.cpp:125
+#: main.cpp:137
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "เครื่องมือแก้ไขที่คั่นหน้า"
 
-#: main.cpp:127
+#: main.cpp:139
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "เครื่องมือแก้ไขและจัดการที่คั่นหน้า"
 
-#: main.cpp:129
+#: main.cpp:141
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
-msgid "Copyright 2000-2017, KDE developers"
+msgid "Copyright 2000-2023, KDE developers"
 msgstr "สงวนลิขสิทธิ์ 2000-2007, กลุ่มผู้พัฒนา KDE"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "Initial author"
 msgstr "ผู้เขียนเริ่มต้น"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Author"
 msgstr "ผู้เขียน"
 
-#: main.cpp:141
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของ Mozilla"
 
-#: main.cpp:142
+#: main.cpp:154
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของเน็ตสเคป (4.x หรือก่อนหน้า)"
 
-#: main.cpp:143
+#: main.cpp:155
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของรายการโปรดของอินเทอร์เน็ต เอ็กซ์พลอเรอร์"
 
-#: main.cpp:144
+#: main.cpp:156
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของโอเปรา"
 
-#: main.cpp:145
+#: main.cpp:157
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของ KDE2"
 
-#: main.cpp:146
+#: main.cpp:158
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของ Galeon"
 
-#: main.cpp:147
+#: main.cpp:159
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "ส่งออกที่คั่นหน้าเป็นแฟ้มในรูปแบบที่คั่นหน้าของมอซซิลา"
 
-#: main.cpp:148
+#: main.cpp:160
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "ส่งออกที่คั่นหน้าเป็นแฟ้มในรูปแบบที่คั่นหน้าของเน็ตสเคป (รุ่น 4.x หรือก่อนหน้า)"
 
-#: main.cpp:149
+#: main.cpp:161
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "ส่งออกที่คั่นหน้าเป็นแฟ้มในรูปแบบ HTML ที่พิมพ์ได้ง่าย"
 
-#: main.cpp:150
+#: main.cpp:162
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "ส่งออกที่คั่นหน้าเป็นแฟ้มในรูปแบบที่คั่นหน้าของอินเทอร์เน็ต เอ็กซ์พลอเรอร์"
 
-#: main.cpp:151
+#: main.cpp:163
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "ส่งออกที่คั่นหน้าเป็นแฟ้มในรูปแบบที่คั่นหน้าของโอเปรา"
 
-#: main.cpp:152
+#: main.cpp:164
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "เปิด ณ ตำแหน่งที่ระบุในแฟ้มที่คั่นหน้า"
 
-#: main.cpp:153
+#: main.cpp:165
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "ตั้งป้ายชื่อที่อ่านแล้วเข้าใจได้ง่าย เช่น \"คอนโซล\""
 
-#: main.cpp:154
+#: main.cpp:166
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "ซ่อนฟังก์ชันที่เกี่ยวข้องกับเบราว์เซอร์ทั้งหมด"
 
-#: main.cpp:155
+#: main.cpp:167
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -743,17 +743,17 @@ msgstr ""
 "สำหรับที่คั่นหน้าของ KFileDialog เป็นต้น\n"
 "โดยพาธสุดท้ายของวัตถุ D-Bus จะเป็น /KBookmarkManager/dbusObjectName"
 
-#: main.cpp:159
+#: main.cpp:171
 #, kde-format
 msgid "File to edit"
 msgstr "แฟ้มที่จะแก้ไข"
 
-#: main.cpp:242
+#: main.cpp:259
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "คุณอาจจะใช้เพียงตัวเลือก --export เพียงตัวเดียวก็ได้"
 
-#: main.cpp:249
+#: main.cpp:266
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "คุณอาจจะใช้เพียงตัวเลือก --import เพียงตัวเดียวก็ได้"

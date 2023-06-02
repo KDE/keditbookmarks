@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 01:02+0000\n"
+"POT-Creation-Date: 2023-06-02 00:50+0000\n"
 "PO-Revision-Date: 2009-01-06 17:37+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
@@ -283,7 +283,7 @@ msgstr "ಸರಿ"
 msgid "Updating favicon..."
 msgstr "ಫೆವಿಕಾನ್ ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ..."
 
-#: faviconupdater.cpp:79
+#: faviconupdater.cpp:82
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr ""
@@ -597,7 +597,7 @@ msgstr "ರಫ್ತು(&E)"
 msgid "&Tools"
 msgstr "ಉಪಕರಣಗಳು(&T)"
 
-#: main.cpp:73
+#: main.cpp:79
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -609,139 +609,139 @@ msgstr ""
 "ದುರದೃಷ್ಟವಶಾತ್, ಒಂದು ಪ್ರತಿಯನ್ನು ಹೊರತುಪಡಿಸಿ ಮಿಕ್ಕೆಲ್ಲಾ ಹೆಚ್ಚಿನ ಪ್ರತಿಗಳು ಕೇವಲ ಓದಲು "
 "ಮಾತ್ರವೇ ಆಗಿರುತ್ತವೆ ಎಂಬುದನ್ನು ನೆನಪಿಡಿ."
 
-#: main.cpp:77
+#: main.cpp:83
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "ಎಚ್ಚರಿಕೆ"
 
-#: main.cpp:78
+#: main.cpp:84
 #, kde-format
 msgid "Run Another"
 msgstr "ಬೇರೊಂದನ್ನು ಚಲಾಯಿಸಿ"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "Continue in Same"
 msgstr "ಇದರಲ್ಲೆ ಮುಂದುವರೆಯಿರಿ"
 
-#: main.cpp:125
+#: main.cpp:137
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "ಪುಟಗುರುತಿನ ಸಂಪಾದಕ"
 
-#: main.cpp:127
+#: main.cpp:139
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "ಪುಟಗುರುತು ವ್ಯವಸ್ಥಾಪಕ ಹಾಗು ಸಂಪಾದಕ"
 
-#: main.cpp:129
+#: main.cpp:141
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
-msgid "Copyright 2000-2017, KDE developers"
+msgid "Copyright 2000-2023, KDE developers"
 msgstr "ಹಕ್ಕು 2000-2007, KDE ವಿಕಸನಗಾರರು"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:130
+#: main.cpp:142
 #, kde-format
 msgid "Initial author"
 msgstr "ಮೂಲ ಕತೃ"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:131
+#: main.cpp:143
 #, kde-format
 msgid "Author"
 msgstr "ಕರ್ತೃ"
 
-#: main.cpp:141
+#: main.cpp:153
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "ಮೋಝಿಲ್ಲಾ ವಿನ್ಯಾಸದಲ್ಲಿನ ಒಂದು ಕಡತದಿಂದ ಪುಟಗುರುತಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಿ"
 
-#: main.cpp:142
+#: main.cpp:154
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Netscape (4.x ಹಾಗು ಮುಂಚಿನ) ವಿನ್ಯಾಸದಲ್ಲಿನ ಒಂದು ಕಡತದಿಂದ ಪುಟಗುರುತಗಳನ್ನು ಆಮದು "
 "ಮಾಡಿಕೊಳ್ಳಿ"
 
-#: main.cpp:143
+#: main.cpp:155
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "ಇಂಟರ್ನೆಟ್ ಎಕ್ಸ್‌ಪ್ಲೋರರಿನ Favorites ವಿನ್ಯಾಸದಲ್ಲಿನ ಒಂದು ಕಡತದಿಂದ ಪುಟಗುರುತಗಳನ್ನು ಆಮದು "
 "ಮಾಡಿಕೊಳ್ಳಿ"
 
-#: main.cpp:144
+#: main.cpp:156
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "ಒಪೇರಾ ವಿನ್ಯಾಸದಲ್ಲಿನ ಒಂದು ಕಡತದಿಂದ ಪುಟಗುರುತಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಿ"
 
-#: main.cpp:145
+#: main.cpp:157
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "ಒಪೇರಾ ವಿನ್ಯಾಸದಲ್ಲಿನ ಒಂದು ಕಡತದಿಂದ ಪುಟಗುರುತಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಿ"
 
-#: main.cpp:146
+#: main.cpp:158
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "ಒಪೇರಾ ವಿನ್ಯಾಸದಲ್ಲಿನ ಒಂದು ಕಡತದಿಂದ ಪುಟಗುರುತಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಿ"
 
-#: main.cpp:147
+#: main.cpp:159
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "ಮೋಝಿಲ್ಲಾ ವಿನ್ಯಾಸದಲ್ಲಿರುವ ಒಂದು ಕಡತಕ್ಕೆ ಪುಟಗುರುತಗಳನ್ನು ರಫ್ತು ಮಾಡಿ"
 
-#: main.cpp:148
+#: main.cpp:160
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Netscape (4.x ಹಾಗು ಮುಂಚಿನ) ವಿನ್ಯಾಸದಲ್ಲಿರುವ ಒಂದು ಕಡತಕ್ಕೆ ಪುಟಗುರುತಗಳನ್ನು ರಫ್ತು ಮಾಡಿ"
 
-#: main.cpp:149
+#: main.cpp:161
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "ಮುದ್ರಿಸಬಹುದಾದಂತಹ HTML ವಿನ್ಯಾಸದಲ್ಲಿರುವ ಒಂದು ಕಡತಕ್ಕೆ ಪುಟಗುರುತಗಳನ್ನು ರಫ್ತು ಮಾಡಿ"
 
-#: main.cpp:150
+#: main.cpp:162
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "ಇಂಟರ್ನೆಟ್ ಎಕ್ಸ್‌ಪ್ಲೋರರಿನ Favorites ವಿನ್ಯಾಸದಲ್ಲಿರುವ ಒಂದು ಕಡತಕ್ಕೆ ಪುಟಗುರುತಗಳನ್ನು ರಫ್ತು "
 "ಮಾಡಿ"
 
-#: main.cpp:151
+#: main.cpp:163
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "ಒಪೇರಾ ವಿನ್ಯಾಸದಲ್ಲಿರುವ ಒಂದು ಕಡತಕ್ಕೆ ಪುಟಗುರುತಗಳನ್ನು ರಫ್ತು ಮಾಡಿ"
 
-#: main.cpp:152
+#: main.cpp:164
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "ಪುಟಗುರುತು ಕಡತದಲ್ಲಿ ನೀಡಲಾದ ಸ್ಥಳದಲ್ಲಿ ತೆರೆ"
 
-#: main.cpp:153
+#: main.cpp:165
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "ಬಳಕೆದಾರರು ಓದಬಹುದಾದಂತಹ ಆಯ್ಕೆಯನ್ನು ಅಣಿಗೊಳಿಸಿ, ಉದಾಹರಣೆಗೆ \"Konsole\""
 
-#: main.cpp:154
+#: main.cpp:166
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "ವೀಕ್ಷಣೆ ಸಂಬಂಧಿಸಿದ ಎಲ್ಲಾ ಕ್ರಿಯೆಗಳನ್ನು ಅಡಗಿಸಿ"
 
-#: main.cpp:155
+#: main.cpp:167
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -762,17 +762,17 @@ msgstr ""
 "\"kfile ಆಗಿರಬೇಕು, ಹೀಗೆ ಇತ್ಯಾದಿ.\n"
 "ಅಂತಿಮವಾದ DBus ಆಬ್ಜೆಕ್ಟ್‍ ಮಾರ್ಗವು /KBookmarkManager/dbusObjectName ಆಗಿರುತ್ತದೆ"
 
-#: main.cpp:159
+#: main.cpp:171
 #, kde-format
 msgid "File to edit"
 msgstr "ಸಂಪಾದಿಸಲು ಕಡತ"
 
-#: main.cpp:242
+#: main.cpp:259
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "ನೀವು ಕೇವಲ ಒಂದು --export ಆಯ್ಕೆಯನ್ನು ಸೂಚಿಸಬಹುದಾಗಿದೆ."
 
-#: main.cpp:249
+#: main.cpp:266
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "ನೀವು ಕೇವಲ ಒಂದು --import ಆಯ್ಕೆಯನ್ನು ಸೂಚಿಸಬಹುದಾಗಿದೆ."
