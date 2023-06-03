@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-02 00:50+0000\n"
-"PO-Revision-Date: 2020-03-17 09:22+0000\n"
+"PO-Revision-Date: 2023-06-02 09:46+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-doc@kde.org>\n"
 "Language: pt\n"
@@ -605,10 +605,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "Organizador e Editor de Favoritos"
 
 #: main.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2017, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "'Copyright' 2000 - 2017 da equipa de desenvolvimento do KDE"
+msgstr "'Copyright' 2000-2023 da equipa de desenvolvimento do KDE"
 
 #: main.cpp:142
 #, kde-format
