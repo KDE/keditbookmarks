@@ -4,14 +4,14 @@
 # pierluigi <pier_andreit@yahoo.it>, 2007.
 # Federico Zenith <federico.zenith@member.fsf.org>, 2007, 2010, 2011.
 # Dario Panico <Dareus_Persarumrex@fastwebnet.it>, 2008.
-# Luigi Toscano <luigi.toscano@tiscali.it>, 2016, 2017, 2020.
+# Luigi Toscano <luigi.toscano@tiscali.it>, 2016, 2017, 2020, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-02 00:50+0000\n"
-"PO-Revision-Date: 2020-03-21 18:43+0100\n"
+"PO-Revision-Date: 2023-06-04 23:42+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 19.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -607,10 +607,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "Editor e gestore di segnalibri"
 
 #: main.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2017, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "Copyright 2000-2017 degli sviluppatori di KDE"
+msgstr "Copyright 2000-2023 degli sviluppatori di KDE"
 
 #: main.cpp:142
 #, kde-format
