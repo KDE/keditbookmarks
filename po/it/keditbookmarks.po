@@ -4,7 +4,7 @@
 # pierluigi <pier_andreit@yahoo.it>, 2007.
 # Federico Zenith <federico.zenith@member.fsf.org>, 2007, 2010, 2011.
 # Dario Panico <Dareus_Persarumrex@fastwebnet.it>, 2008.
-# Luigi Toscano <luigi.toscano@tiscali.it>, 2016, 2017, 2020.
+# Luigi Toscano <luigi.toscano@tiscali.it>, 2016, 2017, 2020, 2023.
 #
 msgid ""
 msgstr ""
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 19.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
