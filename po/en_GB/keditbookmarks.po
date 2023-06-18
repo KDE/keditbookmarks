@@ -4,21 +4,21 @@
 #
 # Malcolm Hunter <malcolm.hunter@gmx.co.uk>, 2008.
 # Andrew Coles <andrew_coles@yahoo.co.uk>, 2009, 2010.
-# Steve Allewell <steve.allewell@gmail.com>, 2016, 2017, 2020.
+# Steve Allewell <steve.allewell@gmail.com>, 2016, 2017, 2020, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-02 00:50+0000\n"
-"PO-Revision-Date: 2020-03-30 17:09+0100\n"
+"PO-Revision-Date: 2023-06-17 12:08+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
-"Language-Team: British English <kde-l10n-en_gb@kde.org>\n"
+"Language-Team: British English\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.07.70\n"
+"X-Generator: Lokalize 23.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -604,10 +604,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "Bookmark Organiser and Editor"
 
 #: main.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2017, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "Copyright 2000-2017, KDE developers"
+msgstr "Copyright 2000-2023, KDE developers"
 
 #: main.cpp:142
 #, kde-format
