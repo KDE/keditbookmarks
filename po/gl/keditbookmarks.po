@@ -445,7 +445,7 @@ msgstr "Mover %1"
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Set as Bookmark Toolbar"
-msgstr "Estabelecer como barra de marcadores"
+msgstr "Definir como barra de marcadores"
 
 #: kbookmarkmodel/commands.cpp:532
 #, kde-format
@@ -703,7 +703,7 @@ msgstr "Abrir na posición dada no ficheiro de marcadores"
 #: main.cpp:165
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
-msgstr "Estabelecer o título lexíbel polo usuario, por exemplo «Konsole»"
+msgstr "Definir o título lexíbel polo usuario, por exemplo «Konsole»"
 
 #: main.cpp:166
 #, kde-format
