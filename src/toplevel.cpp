@@ -454,3 +454,5 @@ void KEBApp::slotNewToolbarConfig()
 }
 
 /* -------------------------- */
+
+#include "moc_toplevel.cpp"

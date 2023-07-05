@@ -119,3 +119,5 @@ QString GlobalBookmarkManager::makeTimeStr(int b)
     QLocale l;
     return (dt.daysTo(QDateTime::currentDateTime()) > 31) ? l.toString(dt.date(), QLocale::LongFormat) : l.toString(dt, QLocale::LongFormat);
 }
+
+#include "moc_globalbookmarkmanager.cpp"

@@ -201,3 +201,5 @@ void FavIconWebGrabber::slotCanceled(const QString &errorString)
     // qCDebug(KEDITBOOKMARKS_LOG) << errorString;
     Q_EMIT done(false, errorString);
 }
+
+#include "moc_faviconupdater.cpp"

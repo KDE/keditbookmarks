@@ -625,3 +625,5 @@ CommandHistory *ActionsImpl::commandHistory()
 {
     return m_model->commandHistory();
 }
+
+#include "moc_actionsimpl.cpp"

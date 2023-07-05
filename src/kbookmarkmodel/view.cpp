@@ -72,3 +72,5 @@ void KBookmarkView::slotCollapsed(const QModelIndex &index)
         bk.internalElement().setAttribute(QStringLiteral("folded"), QStringLiteral("yes"));
     }
 }
+
+#include "moc_view.cpp"

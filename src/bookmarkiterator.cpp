@@ -125,3 +125,5 @@ void BookmarkIteratorHolder::doIteratorListChanged()
         m_affectedBookmark.clear();
     }
 }
+
+#include "moc_bookmarkiterator.cpp"

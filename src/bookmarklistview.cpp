@@ -189,3 +189,5 @@ bool BookmarkFolderViewFilterModel::filterAcceptsRow(int source_row, const QMode
     const KBookmark bk = index.data(KBookmarkModel::KBookmarkRole).value<KBookmark>();
     return bk.isGroup();
 }
+
+#include "moc_bookmarklistview.cpp"

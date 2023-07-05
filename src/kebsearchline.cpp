@@ -628,3 +628,5 @@ KViewSearchLine *KViewSearchLineWidget::searchLine() const
 {
     return d->searchLine;
 }
+
+#include "moc_kebsearchline.cpp"

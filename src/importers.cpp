@@ -329,3 +329,5 @@ void XBELImportCommand::doExecute(const KBookmarkGroup & /*bkGroup*/)
             root.appendChild((*it));
     }
 }
+
+#include "moc_importers.cpp"

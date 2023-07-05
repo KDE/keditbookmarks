@@ -134,3 +134,5 @@ KBookmarkManager *CommandHistory::bookmarkManager()
 {
     return d->m_manager;
 }
+
+#include "moc_commandhistory.cpp"

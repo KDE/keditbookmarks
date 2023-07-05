@@ -102,3 +102,5 @@ void TestLinkItr::cancel()
 {
     setStatus(m_oldStatus);
 }
+
+#include "moc_testlink.cpp"

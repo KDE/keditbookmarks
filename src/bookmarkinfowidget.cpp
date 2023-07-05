@@ -250,3 +250,5 @@ BookmarkInfoWidget::BookmarkInfoWidget(BookmarkListView *lv, KBookmarkModel *mod
 
     showBookmark(KBookmark());
 }
+
+#include "moc_bookmarkinfowidget.cpp"
