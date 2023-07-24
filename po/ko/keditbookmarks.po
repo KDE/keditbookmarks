@@ -1,14 +1,14 @@
 # Translation of kedit bookmarks to Korean.
 # Copyright (C) 2007 This_file_is_part_of_KDE
 # This file is distributed under the same license as the kdebase package.
-# Shinjo Park <kde@peremen.name>, 2007, 2009, 2010, 2011, 2016, 2017, 2020, 2021.
+# Shinjo Park <kde@peremen.name>, 2007, 2009, 2010, 2011, 2016, 2017, 2020, 2021, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-02 00:50+0000\n"
-"PO-Revision-Date: 2021-07-18 12:10+0200\n"
+"PO-Revision-Date: 2023-07-23 00:50+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 20.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -602,10 +602,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "책갈피 관리 도구"
 
 #: main.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2017, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "Copyright 2000-2017, KDE developers"
+msgstr "Copyright 2000-2023, KDE developers"
 
 #: main.cpp:142
 #, kde-format
