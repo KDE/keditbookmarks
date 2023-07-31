@@ -74,6 +74,7 @@ target_link_libraries(keditbookmarks kbookmarkmodel_private
    KF${KF_MAJOR_VERSION}::WindowSystem
    KF${KF_MAJOR_VERSION}::IconThemes
    KF${KF_MAJOR_VERSION}::Completion
+   KF${KF_MAJOR_VERSION}::I18n
    KF${KF_MAJOR_VERSION}::KIOGui)
 
 if (QT_MAJOR_VERSION STREQUAL "6")
