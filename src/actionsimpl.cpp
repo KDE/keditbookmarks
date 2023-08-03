@@ -288,7 +288,7 @@ void GlobalBookmarkManager::doExport(ExportType type, const QString &_path)
     // TODO - add a factory and make all this use the base class
     if (type == OperaExport) {
         if (path.isNull())
-            path = KOperaBookmarkImporterImpl().findDefaultLocation(true);
+            path = OperaBookmarkImporterImpl().findDefaultLocation(true);
         KOperaBookmarkExporterImpl exporter(mgr(), path);
         exporter.write(mgr()->root());
         return;
@@ -302,8 +302,8 @@ void GlobalBookmarkManager::doExport(ExportType type, const QString &_path)
 
     } else if (type == IEExport) {
         if (path.isNull())
-            path = KIEBookmarkImporterImpl().findDefaultLocation(true);
-        KIEBookmarkExporterImpl exporter(mgr(), path);
+            path = IEBookmarkImporterImpl().findDefaultLocation(true);
+        IEBookmarkExporterImpl exporter(mgr(), path);
         exporter.write(mgr()->root());
         return;
     }
@@ -315,7 +315,7 @@ void GlobalBookmarkManager::doExport(ExportType type, const QString &_path)
             KMozillaBookmarkImporterImpl importer;
             path = importer.findDefaultLocation(true);
         } else {
-            KNSBookmarkImporterImpl importer;
+            NSBookmarkImporterImpl importer;
             path = importer.findDefaultLocation(true);
         }
     }

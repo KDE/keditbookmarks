@@ -27,20 +27,19 @@
 #include "toplevel.h" // for KEBApp
 
 #include "keditbookmarks_debug.h"
-#include <QFileDialog>
 
-#include <KMessageBox>
+#include <QFileDialog>
+#include <QStandardPaths>
 
 #include <KBookmark>
 #include <KBookmarkManager>
+#include <KMessageBox>
 
+#include <kbookmarkdombuilder.h>
 #include <kbookmarkimporter.h>
 #include <kbookmarkimporter_ie.h>
-#include <kbookmarkimporter_opera.h>
-//#include <kbookmarkimporter_crash.h>
-#include <KBookmarkDomBuilder>
-#include <QStandardPaths>
 #include <kbookmarkimporter_ns.h>
+#include <kbookmarkimporter_opera.h>
 #include <kwidgetsaddons_version.h>
 
 ImportCommand::ImportCommand(KBookmarkModel *model)
@@ -195,19 +194,19 @@ QString MozImportCommand::requestFilename() const
 
 QString NSImportCommand::requestFilename() const
 {
-    static KNSBookmarkImporterImpl importer;
+    static NSBookmarkImporterImpl importer;
     return importer.findDefaultLocation();
 }
 
 QString OperaImportCommand::requestFilename() const
 {
-    static KOperaBookmarkImporterImpl importer;
+    static OperaBookmarkImporterImpl importer;
     return importer.findDefaultLocation();
 }
 
 QString IEImportCommand::requestFilename() const
 {
-    static KIEBookmarkImporterImpl importer;
+    static IEBookmarkImporterImpl importer;
     return importer.findDefaultLocation();
 }
 
@@ -231,30 +230,30 @@ QString KDE2ImportCommand::requestFilename() const
 
 /* -------------------------------------- */
 
-static void parseInto(const KBookmarkGroup &bkGroup, KBookmarkImporterBase *importer)
+static void parseInto(const KBookmarkGroup &bkGroup, BookmarkImporterBase *importer)
 {
-    KBookmarkDomBuilder builder(bkGroup, GlobalBookmarkManager::self()->mgr());
+    BookmarkDomBuilder builder(bkGroup, GlobalBookmarkManager::self()->mgr());
     builder.connectImporter(importer);
     importer->parse();
 }
 
 void OperaImportCommand::doExecute(const KBookmarkGroup &bkGroup)
 {
-    KOperaBookmarkImporterImpl importer;
+    OperaBookmarkImporterImpl importer;
     importer.setFilename(m_fileName);
     parseInto(bkGroup, &importer);
 }
 
 void IEImportCommand::doExecute(const KBookmarkGroup &bkGroup)
 {
-    KIEBookmarkImporterImpl importer;
+    IEBookmarkImporterImpl importer;
     importer.setFilename(m_fileName);
     parseInto(bkGroup, &importer);
 }
 
 void HTMLImportCommand::doExecute(const KBookmarkGroup &bkGroup)
 {
-    KNSBookmarkImporterImpl importer;
+    NSBookmarkImporterImpl importer;
     importer.setFilename(m_fileName);
     importer.setUtf8(m_utf8);
     parseInto(bkGroup, &importer);

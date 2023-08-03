@@ -51,6 +51,18 @@ target_sources(keditbookmarks PRIVATE
    bookmarkinfowidget.cpp
    kebsearchline.cpp
    bookmarklistview.cpp
+   kbookmarkexporter.h
+   kbookmarkimporter.cpp
+   kbookmarkimporter.h
+   kbookmarkimporter_ie.cpp
+   kbookmarkimporter_ie.h
+   kbookmarkimporter_ns.cpp
+   kbookmarkimporter_ns.h
+   kbookmarkimporter_opera.cpp
+   kbookmarkimporter_opera.h
+   kbookmarkimporter_opera_p.h
+   kbookmarkdombuilder.cpp
+   kbookmarkdombuilder.h
    toplevel.h
    globalbookmarkmanager.h
    actionsimpl.h
@@ -75,6 +87,7 @@ target_link_libraries(keditbookmarks kbookmarkmodel_private
    KF${KF_MAJOR_VERSION}::IconThemes
    KF${KF_MAJOR_VERSION}::Completion
    KF${KF_MAJOR_VERSION}::I18n
+   KF${KF_MAJOR_VERSION}::Codecs
    KF${KF_MAJOR_VERSION}::KIOGui)
 
 if (QT_MAJOR_VERSION STREQUAL "6")
