@@ -21,6 +21,7 @@ ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KEDITBOOKMARKS VERS
 add_executable(kbookmarkmerger kbookmarkmerger.cpp ${debug_file_common_SRCS})
 
 target_link_libraries(kbookmarkmerger
+   Qt::Widgets
    KF${KF_MAJOR_VERSION}::KIOCore
    KF${KF_MAJOR_VERSION}::I18n
    KF${KF_MAJOR_VERSION}::Bookmarks
