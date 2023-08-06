@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-02 00:50+0000\n"
+"POT-Creation-Date: 2023-08-06 00:49+0000\n"
 "PO-Revision-Date: 2008-03-13 15:33+0530\n"
 "Last-Translator: ஆமாச்சு <amachu@ubuntu.com>\n"
 "Language-Team: Tamil <ubuntu-l10n-tam@lists.ubuntu.com>\n"
@@ -291,47 +291,47 @@ msgstr "சின்னங்கள் புதுப்பிக்கப்�
 msgid "%1; no HTML component found (%2)"
 msgstr ""
 
-#: importers.cpp:58
+#: importers.cpp:57
 #, fuzzy, kde-format
 #| msgid "Import %1 Bookmarks"
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "%1 நினைவுக்குறிகளை இறக்குக"
 
-#: importers.cpp:63
+#: importers.cpp:62
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 நினைவுக்குறிகள்"
 
-#: importers.cpp:104
+#: importers.cpp:103
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "புதிய துணையடைவாக இறக்குக அ தற்போதைய அனைத்து நினைவுக்குறிகளையும் மாற்றுக"
 
-#: importers.cpp:105
+#: importers.cpp:104
 #, fuzzy, kde-format
 #| msgid "%1 Import"
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 இறக்குக"
 
-#: importers.cpp:106
+#: importers.cpp:105
 #, kde-format
 msgid "As New Folder"
 msgstr "புதிய அடைவாக"
 
-#: importers.cpp:107
+#: importers.cpp:106
 #, kde-format
 msgid "Replace"
 msgstr "மாற்றுக"
 
-#: importers.cpp:221
+#: importers.cpp:220
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "*.xbel|கேலியோன் நினைவுக்குறி கோப்புகள் (*.xbel)"
 
-#: importers.cpp:229
+#: importers.cpp:228
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-02 00:50+0000\n"
+"POT-Creation-Date: 2023-08-06 00:49+0000\n"
 "PO-Revision-Date: 2020-09-16 01:11+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -285,44 +285,44 @@ msgstr "Actualizare favicon..."
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; nu a fost găsită nicio componentă HTML (%2)"
 
-#: importers.cpp:58
+#: importers.cpp:57
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "Importare %1 semne de carte"
 
-#: importers.cpp:63
+#: importers.cpp:62
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 semne de carte"
 
-#: importers.cpp:104
+#: importers.cpp:103
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "Importați ca un subdosar sau înlocuiți toate semnele de carte curente?"
 
-#: importers.cpp:105
+#: importers.cpp:104
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "Importare %1"
 
-#: importers.cpp:106
+#: importers.cpp:105
 #, kde-format
 msgid "As New Folder"
 msgstr "Ca dosar nou"
 
-#: importers.cpp:107
+#: importers.cpp:106
 #, kde-format
 msgid "Replace"
 msgstr "Înlocuire"
 
-#: importers.cpp:221
+#: importers.cpp:220
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Fișiere cu semne de carte Galeon (*.xbel)"
 
-#: importers.cpp:229
+#: importers.cpp:228
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "Fișiere cu semne de carte KDE (*.xml)"

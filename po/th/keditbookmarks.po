@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-02 00:50+0000\n"
+"POT-Creation-Date: 2023-08-06 00:49+0000\n"
 "PO-Revision-Date: 2010-07-07 15:03+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -288,47 +288,47 @@ msgstr "กำลังปรับปรุง favicon..."
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; ไม่พบส่วนประกอบ HTML (%2)"
 
-#: importers.cpp:58
+#: importers.cpp:57
 #, fuzzy, kde-format
 #| msgid "Import %1 Bookmarks"
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "นำเข้าที่คั่นหน้าของ %1"
 
-#: importers.cpp:63
+#: importers.cpp:62
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "ที่คั่นหน้าของ %1"
 
-#: importers.cpp:104
+#: importers.cpp:103
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "ให้นำเข้าเป็นโฟลเดอร์ย่อยใหม่ หรือจะแทนที่ที่คั่นหน้าทั้งหมดที่มีอยู่ในปัจจุบัน?"
 
-#: importers.cpp:105
+#: importers.cpp:104
 #, fuzzy, kde-format
 #| msgid "%1 Import"
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 นำเข้า"
 
-#: importers.cpp:106
+#: importers.cpp:105
 #, kde-format
 msgid "As New Folder"
 msgstr "เป็นโฟลเดอร์ใหม่"
 
-#: importers.cpp:107
+#: importers.cpp:106
 #, kde-format
 msgid "Replace"
 msgstr "แทนที่"
 
-#: importers.cpp:221
+#: importers.cpp:220
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "*.xbel|แฟ้มที่คั่นหน้าของ Galeon (*.xbel)"
 
-#: importers.cpp:229
+#: importers.cpp:228
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"

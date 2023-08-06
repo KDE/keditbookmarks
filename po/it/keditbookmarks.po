@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-02 00:50+0000\n"
+"POT-Creation-Date: 2023-08-06 00:49+0000\n"
 "PO-Revision-Date: 2023-06-04 23:42+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -282,45 +282,45 @@ msgstr "Aggiornamento dell'iconcina..."
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; nessun componente HTML trovato (%2)"
 
-#: importers.cpp:58
+#: importers.cpp:57
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "Importa %1 segnalibri"
 
-#: importers.cpp:63
+#: importers.cpp:62
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 segnalibri"
 
-#: importers.cpp:104
+#: importers.cpp:103
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 "Importa come nuova sottocartella o sostituisci tutti i segnalibri in uso?"
 
-#: importers.cpp:105
+#: importers.cpp:104
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "Importazione di %1"
 
-#: importers.cpp:106
+#: importers.cpp:105
 #, kde-format
 msgid "As New Folder"
 msgstr "Come nuova cartella"
 
-#: importers.cpp:107
+#: importers.cpp:106
 #, kde-format
 msgid "Replace"
 msgstr "Sostituisci"
 
-#: importers.cpp:221
+#: importers.cpp:220
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "File segnalibri di Galeon (*.xbel)"
 
-#: importers.cpp:229
+#: importers.cpp:228
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "File segnalibri di KDE (*.xml)"

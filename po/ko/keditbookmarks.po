@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-02 00:50+0000\n"
+"POT-Creation-Date: 2023-08-06 00:49+0000\n"
 "PO-Revision-Date: 2023-07-23 00:50+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -279,44 +279,44 @@ msgstr "파비콘 새로 고치는 중..."
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; HTML 구성 요소 없음 (%2)"
 
-#: importers.cpp:58
+#: importers.cpp:57
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "%1 책갈피 가져오기"
 
-#: importers.cpp:63
+#: importers.cpp:62
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 책갈피"
 
-#: importers.cpp:104
+#: importers.cpp:103
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "책갈피를 새 하위 폴더로 가져오거나, 현재 책갈피에 덮어쓰시겠습니까?"
 
-#: importers.cpp:105
+#: importers.cpp:104
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 가져오기"
 
-#: importers.cpp:106
+#: importers.cpp:105
 #, kde-format
 msgid "As New Folder"
 msgstr "새 폴더로"
 
-#: importers.cpp:107
+#: importers.cpp:106
 #, kde-format
 msgid "Replace"
 msgstr "덮어쓰기"
 
-#: importers.cpp:221
+#: importers.cpp:220
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Galeon 책갈피 파일 (*.xbel)"
 
-#: importers.cpp:229
+#: importers.cpp:228
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "KDE 책갈피 파일 (*.xml)"

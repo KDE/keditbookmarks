@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-02 00:50+0000\n"
+"POT-Creation-Date: 2023-08-06 00:49+0000\n"
 "PO-Revision-Date: 2012-12-21 23:10+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -280,47 +280,47 @@ msgstr "Dji met a djoû l' favicon..."
 msgid "%1; no HTML component found (%2)"
 msgstr "%1 ; nou componint HTML di trové (%2)"
 
-#: importers.cpp:58
+#: importers.cpp:57
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "Abaguer %1 rimarkes"
 
-#: importers.cpp:63
+#: importers.cpp:62
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 rimarkes"
 
-#: importers.cpp:104
+#: importers.cpp:103
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 "Voloz abaguer come on novea ridant oudonbén mete al plaece di totes les "
 "rimarkes do moumint ?"
 
-#: importers.cpp:105
+#: importers.cpp:104
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "Abagaedje di %1"
 
-#: importers.cpp:106
+#: importers.cpp:105
 #, kde-format
 msgid "As New Folder"
 msgstr "Come novea ridant"
 
-#: importers.cpp:107
+#: importers.cpp:106
 #, kde-format
 msgid "Replace"
 msgstr "Mete al plaece"
 
-#: importers.cpp:221
+#: importers.cpp:220
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "*.xbel|Fitchîs rimarkes di Galeon (*.xbel)"
 
-#: importers.cpp:229
+#: importers.cpp:228
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-02 00:50+0000\n"
+"POT-Creation-Date: 2023-08-06 00:49+0000\n"
 "PO-Revision-Date: 2023-06-07 10:50-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -281,45 +281,45 @@ msgstr "Atualizando favicon..."
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; não foi encontrado nenhum componente HTML (%2)"
 
-#: importers.cpp:58
+#: importers.cpp:57
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "Importar favoritos de %1"
 
-#: importers.cpp:63
+#: importers.cpp:62
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "Favoritos de %1"
 
-#: importers.cpp:104
+#: importers.cpp:103
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 "Importar como uma nova subpasta ou substituir todos os favoritos atuais?"
 
-#: importers.cpp:105
+#: importers.cpp:104
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "Importação do %1"
 
-#: importers.cpp:106
+#: importers.cpp:105
 #, kde-format
 msgid "As New Folder"
 msgstr "Como pasta nova"
 
-#: importers.cpp:107
+#: importers.cpp:106
 #, kde-format
 msgid "Replace"
 msgstr "Substituir"
 
-#: importers.cpp:221
+#: importers.cpp:220
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Arquivos de favoritos do Galeon (*.xbel)"
 
-#: importers.cpp:229
+#: importers.cpp:228
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "Arquivos de favoritos do KDE (*.xml)"

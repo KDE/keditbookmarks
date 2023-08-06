@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-02 00:50+0000\n"
+"POT-Creation-Date: 2023-08-06 00:49+0000\n"
 "PO-Revision-Date: 2009-01-02 18:31+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -288,49 +288,49 @@ msgstr "ফেভ-আইকন আপডেট করা হচ্ছে..."
 msgid "%1; no HTML component found (%2)"
 msgstr ""
 
-#: importers.cpp:58
+#: importers.cpp:57
 #, fuzzy, kde-format
 #| msgid "Import %1 Bookmarks"
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "%1 বুকমার্ক ইম্পোর্ট করুন"
 
-#: importers.cpp:63
+#: importers.cpp:62
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 বুকমার্ক"
 
-#: importers.cpp:104
+#: importers.cpp:103
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 "নতুন সাব-ফোল্ডার রূপে ইম্পোর্ট করা হবে নাকি বর্তমানে উপস্থিত সকল বুকমার্ক মুছে ফেলা "
 "হবে?"
 
-#: importers.cpp:105
+#: importers.cpp:104
 #, fuzzy, kde-format
 #| msgid "%1 Import"
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 ইম্পোর্ট করুন"
 
-#: importers.cpp:106
+#: importers.cpp:105
 #, kde-format
 msgid "As New Folder"
 msgstr "নতুন ফোল্ডার রূপে"
 
-#: importers.cpp:107
+#: importers.cpp:106
 #, kde-format
 msgid "Replace"
 msgstr "প্রতিস্থাপন"
 
-#: importers.cpp:221
+#: importers.cpp:220
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "*.xbel|Galeon বুকমার্ক ফাইল (*.xbel)"
 
-#: importers.cpp:229
+#: importers.cpp:228
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"
