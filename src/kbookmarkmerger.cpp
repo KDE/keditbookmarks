@@ -33,6 +33,7 @@
 #include <QApplication>
 #include <QCommandLineParser>
 #include <QDir>
+#include <QStandardPaths>
 #include <qdom.h>
 
 #include "keditbookmarks_version.h"
@@ -65,7 +66,8 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    KBookmarkManager *konqBookmarks = KBookmarkManager::userBookmarksManager();
+    const QString bookmarksFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
+    KBookmarkManager *konqBookmarks = KBookmarkManager::managerForFile(bookmarksFile, QStringLiteral("konqueror"));
     QStringList mergedFiles;
     {
         KBookmarkGroup root = konqBookmarks->root();
