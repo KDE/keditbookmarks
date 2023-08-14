@@ -67,7 +67,11 @@ int main(int argc, char **argv)
     }
 
     const QString bookmarksFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
+#if QT_VERSION_MAJOR < 6
     KBookmarkManager *konqBookmarks = KBookmarkManager::managerForFile(bookmarksFile, QStringLiteral("konqueror"));
+#else
+    KBookmarkManager *konqBookmarks = KBookmarkManager::managerForFile(bookmarksFile);
+#endif
     QStringList mergedFiles;
     {
         KBookmarkGroup root = konqBookmarks->root();
@@ -99,7 +103,11 @@ int main(int argc, char **argv)
         }
 
         const QString absPath = extraBookmarksDir.filePath(fileName);
+#if QT_VERSION_MAJOR < 6
         KBookmarkManager *mgr = KBookmarkManager::managerForFile(absPath, QString());
+#else
+        KBookmarkManager *mgr = KBookmarkManager::managerForFile(absPath);
+#endif
         KBookmarkGroup root = mgr->root();
         for (KBookmark bm = root.first(); !bm.isNull(); bm = root.next(bm)) {
             if (bm.isGroup()) {

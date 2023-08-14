@@ -270,7 +270,11 @@ void XBELImportCommand::doCreateHoldingFolder(KBookmarkGroup &)
 void XBELImportCommand::doExecute(const KBookmarkGroup & /*bkGroup*/)
 {
     // check if already open first???
+#if QT_VERSION_MAJOR < 6
     KBookmarkManager *pManager = KBookmarkManager::managerForFile(m_fileName, QString());
+#else
+    KBookmarkManager *pManager = KBookmarkManager::managerForFile(m_fileName);
+#endif
 
     QDomDocument doc = GlobalBookmarkManager::self()->mgr()->internalDocument();
 

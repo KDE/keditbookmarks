@@ -19,7 +19,11 @@
 void KXBELBookmarkImporterImpl::parse()
 {
     // qCDebug(KBOOKMARKS_LOG) << "KXBELBookmarkImporterImpl::parse()";
+#if QT_VERSION_MAJOR < 6
     KBookmarkManager *manager = KBookmarkManager::managerForFile(m_fileName, QString());
+#else
+    KBookmarkManager *manager = KBookmarkManager::managerForFile(m_fileName);
+#endif
     KBookmarkGroup root = manager->root();
     traverse(root);
     // FIXME delete it!
