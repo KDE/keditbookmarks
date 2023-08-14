@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-06 00:49+0000\n"
+"POT-Creation-Date: 2023-08-14 00:49+0000\n"
 "PO-Revision-Date: 2009-02-09 16:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -365,32 +365,32 @@ msgstr "इंटरनेट एक्सप्लोरर"
 msgid "Opera"
 msgstr "ओपेरा"
 
-#: kbookmarkmerger.cpp:47
+#: kbookmarkmerger.cpp:48
 #, kde-format
 msgid "KBookmarkMerger"
 msgstr "के_बुकमार्क_मर्जर"
 
-#: kbookmarkmerger.cpp:49
+#: kbookmarkmerger.cpp:50
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
 msgstr "कमइया के निसानी मं तीसर पार्टी से इनस्टाल करे निसानी ल मिलाथे "
 
-#: kbookmarkmerger.cpp:51
+#: kbookmarkmerger.cpp:52
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
 msgstr "कापीराइट © 2005 फ्रेरिक राबे"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Frerich Raabe"
 msgstr "फ्रेरिक राबे"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Original author"
 msgstr "मूल लेखक"
 
-#: kbookmarkmerger.cpp:57
+#: kbookmarkmerger.cpp:58
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr "अतिरिक्त निसानी बर स्कैन करे बर डिरेक्टरी"

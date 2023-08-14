@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-06 00:49+0000\n"
+"POT-Creation-Date: 2023-08-14 00:49+0000\n"
 "PO-Revision-Date: 2023-06-02 08:03+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -355,33 +355,33 @@ msgstr "IE"
 msgid "Opera"
 msgstr "Opera"
 
-#: kbookmarkmerger.cpp:47
+#: kbookmarkmerger.cpp:48
 #, kde-format
 msgid "KBookmarkMerger"
 msgstr "KBookmarkMerger"
 
-#: kbookmarkmerger.cpp:49
+#: kbookmarkmerger.cpp:50
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
 msgstr ""
 "Združi zaznamke, ki so jih namestile tretje osebe, z uporabnikovimi zaznamki"
 
-#: kbookmarkmerger.cpp:51
+#: kbookmarkmerger.cpp:52
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
 msgstr "Avtorske pravice © 2005 Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Frerich Raabe"
 msgstr "Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Original author"
 msgstr "Prvotni avtor"
 
-#: kbookmarkmerger.cpp:57
+#: kbookmarkmerger.cpp:58
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr "Mapa, ki bo preiskana za dodatnimi zaznamki"

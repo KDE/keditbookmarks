@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-06 00:49+0000\n"
+"POT-Creation-Date: 2023-08-14 00:49+0000\n"
 "PO-Revision-Date: 2008-04-18 14:31+0330\n"
 "Last-Translator: Saied Taghavi <s.taghavi@gmail.com>\n"
 "Language-Team: Persian <kde-i18n-fa@kde.org>\n"
@@ -347,32 +347,32 @@ msgstr ""
 msgid "Opera"
 msgstr ""
 
-#: kbookmarkmerger.cpp:47
+#: kbookmarkmerger.cpp:48
 #, kde-format
 msgid "KBookmarkMerger"
 msgstr ""
 
-#: kbookmarkmerger.cpp:49
+#: kbookmarkmerger.cpp:50
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
 msgstr ""
 
-#: kbookmarkmerger.cpp:51
+#: kbookmarkmerger.cpp:52
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
 msgstr ""
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Frerich Raabe"
 msgstr ""
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Original author"
 msgstr ""
 
-#: kbookmarkmerger.cpp:57
+#: kbookmarkmerger.cpp:58
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr ""

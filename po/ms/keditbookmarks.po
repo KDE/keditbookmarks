@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-06 00:49+0000\n"
+"POT-Creation-Date: 2023-08-14 00:49+0000\n"
 "PO-Revision-Date: 2010-06-21 20:15+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -362,34 +362,34 @@ msgstr ""
 msgid "Opera"
 msgstr "Opera"
 
-#: kbookmarkmerger.cpp:47
+#: kbookmarkmerger.cpp:48
 #, fuzzy, kde-format
 msgid "KBookmarkMerger"
 msgstr "KBookmarkMerger"
 
-#: kbookmarkmerger.cpp:49
+#: kbookmarkmerger.cpp:50
 #, fuzzy, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
 msgstr ""
 "Mencantumkan tanda buku yang dipasang oleh pihak ketiga ke dalam tanda buku "
 "pengguna"
 
-#: kbookmarkmerger.cpp:51
+#: kbookmarkmerger.cpp:52
 #, fuzzy, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
 msgstr "Hak cipta © 2005 Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, fuzzy, kde-format
 msgid "Frerich Raabe"
 msgstr "Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, fuzzy, kde-format
 msgid "Original author"
 msgstr "Pengarang asal"
 
-#: kbookmarkmerger.cpp:57
+#: kbookmarkmerger.cpp:58
 #, fuzzy, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr "Direktori untuk mengimbas tanda buku tambahan"

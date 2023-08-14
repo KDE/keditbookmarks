@@ -1,20 +1,21 @@
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008.
 # Burkhard Lück <lueck@hube-lueck.de>, 2009, 2010, 2011, 2016, 2017, 2020.
-# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2011.
+# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2011, 2023.
 # Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-06 00:49+0000\n"
-"PO-Revision-Date: 2020-09-09 09:26+0200\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"POT-Creation-Date: 2023-08-14 00:49+0000\n"
+"PO-Revision-Date: 2023-08-13 16:17+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 23.11.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -350,34 +351,34 @@ msgstr "Internet Explorer"
 msgid "Opera"
 msgstr "Opera"
 
-#: kbookmarkmerger.cpp:47
+#: kbookmarkmerger.cpp:48
 #, kde-format
 msgid "KBookmarkMerger"
 msgstr "Lesezeichen zusammenführen"
 
-#: kbookmarkmerger.cpp:49
+#: kbookmarkmerger.cpp:50
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
 msgstr ""
 "Importiert Lesezeichen, die von Drittherstellern installiert wurden, in die "
 "Lesezeichensammlung des Anwenders."
 
-#: kbookmarkmerger.cpp:51
+#: kbookmarkmerger.cpp:52
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
 msgstr "Copyright © 2005 Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Frerich Raabe"
 msgstr "Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Original author"
 msgstr "Ursprünglicher Autor"
 
-#: kbookmarkmerger.cpp:57
+#: kbookmarkmerger.cpp:58
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr "Ordner für zusätzliche Lesezeichen"
@@ -604,10 +605,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "Lesezeichen-Verwaltung und -Editor"
 
 #: main.cpp:141
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2017, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "Copyright 2000–2017, die KDE-Entwickler"
+msgstr "Copyright 2000–2023, die KDE-Entwickler"
 
 #: main.cpp:142
 #, kde-format
