@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-02 00:50+0000\n"
+"POT-Creation-Date: 2023-08-14 00:49+0000\n"
 "PO-Revision-Date: 2007-12-16 00:59+0100\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -280,45 +280,45 @@ msgstr ""
 msgid "%1; no HTML component found (%2)"
 msgstr ""
 
-#: importers.cpp:58
+#: importers.cpp:57
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr ""
 
-#: importers.cpp:63
+#: importers.cpp:62
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1-girjemearkkat"
 
-#: importers.cpp:104
+#: importers.cpp:103
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 "Sisafievrrit ođđa vuollemáhppan dahje buhtte visot dálá girjemearkkaid?"
 
-#: importers.cpp:105
+#: importers.cpp:104
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr ""
 
-#: importers.cpp:106
+#: importers.cpp:105
 #, kde-format
 msgid "As New Folder"
 msgstr "Ođđa máhppan"
 
-#: importers.cpp:107
+#: importers.cpp:106
 #, kde-format
 msgid "Replace"
 msgstr "Buhtte"
 
-#: importers.cpp:221
+#: importers.cpp:220
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr ""
 
-#: importers.cpp:229
+#: importers.cpp:228
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr ""
@@ -353,34 +353,34 @@ msgstr "IE"
 msgid "Opera"
 msgstr "Opera"
 
-#: kbookmarkmerger.cpp:47
+#: kbookmarkmerger.cpp:48
 #, kde-format
 msgid "KBookmarkMerger"
 msgstr "KBookmarkMerger"
 
-#: kbookmarkmerger.cpp:49
+#: kbookmarkmerger.cpp:50
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
 msgstr ""
 "Bárgiida girjemearkkaid maid olgguldas prográmmat leat ráhkadan geavaheaddji "
 "girjemearkkaiguin"
 
-#: kbookmarkmerger.cpp:51
+#: kbookmarkmerger.cpp:52
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
 msgstr "Copyright © 2005 Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Frerich Raabe"
 msgstr "Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Original author"
 msgstr "Álgovuolggalaš čálli"
 
-#: kbookmarkmerger.cpp:57
+#: kbookmarkmerger.cpp:58
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr "Máhpas gos galgá ohcat lasi girjemearkkaid"
