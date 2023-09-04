@@ -5,32 +5,32 @@
 #
 # Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2007.
 # Jaime Robles <jaime@kde.org>, 2007, 2008.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2009, 2011, 2012, 2016, 2017, 2020, 2023.
+# SPDX-FileCopyrightText: 2009, 2011, 2012, 2016, 2017, 2020, 2023 Eloy Cuadra <ecuadra@eloihr.net>
 # Rocio Gallego <traducciones@rociogallego.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-08-14 00:49+0000\n"
-"PO-Revision-Date: 2023-06-03 01:14+0200\n"
+"PO-Revision-Date: 2023-09-03 21:53+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.08.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Rocío Gallego,Enrique Matías Sánchez (Quique)"
+msgstr "Eloy Cuadra,Rocío Gallego,Enrique Matías Sánchez (Quique)"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "traducciones@rociogallego.com,cronopios@gmail.com"
+msgstr "ecuadra@eloihr.net,traducciones@rociogallego.com,cronopios@gmail.com"
 
 #: actionsimpl.cpp:98
 #, kde-format
@@ -298,7 +298,7 @@ msgstr "%1 marcadores"
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
-"¿Importar como una nueva subcarpeta o reemplazar todos los marcadores "
+"¿Importar como una nueva subcarpeta o sustituir todos los marcadores "
 "actuales?"
 
 #: importers.cpp:104
@@ -315,7 +315,7 @@ msgstr "Como nueva carpeta"
 #: importers.cpp:106
 #, kde-format
 msgid "Replace"
-msgstr "Reemplazar"
+msgstr "Sustituir"
 
 #: importers.cpp:220
 #, kde-format
