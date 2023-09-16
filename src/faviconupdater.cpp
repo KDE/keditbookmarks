@@ -75,14 +75,13 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
     webupdate = true;
 
     if (!m_part) {
-        QString partLoadingError;
-        KParts::ReadOnlyPart *part =
-            KParts::PartLoader::createPartInstanceForMimeType<KParts::ReadOnlyPart>(QStringLiteral("text/html"), nullptr, this, &partLoadingError);
-        if (!part) {
-            Q_EMIT done(false, i18n("%1; no HTML component found (%2)", currentError, partLoadingError));
+        auto partResult = KParts::PartLoader::instantiatePartForMimeType<KParts::ReadOnlyPart>(QStringLiteral("text/html"), nullptr, this);
+        if (!partResult) {
+            Q_EMIT done(false, i18n("%1; no HTML component found (%2)", currentError, partResult.errorString));
             return;
         }
 
+        auto part = partResult.plugin;
         part->setProperty("pluginsEnabled", QVariant(false));
         part->setProperty("javaScriptEnabled", QVariant(false));
         part->setProperty("javaEnabled", QVariant(false));

@@ -9,7 +9,7 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 project(keditbookmarks VERSION ${RELEASE_SERVICE_VERSION})
 
 # ECM setup
-set(KF_MIN_VERSION "5.91.0")
+set(KF_MIN_VERSION "5.100.0")
 find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
@@ -62,7 +62,7 @@ if(NOT APPLE)
     find_package(X11)
     set(HAVE_X11 ${X11_FOUND})
     if (HAVE_X11)
-       set_package_properties(X11 PROPERTIES TYPE OPTIONAL)
+        set_package_properties(X11 PROPERTIES TYPE OPTIONAL)
     endif()
 endif()
 
