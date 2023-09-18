@@ -35,7 +35,18 @@ set(KEDITBOOKMARKS_VERSION "5.97.0")
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core)
 find_package(Qt6Core5Compat)
-find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons I18n KIO Bookmarks Parts WindowSystem IconThemes)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
+    Codecs
+    ConfigWidgets
+    CoreAddons
+    I18n
+    KIO
+    Bookmarks
+    Parts
+    WidgetsAddons
+    WindowSystem
+    IconThemes
+)
 find_package(KF6DocTools ${KF_MIN_VERSION})
 set_package_properties(KF6DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
