@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase/keditbookmarks.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-14 00:49+0000\n"
+"POT-Creation-Date: 2023-09-18 00:48+0000\n"
 "PO-Revision-Date: 2007-06-27 10:27-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -275,7 +275,7 @@ msgstr "OK"
 msgid "Updating favicon..."
 msgstr "Deilbhín ceanán á nuashonrú..."
 
-#: faviconupdater.cpp:82
+#: faviconupdater.cpp:80
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; níor aimsíodh aon chomhpháirt HTML (%2)"

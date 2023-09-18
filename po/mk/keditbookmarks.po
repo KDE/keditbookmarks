@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-14 00:49+0000\n"
+"POT-Creation-Date: 2023-09-18 00:48+0000\n"
 "PO-Revision-Date: 2009-06-21 20:37+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -284,7 +284,7 @@ msgstr "Во ред"
 msgid "Updating favicon..."
 msgstr "Ажурирам омилена икона..."
 
-#: faviconupdater.cpp:82
+#: faviconupdater.cpp:80
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr ""
