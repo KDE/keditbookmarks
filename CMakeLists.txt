@@ -34,7 +34,6 @@ kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 set(KEDITBOOKMARKS_VERSION "5.97.0")
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core)
-find_package(Qt6Core5Compat)
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     Codecs
     ConfigWidgets
