@@ -87,11 +87,7 @@ private Q_SLOTS:
     {
         const QString filename = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
         QFile::remove(filename);
-#if QT_VERSION_MAJOR < 6
-        m_bookmarkManager = KBookmarkManager::managerForFile(filename, QString());
-#else
         m_bookmarkManager = KBookmarkManager::managerForFile(filename);
-#endif
         m_cmdHistory = new CommandHistory(this);
         m_cmdHistory->setBookmarkManager(m_bookmarkManager);
         QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList());
@@ -252,11 +248,7 @@ private Q_SLOTS:
         const QString fileName = tempFile.fileName();
         tempFile.write(data);
         tempFile.close();
-#if QT_VERSION_MAJOR < 6
-        KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(fileName, QString());
-#else
         KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(fileName);
-#endif
         QVERIFY(bookmarkManager);
 
         const QStringList addresses = BookmarkLister::addressList(bookmarkManager);

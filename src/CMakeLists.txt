@@ -22,9 +22,9 @@ add_executable(kbookmarkmerger kbookmarkmerger.cpp ${debug_file_common_SRCS})
 
 target_link_libraries(kbookmarkmerger
    Qt::Widgets
-   KF${KF_MAJOR_VERSION}::KIOCore
-   KF${KF_MAJOR_VERSION}::I18n
-   KF${KF_MAJOR_VERSION}::Bookmarks
+   KF6::KIOCore
+   KF6::I18n
+   KF6::Bookmarks
 )
 
 install(TARGETS kbookmarkmerger ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
@@ -82,18 +82,15 @@ target_sources(keditbookmarks PRIVATE
 )
 
 target_link_libraries(keditbookmarks kbookmarkmodel_private
-   KF${KF_MAJOR_VERSION}::Parts
-   KF${KF_MAJOR_VERSION}::Bookmarks
-   KF${KF_MAJOR_VERSION}::WindowSystem
-   KF${KF_MAJOR_VERSION}::IconThemes
-   KF${KF_MAJOR_VERSION}::Completion
-   KF${KF_MAJOR_VERSION}::I18n
-   KF${KF_MAJOR_VERSION}::Codecs
-   KF${KF_MAJOR_VERSION}::KIOGui)
-
-if (QT_MAJOR_VERSION STREQUAL "6")
-   target_link_libraries( keditbookmarks KF6::IconWidgets)
-endif()
+   KF6::Parts
+   KF6::Bookmarks
+   KF6::WindowSystem
+   KF6::IconThemes
+   KF6::Completion
+   KF6::I18n
+   KF6::Codecs
+   KF6::IconWidgets
+   KF6::KIOGui)
 
 install(TARGETS keditbookmarks          ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 

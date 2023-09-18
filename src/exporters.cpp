@@ -37,9 +37,6 @@ void HTMLExporter::write(const KBookmarkGroup &grp, const QString &filename, boo
         return;
     }
     QTextStream tstream(&file);
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    tstream.setCodec("UTF-8");
-#endif
     tstream << toString(grp, showAddress);
 }
 

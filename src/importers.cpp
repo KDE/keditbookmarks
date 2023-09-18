@@ -95,11 +95,7 @@ ImportCommand *ImportCommand::performImport(KBookmarkModel *model, const QString
         return nullptr;
     }
 
-#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
     int answer = KMessageBox::questionTwoActionsCancel(top,
-#else
-    int answer = KMessageBox::questionYesNoCancel(top,
-#endif
                                                        i18n("Import as a new subfolder or replace all the current bookmarks?"),
                                                        i18nc("@title:window", "%1 Import", importer->visibleName()),
                                                        KGuiItem(i18n("As New Folder")),
@@ -110,11 +106,7 @@ ImportCommand *ImportCommand::performImport(KBookmarkModel *model, const QString
         return nullptr;
     }
 
-#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
     importer->import(mydirname, answer == KMessageBox::ButtonCode::PrimaryAction);
-#else
-    importer->import(mydirname, answer == KMessageBox::Yes);
-#endif
     return importer;
 }
 
@@ -270,11 +262,7 @@ void XBELImportCommand::doCreateHoldingFolder(KBookmarkGroup &)
 void XBELImportCommand::doExecute(const KBookmarkGroup & /*bkGroup*/)
 {
     // check if already open first???
-#if QT_VERSION_MAJOR < 6
-    KBookmarkManager *pManager = KBookmarkManager::managerForFile(m_fileName, QString());
-#else
     KBookmarkManager *pManager = KBookmarkManager::managerForFile(m_fileName);
-#endif
 
     QDomDocument doc = GlobalBookmarkManager::self()->mgr()->internalDocument();
 

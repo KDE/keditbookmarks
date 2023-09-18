@@ -27,13 +27,9 @@
 #include <KLocalizedString>
 
 #include <KIO/FavIconRequestJob>
-#include <kio/job.h>
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <KParts/BrowserExtension>
-#else
 #include <KParts/NavigationExtension>
-#endif
 #include <KParts/PartLoader>
+#include <kio/job.h>
 
 FavIconUpdater::FavIconUpdater(QObject *parent)
     : QObject(parent)
@@ -86,17 +82,10 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
         part->setProperty("javaScriptEnabled", QVariant(false));
         part->setProperty("javaEnabled", QVariant(false));
         part->setProperty("autoloadImages", QVariant(false));
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-        KParts::BrowserExtension *ext = KParts::BrowserExtension::childObject(part);
-        Q_ASSERT(ext);
-
-        connect(ext, &KParts::BrowserExtension::setIconUrl, this, &FavIconUpdater::setIconUrl);
-#else
         KParts::NavigationExtension *ext = KParts::NavigationExtension::childObject(part);
         Q_ASSERT(ext);
 
         connect(ext, &KParts::NavigationExtension::setIconUrl, this, &FavIconUpdater::setIconUrl);
-#endif
         m_part = part;
     }
 

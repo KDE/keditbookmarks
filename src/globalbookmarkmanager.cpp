@@ -76,12 +76,8 @@ void GlobalBookmarkManager::createManager(const QString &filename, const QString
     }
 
     // qCDebug(KEDITBOOKMARKS_LOG)<<"DBus Object name: "<<dbusObjectName;
-#if QT_VERSION_MAJOR < 6
-    m_mgr = KBookmarkManager::managerForFile(filename, dbusObjectName);
-#else
     Q_UNUSED(dbusObjectName);
     m_mgr = KBookmarkManager::managerForFile(filename);
-#endif
 
     commandHistory->setBookmarkManager(m_mgr);
 

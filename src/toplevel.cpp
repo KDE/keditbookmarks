@@ -301,18 +301,10 @@ static bool lessAddress(const QString &first, const QString &second)
         uint bNext = b.indexOf(QLatin1String("/"), bLast + 1);
 
         bool okay;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-        uint aNum = a.midRef(aLast + 1, aNext - aLast - 1).toUInt(&okay);
-#else
         uint aNum = QStringView(a).mid(aLast + 1, aNext - aLast - 1).toUInt(&okay);
-#endif
         if (!okay)
             return false;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-        uint bNum = b.midRef(bLast + 1, bNext - bLast - 1).toUInt(&okay);
-#else
         uint bNum = QStringView(b).mid(bLast + 1, bNext - bLast - 1).toUInt(&okay);
-#endif
         if (!okay)
             return true;
 

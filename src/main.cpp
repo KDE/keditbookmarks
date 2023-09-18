@@ -33,17 +33,12 @@
 #include <QCommandLineParser>
 
 #include <KAboutData>
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <Kdelibs4ConfigMigrator>
-#endif
 
 #include <KMessageBox>
 #include <KWindowSystem>
 #include <kwindowsystem_version.h>
-#if KWINDOWSYSTEM_VERSION >= QT_VERSION_CHECK(5, 101, 0)
 #if HAVE_X11
 #include <KX11Extras>
-#endif
 #endif
 #include <KBookmarkManager>
 #include <QStandardPaths>
@@ -71,11 +66,7 @@ static bool askUser(const QString &filename, bool &readonly)
             if (bookmarks.isValid())
                 name = bookmarks;
             if (name == filename) {
-#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
                 int ret = KMessageBox::warningTwoActions(nullptr,
-#else
-                int ret = KMessageBox::warningYesNo(nullptr,
-#endif
                                                          i18n("Another instance of %1 is already running. Do you really "
                                                               "want to open another instance or continue work in the same instance?\n"
                                                               "Please note that, unfortunately, duplicate views are read-only.",
@@ -83,31 +74,19 @@ static bool askUser(const QString &filename, bool &readonly)
                                                          i18nc("@title:window", "Warning"),
                                                          KGuiItem(i18n("Run Another")), /* yes */
                                                          KGuiItem(i18n("Continue in Same")) /*  no */);
-#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
                 if (ret == KMessageBox::ButtonCode::SecondaryAction) {
-#else
-                if (ret == KMessageBox::No) {
-#endif
                     QDBusInterface keditinterface(service, QStringLiteral("/keditbookmarks/MainWindow_1"));
                     // TODO fix me
                     QDBusReply<qlonglong> value = keditinterface.call(QDBus::NoBlock, QStringLiteral("winId"));
                     qlonglong id = 0;
                     if (value.isValid())
                         id = value;
-                    ////qCDebug(KEDITBOOKMARKS_LOG)<<" id !!!!!!!!!!!!!!!!!!! :"<<id;
-#if KWINDOWSYSTEM_VERSION >= QT_VERSION_CHECK(5, 101, 0)
+                        ////qCDebug(KEDITBOOKMARKS_LOG)<<" id !!!!!!!!!!!!!!!!!!! :"<<id;
 #if HAVE_X11
                     KX11Extras::activateWindow((WId)id);
 #endif
-#else
-                    KWindowSystem::activateWindow((WId)id);
-#endif
                     return false;
-#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
                 } else if (ret == KMessageBox::ButtonCode::PrimaryAction) {
-#else
-                } else if (ret == KMessageBox::Yes) {
-#endif
                     readonly = true;
                 }
             }
@@ -118,18 +97,7 @@ static bool askUser(const QString &filename, bool &readonly)
 
 int main(int argc, char **argv)
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-#endif
     QApplication app(argc, argv);
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    // enable high dpi support
-    app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-    Kdelibs4ConfigMigrator migrate(QStringLiteral("keditbookmarks"));
-    migrate.setConfigFiles(QStringList() << QStringLiteral("keditbookmarksrc"));
-    migrate.setUiFiles(QStringList() << QStringLiteral("keditbookmarksuirc"));
-    migrate.migrate();
-#endif
 
     KLocalizedString::setApplicationDomain("keditbookmarks");
 
