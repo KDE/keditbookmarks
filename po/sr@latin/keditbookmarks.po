@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-03-16 02:40+0100\n"
+"POT-Creation-Date: 2023-09-19 01:56+0000\n"
 "PO-Revision-Date: 2017-06-25 23:15+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -29,234 +29,234 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "caslav.ilic@gmx.net"
 
-#: actionsimpl.cpp:95
+#: actionsimpl.cpp:94
 #, kde-format
 msgid "&Delete"
 msgstr "&Obriši"
 
-#: actionsimpl.cpp:101
+#: actionsimpl.cpp:100
 #, kde-format
 msgid "Rename"
 msgstr "Preimenuj"
 
-#: actionsimpl.cpp:107
+#: actionsimpl.cpp:106
 #, kde-format
 msgid "C&hange Location"
 msgstr "Izmeni &lokaciju"
 
-#: actionsimpl.cpp:113
+#: actionsimpl.cpp:112
 #, kde-format
 msgid "C&hange Comment"
 msgstr "Izmeni &komentar"
 
-#: actionsimpl.cpp:119
+#: actionsimpl.cpp:118
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "Izmeni &ikonicu..."
 
-#: actionsimpl.cpp:123
+#: actionsimpl.cpp:122
 #, kde-format
 msgid "Update Favicon"
 msgstr "Ažuriraj favikonicu"
 
-#: actionsimpl.cpp:127
+#: actionsimpl.cpp:126
 #, kde-format
 msgid "Recursive Sort"
 msgstr "Rekurzivno poređaj"
 
-#: actionsimpl.cpp:132
+#: actionsimpl.cpp:131
 #, kde-format
 msgid "&New Folder..."
 msgstr "&Nova fascikla..."
 
-#: actionsimpl.cpp:138
+#: actionsimpl.cpp:137
 #, kde-format
 msgid "&New Bookmark"
 msgstr "&Novi obeleživač"
 
-#: actionsimpl.cpp:142
+#: actionsimpl.cpp:141
 #, kde-format
 msgid "&Insert Separator"
 msgstr "&Umetni razdvajač"
 
-#: actionsimpl.cpp:147
+#: actionsimpl.cpp:146
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "&Poređaj abecedno"
 
-#: actionsimpl.cpp:152
+#: actionsimpl.cpp:151
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "Postavi kao &traku fascikli"
 
-#: actionsimpl.cpp:156
+#: actionsimpl.cpp:155
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "&Raširi sve fascikle"
 
-#: actionsimpl.cpp:160
+#: actionsimpl.cpp:159
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "&Sažmi sve fascikle"
 
-#: actionsimpl.cpp:165
+#: actionsimpl.cpp:164
 #, fuzzy, kde-format
 #| msgid "&Open in Konqueror"
 msgid "&Open in Browser"
 msgstr "&Otvori u K‑osvajaču"
 
-#: actionsimpl.cpp:170
+#: actionsimpl.cpp:169
 #, kde-format
 msgid "Check &Status"
 msgstr "Proveri &stanje"
 
-#: actionsimpl.cpp:174
+#: actionsimpl.cpp:173
 #, kde-format
 msgid "Check Status: &All"
 msgstr "Proveri stanje: s&vi"
 
-#: actionsimpl.cpp:178
+#: actionsimpl.cpp:177
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "Ažuriraj sve &favikonice"
 
-#: actionsimpl.cpp:182
+#: actionsimpl.cpp:181
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "&Otkaži provere"
 
-#: actionsimpl.cpp:186
+#: actionsimpl.cpp:185
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "Otkaži ažuriranje &favikonica"
 
-#: actionsimpl.cpp:192
+#: actionsimpl.cpp:191
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "Uvezi obeleživače iz &Netscapea..."
 
-#: actionsimpl.cpp:198
+#: actionsimpl.cpp:197
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "Uvezi obeleživače iz &Opere..."
 
-#: actionsimpl.cpp:208
+#: actionsimpl.cpp:207
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "Uvezi obeleživače iz &Galije..."
 
-#: actionsimpl.cpp:214
+#: actionsimpl.cpp:213
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "Uvezi obeleživače iz KDE‑a 2 ili 3..."
 
-#: actionsimpl.cpp:220
+#: actionsimpl.cpp:219
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "Uvezi obeleživače iz Internet Explorera..."
 
-#: actionsimpl.cpp:226
+#: actionsimpl.cpp:225
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "Uvezi obeleživače iz Mozille..."
 
-#: actionsimpl.cpp:231
+#: actionsimpl.cpp:230
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "Izvezi obeleživače za &Netscape"
 
-#: actionsimpl.cpp:236
+#: actionsimpl.cpp:235
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "Izvezi obeleživače za &Operu..."
 
-#: actionsimpl.cpp:241
+#: actionsimpl.cpp:240
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "Izvezi HTML obeleživače..."
 
-#: actionsimpl.cpp:245
+#: actionsimpl.cpp:244
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "Izvezi obeleživače za Internet Explorer..."
 
-#: actionsimpl.cpp:250
+#: actionsimpl.cpp:249
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "Izvezi obeleživače za Mozillu..."
 
-#: actionsimpl.cpp:298
+#: actionsimpl.cpp:294
 #, kde-format
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "HTML spisak obeleživača (*.html)"
 
-#: actionsimpl.cpp:341
+#: actionsimpl.cpp:339
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "Iseci stavke"
 
-#: actionsimpl.cpp:366
+#: actionsimpl.cpp:364
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "Nalepi"
 
-#: actionsimpl.cpp:377
+#: actionsimpl.cpp:375
 #, kde-format
 msgid "New folder:"
 msgstr "Nova fascikla:"
 
-#: actionsimpl.cpp:378
+#: actionsimpl.cpp:375
 #, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Stvaranje nove fascikle obeleživača"
 
-#: actionsimpl.cpp:505
+#: actionsimpl.cpp:522
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "Poređaj rekurzivno"
 
-#: actionsimpl.cpp:519
+#: actionsimpl.cpp:537
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "Poređaj abecedno"
 
-#: actionsimpl.cpp:527
+#: actionsimpl.cpp:546
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Delete Items"
 msgstr "Obriši stavke"
 
-#: bookmarkinfowidget.cpp:238
+#: bookmarkinfowidget.cpp:223
 #, kde-format
 msgid "Name:"
 msgstr "Ime:"
 
-#: bookmarkinfowidget.cpp:245
+#: bookmarkinfowidget.cpp:230
 #, kde-format
 msgid "Location:"
 msgstr "Lokacija:"
 
-#: bookmarkinfowidget.cpp:252
+#: bookmarkinfowidget.cpp:237
 #, kde-format
 msgid "Comment:"
 msgstr "Komentar:"
 
-#: bookmarkinfowidget.cpp:258
+#: bookmarkinfowidget.cpp:243
 #, kde-format
 msgid "First viewed:"
 msgstr "Prvi pregled:"
 
-#: bookmarkinfowidget.cpp:261
+#: bookmarkinfowidget.cpp:246
 #, kde-format
 msgid "Viewed last:"
 msgstr "Poslednji pregled:"
 
-#: bookmarkinfowidget.cpp:264
+#: bookmarkinfowidget.cpp:249
 #, kde-format
 msgid "Times visited:"
 msgstr "Broj poseta:"
@@ -266,93 +266,93 @@ msgstr "Broj poseta:"
 msgid "My Bookmarks"
 msgstr "Moji obeleživači"
 
-#: favicons.cpp:56 testlink.cpp:96
+#: favicons.cpp:54 testlink.cpp:94
 #, kde-format
 msgid "OK"
 msgstr "U redu"
 
 # >> @info:progress
-#: favicons.cpp:72
+#: favicons.cpp:70
 #, kde-format
 msgid "Updating favicon..."
 msgstr "Ažuriram favikonicu..."
 
-#: faviconupdater.cpp:81
+#: faviconupdater.cpp:76
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; nije nađena HTML komponenta (%2)"
 
 # >> @action %1 is app name
-#: importers.cpp:56
+#: importers.cpp:57
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "Uvezi obeleživače iz %1|/|Uvezi obeleživače iz $[gen %1]"
 
 # >> @item Folder name; %1 is app name
-#: importers.cpp:60
+#: importers.cpp:62
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "Obeleživači iz %1|/|Obeleživači iz $[gen %1]"
 
-#: importers.cpp:92
+#: importers.cpp:99
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "Uvesti kao novu potfasciklu ili zameniti sve trenutne obeleživače?"
 
 # >> + %1 is app name
-#: importers.cpp:93
+#: importers.cpp:100
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "Uvoz iz %1|/|Uvoz iz $[gen %1]"
 
-#: importers.cpp:94
+#: importers.cpp:101
 #, kde-format
 msgid "As New Folder"
 msgstr "Kao potfasciklu"
 
-#: importers.cpp:94
+#: importers.cpp:102
 #, kde-format
 msgid "Replace"
 msgstr "Zameni"
 
-#: importers.cpp:201
+#: importers.cpp:212
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Galijini obeleživači (*.xbel)"
 
-#: importers.cpp:209
+#: importers.cpp:220
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "KDE‑ovi obeleživači (*.xml)"
 
-#: importers.h:102
+#: importers.h:116
 #, kde-format
 msgid "Galeon"
 msgstr "Galija"
 
-#: importers.h:112
+#: importers.h:131
 #, kde-format
 msgid "KDE"
 msgstr "KDE"
 
-#: importers.h:133
+#: importers.h:161
 #, kde-format
 msgid "Netscape"
 msgstr "Netscape"
 
-#: importers.h:143
+#: importers.h:176
 #, kde-format
 msgid "Mozilla"
 msgstr "Mozilla"
 
-#: importers.h:153
+#: importers.h:191
 #, kde-format
 msgid "IE"
 msgstr "Internet Explorer"
 
-#: importers.h:165
+#: importers.h:209
 #, kde-format
 msgid "Opera"
 msgstr "Opera"
@@ -386,207 +386,207 @@ msgstr "Frerih Rabe"
 msgid "Original author"
 msgstr "prvobitni autor"
 
-#: kbookmarkmerger.cpp:59
+#: kbookmarkmerger.cpp:58
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr "Fascikla u kojoj se traže dodatni obeleživači"
 
-#: kbookmarkmodel/commands.cpp:68
+#: kbookmarkmodel/commands.cpp:70
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Insert Separator"
 msgstr "Umetni razdvajač"
 
-#: kbookmarkmodel/commands.cpp:77
+#: kbookmarkmodel/commands.cpp:84
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Bookmark"
 msgstr "Napravi obeleživač"
 
-#: kbookmarkmodel/commands.cpp:86
+#: kbookmarkmodel/commands.cpp:98
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Folder"
 msgstr "Napravi fasciklu"
 
-#: kbookmarkmodel/commands.cpp:95
+#: kbookmarkmodel/commands.cpp:111
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy %1"
 msgstr "Kopiraj %1"
 
-#: kbookmarkmodel/commands.cpp:186
+#: kbookmarkmodel/commands.cpp:200
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Icon Change"
 msgstr "Promena ikonice"
 
-#: kbookmarkmodel/commands.cpp:188
+#: kbookmarkmodel/commands.cpp:202
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Title Change"
 msgstr "Promena naslova"
 
-#: kbookmarkmodel/commands.cpp:190
+#: kbookmarkmodel/commands.cpp:204
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "URL Change"
 msgstr "Promena URL‑a"
 
-#: kbookmarkmodel/commands.cpp:192
+#: kbookmarkmodel/commands.cpp:206
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Comment Change"
 msgstr "Promena komentara"
 
-#: kbookmarkmodel/commands.cpp:367
+#: kbookmarkmodel/commands.cpp:365
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move %1"
 msgstr "Premesti %1"
 
-#: kbookmarkmodel/commands.cpp:487
+#: kbookmarkmodel/commands.cpp:500
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Set as Bookmark Toolbar"
 msgstr "Postavi kao traku obeleživača"
 
-#: kbookmarkmodel/commands.cpp:522
+#: kbookmarkmodel/commands.cpp:532
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy Items"
 msgstr "Kopiraj stavke"
 
-#: kbookmarkmodel/commands.cpp:523
+#: kbookmarkmodel/commands.cpp:532
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move Items"
 msgstr "Premesti stavke"
 
-#: kbookmarkmodel/model.cpp:114
+#: kbookmarkmodel/model.cpp:122
 #, kde-format
 msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Obeleživači"
 
-#: kbookmarkmodel/model.cpp:218
+#: kbookmarkmodel/model.cpp:217
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
 msgstr "ime"
 
-#: kbookmarkmodel/model.cpp:222
+#: kbookmarkmodel/model.cpp:220
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
 msgstr "lokacija"
 
-#: kbookmarkmodel/model.cpp:226
+#: kbookmarkmodel/model.cpp:223
 #, kde-format
 msgctxt "@title:column comment for a bookmark"
 msgid "Comment"
 msgstr "komentar"
 
-#: kbookmarkmodel/model.cpp:230
+#: kbookmarkmodel/model.cpp:226
 #, kde-format
 msgctxt "@title:column status of a bookmark"
 msgid "Status"
 msgstr "stanje"
 
 # >> @title:menu
-#: kebsearchline.cpp:270
+#: kebsearchline.cpp:239
 #, kde-format
 msgid "Search Columns"
 msgstr "Pretraga kolona"
 
-#: kebsearchline.cpp:273
+#: kebsearchline.cpp:242
 #, kde-format
 msgid "All Visible Columns"
 msgstr "Sve vidljive kolone"
 
-#: kebsearchline.cpp:282
+#: kebsearchline.cpp:250
 #, kde-format
 msgctxt "Column number %1"
 msgid "Column No. %1"
 msgstr "Kolona br. %1"
 
-#: kebsearchline.cpp:676
+#: kebsearchline.cpp:615
 #, kde-format
 msgid "S&earch:"
 msgstr "&Traži:"
 
 # >> @title:menu
 #. i18n: ectx: Menu (file)
-#: keditbookmarks-genui.rc:6 keditbookmarksui.rc:6
+#: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
 #, kde-format
 msgid "&File"
 msgstr "&Fajl"
 
 # >> @title:menu
 #. i18n: ectx: Menu (edit)
-#: keditbookmarks-genui.rc:13 keditbookmarksui.rc:32
+#: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
 #, kde-format
 msgid "&Edit"
 msgstr "&Uređivanje"
 
 # >> @title:menu
 #. i18n: ectx: Menu (view)
-#: keditbookmarks-genui.rc:25 keditbookmarksui.rc:44
+#: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
 #, kde-format
 msgid "&View"
 msgstr "&Prikaz"
 
 # >> @title:menu
 #. i18n: ectx: Menu (folder)
-#: keditbookmarks-genui.rc:30 keditbookmarksui.rc:49
+#: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
 #, kde-format
 msgid "&Folder"
 msgstr "F&ascikla"
 
 # >> @title:menu
 #. i18n: ectx: Menu (bookmark)
-#: keditbookmarks-genui.rc:38 keditbookmarksui.rc:58
+#: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
 #, kde-format
 msgid "&Bookmark"
 msgstr "&Obeleživač"
 
 # >> @title:menu
 #. i18n: ectx: Menu (settings)
-#: keditbookmarks-genui.rc:42 keditbookmarksui.rc:74
+#: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
 #, kde-format
 msgid "&Settings"
 msgstr "P&odešavanje"
 
 # >> @title:menu
 #. i18n: ectx: ToolBar (mainToolBar)
-#: keditbookmarks-genui.rc:48 keditbookmarksui.rc:81
+#: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Glavna traka"
 
 # >> @title:menu
 #. i18n: ectx: Menu (import)
-#: keditbookmarksui.rc:10
+#: keditbookmarksui.rc:11
 #, kde-format
 msgid "&Import"
 msgstr "U&voz"
 
 # >> @title:menu
 #. i18n: ectx: Menu (export)
-#: keditbookmarksui.rc:20
+#: keditbookmarksui.rc:21
 #, kde-format
 msgid "&Export"
 msgstr "&Izvoz"
 
 # >> @title:menu
 #. i18n: ectx: Menu (tools)
-#: keditbookmarksui.rc:66
+#: keditbookmarksui.rc:67
 #, kde-format
 msgid "&Tools"
 msgstr "&Alatke"
 
 # rewrite-msgid: /of %1/of Bookmark Editor (%1)/
-#: main.cpp:67
+#: main.cpp:70
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -600,23 +600,23 @@ msgstr ""
 "nastavite u postojećem primerku?\n"
 "Imajte u vidu da su udvostručeni prikazi, na žalost, samo‑za‑čitanje."
 
-#: main.cpp:70
+#: main.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Upozorenje"
 
-#: main.cpp:71
+#: main.cpp:75
 #, kde-format
 msgid "Run Another"
 msgstr "Pokreni novi"
 
-#: main.cpp:72
+#: main.cpp:76
 #, kde-format
 msgid "Continue in Same"
 msgstr "Nastavi u istom"
 
-#: main.cpp:106
+#: main.cpp:105
 #, kde-format
 msgid "Bookmark Editor"
 msgstr ""
@@ -625,108 +625,109 @@ msgstr ""
 "           aku 'Uređivač obeleživača'\n"
 "]"
 
-#: main.cpp:108
+#: main.cpp:107
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Organizovanje i uređivanje obeleživača"
 
-#: main.cpp:110
-#, kde-format
-msgid "Copyright 2000-2017, KDE developers"
+#: main.cpp:109
+#, fuzzy, kde-format
+#| msgid "Copyright 2000-2017, KDE developers"
+msgid "Copyright 2000-2023, KDE developers"
 msgstr "© 2000–2017, programeri KDE‑a"
 
-#: main.cpp:111
+#: main.cpp:110
 #, kde-format
 msgid "David Faure"
 msgstr "David For"
 
-#: main.cpp:111
+#: main.cpp:110
 #, kde-format
 msgid "Initial author"
 msgstr "prvobitni autor"
 
-#: main.cpp:112
+#: main.cpp:111
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Aleksander Kelet"
 
-#: main.cpp:112
+#: main.cpp:111
 #, kde-format
 msgid "Author"
 msgstr "autor"
 
-#: main.cpp:123
+#: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Uvezi obeleživače iz fajla u Mozillinom formatu"
 
-#: main.cpp:124
+#: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Uvezi obeleživače iz fajla u Netscapeovom formatu (4.x i noviji)"
 
-#: main.cpp:125
+#: main.cpp:123
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Uvezi obeleživače iz fajla u formatu omiljenih Internet Explorera"
 
-#: main.cpp:126
+#: main.cpp:124
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Uvezi obeleživače iz fajla u Operinom formatu"
 
-#: main.cpp:127
+#: main.cpp:125
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Uvezi obeleživače iz fajla u formatu KDE‑a 2"
 
-#: main.cpp:128
+#: main.cpp:126
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Uvezi obeleživače iz fajla u Galijinom formatu"
 
-#: main.cpp:129
+#: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Izvezi obeleživače u fajl u Mozillinom formatu"
 
-#: main.cpp:130
+#: main.cpp:128
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Izvezi obeleživače u fajl u Netscapeovom formatu (4.x i noviji)"
 
-#: main.cpp:131
+#: main.cpp:129
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Izvezi obeleživače u fajl u HTML formatu za štampanje"
 
-#: main.cpp:132
+#: main.cpp:130
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Izvezi obeleživače u fajl u formatu omiljenih Internet Explorera"
 
-#: main.cpp:133
+#: main.cpp:131
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Izvezi obeleživače u fajl u Operinom formatu"
 
-#: main.cpp:134
+#: main.cpp:132
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Otvori na datom položaju u fajlu obeleživača"
 
 # rewrite-msgid: /caption/title/
-#: main.cpp:135
+#: main.cpp:133
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Naslov koji vidi korisnik, npr. „Konsole“"
 
-#: main.cpp:136
+#: main.cpp:134
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Sakrij sve funkcije u vezi sa pregledačem"
 
-#: main.cpp:137
+#: main.cpp:135
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -740,23 +741,23 @@ msgstr ""
 "„kfile“ za one u dijalogu za otvaranje, itd.\n"
 "Krajnja putanja D‑Bus objekta je /KBookmarkManager/<imeDbusObjekta>"
 
-#: main.cpp:140
+#: main.cpp:139
 #, kde-format
 msgid "File to edit"
 msgstr "Fajl za uređivanje"
 
-#: main.cpp:183
+#: main.cpp:227
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Možete zadati samo jednu opciju --export."
 
-#: main.cpp:190
+#: main.cpp:234
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Možete zadati samo jednu opciju --import."
 
 # >> @info:progress
-#: testlink.cpp:75
+#: testlink.cpp:73
 #, kde-format
 msgid "Checking..."
 msgstr "Proveravam..."

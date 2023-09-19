@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-18 00:48+0000\n"
+"POT-Creation-Date: 2023-09-19 01:56+0000\n"
 "PO-Revision-Date: 2008-10-04 23:44+0300\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian Latin <i18n@mova.org>\n"
@@ -30,210 +30,210 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ihar.hrachyshka@gmail.com"
 
-#: actionsimpl.cpp:98
+#: actionsimpl.cpp:94
 #, kde-format
 msgid "&Delete"
 msgstr "&Vydali"
 
-#: actionsimpl.cpp:104
+#: actionsimpl.cpp:100
 #, kde-format
 msgid "Rename"
 msgstr "Źmiani nazvu"
 
-#: actionsimpl.cpp:110
+#: actionsimpl.cpp:106
 #, fuzzy, kde-format
 #| msgid "C&hange URL"
 msgid "C&hange Location"
 msgstr "&Źmiani adras"
 
-#: actionsimpl.cpp:116
+#: actionsimpl.cpp:112
 #, kde-format
 msgid "C&hange Comment"
 msgstr "&Źmiani kamentar"
 
-#: actionsimpl.cpp:122
+#: actionsimpl.cpp:118
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "&Źmiani ikonu..."
 
-#: actionsimpl.cpp:126
+#: actionsimpl.cpp:122
 #, kde-format
 msgid "Update Favicon"
 msgstr "Aktualizuj ikonu sajta"
 
-#: actionsimpl.cpp:130
+#: actionsimpl.cpp:126
 #, kde-format
 msgid "Recursive Sort"
 msgstr "Rekursiŭny paradak"
 
-#: actionsimpl.cpp:135
+#: actionsimpl.cpp:131
 #, kde-format
 msgid "&New Folder..."
 msgstr "&Novy kataloh..."
 
-#: actionsimpl.cpp:141
+#: actionsimpl.cpp:137
 #, kde-format
 msgid "&New Bookmark"
 msgstr "&Novaja zakładka"
 
-#: actionsimpl.cpp:145
+#: actionsimpl.cpp:141
 #, kde-format
 msgid "&Insert Separator"
 msgstr "&Uklej dzielnik"
 
-#: actionsimpl.cpp:150
+#: actionsimpl.cpp:146
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "&Paradkuj pavodle alfabetu"
 
-#: actionsimpl.cpp:155
+#: actionsimpl.cpp:151
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "&Źmiaści ŭ paneli zakładak"
 
-#: actionsimpl.cpp:159
+#: actionsimpl.cpp:155
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "&Razharni ŭsie katalohi"
 
-#: actionsimpl.cpp:163
+#: actionsimpl.cpp:159
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "Zharni &ŭsie katalohi"
 
-#: actionsimpl.cpp:168
+#: actionsimpl.cpp:164
 #, fuzzy, kde-format
 #| msgid "&Open in Konqueror"
 msgid "&Open in Browser"
 msgstr "&Adčyni ŭ prahramie „Konqueror”"
 
-#: actionsimpl.cpp:173
+#: actionsimpl.cpp:169
 #, kde-format
 msgid "Check &Status"
 msgstr "Spraŭdź &stan"
 
-#: actionsimpl.cpp:177
+#: actionsimpl.cpp:173
 #, kde-format
 msgid "Check Status: &All"
 msgstr "Spraŭdź stan dla &ŭsich"
 
-#: actionsimpl.cpp:181
+#: actionsimpl.cpp:177
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "Aktualizuj usie &ikony sajtaŭ"
 
-#: actionsimpl.cpp:185
+#: actionsimpl.cpp:181
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "Anuluj &spraŭdžvańni"
 
-#: actionsimpl.cpp:189
+#: actionsimpl.cpp:185
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "Anuluj &aktualizacyju ikonaŭ sajtaŭ"
 
-#: actionsimpl.cpp:195
+#: actionsimpl.cpp:191
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "Zimpartuj zakładki „&Netscape”..."
 
-#: actionsimpl.cpp:201
+#: actionsimpl.cpp:197
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "Zimpartuj zakładki „&Opera”..."
 
-#: actionsimpl.cpp:211
+#: actionsimpl.cpp:207
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "Zimpartuj zakładki „&Galeon”..."
 
-#: actionsimpl.cpp:217
+#: actionsimpl.cpp:213
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "Zimpartuj zakładki „&KDE 2” ci „KDE 3”..."
 
-#: actionsimpl.cpp:223
+#: actionsimpl.cpp:219
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "Zimpartuj zakładki „&Internet Explorer”..."
 
-#: actionsimpl.cpp:229
+#: actionsimpl.cpp:225
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "Zimpartuj zakładki „&Mozilla”..."
 
-#: actionsimpl.cpp:234
+#: actionsimpl.cpp:230
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "Zekspartuj zakładki „&Netscape”"
 
-#: actionsimpl.cpp:239
+#: actionsimpl.cpp:235
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "Zekspartuj zakładki „&Opera”..."
 
-#: actionsimpl.cpp:244
+#: actionsimpl.cpp:240
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "Zekspartuj zakładki „&HTML”..."
 
-#: actionsimpl.cpp:248
+#: actionsimpl.cpp:244
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "Zekspartuj zakładki „&Internet Explorer”..."
 
-#: actionsimpl.cpp:253
+#: actionsimpl.cpp:249
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "Zekspartuj zakładki „&Mozilla”..."
 
-#: actionsimpl.cpp:298
+#: actionsimpl.cpp:294
 #, fuzzy, kde-format
 #| msgid "*.html|HTML Bookmark Listing"
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "*.html|Śpis zakładak u farmacie „HTML”"
 
-#: actionsimpl.cpp:343
+#: actionsimpl.cpp:339
 #, fuzzy, kde-format
 #| msgid "Cut Items"
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "Vytni elementy"
 
-#: actionsimpl.cpp:368
+#: actionsimpl.cpp:364
 #, fuzzy, kde-format
 #| msgid "Paste"
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "Uklej"
 
-#: actionsimpl.cpp:379
+#: actionsimpl.cpp:375
 #, kde-format
 msgid "New folder:"
 msgstr "Novy kataloh:"
 
-#: actionsimpl.cpp:379
+#: actionsimpl.cpp:375
 #, fuzzy, kde-format
 #| msgid "Create New Bookmark Folder"
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Stvary novy kataloh dla zakładak"
 
-#: actionsimpl.cpp:526
+#: actionsimpl.cpp:522
 #, fuzzy, kde-format
 #| msgid "Recursive Sort"
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "Rekursiŭny paradak"
 
-#: actionsimpl.cpp:541
+#: actionsimpl.cpp:537
 #, fuzzy, kde-format
 #| msgid "Sort Alphabetically"
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "Paradkuj pavodle alfabetu"
 
-#: actionsimpl.cpp:550
+#: actionsimpl.cpp:546
 #, fuzzy, kde-format
 #| msgid "Delete Items"
 msgctxt "(qtundo-format)"
@@ -270,7 +270,7 @@ msgstr "Apošni prahlad:"
 msgid "Times visited:"
 msgstr "Kolkaść naviedvańniaŭ:"
 
-#: exporters.cpp:51
+#: exporters.cpp:48
 #, kde-format
 msgid "My Bookmarks"
 msgstr "Maje zakładki"
@@ -285,7 +285,7 @@ msgstr "Ok"
 msgid "Updating favicon..."
 msgstr "Aktualizacyja ikony sajta..."
 
-#: faviconupdater.cpp:80
+#: faviconupdater.cpp:76
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr ""
@@ -302,35 +302,35 @@ msgstr "Zimpartuj zakładki „%1”"
 msgid "%1 Bookmarks"
 msgstr "Zakładki „%1”"
 
-#: importers.cpp:103
+#: importers.cpp:99
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "Zimpartavać jak novy padkataloh albo zamianić usie dziejnyja zakładki?"
 
-#: importers.cpp:104
+#: importers.cpp:100
 #, fuzzy, kde-format
 #| msgid "%1 Import"
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "Impartavańnie „%1”"
 
-#: importers.cpp:105
+#: importers.cpp:101
 #, kde-format
 msgid "As New Folder"
 msgstr "Jak novy kataloh"
 
-#: importers.cpp:106
+#: importers.cpp:102
 #, kde-format
 msgid "Replace"
 msgstr "Zamiani"
 
-#: importers.cpp:220
+#: importers.cpp:212
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "*.xbel|Fajły zakładak „Galeon” (*.xbel)"
 
-#: importers.cpp:228
+#: importers.cpp:220
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"
@@ -597,7 +597,7 @@ msgstr "&Zekspartuj"
 msgid "&Tools"
 msgstr "&Pryładździe"
 
-#: main.cpp:79
+#: main.cpp:70
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -608,135 +608,135 @@ msgstr ""
 "kopiju albo praciahvać pracavać u toj samaj kopii?\n"
 "Nažal, paŭtornyja kopii dastupnyja tolki dla čytańnia."
 
-#: main.cpp:83
+#: main.cpp:74
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Uvaha"
 
-#: main.cpp:84
+#: main.cpp:75
 #, kde-format
 msgid "Run Another"
 msgstr "Uklučy inšuju kopiju"
 
-#: main.cpp:85
+#: main.cpp:76
 #, kde-format
 msgid "Continue in Same"
 msgstr "Praciahvaj u toj samaj kopii"
 
-#: main.cpp:137
+#: main.cpp:105
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Redaktar zakładak"
 
-#: main.cpp:139
+#: main.cpp:107
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Kiraŭnik i redaktar zakładak"
 
-#: main.cpp:141
+#: main.cpp:109
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "Copyright © 2000-2007, Raspracoŭniki KDE"
 
-#: main.cpp:142
+#: main.cpp:110
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:142
+#: main.cpp:110
 #, kde-format
 msgid "Initial author"
 msgstr "Pieršy aŭtar"
 
-#: main.cpp:143
+#: main.cpp:111
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:143
+#: main.cpp:111
 #, kde-format
 msgid "Author"
 msgstr "Aŭtar"
 
-#: main.cpp:153
+#: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Zimpartuj zakładki z fajła ŭ farmacie „Mozilla”"
 
-#: main.cpp:154
+#: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Zimpartuj zakładki z fajła ŭ farmacie „Netscape” (4.x ci raniejšaj versii)"
 
-#: main.cpp:155
+#: main.cpp:123
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Zimpartuj zakładki z fajła ŭ farmacie „Internet Explorer”"
 
-#: main.cpp:156
+#: main.cpp:124
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Zimpartuj zakładki z fajła ŭ farmacie „Opera”"
 
-#: main.cpp:157
+#: main.cpp:125
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Zimpartuj zakładki z fajła ŭ farmacie „Opera”"
 
-#: main.cpp:158
+#: main.cpp:126
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Zimpartuj zakładki z fajła ŭ farmacie „Opera”"
 
-#: main.cpp:159
+#: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Zekspartuj zakładki ŭ fajł u farmacie „Mozilla”"
 
-#: main.cpp:160
+#: main.cpp:128
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Zekspartuj zakładki ŭ fajł u farmacie „Netscape” (4.x ci raniejšaj versii)"
 
-#: main.cpp:161
+#: main.cpp:129
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr ""
 "Zekspartuj zakładki ŭ fajł u farmacie „HTML”, padrychtavanym dla vydruku"
 
-#: main.cpp:162
+#: main.cpp:130
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Zekspartuj zakładki ŭ fajł u farmacie „Internet Explorer”"
 
-#: main.cpp:163
+#: main.cpp:131
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Zekspartuj zakładki ŭ fajł u farmacie „Opera”"
 
-#: main.cpp:164
+#: main.cpp:132
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Adčyni ŭ peŭnym miescy fajła z zakładkami"
 
-#: main.cpp:165
+#: main.cpp:133
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Aznač podpis, naprykład, „Konsole”"
 
-#: main.cpp:166
+#: main.cpp:134
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Schavaj usie aperacyi, źviazanyja z hartańniem sieciva"
 
-#: main.cpp:167
+#: main.cpp:135
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -757,17 +757,17 @@ msgstr ""
 "dyjalohavych voknaŭ „KFileDialog” itp.\n"
 "Kančatkovaja ściežka abjekta „D-Bus”: /KBookmarkManager/dbusObjectName"
 
-#: main.cpp:171
+#: main.cpp:139
 #, kde-format
 msgid "File to edit"
 msgstr "Fajł dla redahavańnia"
 
-#: main.cpp:259
+#: main.cpp:227
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Možna padać tolki adnu opcyju „--export”."
 
-#: main.cpp:266
+#: main.cpp:234
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Možna padać tolki adnu opcyju „--import”."

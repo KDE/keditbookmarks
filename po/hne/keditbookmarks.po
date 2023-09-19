@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-18 00:48+0000\n"
+"POT-Creation-Date: 2023-09-19 01:56+0000\n"
 "PO-Revision-Date: 2009-02-09 16:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -29,210 +29,210 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in,"
 
-#: actionsimpl.cpp:98
+#: actionsimpl.cpp:94
 #, kde-format
 msgid "&Delete"
 msgstr "मेटाव (&D)"
 
-#: actionsimpl.cpp:104
+#: actionsimpl.cpp:100
 #, kde-format
 msgid "Rename"
 msgstr "नाम बदलव"
 
-#: actionsimpl.cpp:110
+#: actionsimpl.cpp:106
 #, fuzzy, kde-format
 #| msgid "C&hange URL"
 msgid "C&hange Location"
 msgstr "यूआरएल बदलव (&h)"
 
-#: actionsimpl.cpp:116
+#: actionsimpl.cpp:112
 #, kde-format
 msgid "C&hange Comment"
 msgstr "टिप्पनी बदलव (&h)"
 
-#: actionsimpl.cpp:122
+#: actionsimpl.cpp:118
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "चिनहा बदलव...(&g)"
 
-#: actionsimpl.cpp:126
+#: actionsimpl.cpp:122
 #, kde-format
 msgid "Update Favicon"
 msgstr "फेविकान अपडेट करव"
 
-#: actionsimpl.cpp:130
+#: actionsimpl.cpp:126
 #, kde-format
 msgid "Recursive Sort"
 msgstr "रिकर्सिव जमाव"
 
-#: actionsimpl.cpp:135
+#: actionsimpl.cpp:131
 #, kde-format
 msgid "&New Folder..."
 msgstr "नवा फोल्डर...(&N)"
 
-#: actionsimpl.cpp:141
+#: actionsimpl.cpp:137
 #, kde-format
 msgid "&New Bookmark"
 msgstr "नवा निसानी (&N)"
 
-#: actionsimpl.cpp:145
+#: actionsimpl.cpp:141
 #, kde-format
 msgid "&Insert Separator"
 msgstr "अलगइया सामिल करव (&I)"
 
-#: actionsimpl.cpp:150
+#: actionsimpl.cpp:146
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "वर्नमाला मं जमाव (&S)"
 
-#: actionsimpl.cpp:155
+#: actionsimpl.cpp:151
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "औजार पट्टी के जइसन सेट करव (&o)"
 
-#: actionsimpl.cpp:159
+#: actionsimpl.cpp:155
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "सब्बो फोल्डर फैलाव (&E)"
 
-#: actionsimpl.cpp:163
+#: actionsimpl.cpp:159
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "सब्बो फोल्डर कोलेप्स करव (&A)"
 
-#: actionsimpl.cpp:168
+#: actionsimpl.cpp:164
 #, fuzzy, kde-format
 #| msgid "&Open in Konqueror"
 msgid "&Open in Browser"
 msgstr "कान्करर मं खोलव (&O)"
 
-#: actionsimpl.cpp:173
+#: actionsimpl.cpp:169
 #, kde-format
 msgid "Check &Status"
 msgstr "स्थिति जांचव(&S)"
 
-#: actionsimpl.cpp:177
+#: actionsimpl.cpp:173
 #, kde-format
 msgid "Check Status: &All"
 msgstr "स्थिति जांचः सब्बो (&A)"
 
-#: actionsimpl.cpp:181
+#: actionsimpl.cpp:177
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "सब्बो फेविकान अपडेट करव (&F)"
 
-#: actionsimpl.cpp:185
+#: actionsimpl.cpp:181
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "जांच खारिज (&C)"
 
-#: actionsimpl.cpp:189
+#: actionsimpl.cpp:185
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "फेविकान अपडेटखारिज करव (&F)"
 
-#: actionsimpl.cpp:195
+#: actionsimpl.cpp:191
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "नेटस्केप निसानी आयात करव....(&N)"
 
-#: actionsimpl.cpp:201
+#: actionsimpl.cpp:197
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "ओपेरा निसानी आयात करव....(&O)"
 
-#: actionsimpl.cpp:211
+#: actionsimpl.cpp:207
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "गेलियन निसानी आयात करव....(&G)"
 
-#: actionsimpl.cpp:217
+#: actionsimpl.cpp:213
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "केडीई २ या केडीई ३ निसानी आयात करव...(&K)"
 
-#: actionsimpl.cpp:223
+#: actionsimpl.cpp:219
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "इंटरनेट एक्सप्लोरर निसानी आयात करव...(&I)"
 
-#: actionsimpl.cpp:229
+#: actionsimpl.cpp:225
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "मोजिला निसानी आयात करव....(&M)"
 
-#: actionsimpl.cpp:234
+#: actionsimpl.cpp:230
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "नेटस्केप निसानी निर्यात करव (&N)"
 
-#: actionsimpl.cpp:239
+#: actionsimpl.cpp:235
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "ओपेरा निसानी निर्यात करव...(&O)"
 
-#: actionsimpl.cpp:244
+#: actionsimpl.cpp:240
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "एचटीएमएल निसानी निर्यात करव ...(&H)"
 
-#: actionsimpl.cpp:248
+#: actionsimpl.cpp:244
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "इंटरनेट एक्सप्लोरर निसानी निर्यात करव...(&I)"
 
-#: actionsimpl.cpp:253
+#: actionsimpl.cpp:249
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "मोजिला निसानी निर्यात करव...(&M)"
 
-#: actionsimpl.cpp:298
+#: actionsimpl.cpp:294
 #, fuzzy, kde-format
 #| msgid "*.html|HTML Bookmark Listing"
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "*.html|एचटीएमएल निसानी सूचीकरन"
 
-#: actionsimpl.cpp:343
+#: actionsimpl.cpp:339
 #, fuzzy, kde-format
 #| msgid "Cut Items"
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "चीज काटव"
 
-#: actionsimpl.cpp:368
+#: actionsimpl.cpp:364
 #, fuzzy, kde-format
 #| msgid "Paste"
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "चिपकाव"
 
-#: actionsimpl.cpp:379
+#: actionsimpl.cpp:375
 #, kde-format
 msgid "New folder:"
 msgstr "नवा फोल्डर: "
 
-#: actionsimpl.cpp:379
+#: actionsimpl.cpp:375
 #, fuzzy, kde-format
 #| msgid "Create New Bookmark Folder"
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "नवा निसानी फोल्डर बनाव"
 
-#: actionsimpl.cpp:526
+#: actionsimpl.cpp:522
 #, fuzzy, kde-format
 #| msgid "Recursive Sort"
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "रिकर्सिव जमाव"
 
-#: actionsimpl.cpp:541
+#: actionsimpl.cpp:537
 #, fuzzy, kde-format
 #| msgid "Sort Alphabetically"
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "वर्नमाला मं जमाव"
 
-#: actionsimpl.cpp:550
+#: actionsimpl.cpp:546
 #, fuzzy, kde-format
 #| msgid "Delete Items"
 msgctxt "(qtundo-format)"
@@ -269,7 +269,7 @@ msgstr "आखरी बार देखे गिसः"
 msgid "Times visited:"
 msgstr "एतका बार देखे गिसः"
 
-#: exporters.cpp:51
+#: exporters.cpp:48
 #, kde-format
 msgid "My Bookmarks"
 msgstr "मोर निसानी"
@@ -284,7 +284,7 @@ msgstr "ठीक"
 msgid "Updating favicon..."
 msgstr "फेविकान अपडेट करत हे..."
 
-#: faviconupdater.cpp:80
+#: faviconupdater.cpp:76
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr ""
@@ -301,35 +301,35 @@ msgstr "निसानी  %1 आयात करव"
 msgid "%1 Bookmarks"
 msgstr "%1  निसानी "
 
-#: importers.cpp:103
+#: importers.cpp:99
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "एक नवा सब फोल्डर के जइसन आयात करव या अभी हाल के सब्बो पसंद ल बदलव?"
 
-#: importers.cpp:104
+#: importers.cpp:100
 #, fuzzy, kde-format
 #| msgid "%1 Import"
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 आयात"
 
-#: importers.cpp:105
+#: importers.cpp:101
 #, kde-format
 msgid "As New Folder"
 msgstr "नवा फोल्डर जइसन"
 
-#: importers.cpp:106
+#: importers.cpp:102
 #, kde-format
 msgid "Replace"
 msgstr "बदलव"
 
-#: importers.cpp:220
+#: importers.cpp:212
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "*.xbel|गेलियन निसानी फाइल मन ल (*.xbel)"
 
-#: importers.cpp:228
+#: importers.cpp:220
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"
@@ -595,7 +595,7 @@ msgstr "निर्यात (&E)"
 msgid "&Tools"
 msgstr "औजार (&T)"
 
-#: main.cpp:79
+#: main.cpp:70
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -606,132 +606,132 @@ msgstr ""
 "इंसटैंस मं काम करना चाहथो?\n"
 "किरपा करके, नोट करव कि दुर्भाग से अनुकृति दृस्य सिरिफ पढ़े जा सकथे."
 
-#: main.cpp:83
+#: main.cpp:74
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "चेतावनी"
 
-#: main.cpp:84
+#: main.cpp:75
 #, kde-format
 msgid "Run Another"
 msgstr "एक अउ चलाव"
 
-#: main.cpp:85
+#: main.cpp:76
 #, kde-format
 msgid "Continue in Same"
 msgstr "ओही मं जारी रखव "
 
-#: main.cpp:137
+#: main.cpp:105
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "निसानी संपादक "
 
-#: main.cpp:139
+#: main.cpp:107
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "निसानी आर्गेनाइजर अउ संपादक"
 
-#: main.cpp:141
+#: main.cpp:109
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "कापीराइट 2000-2007, केडीई बनइया मन"
 
-#: main.cpp:142
+#: main.cpp:110
 #, kde-format
 msgid "David Faure"
 msgstr "डेविड फाउरे"
 
-#: main.cpp:142
+#: main.cpp:110
 #, kde-format
 msgid "Initial author"
 msgstr "सुरू के लेखक"
 
-#: main.cpp:143
+#: main.cpp:111
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "अलेक्जेंडर केलेट"
 
-#: main.cpp:143
+#: main.cpp:111
 #, kde-format
 msgid "Author"
 msgstr "लेखक"
 
-#: main.cpp:153
+#: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "फाइल से पसंद ल मोजिला फार्मेट मं आयात करव"
 
-#: main.cpp:154
+#: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "फाइल से पसंद ल नेटस्केप (4.x या पहिली का) फार्मेट मं आयात करव"
 
-#: main.cpp:155
+#: main.cpp:123
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "फाइल से पसंद ल इंटरनेट एक्सप्लोरर पसंद फार्मेट मं आयात करव"
 
-#: main.cpp:156
+#: main.cpp:124
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "फाइल से पसंद ल ओपेरा फार्मेट मं आयात करव"
 
-#: main.cpp:157
+#: main.cpp:125
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "फाइल से पसंद ल ओपेरा फार्मेट मं आयात करव"
 
-#: main.cpp:158
+#: main.cpp:126
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "फाइल से पसंद ल ओपेरा फार्मेट मं आयात करव"
 
-#: main.cpp:159
+#: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "पसंद ल मोजिला फार्मेट मं एक फाइल मं निर्यात करव"
 
-#: main.cpp:160
+#: main.cpp:128
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "पसंद ल नेटस्केप (4.x या पहिली का) फार्मेट मं एक फाइल मं निर्यात करव"
 
-#: main.cpp:161
+#: main.cpp:129
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "पसंद ल छपाई जइसन एचटीएमएल फार्मेट मं एक फाइल मं निर्यात करव"
 
-#: main.cpp:162
+#: main.cpp:130
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "पसंद ल इंटरनेट एक्सप्लोरर पसंद फार्मेट मं एक फाइल मं निर्यात करव"
 
-#: main.cpp:163
+#: main.cpp:131
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "पसंद ल ओपेरा फार्मेट मं एक फाइल मं निर्यात करव"
 
-#: main.cpp:164
+#: main.cpp:132
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "पसंद फाइल मं दे गे स्थिति मं खोलव "
 
-#: main.cpp:165
+#: main.cpp:133
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "कमइया के पढ़े जइसन केप्सन सेट करव, जइसन कि  \"कंसोल\""
 
-#: main.cpp:166
+#: main.cpp:134
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "सब्बो ब्राउजर सम्बन्धी फंक्सन लुकाव"
 
-#: main.cpp:167
+#: main.cpp:135
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -741,17 +741,17 @@ msgid ""
 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
 msgstr ""
 
-#: main.cpp:171
+#: main.cpp:139
 #, kde-format
 msgid "File to edit"
 msgstr "संपादन बर फाइल"
 
-#: main.cpp:259
+#: main.cpp:227
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "आप सिरिफ एके निरधारित कर सकथो --export  विकल्प."
 
-#: main.cpp:266
+#: main.cpp:234
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "आप सिरिफ एके निरधारित कर सकथो --import विकल्प."

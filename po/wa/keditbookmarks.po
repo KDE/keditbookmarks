@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-18 00:48+0000\n"
+"POT-Creation-Date: 2023-09-19 01:56+0000\n"
 "PO-Revision-Date: 2012-12-21 23:10+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -27,204 +27,204 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "jean.cayron@gmail.com"
 
-#: actionsimpl.cpp:98
+#: actionsimpl.cpp:94
 #, kde-format
 msgid "&Delete"
 msgstr "&Disfacer"
 
-#: actionsimpl.cpp:104
+#: actionsimpl.cpp:100
 #, kde-format
 msgid "Rename"
 msgstr "Rilomer"
 
-#: actionsimpl.cpp:110
+#: actionsimpl.cpp:106
 #, kde-format
 msgid "C&hange Location"
 msgstr "Can&djî d' eplaeçmint"
 
-#: actionsimpl.cpp:116
+#: actionsimpl.cpp:112
 #, kde-format
 msgid "C&hange Comment"
 msgstr "Can&djî d' rawete"
 
-#: actionsimpl.cpp:122
+#: actionsimpl.cpp:118
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "Cand&jî d' imådjete..."
 
-#: actionsimpl.cpp:126
+#: actionsimpl.cpp:122
 #, kde-format
 msgid "Update Favicon"
 msgstr "Mete a djoû favicon"
 
-#: actionsimpl.cpp:130
+#: actionsimpl.cpp:126
 #, kde-format
 msgid "Recursive Sort"
 msgstr "Relijhaedje recursif"
 
-#: actionsimpl.cpp:135
+#: actionsimpl.cpp:131
 #, kde-format
 msgid "&New Folder..."
 msgstr "&Novea ridant..."
 
-#: actionsimpl.cpp:141
+#: actionsimpl.cpp:137
 #, kde-format
 msgid "&New Bookmark"
 msgstr "&Novele rimarke"
 
-#: actionsimpl.cpp:145
+#: actionsimpl.cpp:141
 #, kde-format
 msgid "&Insert Separator"
 msgstr "&Intrer separateu"
 
-#: actionsimpl.cpp:150
+#: actionsimpl.cpp:146
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "&Relére alfabeticmint"
 
-#: actionsimpl.cpp:155
+#: actionsimpl.cpp:151
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "Defini c&ome ridant del båre ås usteyes"
 
-#: actionsimpl.cpp:159
+#: actionsimpl.cpp:155
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "Mostr&er tos les ridants"
 
-#: actionsimpl.cpp:163
+#: actionsimpl.cpp:159
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "C&atchî tos les ridants"
 
-#: actionsimpl.cpp:168
+#: actionsimpl.cpp:164
 #, fuzzy, kde-format
 #| msgid "&Open in Konqueror"
 msgid "&Open in Browser"
 msgstr "Dr&ovi dins Konqueror"
 
-#: actionsimpl.cpp:173
+#: actionsimpl.cpp:169
 #, kde-format
 msgid "Check &Status"
 msgstr "Waitî l' e&stat"
 
-#: actionsimpl.cpp:177
+#: actionsimpl.cpp:173
 #, kde-format
 msgid "Check Status: &All"
 msgstr "Waitî l' estat: tot&afwait"
 
-#: actionsimpl.cpp:181
+#: actionsimpl.cpp:177
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "Mete a djoû totes les &favicons"
 
-#: actionsimpl.cpp:185
+#: actionsimpl.cpp:181
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "Rinon&cî å verifiaedje"
 
-#: actionsimpl.cpp:189
+#: actionsimpl.cpp:185
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "Rinoncî ås metaedjes a djoû des &favicons"
 
-#: actionsimpl.cpp:195
+#: actionsimpl.cpp:191
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "Abaguer rimarkes di &Netscsape..."
 
-#: actionsimpl.cpp:201
+#: actionsimpl.cpp:197
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "Abaguer rimarkes d' &Opera..."
 
-#: actionsimpl.cpp:211
+#: actionsimpl.cpp:207
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "Abaguer rimarkes di &Galeon..."
 
-#: actionsimpl.cpp:217
+#: actionsimpl.cpp:213
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "Abaguer rimarkes di &KDE 2 ou KDE 3..."
 
-#: actionsimpl.cpp:223
+#: actionsimpl.cpp:219
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "Abaguer rimarkes d' &Internet Explorer..."
 
-#: actionsimpl.cpp:229
+#: actionsimpl.cpp:225
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "Abaguer rimarkes di &Mozilla..."
 
-#: actionsimpl.cpp:234
+#: actionsimpl.cpp:230
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "Ebaguer rimarkes po &Netscape..."
 
-#: actionsimpl.cpp:239
+#: actionsimpl.cpp:235
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "Ebaguer rimarkes po &Opera..."
 
-#: actionsimpl.cpp:244
+#: actionsimpl.cpp:240
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "Ebaguer rimarkes &HTML..."
 
-#: actionsimpl.cpp:248
+#: actionsimpl.cpp:244
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "Ebaguer rimarkes po &Internet Explorer..."
 
-#: actionsimpl.cpp:253
+#: actionsimpl.cpp:249
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "Ebaguer rimarkes po &Mozilla..."
 
-#: actionsimpl.cpp:298
+#: actionsimpl.cpp:294
 #, fuzzy, kde-format
 #| msgid "*.html|HTML Bookmark Listing"
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "*.html|Djivêye di rmarkes HTML"
 
-#: actionsimpl.cpp:343
+#: actionsimpl.cpp:339
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "Côper cayets"
 
-#: actionsimpl.cpp:368
+#: actionsimpl.cpp:364
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "Aclaper"
 
-#: actionsimpl.cpp:379
+#: actionsimpl.cpp:375
 #, kde-format
 msgid "New folder:"
 msgstr "Novea ridant:"
 
-#: actionsimpl.cpp:379
+#: actionsimpl.cpp:375
 #, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Ahiver novea ridant d' rimarkes"
 
-#: actionsimpl.cpp:526
+#: actionsimpl.cpp:522
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "Relijhaedje recursif"
 
-#: actionsimpl.cpp:541
+#: actionsimpl.cpp:537
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "Relére alfabeticmint"
 
-#: actionsimpl.cpp:550
+#: actionsimpl.cpp:546
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Delete Items"
@@ -260,7 +260,7 @@ msgstr "Dierin côp veyou :"
 msgid "Times visited:"
 msgstr "Côps vizités :"
 
-#: exporters.cpp:51
+#: exporters.cpp:48
 #, kde-format
 msgid "My Bookmarks"
 msgstr "Mes rimarkes"
@@ -275,7 +275,7 @@ msgstr "I va"
 msgid "Updating favicon..."
 msgstr "Dji met a djoû l' favicon..."
 
-#: faviconupdater.cpp:80
+#: faviconupdater.cpp:76
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1 ; nou componint HTML di trové (%2)"
@@ -291,36 +291,36 @@ msgstr "Abaguer %1 rimarkes"
 msgid "%1 Bookmarks"
 msgstr "%1 rimarkes"
 
-#: importers.cpp:103
+#: importers.cpp:99
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 "Voloz abaguer come on novea ridant oudonbén mete al plaece di totes les "
 "rimarkes do moumint ?"
 
-#: importers.cpp:104
+#: importers.cpp:100
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "Abagaedje di %1"
 
-#: importers.cpp:105
+#: importers.cpp:101
 #, kde-format
 msgid "As New Folder"
 msgstr "Come novea ridant"
 
-#: importers.cpp:106
+#: importers.cpp:102
 #, kde-format
 msgid "Replace"
 msgstr "Mete al plaece"
 
-#: importers.cpp:220
+#: importers.cpp:212
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "*.xbel|Fitchîs rimarkes di Galeon (*.xbel)"
 
-#: importers.cpp:228
+#: importers.cpp:220
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"
@@ -571,7 +571,7 @@ msgstr "&Ebaguer"
 msgid "&Tools"
 msgstr "&Usteyes"
 
-#: main.cpp:79
+#: main.cpp:70
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -582,133 +582,133 @@ msgstr ""
 "instance oudonbén continouwer a ovrer avou l' minme instance?\n"
 "Notez ki, målureuzmint, les vuwes e dobe ni sont ki lére-seulmint."
 
-#: main.cpp:83
+#: main.cpp:74
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Adviertixhmint"
 
-#: main.cpp:84
+#: main.cpp:75
 #, kde-format
 msgid "Run Another"
 msgstr "Enonder ene ôte"
 
-#: main.cpp:85
+#: main.cpp:76
 #, kde-format
 msgid "Continue in Same"
 msgstr "Continouwer avou l' minme"
 
-#: main.cpp:137
+#: main.cpp:105
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Aspougneu d' rimarke"
 
-#: main.cpp:139
+#: main.cpp:107
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Organizeu eyet aspougneu d' rimarke"
 
-#: main.cpp:141
+#: main.cpp:109
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "Copyright 2000-2007, programeus di KDE"
 
-#: main.cpp:142
+#: main.cpp:110
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:142
+#: main.cpp:110
 #, kde-format
 msgid "Initial author"
 msgstr "Prumî oteur"
 
-#: main.cpp:143
+#: main.cpp:111
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:143
+#: main.cpp:111
 #, kde-format
 msgid "Author"
 msgstr "Oteur"
 
-#: main.cpp:153
+#: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Abaguer rimarkes a pårti d' on fitchî el cogne di Mozilla"
 
-#: main.cpp:154
+#: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Abaguer rimarkes a pårti d' on fitchî el cogne di Netscape (4.x et pus vî)"
 
-#: main.cpp:155
+#: main.cpp:123
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Abaguer rimarkes a pårti d' on fitchî el cogne des Favoris d' Internet "
 "Explorer"
 
-#: main.cpp:156
+#: main.cpp:124
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Abaguer rimarkes a pårti d' on fitchî el cogne d' Opera"
 
-#: main.cpp:157
+#: main.cpp:125
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Abaguer rimarkes a pårti d' on fitchî el cogne di KDE2"
 
-#: main.cpp:158
+#: main.cpp:126
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Abaguer rimarkes a pårti d' on fitchî el cogne di Galeon"
 
-#: main.cpp:159
+#: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Ebaguer rimarkes viè on fitchî el cogne di Mozilla"
 
-#: main.cpp:160
+#: main.cpp:128
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Ebaguer rimarkes viè on fitchî el cogne di Netscape (4.x et pus vî)"
 
-#: main.cpp:161
+#: main.cpp:129
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Ebaguer rimarkes viè on fitchî en ene cogne HTML k' on pout imprimer"
 
-#: main.cpp:162
+#: main.cpp:130
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "Ebaguer rimarkes viè on fitchî el cogne des Favoris d' Internet Explorer"
 
-#: main.cpp:163
+#: main.cpp:131
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Ebaguer rimarkes viè on fitchî el cogne d' Opera"
 
-#: main.cpp:164
+#: main.cpp:132
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Drovi a l' eplaeçmint dné e fitchî des rmarkes"
 
-#: main.cpp:165
+#: main.cpp:133
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Defini l' tecse lijhåve pa l' uzeu, metans « Konsole »"
 
-#: main.cpp:166
+#: main.cpp:134
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Catchî totes les fonccions raloyeyes å betchteu"
 
-#: main.cpp:167
+#: main.cpp:135
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -729,17 +729,17 @@ msgstr ""
 "rmarkes di KDvizeFitchî, evnd.\n"
 "Li finå tchmin di l' objet D-Bus est /KBookmarkManager/dbusObjectName"
 
-#: main.cpp:171
+#: main.cpp:139
 #, kde-format
 msgid "File to edit"
 msgstr "Fitchî a candjî"
 
-#: main.cpp:259
+#: main.cpp:227
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Vos n' duvrîz specifyî k' ene seule tchuze --export."
 
-#: main.cpp:266
+#: main.cpp:234
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Vos n' duvrîz specifyî k' ene seule tchuze --import."
