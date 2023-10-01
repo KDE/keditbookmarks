@@ -743,4 +743,4 @@ msgstr "Só pode especificar unha única opción --import."
 #: testlink.cpp:73
 #, kde-format
 msgid "Checking..."
-msgstr "Estase a comprobar…"
+msgstr "Comprobando…"
