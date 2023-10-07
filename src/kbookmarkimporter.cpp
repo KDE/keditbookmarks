@@ -19,11 +19,9 @@
 void KXBELBookmarkImporterImpl::parse()
 {
     // qCDebug(KBOOKMARKS_LOG) << "KXBELBookmarkImporterImpl::parse()";
-    KBookmarkManager *manager = KBookmarkManager::managerForFile(m_fileName);
-    KBookmarkGroup root = manager->root();
+    KBookmarkManager manager(m_fileName);
+    KBookmarkGroup root = manager.root();
     traverse(root);
-    // FIXME delete it!
-    // delete manager;
 }
 
 void KXBELBookmarkImporterImpl::visit(const KBookmark &bk)

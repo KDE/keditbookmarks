@@ -70,18 +70,13 @@ QString GlobalBookmarkManager::path() const
 
 void GlobalBookmarkManager::createManager(const QString &filename, const QString &dbusObjectName, CommandHistory *commandHistory)
 {
-    if (m_mgr) {
-        // qCDebug(KEDITBOOKMARKS_LOG)<<"createManager called twice";
-        delete m_mgr;
-    }
-
     // qCDebug(KEDITBOOKMARKS_LOG)<<"DBus Object name: "<<dbusObjectName;
     Q_UNUSED(dbusObjectName);
-    m_mgr = KBookmarkManager::managerForFile(filename);
+    m_mgr = std::make_unique<KBookmarkManager>(filename);
 
-    connect(m_mgr, &KBookmarkManager::error, this, &GlobalBookmarkManager::error);
+    connect(m_mgr.get(), &KBookmarkManager::error, this, &GlobalBookmarkManager::error);
 
-    commandHistory->setBookmarkManager(m_mgr);
+    commandHistory->setBookmarkManager(m_mgr.get());
 
     if (m_model) {
         m_model->setRoot(root());

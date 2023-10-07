@@ -50,7 +50,7 @@ public:
     }
     KBookmarkManager *mgr() const
     {
-        return m_mgr;
+        return m_mgr.get();
     }
     QString path() const;
 
@@ -73,7 +73,7 @@ Q_SIGNALS:
 
 private:
     GlobalBookmarkManager();
-    KBookmarkManager *m_mgr;
+    std::unique_ptr<KBookmarkManager> m_mgr;
     KBookmarkModel *m_model;
     static GlobalBookmarkManager *s_mgr;
 };

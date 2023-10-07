@@ -67,10 +67,10 @@ int main(int argc, char **argv)
     }
 
     const QString bookmarksFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
-    KBookmarkManager *konqBookmarks = KBookmarkManager::managerForFile(bookmarksFile);
+    KBookmarkManager konqBookmarks(bookmarksFile);
     QStringList mergedFiles;
     {
-        KBookmarkGroup root = konqBookmarks->root();
+        KBookmarkGroup root = konqBookmarks.root();
         for (KBookmark bm = root.first(); !bm.isNull(); bm = root.next(bm)) {
             if (bm.isGroup()) {
                 continue;
@@ -99,20 +99,20 @@ int main(int argc, char **argv)
         }
 
         const QString absPath = extraBookmarksDir.filePath(fileName);
-        KBookmarkManager *mgr = KBookmarkManager::managerForFile(absPath);
-        KBookmarkGroup root = mgr->root();
+        KBookmarkManager mgr(absPath);
+        KBookmarkGroup root = mgr.root();
         for (KBookmark bm = root.first(); !bm.isNull(); bm = root.next(bm)) {
             if (bm.isGroup()) {
                 continue;
             }
             bm.setMetaDataItem(QStringLiteral("merged_from"), fileName);
-            konqBookmarks->root().addBookmark(bm);
+            konqBookmarks.root().addBookmark(bm);
             didMergeBookmark = true;
         }
     }
 
     if (didMergeBookmark) {
-        konqBookmarks->emitChanged(konqBookmarks->root()); // calls save
+        konqBookmarks.emitChanged(konqBookmarks.root()); // calls save
         // see TODO in emitChanged... if it returns false, it would be nice to return 1
         // here.
     }

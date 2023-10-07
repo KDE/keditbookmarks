@@ -87,10 +87,10 @@ private Q_SLOTS:
     {
         const QString filename = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
         QFile::remove(filename);
-        m_bookmarkManager = KBookmarkManager::managerForFile(filename);
+        m_bookmarkManager = std::make_unique<KBookmarkManager>(filename);
         m_cmdHistory = new CommandHistory(this);
-        m_cmdHistory->setBookmarkManager(m_bookmarkManager);
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList());
+        m_cmdHistory->setBookmarkManager(m_bookmarkManager.get());
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList());
         m_model = new KBookmarkModel(m_bookmarkManager->root(), m_cmdHistory, this);
         QCOMPARE(m_model->rowCount(), 1); // the toplevel "Bookmarks" toplevel item
         m_rootIndex = m_model->index(0, 0);
@@ -105,11 +105,11 @@ private Q_SLOTS:
         CreateCommand *cmd =
             new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("test_bk"), QStringLiteral("www"), QUrl(QStringLiteral("https://www.kde.org")));
         cmd->redo();
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << QStringLiteral("/0"));
-        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager), QStringList() << QStringLiteral("https://www.kde.org"));
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList() << QStringLiteral("/0"));
+        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager.get()), QStringList() << QStringLiteral("https://www.kde.org"));
         QCOMPARE(m_model->rowCount(m_rootIndex), 1);
         cmd->undo();
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList());
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList());
         QCOMPARE(m_model->rowCount(m_rootIndex), 0);
         delete cmd;
     }
@@ -119,14 +119,14 @@ private Q_SLOTS:
         CreateCommand *cmd =
             new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("test_bk"), QStringLiteral("www"), QUrl(QStringLiteral("https://www.kde.org")));
         cmd->redo();
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << QStringLiteral("/0"));
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList() << QStringLiteral("/0"));
         DeleteCommand *deleteCmd = new DeleteCommand(m_model, QStringLiteral("/0"));
         deleteCmd->redo();
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList());
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList());
         deleteCmd->undo();
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << QStringLiteral("/0"));
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList() << QStringLiteral("/0"));
         deleteCmd->redo();
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList());
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList());
 
         delete cmd;
         delete deleteCmd;
@@ -136,19 +136,20 @@ private Q_SLOTS:
     {
         CreateCommand *folderCmd = new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("folder"), QStringLiteral("folder"), true /*open*/);
         m_cmdHistory->addCommand(folderCmd); // calls redo
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << QStringLiteral("/0/"));
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList() << QStringLiteral("/0/"));
         QCOMPARE(m_model->rowCount(m_rootIndex), 1);
 
         const QString kde = QStringLiteral("https://www.kde.org");
         CreateCommand *cmd = new CreateCommand(m_model, QStringLiteral("/0/0"), QStringLiteral("test_bk"), QStringLiteral("www"), QUrl(kde));
         m_cmdHistory->addCommand(cmd); // calls redo
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << QStringLiteral("/0/") << QStringLiteral("/0/0"));
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList() << QStringLiteral("/0/") << QStringLiteral("/0/0"));
 
         // Insert before this bookmark
         const QString first = QStringLiteral("https://first.example.com");
         m_cmdHistory->addCommand(new CreateCommand(m_model, QStringLiteral("/0/0"), QStringLiteral("first_bk"), QStringLiteral("www"), QUrl(first)));
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << QStringLiteral("/0/") << QStringLiteral("/0/0") << QStringLiteral("/0/1"));
-        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager), QStringList() << first << kde);
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()),
+                 QStringList() << QStringLiteral("/0/") << QStringLiteral("/0/0") << QStringLiteral("/0/1"));
+        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager.get()), QStringList() << first << kde);
 
         // Move the kde bookmark before the first bookmark
         KBookmark kdeBookmark = m_bookmarkManager->findByAddress(QStringLiteral("/0/1"));
@@ -160,8 +161,9 @@ private Q_SLOTS:
         QMimeData *mimeData = m_model->mimeData(QModelIndexList() << kdeIndex);
         bool ok = m_model->dropMimeData(mimeData, Qt::MoveAction, 0, 0, kdeIndex.parent());
         QVERIFY(ok);
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList() << QStringLiteral("/0/") << QStringLiteral("/0/0") << QStringLiteral("/0/1"));
-        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager), QStringList() << kde << first);
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()),
+                 QStringList() << QStringLiteral("/0/") << QStringLiteral("/0/0") << QStringLiteral("/0/1"));
+        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager.get()), QStringList() << kde << first);
         delete mimeData;
 
         // Move the kde bookmark after the bookmark called 'first'
@@ -171,33 +173,33 @@ private Q_SLOTS:
         mimeData = m_model->mimeData(QModelIndexList() << kdeIndex);
         ok = m_model->dropMimeData(mimeData, Qt::MoveAction, 2, 0, kdeIndex.parent());
         QVERIFY(ok);
-        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager), QStringList() << first << kde);
+        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager.get()), QStringList() << first << kde);
         delete mimeData;
 
         // Create new folder, then move both bookmarks into it (#287038)
         m_cmdHistory->addCommand(new CreateCommand(m_model, QStringLiteral("/1"), QStringLiteral("folder2"), QStringLiteral("folder2"), true));
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager),
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()),
                  QStringList() << QStringLiteral("/0/") << QStringLiteral("/0/0") << QStringLiteral("/0/1") << QStringLiteral("/1/"));
         QCOMPARE(m_model->rowCount(m_rootIndex), 2);
 
         moveTwoBookmarks(QStringLiteral("/0/0"), QStringLiteral("/0/1"), QStringLiteral("/1"));
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager),
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()),
                  QStringList() << QStringLiteral("/0/") << QStringLiteral("/1/") << QStringLiteral("/1/0") << QStringLiteral("/1/1"));
-        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager), QStringList() << kde << first);
+        QCOMPARE(BookmarkLister::urlList(m_bookmarkManager.get()), QStringList() << kde << first);
 
         // Move bookmarks from /1 into subfolder /1/2 (which will become /1/0)
         m_cmdHistory->addCommand(new CreateCommand(m_model, QStringLiteral("/1/2"), QStringLiteral("subfolder"), QStringLiteral("subfolder"), true));
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager),
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()),
                  QStringList() << QStringLiteral("/0/") << QStringLiteral("/1/") << QStringLiteral("/1/0") << QStringLiteral("/1/1")
                                << QStringLiteral("/1/2/"));
         moveTwoBookmarks(QStringLiteral("/1/0"), QStringLiteral("/1/1"), QStringLiteral("/1/2"));
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager),
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()),
                  QStringList() << QStringLiteral("/0/") << QStringLiteral("/1/") << QStringLiteral("/1/0/") << QStringLiteral("/1/0/0")
                                << QStringLiteral("/1/0/1"));
 
         // Move them up again
         moveTwoBookmarks(QStringLiteral("/1/0/0"), QStringLiteral("/1/0/1"), QStringLiteral("/1"));
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager),
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()),
                  QStringList() << QStringLiteral("/0/") << QStringLiteral("/1/") << QStringLiteral("/1/0") << QStringLiteral("/1/1")
                                << QStringLiteral("/1/2/"));
 
@@ -206,7 +208,7 @@ private Q_SLOTS:
 
     void testSort()
     {
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList());
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList());
         CreateCommand *folderCmd = new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("folder"), QStringLiteral("folder"), true /*open*/);
         m_cmdHistory->addCommand(folderCmd); // calls redo
         const QString kde = QStringLiteral("https://www.kde.org");
@@ -215,21 +217,21 @@ private Q_SLOTS:
         for (int i = 0; i < bookmarks.count(); ++i) {
             m_cmdHistory->addCommand(new CreateCommand(m_model, QStringLiteral("/0/") + QString::number(i), bookmarks[i], QStringLiteral("www"), QUrl(kde)));
         }
-        const QStringList addresses = BookmarkLister::addressList(m_bookmarkManager);
+        const QStringList addresses = BookmarkLister::addressList(m_bookmarkManager.get());
         // qCDebug(KEDITBOOKMARKS_LOG) << addresses;
-        const QStringList origTitleList = BookmarkLister::titleList(m_bookmarkManager);
+        const QStringList origTitleList = BookmarkLister::titleList(m_bookmarkManager.get());
         QCOMPARE(addresses.count(), bookmarks.count() + 1 /* parent folder */);
         SortCommand *sortCmd = new SortCommand(m_model, QStringLiteral("Sort"), QStringLiteral("/0"));
         m_cmdHistory->addCommand(sortCmd);
         QStringList expectedTitleList = bookmarks;
         expectedTitleList.sort();
         expectedTitleList.prepend(QStringLiteral("folder"));
-        const QStringList sortedTitles = BookmarkLister::titleList(m_bookmarkManager);
+        const QStringList sortedTitles = BookmarkLister::titleList(m_bookmarkManager.get());
         // qCDebug(KEDITBOOKMARKS_LOG) << sortedTitles;
         QCOMPARE(sortedTitles, expectedTitleList);
 
         sortCmd->undo();
-        QCOMPARE(BookmarkLister::titleList(m_bookmarkManager), origTitleList);
+        QCOMPARE(BookmarkLister::titleList(m_bookmarkManager.get()), origTitleList);
         sortCmd->redo();
         undoAll();
     }
@@ -248,17 +250,16 @@ private Q_SLOTS:
         const QString fileName = tempFile.fileName();
         tempFile.write(data);
         tempFile.close();
-        KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(fileName);
-        QVERIFY(bookmarkManager);
+        KBookmarkManager bookmarkManager(fileName);
 
-        const QStringList addresses = BookmarkLister::addressList(bookmarkManager);
-        const QStringList origTitleList = BookmarkLister::titleList(bookmarkManager);
+        const QStringList addresses = BookmarkLister::addressList(&bookmarkManager);
+        const QStringList origTitleList = BookmarkLister::titleList(&bookmarkManager);
         // qCDebug(KEDITBOOKMARKS_LOG) << addresses << origTitleList;
         QCOMPARE(addresses.count(), 53);
 
         CommandHistory cmdHistory;
-        cmdHistory.setBookmarkManager(bookmarkManager);
-        KBookmarkModel *model = new KBookmarkModel(bookmarkManager->root(), &cmdHistory, this);
+        cmdHistory.setBookmarkManager(&bookmarkManager);
+        KBookmarkModel *model = new KBookmarkModel(bookmarkManager.root(), &cmdHistory, this);
         QCOMPARE(model->rowCount(), 1); // the toplevel "Bookmarks" toplevel item
 
         // When sorting
@@ -266,7 +267,7 @@ private Q_SLOTS:
         cmdHistory.addCommand(sortCmd);
 
         // Then the contents should be correctly sorted
-        const QStringList sortedTitles = BookmarkLister::titleList(bookmarkManager);
+        const QStringList sortedTitles = BookmarkLister::titleList(&bookmarkManager);
         QCOMPARE(sortedTitles.at(0), QStringLiteral("Cyclone V"));
         QCOMPARE(sortedTitles.at(1), QStringLiteral("Altera SoC design courses"));
         QCOMPARE(sortedTitles.at(2), QStringLiteral("Hardware Design Fl...r an ARM-based SoC"));
@@ -276,7 +277,7 @@ private Q_SLOTS:
         sortCmd->undo();
 
         // Then the contents should revert to the orig order
-        QCOMPARE(BookmarkLister::titleList(bookmarkManager), origTitleList);
+        QCOMPARE(BookmarkLister::titleList(&bookmarkManager), origTitleList);
 
         QFile::remove(fileName + QLatin1String(".bak"));
     }
@@ -299,10 +300,10 @@ private:
         while (undoAction->isEnabled()) {
             undoAction->trigger();
         }
-        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager), QStringList());
+        QCOMPARE(BookmarkLister::addressList(m_bookmarkManager.get()), QStringList());
     }
 
-    KBookmarkManager *m_bookmarkManager;
+    std::unique_ptr<KBookmarkManager> m_bookmarkManager;
     KBookmarkModel *m_model;
     CommandHistory *m_cmdHistory;
     KActionCollection m_collection;
