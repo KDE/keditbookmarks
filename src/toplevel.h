@@ -111,6 +111,7 @@ private Q_SLOTS:
     void selectionChanged();
     void setCancelFavIconUpdatesEnabled(bool);
     void setCancelTestsEnabled(bool);
+    void slotManagerError(const QString &errorMessage);
 
 private:
     void selectedBookmarksExpandedHelper(const KBookmark &bk, KBookmark::List &bookmarks) const;

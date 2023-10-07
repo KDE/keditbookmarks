@@ -79,6 +79,8 @@ void GlobalBookmarkManager::createManager(const QString &filename, const QString
     Q_UNUSED(dbusObjectName);
     m_mgr = KBookmarkManager::managerForFile(filename);
 
+    connect(m_mgr, &KBookmarkManager::error, this, &GlobalBookmarkManager::error);
+
     commandHistory->setBookmarkManager(m_mgr);
 
     if (m_model) {

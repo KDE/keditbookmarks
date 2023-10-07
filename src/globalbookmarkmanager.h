@@ -68,6 +68,9 @@ public:
     static QString makeTimeStr(const QString &);
     static QString makeTimeStr(int);
 
+Q_SIGNALS:
+    void error(const QString &errorMessage);
+
 private:
     GlobalBookmarkManager();
     KBookmarkManager *m_mgr;

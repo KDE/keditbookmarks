@@ -39,6 +39,7 @@
 #include <KConfigGroup>
 #include <KEditToolBar>
 #include <KLocalizedString>
+#include <KMessageBox>
 #include <KSharedConfig>
 
 #include <QDBusConnection>
@@ -60,6 +61,7 @@ KEBApp::KEBApp(const QString &bookmarksFile, bool readonly, const QString &addre
     connect(m_cmdHistory, &CommandHistory::notifyCommandExecuted, this, &KEBApp::notifyCommandExecuted);
 
     GlobalBookmarkManager::self()->createManager(m_bookmarksFilename, m_dbusObjectName, m_cmdHistory);
+    connect(GlobalBookmarkManager::self(), &GlobalBookmarkManager::error, this, &KEBApp::slotManagerError);
 
     s_topLevel = this;
 
@@ -443,6 +445,11 @@ void KEBApp::slotNewToolbarConfig()
     // called when OK or Apply is clicked
     createGUI();
     applyMainWindowSettings(KConfigGroup(KSharedConfig::openConfig(), "MainWindow"));
+}
+
+void KEBApp::slotManagerError(const QString &errorMessage)
+{
+    KMessageBox::error(this, errorMessage);
 }
 
 /* -------------------------- */
