@@ -30,8 +30,8 @@ private:
 class KOperaBookmarkExporterImpl : public BookmarkExporterBase
 {
 public:
-    KOperaBookmarkExporterImpl(KBookmarkManager *mgr, const QString &filename)
-        : BookmarkExporterBase(mgr, filename)
+    KOperaBookmarkExporterImpl(const QString &filename)
+        : BookmarkExporterBase(filename)
     {
         ;
     }

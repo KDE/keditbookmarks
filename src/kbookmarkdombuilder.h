@@ -17,7 +17,7 @@ class BookmarkDomBuilder : public QObject
 {
     Q_OBJECT
 public:
-    BookmarkDomBuilder(const KBookmarkGroup &group, KBookmarkManager *);
+    BookmarkDomBuilder(const KBookmarkGroup &group);
     ~BookmarkDomBuilder() override;
     void connectImporter(const QObject *);
 protected Q_SLOTS:
@@ -29,7 +29,6 @@ protected Q_SLOTS:
 private:
     QStack<KBookmarkGroup> m_stack;
     QList<KBookmarkGroup> m_list;
-    KBookmarkManager *m_manager;
     class KBookmarkDomBuilderPrivate *p;
 };
 

@@ -58,8 +58,8 @@ private:
 class KNSBookmarkExporterImpl : public BookmarkExporterBase
 {
 public:
-    KNSBookmarkExporterImpl(KBookmarkManager *mgr, const QString &fileName)
-        : BookmarkExporterBase(mgr, fileName)
+    KNSBookmarkExporterImpl(const QString &fileName)
+        : BookmarkExporterBase(fileName)
     {
         ;
     }

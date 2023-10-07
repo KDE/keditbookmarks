@@ -285,7 +285,7 @@ void GlobalBookmarkManager::doExport(ExportType type, const QString &_path)
     if (type == OperaExport) {
         if (path.isNull())
             path = OperaBookmarkImporterImpl().findDefaultLocation(true);
-        KOperaBookmarkExporterImpl exporter(mgr(), path);
+        KOperaBookmarkExporterImpl exporter(path);
         exporter.write(mgr()->root());
         return;
 
@@ -299,7 +299,7 @@ void GlobalBookmarkManager::doExport(ExportType type, const QString &_path)
     } else if (type == IEExport) {
         if (path.isNull())
             path = IEBookmarkImporterImpl().findDefaultLocation(true);
-        IEBookmarkExporterImpl exporter(mgr(), path);
+        IEBookmarkExporterImpl exporter(path);
         exporter.write(mgr()->root());
         return;
     }
@@ -317,7 +317,7 @@ void GlobalBookmarkManager::doExport(ExportType type, const QString &_path)
     }
 
     if (!path.isEmpty()) {
-        KNSBookmarkExporterImpl exporter(mgr(), path);
+        KNSBookmarkExporterImpl exporter(path);
         exporter.write(mgr()->root());
     }
 }

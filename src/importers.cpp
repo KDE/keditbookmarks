@@ -224,7 +224,7 @@ QString KDE2ImportCommand::requestFilename() const
 
 static void parseInto(const KBookmarkGroup &bkGroup, BookmarkImporterBase *importer)
 {
-    BookmarkDomBuilder builder(bkGroup, GlobalBookmarkManager::self()->mgr());
+    BookmarkDomBuilder builder(bkGroup);
     builder.connectImporter(importer);
     importer->parse();
 }

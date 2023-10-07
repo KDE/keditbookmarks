@@ -16,9 +16,8 @@
 class BookmarkExporterBase
 {
 public:
-    BookmarkExporterBase(KBookmarkManager *mgr, const QString &fileName)
+    BookmarkExporterBase(const QString &fileName)
         : m_fileName(fileName)
-        , m_pManager(mgr)
     {
     }
     virtual ~BookmarkExporterBase()
@@ -28,7 +27,6 @@ public:
 
 protected:
     QString m_fileName;
-    KBookmarkManager *m_pManager;
 
 private:
     class KBookmarkExporterBasePrivate *d;

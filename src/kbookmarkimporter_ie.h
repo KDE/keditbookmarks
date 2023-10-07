@@ -32,8 +32,8 @@ private:
 class IEBookmarkExporterImpl : public BookmarkExporterBase
 {
 public:
-    IEBookmarkExporterImpl(KBookmarkManager *mgr, const QString &path)
-        : BookmarkExporterBase(mgr, path)
+    IEBookmarkExporterImpl(const QString &path)
+        : BookmarkExporterBase(path)
     {
         ;
     }

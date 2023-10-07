@@ -11,9 +11,8 @@
 
 #include <QDebug>
 
-BookmarkDomBuilder::BookmarkDomBuilder(const KBookmarkGroup &bkGroup, KBookmarkManager *manager)
+BookmarkDomBuilder::BookmarkDomBuilder(const KBookmarkGroup &bkGroup)
 {
-    m_manager = manager;
     m_stack.push(bkGroup);
 }
 
