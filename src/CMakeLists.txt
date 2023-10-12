@@ -1,4 +1,4 @@
-configure_file(config-keditbookmarks.h.cmake
+configure_file(config-keditbookmarks.h.in
               ${CMAKE_CURRENT_BINARY_DIR}/config-keditbookmarks.h)
 
 ############ subdir ###################
