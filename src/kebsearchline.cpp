@@ -54,7 +54,7 @@ public:
     bool keepParentsVisible;
     QString search;
     int queuedSearches;
-    QVector<int> searchColumns;
+    QList<int> searchColumns;
 };
 
 KViewSearchLine::KViewSearchLine(QWidget *parent, QAbstractItemView *v)
@@ -150,7 +150,7 @@ void KViewSearchLine::setKeepParentsVisible(bool v)
     d->keepParentsVisible = v;
 }
 
-void KViewSearchLine::setSearchColumns(const QVector<int> &columns)
+void KViewSearchLine::setSearchColumns(const QList<int> &columns)
 {
     d->searchColumns = columns;
 }
@@ -200,7 +200,7 @@ bool KViewSearchLine::itemMatches(const QModelIndex &item, const QString &s) con
         int row = item.row();
         QModelIndex parent = item.parent();
         if (!d->searchColumns.isEmpty()) {
-            QVector<int>::const_iterator it, end;
+            QList<int>::const_iterator it, end;
             end = d->searchColumns.constEnd();
             for (it = d->searchColumns.constBegin(); it != end; ++it) {
                 if (*it < columnCount) {

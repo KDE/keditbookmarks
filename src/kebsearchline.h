@@ -20,7 +20,7 @@
 
 #include <KLineEdit>
 #include <QAbstractItemView>
-#include <QVector>
+#include <QList>
 
 class QAction;
 class KViewSearchLinePrivate;
@@ -82,7 +82,7 @@ public:
      *
      * @see setSearchColumns
      */
-    QVector<int> searchColumns() const;
+    QList<int> searchColumns() const;
 
     /**
      * If this is true (the default) then the parents of matched items will also
@@ -137,7 +137,7 @@ public Q_SLOTS:
      *
      * @see searchColumns
      */
-    void setSearchColumns(const QVector<int> &columns);
+    void setSearchColumns(const QList<int> &columns);
 
     /**
      * Sets the view that is filtered by this search line.
@@ -247,7 +247,7 @@ private Q_SLOTS:
 private:
     class KViewSearchLinePrivate;
     KViewSearchLinePrivate *d;
-    QVector<QAction *> actions;
+    QList<QAction *> actions;
 };
 
 /**
