@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2017-05-16 06:37-0400\n"
+"PO-Revision-Date: 2023-10-21 15:51+0300\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Hebrew <kde-l10n-he@kde.org>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -27,47 +27,47 @@ msgstr "צוות התרגום של KDE ישראל"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kde-il@yahoogrops.com"
+msgstr "kde-l10n-he@kde.org"
 
 #: actionsimpl.cpp:94
 #, kde-format
 msgid "&Delete"
-msgstr "&מחק"
+msgstr "מ&חיקה"
 
 #: actionsimpl.cpp:100
 #, kde-format
 msgid "Rename"
-msgstr "שנה שם"
+msgstr "שינוי שם"
 
 #: actionsimpl.cpp:106
-#, fuzzy, kde-format
+#, kde-format
 msgid "C&hange Location"
-msgstr "&שנה כתובת"
+msgstr "ה&חלפת מקום"
 
 #: actionsimpl.cpp:112
 #, kde-format
 msgid "C&hange Comment"
-msgstr "שנה ה&ערה"
+msgstr "&עריכת הערה"
 
 #: actionsimpl.cpp:118
 #, kde-format
 msgid "Chan&ge Icon..."
-msgstr "שנה &סמל"
+msgstr "החלפת &סמל…"
 
 #: actionsimpl.cpp:122
 #, kde-format
 msgid "Update Favicon"
-msgstr "עדכן סמל מועדף"
+msgstr "עדכון סמל מועדפים"
 
 #: actionsimpl.cpp:126
 #, kde-format
 msgid "Recursive Sort"
-msgstr "מיון רקורסיבי"
+msgstr "מיון בנסיגה"
 
 #: actionsimpl.cpp:131
 #, kde-format
 msgid "&New Folder..."
-msgstr "&תיקייה חדשה..."
+msgstr "&תיקייה חדשה…"
 
 #: actionsimpl.cpp:137
 #, kde-format
@@ -77,130 +77,129 @@ msgstr "&סימנייה חדשה"
 #: actionsimpl.cpp:141
 #, kde-format
 msgid "&Insert Separator"
-msgstr "&הכנס מפריד"
+msgstr "הוס&פת מפריד"
 
 #: actionsimpl.cpp:146
 #, kde-format
 msgid "&Sort Alphabetically"
-msgstr "&מיין בסדר אלפבתי"
+msgstr "מיון בסדר &אלפבתי"
 
 #: actionsimpl.cpp:151
 #, kde-format
 msgid "Set as T&oolbar Folder"
-msgstr "קבע בתור תיקיית &סרגל כלים"
+msgstr "הגדרה כתיקיית סרגל &כלים"
 
 #: actionsimpl.cpp:155
 #, kde-format
 msgid "&Expand All Folders"
-msgstr "&הרחב את כל התיקיות"
+msgstr "ה&רחבת כל התיקיות"
 
 #: actionsimpl.cpp:159
 #, kde-format
 msgid "Collapse &All Folders"
-msgstr "כווץ את &כל התיקיות"
+msgstr "&צמצום כל התיקיות"
 
 #: actionsimpl.cpp:164
-#, fuzzy, kde-format
-#| msgid "&Open in Konqueror"
+#, kde-format
 msgid "&Open in Browser"
-msgstr "&פתח ב־Konqueror"
+msgstr "&פתיחה בדפדפן"
 
 #: actionsimpl.cpp:169
 #, kde-format
 msgid "Check &Status"
-msgstr "בדוק &מצב"
+msgstr "&בדיקת מצב"
 
 #: actionsimpl.cpp:173
 #, kde-format
 msgid "Check Status: &All"
-msgstr "בדוק מצב: &כולם"
+msgstr "בדיקת מצב: &כולם"
 
 #: actionsimpl.cpp:177
 #, kde-format
 msgid "Update All &Favicons"
-msgstr "עדכן את כל ה&סמלים המועדפים"
+msgstr "עדכון כל &סמלי המועדפים"
 
 #: actionsimpl.cpp:181
 #, kde-format
 msgid "Cancel &Checks"
-msgstr "בטל &בדיקות"
+msgstr "ביטול &בדיקות"
 
 #: actionsimpl.cpp:185
 #, kde-format
 msgid "Cancel &Favicon Updates"
-msgstr "בטל את כל העדכונים של ה&סמלים המועדפים"
+msgstr "ביטול עדכוני &סמלי המועדפים"
 
 #: actionsimpl.cpp:191
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
-msgstr "ייבוא של &סימניות Netscape..."
+msgstr "ייבוא &סימניות Netscape…"
 
 #: actionsimpl.cpp:197
 #, kde-format
 msgid "Import &Opera Bookmarks..."
-msgstr "ייבוא של ס&ימניות Opera..."
+msgstr "ייבוא ס&ימניות Opera…"
 
 #: actionsimpl.cpp:207
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
-msgstr "ייב&וא של הסימניות של Galeon..."
+msgstr "ייב&וא סימניות Galeon…"
 
 #: actionsimpl.cpp:213
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
-msgstr "ייבוא של סי&מניות של KDE 2 או KDE 3..."
+msgstr "ייבוא סי&מניות של KDE 2 או KDE 3…"
 
 #: actionsimpl.cpp:219
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
-msgstr "ייבוא של סימ&ניות של Internet Explorer..."
+msgstr "ייבוא סימ&ניות Internet Explorer…"
 
 #: actionsimpl.cpp:225
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
-msgstr "ייבו&א של סימניות של Mozilla..."
+msgstr "ייבו&א סימניות Mozilla…"
 
 #: actionsimpl.cpp:230
 #, kde-format
 msgid "Export &Netscape Bookmarks"
-msgstr "ייצוא של סימניות Netscape"
+msgstr "יי&צוא סימניות Netscape"
 
 #: actionsimpl.cpp:235
 #, kde-format
 msgid "Export &Opera Bookmarks..."
-msgstr "ייצוא של סימניות Opera..."
+msgstr "ייצוא סימניו&ת Opera…"
 
 #: actionsimpl.cpp:240
 #, kde-format
 msgid "Export &HTML Bookmarks..."
-msgstr "ייצוא של סימניות HTML..."
+msgstr "ייצוא סימני&ות HTML..."
 
 #: actionsimpl.cpp:244
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
-msgstr "ייצוא של סימניות Internet Explorer..."
+msgstr "ייצוא סימני&ות Internet Explorer…"
 
 #: actionsimpl.cpp:249
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
-msgstr "ייצוא של סימניות Mozilla..."
+msgstr "ייצוא סימ&ניות Mozilla…"
 
 #: actionsimpl.cpp:294
-#, fuzzy, kde-format
+#, kde-format
 msgid "HTML Bookmark Listing (*.html)"
-msgstr "‎*.html| קבצי סמניות של HTML"
+msgstr "רישומי סימניות ב־HTML‏ (‎*.html)"
 
 #: actionsimpl.cpp:339
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
-msgstr "חתוך פריטים"
+msgstr "גזירת פריטים"
 
 #: actionsimpl.cpp:364
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Paste"
-msgstr "הדבק"
+msgstr "הדבקה"
 
 #: actionsimpl.cpp:375
 #, kde-format
@@ -208,28 +207,28 @@ msgid "New folder:"
 msgstr "תיקייה חדשה:"
 
 #: actionsimpl.cpp:375
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
-msgstr "צור תיקיית סימניות חדשה"
+msgstr "יצירת תיקיית סימניות חדשה"
 
 #: actionsimpl.cpp:522
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
-msgstr "מיון רקורסיבי"
+msgstr "מיון בנסיגה"
 
 #: actionsimpl.cpp:537
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
-msgstr "מיין בסדר אלפאבתי"
+msgstr "מיון בסדר אלפביתי"
 
 #: actionsimpl.cpp:546
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Delete Items"
-msgstr "מחק פריטים"
+msgstr "מחיקת פריטים"
 
 #: bookmarkinfowidget.cpp:223
 #, kde-format
@@ -239,7 +238,7 @@ msgstr "שם:"
 #: bookmarkinfowidget.cpp:230
 #, kde-format
 msgid "Location:"
-msgstr "מיקום:"
+msgstr "מקום:"
 
 #: bookmarkinfowidget.cpp:237
 #, kde-format
@@ -249,12 +248,12 @@ msgstr "הערה:"
 #: bookmarkinfowidget.cpp:243
 #, kde-format
 msgid "First viewed:"
-msgstr "ביקור לראשונה:"
+msgstr "ביקור ראשון:"
 
 #: bookmarkinfowidget.cpp:246
 #, kde-format
 msgid "Viewed last:"
-msgstr "הוצג לאחרונה:"
+msgstr "הצגה אחרונה:"
 
 #: bookmarkinfowidget.cpp:249
 #, kde-format
@@ -274,18 +273,18 @@ msgstr "אישור"
 #: favicons.cpp:70
 #, kde-format
 msgid "Updating favicon..."
-msgstr "מעדכן סמל מועדף..."
+msgstr "סמל מועדף מתעדכן…"
 
 #: faviconupdater.cpp:76
 #, kde-format
 msgid "%1; no HTML component found (%2)"
-msgstr ""
+msgstr "%1; לא נמצא רכיב HTML‏ (%2)"
 
 #: importers.cpp:57
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
-msgstr "ייבא סימניות של %1"
+msgstr "ייבוא %1 סימניות"
 
 #: importers.cpp:62
 #, kde-format
@@ -295,33 +294,33 @@ msgstr "סימניות של %1"
 #: importers.cpp:99
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
-msgstr "האם לייבא בתור תת־תיקייה או להחליף את כל הסימניות הנוכחיות?"
+msgstr "לייבא כתת־תיקייה או להחליף את כל הסימניות הנוכחיות?"
 
 #: importers.cpp:100
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
-msgstr "ייבא את %1"
+msgstr "ייבוא %1"
 
 #: importers.cpp:101
 #, kde-format
 msgid "As New Folder"
-msgstr "בתור תיקייה חדשה"
+msgstr "כתיקייה חדשה"
 
 #: importers.cpp:102
 #, kde-format
 msgid "Replace"
-msgstr "החלף"
+msgstr "החלפה"
 
 #: importers.cpp:212
-#, fuzzy, kde-format
+#, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
-msgstr "‎*.xbel| קבצי סמניות של Galeon ‏‎‏(‎*.xbel)"
+msgstr "קובץ סימניות Galeon‏ (‎*.xbel)"
 
 #: importers.cpp:220
-#, fuzzy, kde-format
+#, kde-format
 msgid "KDE Bookmark Files (*.xml)"
-msgstr "‎*.xml| קבצי סמניות של KDE ‏‎‏(‎*.xml)"
+msgstr "קובצי סימניות של KDE‏ (‎*.xml)"
 
 #: importers.h:116
 #, kde-format
@@ -361,126 +360,126 @@ msgstr "KBookmarkMerger"
 #: kbookmarkmerger.cpp:50
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
-msgstr "ממזג סימניות המותקנות על ידי צד שלישי אל הסימניות של המשתמש"
+msgstr "ממזג סימניות המותקנות על ידי צד שלישי אל סימניות המשתמש"
 
 #: kbookmarkmerger.cpp:52
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
-msgstr "כל הזכויות שמורות 2005 © Frerich Raabe"
+msgstr "כל הזכויות שמורות 2005 © פרידריק ראבה"
 
 #: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Frerich Raabe"
-msgstr "Frerich Raabe"
+msgstr "פרידריק ראבה"
 
 #: kbookmarkmerger.cpp:53
 #, kde-format
 msgid "Original author"
-msgstr "כותב מקורי"
+msgstr "יוצר מקורי"
 
 #: kbookmarkmerger.cpp:58
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
-msgstr "תיקייה לסריקה אחר סימניות"
+msgstr "תיקייה לסריקה לאיתור סימניות"
 
 #: kbookmarkmodel/commands.cpp:70
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Insert Separator"
-msgstr "הכנס מפריד"
+msgstr "הוספת מפריד"
 
 #: kbookmarkmodel/commands.cpp:84
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Bookmark"
-msgstr "צור סימנייה"
+msgstr "יצירת סימנייה"
 
 #: kbookmarkmodel/commands.cpp:98
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Folder"
-msgstr "צור תיקייה"
+msgstr "יצירת תיקייה"
 
 #: kbookmarkmodel/commands.cpp:111
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy %1"
-msgstr "העתק %1"
+msgstr "העתקת %1"
 
 #: kbookmarkmodel/commands.cpp:200
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Icon Change"
-msgstr "שנה %1"
+msgstr "החלפת סמל"
 
 #: kbookmarkmodel/commands.cpp:202
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Title Change"
-msgstr "שנה %1"
+msgstr "עריכת כותרת"
 
 #: kbookmarkmodel/commands.cpp:204
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "URL Change"
-msgstr "שנה %1"
+msgstr "עריכת כתובת"
 
 #: kbookmarkmodel/commands.cpp:206
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Comment Change"
-msgstr "הערה"
+msgstr "עריכת הערה"
 
 #: kbookmarkmodel/commands.cpp:365
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move %1"
-msgstr "הזז %1"
+msgstr "העברת %1"
 
 #: kbookmarkmodel/commands.cpp:500
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Set as Bookmark Toolbar"
-msgstr "קבע בתור סרגל כלים של סימניות"
+msgstr "הגדרה כסרגל סימניות"
 
 #: kbookmarkmodel/commands.cpp:532
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy Items"
-msgstr "העתק פריטים"
+msgstr "העתקת פריטים"
 
 #: kbookmarkmodel/commands.cpp:532
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move Items"
-msgstr "הזז פריטים"
+msgstr "העברת פריטים"
 
 #: kbookmarkmodel/model.cpp:122
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "סימניות"
 
 #: kbookmarkmodel/model.cpp:217
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
-msgstr "שם:"
+msgstr "שם"
 
 #: kbookmarkmodel/model.cpp:220
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
-msgstr "מיקום:"
+msgstr "מקום"
 
 #: kbookmarkmodel/model.cpp:223
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:column comment for a bookmark"
 msgid "Comment"
 msgstr "הערה"
 
 #: kbookmarkmodel/model.cpp:226
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:column status of a bookmark"
 msgid "Status"
 msgstr "מצב"
@@ -488,12 +487,12 @@ msgstr "מצב"
 #: kebsearchline.cpp:239
 #, kde-format
 msgid "Search Columns"
-msgstr "חפש בעמודות"
+msgstr "חיפוש בעמודות"
 
 #: kebsearchline.cpp:242
 #, kde-format
 msgid "All Visible Columns"
-msgstr "על העמודות הנראות לעין"
+msgstr "כל העמודות הגלויות"
 
 #: kebsearchline.cpp:250
 #, kde-format
@@ -504,7 +503,7 @@ msgstr "עמודה מספר %1"
 #: kebsearchline.cpp:615
 #, kde-format
 msgid "S&earch:"
-msgstr "&חפש:"
+msgstr "&חיפוש:"
 
 #. i18n: ectx: Menu (file)
 #: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
@@ -528,7 +527,7 @@ msgstr "&תצוגה"
 #: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
 #, kde-format
 msgid "&Folder"
-msgstr "&תיקייה"
+msgstr "תי&קייה"
 
 #. i18n: ectx: Menu (bookmark)
 #: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
@@ -540,7 +539,7 @@ msgstr "&סימנייה"
 #: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
 #, kde-format
 msgid "&Settings"
-msgstr "&הגדרות"
+msgstr "ה&גדרות"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
@@ -552,13 +551,13 @@ msgstr "סרגל כלים ראשי"
 #: keditbookmarksui.rc:11
 #, kde-format
 msgid "&Import"
-msgstr "&ייבוא"
+msgstr "יי&בוא"
 
 #. i18n: ectx: Menu (export)
 #: keditbookmarksui.rc:21
 #, kde-format
 msgid "&Export"
-msgstr "&ייצוא"
+msgstr "יי&צוא"
 
 #. i18n: ectx: Menu (tools)
 #: keditbookmarksui.rc:67
@@ -573,12 +572,11 @@ msgid ""
 "another instance or continue work in the same instance?\n"
 "Please note that, unfortunately, duplicate views are read-only."
 msgstr ""
-"מופע נוסף של %1 כבר רץ. האם ברצונך לפתוח מופע חדש או להמשיך לעבוד באותו "
-"מופעה?\n"
-" שים לב כי תצוגות חדשות הן קריאה בלבד."
+"מופע נוסף של %1 כבר פעיל. לפתוח מופע חדש או להמשיך לעבוד באותו מופע?\n"
+"ראוי לשים לב כי תצוגות חדשות הן לקריאה בלבד."
 
 #: main.cpp:74
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "אזהרה"
@@ -586,12 +584,12 @@ msgstr "אזהרה"
 #: main.cpp:75
 #, kde-format
 msgid "Run Another"
-msgstr "הפעל נוסף"
+msgstr "הפעלת נוסף"
 
 #: main.cpp:76
 #, kde-format
 msgid "Continue in Same"
-msgstr "המשך בשני"
+msgstr "המשך בדומה"
 
 #: main.cpp:105
 #, kde-format
@@ -604,103 +602,102 @@ msgid "Bookmark Organizer and Editor"
 msgstr "עורך ומארגן סימניות"
 
 #: main.cpp:109
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2007, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "כל הזכויות שמורות 2000-2007, המפתחים של KDE"
+msgstr "כל הזכויות שמורות 2000‏-2023, מפתחי KDE"
 
 #: main.cpp:110
 #, kde-format
 msgid "David Faure"
-msgstr "David Faure"
+msgstr "דיויד פור"
 
 #: main.cpp:110
 #, kde-format
 msgid "Initial author"
-msgstr "כותב ראשוני"
+msgstr "יוצר ראשוני"
 
 #: main.cpp:111
 #, kde-format
 msgid "Alexander Kellett"
-msgstr "Alexander Kellett"
+msgstr "אלכסנדר קלט"
 
 #: main.cpp:111
 #, kde-format
 msgid "Author"
-msgstr "מפתח"
+msgstr "יוצר"
 
 #: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
-msgstr "ייבוא של סימניות מקובץ בתסדיר של Mozilla"
+msgstr "ייבוא סימניות מקובץ בתסדיר של Mozilla"
 
 #: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
-msgstr "ייבוא של סימניות מקובץ בתסדיר של Netscape (גרסה 4 וקדומות יותר)"
+msgstr "ייבוא סימניות מקובץ בתסדיר של Netscape (גרסה 4 וקודמותיה)"
 
 #: main.cpp:123
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
-msgstr "ייבוא של סימניות מקובץ בתסדיר מועדפים של Internet Explorer"
+msgstr "ייבוא סימניות מקובץ בתסדיר מועדפים של Internet Explorer"
 
 #: main.cpp:124
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
-msgstr "ייבוא של סימניות מקובץ בתסדיר של Opera "
+msgstr "ייבוא של סימניות מקובץ בתסדיר Opera"
 
 #: main.cpp:125
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
-msgstr "ייבוא של סימניות מקובץ בתסדיר של Opera "
+msgstr "ייבוא סימניות מקובץ בתסדיר KDE2"
 
 #: main.cpp:126
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import bookmarks from a file in Galeon format"
-msgstr "ייבוא של סימניות מקובץ בתסדיר של Opera "
+msgstr "ייבוא סימניות מקובץ בתסדיר Galeon"
 
 #: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
-msgstr "ייצוא של סימניות לקובץ בתסדיר של Mozilla"
+msgstr "ייצוא סימניות לקובץ בתסדיר של Mozilla"
 
 #: main.cpp:128
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
-msgstr "ייצוא של סימניות לקובץ בתסדיר של Netscape (גרסה 4 וקדומות יותר)"
+msgstr "ייצוא סימניות לקובץ בתסדיר של Netscape (גרסה 4 וקודמותיה)"
 
 #: main.cpp:129
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
-msgstr "ייצוא של סימניות לקובץ בתסדיר של HTML ניתן להדפסה"
+msgstr "ייצוא סימניות לקובץ בתסדיר HTML שמתאים להדפסה"
 
 #: main.cpp:130
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
-msgstr "ייצוא של סימניות לקובץ בתסדיר של מועדפים של Internet Explorer"
+msgstr "ייצוא סימניות לקובץ בתסדיר מועדפים של Internet Explorer"
 
 #: main.cpp:131
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
-msgstr "ייצוא של סימניות לקובץ בתסדיר של Opera"
+msgstr "ייצוא סימניות לקובץ בתסדיר של Opera"
 
 #: main.cpp:132
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
-msgstr "פתח במיקום מסויים בקובץ הסימניות"
+msgstr "פתיחה במקום מסוים בקובץ הסימניות"
 
 #: main.cpp:133
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
-msgstr "קובע את הכיתוב הנראה לעיון למשתמשים, למשל \"Konsole\""
+msgstr "הגדרת הכיתוב שיקראו המשתמשים, למשל „Konsole”"
 
 #: main.cpp:134
 #, kde-format
 msgid "Hide all browser related functions"
-msgstr "הסתר את כל הפונקציות הקשורות לדפדפן"
+msgstr "הסתרת כל הפונקציות הקשורות לדפדפן"
 
 #: main.cpp:135
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
 "kinstance name.\n"
@@ -708,9 +705,10 @@ msgid ""
 "KFileDialog bookmarks, etc.\n"
 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
 msgstr ""
-"שם ייחודי שמייצג את מקבץ הסימניות הזה, בדרך כלל השם של ה־kinstance.\n"
-" זה צריך להיות \"Konqueror\" עבור הסימניות של Konqueror,‏ \"kfile\" עבור "
-"הסימניות של KFileDialog וכו'.  אובייקט DBus יווצר בנתיב ‎/KBookmarkManager/dbusObjectName"
+"שם ייחודי שמייצג את אוסף הסימניות הזה, בדרך כלל השם של ה־kinstance.\n"
+"הוא אמור להיות „konqueror” לסימניות של Konqueror,‏ „kfile” לסימניות של "
+"KFileDialog וכו׳.\n"
+"ייווצר עצם D-Bus בנתיב ‎/KBookmarkManager/<dbusObjectName>‎"
 
 #: main.cpp:139
 #, kde-format
@@ -720,14 +718,14 @@ msgstr "קובץ לעריכה"
 #: main.cpp:227
 #, kde-format
 msgid "You may only specify a single --export option."
-msgstr "באפשרותך להגדיר רק אפשרות ‎--export אחת בלבד."
+msgstr "אפשר להגדיר אפשרות ‎--export אחת בלבד."
 
 #: main.cpp:234
 #, kde-format
 msgid "You may only specify a single --import option."
-msgstr "באפשרותך להגדיר רק אפשרות ‎--import אחת בלבד."
+msgstr "אפשר להגדיר אפשרות ‎--import אחת בלבד."
 
 #: testlink.cpp:73
 #, kde-format
 msgid "Checking..."
-msgstr "בודק..."
+msgstr "מתבצעת בדיקה…"
