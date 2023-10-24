@@ -295,7 +295,7 @@ private:
 
     void undoAll()
     {
-        QAction *undoAction = m_collection.action(QLatin1String(KStandardAction::name(KStandardAction::Undo)));
+        QAction *undoAction = m_collection.action(KStandardAction::name(KStandardAction::Undo));
         QVERIFY(undoAction);
         while (undoAction->isEnabled()) {
             undoAction->trigger();
