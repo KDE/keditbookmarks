@@ -670,32 +670,32 @@ msgstr "Importa les adreces d'interés des d'un fitxer amb el format Galeon"
 #: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
-msgstr "Exporta les adreces d'interés a un fitxer amb el format Mozilla"
+msgstr "Exporta les adreces d'interés cap a un fitxer amb el format Mozilla"
 
 #: main.cpp:128
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr ""
-"Exporta les adreces d'interés a un fitxer amb el format Netscape (4.x i "
+"Exporta les adreces d'interés cap a un fitxer amb el format Netscape (4.x i "
 "anteriors)"
 
 #: main.cpp:129
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr ""
-"Exporta les adreces d'interés a un fitxer amb el format HTML imprimible"
+"Exporta les adreces d'interés cap a un fitxer amb el format HTML imprimible"
 
 #: main.cpp:130
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
-"Exporta les adreces d'interés a un fitxer amb el format dels preferits "
+"Exporta les adreces d'interés cap a un fitxer amb el format dels preferits "
 "d'Internet Explorer"
 
 #: main.cpp:131
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
-msgstr "Exporta les adreces d'interés a un fitxer amb el format Opera"
+msgstr "Exporta les adreces d'interés cap a un fitxer amb el format Opera"
 
 #: main.cpp:132
 #, kde-format
