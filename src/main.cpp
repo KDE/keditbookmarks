@@ -99,7 +99,7 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    KLocalizedString::setApplicationDomain("keditbookmarks");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("keditbookmarks"));
 
     KAboutData aboutData(QStringLiteral("keditbookmarks"),
                          i18n("Bookmark Editor"),
