@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2023-10-25 10:03+0200\n"
+"PO-Revision-Date: 2023-11-04 22:18+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -202,7 +202,7 @@ msgstr ""
 #: actionsimpl.cpp:375
 #, kde-format
 msgid "New folder:"
-msgstr ""
+msgstr "Carpeta nueva:"
 
 #: actionsimpl.cpp:375
 #, kde-format
@@ -231,7 +231,7 @@ msgstr ""
 #: bookmarkinfowidget.cpp:223
 #, kde-format
 msgid "Name:"
-msgstr ""
+msgstr "Nome:"
 
 #: bookmarkinfowidget.cpp:230
 #, kde-format
@@ -271,7 +271,7 @@ msgstr ""
 #: favicons.cpp:70
 #, kde-format
 msgid "Updating favicon..."
-msgstr ""
+msgstr "Anovando'l favicon…"
 
 #: faviconupdater.cpp:76
 #, kde-format
@@ -323,37 +323,37 @@ msgstr ""
 #: importers.h:116
 #, kde-format
 msgid "Galeon"
-msgstr ""
+msgstr "Galeon"
 
 #: importers.h:131
 #, kde-format
 msgid "KDE"
-msgstr ""
+msgstr "KDE"
 
 #: importers.h:161
 #, kde-format
 msgid "Netscape"
-msgstr ""
+msgstr "Netscape"
 
 #: importers.h:176
 #, kde-format
 msgid "Mozilla"
-msgstr ""
+msgstr "Mozilla"
 
 #: importers.h:191
 #, kde-format
 msgid "IE"
-msgstr ""
+msgstr "IE"
 
 #: importers.h:209
 #, kde-format
 msgid "Opera"
-msgstr ""
+msgstr "Opera"
 
 #: kbookmarkmerger.cpp:48
 #, kde-format
 msgid "KBookmarkMerger"
-msgstr ""
+msgstr "KBookmarkMerger"
 
 #: kbookmarkmerger.cpp:50
 #, kde-format
@@ -490,7 +490,7 @@ msgstr ""
 #: kebsearchline.cpp:242
 #, kde-format
 msgid "All Visible Columns"
-msgstr ""
+msgstr "Toles columnes visibles"
 
 #: kebsearchline.cpp:250
 #, kde-format
@@ -507,25 +507,25 @@ msgstr ""
 #: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
 #, kde-format
 msgid "&File"
-msgstr ""
+msgstr "&Ficheru"
 
 #. i18n: ectx: Menu (edit)
 #: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
 #, kde-format
 msgid "&Edit"
-msgstr ""
+msgstr "&Editar"
 
 #. i18n: ectx: Menu (view)
 #: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
 #, kde-format
 msgid "&View"
-msgstr ""
+msgstr "&Ver"
 
 #. i18n: ectx: Menu (folder)
 #: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
 #, kde-format
 msgid "&Folder"
-msgstr ""
+msgstr "&carpeta"
 
 #. i18n: ectx: Menu (bookmark)
 #: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
@@ -537,13 +537,13 @@ msgstr ""
 #: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
 #, kde-format
 msgid "&Settings"
-msgstr ""
+msgstr "&Configuración"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
 #, kde-format
 msgid "Main Toolbar"
-msgstr ""
+msgstr "Barra de ferramientes principal"
 
 #. i18n: ectx: Menu (import)
 #: keditbookmarksui.rc:11
@@ -561,7 +561,7 @@ msgstr ""
 #: keditbookmarksui.rc:67
 #, kde-format
 msgid "&Tools"
-msgstr ""
+msgstr "&Ferramientes"
 
 #: main.cpp:70
 #, kde-format
@@ -605,7 +605,7 @@ msgstr ""
 #: main.cpp:110
 #, kde-format
 msgid "David Faure"
-msgstr ""
+msgstr "David Faure"
 
 #: main.cpp:110
 #, kde-format
