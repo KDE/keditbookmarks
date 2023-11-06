@@ -444,7 +444,7 @@ void KEBApp::slotNewToolbarConfig()
 {
     // called when OK or Apply is clicked
     createGUI();
-    applyMainWindowSettings(KConfigGroup(KSharedConfig::openConfig(), "MainWindow"));
+    applyMainWindowSettings(KConfigGroup(KSharedConfig::openConfig(), QStringLiteral("MainWindow")));
 }
 
 void KEBApp::slotManagerError(const QString &errorMessage)
