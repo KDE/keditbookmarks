@@ -11,7 +11,7 @@
 <article id="keditbookmarks" lang="&language;">
 <articleinfo>
 <title
->Yer İmi Düzenleyici</title>
+>Yer İmi Düzenleyicisi</title>
 <authorgroup>
 <author
 >&Pamela.Roberts;</author>
@@ -54,8 +54,8 @@
 >Yer İmlerini Düzenle</guimenuitem
 > </menuchoice
 > seçeneği, <guilabel
->Yer İmi Düzenleyici</guilabel
->'yi açar.</para>
+>Yer İmi Düzenleyicisi</guilabel
+>'ni açar.</para>
 <para
 >Alternatif olarak, tarayıcı yer imlerini düzenlemek için düzenleyiciyi bağımsız uygulama olarak başlatabilirsiniz.</para>
 <para
@@ -133,7 +133,7 @@
 
 <para
 ><guilabel
->Yer İmi Düzenleyici</guilabel
+>Yer İmi Düzenleyicisi</guilabel
 >, bir dizi başka tarayıcıdan yer imlerini &konqueror;'un yer imi listesine almanıza, bunları yeni bir klasöre koymanıza veya var olan tüm yer imlerinizi değiştirmenize olanak tanır. Bunu yapmak için <guimenu
 >Dosya</guimenu
 > menüsünden, <guisubmenu
@@ -157,7 +157,7 @@
 >Yer imlerini topladıysanız ve belirli bir web sayfasının ne olduğunu unuttuysanız ögenin üstüne <mousebutton
 >sağ</mousebutton
 > tıklayarak, <guilabel
->Yer İmi Düzenleyici</guilabel
+>Yer İmi Düzenleyicisi</guilabel
 > ve açılır menüden <guimenuitem
 >Konqueror'da Aç</guimenuitem
 >'ı seçerseniz bunu kolayca açabilirsiniz. Bunun yerine &URL;'nin hala geçerli olup olmadığını denetlemek isterseniz onun yerine <guimenuitem
@@ -167,8 +167,8 @@
 <note
 ><para
 ><guilabel
->Yer İmi Düzenleyici</guilabel
->'yi kapatırsanız tüm değişiklikleriniz kendiliğinden kaydedilecektir. </para
+>Yer İmi Düzenleyicisi</guilabel
+>'ni kapatırsanız tüm değişiklikleriniz kendiliğinden kaydedilecektir. </para
 ></note>
 
 <para
