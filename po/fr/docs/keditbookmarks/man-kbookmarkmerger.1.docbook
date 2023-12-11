@@ -10,7 +10,7 @@
 <refentry lang="&language;">
 <refentryinfo>
 	<title
->Manuel de l'utilisateur de kbookmarkmerger</title>
+>Manuel de l'utilisateur de KBookmarkMerger</title>
 	<author
 >&Frerich.Raabe; &Frerich.Raabe.mail; </author>
 	<date
@@ -49,7 +49,7 @@
 >&kbookmarkmerger; est un programme pour fusionner un ensemble de signets dans les signets de l'utilisateur. Si l'utilisateur n'a encore créé aucun signet, une nouvelle liste de signets est créée et les signets donnés sont insérés dans celle-ci. En faisant ceci, &kbookmarkmerger; garde une trace des fichiers qui ont été fusionnés lors une fusion précédente. Ainsi, aucun signet ne sera installé plusieurs fois dans les signets de l'utilisateur.</para>
 
 <para
->L'approche traditionellement utilisée pour réaliser ceci était d'utiliser avec prudence les dossiers utilisateurs squelettes lors de la création d'un nouveau compte utilisateur, pour lui fournir un ensemble standard de signets. Le problème avec cette approche est qu'une fois que le compte utilisateur a été créé, aucun signet ne peut être propagé.</para>
+>L'approche traditionnellement utilisée pour réaliser ceci était d'utiliser avec prudence les dossiers utilisateurs squelettes lors de la création d'un nouveau compte utilisateur, pour lui fournir un ensemble standard de signets. Le problème avec cette approche est qu'une fois que le compte utilisateur a été créé, aucun signet ne peut être propagé.</para>
 
 <para
 >Ce mécanisme est utile pour les administrateurs système qui veulent propager un signet pointant vers un certain document (par exemple des notes à propos du système) pour tous les utilisateurs. Les distributeurs peuvent également trouver cela utile, par exemple pour ajouter aux paquets de logiciels qu'ils fournissent des fichiers de signets qui seront fusionnés avec &kbookmarkmerger; avec les signets de l'utilisateur lorsque le paquet est installé. De cette façon, la documentation fournie avec le paquet est facilement est clairement accessible juste après l'installation du paquet.</para>
@@ -84,7 +84,7 @@
 ></command
 ></screen>
 <para
->fusionne tous les fichiers de signets stockés dans <filename
+>fusionne tous les fichiers de signets enregistrés dans <filename
 >/usr/local/extra-bookmarks</filename
 > dans la listes des signets de jean.</para>
 </refsect1>
