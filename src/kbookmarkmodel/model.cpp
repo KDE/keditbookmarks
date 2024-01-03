@@ -49,7 +49,7 @@ public:
         mRootItem = nullptr;
     }
 
-    void _kd_slotBookmarksChanged(const QString &groupAddress, const QString &caller = QString());
+    void _kd_slotBookmarksChanged(const QString &groupAddress);
 
     KBookmarkModel *q;
     TreeItem *mRootItem;
@@ -85,8 +85,8 @@ KBookmarkModel::KBookmarkModel(const KBookmark &root, CommandHistory *commandHis
     Q_ASSERT(bookmarkManager());
     // update when the model updates after a D-Bus signal, coming from this
     // process or from another one
-    connect(bookmarkManager(), &KBookmarkManager::changed, this, [this](const QString &groupAddress, const QString &caller) {
-        d->_kd_slotBookmarksChanged(groupAddress, caller);
+    connect(bookmarkManager(), &KBookmarkManager::changed, this, [this](const QString &groupAddress) {
+        d->_kd_slotBookmarksChanged(groupAddress);
     });
 }
 
@@ -463,11 +463,10 @@ KBookmarkManager *KBookmarkModel::bookmarkManager()
     return d->mCommandHistory->bookmarkManager();
 }
 
-void KBookmarkModel::Private::_kd_slotBookmarksChanged(const QString &groupAddress, const QString &caller)
+void KBookmarkModel::Private::_kd_slotBookmarksChanged(const QString &groupAddress)
 {
     Q_UNUSED(groupAddress);
-    Q_UNUSED(caller);
-    // qCDebug(KEDITBOOKMARKS_LOG) << "_kd_slotBookmarksChanged" << groupAddress << "caller=" << caller << "mIgnoreNext=" << mIgnoreNext;
+    // qCDebug(KEDITBOOKMARKS_LOG) << "_kd_slotBookmarksChanged" << groupAddress << "mIgnoreNext=" << mIgnoreNext;
     if (mIgnoreNext > 0) { // We ignore the first changed signal after every change we did
         --mIgnoreNext;
         return;
