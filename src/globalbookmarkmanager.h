@@ -62,8 +62,6 @@ public:
     void doExport(ExportType type, const QString &path = QString());
     void setUpdate(bool update);
 
-    void reloadConfig();
-
     // TODO move out
     static QString makeTimeStr(const QString &);
     static QString makeTimeStr(int);

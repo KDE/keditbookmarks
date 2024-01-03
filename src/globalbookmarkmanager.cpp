@@ -95,11 +95,6 @@ void GlobalBookmarkManager::notifyManagers()
     notifyManagers(root());
 }
 
-void GlobalBookmarkManager::reloadConfig()
-{
-    mgr()->emitConfigChanged();
-}
-
 QString GlobalBookmarkManager::makeTimeStr(const QString &in)
 {
     int secs;
