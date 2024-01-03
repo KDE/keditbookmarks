@@ -60,7 +60,6 @@ public:
     bool managerSave();
     void saveAs(const QString &fileName);
     void doExport(ExportType type, const QString &path = QString());
-    void setUpdate(bool update);
 
     // TODO move out
     static QString makeTimeStr(const QString &);

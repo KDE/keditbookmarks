@@ -58,11 +58,6 @@ void GlobalBookmarkManager::saveAs(const QString &fileName)
     mgr()->saveAs(fileName);
 }
 
-void GlobalBookmarkManager::setUpdate(bool update)
-{
-    mgr()->setUpdate(update);
-}
-
 QString GlobalBookmarkManager::path() const
 {
     return mgr()->path();
