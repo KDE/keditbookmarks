@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-19 01:56+0000\n"
+"POT-Creation-Date: 2024-01-03 01:37+0000\n"
 "PO-Revision-Date: 2014-10-20 19:50+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: bosanski <bs@li.org>\n"
@@ -280,7 +280,7 @@ msgstr "U redu"
 msgid "Updating favicon..."
 msgstr "Ažuriram favikonu..."
 
-#: faviconupdater.cpp:76
+#: faviconupdater.cpp:77
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; nije nađena HTML komponenta (%2)"

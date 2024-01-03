@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-19 01:56+0000\n"
+"POT-Creation-Date: 2024-01-03 01:37+0000\n"
 "PO-Revision-Date: 2023-08-02 00:55+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -279,7 +279,7 @@ msgstr "Tamam"
 msgid "Updating favicon..."
 msgstr "Site simgesi güncelleniyor..."
 
-#: faviconupdater.cpp:76
+#: faviconupdater.cpp:77
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; Hiç HTML bileşeni bulunamadı (%2)"

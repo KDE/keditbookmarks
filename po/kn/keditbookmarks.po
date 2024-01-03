@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-19 01:56+0000\n"
+"POT-Creation-Date: 2024-01-03 01:37+0000\n"
 "PO-Revision-Date: 2009-01-06 17:37+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
@@ -283,7 +283,7 @@ msgstr "ಸರಿ"
 msgid "Updating favicon..."
 msgstr "ಫೆವಿಕಾನ್ ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ..."
 
-#: faviconupdater.cpp:76
+#: faviconupdater.cpp:77
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr ""
