@@ -27,9 +27,10 @@
 #include <KLocalizedString>
 
 #include <KIO/FavIconRequestJob>
+#include <KIO/SimpleJob>
+#include <KIO/TransferJob>
 #include <KParts/NavigationExtension>
 #include <KParts/PartLoader>
-#include <kio/job.h>
 
 FavIconUpdater::FavIconUpdater(QObject *parent)
     : QObject(parent)

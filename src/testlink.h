@@ -22,7 +22,7 @@
 #include <QObject>
 
 #include <KBookmark>
-#include <kio/job.h>
+#include <KIO/TransferJob>
 
 #include "bookmarkiterator.h"
 class KBookmarkModel;
