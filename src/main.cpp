@@ -40,9 +40,9 @@
 #if HAVE_X11
 #include <KX11Extras>
 #endif
+#include "kbookmarkexporter.h"
 #include <KBookmarkManager>
 #include <QStandardPaths>
-#include <kbookmarkexporter.h>
 #include <kwidgetsaddons_version.h>
 #include <toplevel_interface.h>
 

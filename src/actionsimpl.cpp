@@ -53,14 +53,14 @@
 
 #include <QInputDialog>
 
+#include "kbookmarkimporter.h"
 #include <KBookmark>
 #include <KBookmarkManager>
-#include <kbookmarkimporter.h>
 
-#include <kbookmarkexporter.h>
-#include <kbookmarkimporter_ie.h>
-#include <kbookmarkimporter_ns.h>
-#include <kbookmarkimporter_opera.h>
+#include "kbookmarkexporter.h"
+#include "kbookmarkimporter_ie.h"
+#include "kbookmarkimporter_ns.h"
+#include "kbookmarkimporter_opera.h"
 
 // decoupled from resetActions in toplevel.cpp
 // as resetActions simply uses the action groups

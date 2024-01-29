@@ -9,8 +9,8 @@
 #ifndef __kbookmarkimporter_ie_h
 #define __kbookmarkimporter_ie_h
 
-#include <kbookmarkexporter.h>
-#include <kbookmarkimporter.h>
+#include "kbookmarkexporter.h"
+#include "kbookmarkimporter.h"
 
 /**
  * A class for importing IE bookmarks

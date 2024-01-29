@@ -35,11 +35,11 @@
 #include <KBookmarkManager>
 #include <KMessageBox>
 
+#include "kbookmarkimporter.h"
+#include "kbookmarkimporter_ie.h"
+#include "kbookmarkimporter_ns.h"
+#include "kbookmarkimporter_opera.h"
 #include <kbookmarkdombuilder.h>
-#include <kbookmarkimporter.h>
-#include <kbookmarkimporter_ie.h>
-#include <kbookmarkimporter_ns.h>
-#include <kbookmarkimporter_opera.h>
 #include <kwidgetsaddons_version.h>
 
 ImportCommand::ImportCommand(KBookmarkModel *model)

@@ -8,8 +8,8 @@
 #ifndef __kbookmarkimporter_opera_h
 #define __kbookmarkimporter_opera_h
 
-#include <kbookmarkexporter.h>
-#include <kbookmarkimporter.h>
+#include "kbookmarkexporter.h"
+#include "kbookmarkimporter.h"
 
 /**
  * A class for importing Opera bookmarks
