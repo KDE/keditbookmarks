@@ -2,10 +2,10 @@
 # Darafei Praliaskouski <komzpa@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
+"Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-03 01:37+0000\n"
-"PO-Revision-Date: 2023-01-18 16:31\n"
+"PO-Revision-Date: 2024-02-21 13:30\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -16,11 +16,12 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Crowdin-Project: 86ff119b1606fcaa910d6b44fc14b611\n"
-"X-Crowdin-Project-ID: 127\n"
+"X-Crowdin-Project: fc57ad16a28d02dea100ceb1c60de14e\n"
+"X-Crowdin-Project-ID: 136\n"
 "X-Crowdin-Language: be\n"
-"X-Crowdin-File: /main/be/keditbookmarks/keditbookmarks.po\n"
-"X-Crowdin-File-ID: 7903\n"
+"X-Crowdin-File: /[antikruk.KDE] main/KDE6/be/messages/keditbookmarks/"
+"keditbookmarks.po\n"
+"X-Crowdin-File-ID: 10042\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -607,10 +608,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "Рэдактар і арганайзер закладак"
 
 #: main.cpp:109
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2017, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "Аўтарскія правы 2000-2017, распрацоўнікі KDE"
+msgstr "Аўтарскія правы 2000-2023, распрацоўнікі KDE"
 
 #: main.cpp:110
 #, kde-format
