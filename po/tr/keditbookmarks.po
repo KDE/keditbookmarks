@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-03 01:37+0000\n"
-"PO-Revision-Date: 2024-02-09 17:46+0300\n"
+"PO-Revision-Date: 2024-02-29 17:07+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.01.95\n"
+"X-Generator: Lokalize 24.02.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -56,7 +56,7 @@ msgstr "Yorumu D&eğiştir"
 #: actionsimpl.cpp:118
 #, kde-format
 msgid "Chan&ge Icon..."
-msgstr "Sim&geyi Değiştir..."
+msgstr "Sim&geyi Değiştir…"
 
 #: actionsimpl.cpp:122
 #, kde-format
@@ -71,7 +71,7 @@ msgstr "Özyineli Olarak Sırala"
 #: actionsimpl.cpp:131
 #, kde-format
 msgid "&New Folder..."
-msgstr "&Yeni Klasör..."
+msgstr "&Yeni Klasör…"
 
 #: actionsimpl.cpp:137
 #, kde-format
@@ -101,7 +101,7 @@ msgstr "Tüm Klasörleri G&enişlet"
 #: actionsimpl.cpp:159
 #, kde-format
 msgid "Collapse &All Folders"
-msgstr "Tüm Klasörleri Topl&a"
+msgstr "Tüm Klasörleri D&aralt"
 
 #: actionsimpl.cpp:164
 #, kde-format
@@ -136,32 +136,32 @@ msgstr "Site S&imgesi Güncellemeyi İptal Et"
 #: actionsimpl.cpp:191
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
-msgstr "&Netscape Yer İmlerini İçe Aktar..."
+msgstr "&Netscape Yer İmleri İçe Aktar…"
 
 #: actionsimpl.cpp:197
 #, kde-format
 msgid "Import &Opera Bookmarks..."
-msgstr "&Opera Yer İmlerini İçe Aktar..."
+msgstr "&Opera Yer İmleri İçe Aktar…"
 
 #: actionsimpl.cpp:207
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
-msgstr "&Galeon Yer İmlerini İçe Aktar..."
+msgstr "&Galeon Yer İmleri İçe Aktar…"
 
 #: actionsimpl.cpp:213
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
-msgstr "&KDE2 ya da KDE 3 Yer İmlerini İçe Aktar..."
+msgstr "&KDE2 ya da KDE 3 Yer İmleri İçe Aktar…"
 
 #: actionsimpl.cpp:219
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
-msgstr "&Internet Explorer Yer İmlerini İçe Aktar..."
+msgstr "&Internet Explorer Yer İmleri İçe Aktar…"
 
 #: actionsimpl.cpp:225
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
-msgstr "&Mozilla Yer İmlerini İçe Aktar..."
+msgstr "&Mozilla Yer İmleri İçe Aktar…"
 
 #: actionsimpl.cpp:230
 #, kde-format
@@ -171,22 +171,22 @@ msgstr "&Netscape Yer İmlerini Dışa Aktar"
 #: actionsimpl.cpp:235
 #, kde-format
 msgid "Export &Opera Bookmarks..."
-msgstr "&Opera Yer İmlerini Dışa Aktar..."
+msgstr "&Opera Yer İmlerini Dışa Aktar…"
 
 #: actionsimpl.cpp:240
 #, kde-format
 msgid "Export &HTML Bookmarks..."
-msgstr "&HTML Yer İmlerini Dışa Aktar..."
+msgstr "&HTML Yer İmlerini Dışa Aktar…"
 
 #: actionsimpl.cpp:244
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
-msgstr "&Internet Explorer Yer İmlerini Dışa Aktar..."
+msgstr "&Internet Explorer Yer İmlerini Dışa Aktar…"
 
 #: actionsimpl.cpp:249
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
-msgstr "&Mozilla Yer İmlerini Dışa Aktar..."
+msgstr "&Mozilla Yer İmlerini Dışa Aktar…"
 
 #: actionsimpl.cpp:294
 #, kde-format
@@ -277,7 +277,7 @@ msgstr "Tamam"
 #: favicons.cpp:70
 #, kde-format
 msgid "Updating favicon..."
-msgstr "Site simgesi güncelleniyor..."
+msgstr "Site simgesi güncelleniyor…"
 
 #: faviconupdater.cpp:77
 #, kde-format
@@ -613,7 +613,7 @@ msgstr "Yer İmleri Yöneticisi ve Düzenleyicisi"
 #: main.cpp:109
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "Telif Hakkı 2000-2023, KDE geliştiricileri"
+msgstr "Telif Hakkı 2000–2023, KDE geliştiricileri"
 
 #: main.cpp:110
 #, kde-format
@@ -705,7 +705,7 @@ msgstr "Yer imleri dosyasında verilen konumda aç"
 #: main.cpp:133
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
-msgstr "Kullanıcının okuyabileceği başlığı ayarlayın, örneğin \"Konsole\""
+msgstr "Kullanıcının okuyabileceği başlığı ayarlayın, örneğin ‘Konsole’"
 
 #: main.cpp:134
 #, kde-format
@@ -723,9 +723,9 @@ msgid ""
 msgstr ""
 "Bu yer imi koleksiyonunu simgeleyen benzersiz bir ad, genellikle kinstance "
 "adıdır.\n"
-"Bu, Konqueror yer imleri için \"konqueror\", KFileDialog yer imleri için "
-"\"kfile\" vb. olmalıdır.\n"
-"Son D-Bus nesne yolu /KBookmarkManager/<dbusObjectName>'dır"
+"Bu, Konqueror yer imleri için ‘konqueror’, KFileDialog yer imleri için "
+"‘kfile’ vb. olmalıdır.\n"
+"Son D-Bus nesne yolu /KBookmarkManager/<dbusObjectName>’dır"
 
 #: main.cpp:139
 #, kde-format
@@ -745,4 +745,4 @@ msgstr "Yalnızca tek bir --import seçeneği belirtebilirsiniz."
 #: testlink.cpp:73
 #, kde-format
 msgid "Checking..."
-msgstr "Denetleniyor..."
+msgstr "Denetleniyor…"
