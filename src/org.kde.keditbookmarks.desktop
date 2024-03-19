@@ -140,5 +140,4 @@ Comment[zh_TW]=書籤組織編輯器
 Icon=bookmarks-organize
 X-DocPath=keditbookmarks/index.html
 Categories=Qt;KDE;Network;WebBrowser;
-X-DBUS-ServiceName=org.kde.keditbookmarks.desktop
 
