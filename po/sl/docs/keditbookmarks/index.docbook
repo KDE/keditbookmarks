@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % Slovenian "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<!--moved from konqueror docbook -->
+
+<article id="keditbookmarks" lang="&language;">
+<articleinfo>
+<title
+>Urejevalnik zaznamkov</title>
+<authorgroup>
+<author
+>&Pamela.Roberts;</author>
+<othercredit role="translator"
+><firstname
+>Andrej</firstname
+><surname
+>Vernekar</surname
+><affiliation
+><address
+><email
+>andrej.vernekar@moj.net</email
+></address
+></affiliation
+><contrib
+>Prevod</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>04.11.2016</date>
+
+<releaseinfo
+>Aplikacije 16.12</releaseinfo>
+
+<keywordset>
+<keyword
+>zaznamki</keyword>
+<keyword
+>urejevalnik</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>V mnogih aplikacijah (&eg; &konqueror;, &konsole;, &konversation;) možnost <menuchoice
+><guimenu
+>Zaznamki</guimenu
+><guimenuitem
+>Uredi zaznamke</guimenuitem
+> </menuchoice
+> odpre <guilabel
+>urejevalnik zaznamkov</guilabel
+>.</para>
+<para
+>Lahko pa zaženete urejevalnik kot samostojno aplikacijo za urejanje zaznamkov brskalnika.</para>
+<para
+>Urejevalnik prikaže drevesni pogled vaših zaznamkov in podmap zaznamkov. Kot je običajno za drevesne poglede v &kde;, so podmape prikazane z majhno puščico <keycap
+>&gt;</keycap
+> na levi strani imena mape; <mousebutton
+>levi</mousebutton
+> klik nanjo bo razširil pogled in prikazal vsebino te podmape in puščica <keycap
+>&gt;</keycap
+> se bo spremenila v <keycap
+>v</keycap
+>; <mousebutton
+>levi</mousebutton
+> klik na puščico <keycap
+>v</keycap
+> bo strnil pogled podmape.</para>
+
+<para
+>Če želite izbrati element na seznamu, ga lahko <mousebutton
+>levi</mousebutton
+> kliknete ali pa se po seznamu pomikate s tipkama <keysym
+>Gor</keysym
+> in <keysym
+>Dol</keysym
+>, da premikanje, <keysym
+>desno</keysym
+>, da razširite podmapo, in <keysym
+>levo</keysym
+>, da jo strnete.</para>
+
+<para
+>Element lahko premaknete na drugo mesto na seznamu z uporabo običajnih metod Povleci in spusti ali <guimenuitem
+>Izreži</guimenuitem
+> in <guimenuitem
+> Prilepi</guimenuitem
+>. Vrstni red, v katerem se elementi prikažejo v <guilabel
+>Urejevalniku zaznamkov</guilabel
+>, je vrstni red, v katerem bodo prikazani na spustnem seznamu <guimenu
+>Zaznamki</guimenu
+>. Možnost <menuchoice
+><guimenu
+>Mapa </guimenu
+><guimenuitem
+>Vstavi ločilo</guimenuitem
+></menuchoice
+> lahko uporabite za vstavljanje ločilnih vrstic na seznam, kjer koli želite.</para>
+
+<para
+>Novo podmapo lahko ustvarite na izbrani točki na seznamu z uporabo možnosti <guimenuitem
+>Nova mapa ...</guimenuitem
+> v meniju <guimenu
+>Mapa</guimenu
+> ali iz spustnega menija, ki ga dobite, ko <mousebutton
+>desni</mousebutton
+> kliknite na element v glavnem delu okna ali s <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </para>
+
+<para
+>Če želite spremeniti ime zaznamka ali mape, jo izberite in pritisnite <keycap
+>F2</keycap
+> ali izberite element <guimenuitem
+>Preimenuj</guimenuitem
+> v meniju <guimenu
+>Uredi</guimenu
+> ali v pojavnem meniju, ki se prikaže, ko <mousebutton
+>desno</mousebutton
+> kliknete element. Podobno lahko uredite &URL; s pritiskom <keycap
+>F3</keycap
+> ali izbiro menijske postavke <guimenuitem
+> Spremeni lokacijo</guimenuitem
+>.</para>
+
+<para
+><guilabel
+>Urejevalnik zaznamkov</guilabel
+> vam omogoča uvoz zaznamkov iz vrste drugih brskalnikov na seznam zaznamkov &konqueror;, ki jih postavite v novo mapo ali zamenjate vse trenutne zaznamke. Če želite to narediti, izberite <guisubmenu
+>Uvozi</guisubmenu
+> v meniju <guimenu
+>Datoteka</guimenu
+>. Možnost <menuchoice
+><guimenu
+>Datoteka</guimenu
+><guisubmenu
+>Izvoz</guisubmenu
+> </menuchoice
+> lahko uporabite za izvoz zaznamkov &konqueror; v brskalnik Mozilla.</para>
+
+<para
+>Če želite izbrati, katera podmapa zaznamkov se uporablja za shranjevanje elementov orodne vrstice zaznamkov, izberite podmapo in nato izberite <guimenuitem
+>Nastavi kot mapo orodne vrstice</guimenuitem
+> v meniju <guimenu
+>Mapa</guimenu
+>.</para>
+
+<para
+>Če pospravljate svoje zaznamke in ste pozabili, kaj je določena spletna stran, jo lahko preprosto odprete v <guilabel
+> urejevalniku zaznamkov</guilabel
+> tako, da <mousebutton
+>desno</mousebutton
+> kliknete element in izberete <guimenuitem
+>Odpri v Konquerorju</guimenuitem
+> iz pojavnega menija. Če želite le preveriti, ali &URL; je še vedno veljaven, namesto tega izberite <guimenuitem
+>Preveri stanje</guimenuitem
+>.</para>
+
+<note
+><para
+>Vse vaše spremembe se samodejno shranijo, če zaprete <guilabel
+>Urejevalnik zaznamkov</guilabel
+>. </para
+></note>
+
+<para
+>Prevod: Andrej Vernekar <email
+>andrej.vernekar@moj.net</email
+></para
+> 
+
+&underFDL;
+&underGPL;
+
+</article>

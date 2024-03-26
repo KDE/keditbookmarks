@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Slovenian "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>Uporabniški priročnik kbookmarkmerger</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>07.11.2016</date>
+	<releaseinfo
+>Aplikacije 16.12</releaseinfo>
+	<productname
+>Aplikacije KDE</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>Program za združevanje danega niza zaznamkov v uporabnikov seznam zaznamkov.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>imenik</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Opis</title>
+<para
+>&kbookmarkmerger; je program za združevanje danega nabora zaznamkov v uporabniški nabor zaznamkov; če uporabnik še nima izdelanih zaznamkov, se ustvari nov seznam zaznamkov in vanj se vstavijo dani zaznamki. Med tem se &kbookmarkmerger; spremlja, katere datoteke so bile že združene v prejšnjem zagonu, tako da noben zaznamek ne bo več kot enkrat nameščen v uporabniške zaznamke.</para>
+
+<para
+>Tradicionalno uporabljen pristop za dosego nečesa takega je bila uporaba skrbno oblikovanih skeletnih domačih imenikov pri ustvarjanju novega uporabniškega računa, da bi uporabniku zagotovili standardni nabor zaznamkov. Težava pri tem pristopu je, da po tem, ko je uporabniški račun ustvarjen, ni več mogoče razširiti novih zaznamkov.</para>
+
+<para
+>Ta mehanizem je uporaben za sistemske skrbnike, ki želijo vsem uporabnikom posredovati zaznamek, ki kaže na določen dokument (na primer pomembne opombe o sistemu). Tudi distributerjem se bo to lahko zdelo koristno, na primer z razširitvijo programskih paketov, ki jih dobavijo, z datotekami zaznamkov, ki jih &kbookmarkmerger; se združi v uporabnikov seznam zaznamkov, ko je paket nameščen. Tako je dokumentacija, ki je priložena programskemu paketu, enostavno in vidno dostopna takoj po namestitvi paketa.</para>
+
+<para
+>Edini parameter, ki ga zahteva &kbookmarkmerger; je ime imenika, v katerem bodo pregledane datoteke z zaznamki. Vse datoteke v danem imeniku bodo upoštevane pri združitvi v uporabniške nastavitve. Datoteke v podanem imeniku morajo biti veljavne datoteke <acronym
+>XBEL</acronym
+>.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Poglej tudi</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>&konqueror; priročnik</ulink
+></member>
+<member
+>kf5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Primeri</title>
+<screen
+>joe@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>Združi vse datoteke z zaznamki, shranjene v <filename
+>/usr/local/extra-bookmarks</filename
+>, v Joejev seznam zaznamkov.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Standardi</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+>Specifikacija <acronym
+>XBEL</acronym
+></ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Omejitve</title>
+<para
+>Pri ugotavljanju, ali je bila določena datoteka z zaznamki že združena z uporabnikovimi zaznamki ali ne, &kbookmarkmerger; samo pogleda ime datoteke z zaznamki - vsebina se sploh ne preveri. To pomeni, da sprememba datoteke z zaznamki, ki je že bila združena z uporabnikovimi zaznamki, ne bo sprožila ponovnega združevanja.</para>
+
+<para
+>Upoštevajte tudi, da v primeru, da uporabnik spremeni zaznamek, ki je bil združen z njegovimi nastavitvami, bo izvirna datoteka zaznamka ostala nespremenjena.</para>
+</refsect1>
+
+<refsect1>
+<title
+>Avtor</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>
