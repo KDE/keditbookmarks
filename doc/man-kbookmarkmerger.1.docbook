@@ -73,7 +73,8 @@ files.</para>
 <title>See Also</title>
 <simplelist>
 <member><ulink url="help:/konqueror/index.html">&konqueror; manual</ulink></member>
-<member>kf5options(7)</member>
+<member>kf6options(7)</member>
+<member>qt6options(7)</member>
 </simplelist>
 </refsect1>
 
