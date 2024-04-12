@@ -66,7 +66,7 @@ if(NOT APPLE)
         set_package_properties(X11 PROPERTIES TYPE OPTIONAL)
     endif()
 endif()
-
+add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
 add_subdirectory(src)
 ki18n_install(po)
 if (KF6DocTools_FOUND)
