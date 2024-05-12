@@ -40,7 +40,6 @@
 #include "kbookmarkimporter_ns.h"
 #include "kbookmarkimporter_opera.h"
 #include <kbookmarkdombuilder.h>
-#include <kwidgetsaddons_version.h>
 
 ImportCommand::ImportCommand(KBookmarkModel *model)
     : QUndoCommand()

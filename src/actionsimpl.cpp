@@ -49,7 +49,6 @@
 #include <KLocalizedString>
 #include <KStandardAction>
 #include <QIcon>
-#include <kio_version.h>
 
 #include <QInputDialog>
 

@@ -36,14 +36,12 @@
 
 #include <KMessageBox>
 #include <KWindowSystem>
-#include <kwindowsystem_version.h>
 #if HAVE_X11
 #include <KX11Extras>
 #endif
 #include "kbookmarkexporter.h"
 #include <KBookmarkManager>
 #include <QStandardPaths>
-#include <kwidgetsaddons_version.h>
 #include <toplevel_interface.h>
 
 // TODO - make this register() or something like that and move dialog into main
