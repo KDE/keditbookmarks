@@ -54,7 +54,7 @@ msgstr "C&anvia el comentari"
 #: actionsimpl.cpp:118
 #, kde-format
 msgid "Chan&ge Icon..."
-msgstr "Can&via la icona..."
+msgstr "Can&via la icona…"
 
 #: actionsimpl.cpp:122
 #, kde-format
@@ -69,7 +69,7 @@ msgstr "Ordenació recursiva"
 #: actionsimpl.cpp:131
 #, kde-format
 msgid "&New Folder..."
-msgstr "Carpeta &nova..."
+msgstr "Carpeta &nova…"
 
 #: actionsimpl.cpp:137
 #, kde-format
@@ -134,32 +134,32 @@ msgstr "Cancel·la les actualitzacions de les &icones de web"
 #: actionsimpl.cpp:191
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
-msgstr "Importa les adreces d'interés de &Netscape..."
+msgstr "Importa les adreces d'interés de &Netscape…"
 
 #: actionsimpl.cpp:197
 #, kde-format
 msgid "Import &Opera Bookmarks..."
-msgstr "Importa les adreces d'interés d'&Opera..."
+msgstr "Importa les adreces d'interés d'&Opera…"
 
 #: actionsimpl.cpp:207
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
-msgstr "Importa les adreces d'interés de &Galeon..."
+msgstr "Importa les adreces d'interés de &Galeon…"
 
 #: actionsimpl.cpp:213
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
-msgstr "Importa les adreces d'interés de &KDE 2 o KDE 3..."
+msgstr "Importa les adreces d'interés de &KDE 2 o KDE 3…"
 
 #: actionsimpl.cpp:219
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
-msgstr "Importa les adreces d'interés d'&Internet Explorer..."
+msgstr "Importa les adreces d'interés d'&Internet Explorer…"
 
 #: actionsimpl.cpp:225
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
-msgstr "Importa les adreces d'interés de &Mozilla..."
+msgstr "Importa les adreces d'interés de &Mozilla…"
 
 #: actionsimpl.cpp:230
 #, kde-format
@@ -169,22 +169,22 @@ msgstr "Exporta cap a adreces d'interés de &Netscape"
 #: actionsimpl.cpp:235
 #, kde-format
 msgid "Export &Opera Bookmarks..."
-msgstr "Exporta cap a adreces d'interés d'&Opera..."
+msgstr "Exporta cap a adreces d'interés d'&Opera…"
 
 #: actionsimpl.cpp:240
 #, kde-format
 msgid "Export &HTML Bookmarks..."
-msgstr "Exporta cap a adreces d'interés en &HTML..."
+msgstr "Exporta cap a adreces d'interés en &HTML…"
 
 #: actionsimpl.cpp:244
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
-msgstr "Exporta cap a adreces d'interés d'&Internet Explorer..."
+msgstr "Exporta cap a adreces d'interés d'&Internet Explorer…"
 
 #: actionsimpl.cpp:249
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
-msgstr "Exporta cap a adreces d'interés de &Mozilla..."
+msgstr "Exporta cap a adreces d'interés de &Mozilla…"
 
 #: actionsimpl.cpp:294
 #, kde-format
@@ -275,7 +275,7 @@ msgstr "D'acord"
 #: favicons.cpp:70
 #, kde-format
 msgid "Updating favicon..."
-msgstr "S'està actualitzant la icona de web..."
+msgstr "S'està actualitzant la icona de web…"
 
 #: faviconupdater.cpp:77
 #, kde-format
@@ -745,4 +745,4 @@ msgstr "Només podeu especificar una única opció --import."
 #: testlink.cpp:73
 #, kde-format
 msgid "Checking..."
-msgstr "S'està comprovant..."
+msgstr "S'està comprovant…"
