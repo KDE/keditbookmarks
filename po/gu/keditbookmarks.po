@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-03 01:37+0000\n"
+"POT-Creation-Date: 2024-05-13 00:41+0000\n"
 "PO-Revision-Date: 2008-10-13 21:01+0530\n"
 "Last-Translator: Pragnesh Radadiya <pg.radadia@gmail.com>\n"
 "Language-Team: Gujarati <kde-i18n-doc@lists.kde.org>\n"
@@ -27,210 +27,210 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "pg.radadia@gmail.com"
 
-#: actionsimpl.cpp:94
+#: actionsimpl.cpp:93
 #, kde-format
 msgid "&Delete"
 msgstr "છેકી કાઢો (&D)"
 
-#: actionsimpl.cpp:100
+#: actionsimpl.cpp:99
 #, kde-format
 msgid "Rename"
 msgstr "નામ બદલો"
 
-#: actionsimpl.cpp:106
+#: actionsimpl.cpp:105
 #, fuzzy, kde-format
 #| msgid "C&hange URL"
 msgid "C&hange Location"
 msgstr "URL બદલો (&h)"
 
-#: actionsimpl.cpp:112
+#: actionsimpl.cpp:111
 #, kde-format
 msgid "C&hange Comment"
 msgstr "ટીપ્પણી બદલો (&h)"
 
-#: actionsimpl.cpp:118
+#: actionsimpl.cpp:117
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "ચિહ્ન બદલો... (&g)"
 
-#: actionsimpl.cpp:122
+#: actionsimpl.cpp:121
 #, kde-format
 msgid "Update Favicon"
 msgstr "ફેવીકોન સુધારો"
 
-#: actionsimpl.cpp:126
+#: actionsimpl.cpp:125
 #, kde-format
 msgid "Recursive Sort"
 msgstr "ફરીફરી કમમાં ગોઠવો"
 
-#: actionsimpl.cpp:131
+#: actionsimpl.cpp:130
 #, kde-format
 msgid "&New Folder..."
 msgstr "નવું ફોલ્ડર... (&N)"
 
-#: actionsimpl.cpp:137
+#: actionsimpl.cpp:136
 #, kde-format
 msgid "&New Bookmark"
 msgstr "નવી નોંધ (&N)"
 
-#: actionsimpl.cpp:141
+#: actionsimpl.cpp:140
 #, kde-format
 msgid "&Insert Separator"
 msgstr "વિભાજક ઉમેરો (&I)"
 
-#: actionsimpl.cpp:146
+#: actionsimpl.cpp:145
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "એબીસીડી પ્રમાણે ક્રમમાં ગોઠવો (&S)"
 
-#: actionsimpl.cpp:151
+#: actionsimpl.cpp:150
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "સાધનપટ્ટી ફોલ્ડર જેમ સ્થાપિત કરો (&o)"
 
-#: actionsimpl.cpp:155
+#: actionsimpl.cpp:154
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "બધા ફોલ્ડરોને વિસ્તારો (&E)"
 
-#: actionsimpl.cpp:159
+#: actionsimpl.cpp:158
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "બધા ફોલ્ડરોને સંકોચો (&A)"
 
-#: actionsimpl.cpp:164
+#: actionsimpl.cpp:163
 #, fuzzy, kde-format
 #| msgid "&Open in Konqueror"
 msgid "&Open in Browser"
 msgstr "કોન્કરરમાં ખોલો (&O)"
 
-#: actionsimpl.cpp:169
+#: actionsimpl.cpp:168
 #, kde-format
 msgid "Check &Status"
 msgstr "સ્થિતિ તપાસો (&S)"
 
-#: actionsimpl.cpp:173
+#: actionsimpl.cpp:172
 #, kde-format
 msgid "Check Status: &All"
 msgstr "સ્થિતિ તપાસો: બધા (&A)"
 
-#: actionsimpl.cpp:177
+#: actionsimpl.cpp:176
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "બધા ફેવીકોનો સુધારો (&F)"
 
-#: actionsimpl.cpp:181
+#: actionsimpl.cpp:180
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "તપાસ રદ કરો (&C)"
 
-#: actionsimpl.cpp:185
+#: actionsimpl.cpp:184
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "ફેવીકોન સુધારો રદ કરો (&F)"
 
-#: actionsimpl.cpp:191
+#: actionsimpl.cpp:190
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "નેટસ્કેપ નોંધો આયાત કરો... (&N)"
 
-#: actionsimpl.cpp:197
+#: actionsimpl.cpp:196
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "ઓપેરા નોંધો આયાત કરો... (&O)"
 
-#: actionsimpl.cpp:207
+#: actionsimpl.cpp:206
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "ગેલોન નોંધો આયાત કરો... (&G)"
 
-#: actionsimpl.cpp:213
+#: actionsimpl.cpp:212
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "કેડીઇ ૨ અને કેડીઇ ૩ નોંધો આયાત કરો... (&K)"
 
-#: actionsimpl.cpp:219
+#: actionsimpl.cpp:218
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "ઇન્ટરનેટ એક્ષપ્લોરર નોંધો આયાત કરો... (&I)"
 
-#: actionsimpl.cpp:225
+#: actionsimpl.cpp:224
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "મોઝીલ્લા નોંધો આયાત કરો... (&M)"
 
-#: actionsimpl.cpp:230
+#: actionsimpl.cpp:229
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "નેટસ્કેપ નોંધો નિકાસ કરો... (&N)"
 
-#: actionsimpl.cpp:235
+#: actionsimpl.cpp:234
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "ઓપેરા નોંધો નિકાસ કરો... (&O)"
 
-#: actionsimpl.cpp:240
+#: actionsimpl.cpp:239
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "HTML નોંધો નિકાસ કરો... (&H)"
 
-#: actionsimpl.cpp:244
+#: actionsimpl.cpp:243
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "ઇન્ટરનેટ એક્ષપ્લોરર નોંધો નિકાસ કરો... (&I)"
 
-#: actionsimpl.cpp:249
+#: actionsimpl.cpp:248
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "મોઝીલ્લા નોંધો નિકાસ કરો... (&M)"
 
-#: actionsimpl.cpp:294
+#: actionsimpl.cpp:293
 #, fuzzy, kde-format
 #| msgid "*.html|HTML Bookmark Listing"
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "*.html|HTML નોંધો યાદીઓ"
 
-#: actionsimpl.cpp:339
+#: actionsimpl.cpp:338
 #, fuzzy, kde-format
 #| msgid "Cut Items"
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "વસ્તુઓ કાપો"
 
-#: actionsimpl.cpp:364
+#: actionsimpl.cpp:363
 #, fuzzy, kde-format
 #| msgid "Paste"
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "ચોંટાડો"
 
-#: actionsimpl.cpp:375
+#: actionsimpl.cpp:374
 #, kde-format
 msgid "New folder:"
 msgstr "નવું ફોલ્ડર:"
 
-#: actionsimpl.cpp:375
+#: actionsimpl.cpp:374
 #, fuzzy, kde-format
 #| msgid "Create New Bookmark Folder"
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "નવું બુકમાર્ક ફોલ્ડર બનાવો"
 
-#: actionsimpl.cpp:522
+#: actionsimpl.cpp:521
 #, fuzzy, kde-format
 #| msgid "Recursive Sort"
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "ફરીફરી કમમાં ગોઠવો"
 
-#: actionsimpl.cpp:537
+#: actionsimpl.cpp:536
 #, fuzzy, kde-format
 #| msgid "Sort Alphabetically"
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "એબીસીડી પ્રમાણી ક્રમમાં ગોઠવો"
 
-#: actionsimpl.cpp:546
+#: actionsimpl.cpp:545
 #, fuzzy, kde-format
 #| msgid "Delete Items"
 msgctxt "(qtundo-format)"
@@ -287,47 +287,47 @@ msgstr "ફેવીકોન સુધારીએ છીએ..."
 msgid "%1; no HTML component found (%2)"
 msgstr ""
 
-#: importers.cpp:57
+#: importers.cpp:56
 #, fuzzy, kde-format
 #| msgid "Import %1 Bookmarks"
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "%1 નોંધો આયાત કરો"
 
-#: importers.cpp:62
+#: importers.cpp:61
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 નોંધો"
 
-#: importers.cpp:99
+#: importers.cpp:98
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "નવા પેટાફોલ્ડર તરીકે આયાત કરો અથવા હાલની બધી નોંધો બદલો?"
 
-#: importers.cpp:100
+#: importers.cpp:99
 #, fuzzy, kde-format
 #| msgid "%1 Import"
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 આયાત કરો"
 
-#: importers.cpp:101
+#: importers.cpp:100
 #, kde-format
 msgid "As New Folder"
 msgstr "નવા ફોલ્ડર તરીકે"
 
-#: importers.cpp:102
+#: importers.cpp:101
 #, kde-format
 msgid "Replace"
 msgstr "બદલો"
 
-#: importers.cpp:212
+#: importers.cpp:211
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "*.xbel|ગેલીઓન નોંધ ફાઇલો (*.xbel)"
 
-#: importers.cpp:220
+#: importers.cpp:219
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"
@@ -593,7 +593,7 @@ msgstr "નિકાસ (&E)"
 msgid "&Tools"
 msgstr "સાધનો (&T)"
 
-#: main.cpp:70
+#: main.cpp:68
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -604,132 +604,132 @@ msgstr ""
 "અસ્તિત્વમાં કામ ચાલુ રાખવા માગો છો?\n"
 " મહેરબાની કરીને એની નોંધ રાખો કે, દુર્ભાગ્યે, જોડીયો દેખાવ માત્ર વાંચી શકાશે."
 
-#: main.cpp:74
+#: main.cpp:72
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "ચેતવણી"
 
-#: main.cpp:75
+#: main.cpp:73
 #, kde-format
 msgid "Run Another"
 msgstr "બીજો ચાલુ કરો"
 
-#: main.cpp:76
+#: main.cpp:74
 #, kde-format
 msgid "Continue in Same"
 msgstr "પહેલામાં ચાલુ રાખો"
 
-#: main.cpp:105
+#: main.cpp:103
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "નોંધ સંપાદક"
 
-#: main.cpp:107
+#: main.cpp:105
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "નોધ વ્યવસ્થાપક અને સંપાદક"
 
-#: main.cpp:109
+#: main.cpp:107
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "(c) ૨૦૦૦-૨૦૦૭ કેડીઇ વિકાસકર્તાઓ"
 
-#: main.cpp:110
+#: main.cpp:108
 #, kde-format
 msgid "David Faure"
 msgstr "ડેવિડ ફૌરે"
 
-#: main.cpp:110
+#: main.cpp:108
 #, kde-format
 msgid "Initial author"
 msgstr "પહેલાના લેખક"
 
-#: main.cpp:111
+#: main.cpp:109
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "એલેક્ઝાન્ડર કેલેટ્ટ"
 
-#: main.cpp:111
+#: main.cpp:109
 #, kde-format
 msgid "Author"
 msgstr "લેખક"
 
-#: main.cpp:121
+#: main.cpp:119
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "મોઝીલ્લા ફોર્મેટમાંની ફાઇલમાંથી નોંધો આયાત કરો"
 
-#: main.cpp:122
+#: main.cpp:120
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "નેટસ્કેપ (૪.x અને પહેલાના) ફોર્મેટમાંની ફાઇલમાંથી નોંધો આયાત કરો"
 
-#: main.cpp:123
+#: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "ઇન્ટરનેટ એક્ષપ્લોરરની ફેવરીટ ફોર્મેટમાંની ફાઇલમાંથી નોંધો આયાત કરો"
 
-#: main.cpp:124
+#: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "ઓપેરા ફોર્મેટમાંની ફાઇલમાંથી નોંધો આયાત કરો"
 
-#: main.cpp:125
+#: main.cpp:123
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "ઓપેરા ફોર્મેટમાંની ફાઇલમાંથી નોંધો આયાત કરો"
 
-#: main.cpp:126
+#: main.cpp:124
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "ઓપેરા ફોર્મેટમાંની ફાઇલમાંથી નોંધો આયાત કરો"
 
-#: main.cpp:127
+#: main.cpp:125
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "મોઝીલ્લા ફોર્મેટમાંની ફાઇલમાં નોંધો નિકાસ કરો"
 
-#: main.cpp:128
+#: main.cpp:126
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "નેટસ્કેપ (૪.x અને પહેલાની) ફોર્મેટમાંની ફાઇલમાં નોંધો નિકાસ કરો"
 
-#: main.cpp:129
+#: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "છાપી શકાય તેવા HTML ફોર્મેટમાંની ફાઇલમાં નોંધો નિકાસ કરો"
 
-#: main.cpp:130
+#: main.cpp:128
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "ઇન્ટરનેટ એકપ્લોરરના ફેવરીટ ફોર્મેટમાંની ફાઇલમાં નોંધો નિકાસ કરો"
 
-#: main.cpp:131
+#: main.cpp:129
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "ઓપેરા ફોર્મેટમાંની ફાઇલમાં નોંધો નિકાસ કરો"
 
-#: main.cpp:132
+#: main.cpp:130
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "નોંધની ફાઇલમાં આપેલ સ્થાને ખોલો"
 
-#: main.cpp:133
+#: main.cpp:131
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "વપરાશકર્તા વાચી શકે તે કેપ્શન સ્થાપિત કરો, દાખલા તરીકે \"Konsole\""
 
-#: main.cpp:134
+#: main.cpp:132
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "બ્રાઉસર સંબધી બધા કાર્યો છુપાવો"
 
-#: main.cpp:135
+#: main.cpp:133
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -748,17 +748,17 @@ msgstr ""
 " કોન્કર નોંધો માટે તે \"કોન્કર\" હોવુ જોઇએ, KFileDialog  નોંધો માટે \"kfile\"   હોવુ જોઇએ, વગેરે.\n"
 " છેલ્લે DBus ઓબ્જેકટ માર્ગ /KBookmarkManager/dbusObjectName રહેશે  "
 
-#: main.cpp:139
+#: main.cpp:137
 #, kde-format
 msgid "File to edit"
 msgstr "ફેરફાર કરવાની ફાઇલ"
 
-#: main.cpp:227
+#: main.cpp:225
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "તમે માત્ર એક જ --export (નિકાસ) વિકલ્પ કહી શકશો."
 
-#: main.cpp:234
+#: main.cpp:232
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "તમે માત્ર એક જ --import (આયાત) વિકલ્પ કહી શકશો."

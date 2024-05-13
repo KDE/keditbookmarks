@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-03 01:37+0000\n"
+"POT-Creation-Date: 2024-05-13 00:41+0000\n"
 "PO-Revision-Date: 2023-07-16 21:02+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -32,202 +32,202 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "marcos@euskalgnu.org, dooteo@euskalgnu.org"
 
-#: actionsimpl.cpp:94
+#: actionsimpl.cpp:93
 #, kde-format
 msgid "&Delete"
 msgstr "&Ezabatu"
 
-#: actionsimpl.cpp:100
+#: actionsimpl.cpp:99
 #, kde-format
 msgid "Rename"
 msgstr "Aldatu izena"
 
-#: actionsimpl.cpp:106
+#: actionsimpl.cpp:105
 #, kde-format
 msgid "C&hange Location"
 msgstr "Aldatu &kokalekua"
 
-#: actionsimpl.cpp:112
+#: actionsimpl.cpp:111
 #, kde-format
 msgid "C&hange Comment"
 msgstr "Aldatu &iruzkina"
 
-#: actionsimpl.cpp:118
+#: actionsimpl.cpp:117
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "Aldatu ik&onoa..."
 
-#: actionsimpl.cpp:122
+#: actionsimpl.cpp:121
 #, kde-format
 msgid "Update Favicon"
 msgstr "Eguneratu Favicon"
 
-#: actionsimpl.cpp:126
+#: actionsimpl.cpp:125
 #, kde-format
 msgid "Recursive Sort"
 msgstr "Ordenatu errekurtsiboki"
 
-#: actionsimpl.cpp:131
+#: actionsimpl.cpp:130
 #, kde-format
 msgid "&New Folder..."
 msgstr "Karpeta &berria..."
 
-#: actionsimpl.cpp:137
+#: actionsimpl.cpp:136
 #, kde-format
 msgid "&New Bookmark"
 msgstr "Laster-marka &berria"
 
-#: actionsimpl.cpp:141
+#: actionsimpl.cpp:140
 #, kde-format
 msgid "&Insert Separator"
 msgstr "Txertatu bere&izlea"
 
-#: actionsimpl.cpp:146
+#: actionsimpl.cpp:145
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "&Ordenatu alfabetikoki"
 
-#: actionsimpl.cpp:151
+#: actionsimpl.cpp:150
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "Ezarri &tresna-barra karpeta gisa"
 
-#: actionsimpl.cpp:155
+#: actionsimpl.cpp:154
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "&Zabaldu karpeta guztiak"
 
-#: actionsimpl.cpp:159
+#: actionsimpl.cpp:158
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "&Tolestu karpeta guztiak"
 
-#: actionsimpl.cpp:164
+#: actionsimpl.cpp:163
 #, kde-format
 msgid "&Open in Browser"
 msgstr "&Ireki arakatzailean"
 
-#: actionsimpl.cpp:169
+#: actionsimpl.cpp:168
 #, kde-format
 msgid "Check &Status"
 msgstr "Begiratu e&goera"
 
-#: actionsimpl.cpp:173
+#: actionsimpl.cpp:172
 #, kde-format
 msgid "Check Status: &All"
 msgstr "Begiratu egoera: &denak"
 
-#: actionsimpl.cpp:177
+#: actionsimpl.cpp:176
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "Eguneratu &Favicon guztiak"
 
-#: actionsimpl.cpp:181
+#: actionsimpl.cpp:180
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "Utzi &egiaztaketak"
 
-#: actionsimpl.cpp:185
+#: actionsimpl.cpp:184
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "Utzi &favicon-en eguneraketak"
 
-#: actionsimpl.cpp:191
+#: actionsimpl.cpp:190
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "Inportatu laster-markak &Netscape-tik ..."
 
-#: actionsimpl.cpp:197
+#: actionsimpl.cpp:196
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "Inportatu laster-markak &Opera-tik..."
 
-#: actionsimpl.cpp:207
+#: actionsimpl.cpp:206
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "Inportatu laster-markak &Galeon-etik..."
 
-#: actionsimpl.cpp:213
+#: actionsimpl.cpp:212
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "Inportatu laster-markak &KDE 2 edo KDE 3-etik..."
 
-#: actionsimpl.cpp:219
+#: actionsimpl.cpp:218
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "Inportatu laster-markak &Internet Explorer-etik..."
 
-#: actionsimpl.cpp:225
+#: actionsimpl.cpp:224
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "Inportatu laster-markak &Mozilla-tik..."
 
-#: actionsimpl.cpp:230
+#: actionsimpl.cpp:229
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "Esportatu laster-markak &Netscape-ra "
 
-#: actionsimpl.cpp:235
+#: actionsimpl.cpp:234
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "Esportatu laster-markak &Opera-ra..."
 
-#: actionsimpl.cpp:240
+#: actionsimpl.cpp:239
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "Esportatu laster-markak &HTMLra..."
 
-#: actionsimpl.cpp:244
+#: actionsimpl.cpp:243
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "Esportatu laster-markak &Internet Explorer-era..."
 
-#: actionsimpl.cpp:249
+#: actionsimpl.cpp:248
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "Esportatu laster-markak &Mozilla-ra..."
 
-#: actionsimpl.cpp:294
+#: actionsimpl.cpp:293
 #, kde-format
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "HTML laster-marka zerrendatzea (*.html)"
 
-#: actionsimpl.cpp:339
+#: actionsimpl.cpp:338
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "Ebaki elementuak"
 
-#: actionsimpl.cpp:364
+#: actionsimpl.cpp:363
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "Itsatsi"
 
-#: actionsimpl.cpp:375
+#: actionsimpl.cpp:374
 #, kde-format
 msgid "New folder:"
 msgstr "Karpeta berria:"
 
-#: actionsimpl.cpp:375
+#: actionsimpl.cpp:374
 #, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Sortu laster-marken karpeta berria"
 
-#: actionsimpl.cpp:522
+#: actionsimpl.cpp:521
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "Ordenatu errekurtsiboki"
 
-#: actionsimpl.cpp:537
+#: actionsimpl.cpp:536
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "Ordenatu alfabetikoki"
 
-#: actionsimpl.cpp:546
+#: actionsimpl.cpp:545
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Delete Items"
@@ -283,44 +283,44 @@ msgstr "Favicon-a eguneratzen..."
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; ez da HTMLren osagaia aurkitu (%2)"
 
-#: importers.cpp:57
+#: importers.cpp:56
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "Inportatu %1 laster-markak"
 
-#: importers.cpp:62
+#: importers.cpp:61
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 laster-markak"
 
-#: importers.cpp:99
+#: importers.cpp:98
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "Inportatu azpikarpeta gisa edo ordeztu uneko laster-marka guztiak?"
 
-#: importers.cpp:100
+#: importers.cpp:99
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 inportatu"
 
-#: importers.cpp:101
+#: importers.cpp:100
 #, kde-format
 msgid "As New Folder"
 msgstr "Karpeta berri gisa"
 
-#: importers.cpp:102
+#: importers.cpp:101
 #, kde-format
 msgid "Replace"
 msgstr "Ordeztu"
 
-#: importers.cpp:212
+#: importers.cpp:211
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Galeon laster-marka fitxategiak (*.xbel)"
 
-#: importers.cpp:220
+#: importers.cpp:219
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "KDE laster-marka fitxategiak (*.xml)"
@@ -568,7 +568,7 @@ msgstr "E&sportatu"
 msgid "&Tools"
 msgstr "&Tresnak"
 
-#: main.cpp:70
+#: main.cpp:68
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -580,136 +580,136 @@ msgstr ""
 "Kontutan hartu, tamalez, bikoiztutako ikuspegiak irakurtzeko soilik modukoak "
 "direla."
 
-#: main.cpp:74
+#: main.cpp:72
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Abisua"
 
-#: main.cpp:75
+#: main.cpp:73
 #, kde-format
 msgid "Run Another"
 msgstr "Exekutatu beste bat"
 
-#: main.cpp:76
+#: main.cpp:74
 #, kde-format
 msgid "Continue in Same"
 msgstr "Jarraitu berdinean"
 
-#: main.cpp:105
+#: main.cpp:103
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Laster-marken editorea"
 
-#: main.cpp:107
+#: main.cpp:105
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Laster-marken antolatzailea eta editorea"
 
-#: main.cpp:109
+#: main.cpp:107
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "Copyright 2000-2023, KDEren garatzaileak"
 
-#: main.cpp:110
+#: main.cpp:108
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:110
+#: main.cpp:108
 #, kde-format
 msgid "Initial author"
 msgstr "Jatorrizko egilea"
 
-#: main.cpp:111
+#: main.cpp:109
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:111
+#: main.cpp:109
 #, kde-format
 msgid "Author"
 msgstr "Egilea"
 
-#: main.cpp:121
+#: main.cpp:119
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Inportatu laster-markak Mozilla-ren formatua duen fitxategitik"
 
-#: main.cpp:122
+#: main.cpp:120
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Inportatu laster-markak Netscape-ren (4.x eta lehengoak) formatua duen "
 "fitxategitik"
 
-#: main.cpp:123
+#: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Inportatu laster-markak Internet Explorer-en gogokoenak formatua duen "
 "fitxategitik"
 
-#: main.cpp:124
+#: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Inportatu laster-markak Opera-ren formatua duen fitxategi batetik"
 
-#: main.cpp:125
+#: main.cpp:123
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Inportatu laster-markak KDE2-ren formatua duen fitxategi batetik"
 
-#: main.cpp:126
+#: main.cpp:124
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Inportatu laster-markak Galeon-en formatua duen fitxategi batetik"
 
-#: main.cpp:127
+#: main.cpp:125
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Esportatu laster-markak Mozilla-ren formatua duen fitxategira"
 
-#: main.cpp:128
+#: main.cpp:126
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Esportatu laster-markak Netscape-ren (4.x eta lehenagoak) formatua duen "
 "fitxategira"
 
-#: main.cpp:129
+#: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Esportatu laster-markak HTML eran inprimatzeko prest"
 
-#: main.cpp:130
+#: main.cpp:128
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "Esportatu laster-markak Internet Explorer-en Gogokoenak formatua duen "
 "fitxategira"
 
-#: main.cpp:131
+#: main.cpp:129
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Esportatu laster-markak Opera-ren formatua duen fitxategira"
 
-#: main.cpp:132
+#: main.cpp:130
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Ireki laster-marka fitxategiaren emandako lekuan"
 
-#: main.cpp:133
+#: main.cpp:131
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Ezarri erabiltzaileak ikusiko duen titulua, adibidez \"Konsole\""
 
-#: main.cpp:134
+#: main.cpp:132
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Ezkutatu arakatzailearekin zerikusia duten aukerak"
 
-#: main.cpp:135
+#: main.cpp:133
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -724,17 +724,17 @@ msgstr ""
 "KFileDialog laster-markentzako, etab.\n"
 "DBus objektuaren amaierako bide-izena /KBookmarkManager/<dbusObjectName> da"
 
-#: main.cpp:139
+#: main.cpp:137
 #, kde-format
 msgid "File to edit"
 msgstr "Fitxategia editatzeko"
 
-#: main.cpp:227
+#: main.cpp:225
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Soilik --export aukera bakarra zehatz dezakezu."
 
-#: main.cpp:234
+#: main.cpp:232
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Soilik --import aukera bakarra zehatz dezakezu."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-03 01:37+0000\n"
+"POT-Creation-Date: 2024-05-13 00:41+0000\n"
 "PO-Revision-Date: 2010-06-21 20:15+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -28,207 +28,207 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sharuzzaman@myrealbox.com"
 
-#: actionsimpl.cpp:94
+#: actionsimpl.cpp:93
 #, fuzzy, kde-format
 msgid "&Delete"
 msgstr "Pa&dam"
 
-#: actionsimpl.cpp:100
+#: actionsimpl.cpp:99
 #, fuzzy, kde-format
 msgid "Rename"
 msgstr "Tukar nama"
 
-#: actionsimpl.cpp:106
+#: actionsimpl.cpp:105
 #, fuzzy, kde-format
 msgid "C&hange Location"
 msgstr "Tukar URL"
 
-#: actionsimpl.cpp:112
+#: actionsimpl.cpp:111
 #, fuzzy, kde-format
 msgid "C&hange Comment"
 msgstr "Tukar Komen"
 
-#: actionsimpl.cpp:118
+#: actionsimpl.cpp:117
 #, fuzzy, kde-format
 msgid "Chan&ge Icon..."
 msgstr "Tukar Ikon..."
 
-#: actionsimpl.cpp:122
+#: actionsimpl.cpp:121
 #, fuzzy, kde-format
 msgid "Update Favicon"
 msgstr "Kemaskini Favicon"
 
-#: actionsimpl.cpp:126
+#: actionsimpl.cpp:125
 #, fuzzy, kde-format
 msgid "Recursive Sort"
 msgstr "Isih Rekursif"
 
-#: actionsimpl.cpp:131
+#: actionsimpl.cpp:130
 #, fuzzy, kde-format
 msgid "&New Folder..."
 msgstr "Foder &Baru..."
 
-#: actionsimpl.cpp:137
+#: actionsimpl.cpp:136
 #, fuzzy, kde-format
 msgid "&New Bookmark"
 msgstr "Tanda Buku &Baru"
 
-#: actionsimpl.cpp:141
+#: actionsimpl.cpp:140
 #, fuzzy, kde-format
 msgid "&Insert Separator"
 msgstr "Sel&it Pemisah"
 
-#: actionsimpl.cpp:146
+#: actionsimpl.cpp:145
 #, fuzzy, kde-format
 msgid "&Sort Alphabetically"
 msgstr "I&sih dengan Mengikut Abjad"
 
-#: actionsimpl.cpp:151
+#: actionsimpl.cpp:150
 #, fuzzy, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "Tetapkan sebagai Folder Papan Alatan"
 
-#: actionsimpl.cpp:155
+#: actionsimpl.cpp:154
 #, fuzzy, kde-format
 msgid "&Expand All Folders"
 msgstr "K&embang Semua Folder"
 
-#: actionsimpl.cpp:159
+#: actionsimpl.cpp:158
 #, fuzzy, kde-format
 msgid "Collapse &All Folders"
 msgstr "Kuncupkan Semu&a Folder"
 
-#: actionsimpl.cpp:164
+#: actionsimpl.cpp:163
 #, fuzzy, kde-format
 msgid "&Open in Browser"
 msgstr "Buka dalam Konqueror"
 
-#: actionsimpl.cpp:169
+#: actionsimpl.cpp:168
 #, fuzzy, kde-format
 msgid "Check &Status"
 msgstr "Perik&sa &Status"
 
-#: actionsimpl.cpp:173
+#: actionsimpl.cpp:172
 #, fuzzy, kde-format
 msgid "Check Status: &All"
 msgstr "Periksa St&atus: Semua"
 
-#: actionsimpl.cpp:177
+#: actionsimpl.cpp:176
 #, fuzzy, kde-format
 msgid "Update All &Favicons"
 msgstr "Kemaskini Semua &Favicons"
 
-#: actionsimpl.cpp:181
+#: actionsimpl.cpp:180
 #, fuzzy, kde-format
 msgid "Cancel &Checks"
 msgstr "Batal Periksa"
 
-#: actionsimpl.cpp:185
+#: actionsimpl.cpp:184
 #, fuzzy, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "Batal Kemaskini &Favicon"
 
-#: actionsimpl.cpp:191
+#: actionsimpl.cpp:190
 #, fuzzy, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "Import Tanda Laman &Netscape..."
 
-#: actionsimpl.cpp:197
+#: actionsimpl.cpp:196
 #, fuzzy, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "Imp&ort Tanda Laman Opera..."
 
-#: actionsimpl.cpp:207
+#: actionsimpl.cpp:206
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "Import Tanda Laman &Galeon..."
 
-#: actionsimpl.cpp:213
+#: actionsimpl.cpp:212
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr ""
 
-#: actionsimpl.cpp:219
+#: actionsimpl.cpp:218
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr ""
 
-#: actionsimpl.cpp:225
+#: actionsimpl.cpp:224
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "Import Tanda Laman &Mozilla..."
 
-#: actionsimpl.cpp:230
+#: actionsimpl.cpp:229
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr ""
 
-#: actionsimpl.cpp:235
+#: actionsimpl.cpp:234
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr ""
 
-#: actionsimpl.cpp:240
+#: actionsimpl.cpp:239
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr ""
 
-#: actionsimpl.cpp:244
+#: actionsimpl.cpp:243
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr ""
 
-#: actionsimpl.cpp:249
+#: actionsimpl.cpp:248
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr ""
 
-#: actionsimpl.cpp:294
+#: actionsimpl.cpp:293
 #, fuzzy, kde-format
 #| msgid "*.html|HTML Bookmark Listing"
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "*.html|Senarai Penanda Laman HTML"
 
-#: actionsimpl.cpp:339
+#: actionsimpl.cpp:338
 #, fuzzy, kde-format
 #| msgid "Cut Items"
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "Potong Item"
 
-#: actionsimpl.cpp:364
+#: actionsimpl.cpp:363
 #, fuzzy, kde-format
 #| msgid "Paste"
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "Tampal"
 
-#: actionsimpl.cpp:375
+#: actionsimpl.cpp:374
 #, kde-format
 msgid "New folder:"
 msgstr "Folder baru:"
 
-#: actionsimpl.cpp:375
+#: actionsimpl.cpp:374
 #, fuzzy, kde-format
 #| msgid "Create New Bookmark Folder"
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Cipta Folder Tanda Buku Baru"
 
-#: actionsimpl.cpp:522
+#: actionsimpl.cpp:521
 #, fuzzy, kde-format
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "Isih Rekursif"
 
-#: actionsimpl.cpp:537
+#: actionsimpl.cpp:536
 #, fuzzy, kde-format
 #| msgid "Sort Alphabetically"
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "Isih Mengikut Abjad"
 
-#: actionsimpl.cpp:546
+#: actionsimpl.cpp:545
 #, fuzzy, kde-format
 #| msgid "Delete Items"
 msgctxt "(qtundo-format)"
@@ -285,48 +285,48 @@ msgstr "Mengemaskini favicon..."
 msgid "%1; no HTML component found (%2)"
 msgstr ""
 
-#: importers.cpp:57
+#: importers.cpp:56
 #, fuzzy, kde-format
 #| msgid "Import %1 Bookmarks"
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "Import Tanda Laman %1"
 
-#: importers.cpp:62
+#: importers.cpp:61
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "Tanda Laman %1"
 
-#: importers.cpp:99
+#: importers.cpp:98
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 "Import sebagai subfolder baru atau gantikan semua penanda laman semasa?"
 
-#: importers.cpp:100
+#: importers.cpp:99
 #, fuzzy, kde-format
 #| msgid "%1 Import"
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 Import"
 
-#: importers.cpp:101
+#: importers.cpp:100
 #, kde-format
 msgid "As New Folder"
 msgstr "Sebagai Folder Baru"
 
-#: importers.cpp:102
+#: importers.cpp:101
 #, kde-format
 msgid "Replace"
 msgstr "Ganti"
 
-#: importers.cpp:212
+#: importers.cpp:211
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "*.xbel|Fail Tandalaman Galeon (*.xbel)"
 
-#: importers.cpp:220
+#: importers.cpp:219
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"
@@ -592,7 +592,7 @@ msgstr "&Eksport"
 msgid "&Tools"
 msgstr "Ala&tan"
 
-#: main.cpp:70
+#: main.cpp:68
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -603,135 +603,135 @@ msgstr ""
 "perintah yang lain atau teruskan bekerja dalam perintah yang sama?\n"
 "Perhatian bahawa, malangnya, pandangan pendua hanyalah baca-saja."
 
-#: main.cpp:74
+#: main.cpp:72
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Amaran"
 
-#: main.cpp:75
+#: main.cpp:73
 #, kde-format
 msgid "Run Another"
 msgstr "Laksanakan yang Lain"
 
-#: main.cpp:76
+#: main.cpp:74
 #, kde-format
 msgid "Continue in Same"
 msgstr "Teruskan dalam yang Sama"
 
-#: main.cpp:105
+#: main.cpp:103
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Penyunting Penanda laman"
 
-#: main.cpp:107
+#: main.cpp:105
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr ""
 
-#: main.cpp:109
+#: main.cpp:107
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
 msgstr ""
 
-#: main.cpp:110
+#: main.cpp:108
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:110
+#: main.cpp:108
 #, kde-format
 msgid "Initial author"
 msgstr "Penulis awalan"
 
-#: main.cpp:111
+#: main.cpp:109
 #, kde-format
 msgid "Alexander Kellett"
 msgstr ""
 
-#: main.cpp:111
+#: main.cpp:109
 #, kde-format
 msgid "Author"
 msgstr "Pengarang"
 
-#: main.cpp:121
+#: main.cpp:119
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Import tanda laman daripada fail dalam format Mozilla"
 
-#: main.cpp:122
+#: main.cpp:120
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Import tanda laman daripada fail dalam format Netscape (4.x dan sebelumnya)"
 
-#: main.cpp:123
+#: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Import tanda laman daripada fail dalam format Kegemaran Internet Explorer"
 
-#: main.cpp:124
+#: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Import tanda laman daripada fail dalam format Opera"
 
-#: main.cpp:125
+#: main.cpp:123
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Import tanda laman daripada fail dalam format Opera"
 
-#: main.cpp:126
+#: main.cpp:124
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Import tanda laman daripada fail dalam format Opera"
 
-#: main.cpp:127
+#: main.cpp:125
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Eksport tanda laman kepada fail dalam format Mozilla"
 
-#: main.cpp:128
+#: main.cpp:126
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Eksport tanda laman kepada fail dalam format Netscape (4.x dan sebelumnya)"
 
-#: main.cpp:129
+#: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Eksport tanda laman kepada fail dalam format bolehcetak HTML"
 
-#: main.cpp:130
+#: main.cpp:128
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "Eksport tanda laman kepada fail dalam format kegemaran Internet Explorer"
 
-#: main.cpp:131
+#: main.cpp:129
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Eksport tanda laman kepada fail dalam format Opera"
 
-#: main.cpp:132
+#: main.cpp:130
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Buka pada posisi diberi dalam fail tanda laman"
 
-#: main.cpp:133
+#: main.cpp:131
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Tetapkan capsyen boleh dibaca pengguna, sebagai contoh \"Konsole\""
 
-#: main.cpp:134
+#: main.cpp:132
 #, fuzzy, kde-format
 msgid "Hide all browser related functions"
 msgstr "Sembunyikan semua fungsi berkaitan pelungsur."
 
-#: main.cpp:135
+#: main.cpp:133
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -741,17 +741,17 @@ msgid ""
 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
 msgstr ""
 
-#: main.cpp:139
+#: main.cpp:137
 #, fuzzy, kde-format
 msgid "File to edit"
 msgstr "Fail untuk suntingan"
 
-#: main.cpp:227
+#: main.cpp:225
 #, fuzzy, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Anda hanya boleh menentukan satu -pilihan eksport."
 
-#: main.cpp:234
+#: main.cpp:232
 #, fuzzy, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Anda hanya boleh menentukan satu -pilihan import."

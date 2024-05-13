@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-03 01:37+0000\n"
+"POT-Creation-Date: 2024-05-13 00:41+0000\n"
 "PO-Revision-Date: 2023-06-02 13:15+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -30,202 +30,202 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "rinsedevries@kde.nl,freekdekruijf@kde.nl"
 
-#: actionsimpl.cpp:94
+#: actionsimpl.cpp:93
 #, kde-format
 msgid "&Delete"
 msgstr "Verwij&deren"
 
-#: actionsimpl.cpp:100
+#: actionsimpl.cpp:99
 #, kde-format
 msgid "Rename"
 msgstr "Hernoemen"
 
-#: actionsimpl.cpp:106
+#: actionsimpl.cpp:105
 #, kde-format
 msgid "C&hange Location"
 msgstr "Locatie &wijzigen"
 
-#: actionsimpl.cpp:112
+#: actionsimpl.cpp:111
 #, kde-format
 msgid "C&hange Comment"
 msgstr "Toeli&chting wijzigen"
 
-#: actionsimpl.cpp:118
+#: actionsimpl.cpp:117
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "Pictogram wijzi&gen..."
 
-#: actionsimpl.cpp:122
+#: actionsimpl.cpp:121
 #, kde-format
 msgid "Update Favicon"
 msgstr "Favicon-afbeelding bijwerken"
 
-#: actionsimpl.cpp:126
+#: actionsimpl.cpp:125
 #, kde-format
 msgid "Recursive Sort"
 msgstr "Recursieve sortering"
 
-#: actionsimpl.cpp:131
+#: actionsimpl.cpp:130
 #, kde-format
 msgid "&New Folder..."
 msgstr "&Nieuwe map..."
 
-#: actionsimpl.cpp:137
+#: actionsimpl.cpp:136
 #, kde-format
 msgid "&New Bookmark"
 msgstr "&Nieuwe bladwijzer"
 
-#: actionsimpl.cpp:141
+#: actionsimpl.cpp:140
 #, kde-format
 msgid "&Insert Separator"
 msgstr "Scheidingslijn &invoegen"
 
-#: actionsimpl.cpp:146
+#: actionsimpl.cpp:145
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "Alfabetisch &sorteren"
 
-#: actionsimpl.cpp:151
+#: actionsimpl.cpp:150
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "Ins&tellen als werkbalkmap"
 
-#: actionsimpl.cpp:155
+#: actionsimpl.cpp:154
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "Alle mappen uitvouw&en"
 
-#: actionsimpl.cpp:159
+#: actionsimpl.cpp:158
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "Alle m&appen invouwen"
 
-#: actionsimpl.cpp:164
+#: actionsimpl.cpp:163
 #, kde-format
 msgid "&Open in Browser"
 msgstr "In browser &openen"
 
-#: actionsimpl.cpp:169
+#: actionsimpl.cpp:168
 #, kde-format
 msgid "Check &Status"
 msgstr "&Status controleren"
 
-#: actionsimpl.cpp:173
+#: actionsimpl.cpp:172
 #, kde-format
 msgid "Check Status: &All"
 msgstr "Status controleren: &alles"
 
-#: actionsimpl.cpp:177
+#: actionsimpl.cpp:176
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "Alle &favicon-afbeelding bijwerken"
 
-#: actionsimpl.cpp:181
+#: actionsimpl.cpp:180
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "&Controles annuleren"
 
-#: actionsimpl.cpp:185
+#: actionsimpl.cpp:184
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "Bijwerken van &favicon-afbeeldingen annuleren"
 
-#: actionsimpl.cpp:191
+#: actionsimpl.cpp:190
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "&Netscape's bladwijzers importeren..."
 
-#: actionsimpl.cpp:197
+#: actionsimpl.cpp:196
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "&Opera's bladwijzers importeren"
 
-#: actionsimpl.cpp:207
+#: actionsimpl.cpp:206
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "&Galeon's bladwijzers importeren..."
 
-#: actionsimpl.cpp:213
+#: actionsimpl.cpp:212
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "&KDE 2- of KDE 3-bladwijzers importeren..."
 
-#: actionsimpl.cpp:219
+#: actionsimpl.cpp:218
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "&Internet Explorer's bladwijzers importeren..."
 
-#: actionsimpl.cpp:225
+#: actionsimpl.cpp:224
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "&Mozilla's bladwijzers importeren..."
 
-#: actionsimpl.cpp:230
+#: actionsimpl.cpp:229
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "&Netscape-bladwijzers exporteren"
 
-#: actionsimpl.cpp:235
+#: actionsimpl.cpp:234
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "&Opera-bladwijzers exporteren"
 
-#: actionsimpl.cpp:240
+#: actionsimpl.cpp:239
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "&HTML-bladwijzers exporteren..."
 
-#: actionsimpl.cpp:244
+#: actionsimpl.cpp:243
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "&Internet Explorer-bladwijzers exporteren..."
 
-#: actionsimpl.cpp:249
+#: actionsimpl.cpp:248
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "&Mozilla-bladwijzers exporteren..."
 
-#: actionsimpl.cpp:294
+#: actionsimpl.cpp:293
 #, kde-format
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "HTML-bladwijzerlijst (*.html)"
 
-#: actionsimpl.cpp:339
+#: actionsimpl.cpp:338
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "Items knippen"
 
-#: actionsimpl.cpp:364
+#: actionsimpl.cpp:363
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "Plakken"
 
-#: actionsimpl.cpp:375
+#: actionsimpl.cpp:374
 #, kde-format
 msgid "New folder:"
 msgstr "Nieuwe map:"
 
-#: actionsimpl.cpp:375
+#: actionsimpl.cpp:374
 #, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Nieuwe bladwijzermap aanmaken"
 
-#: actionsimpl.cpp:522
+#: actionsimpl.cpp:521
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "Recursieve sortering"
 
-#: actionsimpl.cpp:537
+#: actionsimpl.cpp:536
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "Alfabetisch sorteren"
 
-#: actionsimpl.cpp:546
+#: actionsimpl.cpp:545
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Delete Items"
@@ -281,46 +281,46 @@ msgstr "Favicon-afbeelding bijwerken..."
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; Geen HTML-component gevonden (%2)"
 
-#: importers.cpp:57
+#: importers.cpp:56
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "%1-bladwijzers importeren"
 
-#: importers.cpp:62
+#: importers.cpp:61
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1-Bladwijzers"
 
-#: importers.cpp:99
+#: importers.cpp:98
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 "Wilt u dit importeren als nieuwe submap, of wilt u alle huidige bladwijzers "
 "vervangen?"
 
-#: importers.cpp:100
+#: importers.cpp:99
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 importeren"
 
-#: importers.cpp:101
+#: importers.cpp:100
 #, kde-format
 msgid "As New Folder"
 msgstr "Als nieuwe map"
 
-#: importers.cpp:102
+#: importers.cpp:101
 #, kde-format
 msgid "Replace"
 msgstr "Vervangen"
 
-#: importers.cpp:212
+#: importers.cpp:211
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Galeon-bladwijzerbestanden (*.xbel)"
 
-#: importers.cpp:220
+#: importers.cpp:219
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "KDE-bladwijzerbestanden (*.xml)"
@@ -570,7 +570,7 @@ msgstr "&Exporteren"
 msgid "&Tools"
 msgstr "H&ulpmiddelen"
 
-#: main.cpp:70
+#: main.cpp:68
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -581,133 +581,133 @@ msgstr ""
 "of verder werken in het reeds geopende exemplaar?\n"
 "Opmerking: dubbele weergaven zijn alleen-lezen."
 
-#: main.cpp:74
+#: main.cpp:72
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Waarschuwing"
 
-#: main.cpp:75
+#: main.cpp:73
 #, kde-format
 msgid "Run Another"
 msgstr "Nog een openen"
 
-#: main.cpp:76
+#: main.cpp:74
 #, kde-format
 msgid "Continue in Same"
 msgstr "Verder gaan in dezelfde"
 
-#: main.cpp:105
+#: main.cpp:103
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Bladwijzerbewerker"
 
-#: main.cpp:107
+#: main.cpp:105
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Bladwijzers organiseren en bewerken"
 
-#: main.cpp:109
+#: main.cpp:107
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "(c) 2000-2013, KDE-ontwikkelaars"
 
-#: main.cpp:110
+#: main.cpp:108
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:110
+#: main.cpp:108
 #, kde-format
 msgid "Initial author"
 msgstr "Oorspronkelijke auteur"
 
-#: main.cpp:111
+#: main.cpp:109
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:111
+#: main.cpp:109
 #, kde-format
 msgid "Author"
 msgstr "Auteur"
 
-#: main.cpp:121
+#: main.cpp:119
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Bladwijzers importeren uit een bestand in Mozilla-formaat"
 
-#: main.cpp:122
+#: main.cpp:120
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Bladwijzers importeren uit een bestand in Netscape (4.x of eerder)-formaat"
 
-#: main.cpp:123
+#: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Bladwijzers importeren uit een bestand in Internet Explorer Favorieten-"
 "formaat"
 
-#: main.cpp:124
+#: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Bladwijzers importeren uit een bestand in Opera-formaat"
 
-#: main.cpp:125
+#: main.cpp:123
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Bladwijzers importeren uit een bestand in KDE2-formaat"
 
-#: main.cpp:126
+#: main.cpp:124
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Bladwijzers importeren uit een bestand in Galeon-formaat"
 
-#: main.cpp:127
+#: main.cpp:125
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Bladwijzers exporteren naar een bestand in Mozilla-formaat"
 
-#: main.cpp:128
+#: main.cpp:126
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Bladwijzers exporteren naar een bestand in Netscape (4.x of eerder)-formaat"
 
-#: main.cpp:129
+#: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Bladwijzers exporteren naar een bestand in HTML-formaat"
 
-#: main.cpp:130
+#: main.cpp:128
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "Bladwijzers exporteren naar bestand in Internet Explorer Favorieten-formaat"
 
-#: main.cpp:131
+#: main.cpp:129
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Bladwijzers exporteren naar bestand in Opera-formaat"
 
-#: main.cpp:132
+#: main.cpp:130
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Openen op de opgegeven positie in het bladwijzerbestand"
 
-#: main.cpp:133
+#: main.cpp:131
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Stel de titel in, bijvoorbeeld \"Konsole\""
 
-#: main.cpp:134
+#: main.cpp:132
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Alle browser-gerelateerde functies verbergen"
 
-#: main.cpp:135
+#: main.cpp:133
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -722,17 +722,17 @@ msgstr ""
 "KFileDialog-bladwijzers, etc.\n"
 "Het uiteindelijke DBUS-objectpad is /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:139
+#: main.cpp:137
 #, kde-format
 msgid "File to edit"
 msgstr "Te bewerken bestand"
 
-#: main.cpp:227
+#: main.cpp:225
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "U kunt slechts één --export optie tegelijk opgeven."
 
-#: main.cpp:234
+#: main.cpp:232
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "U kunt slechts één --import optie tegelijk opgeven."
