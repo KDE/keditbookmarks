@@ -90,7 +90,9 @@ target_link_libraries(keditbookmarks kbookmarkmodel_private
    KF6::I18n
    KF6::Codecs
    KF6::IconWidgets
-   KF6::KIOGui)
+   KF6::KIOGui
+   Qt6::DBus
+)
 
 install(TARGETS keditbookmarks          ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
