@@ -135,20 +135,18 @@ FavIconWebGrabber::FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url
     //  connect(part, SIGNAL(result(KIO::Job*job)),
     //          this, SLOT(slotCompleted()));
     connect(part, &KParts::ReadOnlyPart::canceled, this, &FavIconWebGrabber::slotCanceled);
-    // clang-format off
-    connect(part, SIGNAL(completed(bool)), this, SLOT(slotCompleted()));
-    // clang-format on
+    connect(part, &KParts::ReadOnlyPart::completed, this, &FavIconWebGrabber::slotCompleted);
 
     // the use of KIO rather than directly using KHTML is to allow silently abort on error
     // TODO: an alternative would be to derive from KHTMLPart and reimplement showError(KJob*).
 
     // qCDebug(KEDITBOOKMARKS_LOG) << "starting KIO::get() on" << m_url;
-    KIO::Job *job = KIO::get(m_url, KIO::NoReload, KIO::HideProgressInfo);
+    KIO::TransferJob *job = KIO::get(m_url, KIO::NoReload, KIO::HideProgressInfo);
     job->addMetaData(QStringLiteral("cookies"), QStringLiteral("none"));
     job->addMetaData(QStringLiteral("errorPage"), QStringLiteral("false"));
     connect(job, &KJob::result, this, &FavIconWebGrabber::slotFinished);
     // clang-format off
-    connect(job, SIGNAL(mimetype(KIO::Job*,QString)), this, SLOT(slotMimetype(KIO::Job*,QString)));
+    connect(job, &KIO::TransferJob::mimeTypeFound, this, &FavIconWebGrabber::slotMimetype);
     // clang-format on
 }
 
