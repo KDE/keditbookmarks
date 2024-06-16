@@ -126,46 +126,9 @@ FavIconWebGrabber::FavIconWebGrabber(KParts::ReadOnlyPart *part, const QUrl &url
     //  connect(part, SIGNAL(result(KIO::Job*job)),
     //          this, SLOT(slotCompleted()));
     connect(part, &KParts::ReadOnlyPart::canceled, this, &FavIconWebGrabber::slotCanceled);
-    // clang-format off
-    connect(part, SIGNAL(completed(bool)), this, SLOT(slotCompleted()));
-    // clang-format on
-
-    // the use of KIO rather than directly using KHTML is to allow silently abort on error
-    // TODO: an alternative would be to derive from KHTMLPart and reimplement showError(KJob*).
-
-    // qCDebug(KEDITBOOKMARKS_LOG) << "starting KIO::get() on" << m_url;
-    KIO::Job *job = KIO::get(m_url, KIO::NoReload, KIO::HideProgressInfo);
-    job->addMetaData(QStringLiteral("cookies"), QStringLiteral("none"));
-    job->addMetaData(QStringLiteral("errorPage"), QStringLiteral("false"));
-    connect(job, &KJob::result, this, &FavIconWebGrabber::slotFinished);
-    // clang-format off
-    connect(job, SIGNAL(mimetype(KIO::Job*,QString)), this, SLOT(slotMimetype(KIO::Job*,QString)));
-    // clang-format on
-}
-
-void FavIconWebGrabber::slotMimetype(KIO::Job *job, const QString &type)
-{
-    Q_ASSERT(!job->error()); // can't be set already, surely?
-
-    KIO::SimpleJob *sjob = static_cast<KIO::SimpleJob *>(job);
-    m_url = sjob->url(); // allow for redirection
-    sjob->putOnHold();
-
-    // QString typeLocal = typeUncopied; // local copy
-    qCDebug(KEDITBOOKMARKS_LOG) << "slotMimetype " << type << "calling openUrl on" << m_url;
-    // TODO - what to do if typeLocal is not text/html ??
+    connect(part, &KParts::ReadOnlyPart::completed, this, &FavIconWebGrabber::slotCompleted);
 
     m_part->openUrl(m_url);
-}
-
-void FavIconWebGrabber::slotFinished(KJob *job)
-{
-    if (job->error()) {
-        qCDebug(KEDITBOOKMARKS_LOG) << job->errorString();
-        Q_EMIT done(false, job->errorString());
-        return;
-    }
-    // On success mimetype was emitted, so no need to do anything.
 }
 
 void FavIconWebGrabber::slotCompleted()

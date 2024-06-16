@@ -27,8 +27,6 @@ Q_SIGNALS:
     void done(bool succeeded, const QString &errorString);
 
 private Q_SLOTS:
-    void slotMimetype(KIO::Job *job, const QString &_type);
-    void slotFinished(KJob *job);
     void slotCanceled(const QString &errorString);
     void slotCompleted();
 
