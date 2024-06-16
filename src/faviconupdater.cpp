@@ -69,7 +69,11 @@ void FavIconUpdater::downloadIconUsingWebBrowser(const KBookmark &bk, const QStr
         part->setProperty("javaEnabled", QVariant(false));
         part->setProperty("autoloadImages", QVariant(false));
         KParts::NavigationExtension *ext = KParts::NavigationExtension::childObject(part);
-        Q_ASSERT(ext);
+
+        if (!ext) {
+            Q_EMIT done(false, i18n("No browser component found"));
+            return;
+        }
 
         connect(ext, &KParts::NavigationExtension::setIconUrl, this, &FavIconUpdater::setIconUrl);
         m_part = part;
