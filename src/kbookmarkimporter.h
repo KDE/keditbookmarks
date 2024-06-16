@@ -1,4 +1,3 @@
-//  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
 /*
     This file is part of the KDE libraries
     SPDX-FileCopyrightText: 2000 David Faure <faure@kde.org>

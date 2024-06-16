@@ -1,4 +1,3 @@
-// -*- tab-width:4; indent-tabs-mode:t -*-
 /**
  * kbookmarkmerger.cpp - Copyright (C) 2005 Frerich Raabe <raabe@kde.org>
  *

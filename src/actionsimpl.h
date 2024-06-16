@@ -1,4 +1,3 @@
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE project
    Copyright (C) 2003 Alexander Kellett <lypanov@kde.org>
 
