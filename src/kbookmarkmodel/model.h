@@ -1,19 +1,8 @@
 /* This file is part of the KDE project
-   Copyright (C) 2005 Daniel Teske <teske@squorn.de>
-   Copyright (C) 2010 David Faure <faure@kde.org>
+   SPDX-FileCopyrightText: 2005 Daniel Teske <teske@squorn.de>
+   SPDX-FileCopyrightText: 2010 David Faure <faure@kde.org>
 
-   This program is free software; you can redistribute it and/or
-   modify it under the terms of the GNU General Public License as
-   published by the Free Software Foundation; either version 2 of
-   the License, or (at your option) version 3.
-
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program.  If not, see <http://www.gnu.org/licenses/>
+   SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only
 */
 
 #ifndef BOOKMARKMODEL_MODEL_H
