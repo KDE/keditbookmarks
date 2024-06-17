@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-13 00:41+0000\n"
+"POT-Creation-Date: 2024-06-17 00:41+0000\n"
 "PO-Revision-Date: 2010-07-07 15:03+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -29,209 +29,209 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "donga.nb@gmail.com"
 
-#: actionsimpl.cpp:93
+#: actionsimpl.cpp:91
 #, kde-format
 msgid "&Delete"
 msgstr "ลบ"
 
-#: actionsimpl.cpp:99
+#: actionsimpl.cpp:97
 #, kde-format
 msgid "Rename"
 msgstr "เปลี่ยนชื่อ"
 
-#: actionsimpl.cpp:105
+#: actionsimpl.cpp:103
 #, kde-format
 msgid "C&hange Location"
 msgstr "เ&ปลี่ยนที่อยู่"
 
-#: actionsimpl.cpp:111
+#: actionsimpl.cpp:109
 #, kde-format
 msgid "C&hange Comment"
 msgstr "เปลี่ยนหมายเหตุ"
 
-#: actionsimpl.cpp:117
+#: actionsimpl.cpp:115
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "เปลี่ยนภาพไอคอน..."
 
-#: actionsimpl.cpp:121
+#: actionsimpl.cpp:119
 #, kde-format
 msgid "Update Favicon"
 msgstr "ปรับปรุง Favicon"
 
-#: actionsimpl.cpp:125
+#: actionsimpl.cpp:123
 #, kde-format
 msgid "Recursive Sort"
 msgstr "เรียงลำดับลงไปในรายการย่อยด้วย"
 
-#: actionsimpl.cpp:130
+#: actionsimpl.cpp:128
 #, kde-format
 msgid "&New Folder..."
 msgstr "สร้างโฟลเดอร์ใหม่..."
 
-#: actionsimpl.cpp:136
+#: actionsimpl.cpp:134
 #, kde-format
 msgid "&New Bookmark"
 msgstr "สร้างที่คั่นหน้าใหม่"
 
-#: actionsimpl.cpp:140
+#: actionsimpl.cpp:138
 #, kde-format
 msgid "&Insert Separator"
 msgstr "แทรกเส้นคั่น"
 
-#: actionsimpl.cpp:145
+#: actionsimpl.cpp:143
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "เรียงลำดับตามตัวอักษร"
 
-#: actionsimpl.cpp:150
+#: actionsimpl.cpp:148
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "ตั้งเป็นแถบเครื่องมือโฟลเดอร์"
 
-#: actionsimpl.cpp:154
+#: actionsimpl.cpp:152
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "ขยายรายการโฟลเดอร์ทั้งหมด"
 
-#: actionsimpl.cpp:158
+#: actionsimpl.cpp:156
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "ยุบเก็บรายการโฟลเดอร์ทั้งหมด"
 
-#: actionsimpl.cpp:163
+#: actionsimpl.cpp:161
 #, fuzzy, kde-format
 #| msgid "&Open in Konqueror"
 msgid "&Open in Browser"
 msgstr "เปิดใช้บน Konqueror"
 
-#: actionsimpl.cpp:168
+#: actionsimpl.cpp:166
 #, kde-format
 msgid "Check &Status"
 msgstr "ตรวจสอบสถานะ"
 
-#: actionsimpl.cpp:172
+#: actionsimpl.cpp:170
 #, kde-format
 msgid "Check Status: &All"
 msgstr "ตรวจสอบสถานะ: ทั้งหมด"
 
-#: actionsimpl.cpp:176
+#: actionsimpl.cpp:174
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "ปรับปรุง &Favicons ทั้งหมด"
 
-#: actionsimpl.cpp:180
+#: actionsimpl.cpp:178
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "ยกเลิกการตรวจสอบ"
 
-#: actionsimpl.cpp:184
+#: actionsimpl.cpp:182
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "ยกเลิกการปรับปรุง &Favicons"
 
-#: actionsimpl.cpp:190
+#: actionsimpl.cpp:188
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "นำเข้าที่คั่นหน้าของเน็ตสเคป..."
 
-#: actionsimpl.cpp:196
+#: actionsimpl.cpp:194
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "นำเข้าที่คั่นหน้าของโอเปรา..."
 
-#: actionsimpl.cpp:206
+#: actionsimpl.cpp:204
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "นำเข้าที่คั่นหน้าของแกเลียน..."
 
-#: actionsimpl.cpp:212
+#: actionsimpl.cpp:210
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "นำเข้าที่คั่นหน้าของ KDE2 หรือ KDE3 ..."
 
-#: actionsimpl.cpp:218
+#: actionsimpl.cpp:216
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "นำเข้าที่คั่นหน้าของอินเทอร์เน็ต เอ็กซ์พลอเรอร์..."
 
-#: actionsimpl.cpp:224
+#: actionsimpl.cpp:222
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "นำเข้าที่คั่นหน้าของมอซซิลา..."
 
-#: actionsimpl.cpp:229
+#: actionsimpl.cpp:227
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "ส่งออกเป็นที่คั่นหน้าของเน็ตสเคป"
 
-#: actionsimpl.cpp:234
+#: actionsimpl.cpp:232
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "ส่งออกเป็นที่คั่นหน้าของโอเปรา..."
 
-#: actionsimpl.cpp:239
+#: actionsimpl.cpp:237
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "ส่งออกเป็นที่คั่นหน้าแบบ &HTML"
 
-#: actionsimpl.cpp:243
+#: actionsimpl.cpp:241
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "ส่งออกเป็นที่คั่นหน้าของอินเทอร์เน็ต เอ็กซ์พลอเรอร์..."
 
-#: actionsimpl.cpp:248
+#: actionsimpl.cpp:246
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "ส่งออกเป็นที่คั่นหน้าของมอซซิลา..."
 
-#: actionsimpl.cpp:293
+#: actionsimpl.cpp:291
 #, fuzzy, kde-format
 #| msgid "*.html|HTML Bookmark Listing"
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "*.html|รายการที่คั่นหน้าแบบ HTML"
 
-#: actionsimpl.cpp:338
+#: actionsimpl.cpp:336
 #, fuzzy, kde-format
 #| msgid "Cut Items"
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "ตัดรายการ"
 
-#: actionsimpl.cpp:363
+#: actionsimpl.cpp:361
 #, fuzzy, kde-format
 #| msgid "Paste"
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "วาง"
 
-#: actionsimpl.cpp:374
+#: actionsimpl.cpp:372
 #, kde-format
 msgid "New folder:"
 msgstr "โฟลเดอร์ใหม่:"
 
-#: actionsimpl.cpp:374
+#: actionsimpl.cpp:372
 #, fuzzy, kde-format
 #| msgid "Create New Bookmark Folder"
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "สร้างโฟลเดอร์ที่คั่นหน้าใหม่"
 
-#: actionsimpl.cpp:521
+#: actionsimpl.cpp:519
 #, fuzzy, kde-format
 #| msgid "Recursive Sort"
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "เรียงลำดับลงไปในรายการย่อยด้วย"
 
-#: actionsimpl.cpp:536
+#: actionsimpl.cpp:534
 #, fuzzy, kde-format
 #| msgid "Sort Alphabetically"
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "เรียงลำดับตามตัวอักษร"
 
-#: actionsimpl.cpp:545
+#: actionsimpl.cpp:543
 #, fuzzy, kde-format
 #| msgid "Delete Items"
 msgctxt "(qtundo-format)"
@@ -268,7 +268,7 @@ msgstr "ดูครั้งล่าสุดเมื่อ:"
 msgid "Times visited:"
 msgstr "จำนวนครั้งที่ดู:"
 
-#: exporters.cpp:48
+#: exporters.cpp:46
 #, kde-format
 msgid "My Bookmarks"
 msgstr "ที่คั่นหน้าส่วนตัว"
@@ -283,195 +283,195 @@ msgstr "ตกลง"
 msgid "Updating favicon..."
 msgstr "กำลังปรับปรุง favicon..."
 
-#: faviconupdater.cpp:77
+#: faviconupdater.cpp:75
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; ไม่พบส่วนประกอบ HTML (%2)"
 
-#: importers.cpp:56
+#: importers.cpp:54
 #, fuzzy, kde-format
 #| msgid "Import %1 Bookmarks"
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "นำเข้าที่คั่นหน้าของ %1"
 
-#: importers.cpp:61
+#: importers.cpp:59
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "ที่คั่นหน้าของ %1"
 
-#: importers.cpp:98
+#: importers.cpp:96
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "ให้นำเข้าเป็นโฟลเดอร์ย่อยใหม่ หรือจะแทนที่ที่คั่นหน้าทั้งหมดที่มีอยู่ในปัจจุบัน?"
 
-#: importers.cpp:99
+#: importers.cpp:97
 #, fuzzy, kde-format
 #| msgid "%1 Import"
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 นำเข้า"
 
-#: importers.cpp:100
+#: importers.cpp:98
 #, kde-format
 msgid "As New Folder"
 msgstr "เป็นโฟลเดอร์ใหม่"
 
-#: importers.cpp:101
+#: importers.cpp:99
 #, kde-format
 msgid "Replace"
 msgstr "แทนที่"
 
-#: importers.cpp:211
+#: importers.cpp:209
 #, fuzzy, kde-format
 #| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "*.xbel|แฟ้มที่คั่นหน้าของ Galeon (*.xbel)"
 
-#: importers.cpp:219
+#: importers.cpp:217
 #, fuzzy, kde-format
 #| msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "*.xml|แฟ้มที่คั่นหน้าของ KDE (*.xml)"
 
-#: importers.h:116
+#: importers.h:115
 #, kde-format
 msgid "Galeon"
 msgstr "แกเลียน"
 
-#: importers.h:131
+#: importers.h:130
 #, kde-format
 msgid "KDE"
 msgstr "KDE"
 
-#: importers.h:161
+#: importers.h:160
 #, kde-format
 msgid "Netscape"
 msgstr "เน็ตสเคป"
 
-#: importers.h:176
+#: importers.h:175
 #, kde-format
 msgid "Mozilla"
 msgstr "มอซซิลา"
 
-#: importers.h:191
+#: importers.h:190
 #, kde-format
 msgid "IE"
 msgstr "อินเทอร์เน็ต เอ็กซ์พลอเรอร์"
 
-#: importers.h:209
+#: importers.h:208
 #, kde-format
 msgid "Opera"
 msgstr "โอเปรา"
 
-#: kbookmarkmerger.cpp:48
+#: kbookmarkmerger.cpp:47
 #, kde-format
 msgid "KBookmarkMerger"
 msgstr "KBookmarkMerger"
 
-#: kbookmarkmerger.cpp:50
+#: kbookmarkmerger.cpp:49
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
 msgstr "ผนวกรวมที่คั่นหน้าที่ถูกติดตั้งจากผู้ผลิตอื่น ไปยังที่คั่นหน้าของผู้ใช้"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:51
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
 msgstr "สงวนลิขสิทธิ์ © 2005 Frerich Raabe"
 
-#: kbookmarkmerger.cpp:53
+#: kbookmarkmerger.cpp:52
 #, kde-format
 msgid "Frerich Raabe"
 msgstr "Frerich Raabe"
 
-#: kbookmarkmerger.cpp:53
+#: kbookmarkmerger.cpp:52
 #, kde-format
 msgid "Original author"
 msgstr "ผู้เขียนดั้งเดิม"
 
-#: kbookmarkmerger.cpp:58
+#: kbookmarkmerger.cpp:57
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr "โฟลเดอร์ที่จะใช้สืบค้นหาที่คั่นหน้าพิเศษ"
 
-#: kbookmarkmodel/commands.cpp:70
+#: kbookmarkmodel/commands.cpp:68
 #, fuzzy, kde-format
 #| msgid "Insert Separator"
 msgctxt "(qtundo-format)"
 msgid "Insert Separator"
 msgstr "แทรกเส้นคั่น"
 
-#: kbookmarkmodel/commands.cpp:84
+#: kbookmarkmodel/commands.cpp:82
 #, fuzzy, kde-format
 #| msgid "Create Bookmark"
 msgctxt "(qtundo-format)"
 msgid "Create Bookmark"
 msgstr "สร้างที่คั่นหน้า"
 
-#: kbookmarkmodel/commands.cpp:98
+#: kbookmarkmodel/commands.cpp:96
 #, fuzzy, kde-format
 #| msgid "Create Folder"
 msgctxt "(qtundo-format)"
 msgid "Create Folder"
 msgstr "สร้างโฟลเดอร์"
 
-#: kbookmarkmodel/commands.cpp:111
+#: kbookmarkmodel/commands.cpp:109
 #, fuzzy, kde-format
 #| msgid "Copy %1"
 msgctxt "(qtundo-format)"
 msgid "Copy %1"
 msgstr "คัดลอก %1"
 
-#: kbookmarkmodel/commands.cpp:200
+#: kbookmarkmodel/commands.cpp:198
 #, fuzzy, kde-format
 #| msgid "Icon Change"
 msgctxt "(qtundo-format)"
 msgid "Icon Change"
 msgstr "เปลี่ยนไอคอน"
 
-#: kbookmarkmodel/commands.cpp:202
+#: kbookmarkmodel/commands.cpp:200
 #, fuzzy, kde-format
 #| msgid "Title Change"
 msgctxt "(qtundo-format)"
 msgid "Title Change"
 msgstr "เปลี่ยนชื่อ"
 
-#: kbookmarkmodel/commands.cpp:204
+#: kbookmarkmodel/commands.cpp:202
 #, fuzzy, kde-format
 #| msgid "URL Change"
 msgctxt "(qtundo-format)"
 msgid "URL Change"
 msgstr "เปลี่ยนที่อยู่ URL"
 
-#: kbookmarkmodel/commands.cpp:206
+#: kbookmarkmodel/commands.cpp:204
 #, fuzzy, kde-format
 #| msgid "Comment Change"
 msgctxt "(qtundo-format)"
 msgid "Comment Change"
 msgstr "เปลี่ยนหมายเหตุ"
 
-#: kbookmarkmodel/commands.cpp:365
+#: kbookmarkmodel/commands.cpp:363
 #, fuzzy, kde-format
 #| msgid "Move %1"
 msgctxt "(qtundo-format)"
 msgid "Move %1"
 msgstr "ย้าย %1"
 
-#: kbookmarkmodel/commands.cpp:500
+#: kbookmarkmodel/commands.cpp:498
 #, fuzzy, kde-format
 #| msgid "Set as Bookmark Toolbar"
 msgctxt "(qtundo-format)"
 msgid "Set as Bookmark Toolbar"
 msgstr "ตั้งเป็นแถบเครื่องมือที่คั่นหน้า"
 
-#: kbookmarkmodel/commands.cpp:532
+#: kbookmarkmodel/commands.cpp:530
 #, fuzzy, kde-format
 #| msgid "Copy Items"
 msgctxt "(qtundo-format)"
 msgid "Copy Items"
 msgstr "คัดลอกรายการ"
 
-#: kbookmarkmodel/commands.cpp:532
+#: kbookmarkmodel/commands.cpp:530
 #, fuzzy, kde-format
 #| msgid "Move Items"
 msgctxt "(qtundo-format)"
@@ -589,7 +589,7 @@ msgstr "&ส่งออก"
 msgid "&Tools"
 msgstr "เ&ครื่องมือ"
 
-#: main.cpp:68
+#: main.cpp:66
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -600,130 +600,130 @@ msgstr ""
 "หรือจะเปิดโดยใช้โพรเซสเดียวกันกับตัวที่ทำงานอยู่ก่อน ?\n"
 "โปรดจำ มุมมองที่ซ้ำกันจะอ่านได้อย่างเดียว"
 
-#: main.cpp:72
+#: main.cpp:70
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "คำเตือน"
 
-#: main.cpp:73
+#: main.cpp:71
 #, kde-format
 msgid "Run Another"
 msgstr "ประมวลผลตัวอื่น"
 
-#: main.cpp:74
+#: main.cpp:72
 #, kde-format
 msgid "Continue in Same"
 msgstr "ทำต่อไปในแบบเดียวกัน"
 
-#: main.cpp:103
+#: main.cpp:101
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "เครื่องมือแก้ไขที่คั่นหน้า"
 
-#: main.cpp:105
+#: main.cpp:103
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "เครื่องมือแก้ไขและจัดการที่คั่นหน้า"
 
-#: main.cpp:107
+#: main.cpp:105
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "สงวนลิขสิทธิ์ 2000-2007, กลุ่มผู้พัฒนา KDE"
 
-#: main.cpp:108
+#: main.cpp:106
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:108
+#: main.cpp:106
 #, kde-format
 msgid "Initial author"
 msgstr "ผู้เขียนเริ่มต้น"
 
-#: main.cpp:109
+#: main.cpp:107
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:109
+#: main.cpp:107
 #, kde-format
 msgid "Author"
 msgstr "ผู้เขียน"
 
-#: main.cpp:119
+#: main.cpp:117
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของ Mozilla"
 
-#: main.cpp:120
+#: main.cpp:118
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของเน็ตสเคป (4.x หรือก่อนหน้า)"
 
-#: main.cpp:121
+#: main.cpp:119
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของรายการโปรดของอินเทอร์เน็ต เอ็กซ์พลอเรอร์"
 
-#: main.cpp:122
+#: main.cpp:120
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของโอเปรา"
 
-#: main.cpp:123
+#: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของ KDE2"
 
-#: main.cpp:124
+#: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "นำเข้าที่คั่นหน้าจากแฟ้มรูปแบบของ Galeon"
 
-#: main.cpp:125
+#: main.cpp:123
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "ส่งออกที่คั่นหน้าเป็นแฟ้มในรูปแบบที่คั่นหน้าของมอซซิลา"
 
-#: main.cpp:126
+#: main.cpp:124
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "ส่งออกที่คั่นหน้าเป็นแฟ้มในรูปแบบที่คั่นหน้าของเน็ตสเคป (รุ่น 4.x หรือก่อนหน้า)"
 
-#: main.cpp:127
+#: main.cpp:125
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "ส่งออกที่คั่นหน้าเป็นแฟ้มในรูปแบบ HTML ที่พิมพ์ได้ง่าย"
 
-#: main.cpp:128
+#: main.cpp:126
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "ส่งออกที่คั่นหน้าเป็นแฟ้มในรูปแบบที่คั่นหน้าของอินเทอร์เน็ต เอ็กซ์พลอเรอร์"
 
-#: main.cpp:129
+#: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "ส่งออกที่คั่นหน้าเป็นแฟ้มในรูปแบบที่คั่นหน้าของโอเปรา"
 
-#: main.cpp:130
+#: main.cpp:128
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "เปิด ณ ตำแหน่งที่ระบุในแฟ้มที่คั่นหน้า"
 
-#: main.cpp:131
+#: main.cpp:129
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "ตั้งป้ายชื่อที่อ่านแล้วเข้าใจได้ง่าย เช่น \"คอนโซล\""
 
-#: main.cpp:132
+#: main.cpp:130
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "ซ่อนฟังก์ชันที่เกี่ยวข้องกับเบราว์เซอร์ทั้งหมด"
 
-#: main.cpp:133
+#: main.cpp:131
 #, fuzzy, kde-format
 #| msgid ""
 #| "A unique name that represents this bookmark collection, usually the "
@@ -743,17 +743,17 @@ msgstr ""
 "สำหรับที่คั่นหน้าของ KFileDialog เป็นต้น\n"
 "โดยพาธสุดท้ายของวัตถุ D-Bus จะเป็น /KBookmarkManager/dbusObjectName"
 
-#: main.cpp:137
+#: main.cpp:135
 #, kde-format
 msgid "File to edit"
 msgstr "แฟ้มที่จะแก้ไข"
 
-#: main.cpp:225
+#: main.cpp:223
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "คุณอาจจะใช้เพียงตัวเลือก --export เพียงตัวเดียวก็ได้"
 
-#: main.cpp:232
+#: main.cpp:230
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "คุณอาจจะใช้เพียงตัวเลือก --import เพียงตัวเดียวก็ได้"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-13 00:41+0000\n"
+"POT-Creation-Date: 2024-06-17 00:41+0000\n"
 "PO-Revision-Date: 2024-02-29 17:07+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -33,202 +33,202 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "tulliana@gmail.com, engincagatay@yahoo.com, emir_sari@icloud.com"
 
-#: actionsimpl.cpp:93
+#: actionsimpl.cpp:91
 #, kde-format
 msgid "&Delete"
 msgstr "&Sil"
 
-#: actionsimpl.cpp:99
+#: actionsimpl.cpp:97
 #, kde-format
 msgid "Rename"
 msgstr "Yeniden adlandır"
 
-#: actionsimpl.cpp:105
+#: actionsimpl.cpp:103
 #, kde-format
 msgid "C&hange Location"
 msgstr "&Konumu Değiştir"
 
-#: actionsimpl.cpp:111
+#: actionsimpl.cpp:109
 #, kde-format
 msgid "C&hange Comment"
 msgstr "Yorumu D&eğiştir"
 
-#: actionsimpl.cpp:117
+#: actionsimpl.cpp:115
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "Sim&geyi Değiştir…"
 
-#: actionsimpl.cpp:121
+#: actionsimpl.cpp:119
 #, kde-format
 msgid "Update Favicon"
 msgstr "Site Simgesini Güncelle"
 
-#: actionsimpl.cpp:125
+#: actionsimpl.cpp:123
 #, kde-format
 msgid "Recursive Sort"
 msgstr "Özyineli Olarak Sırala"
 
-#: actionsimpl.cpp:130
+#: actionsimpl.cpp:128
 #, kde-format
 msgid "&New Folder..."
 msgstr "&Yeni Klasör…"
 
-#: actionsimpl.cpp:136
+#: actionsimpl.cpp:134
 #, kde-format
 msgid "&New Bookmark"
 msgstr "Ye&ni Yer İmi"
 
-#: actionsimpl.cpp:140
+#: actionsimpl.cpp:138
 #, kde-format
 msgid "&Insert Separator"
 msgstr "Ayırıcı Ekl&e"
 
-#: actionsimpl.cpp:145
+#: actionsimpl.cpp:143
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "Alfabetik Olarak &Sırala"
 
-#: actionsimpl.cpp:150
+#: actionsimpl.cpp:148
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "Araç Ç&ubuğu Klasörü Olarak Ayarla"
 
-#: actionsimpl.cpp:154
+#: actionsimpl.cpp:152
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "Tüm Klasörleri G&enişlet"
 
-#: actionsimpl.cpp:158
+#: actionsimpl.cpp:156
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "Tüm Klasörleri D&aralt"
 
-#: actionsimpl.cpp:163
+#: actionsimpl.cpp:161
 #, kde-format
 msgid "&Open in Browser"
 msgstr "&Tarayıcıda Aç"
 
-#: actionsimpl.cpp:168
+#: actionsimpl.cpp:166
 #, kde-format
 msgid "Check &Status"
 msgstr "Durumu &Denetle"
 
-#: actionsimpl.cpp:172
+#: actionsimpl.cpp:170
 #, kde-format
 msgid "Check Status: &All"
 msgstr "Durumu Denetle: &Tümü"
 
-#: actionsimpl.cpp:176
+#: actionsimpl.cpp:174
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "Tüm &Site Simgelerini Güncelle"
 
-#: actionsimpl.cpp:180
+#: actionsimpl.cpp:178
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "Kontrolleri İptal E&t"
 
-#: actionsimpl.cpp:184
+#: actionsimpl.cpp:182
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "Site S&imgesi Güncellemeyi İptal Et"
 
-#: actionsimpl.cpp:190
+#: actionsimpl.cpp:188
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "&Netscape Yer İmleri İçe Aktar…"
 
-#: actionsimpl.cpp:196
+#: actionsimpl.cpp:194
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "&Opera Yer İmleri İçe Aktar…"
 
-#: actionsimpl.cpp:206
+#: actionsimpl.cpp:204
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "&Galeon Yer İmleri İçe Aktar…"
 
-#: actionsimpl.cpp:212
+#: actionsimpl.cpp:210
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "&KDE2 ya da KDE 3 Yer İmleri İçe Aktar…"
 
-#: actionsimpl.cpp:218
+#: actionsimpl.cpp:216
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "&Internet Explorer Yer İmleri İçe Aktar…"
 
-#: actionsimpl.cpp:224
+#: actionsimpl.cpp:222
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "&Mozilla Yer İmleri İçe Aktar…"
 
-#: actionsimpl.cpp:229
+#: actionsimpl.cpp:227
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "&Netscape Yer İmlerini Dışa Aktar"
 
-#: actionsimpl.cpp:234
+#: actionsimpl.cpp:232
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "&Opera Yer İmlerini Dışa Aktar…"
 
-#: actionsimpl.cpp:239
+#: actionsimpl.cpp:237
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "&HTML Yer İmlerini Dışa Aktar…"
 
-#: actionsimpl.cpp:243
+#: actionsimpl.cpp:241
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "&Internet Explorer Yer İmlerini Dışa Aktar…"
 
-#: actionsimpl.cpp:248
+#: actionsimpl.cpp:246
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "&Mozilla Yer İmlerini Dışa Aktar…"
 
-#: actionsimpl.cpp:293
+#: actionsimpl.cpp:291
 #, kde-format
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "HTML Yer İmleri Listesi (*.html)"
 
-#: actionsimpl.cpp:338
+#: actionsimpl.cpp:336
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "Ögeleri Kes"
 
-#: actionsimpl.cpp:363
+#: actionsimpl.cpp:361
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "Yapıştır"
 
-#: actionsimpl.cpp:374
+#: actionsimpl.cpp:372
 #, kde-format
 msgid "New folder:"
 msgstr "Yeni klasör:"
 
-#: actionsimpl.cpp:374
+#: actionsimpl.cpp:372
 #, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Yeni Yer İmleri Klasörü Oluştur"
 
-#: actionsimpl.cpp:521
+#: actionsimpl.cpp:519
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "Özyineli Olarak Sırala"
 
-#: actionsimpl.cpp:536
+#: actionsimpl.cpp:534
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "Alfabetik Olarak Sırala"
 
-#: actionsimpl.cpp:545
+#: actionsimpl.cpp:543
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Delete Items"
@@ -264,7 +264,7 @@ msgstr "Son görüntülenme:"
 msgid "Times visited:"
 msgstr "Ziyaret sayısı:"
 
-#: exporters.cpp:48
+#: exporters.cpp:46
 #, kde-format
 msgid "My Bookmarks"
 msgstr "Yer İmlerim"
@@ -279,184 +279,184 @@ msgstr "Tamam"
 msgid "Updating favicon..."
 msgstr "Site simgesi güncelleniyor…"
 
-#: faviconupdater.cpp:77
+#: faviconupdater.cpp:75
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; Hiç HTML bileşeni bulunamadı (%2)"
 
-#: importers.cpp:56
+#: importers.cpp:54
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "%1 Yer  İmini  İçe Aktar"
 
-#: importers.cpp:61
+#: importers.cpp:59
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 Yer İmleri"
 
-#: importers.cpp:98
+#: importers.cpp:96
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr ""
 "Yeni bir alt klasör olarak mı içe aktarılsın, yoksa mevcut tüm yer imleriyle "
 "değiştirilsin mi?"
 
-#: importers.cpp:99
+#: importers.cpp:97
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 İçe Aktar"
 
-#: importers.cpp:100
+#: importers.cpp:98
 #, kde-format
 msgid "As New Folder"
 msgstr "Yeni Klasör Olarak"
 
-#: importers.cpp:101
+#: importers.cpp:99
 #, kde-format
 msgid "Replace"
 msgstr "Değiştir"
 
-#: importers.cpp:211
+#: importers.cpp:209
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Galeon Yer İmi Dosyaları (*.xbel)"
 
-#: importers.cpp:219
+#: importers.cpp:217
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "KDE Yer İmi Dosyaları (*.xml)"
 
-#: importers.h:116
+#: importers.h:115
 #, kde-format
 msgid "Galeon"
 msgstr "Galeon"
 
-#: importers.h:131
+#: importers.h:130
 #, kde-format
 msgid "KDE"
 msgstr "KDE"
 
-#: importers.h:161
+#: importers.h:160
 #, kde-format
 msgid "Netscape"
 msgstr "Netscape"
 
-#: importers.h:176
+#: importers.h:175
 #, kde-format
 msgid "Mozilla"
 msgstr "Mozilla"
 
-#: importers.h:191
+#: importers.h:190
 #, kde-format
 msgid "IE"
 msgstr "IE"
 
-#: importers.h:209
+#: importers.h:208
 #, kde-format
 msgid "Opera"
 msgstr "Opera"
 
-#: kbookmarkmerger.cpp:48
+#: kbookmarkmerger.cpp:47
 #, kde-format
 msgid "KBookmarkMerger"
 msgstr "KBookmarkMerger"
 
-#: kbookmarkmerger.cpp:50
+#: kbookmarkmerger.cpp:49
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
 msgstr ""
 "Üçüncü parti yazılımlar tarafından kaydedilen yer imlerini "
 "kullanıcınınkilerle birleştirir"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:51
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
 msgstr "Telif hakkı © 2005 Frerich Raabe"
 
-#: kbookmarkmerger.cpp:53
+#: kbookmarkmerger.cpp:52
 #, kde-format
 msgid "Frerich Raabe"
 msgstr "Frerich Raabe"
 
-#: kbookmarkmerger.cpp:53
+#: kbookmarkmerger.cpp:52
 #, kde-format
 msgid "Original author"
 msgstr "Asıl Yazar"
 
-#: kbookmarkmerger.cpp:58
+#: kbookmarkmerger.cpp:57
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr "Daha fazla yer imi aranacak dizin"
 
-#: kbookmarkmodel/commands.cpp:70
+#: kbookmarkmodel/commands.cpp:68
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Insert Separator"
 msgstr "Ayırıcı Ekle"
 
-#: kbookmarkmodel/commands.cpp:84
+#: kbookmarkmodel/commands.cpp:82
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Bookmark"
 msgstr "Yer İmi Oluştur"
 
-#: kbookmarkmodel/commands.cpp:98
+#: kbookmarkmodel/commands.cpp:96
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Folder"
 msgstr "Klasör Oluştur"
 
-#: kbookmarkmodel/commands.cpp:111
+#: kbookmarkmodel/commands.cpp:109
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy %1"
 msgstr "%1 Ögesini Kopyala"
 
-#: kbookmarkmodel/commands.cpp:200
+#: kbookmarkmodel/commands.cpp:198
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Icon Change"
 msgstr "Simge Değiştir"
 
-#: kbookmarkmodel/commands.cpp:202
+#: kbookmarkmodel/commands.cpp:200
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Title Change"
 msgstr "Başlık Değiştir"
 
-#: kbookmarkmodel/commands.cpp:204
+#: kbookmarkmodel/commands.cpp:202
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "URL Change"
 msgstr "URL Değişikliği"
 
-#: kbookmarkmodel/commands.cpp:206
+#: kbookmarkmodel/commands.cpp:204
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Comment Change"
 msgstr "Açıklama Değiştir"
 
-#: kbookmarkmodel/commands.cpp:365
+#: kbookmarkmodel/commands.cpp:363
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move %1"
 msgstr "%1 Ögesini Taşı"
 
-#: kbookmarkmodel/commands.cpp:500
+#: kbookmarkmodel/commands.cpp:498
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Set as Bookmark Toolbar"
 msgstr "Yer İmi Araç Çubuğu olarak Ayarla"
 
-#: kbookmarkmodel/commands.cpp:532
+#: kbookmarkmodel/commands.cpp:530
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy Items"
 msgstr "Ögeleri Kopyala"
 
-#: kbookmarkmodel/commands.cpp:532
+#: kbookmarkmodel/commands.cpp:530
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move Items"
@@ -573,7 +573,7 @@ msgstr "&Dışa Aktar"
 msgid "&Tools"
 msgstr "&Araçlar"
 
-#: main.cpp:68
+#: main.cpp:66
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -584,135 +584,135 @@ msgstr ""
 "sürdürmek istiyor musunuz\n"
 "Lütfen yinelenen görünümlerin yalnızca okunabilir olduğunu unutmayın."
 
-#: main.cpp:72
+#: main.cpp:70
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Uyarı"
 
-#: main.cpp:73
+#: main.cpp:71
 #, kde-format
 msgid "Run Another"
 msgstr "Başka Çalıştır"
 
-#: main.cpp:74
+#: main.cpp:72
 #, kde-format
 msgid "Continue in Same"
 msgstr "Aynısında Sürdür"
 
-#: main.cpp:103
+#: main.cpp:101
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Yer İmleri Düzenleyicisi"
 
-#: main.cpp:105
+#: main.cpp:103
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Yer İmleri Yöneticisi ve Düzenleyicisi"
 
-#: main.cpp:107
+#: main.cpp:105
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "Telif Hakkı 2000–2023, KDE geliştiricileri"
 
-#: main.cpp:108
+#: main.cpp:106
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:108
+#: main.cpp:106
 #, kde-format
 msgid "Initial author"
 msgstr "İlk yazar"
 
-#: main.cpp:109
+#: main.cpp:107
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:109
+#: main.cpp:107
 #, kde-format
 msgid "Author"
 msgstr "Yazar"
 
-#: main.cpp:119
+#: main.cpp:117
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Yer imlerini Mozilla dosya biçimindeki bir dosyadan içe aktar"
 
-#: main.cpp:120
+#: main.cpp:118
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Yer imlerini Netscape (4.x ve öncesi) dosya biçimindeki bir dosyadan içe "
 "aktar"
 
-#: main.cpp:121
+#: main.cpp:119
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr ""
 "Yer imlerini Internet Explorer’ın Favorilerim dosya biçimindeki bir dosyadan "
 "içe aktar"
 
-#: main.cpp:122
+#: main.cpp:120
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Yer imlerini Opera dosya biçimindeki bir dosyadan içe aktar"
 
-#: main.cpp:123
+#: main.cpp:121
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Yer imlerini KDE2 biçimindeki bir dosyadan içe aktar"
 
-#: main.cpp:124
+#: main.cpp:122
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Yer imlerini Galeon biçimindeki bir dosyadan içe aktar"
 
-#: main.cpp:125
+#: main.cpp:123
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Yer imlerini Mozilla dosya biçimindeki bir dosyaya aktar"
 
-#: main.cpp:126
+#: main.cpp:124
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr ""
 "Yer imlerini Netscape (4.x ve öncesi) dosya biçimindeki bir dosyaya aktar"
 
-#: main.cpp:127
+#: main.cpp:125
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Yer imlerini yazdırılabilir HTML dosya biçimindeki bir dosyaya aktar"
 
-#: main.cpp:128
+#: main.cpp:126
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr ""
 "Yer imlerini Internet Explorer’ın Favorilerim dosya biçimindeki bir dosyaya "
 "aktar"
 
-#: main.cpp:129
+#: main.cpp:127
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Yer imlerini Opera dosya biçimindeki bir dosyaya aktar"
 
-#: main.cpp:130
+#: main.cpp:128
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Yer imleri dosyasında verilen konumda aç"
 
-#: main.cpp:131
+#: main.cpp:129
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Kullanıcının okuyabileceği başlığı ayarlayın, örneğin ‘Konsole’"
 
-#: main.cpp:132
+#: main.cpp:130
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Tarayıcıyla ilgili fonksiyonları sakla"
 
-#: main.cpp:133
+#: main.cpp:131
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -727,17 +727,17 @@ msgstr ""
 "‘kfile’ vb. olmalıdır.\n"
 "Son D-Bus nesne yolu /KBookmarkManager/<dbusObjectName>’dır"
 
-#: main.cpp:137
+#: main.cpp:135
 #, kde-format
 msgid "File to edit"
 msgstr "Düzenlenecek dosya"
 
-#: main.cpp:225
+#: main.cpp:223
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Yalnızca tek bir --export seçeneği belirtebilirsiniz."
 
-#: main.cpp:232
+#: main.cpp:230
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Yalnızca tek bir --import seçeneği belirtebilirsiniz."
