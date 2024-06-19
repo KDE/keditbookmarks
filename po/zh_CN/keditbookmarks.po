@@ -75,7 +75,7 @@ msgstr "新建书签(&N)"
 #: actionsimpl.cpp:141
 #, kde-format
 msgid "&Insert Separator"
-msgstr "插入分隔符(&I)"
+msgstr "插入分隔线(&I)"
 
 #: actionsimpl.cpp:146
 #, kde-format
@@ -384,7 +384,7 @@ msgstr "扫描额外书签的目录"
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Insert Separator"
-msgstr "插入分割符"
+msgstr "插入分隔线"
 
 #: kbookmarkmodel/commands.cpp:84
 #, kde-format
