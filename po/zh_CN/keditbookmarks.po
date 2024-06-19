@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-17 00:41+0000\n"
+"POT-Creation-Date: 2024-06-19 00:41+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -27,478 +27,478 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-china@kde.org"
 
-#: actionsimpl.cpp:91
+#: actionsimpl.cpp:79
 #, kde-format
 msgid "&Delete"
 msgstr "删除(&D)"
 
-#: actionsimpl.cpp:97
+#: actionsimpl.cpp:85
 #, kde-format
 msgid "Rename"
 msgstr "重命名"
 
-#: actionsimpl.cpp:103
+#: actionsimpl.cpp:91
 #, kde-format
 msgid "C&hange Location"
 msgstr "更改地址(&H)"
 
-#: actionsimpl.cpp:109
+#: actionsimpl.cpp:97
 #, kde-format
 msgid "C&hange Comment"
 msgstr "更改注释(&H)"
 
-#: actionsimpl.cpp:115
+#: actionsimpl.cpp:103
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "更改图标(&G)..."
 
-#: actionsimpl.cpp:119
+#: actionsimpl.cpp:107
 #, kde-format
 msgid "Update Favicon"
 msgstr "更新收藏夹图标"
 
-#: actionsimpl.cpp:123
+#: actionsimpl.cpp:111
 #, kde-format
 msgid "Recursive Sort"
 msgstr "递归排序"
 
-#: actionsimpl.cpp:128
+#: actionsimpl.cpp:116
 #, kde-format
 msgid "&New Folder..."
 msgstr "新建文件夹(&N)..."
 
-#: actionsimpl.cpp:134
+#: actionsimpl.cpp:122
 #, kde-format
 msgid "&New Bookmark"
 msgstr "新建书签(&N)"
 
-#: actionsimpl.cpp:138
+#: actionsimpl.cpp:126
 #, kde-format
 msgid "&Insert Separator"
-msgstr "插入分隔符(&I)"
+msgstr "插入分隔线(&I)"
 
-#: actionsimpl.cpp:143
+#: actionsimpl.cpp:131
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "按字母顺序排序(&S)"
 
-#: actionsimpl.cpp:148
+#: actionsimpl.cpp:136
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "设置为工具栏文件夹(&O)"
 
-#: actionsimpl.cpp:152
+#: actionsimpl.cpp:140
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "展开所有文件夹(&E)"
 
-#: actionsimpl.cpp:156
+#: actionsimpl.cpp:144
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "折叠所有文件夹(&A)"
 
-#: actionsimpl.cpp:161
+#: actionsimpl.cpp:149
 #, kde-format
 msgid "&Open in Browser"
 msgstr "在浏览器中打开(&O)"
 
-#: actionsimpl.cpp:166
+#: actionsimpl.cpp:154
 #, kde-format
 msgid "Check &Status"
 msgstr "检查状态(&S)"
 
-#: actionsimpl.cpp:170
+#: actionsimpl.cpp:158
 #, kde-format
 msgid "Check Status: &All"
 msgstr "检查状态：全部(&A)"
 
-#: actionsimpl.cpp:174
+#: actionsimpl.cpp:162
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "更新全部收藏夹图标(&F)"
 
-#: actionsimpl.cpp:178
+#: actionsimpl.cpp:166
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "取消检查(&C)"
 
-#: actionsimpl.cpp:182
+#: actionsimpl.cpp:170
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "取消更新收藏夹图标(&F)"
 
-#: actionsimpl.cpp:188
+#: actionsimpl.cpp:176
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "导入 &Netscape 书签..."
 
-#: actionsimpl.cpp:194
+#: actionsimpl.cpp:182
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "导入 &Opera 书签..."
 
-#: actionsimpl.cpp:204
+#: actionsimpl.cpp:192
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "导入 &Galeon 书签..."
 
-#: actionsimpl.cpp:210
+#: actionsimpl.cpp:198
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "导入 &KDE 2 或 KDE 3 书签..."
 
-#: actionsimpl.cpp:216
+#: actionsimpl.cpp:204
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "导入 &Internet Explorer 书签..."
 
-#: actionsimpl.cpp:222
+#: actionsimpl.cpp:210
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "导入 &Mozilla 书签..."
 
-#: actionsimpl.cpp:227
+#: actionsimpl.cpp:215
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "导出 &Netscape 书签"
 
-#: actionsimpl.cpp:232
+#: actionsimpl.cpp:220
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "导出 &Opera 书签..."
 
-#: actionsimpl.cpp:237
+#: actionsimpl.cpp:225
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "导出 &HTML 书签..."
 
-#: actionsimpl.cpp:241
+#: actionsimpl.cpp:229
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "导出 &Internet Explorer 书签..."
 
-#: actionsimpl.cpp:246
+#: actionsimpl.cpp:234
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "导出 &Mozilla 书签..."
 
-#: actionsimpl.cpp:291
+#: actionsimpl.cpp:279
 #, kde-format
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "HTML 书签列表 (*.html)"
 
-#: actionsimpl.cpp:336
+#: actionsimpl.cpp:324
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "剪切项目"
 
-#: actionsimpl.cpp:361
+#: actionsimpl.cpp:349
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "粘贴"
 
-#: actionsimpl.cpp:372
+#: actionsimpl.cpp:360
 #, kde-format
 msgid "New folder:"
 msgstr "新文件夹："
 
-#: actionsimpl.cpp:372
+#: actionsimpl.cpp:360
 #, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "新建书签文件夹"
 
-#: actionsimpl.cpp:519
+#: actionsimpl.cpp:507
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "递归排序"
 
-#: actionsimpl.cpp:534
+#: actionsimpl.cpp:522
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "字母顺序排序"
 
-#: actionsimpl.cpp:543
+#: actionsimpl.cpp:531
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Delete Items"
 msgstr "删除项目"
 
-#: bookmarkinfowidget.cpp:223
+#: bookmarkinfowidget.cpp:211
 #, kde-format
 msgid "Name:"
 msgstr "名称："
 
-#: bookmarkinfowidget.cpp:230
+#: bookmarkinfowidget.cpp:218
 #, kde-format
 msgid "Location:"
 msgstr "位置："
 
-#: bookmarkinfowidget.cpp:237
+#: bookmarkinfowidget.cpp:225
 #, kde-format
 msgid "Comment:"
 msgstr "注释："
 
-#: bookmarkinfowidget.cpp:243
+#: bookmarkinfowidget.cpp:231
 #, kde-format
 msgid "First viewed:"
 msgstr "最先查看："
 
-#: bookmarkinfowidget.cpp:246
+#: bookmarkinfowidget.cpp:234
 #, kde-format
 msgid "Viewed last:"
 msgstr "最后查看："
 
-#: bookmarkinfowidget.cpp:249
+#: bookmarkinfowidget.cpp:237
 #, kde-format
 msgid "Times visited:"
 msgstr "访问次数："
 
-#: exporters.cpp:46
+#: exporters.cpp:35
 #, kde-format
 msgid "My Bookmarks"
 msgstr "我的书签"
 
-#: favicons.cpp:54 testlink.cpp:94
+#: favicons.cpp:41 testlink.cpp:81
 #, kde-format
 msgid "OK"
 msgstr "确定"
 
-#: favicons.cpp:70
+#: favicons.cpp:57
 #, kde-format
 msgid "Updating favicon..."
 msgstr "更新收藏夹图标..."
 
-#: faviconupdater.cpp:75
+#: faviconupdater.cpp:62
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1；找不到 HTML 组件(%2)"
 
-#: importers.cpp:54
+#: importers.cpp:41
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "导入 %1 个书签"
 
-#: importers.cpp:59
+#: importers.cpp:46
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 书签"
 
-#: importers.cpp:96
+#: importers.cpp:83
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "导入为新的子文件夹，还是替换当前的书签？"
 
-#: importers.cpp:97
+#: importers.cpp:84
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 导入"
 
-#: importers.cpp:98
+#: importers.cpp:85
 #, kde-format
 msgid "As New Folder"
 msgstr "作为新文件夹"
 
-#: importers.cpp:99
+#: importers.cpp:86
 #, kde-format
 msgid "Replace"
 msgstr "替换"
 
-#: importers.cpp:209
+#: importers.cpp:196
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Galeon 书签文件(*.xbel)"
 
-#: importers.cpp:217
+#: importers.cpp:204
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "KDE 书签文件(*.xml)"
 
-#: importers.h:115
+#: importers.h:104
 #, kde-format
 msgid "Galeon"
 msgstr "Galeon"
 
-#: importers.h:130
+#: importers.h:119
 #, kde-format
 msgid "KDE"
 msgstr "KDE"
 
-#: importers.h:160
+#: importers.h:149
 #, kde-format
 msgid "Netscape"
 msgstr "Netscape"
 
-#: importers.h:175
+#: importers.h:164
 #, kde-format
 msgid "Mozilla"
 msgstr "Mozilla"
 
-#: importers.h:190
+#: importers.h:179
 #, kde-format
 msgid "IE"
 msgstr "IE"
 
-#: importers.h:208
+#: importers.h:197
 #, kde-format
 msgid "Opera"
 msgstr "Opera"
 
-#: kbookmarkmerger.cpp:47
+#: kbookmarkmerger.cpp:28
 #, kde-format
 msgid "KBookmarkMerger"
 msgstr "KBookmarkMerger"
 
-#: kbookmarkmerger.cpp:49
+#: kbookmarkmerger.cpp:30
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
 msgstr "将第三方安装的书签合并到用户的书签中"
 
-#: kbookmarkmerger.cpp:51
+#: kbookmarkmerger.cpp:32
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
 msgstr "Copyright © 2005 Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:33
 #, kde-format
 msgid "Frerich Raabe"
 msgstr "Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:33
 #, kde-format
 msgid "Original author"
 msgstr "原始作者"
 
-#: kbookmarkmerger.cpp:57
+#: kbookmarkmerger.cpp:38
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr "扫描额外书签的目录"
 
-#: kbookmarkmodel/commands.cpp:68
+#: kbookmarkmodel/commands.cpp:55
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Insert Separator"
-msgstr "插入分割符"
+msgstr "插入分隔线"
 
-#: kbookmarkmodel/commands.cpp:82
+#: kbookmarkmodel/commands.cpp:69
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Bookmark"
 msgstr "创建书签"
 
-#: kbookmarkmodel/commands.cpp:96
+#: kbookmarkmodel/commands.cpp:83
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Folder"
 msgstr "创建文件夹"
 
-#: kbookmarkmodel/commands.cpp:109
+#: kbookmarkmodel/commands.cpp:96
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy %1"
 msgstr "复制 %1"
 
-#: kbookmarkmodel/commands.cpp:198
+#: kbookmarkmodel/commands.cpp:185
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Icon Change"
 msgstr "图标更改"
 
-#: kbookmarkmodel/commands.cpp:200
+#: kbookmarkmodel/commands.cpp:187
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Title Change"
 msgstr "标题更改"
 
-#: kbookmarkmodel/commands.cpp:202
+#: kbookmarkmodel/commands.cpp:189
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "URL Change"
 msgstr "URL 更改"
 
-#: kbookmarkmodel/commands.cpp:204
+#: kbookmarkmodel/commands.cpp:191
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Comment Change"
 msgstr "注释更改"
 
-#: kbookmarkmodel/commands.cpp:363
+#: kbookmarkmodel/commands.cpp:350
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move %1"
 msgstr "移动 %1"
 
-#: kbookmarkmodel/commands.cpp:498
+#: kbookmarkmodel/commands.cpp:485
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Set as Bookmark Toolbar"
 msgstr "设置为书签工具栏"
 
-#: kbookmarkmodel/commands.cpp:530
+#: kbookmarkmodel/commands.cpp:517
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy Items"
 msgstr "复制项目"
 
-#: kbookmarkmodel/commands.cpp:530
+#: kbookmarkmodel/commands.cpp:517
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move Items"
 msgstr "移动项目"
 
-#: kbookmarkmodel/model.cpp:122
+#: kbookmarkmodel/model.cpp:109
 #, kde-format
 msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "书签"
 
-#: kbookmarkmodel/model.cpp:217
+#: kbookmarkmodel/model.cpp:204
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
 msgstr "名称"
 
-#: kbookmarkmodel/model.cpp:220
+#: kbookmarkmodel/model.cpp:207
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
 msgstr "地址"
 
-#: kbookmarkmodel/model.cpp:223
+#: kbookmarkmodel/model.cpp:210
 #, kde-format
 msgctxt "@title:column comment for a bookmark"
 msgid "Comment"
 msgstr "注释"
 
-#: kbookmarkmodel/model.cpp:226
+#: kbookmarkmodel/model.cpp:213
 #, kde-format
 msgctxt "@title:column status of a bookmark"
 msgid "Status"
 msgstr "状态"
 
-#: kebsearchline.cpp:239
+#: kebsearchline.cpp:226
 #, kde-format
 msgid "Search Columns"
 msgstr "搜索列"
 
-#: kebsearchline.cpp:242
+#: kebsearchline.cpp:229
 #, kde-format
 msgid "All Visible Columns"
 msgstr "全部可见列"
 
-#: kebsearchline.cpp:250
+#: kebsearchline.cpp:237
 #, kde-format
 msgctxt "Column number %1"
 msgid "Column No. %1"
 msgstr "第 %1 列"
 
-#: kebsearchline.cpp:615
+#: kebsearchline.cpp:602
 #, kde-format
 msgid "S&earch:"
 msgstr "搜索(&E)："
@@ -563,7 +563,7 @@ msgstr "导出(&E)"
 msgid "&Tools"
 msgstr "工具(&T)"
 
-#: main.cpp:66
+#: main.cpp:53
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -573,128 +573,128 @@ msgstr ""
 "%1 的另一实例正在运行，您是想要打开另外一个实例，还是在同一实例中继续工作？\n"
 "但是请注意，非常不幸，这些实例视图的副本都是只读的。"
 
-#: main.cpp:70
+#: main.cpp:57
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "警告"
 
-#: main.cpp:71
+#: main.cpp:58
 #, kde-format
 msgid "Run Another"
 msgstr "另开实例"
 
-#: main.cpp:72
+#: main.cpp:59
 #, kde-format
 msgid "Continue in Same"
 msgstr "在同一实例中继续"
 
-#: main.cpp:101
+#: main.cpp:88
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "书签编辑器"
 
-#: main.cpp:103
+#: main.cpp:90
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "书签组织和编辑器"
 
-#: main.cpp:105
+#: main.cpp:92
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "Copyright 2000-2023, KDE developers"
 
-#: main.cpp:106
+#: main.cpp:93
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:106
+#: main.cpp:93
 #, kde-format
 msgid "Initial author"
 msgstr "第一个作者"
 
-#: main.cpp:107
+#: main.cpp:94
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:107
+#: main.cpp:94
 #, kde-format
 msgid "Author"
 msgstr "作者"
 
-#: main.cpp:117
+#: main.cpp:104
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "从一个 Mozilla 格式的文件导入书签"
 
-#: main.cpp:118
+#: main.cpp:105
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "从一个 Netscape (4.x 或更早) 格式的文件导入书签"
 
-#: main.cpp:119
+#: main.cpp:106
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "从一个 Internet Explorer 收藏夹格式的文件导入书签"
 
-#: main.cpp:120
+#: main.cpp:107
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "从一个 Opera 格式的文件导入书签"
 
-#: main.cpp:121
+#: main.cpp:108
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "从一个 KDE2 格式的文件导入书签"
 
-#: main.cpp:122
+#: main.cpp:109
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "从一个 Galeon 格式的文件导入书签"
 
-#: main.cpp:123
+#: main.cpp:110
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "导出书签为一个 Mozilla 格式的文件"
 
-#: main.cpp:124
+#: main.cpp:111
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "导出书签为一个 Netscape (4.x 或更早) 格式的文件"
 
-#: main.cpp:125
+#: main.cpp:112
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "导出书签为一个可打印的 HTML 格式的文件"
 
-#: main.cpp:126
+#: main.cpp:113
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "导出书签为一个 Internet Explorer 的收藏夹格式的文件"
 
-#: main.cpp:127
+#: main.cpp:114
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "导出书签为一个 Opera 格式的文件"
 
-#: main.cpp:128
+#: main.cpp:115
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "打开书签文件的指定位置"
 
-#: main.cpp:129
+#: main.cpp:116
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "设置用户可读的标题，如“Konsole”"
 
-#: main.cpp:130
+#: main.cpp:117
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "隐藏所有浏览器相关的功能"
 
-#: main.cpp:131
+#: main.cpp:118
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -708,22 +708,22 @@ msgstr ""
 "是“kfile”，以此类推。\n"
 "其最终的 D-Bus 对象路径是 /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:135
+#: main.cpp:122
 #, kde-format
 msgid "File to edit"
 msgstr "要编辑的文件"
 
-#: main.cpp:223
+#: main.cpp:210
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "您只可以设定一个 --export 选项。"
 
-#: main.cpp:230
+#: main.cpp:217
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "您只可以设定一个 --import 选项。"
 
-#: testlink.cpp:73
+#: testlink.cpp:60
 #, kde-format
 msgid "Checking..."
 msgstr "正在检查..."
