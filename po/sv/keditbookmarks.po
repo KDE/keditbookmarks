@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-17 00:41+0000\n"
+"POT-Creation-Date: 2024-06-19 00:41+0000\n"
 "PO-Revision-Date: 2023-07-31 08:45+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -29,479 +29,479 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "stefan.asserhall@gmail.com"
 
-#: actionsimpl.cpp:91
+#: actionsimpl.cpp:79
 #, kde-format
 msgid "&Delete"
 msgstr "&Ta bort"
 
-#: actionsimpl.cpp:97
+#: actionsimpl.cpp:85
 #, kde-format
 msgid "Rename"
 msgstr "Byt namn"
 
-#: actionsimpl.cpp:103
+#: actionsimpl.cpp:91
 #, kde-format
 msgid "C&hange Location"
 msgstr "Ä&ndra plats"
 
-#: actionsimpl.cpp:109
+#: actionsimpl.cpp:97
 #, kde-format
 msgid "C&hange Comment"
 msgstr "&Ändra kommentar"
 
-#: actionsimpl.cpp:115
+#: actionsimpl.cpp:103
 #, kde-format
 msgid "Chan&ge Icon..."
 msgstr "&Ändra ikon..."
 
-#: actionsimpl.cpp:119
+#: actionsimpl.cpp:107
 #, kde-format
 msgid "Update Favicon"
 msgstr "Uppdatera favoritikon"
 
-#: actionsimpl.cpp:123
+#: actionsimpl.cpp:111
 #, kde-format
 msgid "Recursive Sort"
 msgstr "Rekursiv sortering"
 
-#: actionsimpl.cpp:128
+#: actionsimpl.cpp:116
 #, kde-format
 msgid "&New Folder..."
 msgstr "&Ny korg..."
 
-#: actionsimpl.cpp:134
+#: actionsimpl.cpp:122
 #, kde-format
 msgid "&New Bookmark"
 msgstr "&Nytt bokmärke"
 
-#: actionsimpl.cpp:138
+#: actionsimpl.cpp:126
 #, kde-format
 msgid "&Insert Separator"
 msgstr "&Infoga avskiljare"
 
-#: actionsimpl.cpp:143
+#: actionsimpl.cpp:131
 #, kde-format
 msgid "&Sort Alphabetically"
 msgstr "&Sortera i bokstavsordning"
 
-#: actionsimpl.cpp:148
+#: actionsimpl.cpp:136
 #, kde-format
 msgid "Set as T&oolbar Folder"
 msgstr "Använd s&om verktygsradskatalog"
 
-#: actionsimpl.cpp:152
+#: actionsimpl.cpp:140
 #, kde-format
 msgid "&Expand All Folders"
 msgstr "&Expandera alla kataloger"
 
-#: actionsimpl.cpp:156
+#: actionsimpl.cpp:144
 #, kde-format
 msgid "Collapse &All Folders"
 msgstr "Komprimera &alla kataloger"
 
-#: actionsimpl.cpp:161
+#: actionsimpl.cpp:149
 #, kde-format
 msgid "&Open in Browser"
 msgstr "Ö&ppna i webbläsare"
 
-#: actionsimpl.cpp:166
+#: actionsimpl.cpp:154
 #, kde-format
 msgid "Check &Status"
 msgstr "Kontrollera &status"
 
-#: actionsimpl.cpp:170
+#: actionsimpl.cpp:158
 #, kde-format
 msgid "Check Status: &All"
 msgstr "Kontrollera status: &Alla"
 
-#: actionsimpl.cpp:174
+#: actionsimpl.cpp:162
 #, kde-format
 msgid "Update All &Favicons"
 msgstr "Uppdatera alla &favoritikoner"
 
-#: actionsimpl.cpp:178
+#: actionsimpl.cpp:166
 #, kde-format
 msgid "Cancel &Checks"
 msgstr "Avbr&yt kontroll"
 
-#: actionsimpl.cpp:182
+#: actionsimpl.cpp:170
 #, kde-format
 msgid "Cancel &Favicon Updates"
 msgstr "Avbryt alla uppdateringar av &favikoner"
 
-#: actionsimpl.cpp:188
+#: actionsimpl.cpp:176
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
 msgstr "Importera bokmärken från &Netscape..."
 
-#: actionsimpl.cpp:194
+#: actionsimpl.cpp:182
 #, kde-format
 msgid "Import &Opera Bookmarks..."
 msgstr "Importera bokmärken från &Opera..."
 
-#: actionsimpl.cpp:204
+#: actionsimpl.cpp:192
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
 msgstr "Importera bokmärken från &Galeon..."
 
-#: actionsimpl.cpp:210
+#: actionsimpl.cpp:198
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
 msgstr "Importera bokmärken från &KDE 2 eller KDE 3..."
 
-#: actionsimpl.cpp:216
+#: actionsimpl.cpp:204
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
 msgstr "Importera bokmärken från &Internet Explorer..."
 
-#: actionsimpl.cpp:222
+#: actionsimpl.cpp:210
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
 msgstr "Importera bokmärken från &Mozilla..."
 
-#: actionsimpl.cpp:227
+#: actionsimpl.cpp:215
 #, kde-format
 msgid "Export &Netscape Bookmarks"
 msgstr "Exportera bokmärken till &Netscape"
 
-#: actionsimpl.cpp:232
+#: actionsimpl.cpp:220
 #, kde-format
 msgid "Export &Opera Bookmarks..."
 msgstr "Exportera bokmärken till &Opera..."
 
-#: actionsimpl.cpp:237
+#: actionsimpl.cpp:225
 #, kde-format
 msgid "Export &HTML Bookmarks..."
 msgstr "Exportera bokmärken till &HTML..."
 
-#: actionsimpl.cpp:241
+#: actionsimpl.cpp:229
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
 msgstr "Exportera bokmärken till &Internet Explorer..."
 
-#: actionsimpl.cpp:246
+#: actionsimpl.cpp:234
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
 msgstr "Exportera bokmärken till &Mozilla..."
 
-#: actionsimpl.cpp:291
+#: actionsimpl.cpp:279
 #, kde-format
 msgid "HTML Bookmark Listing (*.html)"
 msgstr "HTML-bokmärkeslista (*.html)"
 
-#: actionsimpl.cpp:336
+#: actionsimpl.cpp:324
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
 msgstr "Klipp ut objekt"
 
-#: actionsimpl.cpp:361
+#: actionsimpl.cpp:349
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "Klistra in"
 
-#: actionsimpl.cpp:372
+#: actionsimpl.cpp:360
 #, kde-format
 msgid "New folder:"
 msgstr "Ny katalog:"
 
-#: actionsimpl.cpp:372
+#: actionsimpl.cpp:360
 #, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Skapa nytt bokmärkeskatalog"
 
-#: actionsimpl.cpp:519
+#: actionsimpl.cpp:507
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
 msgstr "Rekursiv sortering"
 
-#: actionsimpl.cpp:534
+#: actionsimpl.cpp:522
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
 msgstr "Sortera i bokstavsordning"
 
-#: actionsimpl.cpp:543
+#: actionsimpl.cpp:531
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Delete Items"
 msgstr "Ta bort objekt"
 
-#: bookmarkinfowidget.cpp:223
+#: bookmarkinfowidget.cpp:211
 #, kde-format
 msgid "Name:"
 msgstr "Namn:"
 
-#: bookmarkinfowidget.cpp:230
+#: bookmarkinfowidget.cpp:218
 #, kde-format
 msgid "Location:"
 msgstr "Plats:"
 
-#: bookmarkinfowidget.cpp:237
+#: bookmarkinfowidget.cpp:225
 #, kde-format
 msgid "Comment:"
 msgstr "Kommentar:"
 
-#: bookmarkinfowidget.cpp:243
+#: bookmarkinfowidget.cpp:231
 #, kde-format
 msgid "First viewed:"
 msgstr "Först visad:"
 
-#: bookmarkinfowidget.cpp:246
+#: bookmarkinfowidget.cpp:234
 #, kde-format
 msgid "Viewed last:"
 msgstr "Senast visad:"
 
-#: bookmarkinfowidget.cpp:249
+#: bookmarkinfowidget.cpp:237
 #, kde-format
 msgid "Times visited:"
 msgstr "Antal besök:"
 
-#: exporters.cpp:46
+#: exporters.cpp:35
 #, kde-format
 msgid "My Bookmarks"
 msgstr "Mina bokmärken"
 
-#: favicons.cpp:54 testlink.cpp:94
+#: favicons.cpp:41 testlink.cpp:81
 #, kde-format
 msgid "OK"
 msgstr "Ok"
 
-#: favicons.cpp:70
+#: favicons.cpp:57
 #, kde-format
 msgid "Updating favicon..."
 msgstr "Uppdaterar favoritikon..."
 
-#: faviconupdater.cpp:75
+#: faviconupdater.cpp:62
 #, kde-format
 msgid "%1; no HTML component found (%2)"
 msgstr "%1; ingen HTML-komponent hittades (%2)"
 
-#: importers.cpp:54
+#: importers.cpp:41
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
 msgstr "Importera %1 bokmärken"
 
-#: importers.cpp:59
+#: importers.cpp:46
 #, kde-format
 msgid "%1 Bookmarks"
 msgstr "%1 bokmärken"
 
-#: importers.cpp:96
+#: importers.cpp:83
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
 msgstr "Importera som ny undermeny eller ersätta alla aktuella bokmärken?"
 
-#: importers.cpp:97
+#: importers.cpp:84
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
 msgstr "%1 import"
 
-#: importers.cpp:98
+#: importers.cpp:85
 #, kde-format
 msgid "As New Folder"
 msgstr "Som ny undermeny"
 
-#: importers.cpp:99
+#: importers.cpp:86
 #, kde-format
 msgid "Replace"
 msgstr "Ersätt"
 
-#: importers.cpp:209
+#: importers.cpp:196
 #, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
 msgstr "Galeon-bokmärkesfiler (*.xbel)"
 
-#: importers.cpp:217
+#: importers.cpp:204
 #, kde-format
 msgid "KDE Bookmark Files (*.xml)"
 msgstr "KDE-bokmärkesfiler (*.xml)"
 
-#: importers.h:115
+#: importers.h:104
 #, kde-format
 msgid "Galeon"
 msgstr "Galeon"
 
-#: importers.h:130
+#: importers.h:119
 #, kde-format
 msgid "KDE"
 msgstr "KDE"
 
-#: importers.h:160
+#: importers.h:149
 #, kde-format
 msgid "Netscape"
 msgstr "Netscape"
 
-#: importers.h:175
+#: importers.h:164
 #, kde-format
 msgid "Mozilla"
 msgstr "Mozilla"
 
-#: importers.h:190
+#: importers.h:179
 #, kde-format
 msgid "IE"
 msgstr "IE"
 
-#: importers.h:208
+#: importers.h:197
 #, kde-format
 msgid "Opera"
 msgstr "Opera"
 
-#: kbookmarkmerger.cpp:47
+#: kbookmarkmerger.cpp:28
 #, kde-format
 msgid "KBookmarkMerger"
 msgstr "Bokmärkessammanslagning"
 
-#: kbookmarkmerger.cpp:49
+#: kbookmarkmerger.cpp:30
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
 msgstr ""
 "Sammanfogar bokmärken installerade av tredje part i användarens bokmärken"
 
-#: kbookmarkmerger.cpp:51
+#: kbookmarkmerger.cpp:32
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
 msgstr "Copyright © 2005 Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:33
 #, kde-format
 msgid "Frerich Raabe"
 msgstr "Frerich Raabe"
 
-#: kbookmarkmerger.cpp:52
+#: kbookmarkmerger.cpp:33
 #, kde-format
 msgid "Original author"
 msgstr "Ursprunglig upphovsman"
 
-#: kbookmarkmerger.cpp:57
+#: kbookmarkmerger.cpp:38
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
 msgstr "Katalog att söka efter extra bokmärken i"
 
-#: kbookmarkmodel/commands.cpp:68
+#: kbookmarkmodel/commands.cpp:55
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Insert Separator"
 msgstr "Infoga avskiljare"
 
-#: kbookmarkmodel/commands.cpp:82
+#: kbookmarkmodel/commands.cpp:69
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Bookmark"
 msgstr "Skapa bokmärke"
 
-#: kbookmarkmodel/commands.cpp:96
+#: kbookmarkmodel/commands.cpp:83
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Folder"
 msgstr "Skapa katalog"
 
-#: kbookmarkmodel/commands.cpp:109
+#: kbookmarkmodel/commands.cpp:96
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy %1"
 msgstr "Kopiera %1"
 
-#: kbookmarkmodel/commands.cpp:198
+#: kbookmarkmodel/commands.cpp:185
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Icon Change"
 msgstr "Ikonändring"
 
-#: kbookmarkmodel/commands.cpp:200
+#: kbookmarkmodel/commands.cpp:187
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Title Change"
 msgstr "Namnändring"
 
-#: kbookmarkmodel/commands.cpp:202
+#: kbookmarkmodel/commands.cpp:189
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "URL Change"
 msgstr "Webbadressändring"
 
-#: kbookmarkmodel/commands.cpp:204
+#: kbookmarkmodel/commands.cpp:191
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Comment Change"
 msgstr "Kommentarändring"
 
-#: kbookmarkmodel/commands.cpp:363
+#: kbookmarkmodel/commands.cpp:350
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move %1"
 msgstr "Flytta %1"
 
-#: kbookmarkmodel/commands.cpp:498
+#: kbookmarkmodel/commands.cpp:485
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Set as Bookmark Toolbar"
 msgstr "Använd som bokmärkesverktygsrad"
 
-#: kbookmarkmodel/commands.cpp:530
+#: kbookmarkmodel/commands.cpp:517
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy Items"
 msgstr "Kopiera objekt"
 
-#: kbookmarkmodel/commands.cpp:530
+#: kbookmarkmodel/commands.cpp:517
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move Items"
 msgstr "Flytta objekt"
 
-#: kbookmarkmodel/model.cpp:122
+#: kbookmarkmodel/model.cpp:109
 #, kde-format
 msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Bokmärken"
 
-#: kbookmarkmodel/model.cpp:217
+#: kbookmarkmodel/model.cpp:204
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
 msgstr "Namn"
 
-#: kbookmarkmodel/model.cpp:220
+#: kbookmarkmodel/model.cpp:207
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
 msgstr "Plats"
 
-#: kbookmarkmodel/model.cpp:223
+#: kbookmarkmodel/model.cpp:210
 #, kde-format
 msgctxt "@title:column comment for a bookmark"
 msgid "Comment"
 msgstr "Kommentar"
 
-#: kbookmarkmodel/model.cpp:226
+#: kbookmarkmodel/model.cpp:213
 #, kde-format
 msgctxt "@title:column status of a bookmark"
 msgid "Status"
 msgstr "Status"
 
-#: kebsearchline.cpp:239
+#: kebsearchline.cpp:226
 #, kde-format
 msgid "Search Columns"
 msgstr "Sök i kolumner"
 
-#: kebsearchline.cpp:242
+#: kebsearchline.cpp:229
 #, kde-format
 msgid "All Visible Columns"
 msgstr "Alla synliga kolumner"
 
-#: kebsearchline.cpp:250
+#: kebsearchline.cpp:237
 #, kde-format
 msgctxt "Column number %1"
 msgid "Column No. %1"
 msgstr "Kolumn nummer %1"
 
-#: kebsearchline.cpp:615
+#: kebsearchline.cpp:602
 #, kde-format
 msgid "S&earch:"
 msgstr "&Sök:"
@@ -566,7 +566,7 @@ msgstr "&Exportera"
 msgid "&Tools"
 msgstr "Verk&tyg"
 
-#: main.cpp:66
+#: main.cpp:53
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -577,128 +577,128 @@ msgstr ""
 "eller vill du fortsätta att arbeta i samma?\n"
 "Observera att duplicerade vyer tyvärr saknar skrivmöjligheter."
 
-#: main.cpp:70
+#: main.cpp:57
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Varning"
 
-#: main.cpp:71
+#: main.cpp:58
 #, kde-format
 msgid "Run Another"
 msgstr "Starta ytterligare en"
 
-#: main.cpp:72
+#: main.cpp:59
 #, kde-format
 msgid "Continue in Same"
 msgstr "Fortsätt i samma"
 
-#: main.cpp:101
+#: main.cpp:88
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Bokmärkeseditor"
 
-#: main.cpp:103
+#: main.cpp:90
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Bokmärkesorganisering och editor"
 
-#: main.cpp:105
+#: main.cpp:92
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "Copyright 2000-2023 KDE-utvecklarna"
 
-#: main.cpp:106
+#: main.cpp:93
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:106
+#: main.cpp:93
 #, kde-format
 msgid "Initial author"
 msgstr "Ursprunglig upphovsman"
 
-#: main.cpp:107
+#: main.cpp:94
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:107
+#: main.cpp:94
 #, kde-format
 msgid "Author"
 msgstr "Upphovsman"
 
-#: main.cpp:117
+#: main.cpp:104
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Importera bokmärken från en fil i Mozilla-format"
 
-#: main.cpp:118
+#: main.cpp:105
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Importera bokmärken från en fil i Netscape-format (4.x och tidigare)"
 
-#: main.cpp:119
+#: main.cpp:106
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Importera bokmärken från en fil i Internet Explorers Favoriter-format"
 
-#: main.cpp:120
+#: main.cpp:107
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Importera bokmärken från en fil i Opera-format"
 
-#: main.cpp:121
+#: main.cpp:108
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Importera bokmärken från en fil i KDE2-format"
 
-#: main.cpp:122
+#: main.cpp:109
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Importera bokmärken från en fil i Galeon-format"
 
-#: main.cpp:123
+#: main.cpp:110
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Exportera bokmärken till en fil i Mozilla-format"
 
-#: main.cpp:124
+#: main.cpp:111
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Exportera bokmärken till en fil i Netscape-format (4.x och tidigare)"
 
-#: main.cpp:125
+#: main.cpp:112
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Exportera bokmärken till en fil i utskrivbart HTML-format"
 
-#: main.cpp:126
+#: main.cpp:113
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Exportera bokmärken till en fil i Internet Explorers Favoriter-format"
 
-#: main.cpp:127
+#: main.cpp:114
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Exportera bokmärken till en fil i Opera-format"
 
-#: main.cpp:128
+#: main.cpp:115
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Öppna vid angiven plats i bokmärkesfilen"
 
-#: main.cpp:129
+#: main.cpp:116
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Ange rubriken som användaren ser, till exempel \"Terminal\""
 
-#: main.cpp:130
+#: main.cpp:117
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Dölj alla funktioner relaterade till webbläsning"
 
-#: main.cpp:131
+#: main.cpp:118
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -713,22 +713,22 @@ msgstr ""
 "bokmärken i fildialogrutor, etc.\n"
 "Den slutliga D-Bus objektsökvägen är /KBookmarkManager/<DBus_objektnamn>"
 
-#: main.cpp:135
+#: main.cpp:122
 #, kde-format
 msgid "File to edit"
 msgstr "Fil att redigera"
 
-#: main.cpp:223
+#: main.cpp:210
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Du kan bara ange en ensam --export-väljare."
 
-#: main.cpp:230
+#: main.cpp:217
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Du kan bara ange en ensam --import-väljare."
 
-#: testlink.cpp:73
+#: testlink.cpp:60
 #, kde-format
 msgid "Checking..."
 msgstr "Kontrollerar..."
