@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-19 00:41+0000\n"
+"POT-Creation-Date: 2024-06-29 00:41+0000\n"
 "PO-Revision-Date: 2009-12-20 18:48+0100\n"
 "Last-Translator: Mark Kwidzińśczi <mark@linuxcsb.org>\n"
 "Language-Team: Kaszëbsczi <i18n-csb@linuxcsb.org>\n"
@@ -288,6 +288,11 @@ msgstr "Aktualizëjë favicon..."
 #: faviconupdater.cpp:62
 #, kde-format
 msgid "%1; no HTML component found (%2)"
+msgstr ""
+
+#: faviconupdater.cpp:74
+#, kde-format
+msgid "No browser component found"
 msgstr ""
 
 #: importers.cpp:41

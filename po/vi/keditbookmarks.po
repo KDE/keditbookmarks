@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-19 00:41+0000\n"
+"POT-Creation-Date: 2024-06-29 00:41+0000\n"
 "PO-Revision-Date: 2023-10-24 10:25+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -277,6 +277,12 @@ msgstr "Đang cập nhật biểu tượng trang..."
 #: faviconupdater.cpp:62
 #, kde-format
 msgid "%1; no HTML component found (%2)"
+msgstr "%1; không tìm thấy thành phần HTML nào (%2)"
+
+#: faviconupdater.cpp:74
+#, fuzzy, kde-format
+#| msgid "%1; no HTML component found (%2)"
+msgid "No browser component found"
 msgstr "%1; không tìm thấy thành phần HTML nào (%2)"
 
 #: importers.cpp:41

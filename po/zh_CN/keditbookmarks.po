@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-19 00:41+0000\n"
+"POT-Creation-Date: 2024-06-29 00:41+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -276,6 +276,12 @@ msgstr "更新收藏夹图标..."
 #: faviconupdater.cpp:62
 #, kde-format
 msgid "%1; no HTML component found (%2)"
+msgstr "%1；找不到 HTML 组件(%2)"
+
+#: faviconupdater.cpp:74
+#, fuzzy, kde-format
+#| msgid "%1; no HTML component found (%2)"
+msgid "No browser component found"
 msgstr "%1；找不到 HTML 组件(%2)"
 
 #: importers.cpp:41

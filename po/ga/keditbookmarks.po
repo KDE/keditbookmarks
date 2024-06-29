@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase/keditbookmarks.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-19 00:41+0000\n"
+"POT-Creation-Date: 2024-06-29 00:41+0000\n"
 "PO-Revision-Date: 2007-06-27 10:27-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -278,6 +278,12 @@ msgstr "Deilbhín ceanán á nuashonrú..."
 #: faviconupdater.cpp:62
 #, kde-format
 msgid "%1; no HTML component found (%2)"
+msgstr "%1; níor aimsíodh aon chomhpháirt HTML (%2)"
+
+#: faviconupdater.cpp:74
+#, fuzzy, kde-format
+#| msgid "%1; no HTML component found (%2)"
+msgid "No browser component found"
 msgstr "%1; níor aimsíodh aon chomhpháirt HTML (%2)"
 
 # %1=Firefox, etc. not a number
