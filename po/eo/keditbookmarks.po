@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-29 00:41+0000\n"
-"PO-Revision-Date: 2023-06-24 18:26+0100\n"
+"PO-Revision-Date: 2024-06-29 10:05+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -281,10 +281,9 @@ msgid "%1; no HTML component found (%2)"
 msgstr "%1; trovis neniun HTML-komponanton (%2)"
 
 #: faviconupdater.cpp:74
-#, fuzzy, kde-format
-#| msgid "%1; no HTML component found (%2)"
+#, kde-format
 msgid "No browser component found"
-msgstr "%1; trovis neniun HTML-komponanton (%2)"
+msgstr "Trovis neniun foliumil-komponanton"
 
 #: importers.cpp:41
 #, kde-format
