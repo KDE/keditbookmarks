@@ -11,7 +11,6 @@
 #include <QObject>
 
 #include <KBookmark>
-#include <KIO/TransferJob>
 
 #include "bookmarkiterator.h"
 class KBookmarkModel;
@@ -32,15 +31,11 @@ public:
 
     void cancel() override;
 
-public Q_SLOTS:
-    void slotJobResult(KJob *job);
-
 private:
     void setStatus(const QString &text);
     void doAction() override;
     bool isApplicable(const KBookmark &bk) const override;
 
-    KIO::TransferJob *m_job;
     QString m_oldStatus;
 };
 
