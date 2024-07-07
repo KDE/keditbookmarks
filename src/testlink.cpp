@@ -8,6 +8,10 @@
 // Own
 #include "testlink.h"
 
+// Qt
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+
 // KDE
 #include <KLocalizedString>
 
@@ -23,17 +27,11 @@ TestLinkItrHolder::TestLinkItrHolder(QObject *parent, KBookmarkModel *model)
 
 TestLinkItr::TestLinkItr(BookmarkIteratorHolder *holder, const QList<KBookmark> &bks)
     : BookmarkIterator(holder, bks)
-    , m_job(nullptr)
 {
 }
 
 TestLinkItr::~TestLinkItr()
 {
-    if (m_job) {
-        // //qCDebug(KEDITBOOKMARKS_LOG) << "JOB kill\n";
-        m_job->disconnect(this);
-        m_job->kill();
-    }
 }
 
 void TestLinkItr::setStatus(const QString &text)
@@ -49,40 +47,28 @@ bool TestLinkItr::isApplicable(const KBookmark &bk) const
 
 void TestLinkItr::doAction()
 {
-    // qCDebug(KEDITBOOKMARKS_LOG);
-    m_job = KIO::get(currentBookmark().url(), KIO::Reload, KIO::HideProgressInfo);
-    m_job->addMetaData(QStringLiteral("cookies"), QStringLiteral("none"));
-    m_job->addMetaData(QStringLiteral("errorPage"), QStringLiteral("false"));
+    static QNetworkAccessManager nam;
 
-    connect(m_job, &KIO::TransferJob::result, this, &TestLinkItr::slotJobResult);
+    QNetworkRequest request(currentBookmark().url());
+    request.setAttribute(QNetworkRequest::AutoDeleteReplyOnFinishAttribute, true);
+
+    QNetworkReply *reply = nam.get(request);
+
+    connect(reply, &QNetworkReply::finished, this, [this, reply] {
+        if (reply->error() != QNetworkReply::NoError) {
+            QString err = reply->errorString();
+            err.replace(QLatin1String("\n"), QLatin1String(" "));
+            setStatus(err);
+        } else {
+            setStatus(i18n("OK"));
+        }
+
+        holder()->addAffectedBookmark(KBookmark::parentAddress(currentBookmark().address()));
+        delayedEmitNextOne();
+    });
 
     m_oldStatus = currentBookmark().metaDataItem(QStringLiteral("linkstate"));
     setStatus(i18n("Checking..."));
-}
-
-void TestLinkItr::slotJobResult(KJob *job)
-{
-    // qCDebug(KEDITBOOKMARKS_LOG);
-    m_job = nullptr;
-
-    KIO::TransferJob *transfer = static_cast<KIO::TransferJob *>(job);
-    const QString modDate = transfer->queryMetaData(QStringLiteral("modified"));
-
-    if (transfer->error()) {
-        // qCDebug(KEDITBOOKMARKS_LOG)<<"***********"<<transfer->error()<<"  "<<transfer->isErrorPage();
-        // can we assume that errorString will contain no entities?
-        QString err = transfer->errorString();
-        err.replace(QLatin1String("\n"), QLatin1String(" "));
-        setStatus(err);
-    } else {
-        if (!modDate.isEmpty())
-            setStatus(modDate);
-        else
-            setStatus(i18n("OK"));
-    }
-
-    holder()->addAffectedBookmark(KBookmark::parentAddress(currentBookmark().address()));
-    delayedEmitNextOne();
 }
 
 void TestLinkItr::cancel()
