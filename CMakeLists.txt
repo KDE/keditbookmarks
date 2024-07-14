@@ -9,11 +9,11 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 project(keditbookmarks VERSION ${RELEASE_SERVICE_VERSION})
 
 # ECM setup
-set(KF_MIN_VERSION "6.1.0")
+set(KF_MIN_VERSION "6.3.0")
 find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
-set(QT_MIN_VERSION "6.6.0")
+set(QT_MIN_VERSION "6.7.0")
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
@@ -55,8 +55,8 @@ if(BUILD_TESTING)
     find_package(Qt6Test ${QT_REQUIRED_VERSION} CONFIG REQUIRED)
 endif()
 
-ecm_set_disabled_deprecation_versions(QT 6.6
-    KF 6.0.0
+ecm_set_disabled_deprecation_versions(QT 6.7
+    KF 6.4.0
     )
 
 if(NOT APPLE)

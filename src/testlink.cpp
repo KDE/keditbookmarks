@@ -68,7 +68,7 @@ void TestLinkItr::slotJobResult(KJob *job)
     KIO::TransferJob *transfer = static_cast<KIO::TransferJob *>(job);
     const QString modDate = transfer->queryMetaData(QStringLiteral("modified"));
 
-    if (transfer->error() || transfer->isErrorPage()) {
+    if (transfer->error()) {
         // qCDebug(KEDITBOOKMARKS_LOG)<<"***********"<<transfer->error()<<"  "<<transfer->isErrorPage();
         // can we assume that errorString will contain no entities?
         QString err = transfer->errorString();
