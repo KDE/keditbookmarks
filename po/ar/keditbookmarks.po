@@ -3,14 +3,14 @@
 # Copyright (C) 2001,2002, 2004, 2006, 2007, 2008 Free Software Foundation, Inc.
 # AbdulAziz AlSharif <a.a-a.s@hotmail.com>, 2007.
 # Youssef Chahibi <chahibi@gmail.com>, 2007.
-# zayed <zayed.alsaidi@gmail.com>, 2008, 2012, 2021, 2023.
+# SPDX-FileCopyrightText: 2008, 2012, 2021, 2023, 2024 zayed <zayed.alsaidi@gmail.com>
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-29 00:41+0000\n"
-"PO-Revision-Date: 2023-06-08 10:54+0400\n"
+"PO-Revision-Date: 2024-07-28 12:25+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -282,10 +283,9 @@ msgid "%1; no HTML component found (%2)"
 msgstr "%1؛ لم يُعثر على مكوّن HTML ‏(%2)"
 
 #: faviconupdater.cpp:74
-#, fuzzy, kde-format
-#| msgid "%1; no HTML component found (%2)"
+#, kde-format
 msgid "No browser component found"
-msgstr "%1؛ لم يُعثر على مكوّن HTML ‏(%2)"
+msgstr "لم يُعثر على مكوّن المتصفح"
 
 #: importers.cpp:41
 #, kde-format
