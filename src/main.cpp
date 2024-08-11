@@ -26,6 +26,7 @@
 #endif
 #include "kbookmarkexporter.h"
 #include <KBookmarkManager>
+#include <KCrash>
 #include <QStandardPaths>
 #include <toplevel_interface.h>
 
@@ -95,6 +96,7 @@ int main(int argc, char **argv)
 
     aboutData.setDesktopFileName(QStringLiteral("org.kde.keditbookmarks"));
     KAboutData::setApplicationData(aboutData);
+    KCrash::initialize();
 
     app.setWindowIcon(QIcon::fromTheme(QStringLiteral("bookmarks-organize")));
 

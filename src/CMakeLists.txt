@@ -91,6 +91,7 @@ target_link_libraries(keditbookmarks kbookmarkmodel_private
    KF6::Codecs
    KF6::IconWidgets
    KF6::KIOGui
+   KF6::Crash
    Qt6::DBus
 )
 
