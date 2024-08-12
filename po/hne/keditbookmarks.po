@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-08-12 00:41+0000\n"
 "PO-Revision-Date: 2009-02-09 16:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -600,7 +600,7 @@ msgstr "निर्यात (&E)"
 msgid "&Tools"
 msgstr "औजार (&T)"
 
-#: main.cpp:53
+#: main.cpp:54
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -611,132 +611,132 @@ msgstr ""
 "इंसटैंस मं काम करना चाहथो?\n"
 "किरपा करके, नोट करव कि दुर्भाग से अनुकृति दृस्य सिरिफ पढ़े जा सकथे."
 
-#: main.cpp:57
+#: main.cpp:58
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "चेतावनी"
 
-#: main.cpp:58
+#: main.cpp:59
 #, kde-format
 msgid "Run Another"
 msgstr "एक अउ चलाव"
 
-#: main.cpp:59
+#: main.cpp:60
 #, kde-format
 msgid "Continue in Same"
 msgstr "ओही मं जारी रखव "
 
-#: main.cpp:88
+#: main.cpp:89
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "निसानी संपादक "
 
-#: main.cpp:90
+#: main.cpp:91
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "निसानी आर्गेनाइजर अउ संपादक"
 
-#: main.cpp:92
+#: main.cpp:93
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2007, KDE developers"
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "कापीराइट 2000-2007, केडीई बनइया मन"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "David Faure"
 msgstr "डेविड फाउरे"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "Initial author"
 msgstr "सुरू के लेखक"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "अलेक्जेंडर केलेट"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Author"
 msgstr "लेखक"
 
-#: main.cpp:104
+#: main.cpp:106
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "फाइल से पसंद ल मोजिला फार्मेट मं आयात करव"
 
-#: main.cpp:105
+#: main.cpp:107
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "फाइल से पसंद ल नेटस्केप (4.x या पहिली का) फार्मेट मं आयात करव"
 
-#: main.cpp:106
+#: main.cpp:108
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "फाइल से पसंद ल इंटरनेट एक्सप्लोरर पसंद फार्मेट मं आयात करव"
 
-#: main.cpp:107
+#: main.cpp:109
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "फाइल से पसंद ल ओपेरा फार्मेट मं आयात करव"
 
-#: main.cpp:108
+#: main.cpp:110
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "फाइल से पसंद ल ओपेरा फार्मेट मं आयात करव"
 
-#: main.cpp:109
+#: main.cpp:111
 #, fuzzy, kde-format
 #| msgid "Import bookmarks from a file in Opera format"
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "फाइल से पसंद ल ओपेरा फार्मेट मं आयात करव"
 
-#: main.cpp:110
+#: main.cpp:112
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "पसंद ल मोजिला फार्मेट मं एक फाइल मं निर्यात करव"
 
-#: main.cpp:111
+#: main.cpp:113
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "पसंद ल नेटस्केप (4.x या पहिली का) फार्मेट मं एक फाइल मं निर्यात करव"
 
-#: main.cpp:112
+#: main.cpp:114
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "पसंद ल छपाई जइसन एचटीएमएल फार्मेट मं एक फाइल मं निर्यात करव"
 
-#: main.cpp:113
+#: main.cpp:115
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "पसंद ल इंटरनेट एक्सप्लोरर पसंद फार्मेट मं एक फाइल मं निर्यात करव"
 
-#: main.cpp:114
+#: main.cpp:116
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "पसंद ल ओपेरा फार्मेट मं एक फाइल मं निर्यात करव"
 
-#: main.cpp:115
+#: main.cpp:117
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "पसंद फाइल मं दे गे स्थिति मं खोलव "
 
-#: main.cpp:116
+#: main.cpp:118
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "कमइया के पढ़े जइसन केप्सन सेट करव, जइसन कि  \"कंसोल\""
 
-#: main.cpp:117
+#: main.cpp:119
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "सब्बो ब्राउजर सम्बन्धी फंक्सन लुकाव"
 
-#: main.cpp:118
+#: main.cpp:120
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -746,17 +746,17 @@ msgid ""
 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
 msgstr ""
 
-#: main.cpp:122
+#: main.cpp:124
 #, kde-format
 msgid "File to edit"
 msgstr "संपादन बर फाइल"
 
-#: main.cpp:210
+#: main.cpp:212
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "आप सिरिफ एके निरधारित कर सकथो --export  विकल्प."
 
-#: main.cpp:217
+#: main.cpp:219
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "आप सिरिफ एके निरधारित कर सकथो --import विकल्प."

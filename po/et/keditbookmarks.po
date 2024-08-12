@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-08-12 00:41+0000\n"
 "PO-Revision-Date: 2020-03-16 18:11+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -573,7 +573,7 @@ msgstr "&Eksport"
 msgid "&Tools"
 msgstr "&Tööriistad"
 
-#: main.cpp:53
+#: main.cpp:54
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -584,129 +584,129 @@ msgstr ""
 "ikka sama protsessi tööd?\n"
 "Arvesta, et kahjuks on teine, kolmas jne. vaade ainult lugemiseks."
 
-#: main.cpp:57
+#: main.cpp:58
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Hoiatus"
 
-#: main.cpp:58
+#: main.cpp:59
 #, kde-format
 msgid "Run Another"
 msgstr "Käivita uus"
 
-#: main.cpp:59
+#: main.cpp:60
 #, kde-format
 msgid "Continue in Same"
 msgstr "Jätka juba avatuga"
 
-#: main.cpp:88
+#: main.cpp:89
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Järjehoidjate redaktor"
 
-#: main.cpp:90
+#: main.cpp:91
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Järjehoidjate korraldaja ja redaktor"
 
-#: main.cpp:92
+#: main.cpp:93
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2017, KDE developers"
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "Autoriõigus 2000-2017: KDE arendajad"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "Initial author"
 msgstr "Algne autor"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:104
+#: main.cpp:106
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Järjehoidjate import Mozilla järjehoidjafailist"
 
-#: main.cpp:105
+#: main.cpp:107
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Järjehoidjate import Netscape'i (4.x ja varasemad) järjehoidjafailist"
 
-#: main.cpp:106
+#: main.cpp:108
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Järjehoidjate import Internet Exploreri järjehoidjafailist"
 
-#: main.cpp:107
+#: main.cpp:109
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Järjehoidjate import Opera järjehoidjafailist"
 
-#: main.cpp:108
+#: main.cpp:110
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Järjehoidjate import KDE2 järjehoidjafailist"
 
-#: main.cpp:109
+#: main.cpp:111
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Järjehoidjate import Galeoni järjehoidjafailist"
 
-#: main.cpp:110
+#: main.cpp:112
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Järjehoidjate eksport Mozilla järjehoidjafailina"
 
-#: main.cpp:111
+#: main.cpp:113
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Järjehoidjate eksport Netscape'i (4.x ja varasemad) järjehoidjafailina"
 
-#: main.cpp:112
+#: main.cpp:114
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Järjehoidjate eksport trükitava HTML-failina"
 
-#: main.cpp:113
+#: main.cpp:115
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Järjehoidjate eksport Internet Exploreri järjehoidjafailina"
 
-#: main.cpp:114
+#: main.cpp:116
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Järjehoidjate eksport Opera järjehoidjafailina"
 
-#: main.cpp:115
+#: main.cpp:117
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Antud positsiooni avamine järjehoidjate failis"
 
-#: main.cpp:116
+#: main.cpp:118
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Kasutajale mõistetav nimetus, näiteks \"Konsool\""
 
-#: main.cpp:117
+#: main.cpp:119
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Kõigi brauseriga seotud funktsioonide peitmine"
 
-#: main.cpp:118
+#: main.cpp:120
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -720,17 +720,17 @@ msgstr ""
 "järjehoidjate korral \"kfile\" jne.\n"
 "Lõplik D-Bus-i objekti asukoht on /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:122
+#: main.cpp:124
 #, kde-format
 msgid "File to edit"
 msgstr "Redigeeritav fail"
 
-#: main.cpp:210
+#: main.cpp:212
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Kasutada saab ainult üht --export võtit."
 
-#: main.cpp:217
+#: main.cpp:219
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Kasutada saab ainult üht --import võtit."

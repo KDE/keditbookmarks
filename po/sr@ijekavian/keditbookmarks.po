@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-08-12 00:41+0000\n"
 "PO-Revision-Date: 2017-06-25 23:15+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -592,7 +592,7 @@ msgid "&Tools"
 msgstr "&Алатке"
 
 # rewrite-msgid: /of %1/of Bookmark Editor (%1)/
-#: main.cpp:53
+#: main.cpp:54
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -606,23 +606,23 @@ msgstr ""
 "наставите у постојећем примјерку?\n"
 "Имајте у виду да су удвостручени прикази, на жалост, само‑за‑читање."
 
-#: main.cpp:57
+#: main.cpp:58
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Упозорење"
 
-#: main.cpp:58
+#: main.cpp:59
 #, kde-format
 msgid "Run Another"
 msgstr "Покрени нови"
 
-#: main.cpp:59
+#: main.cpp:60
 #, kde-format
 msgid "Continue in Same"
 msgstr "Настави у истом"
 
-#: main.cpp:88
+#: main.cpp:89
 #, kde-format
 msgid "Bookmark Editor"
 msgstr ""
@@ -631,109 +631,109 @@ msgstr ""
 "           аку 'Уређивач обиљеживача'\n"
 "]"
 
-#: main.cpp:90
+#: main.cpp:91
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Организовање и уређивање обиљеживача"
 
-#: main.cpp:92
+#: main.cpp:93
 #, fuzzy, kde-format
 #| msgid "Copyright 2000-2017, KDE developers"
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "© 2000–2017, програмери КДЕ‑а"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "David Faure"
 msgstr "Давид Фор"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "Initial author"
 msgstr "првобитни аутор"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Александер Келет"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Author"
 msgstr "аутор"
 
-#: main.cpp:104
+#: main.cpp:106
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Увези обиљеживаче из фајла у Мозилином формату"
 
-#: main.cpp:105
+#: main.cpp:107
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Увези обиљеживаче из фајла у Нетскејповом формату (4.x и новији)"
 
-#: main.cpp:106
+#: main.cpp:108
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Увези обиљеживаче из фајла у формату омиљених Интернет експлорера"
 
-#: main.cpp:107
+#: main.cpp:109
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Увези обиљеживаче из фајла у Оперином формату"
 
-#: main.cpp:108
+#: main.cpp:110
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Увези обиљеживаче из фајла у формату КДЕ‑а 2"
 
-#: main.cpp:109
+#: main.cpp:111
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Увези обиљеживаче из фајла у Галијином формату"
 
-#: main.cpp:110
+#: main.cpp:112
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Извези обиљеживаче у фајл у Мозилином формату"
 
-#: main.cpp:111
+#: main.cpp:113
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Извези обиљеживаче у фајл у Нетскејповом формату (4.x и новији)"
 
-#: main.cpp:112
+#: main.cpp:114
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Извези обиљеживаче у фајл у ХТМЛ формату за штампање"
 
-#: main.cpp:113
+#: main.cpp:115
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Извези обиљеживаче у фајл у формату омиљених Интернет експлорера"
 
-#: main.cpp:114
+#: main.cpp:116
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Извези обиљеживаче у фајл у Оперином формату"
 
-#: main.cpp:115
+#: main.cpp:117
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Отвори на датом положају у фајлу обиљеживача"
 
 # rewrite-msgid: /caption/title/
-#: main.cpp:116
+#: main.cpp:118
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Наслов који види корисник, нпр. „Конзола“"
 
-#: main.cpp:117
+#: main.cpp:119
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Сакриј све функције у вези са прегледачем"
 
-#: main.cpp:118
+#: main.cpp:120
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -747,17 +747,17 @@ msgstr ""
 "„kfile“ за оне у дијалогу за отварање, итд.\n"
 "Крајња путања д‑бус објекта је /KBookmarkManager/<imeDbusObjekta>"
 
-#: main.cpp:122
+#: main.cpp:124
 #, kde-format
 msgid "File to edit"
 msgstr "Фајл за уређивање"
 
-#: main.cpp:210
+#: main.cpp:212
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Можете задати само једну опцију --export."
 
-#: main.cpp:217
+#: main.cpp:219
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Можете задати само једну опцију --import."

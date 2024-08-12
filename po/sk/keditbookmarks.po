@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-08-12 00:41+0000\n"
 "PO-Revision-Date: 2023-12-05 17:25+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -569,7 +569,7 @@ msgstr "&Exportovať"
 msgid "&Tools"
 msgstr "&Nástroje"
 
-#: main.cpp:53
+#: main.cpp:54
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -580,128 +580,128 @@ msgstr ""
 "pokračovať v používaní už bežiacej?\n"
 "Uvedomte si, že zdvojené pohľady sú v režime iba na čítanie."
 
-#: main.cpp:57
+#: main.cpp:58
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Upozornenie"
 
-#: main.cpp:58
+#: main.cpp:59
 #, kde-format
 msgid "Run Another"
 msgstr "Spustiť ďalšiu"
 
-#: main.cpp:59
+#: main.cpp:60
 #, kde-format
 msgid "Continue in Same"
 msgstr "Pokračovať v rovnakej"
 
-#: main.cpp:88
+#: main.cpp:89
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Editor záložiek"
 
-#: main.cpp:90
+#: main.cpp:91
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Editor a organizátor záložiek"
 
-#: main.cpp:92
+#: main.cpp:93
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "Copyright 2000-2023, vývojári KDE"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "Initial author"
 msgstr "Pôvodný autor"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:104
+#: main.cpp:106
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Import záložiek zo súboru vo formáte Mozilla"
 
-#: main.cpp:105
+#: main.cpp:107
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Import záložiek zo súboru vo formáte Netscape (4.x a starší)"
 
-#: main.cpp:106
+#: main.cpp:108
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Import záložiek zo súboru vo formáte Internet Explorer Obľúbené"
 
-#: main.cpp:107
+#: main.cpp:109
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Import záložiek zo súboru vo formáte Opera"
 
-#: main.cpp:108
+#: main.cpp:110
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Import záložiek zo súboru vo formáte KDE2"
 
-#: main.cpp:109
+#: main.cpp:111
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Import záložiek zo súboru vo formáte Galeon"
 
-#: main.cpp:110
+#: main.cpp:112
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Export záložiek do súboru vo formáte Mozilla"
 
-#: main.cpp:111
+#: main.cpp:113
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Export záložiek do súboru vo formáte Netscape (4.x a starší)"
 
-#: main.cpp:112
+#: main.cpp:114
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Export záložiek do súboru v tlačiteľnom formáte HTML"
 
-#: main.cpp:113
+#: main.cpp:115
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Export záložiek do súboru vo formáte Internet Explorer Obľúbené"
 
-#: main.cpp:114
+#: main.cpp:116
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Export záložiek do súboru vo formáte Opera"
 
-#: main.cpp:115
+#: main.cpp:117
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Otvoriť na zadanej pozícii v súbore záložiek"
 
-#: main.cpp:116
+#: main.cpp:118
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Nastaviť titulok čitateľný pre užívateľa, napríklad \"Konsole\""
 
-#: main.cpp:117
+#: main.cpp:119
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Skryť všetky funkcie pre prehliadač"
 
-#: main.cpp:118
+#: main.cpp:120
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -716,17 +716,17 @@ msgstr ""
 "KFileDialog, atď.\n"
 "Cesta objektu D-Bus je potom /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:122
+#: main.cpp:124
 #, kde-format
 msgid "File to edit"
 msgstr "Súbor k úprave"
 
-#: main.cpp:210
+#: main.cpp:212
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Môžete zadať iba jednu možnosť --export."
 
-#: main.cpp:217
+#: main.cpp:219
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Môžete zadať iba jednu možnosť --import."

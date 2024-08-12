@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-08-12 00:41+0000\n"
 "PO-Revision-Date: 2024-06-29 06:33+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -570,7 +570,7 @@ msgstr "&გატანა"
 msgid "&Tools"
 msgstr "&ხელსაწყოები"
 
-#: main.cpp:53
+#: main.cpp:54
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -581,128 +581,128 @@ msgstr ""
 "გაშვებულ ასლში მუშაობას?\n"
 "დაიმახსოვრეთ, რომ სამწუხაროდ დუბლირებული ხედები მხოლოდ-წაკითხვადია."
 
-#: main.cpp:57
+#: main.cpp:58
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "ყურადღება"
 
-#: main.cpp:58
+#: main.cpp:59
 #, kde-format
 msgid "Run Another"
 msgstr "კიდევ ერთის გაშვება"
 
-#: main.cpp:59
+#: main.cpp:60
 #, kde-format
 msgid "Continue in Same"
 msgstr "იგივეში გაგრძელება"
 
-#: main.cpp:88
+#: main.cpp:89
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "სანიშნების რედაქტორი"
 
-#: main.cpp:90
+#: main.cpp:91
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "სანიშნების დალაგება და ჩასწორება"
 
-#: main.cpp:92
+#: main.cpp:93
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "2000-2023 KDE-ის გუნდი, ყველა უფლება დაცულია"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "Initial author"
 msgstr "საწყისი ავტორი"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Author"
 msgstr "ავტორი"
 
-#: main.cpp:104
+#: main.cpp:106
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "სანიშნების Mozilla-ის ფორმატის ფაილიდან შემოტანა"
 
-#: main.cpp:105
+#: main.cpp:107
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "სანიშნების Netscape (4.x და უფრო ძველი)-ის ფორმატის ფაილიდან შემოტანა"
 
-#: main.cpp:106
+#: main.cpp:108
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "სანიშნების Internet Explore-ის ფორმატის ფაილიდან შემოტანა"
 
-#: main.cpp:107
+#: main.cpp:109
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "სანიშნების Opera -ის ფორმატის ფაილიდან შემოტანა"
 
-#: main.cpp:108
+#: main.cpp:110
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "სანიშნების KDE2 -ის ფორმატის ფაილიდან შემოტანა"
 
-#: main.cpp:109
+#: main.cpp:111
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "სანიშნების Galeon -ის ფორმატის ფაილიდან შემოტანა"
 
-#: main.cpp:110
+#: main.cpp:112
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "სანიშნების Mozilla-ის ფორმატის ფაილში გატანა"
 
-#: main.cpp:111
+#: main.cpp:113
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "სანიშნების Netscape (4.x და უფრო ზველი)-ის ფორმატის ფაილში გატანა"
 
-#: main.cpp:112
+#: main.cpp:114
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "სანიშნების დაბეჭდვად HTML ფორმატის ფაილში გატანა"
 
-#: main.cpp:113
+#: main.cpp:115
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "სანიშნების Internet Explorer-ის ფორმატის ფაილში გატანა"
 
-#: main.cpp:114
+#: main.cpp:116
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "სანიშნების Opera -ის ფორმატის ფაილში გატანა"
 
-#: main.cpp:115
+#: main.cpp:117
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "სანიშნების ფაილში მითითებულ მდებარეობაზე გახსნა"
 
-#: main.cpp:116
+#: main.cpp:118
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "დააყენეთ მომხმარებლისთვის გასაგები სათაური. მაგალითად \"Konsole\""
 
-#: main.cpp:117
+#: main.cpp:119
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "ბრაუზერთან დაკავშირებული ფუნქციების დამალვა"
 
-#: main.cpp:118
+#: main.cpp:120
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -717,17 +717,17 @@ msgstr ""
 "ის სანიშნებისთვის და ა.შ.\n"
 "D-Bus-ის ობიექტის საბოლოო ბილიკია /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:122
+#: main.cpp:124
 #, kde-format
 msgid "File to edit"
 msgstr "ჩასასწორებელი ფაილი"
 
-#: main.cpp:210
+#: main.cpp:212
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "შესაძლებელია მხოლოდ ერთი --export პარამეტრის მითითება."
 
-#: main.cpp:217
+#: main.cpp:219
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "შესაძლებელია მხოლოდ ერთი --import პარამეტრის მითითება."

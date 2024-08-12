@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-29 00:41+0000\n"
+"POT-Creation-Date: 2024-08-12 00:41+0000\n"
 "PO-Revision-Date: 2024-05-14 08:02\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -576,7 +576,7 @@ msgstr "&Экспартаваць"
 msgid "&Tools"
 msgstr "&Інструменты"
 
-#: main.cpp:53
+#: main.cpp:54
 #, kde-format
 msgid ""
 "Another instance of %1 is already running. Do you really want to open "
@@ -587,128 +587,128 @@ msgstr ""
 "гэтым?\n"
 "Звярніце ўвагу на тое, што дублікаты даступныя толькі ў рэжыме чытання."
 
-#: main.cpp:57
+#: main.cpp:58
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Увага"
 
-#: main.cpp:58
+#: main.cpp:59
 #, kde-format
 msgid "Run Another"
 msgstr "Запусціць іншы"
 
-#: main.cpp:59
+#: main.cpp:60
 #, kde-format
 msgid "Continue in Same"
 msgstr "Працягваць у гэтым"
 
-#: main.cpp:88
+#: main.cpp:89
 #, kde-format
 msgid "Bookmark Editor"
 msgstr "Рэдактар закладак"
 
-#: main.cpp:90
+#: main.cpp:91
 #, kde-format
 msgid "Bookmark Organizer and Editor"
 msgstr "Рэдактар і арганайзер закладак"
 
-#: main.cpp:92
+#: main.cpp:93
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
 msgstr "Аўтарскія правы 2000-2023, распрацоўнікі KDE"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "David Faure"
 msgstr "David Faure"
 
-#: main.cpp:93
+#: main.cpp:94
 #, kde-format
 msgid "Initial author"
 msgstr "Аўтар ідэі"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Alexander Kellett"
 msgstr "Alexander Kellett"
 
-#: main.cpp:94
+#: main.cpp:95
 #, kde-format
 msgid "Author"
 msgstr "Стваральнік"
 
-#: main.cpp:104
+#: main.cpp:106
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
 msgstr "Імпартаваць закладкі з файла фармату Mozilla"
 
-#: main.cpp:105
+#: main.cpp:107
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
 msgstr "Імпартаваць закладкі з файла фармату Netscape (4.x ці раней)"
 
-#: main.cpp:106
+#: main.cpp:108
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
 msgstr "Імпартаваць закладкі з файла фармату Internet Explorer"
 
-#: main.cpp:107
+#: main.cpp:109
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
 msgstr "Імпартаваць закладкі з файла фармату Opera"
 
-#: main.cpp:108
+#: main.cpp:110
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
 msgstr "Імпартаваць закладкі з файла фармату KDE2"
 
-#: main.cpp:109
+#: main.cpp:111
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
 msgstr "Імпартаваць закладкі з файла фармату Galeon"
 
-#: main.cpp:110
+#: main.cpp:112
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
 msgstr "Экспартаваць закладкі ў файл фармату Mozilla"
 
-#: main.cpp:111
+#: main.cpp:113
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
 msgstr "Экспартаваць закладкі ў файл фармату Netscape (4.x ці раней)"
 
-#: main.cpp:112
+#: main.cpp:114
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
 msgstr "Экспартаваць закладкі ў файл фармату HTML"
 
-#: main.cpp:113
+#: main.cpp:115
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
 msgstr "Экспартаваць закладкі ў файл фармату Internet Explorer"
 
-#: main.cpp:114
+#: main.cpp:116
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
 msgstr "Экспартаваць закладкі ў файл фармату Opera"
 
-#: main.cpp:115
+#: main.cpp:117
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
 msgstr "Адкрыць файл закладак на вызначанай пазіцыі"
 
-#: main.cpp:116
+#: main.cpp:118
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
 msgstr "Дайце простую назву, напрыклад \"Konsole\""
 
-#: main.cpp:117
+#: main.cpp:119
 #, kde-format
 msgid "Hide all browser related functions"
 msgstr "Схаваць усе функцыі, звязаныя з браўзерам"
 
-#: main.cpp:118
+#: main.cpp:120
 #, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
@@ -723,17 +723,17 @@ msgstr ""
 "закладак KFileDialog і г. д.\n"
 "Канчатковы шлях да аб'екта D-Bus - /KBookmarkManager/<dbusObjectName>"
 
-#: main.cpp:122
+#: main.cpp:124
 #, kde-format
 msgid "File to edit"
 msgstr "Файл для рэдагавання"
 
-#: main.cpp:210
+#: main.cpp:212
 #, kde-format
 msgid "You may only specify a single --export option."
 msgstr "Вы можаце вызначыць толькі адзін параметр \"--export\"."
 
-#: main.cpp:217
+#: main.cpp:219
 #, kde-format
 msgid "You may only specify a single --import option."
 msgstr "Вы можаце вызначыць толькі адзін параметр \"--import\"."
