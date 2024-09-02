@@ -171,15 +171,16 @@ Qt::ItemFlags KBookmarkModel::flags(const QModelIndex &index) const
     const KBookmark bookmark = bookmarkForIndex(index);
     if (bookmark.isGroup()) {
         const bool isRoot = bookmark.address().isEmpty();
-        result |= (isRoot) ? rootFlags
-                           : (column == NameColumnId) ? groupDragEditFlags
-                                                      : (column == CommentColumnId) ? groupEditFlags :
-                                                                                    /*else*/ groupFlags;
+        result |= (isRoot)                ? rootFlags
+            : (column == NameColumnId)    ? groupDragEditFlags
+            : (column == CommentColumnId) ? groupEditFlags
+                                          :
+                                          /*else*/ groupFlags;
     } else {
         result |= (column == NameColumnId) ? bookmarkDragEditFlags
-                                           : (column != StatusColumnId) ? bookmarkEditFlags
-                                                                        /* else */
-                                                                        : bookmarkFlags;
+            : (column != StatusColumnId)   ? bookmarkEditFlags
+                                         /* else */
+                                         : bookmarkFlags;
     }
 
     return result;
