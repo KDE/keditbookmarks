@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-12 00:41+0000\n"
+"POT-Creation-Date: 2024-09-03 00:41+0000\n"
 "PO-Revision-Date: 2010-06-21 20:15+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -490,26 +490,26 @@ msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Tanda Laman"
 
-#: kbookmarkmodel/model.cpp:204
+#: kbookmarkmodel/model.cpp:205
 #, fuzzy, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
 msgstr "Nama"
 
-#: kbookmarkmodel/model.cpp:207
+#: kbookmarkmodel/model.cpp:208
 #, fuzzy, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
 msgstr "Lokasi"
 
-#: kbookmarkmodel/model.cpp:210
+#: kbookmarkmodel/model.cpp:211
 #, fuzzy, kde-format
 #| msgid "Comment"
 msgctxt "@title:column comment for a bookmark"
 msgid "Comment"
 msgstr "Komen"
 
-#: kbookmarkmodel/model.cpp:213
+#: kbookmarkmodel/model.cpp:214
 #, fuzzy, kde-format
 #| msgid "Status"
 msgctxt "@title:column status of a bookmark"

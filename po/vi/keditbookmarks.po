@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-12 00:41+0000\n"
+"POT-Creation-Date: 2024-09-03 00:41+0000\n"
 "PO-Revision-Date: 2023-10-24 10:25+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -468,25 +468,25 @@ msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Dấu nhớ"
 
-#: kbookmarkmodel/model.cpp:204
+#: kbookmarkmodel/model.cpp:205
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
 msgstr "Tên"
 
-#: kbookmarkmodel/model.cpp:207
+#: kbookmarkmodel/model.cpp:208
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
 msgstr "Địa điểm"
 
-#: kbookmarkmodel/model.cpp:210
+#: kbookmarkmodel/model.cpp:211
 #, kde-format
 msgctxt "@title:column comment for a bookmark"
 msgid "Comment"
 msgstr "Chú thích"
 
-#: kbookmarkmodel/model.cpp:213
+#: kbookmarkmodel/model.cpp:214
 #, kde-format
 msgctxt "@title:column status of a bookmark"
 msgid "Status"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-12 00:41+0000\n"
+"POT-Creation-Date: 2024-09-03 00:41+0000\n"
 "PO-Revision-Date: 2024-08-25 21:37+0200\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -466,25 +466,25 @@ msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Lesezeichen"
 
-#: kbookmarkmodel/model.cpp:204
+#: kbookmarkmodel/model.cpp:205
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
 msgstr "Name"
 
-#: kbookmarkmodel/model.cpp:207
+#: kbookmarkmodel/model.cpp:208
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
 msgstr "Adresse"
 
-#: kbookmarkmodel/model.cpp:210
+#: kbookmarkmodel/model.cpp:211
 #, kde-format
 msgctxt "@title:column comment for a bookmark"
 msgid "Comment"
 msgstr "Kommentar"
 
-#: kbookmarkmodel/model.cpp:213
+#: kbookmarkmodel/model.cpp:214
 #, kde-format
 msgctxt "@title:column status of a bookmark"
 msgid "Status"

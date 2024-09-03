@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-12 00:41+0000\n"
+"POT-Creation-Date: 2024-09-03 00:41+0000\n"
 "PO-Revision-Date: 2024-02-05 22:11+0200\n"
 "Last-Translator: George Stefanakis <george.stefanakis@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -473,25 +473,25 @@ msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Σελιδοδείκτες"
 
-#: kbookmarkmodel/model.cpp:204
+#: kbookmarkmodel/model.cpp:205
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
 msgstr "Όνομα"
 
-#: kbookmarkmodel/model.cpp:207
+#: kbookmarkmodel/model.cpp:208
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
 msgstr "Θέση"
 
-#: kbookmarkmodel/model.cpp:210
+#: kbookmarkmodel/model.cpp:211
 #, kde-format
 msgctxt "@title:column comment for a bookmark"
 msgid "Comment"
 msgstr "Σχόλιο"
 
-#: kbookmarkmodel/model.cpp:213
+#: kbookmarkmodel/model.cpp:214
 #, kde-format
 msgctxt "@title:column status of a bookmark"
 msgid "Status"

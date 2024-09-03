@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-12 00:41+0000\n"
+"POT-Creation-Date: 2024-09-03 00:41+0000\n"
 "PO-Revision-Date: 2010-01-29 15:11+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Maithili <maithili.sf.net>\n"
@@ -498,28 +498,28 @@ msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "पुस्तकचिह्न"
 
-#: kbookmarkmodel/model.cpp:204
+#: kbookmarkmodel/model.cpp:205
 #, fuzzy, kde-format
 #| msgid "Name:"
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
 msgstr "नाम:"
 
-#: kbookmarkmodel/model.cpp:207
+#: kbookmarkmodel/model.cpp:208
 #, fuzzy, kde-format
 #| msgid "Location:"
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
 msgstr "स्थानः"
 
-#: kbookmarkmodel/model.cpp:210
+#: kbookmarkmodel/model.cpp:211
 #, fuzzy, kde-format
 #| msgid "Comment"
 msgctxt "@title:column comment for a bookmark"
 msgid "Comment"
 msgstr "टिप्पणी"
 
-#: kbookmarkmodel/model.cpp:213
+#: kbookmarkmodel/model.cpp:214
 #, fuzzy, kde-format
 #| msgid "Status"
 msgctxt "@title:column status of a bookmark"
