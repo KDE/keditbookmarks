@@ -615,7 +615,7 @@ msgstr "Organizador e editor dos marcadores"
 #: main.cpp:92
 #, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "© 2000-2023 Equipo de desenvolvemento de KDE"
+msgstr "© 2000-2023 Equipo desenvolvedor de KDE"
 
 #: main.cpp:93
 #, kde-format
