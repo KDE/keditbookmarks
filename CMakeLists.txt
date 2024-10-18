@@ -57,7 +57,7 @@ if(BUILD_TESTING)
 endif()
 
 ecm_set_disabled_deprecation_versions(QT 6.7
-    KF 6.5.0
+    KF 6.7
     )
 
 if(NOT APPLE)
