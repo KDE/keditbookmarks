@@ -56,7 +56,7 @@ if(BUILD_TESTING)
     find_package(Qt6Test ${QT_REQUIRED_VERSION} CONFIG REQUIRED)
 endif()
 
-ecm_set_disabled_deprecation_versions(QT 6.7
+ecm_set_disabled_deprecation_versions(QT 6.8.0
     KF 6.7
     )
 
