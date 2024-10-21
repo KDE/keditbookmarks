@@ -6,31 +6,32 @@
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
 # Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
 # Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011.
+# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-03 00:41+0000\n"
-"PO-Revision-Date: 2011-07-09 17:38+0300\n"
-"Last-Translator: Rūdofls Mazurs <rudolfs.mazurs@gmail.com>\n"
-"Language-Team: Latvian <locale@laka.lv>\n"
+"PO-Revision-Date: 2024-10-20 11:31+0300\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 24.08.2\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Māris Nartišs"
+msgstr "Māris Nartišs, Toms Trasūns"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "maris.kde@gmail.com"
+msgstr "maris.kde@gmail.com, toms.trasuns@posteo.net"
 
 #: actionsimpl.cpp:79
 #, kde-format
@@ -50,7 +51,7 @@ msgstr "&Mainīt vietu"
 #: actionsimpl.cpp:97
 #, kde-format
 msgid "C&hange Comment"
-msgstr "Mai&nīt komentāru"
+msgstr "&Mainīt komentāru"
 
 #: actionsimpl.cpp:103
 #, kde-format
@@ -60,7 +61,7 @@ msgstr "Mai&nīt ikonu..."
 #: actionsimpl.cpp:107
 #, kde-format
 msgid "Update Favicon"
-msgstr "Atjaunināt favicon"
+msgstr "Atjaunināt vietnes ikonu"
 
 #: actionsimpl.cpp:111
 #, kde-format
@@ -85,17 +86,17 @@ msgstr "&Ievietot atdalītāju"
 #: actionsimpl.cpp:131
 #, kde-format
 msgid "&Sort Alphabetically"
-msgstr "&Kārtot pēc alfabēta"
+msgstr "&Kārtot alfabētiski"
 
 #: actionsimpl.cpp:136
 #, kde-format
 msgid "Set as T&oolbar Folder"
-msgstr "Uzlikt kā &rīkjoslas mapi"
+msgstr "Noteikt kā &rīkjoslas mapi"
 
 #: actionsimpl.cpp:140
 #, kde-format
 msgid "&Expand All Folders"
-msgstr "&Izplest visas mapes"
+msgstr "&Izvērst visas mapes"
 
 #: actionsimpl.cpp:144
 #, kde-format
@@ -103,10 +104,9 @@ msgid "Collapse &All Folders"
 msgstr "&Sakļaut visas mapes"
 
 #: actionsimpl.cpp:149
-#, fuzzy, kde-format
-#| msgid "&Open in Konqueror"
+#, kde-format
 msgid "&Open in Browser"
-msgstr "&Atvērt iekš Konqueror"
+msgstr "&Atvērt pārlūkā"
 
 #: actionsimpl.cpp:154
 #, kde-format
@@ -121,7 +121,7 @@ msgstr "Pārbaudīt statusu: &visam"
 #: actionsimpl.cpp:162
 #, kde-format
 msgid "Update All &Favicons"
-msgstr "Atjaunināt visas &favicon"
+msgstr "Atjaunināt visas &vietnes ikonas"
 
 #: actionsimpl.cpp:166
 #, kde-format
@@ -131,68 +131,67 @@ msgstr "A&tcelt pārbaudes"
 #: actionsimpl.cpp:170
 #, kde-format
 msgid "Cancel &Favicon Updates"
-msgstr "Atcelt &favicon atjaunināšanu"
+msgstr "Atcelt &vietnes ikonas atjaunināšanu"
 
 #: actionsimpl.cpp:176
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
-msgstr "Importēt &Netscape grāmatzīmes..."
+msgstr "Importēt „&Netscape“ grāmatzīmes..."
 
 #: actionsimpl.cpp:182
 #, kde-format
 msgid "Import &Opera Bookmarks..."
-msgstr "Importēt &Opera grāmatzīmes..."
+msgstr "Importēt „&Oper“a grāmatzīmes..."
 
 #: actionsimpl.cpp:192
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
-msgstr "Importēt &Galeon grāmatzīmes..."
+msgstr "Importēt „&Galeon“ grāmatzīmes..."
 
 #: actionsimpl.cpp:198
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
-msgstr "Importēt &KDE 2 vai 3 grāmatzīmes..."
+msgstr "Importēt &KDE 2 vai KDE 3 grāmatzīmes..."
 
 #: actionsimpl.cpp:204
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
-msgstr "Importēt &Internet Explorer grāmatzīmes..."
+msgstr "Importēt „&Internet Explorer“ grāmatzīmes..."
 
 #: actionsimpl.cpp:210
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
-msgstr "Importēt &Mozilla grāmatzīmes..."
+msgstr "Importēt „&Mozilla“ grāmatzīmes..."
 
 #: actionsimpl.cpp:215
 #, kde-format
 msgid "Export &Netscape Bookmarks"
-msgstr "Eskportēt uz &Netscape grāmatzīmēm"
+msgstr "Eksportēt uz „&Netscape“ grāmatzīmēm"
 
 #: actionsimpl.cpp:220
 #, kde-format
 msgid "Export &Opera Bookmarks..."
-msgstr "Eskportēt uz &Opera grāmatzīmēm..."
+msgstr "Eksportēt uz „&Opera“ grāmatzīmēm..."
 
 #: actionsimpl.cpp:225
 #, kde-format
 msgid "Export &HTML Bookmarks..."
-msgstr "Eskportēt uz &HTML grāmatzīmēm..."
+msgstr "Eksportēt uz &HTML grāmatzīmēm..."
 
 #: actionsimpl.cpp:229
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
-msgstr "Eksportēt uz &Internet Explorer grāmatzīmēm..."
+msgstr "Eksportēt uz „&Internet Explorer“ grāmatzīmēm..."
 
 #: actionsimpl.cpp:234
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
-msgstr "Eskportēt uz &Mozilla grāmatzīmēm..."
+msgstr "Eksportēt uz „&Mozilla“ grāmatzīmēm..."
 
 #: actionsimpl.cpp:279
-#, fuzzy, kde-format
-#| msgid "*.html|HTML Bookmark Listing"
+#, kde-format
 msgid "HTML Bookmark Listing (*.html)"
-msgstr "*.html|HTML grāmatzīmju saraksts"
+msgstr "HTML grāmatzīmju saraksts (*.html)"
 
 #: actionsimpl.cpp:324
 #, kde-format
@@ -263,7 +262,7 @@ msgstr "Pēdējo reizi aplūkots:"
 #: bookmarkinfowidget.cpp:237
 #, kde-format
 msgid "Times visited:"
-msgstr "Apmeklējuma reizes:"
+msgstr "Apmeklējumu skaits:"
 
 #: exporters.cpp:35
 #, kde-format
@@ -278,7 +277,7 @@ msgstr "Labi"
 #: favicons.cpp:57
 #, kde-format
 msgid "Updating favicon..."
-msgstr "Atjaunina favicon..."
+msgstr "Atjaunina vietnes ikonu..."
 
 #: faviconupdater.cpp:62
 #, kde-format
@@ -286,10 +285,9 @@ msgid "%1; no HTML component found (%2)"
 msgstr "%1; nav atrastas HTML komponentes (%2)"
 
 #: faviconupdater.cpp:74
-#, fuzzy, kde-format
-#| msgid "%1; no HTML component found (%2)"
+#, kde-format
 msgid "No browser component found"
-msgstr "%1; nav atrastas HTML komponentes (%2)"
+msgstr "Nav atrasta pārlūka komponente"
 
 #: importers.cpp:41
 #, kde-format
@@ -305,7 +303,8 @@ msgstr "%1 grāmatzīmes"
 #: importers.cpp:83
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
-msgstr "Importēt kā jaunu apakšmapi vai aizvietot pašreizējās grāmatzīmes?"
+msgstr ""
+"Vai importēt kā jaunu apakšmapi, vai arī aizvietot pašreizējās grāmatzīmes?"
 
 #: importers.cpp:84
 #, kde-format
@@ -324,16 +323,14 @@ msgid "Replace"
 msgstr "Aizvietot"
 
 #: importers.cpp:196
-#, fuzzy, kde-format
-#| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
+#, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
-msgstr "*.xbel|Galeon grāmatzīmju faili (*.xbel)"
+msgstr "„Galeon“ grāmatzīmju datnes (*.xbel)"
 
 #: importers.cpp:204
-#, fuzzy, kde-format
-#| msgid "*.xml|KDE Bookmark Files (*.xml)"
+#, kde-format
 msgid "KDE Bookmark Files (*.xml)"
-msgstr "*.xml|KDE grāmatzīmju faili (*.xml)"
+msgstr "KDE grāmatzīmju datnes (*.xml)"
 
 #: importers.h:104
 #, kde-format
@@ -379,7 +376,7 @@ msgstr ""
 #: kbookmarkmerger.cpp:32
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
-msgstr "(c) 2005 Frerich Raabe"
+msgstr "Autortiesības © 2005 Frerich Raabe"
 
 #: kbookmarkmerger.cpp:33
 #, kde-format
@@ -389,12 +386,12 @@ msgstr "Frerich Raabe"
 #: kbookmarkmerger.cpp:33
 #, kde-format
 msgid "Original author"
-msgstr "Orģināla autors"
+msgstr "Sākotnējās versijas autors"
 
 #: kbookmarkmerger.cpp:38
 #, kde-format
 msgid "Directory to scan for extra bookmarks"
-msgstr "Papildus grāmatzīmju meklēšanas mape"
+msgstr "Papildu grāmatzīmju meklēšanas mape"
 
 #: kbookmarkmodel/commands.cpp:55
 #, kde-format
@@ -418,7 +415,7 @@ msgstr "Izveidot mapi"
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy %1"
-msgstr "Kopēt %1"
+msgstr "Kopēt „%1“"
 
 #: kbookmarkmodel/commands.cpp:185
 #, kde-format
@@ -448,7 +445,7 @@ msgstr "Komentāra maiņa"
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move %1"
-msgstr "Pārvietot %1"
+msgstr "Pārvietot „%1“"
 
 #: kbookmarkmodel/commands.cpp:485
 #, kde-format
@@ -501,18 +498,18 @@ msgstr "Statuss"
 #: kebsearchline.cpp:226
 #, kde-format
 msgid "Search Columns"
-msgstr "Meklēšanas kolonas"
+msgstr "Meklēšanas kolonnas"
 
 #: kebsearchline.cpp:229
 #, kde-format
 msgid "All Visible Columns"
-msgstr "Visas redzamās kolonas"
+msgstr "Visas redzamās kolonnas"
 
 #: kebsearchline.cpp:237
 #, kde-format
 msgctxt "Column number %1"
 msgid "Column No. %1"
-msgstr "Kolona Nr. %1"
+msgstr "%1. kolonna"
 
 #: kebsearchline.cpp:602
 #, kde-format
@@ -523,7 +520,7 @@ msgstr "&Meklēt:"
 #: keditbookmarks-genui.rc:7 keditbookmarksui.rc:7
 #, kde-format
 msgid "&File"
-msgstr "&Fails"
+msgstr "&Datne"
 
 #. i18n: ectx: Menu (edit)
 #: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
@@ -586,8 +583,8 @@ msgid ""
 "another instance or continue work in the same instance?\n"
 "Please note that, unfortunately, duplicate views are read-only."
 msgstr ""
-"Cita %1 kopija jau darbojas. Vai jūs vēlaties atvērt vēl vienu programmu vai "
-"turpināt darbu jau atvērtajā?\n"
+"Jau darbojas cita „%1“ kopija. Vai vēlaties atvērt vēl vienu programmu, vai "
+"arī turpināt darbu jau atvērtajā?\n"
 "Ievērojiet, ka dubulti skati strādā tikai lasīšanas režīmā."
 
 #: main.cpp:58
@@ -599,7 +596,7 @@ msgstr "Brīdinājums"
 #: main.cpp:59
 #, kde-format
 msgid "Run Another"
-msgstr "Darbināt vēl vienu"
+msgstr "Palaist vēl vienu"
 
 #: main.cpp:60
 #, kde-format
@@ -617,10 +614,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "Grāmatzīmju kārtotājs un redaktors"
 
 #: main.cpp:93
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2007, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "(c) 2000 - 2007, KDE izstrādātāji"
+msgstr "Autortiesības 2000—2023, KDE izstrādātāji"
 
 #: main.cpp:94
 #, kde-format
@@ -645,67 +641,67 @@ msgstr "Autors"
 #: main.cpp:106
 #, kde-format
 msgid "Import bookmarks from a file in Mozilla format"
-msgstr "Importēt grāmatzīmes no Mozilla formāta faila"
+msgstr "Importēt grāmatzīmes no „Mozilla“ formāta datnes"
 
 #: main.cpp:107
 #, kde-format
 msgid "Import bookmarks from a file in Netscape (4.x and earlier) format"
-msgstr "Importēt grāmatzīmes no Netscape (4.x un agrāka) formāta faila"
+msgstr "Importēt grāmatzīmes no „Netscape“ (4.x un agrāka) formāta datnes"
 
 #: main.cpp:108
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
-msgstr "Importēt grāmatzīmes no Internet Explorer formāta faila"
+msgstr "Importēt grāmatzīmes no „Internet Explorer“ formāta datnes"
 
 #: main.cpp:109
 #, kde-format
 msgid "Import bookmarks from a file in Opera format"
-msgstr "Importēt grāmatzīmes no Opera formāta faila"
+msgstr "Importēt grāmatzīmes no „Opera“ formāta datnes"
 
 #: main.cpp:110
 #, kde-format
 msgid "Import bookmarks from a file in KDE2 format"
-msgstr "Importēt grāmatzīmes failā no KDE2 formāta"
+msgstr "Importēt grāmatzīmes no KDE2 formāta datnes"
 
 #: main.cpp:111
 #, kde-format
 msgid "Import bookmarks from a file in Galeon format"
-msgstr "Importēt grāmatzīmes failā no Galeon formāta"
+msgstr "Importēt grāmatzīmes no „Galeon“ formāta datnes"
 
 #: main.cpp:112
 #, kde-format
 msgid "Export bookmarks to a file in Mozilla format"
-msgstr "Eksportēt grāmatzīmes uz Mozilla formātu"
+msgstr "Eksportēt grāmatzīmes uz „Mozilla“ formāta datni"
 
 #: main.cpp:113
 #, kde-format
 msgid "Export bookmarks to a file in Netscape (4.x and earlier) format"
-msgstr "Eksportēt grāmatzīmes uz Netscape (4.x un agrāku) formātu"
+msgstr "Eksportēt grāmatzīmes uz „Netscape“ (4.x un agrāka) formāta datni"
 
 #: main.cpp:114
 #, kde-format
 msgid "Export bookmarks to a file in a printable HTML format"
-msgstr "Eksportēt grāmatzīmes uz drukājamu HTML formātu"
+msgstr "Eksportēt grāmatzīmes uz drukājamu HTML formāta datni"
 
 #: main.cpp:115
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
-msgstr "Eksportēt grāmatzīmes uz Internet Explored formātu"
+msgstr "Eksportēt grāmatzīmes uz „Internet Explorer“ iecienīto vietņu formātu"
 
 #: main.cpp:116
 #, kde-format
 msgid "Export bookmarks to a file in Opera format"
-msgstr "Eksportēt grāmatzīmes uz Opera formātu"
+msgstr "Eksportēt grāmatzīmes uz „Opera“ formāta datni"
 
 #: main.cpp:117
 #, kde-format
 msgid "Open at the given position in the bookmarks file"
-msgstr "Atvērt grāmatzīmju failā norādītajā vietā"
+msgstr "Atvērt norādītā grāmatzīmju datnes vietā"
 
 #: main.cpp:118
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
-msgstr "Iestatīt lietotājam saprotamu uzrakstu, piem., \"Konsole\""
+msgstr "Iestatīt lietotājam saprotamu uzrakstu, piemēram, „Konsole“"
 
 #: main.cpp:119
 #, kde-format
@@ -713,13 +709,7 @@ msgid "Hide all browser related functions"
 msgstr "Slēpt visas ar pārlūku saistītās funkcijas"
 
 #: main.cpp:120
-#, fuzzy, kde-format
-#| msgid ""
-#| "A unique name that represents this bookmark collection, usually the "
-#| "kinstance name.\n"
-#| "This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
-#| "KFileDialog bookmarks, etc.\n"
-#| "The final D-Bus object path is /KBookmarkManager/dbusObjectName"
+#, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
 "kinstance name.\n"
@@ -727,31 +717,31 @@ msgid ""
 "KFileDialog bookmarks, etc.\n"
 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
 msgstr ""
-"Unikāls grāmatzīmju kolekcijas nosaukums, ko izmanto tās identificēšanai. "
-"Parasti tas ir kinstance nosaukums.\n"
-"Šim nosaukumam vajadzētu būt \"konqueror\" Konqueror grāmatzīmēm, \"kfile\" "
-"KFileDialog grāmatzīmēm utml.\n"
-"Kolekcijas D-Bus objekta ceļš būs /KBookmarkManager/dbusObjectName"
+"Unikāls grāmatzīmju kolekcijas nosaukums. Parasti tas ir „kinstance“ "
+"nosaukums.\n"
+"Šim nosaukumam vajadzētu būt „konqueror“, ja tās ir „Konqueror“ grāmatzīmes, "
+"„kfile“, ja  — „KFileDialog“ grāmatzīmes u.tml.\n"
+"Beigu „D-Bus“ objekta ceļš ir „ /KBookmarkManager/<dbusObjectName>“"
 
 #: main.cpp:124
 #, kde-format
 msgid "File to edit"
-msgstr "Rediģējamais fails"
+msgstr "Rediģējamā datne"
 
 #: main.cpp:212
 #, kde-format
 msgid "You may only specify a single --export option."
-msgstr "Jūs varat norādīt tikai vienu --export opciju."
+msgstr "Varat norādīt tikai vienu „--export“ opciju."
 
 #: main.cpp:219
 #, kde-format
 msgid "You may only specify a single --import option."
-msgstr "Jūs varat norādīt tikai vienu --import opciju."
+msgstr "Varat norādīt tikai vienu „--import“ opciju."
 
 #: testlink.cpp:60
 #, kde-format
 msgid "Checking..."
-msgstr "Pārbaude..."
+msgstr "Pārbauda..."
 
 #~ msgid "Import All &Crash Sessions as Bookmarks..."
 #~ msgstr "Importēt visas &avāriju sesijas kā grāmatzīmes..."
