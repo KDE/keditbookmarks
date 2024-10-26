@@ -19,7 +19,13 @@ class GlobalBookmarkManager : public QObject
 {
     Q_OBJECT
 public:
-    typedef enum { HTMLExport, OperaExport, IEExport, MozillaExport, NetscapeExport } ExportType;
+    typedef enum {
+        HTMLExport,
+        OperaExport,
+        IEExport,
+        MozillaExport,
+        NetscapeExport
+    } ExportType;
 
     // TODO port to K_GLOBAL_STATIC if we keep this class
     static GlobalBookmarkManager *self()

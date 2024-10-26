@@ -78,7 +78,12 @@ public:
     void expandAll();
     void collapseAll();
 
-    enum Column { NameColumn = 0, UrlColumn = 1, CommentColumn = 2, StatusColumn = 3 };
+    enum Column {
+        NameColumn = 0,
+        UrlColumn = 1,
+        CommentColumn = 2,
+        StatusColumn = 3
+    };
     void startEdit(Column c);
     KBookmark firstSelected() const;
     QString insertAddress() const;
