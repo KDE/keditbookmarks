@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2010-06-08 15:57+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -267,7 +267,7 @@ msgstr "ចំនួន​ចូល​ទស្សនា ៖"
 msgid "My Bookmarks"
 msgstr "ចំណាំ​របស់​ខ្ញុំ"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "យល់​​ព្រម​"
@@ -742,7 +742,7 @@ msgstr "អ្នក​អាច​បញ្ជាក់​តែ​ជម្រ
 msgid "You may only specify a single --import option."
 msgstr "អ្នក​អាច​បញ្ជាក់​តែ​ជម្រើស --import ទោល​ប៉ុណ្ណោះ ។"
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "កំពុង​ពិនិត្យ​មើល..."

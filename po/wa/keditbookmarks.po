@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2012-12-21 23:10+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -265,7 +265,7 @@ msgstr "Côps vizités :"
 msgid "My Bookmarks"
 msgstr "Mes rimarkes"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "I va"
@@ -750,7 +750,7 @@ msgstr "Vos n' duvrîz specifyî k' ene seule tchuze --export."
 msgid "You may only specify a single --import option."
 msgstr "Vos n' duvrîz specifyî k' ene seule tchuze --import."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Dji verifeye..."

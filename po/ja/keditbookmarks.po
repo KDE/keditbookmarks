@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2014-09-20 16:53-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -286,7 +286,7 @@ msgstr "訪問回数:"
 msgid "My Bookmarks"
 msgstr "マイブックマーク"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "OK"
@@ -769,7 +769,7 @@ msgstr "--export オプションは一つだけしか指定できません。"
 msgid "You may only specify a single --import option."
 msgstr "--import オプションは一つだけしか指定できません。"
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "チェック中..."

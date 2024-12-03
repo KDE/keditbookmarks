@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2010-07-13 12:47+0100\n"
 "Last-Translator: Berend Ytsma <berendy@gmail.com>\n"
 "Language-Team: Frysk <kde-i18n-fry@kde.org>\n"
@@ -272,7 +272,7 @@ msgstr "Oantal kearen besocht:"
 msgid "My Bookmarks"
 msgstr "Myn blêdwizers"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "Okee"
@@ -768,7 +768,7 @@ msgstr "Jo meie mar ien --export opsje tagelyk brûke."
 msgid "You may only specify a single --import option."
 msgstr "Jo meie mar ien --import opsje tagelyk brûke."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Oant kontrolearjen..."

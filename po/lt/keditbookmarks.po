@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2011-06-20 18:44+0300\n"
 "Last-Translator: Tomas Straupis <tomasstraupis@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -266,7 +266,7 @@ msgstr "Kartų lankyta:"
 msgid "My Bookmarks"
 msgstr "Mano žymelės"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "Gerai"
@@ -744,7 +744,7 @@ msgstr "Galite nurodyti tik vieną --export parinktį."
 msgid "You may only specify a single --import option."
 msgstr "Galite nurodyti tik vieną --import parinktį."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Tikrinama..."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2024-06-29 06:55+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -268,7 +268,7 @@ msgstr "Število obiskov:"
 msgid "My Bookmarks"
 msgstr "Moji zaznamki"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "V redu"
@@ -736,7 +736,7 @@ msgstr "Podate lahko samo eno možnost za --export."
 msgid "You may only specify a single --import option."
 msgstr "Podate lahko samo eno možnost za --import."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Preverjanje ..."

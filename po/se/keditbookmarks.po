@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2007-12-16 00:59+0100\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -265,7 +265,7 @@ msgstr "Gallii lea gálleduvvon:"
 msgid "My Bookmarks"
 msgstr "Mu girjemearkkat"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr ""
@@ -731,7 +731,7 @@ msgstr "Sáhtát meroštit --export molssaeavttu dušše oktii."
 msgid "You may only specify a single --import option."
 msgstr "Sáhtát meroštit --import molssaeavttu dušše oktii."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Dárkkisteamen …"

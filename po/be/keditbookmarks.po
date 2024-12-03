@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2024-05-14 08:02\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -269,7 +269,7 @@ msgstr "Колькасць наведванняў:"
 msgid "My Bookmarks"
 msgstr "Мае закладкі"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "Добра"
@@ -738,7 +738,7 @@ msgstr "Вы можаце вызначыць толькі адзін парам�
 msgid "You may only specify a single --import option."
 msgstr "Вы можаце вызначыць толькі адзін параметр \"--import\"."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Правяранне..."

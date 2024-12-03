@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2010-07-07 15:03+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -273,7 +273,7 @@ msgstr "จำนวนครั้งที่ดู:"
 msgid "My Bookmarks"
 msgstr "ที่คั่นหน้าส่วนตัว"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "ตกลง"
@@ -764,7 +764,7 @@ msgstr "คุณอาจจะใช้เพียงตัวเลือก
 msgid "You may only specify a single --import option."
 msgstr "คุณอาจจะใช้เพียงตัวเลือก --import เพียงตัวเดียวก็ได้"
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "กำลังตรวจสอบ..."

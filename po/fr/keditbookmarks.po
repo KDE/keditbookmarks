@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2024-06-30 11:17+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -273,7 +273,7 @@ msgstr "Visité :"
 msgid "My Bookmarks"
 msgstr "Mes signets"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "Ok"
@@ -753,7 +753,7 @@ msgstr "Vous pouvez ne spécifier qu'une simple option --export."
 msgid "You may only specify a single --import option."
 msgstr "Vous pouvez ne spécifier qu'une simple option --import."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Vérification..."

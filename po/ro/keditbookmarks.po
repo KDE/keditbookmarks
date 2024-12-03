@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2024-02-18 14:35+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -270,7 +270,7 @@ msgstr "Număr de vizite:"
 msgid "My Bookmarks"
 msgstr "Semnele mele de carte"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "OK"
@@ -745,7 +745,7 @@ msgstr "Puteți specifica o singură opțiune „--export”."
 msgid "You may only specify a single --import option."
 msgstr "Puteți specifica o singură opțiune „--import”."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Verificare..."

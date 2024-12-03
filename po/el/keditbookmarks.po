@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2024-02-05 22:11+0200\n"
 "Last-Translator: George Stefanakis <george.stefanakis@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -268,7 +268,7 @@ msgstr "Φορές που επισκέφθηκε:"
 msgid "My Bookmarks"
 msgstr "Οι σελιδοδείκτες μου"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "Εντάξει"
@@ -745,7 +745,7 @@ msgstr "Μπορείτε να ορίσετε μόνο μία --export επιλο
 msgid "You may only specify a single --import option."
 msgstr "Μπορείτε να ορίσετε μόνο μία --import επιλογή."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Έλεγχος..."

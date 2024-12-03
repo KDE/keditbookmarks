@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2007-11-01 19:14+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -274,7 +274,7 @@ msgstr "भ्रमण गरेको समय:"
 msgid "My Bookmarks"
 msgstr "मेरो पुस्तकचिनो"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr ""
@@ -779,7 +779,7 @@ msgstr "तपाईँले एकल --निर्यात विकल्�
 msgid "You may only specify a single --import option."
 msgstr "तपाईँले एकल --आयात विकल्प मात्र निर्दिष्ट गर्नुपर्नेछ ।"
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "जाँच गर्दैछ..."

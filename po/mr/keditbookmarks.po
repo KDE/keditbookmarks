@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2013-02-23 16:49+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -271,7 +271,7 @@ msgstr "इतक्या वेळा भेट दिली :"
 msgid "My Bookmarks"
 msgstr "माझे ओळखचिन्ह"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "ठीक आहे"
@@ -735,7 +735,7 @@ msgstr "तुम्ही फक्त एकच --export पर्याय �
 msgid "You may only specify a single --import option."
 msgstr "तुम्ही फक्त एकच --import पर्याय निर्देशीत करू शकता."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "तपास करत आहे..."

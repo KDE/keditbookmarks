@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase/keditbookmarks.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2007-06-27 10:27-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -265,7 +265,7 @@ msgstr "Líon na gcuairteanna:"
 msgid "My Bookmarks"
 msgstr "Mo Chuid Leabharmharcanna"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "OK"
@@ -757,7 +757,7 @@ msgstr "Ní féidir ach rogha '--export' amháin a shonrú."
 msgid "You may only specify a single --import option."
 msgstr "Ní féidir ach rogha '--import' amháin a shonrú."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Á Sheiceáil..."

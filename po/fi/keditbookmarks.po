@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2024-10-20 14:25+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -278,7 +278,7 @@ msgstr "Käyntikerrat:"
 msgid "My Bookmarks"
 msgstr "Omat kirjanmerkit"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "OK"
@@ -748,7 +748,7 @@ msgstr "Voit antaa vain yhden --export -valinnan"
 msgid "You may only specify a single --import option."
 msgstr "Voit antaa vain yhden --import -valinnan"
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Tarkastetaan…"

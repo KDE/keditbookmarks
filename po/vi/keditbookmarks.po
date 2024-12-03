@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2023-10-24 10:25+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -264,7 +264,7 @@ msgstr "Số lần mở:"
 msgid "My Bookmarks"
 msgstr "Dấu nhớ của tôi"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "OK"
@@ -737,7 +737,7 @@ msgstr "Bạn chỉ có thể chỉ định một lựa chọn --export duy nh�
 msgid "You may only specify a single --import option."
 msgstr "Bạn chỉ có thể chỉ định một lựa chọn --import duy nhất."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "Đang kiểm tra..."

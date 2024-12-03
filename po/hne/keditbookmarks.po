@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-03 00:41+0000\n"
+"POT-Creation-Date: 2024-12-03 00:43+0000\n"
 "PO-Revision-Date: 2009-02-09 16:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -274,7 +274,7 @@ msgstr "एतका बार देखे गिसः"
 msgid "My Bookmarks"
 msgstr "मोर निसानी"
 
-#: favicons.cpp:41 testlink.cpp:81
+#: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
 msgstr "ठीक"
@@ -761,7 +761,7 @@ msgstr "आप सिरिफ एके निरधारित कर सक�
 msgid "You may only specify a single --import option."
 msgstr "आप सिरिफ एके निरधारित कर सकथो --import विकल्प."
 
-#: testlink.cpp:60
+#: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
 msgstr "जांच में..."
