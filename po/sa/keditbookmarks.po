@@ -19,12 +19,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "भवतः नामानि"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "भवतः ईमेलपत्राणि"
 
 #: actionsimpl.cpp:79
 #, kde-format
@@ -190,13 +190,13 @@ msgstr "HTML बुकमार्क सूची (*.html) 1.1."
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
-msgstr ""
+msgstr "कट आइटम"
 
 #: actionsimpl.cpp:349
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Paste"
-msgstr ""
+msgstr "चिनोतु"
 
 #: actionsimpl.cpp:360
 #, kde-format
@@ -207,7 +207,7 @@ msgstr "नवीनं पुटम् : १."
 #, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
-msgstr ""
+msgstr "New Bookmark Folder रचयन्तु"
 
 #: actionsimpl.cpp:507
 #, kde-format
@@ -219,13 +219,13 @@ msgstr "पुनरावर्तनीय क्रमबद्धता"
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
-msgstr ""
+msgstr "वर्णमालानुसार क्रमबद्ध करें"
 
 #: actionsimpl.cpp:531
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Delete Items"
-msgstr ""
+msgstr "द्रव्यं विलोपयन्तु"
 
 #: bookmarkinfowidget.cpp:211
 #, kde-format
@@ -286,7 +286,7 @@ msgstr "ब्राउजरघटकः न प्राप्तः"
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Import %1 Bookmarks"
-msgstr ""
+msgstr "%1 बुकमार्क आयातयन्तु"
 
 #: importers.cpp:46
 #, kde-format
@@ -302,7 +302,7 @@ msgstr "नूतनं उपपुटरूपेण आयातं कुर
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
-msgstr ""
+msgstr "%1 आयातम्"
 
 #: importers.cpp:85
 #, kde-format
@@ -388,103 +388,103 @@ msgstr "अतिरिक्तपुस्तकचिह्नानां �
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Insert Separator"
-msgstr ""
+msgstr "विभाजक सम्मिलित करें"
 
 #: kbookmarkmodel/commands.cpp:69
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Bookmark"
-msgstr ""
+msgstr "बुकमार्क रचयन्तु"
 
 #: kbookmarkmodel/commands.cpp:83
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create Folder"
-msgstr ""
+msgstr "Folder रचयन्तु"
 
 #: kbookmarkmodel/commands.cpp:96
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy %1"
-msgstr ""
+msgstr "%1 प्रतिलिख्यताम्"
 
 #: kbookmarkmodel/commands.cpp:185
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Icon Change"
-msgstr ""
+msgstr "चिह्न परिवर्तनम्"
 
 #: kbookmarkmodel/commands.cpp:187
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Title Change"
-msgstr ""
+msgstr "शीर्षक परिवर्तन"
 
 #: kbookmarkmodel/commands.cpp:189
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "URL Change"
-msgstr ""
+msgstr "URL परिवर्तनम्"
 
 #: kbookmarkmodel/commands.cpp:191
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Comment Change"
-msgstr ""
+msgstr "परिवर्तनं कथं करणीयम्"
 
 #: kbookmarkmodel/commands.cpp:350
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move %1"
-msgstr ""
+msgstr "%1 चालयन्तु"
 
 #: kbookmarkmodel/commands.cpp:485
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Set as Bookmark Toolbar"
-msgstr ""
+msgstr "Bookmark Toolbar इति सेट् कुर्वन्तु"
 
 #: kbookmarkmodel/commands.cpp:517
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy Items"
-msgstr ""
+msgstr "प्रतिलिपि द्रव्यम्"
 
 #: kbookmarkmodel/commands.cpp:517
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move Items"
-msgstr ""
+msgstr "द्रव्यं चालयन्तु"
 
 #: kbookmarkmodel/model.cpp:109
 #, kde-format
 msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
-msgstr ""
+msgstr "बुकमार्क्स"
 
 #: kbookmarkmodel/model.cpp:205
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Name"
-msgstr ""
+msgstr "नामः"
 
 #: kbookmarkmodel/model.cpp:208
 #, kde-format
 msgctxt "@title:column name of a bookmark"
 msgid "Location"
-msgstr ""
+msgstr "स्थानीय"
 
 #: kbookmarkmodel/model.cpp:211
 #, kde-format
 msgctxt "@title:column comment for a bookmark"
 msgid "Comment"
-msgstr ""
+msgstr "टिप्पणी"
 
 #: kbookmarkmodel/model.cpp:214
 #, kde-format
 msgctxt "@title:column status of a bookmark"
 msgid "Status"
-msgstr ""
+msgstr "स्थितिः"
 
 #: kebsearchline.cpp:226
 #, kde-format
@@ -500,7 +500,7 @@ msgstr "सर्वे दृश्यमानाः स्तम्भाः"
 #, kde-format
 msgctxt "Column number %1"
 msgid "Column No. %1"
-msgstr ""
+msgstr "स्तम्भ संख्या %1"
 
 #: kebsearchline.cpp:602
 #, kde-format
@@ -582,7 +582,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
-msgstr ""
+msgstr "चेतवानी"
 
 #: main.cpp:59
 #, kde-format
