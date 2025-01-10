@@ -7,13 +7,13 @@
 # obsoleteman <tulliana@gmail.com>, 2007-2009.
 # obsoleteman <tulliana@gmail.com>, 2010,2012.
 # Volkan Gezer <volkangezer@gmail.com>, 2017.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-03 00:41+0000\n"
-"PO-Revision-Date: 2024-06-29 13:24+0300\n"
+"PO-Revision-Date: 2025-01-09 16:19+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 25.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -710,7 +710,7 @@ msgstr "Yer imleri dosyasında verilen konumda aç"
 #: main.cpp:118
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
-msgstr "Kullanıcının okuyabileceği başlığı ayarlayın, örneğin ‘Konsole’"
+msgstr "Kullanıcının okuyabileceği başlığı ayarlayın, örneğin “Konsole”"
 
 #: main.cpp:119
 #, kde-format
@@ -728,9 +728,9 @@ msgid ""
 msgstr ""
 "Bu yer imi koleksiyonunu simgeleyen benzersiz bir ad, genellikle kinstance "
 "adıdır.\n"
-"Bu, Konqueror yer imleri için ‘konqueror’, KFileDialog yer imleri için "
-"‘kfile’ vb. olmalıdır.\n"
-"Son D-Bus nesne yolu /KBookmarkManager/<dbusObjectName>’dır"
+"Bu, Konqueror yer imleri için “konqueror”, KFileDialog yer imleri için "
+"“kfile” vb. olmalıdır.\n"
+"Son D-Bus nesne yolu /KBookmarkManager/<dbusObjectName>’dır."
 
 #: main.cpp:124
 #, kde-format
