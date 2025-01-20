@@ -28,7 +28,7 @@ int main(int argc, char **argv)
                          i18n("KBookmarkMerger"),
                          QStringLiteral(KEDITBOOKMARKS_VERSION_STRING),
                          i18n("Merges bookmarks installed by 3rd parties into the user's bookmarks"),
-                         KAboutLicense::BSDL,
+                         KAboutLicense::BSD_2_Clause,
                          i18n("Copyright © 2005 Frerich Raabe"));
     aboutData.addAuthor(i18n("Frerich Raabe"), i18n("Original author"), QStringLiteral("raabe@kde.org"));
 
