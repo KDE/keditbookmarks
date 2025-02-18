@@ -93,7 +93,7 @@ QString NSBookmarkImporterImpl::findDefaultLocation(bool forSaving) const
         if (forSaving) {
             return QFileDialog::getSaveFileName(QApplication::activeWindow(), QString(), mozillaHomePath, tr("HTML Files (*.html)"));
         } else {
-            return QFileDialog::getOpenFileName(QApplication::activeWindow(), QString(), mozillaHomePath, tr("*.html|HTML Files (*.html)"));
+            return QFileDialog::getOpenFileName(QApplication::activeWindow(), QString(), mozillaHomePath, tr("HTML Files (*.html);;All Files (*)"));
         }
     } else {
         return QDir::homePath() + QLatin1String("/.netscape/bookmarks.html");
