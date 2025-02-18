@@ -96,7 +96,7 @@ QString OperaBookmarkImporterImpl::findDefaultLocation(bool saving) const
 {
     const QString operaHomePath = QDir::homePath() + QLatin1String("/.opera");
     return saving ? QFileDialog::getSaveFileName(QApplication::activeWindow(), QString(), operaHomePath, tr("Opera Bookmark Files (*.adr)"))
-                  : QFileDialog::getOpenFileName(QApplication::activeWindow(), QString(), operaHomePath, tr("*.adr|Opera Bookmark Files (*.adr)"));
+                  : QFileDialog::getOpenFileName(QApplication::activeWindow(), QString(), operaHomePath, tr("Opera Bookmark Files (*.adr);;All Files (*)"));
 }
 
 /////////////////////////////////////////////////
