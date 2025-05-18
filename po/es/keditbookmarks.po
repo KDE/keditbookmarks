@@ -1,18 +1,17 @@
-# translation of keditbookmarks.po to Spanish
-# Translation of keditbookmarks to Spanish
-# Copyright (C) 2007 This_file_is_part_of_KDE
-# This file is distributed under the same license as the KEditBookmarks package.
+# Spanish translations for keditbookmarks.po package.
+# Copyright (C) 2007-2025 This file is copyright:
+# This file is distributed under the same license as the keditbookmarks package.
 #
-# Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2007.
-# Jaime Robles <jaime@kde.org>, 2007, 2008.
-# SPDX-FileCopyrightText: 2009, 2011, 2012, 2016, 2017, 2020, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
-# Rocio Gallego <traducciones@rociogallego.com>, 2014.
+# SPDX-FileCopyrightText: 2007 Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>
+# SPDX-FileCopyrightText: 2007, 2008 Jaime Robles <jaime@kde.org>
+# SPDX-FileCopyrightText: 2009, 2011, 2012, 2016, 2017, 2020, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2014 Rocio Gallego <traducciones@rociogallego.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-03 00:43+0000\n"
-"PO-Revision-Date: 2024-06-29 21:38+0200\n"
+"PO-Revision-Date: 2025-05-17 12:31+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -55,7 +54,7 @@ msgstr "Cambiar el co&mentario"
 #: actionsimpl.cpp:103
 #, kde-format
 msgid "Chan&ge Icon..."
-msgstr "Cambiar el &icono..."
+msgstr "Cambiar el &icono…"
 
 #: actionsimpl.cpp:107
 #, kde-format
@@ -70,7 +69,7 @@ msgstr "Búsqueda recurrente"
 #: actionsimpl.cpp:116
 #, kde-format
 msgid "&New Folder..."
-msgstr "&Nueva carpeta..."
+msgstr "&Nueva carpeta…"
 
 #: actionsimpl.cpp:122
 #, kde-format
@@ -135,32 +134,32 @@ msgstr "Cancelar las actualizaciones de &favicons"
 #: actionsimpl.cpp:176
 #, kde-format
 msgid "Import &Netscape Bookmarks..."
-msgstr "Importar marcadores de &Netscape..."
+msgstr "Importar marcadores de &Netscape…"
 
 #: actionsimpl.cpp:182
 #, kde-format
 msgid "Import &Opera Bookmarks..."
-msgstr "Importar marcadores de &Opera..."
+msgstr "Importar marcadores de &Opera…"
 
 #: actionsimpl.cpp:192
 #, kde-format
 msgid "Import &Galeon Bookmarks..."
-msgstr "Importar marcadores de &Galeon..."
+msgstr "Importar marcadores de &Galeon…"
 
 #: actionsimpl.cpp:198
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
-msgstr "Importar marcadores de &KDE2 ó KDE3..."
+msgstr "Importar marcadores de &KDE2 ó KDE3…"
 
 #: actionsimpl.cpp:204
 #, kde-format
 msgid "Import &Internet Explorer Bookmarks..."
-msgstr "Importar marcadores de &Internet Explorer..."
+msgstr "Importar marcadores de &Internet Explorer…"
 
 #: actionsimpl.cpp:210
 #, kde-format
 msgid "Import &Mozilla Bookmarks..."
-msgstr "Importar marcadores de &Mozilla..."
+msgstr "Importar marcadores de &Mozilla…"
 
 #: actionsimpl.cpp:215
 #, kde-format
@@ -170,22 +169,22 @@ msgstr "Exportar a marcadores de &Netscape"
 #: actionsimpl.cpp:220
 #, kde-format
 msgid "Export &Opera Bookmarks..."
-msgstr "Exportar a marcadores de &Opera..."
+msgstr "Exportar a marcadores de &Opera…"
 
 #: actionsimpl.cpp:225
 #, kde-format
 msgid "Export &HTML Bookmarks..."
-msgstr "Exportar a marcadores &HTML..."
+msgstr "Exportar a marcadores &HTML…"
 
 #: actionsimpl.cpp:229
 #, kde-format
 msgid "Export &Internet Explorer Bookmarks..."
-msgstr "Exportar a marcadores de &IE..."
+msgstr "Exportar a marcadores de &IE…"
 
 #: actionsimpl.cpp:234
 #, kde-format
 msgid "Export &Mozilla Bookmarks..."
-msgstr "Exportar a marcadores de &Mozilla..."
+msgstr "Exportar a marcadores de &Mozilla…"
 
 #: actionsimpl.cpp:279
 #, kde-format
@@ -276,7 +275,7 @@ msgstr "OK"
 #: favicons.cpp:57
 #, kde-format
 msgid "Updating favicon..."
-msgstr "Actualizar el favicon..."
+msgstr "Actualizar el favicon…"
 
 #: faviconupdater.cpp:62
 #, kde-format
@@ -748,4 +747,4 @@ msgstr "Solo puede indicar una única opción --import."
 #: testlink.cpp:71
 #, kde-format
 msgid "Checking..."
-msgstr "Comprobando..."
+msgstr "Comprobando…"
