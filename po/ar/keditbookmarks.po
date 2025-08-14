@@ -579,8 +579,8 @@ msgid ""
 "another instance or continue work in the same instance?\n"
 "Please note that, unfortunately, duplicate views are read-only."
 msgstr ""
-"توجد سيرورة أخرى من %1 تعمل بالفعل، أتريد حقًّا فتح سيرورة أخرى أو متابعة "
-"العمل في نفس السيرورة؟\n"
+"توجد نسخة أخرى من %1 تعمل بالفعل، أتريد حقًّا فتح نسخة أخرى أو متابعة العمل في "
+"نفس النسخة؟\n"
 "من فضلك لاحظ أنّ المناظير المتكرّرة للقراءة فقط للأسف."
 
 #: main.cpp:58
@@ -597,7 +597,7 @@ msgstr "نفّذ آخر"
 #: main.cpp:60
 #, kde-format
 msgid "Continue in Same"
-msgstr "استمر في نفس السيرورة"
+msgstr "استمر في نفس النسخة"
 
 #: main.cpp:89
 #, kde-format
@@ -713,7 +713,7 @@ msgid ""
 "KFileDialog bookmarks, etc.\n"
 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
 msgstr ""
-"اسم فريد يمثل مجموعة الإشارات المرجعية هذه ، عادةً ما يكون اسم kinstance. \n"
+"اسم فريد يمثل مجموعة الإشارات المرجعية هذه، عادةً ما يكون اسم kinstance. \n"
 "يجب أن يكون هذا \"konqueror\" لإشارات Konqueror المرجعية و \"kfile\" لإشارات "
 "KFileDialog وما إلى ذلك.\n"
 "المسار النهائي لكوائن DBus هو /KBookmarkManager/<dbusObjectName>"
