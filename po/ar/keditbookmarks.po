@@ -579,7 +579,7 @@ msgid ""
 "another instance or continue work in the same instance?\n"
 "Please note that, unfortunately, duplicate views are read-only."
 msgstr ""
-"توجد نسخة أخرى من %1 تعمل بالفعل، أتريد حقًّا فتح نسخة أخرى أو متابعة العمل في "
+"توجد نسخة أخرى من %1 تعمل فعلًا، أتريد حقًّا فتح نسخة أخرى أو متابعة العمل في "
 "نفس النسخة؟\n"
 "من فضلك لاحظ أنّ المناظير المتكرّرة للقراءة فقط للأسف."
 
