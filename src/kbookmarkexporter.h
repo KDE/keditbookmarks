@@ -10,7 +10,7 @@
 #ifndef __kbookmarkexporter_h
 #define __kbookmarkexporter_h
 
-#include <kbookmark.h>
+#include <KBookmark>
 
 class BookmarkExporterBase
 {

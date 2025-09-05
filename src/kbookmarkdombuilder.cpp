@@ -7,7 +7,7 @@
 */
 
 #include "kbookmarkdombuilder.h"
-#include <kbookmarkmanager.h>
+#include <KBookmarkManager>
 
 #include <QDebug>
 

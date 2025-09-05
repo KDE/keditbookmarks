@@ -10,7 +10,7 @@
 #include "kbookmarkimporter_ie.h"
 #include "kbookmarkimporter_ns.h"
 #include "kbookmarkimporter_opera.h"
-#include "kbookmarkmanager.h"
+#include <KBookmarkManager>
 
 #include <assert.h>
 #include <stddef.h>

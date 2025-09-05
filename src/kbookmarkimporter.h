@@ -10,7 +10,7 @@
 
 #include <QObject>
 
-#include "kbookmark.h"
+#include <KBookmark>
 
 /**
  * A class for importing NS bookmarks
