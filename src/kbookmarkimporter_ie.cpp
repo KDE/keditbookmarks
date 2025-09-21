@@ -6,7 +6,6 @@
 */
 
 #include "kbookmarkimporter_ie.h"
-#include "kbookmarkimporter.h"
 
 #include <QApplication>
 #include <QDebug>

@@ -6,7 +6,6 @@
 */
 
 #include "kbookmarkimporter_opera.h"
-#include "kbookmarkimporter.h"
 #include "kbookmarkimporter_opera_p.h"
 
 #include <QApplication>
