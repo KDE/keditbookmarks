@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2010, 2024 Johannes Obermayr <johannesobermayr@gmx.de>
-# Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008.
-# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2010, 2011, 2016, 2017, 2020.
-# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2011, 2023.
+# SPDX-FileCopyrightText: 2007, 2008 Thomas Reitelbach <tr@erdfunkstelle.de>
+# SPDX-FileCopyrightText: 2009, 2010, 2011, 2016, 2017, 2020 Burkhard Lück <lueck@hube-lueck.de>
+# SPDX-FileCopyrightText: 2009, 2010, 2011, 2023 Frederik Schwarzer <schwarzer@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
