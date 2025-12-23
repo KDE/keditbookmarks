@@ -33,7 +33,7 @@
 </authorgroup>
 
 <date
->2016-11-04</date>
+>2016‒11‒04</date>
 
 <releaseinfo
 >Uygulamalar 16.12</releaseinfo>
@@ -55,11 +55,11 @@
 > </menuchoice
 > seçeneği, <guilabel
 >Yer İmi Düzenleyicisi</guilabel
->'ni açar.</para>
+>’ni açar.</para>
 <para
 >Alternatif olarak, tarayıcı yer imlerini düzenlemek için düzenleyiciyi bağımsız uygulama olarak başlatabilirsiniz.</para>
 <para
->Düzenleyici, yer imlerinizin ve yer imi alt klasörlerinin ağaç görünümünü gösterir. Ağaç görünümleri için her zamanki gibi, &kde;'de, alt klasörler, klasör adının solundaki küçük bir <keycap
+>Düzenleyici, yer imlerinizin ve yer imi alt klasörlerinin ağaç görünümünü gösterir. Ağaç görünümleri için her zamanki gibi, &kde;’de, alt klasörler, klasör adının solundaki küçük bir <keycap
 >&gt;</keycap
 > oku ile gösterilir; <mousebutton
 >sol</mousebutton
@@ -74,7 +74,7 @@
 > tıklama, alt klasör görünümünü daraltır.</para>
 
 <para
->Listeden bir öge seçmek için, <mousebutton
+>Listeden bir öge seçmek için <mousebutton
 >sol</mousebutton
 > tıklayın, veya <keysym
 >Yukarı</keysym
@@ -93,7 +93,7 @@
 > Yapıştır</guimenuitem
 > yöntemiyle listedeki farklı bir yere taşıyabilirsiniz. Ögelerin <guilabel
 >Yer İmi Düzenleyici</guilabel
->'de görünme sırası, <guimenu
+>’de görünme sırası, <guimenu
 >Yer İmleri</guimenu
 > açılır listesinde görünecekleri sıralamadır. The <menuchoice
 ><guimenu
@@ -105,7 +105,7 @@
 
 <para
 ><guimenuitem
->Yeni Klasör...</guimenuitem
+>Yeni Klasör…</guimenuitem
 > seçeneğini <guimenu
 >Klasör</guimenu
 > menüsünden kullanılarak veya açılır menüden, pencerenin ana bölümündeki bir ögeye <mousebutton
@@ -117,7 +117,7 @@
 > ile listenin seçilen noktasında bir alt klasör oluşturulabilir. </para>
 
 <para
->Yer iminin adını veya klasörün adını değiştirmek için, <keycap
+>Yer iminin adını veya klasörün adını değiştirmek için <keycap
 >F2</keycap
 > düğmesine basın ya da ögenin üstüne <mousebutton
 >sağ</mousebutton
@@ -129,12 +129,12 @@
 >F3</keycap
 > düğmesine basarak veya <guimenuitem
 >Konum Değiştir</guimenuitem
-> menü ögesini seçerek &URL;'yi düzenleyebilirsiniz.</para>
+> menü ögesini seçerek &URL;’yi düzenleyebilirsiniz.</para>
 
 <para
 ><guilabel
 >Yer İmi Düzenleyicisi</guilabel
->, bir dizi başka tarayıcıdan yer imlerini &konqueror;'un yer imi listesine almanıza, bunları yeni bir klasöre koymanıza veya var olan tüm yer imlerinizi değiştirmenize olanak tanır. Bunu yapmak için <guimenu
+>, bir dizi başka tarayıcıdan yer imlerini &konqueror;’un yer imi listesine almanıza, bunları yeni bir klasöre koymanıza veya var olan tüm yer imlerinizi değiştirmenize olanak tanır. Bunu yapmak için <guimenu
 >Dosya</guimenu
 > menüsünden, <guisubmenu
 >İçe Aktar</guisubmenu
@@ -168,7 +168,7 @@
 ><para
 ><guilabel
 >Yer İmi Düzenleyicisi</guilabel
->'ni kapatırsanız tüm değişiklikleriniz kendiliğinden kaydedilecektir. </para
+>’ni kapatırsanız tüm değişiklikleriniz kendiliğinden kaydedilecektir. </para
 ></note>
 
 <para

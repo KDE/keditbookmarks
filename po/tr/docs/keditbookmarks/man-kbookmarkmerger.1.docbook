@@ -14,7 +14,7 @@
 	<author
 >&Frerich.Raabe; &Frerich.Raabe.mail; </author>
 	<date
->2016-11-07</date>
+>2016‒11‒07</date>
 	<releaseinfo
 >Uygulamalar 16.12</releaseinfo>
 	<productname
@@ -52,7 +52,7 @@
 >Böyle bir şeye ulaşmak için geleneksel olarak kullanılan yaklaşım, kullanıcıya yeni bir kullanıcı hesabı oluştururken, kullanıcıya standart yer imi takımı sağlamak için dikkatle hazırlanmış ev dizinleri kullanmaktır. Bu yaklaşımla ilgili sorun, kullanıcı hesabı oluşturulduktan sonra hiçbir yeni yer iminin çoğaltılamaz olmasıdır.</para>
 
 <para
->Bu mekanizma, belirli bir belgeye işaret eden bir yer imi (örneğin, sistemle ilgili önemli notlar) yaymak isteyen sistem yöneticileri için ve tüm kullanıcılar için yararlıdır. Dağıtıcılar, örneğin, paketin kurulu olduğu sırada &kbookmarkmerger;'ın kullanıcının yer imi listesine eklediği yer imi dosyasıyla sağladıkları yazılım paketlerini genişleterek de kullanabilirler. Bu yolla, bir yazılım paketiyle gönderilen belgeler, paket kurulduktan hemen sonra kolayca ve gözle görülür şekilde erişilebilir olacaktır.</para>
+>Bu mekanizma, belirli bir belgeye işaret eden bir yer imi (örneğin, sistemle ilgili önemli notlar) yaymak isteyen sistem yöneticileri için ve tüm kullanıcılar için yararlıdır. Dağıtıcılar, örneğin, paketin kurulu olduğu sırada &kbookmarkmerger;’ın kullanıcının yer imi listesine eklediği yer imi dosyasıyla sağladıkları yazılım paketlerini genişleterek de kullanabilirler. Bu yolla, bir yazılım paketiyle gönderilen belgeler, paket kurulduktan hemen sonra kolayca ve gözle görülür şekilde erişilebilir olacaktır.</para>
 
 <para
 >&kbookmarkmerger; tarafından gereken tek parametre, yer imi dosyaları için taranacak bir dizinin adıdır. Verilen dizindeki tüm dosyalar, kullanıcının kurulumunda birleştirilmek üzere değerlendirilecektir. Verilen dizindeki dosyalar geçerli <acronym
@@ -69,7 +69,9 @@
 >&konqueror; kılavuzu</ulink
 ></member>
 <member
->kf5options(7)</member>
+>kf6options(7)</member>
+<member
+>kf6options(7)</member>
 </simplelist>
 </refsect1>
 
@@ -110,7 +112,7 @@
 <title
 >Kısıtlamalar</title>
 <para
->Belirli bir yer imi dosyasının kullanıcının yer imlerine zaten birleştirilip birleştirilmediğini belirlerken &kbookmarkmerger;, yalnızca yer imi dosyasının adına bakar - içerikler hiç denetlenmez. Bu, zaten bir kullanıcının yer imlerine birleştirilen bir yer imi dosyasını değiştirmesinin, onu bir kez daha birleştirmeye başlamayacağı anlamına gelmektedir.</para>
+>Belirli bir yer imi dosyasının kullanıcının yer imlerine zaten birleştirilip birleştirilmediğini belirlerken &kbookmarkmerger;, yalnızca yer imi dosyasının adına bakar — içerikler hiç denetlenmez. Bu, zaten bir kullanıcının yer imlerine birleştirilen bir yer imi dosyasını değiştirmesinin, onu bir kez daha birleştirmeye başlamayacağı anlamına gelmektedir.</para>
 
 <para
 >Ayrıca bir kullanıcının kurulumunda birleştirilen bir yer imini değiştirmesi durumunda, özgün yer imi dosyasının değiştirilmeyeceğini unutmayın.</para>
