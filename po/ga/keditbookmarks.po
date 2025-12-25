@@ -2,20 +2,22 @@
 # Copyright (C) 2009 This_file_is_part_of_KDE
 # This file is distributed under the same license as the keditbookmarks package.
 # Kevin Scannell <kscanne@gmail.com>, 2009.
+# SPDX-FileCopyrightText: 2025 Charlotte <altronic25@protonmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdebase/keditbookmarks.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2007-06-27 10:27-0500\n"
-"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
-"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2025-12-24 11:40+0000\n"
+"Last-Translator: Charlotte <altronic25@protonmail.com>\n"
+"Language-Team: Irish\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
 "3 : 4\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -98,10 +100,9 @@ msgid "Collapse &All Folders"
 msgstr "L&aghdaigh Gach Fillteán"
 
 #: actionsimpl.cpp:149
-#, fuzzy, kde-format
-#| msgid "&Open in Konqueror"
+#, kde-format
 msgid "&Open in Browser"
-msgstr "&Oscail i Konqueror"
+msgstr "&Oscail i Brabhsálaí"
 
 #: actionsimpl.cpp:154
 #, kde-format
@@ -184,10 +185,9 @@ msgid "Export &Mozilla Bookmarks..."
 msgstr "Easpórtáil Leabharmharcanna &Mozilla..."
 
 #: actionsimpl.cpp:279
-#, fuzzy, kde-format
-#| msgid "*.html|HTML Bookmark Listing"
+#, kde-format
 msgid "HTML Bookmark Listing (*.html)"
-msgstr "*.html|HTML Liosta Leabharmharcanna"
+msgstr "HTML Liosta Leabharmharcanna (*.html)"
 
 #: actionsimpl.cpp:324
 #, kde-format
@@ -281,10 +281,9 @@ msgid "%1; no HTML component found (%2)"
 msgstr "%1; níor aimsíodh aon chomhpháirt HTML (%2)"
 
 #: faviconupdater.cpp:74
-#, fuzzy, kde-format
-#| msgid "%1; no HTML component found (%2)"
+#, kde-format
 msgid "No browser component found"
-msgstr "%1; níor aimsíodh aon chomhpháirt HTML (%2)"
+msgstr "Níor aimsíodh aon chomhpháirt brabhsálaí"
 
 # %1=Firefox, etc. not a number
 #: importers.cpp:41
@@ -323,16 +322,14 @@ msgid "Replace"
 msgstr "Ionadaigh"
 
 #: importers.cpp:196
-#, fuzzy, kde-format
-#| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
+#, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
-msgstr "*.xbel|Comhaid leabharmhairc Galeon (*.xbel)"
+msgstr "Comhaid leabharmhairc Galeon (*.xbel)"
 
 #: importers.cpp:204
-#, fuzzy, kde-format
-#| msgid "*.xml|KDE Bookmark Files (*.xml)"
+#, kde-format
 msgid "KDE Bookmark Files (*.xml)"
-msgstr "*.xml|Comhaid leabharmhairc KDE (*.xml)"
+msgstr "Comhaid leabharmhairc KDE (*.xml)"
 
 #: importers.h:104
 #, kde-format
@@ -617,10 +614,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "Eagraí agus Eagarthóir Leabharmharcanna"
 
 #: main.cpp:93
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2007, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "© 2000 - 2007, Forbróirí KDE"
+msgstr "© 2000 - 2023, Forbróirí KDE"
 
 #: main.cpp:94
 #, kde-format
@@ -721,13 +717,7 @@ msgid "Hide all browser related functions"
 msgstr "Folaigh gach feidhm a bhaineann le brabhsálaí"
 
 #: main.cpp:120
-#, fuzzy, kde-format
-#| msgid ""
-#| "A unique name that represents this bookmark collection, usually the "
-#| "kinstance name.\n"
-#| "This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
-#| "KFileDialog bookmarks, etc.\n"
-#| "The final D-Bus object path is /KBookmarkManager/dbusObjectName"
+#, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
 "kinstance name.\n"
@@ -739,8 +729,8 @@ msgstr ""
 "kinstance de ghnáth.\n"
 "Ba chóir \"konqueror\" a úsáid i gcomhair leabharmharcanna Konqueror, \"file"
 "\" i gcomhair KFileDialog, srl.\n"
-"Is é /KBookmarkManager/dbusObjectName an chonair dheiridh le haghaidh réada "
-"D-Bus"
+"Is é /KBookmarkManager/<dbusObjectName> an chonair dheiridh le haghaidh "
+"réada D-Bus"
 
 #: main.cpp:124
 #, kde-format
