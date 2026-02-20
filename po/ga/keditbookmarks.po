@@ -750,33 +750,3 @@ msgstr "Ní féidir ach rogha '--import' amháin a shonrú."
 #, kde-format
 msgid "Checking..."
 msgstr "Á Sheiceáil..."
-
-#~ msgid "Import All &Crash Sessions as Bookmarks..."
-#~ msgstr "Iompórtáil Ga&ch Seisiún Tuairteála mar Leabharmharc..."
-
-#~ msgid "No favicon found"
-#~ msgstr "Níor aimsíodh aon deilbhín ceanán"
-
-#~ msgid "Local file"
-#~ msgstr "Comhad logánta"
-
-#~ msgid "Crashes"
-#~ msgstr "Tuairteanna"
-
-#~ msgid "Bookmark"
-#~ msgstr "Leabharmharc"
-
-#~ msgid "URL"
-#~ msgstr "URL"
-
-#~ msgid "Icon"
-#~ msgstr "Deilbhín"
-
-#~ msgid "Title"
-#~ msgstr "Teideal"
-
-#~ msgid "Konqueror Bookmarks Editor"
-#~ msgstr "Eagarthóir Leabharmharcanna Konqueror"
-
-#~ msgid "Export to &IE Bookmarks..."
-#~ msgstr "Easpórtáil go Leabharmharcanna &IE..."
