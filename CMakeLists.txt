@@ -56,8 +56,8 @@ if(BUILD_TESTING)
     find_package(Qt6Test ${QT_MIN_VERSION} CONFIG REQUIRED)
 endif()
 
-ecm_set_disabled_deprecation_versions(QT 6.9.0
-    KF 6.19.0
+ecm_set_disabled_deprecation_versions(QT 6.11.0
+    KF 6.26.0
     )
 
 if(NOT APPLE)
