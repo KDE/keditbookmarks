@@ -8,24 +8,25 @@ msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2013-09-08 07:04+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-05-31 18:27-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+msgstr "ئابدۇقادىر ئابلىز، غەيرەت كەنجى"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+msgstr "sahranbay@gmail.com, gheyret@gmail.com"
 
 #: actionsimpl.cpp:79
 #, kde-format
@@ -98,10 +99,9 @@ msgid "Collapse &All Folders"
 msgstr "ھەممە قىسقۇچلارنى يىغ(&E)"
 
 #: actionsimpl.cpp:149
-#, fuzzy, kde-format
-#| msgid "&Open in Konqueror"
+#, kde-format
 msgid "&Open in Browser"
-msgstr "Konqueror نىڭ ئىچىدە ئاچ(&O)"
+msgstr ""
 
 #: actionsimpl.cpp:154
 #, kde-format
@@ -161,7 +161,7 @@ msgstr "Mozilla خەتكۈچلىرىنى ئىمپورت قىل(&M)…"
 #: actionsimpl.cpp:215
 #, kde-format
 msgid "Export &Netscape Bookmarks"
-msgstr "Netscape خەتكۈچلىرىنى ئېكسپورت قىل(&N)…"
+msgstr "Netscape خەتكۈچىنى چىقار(&N)"
 
 #: actionsimpl.cpp:220
 #, kde-format
@@ -184,10 +184,9 @@ msgid "Export &Mozilla Bookmarks..."
 msgstr "Mozilla خەتكۈچلىرىنى ئېكسپورت قىل(&M)…"
 
 #: actionsimpl.cpp:279
-#, fuzzy, kde-format
-#| msgid "*.html|HTML Bookmark Listing"
+#, kde-format
 msgid "HTML Bookmark Listing (*.html)"
-msgstr "*.html|HTML خەتكۈش تىزىمى"
+msgstr ""
 
 #: actionsimpl.cpp:324
 #, kde-format
@@ -210,7 +209,7 @@ msgstr "يېڭى قىسقۇچ:"
 #, kde-format
 msgctxt "@title:window"
 msgid "Create New Bookmark Folder"
-msgstr "يېڭى خەتكۈش قىسقۇچى قۇرۇش"
+msgstr "يېڭى خەتكۈش قىسقۇچى قۇرىدۇ"
 
 #: actionsimpl.cpp:507
 #, kde-format
@@ -268,7 +267,7 @@ msgstr "خەتكۈچلىرىم"
 #: favicons.cpp:41 testlink.cpp:63
 #, kde-format
 msgid "OK"
-msgstr "تامام"
+msgstr "جەزملە"
 
 #: favicons.cpp:57
 #, kde-format
@@ -281,10 +280,9 @@ msgid "%1; no HTML component found (%2)"
 msgstr "%1; HTML بۆلىكى تېپىلمىدى(%2)"
 
 #: faviconupdater.cpp:74
-#, fuzzy, kde-format
-#| msgid "%1; no HTML component found (%2)"
+#, kde-format
 msgid "No browser component found"
-msgstr "%1; HTML بۆلىكى تېپىلمىدى(%2)"
+msgstr ""
 
 #: importers.cpp:41
 #, kde-format
@@ -331,37 +329,37 @@ msgstr ""
 #: importers.h:104
 #, kde-format
 msgid "Galeon"
-msgstr "Galeon"
+msgstr ""
 
 #: importers.h:119
 #, kde-format
 msgid "KDE"
-msgstr "ك د ئې(KDE)"
+msgstr "KDE"
 
 #: importers.h:149
 #, kde-format
 msgid "Netscape"
-msgstr "Netscape"
+msgstr ""
 
 #: importers.h:164
 #, kde-format
 msgid "Mozilla"
-msgstr "Mozilla"
+msgstr ""
 
 #: importers.h:179
 #, kde-format
 msgid "IE"
-msgstr "IE"
+msgstr ""
 
 #: importers.h:197
 #, kde-format
 msgid "Opera"
-msgstr "Opera"
+msgstr ""
 
 #: kbookmarkmerger.cpp:28
 #, kde-format
 msgid "KBookmarkMerger"
-msgstr "KBookmarkMerger"
+msgstr ""
 
 #: kbookmarkmerger.cpp:30
 #, kde-format
@@ -371,7 +369,7 @@ msgstr ""
 #: kbookmarkmerger.cpp:32
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
-msgstr "Copyright © 2005 Frerich Raabe"
+msgstr ""
 
 #: kbookmarkmerger.cpp:33
 #, kde-format
@@ -381,7 +379,7 @@ msgstr "Frerich Raabe"
 #: kbookmarkmerger.cpp:33
 #, kde-format
 msgid "Original author"
-msgstr "ئەسلى ئاپتور"
+msgstr "ئەسلى يازغۇچى"
 
 #: kbookmarkmerger.cpp:38
 #, kde-format
@@ -464,7 +462,7 @@ msgstr "تۈر يۆتكە"
 #, kde-format
 msgctxt "name of the container of all browser bookmarks"
 msgid "Bookmarks"
-msgstr "خەتكۈشلەر"
+msgstr "خەتكۈش"
 
 #: kbookmarkmodel/model.cpp:205
 #, kde-format
@@ -493,18 +491,18 @@ msgstr "ھالىتى"
 #: kebsearchline.cpp:226
 #, kde-format
 msgid "Search Columns"
-msgstr "ئىزدەش ئىستونى"
+msgstr "رەت ئىزدە"
 
 #: kebsearchline.cpp:229
 #, kde-format
 msgid "All Visible Columns"
-msgstr "كۆرۈنگەن بارلىق ئىستونلار"
+msgstr "كۆرۈنگەن بارلىق رەت"
 
 #: kebsearchline.cpp:237
 #, kde-format
 msgctxt "Column number %1"
 msgid "Column No. %1"
-msgstr "ئىستون نومۇرى %1"
+msgstr "رەت نومۇرى %1"
 
 #: kebsearchline.cpp:602
 #, kde-format
@@ -569,7 +567,7 @@ msgstr "چىقار(&E)"
 #: keditbookmarksui.rc:67
 #, kde-format
 msgid "&Tools"
-msgstr "قوراللار(&T)"
+msgstr "قورال(&T)"
 
 #: main.cpp:54
 #, kde-format
@@ -606,10 +604,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "خەتكۈش تەشكىللىگۈچ ۋە تەھرىرلىگۈچ"
 
 #: main.cpp:93
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2007, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "Copyright 2000-2007، KDE ئىجادىيەتچىلىرى"
+msgstr ""
 
 #: main.cpp:94
 #, kde-format
@@ -624,12 +621,12 @@ msgstr ""
 #: main.cpp:95
 #, kde-format
 msgid "Alexander Kellett"
-msgstr "Alexander Kellett"
+msgstr ""
 
 #: main.cpp:95
 #, kde-format
 msgid "Author"
-msgstr "ئاپتور"
+msgstr "يازغۇچى"
 
 #: main.cpp:106
 #, kde-format
