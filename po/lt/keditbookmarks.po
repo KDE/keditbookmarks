@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2011-06-20 18:44+0300\n"
+"PO-Revision-Date: 2026-06-11 13:48+0300\n"
 "Last-Translator: Tomas Straupis <tomasstraupis@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -16,22 +16,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Andrius Štikonas"
+msgstr "Andrius Štikonas, Moo"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "andrius@stikonas.eu"
+msgstr "andrius@stikonas.eu, <>"
 
 #: actionsimpl.cpp:79
 #, kde-format
 msgid "&Delete"
-msgstr "Paša&linti"
+msgstr "&Ištrinti"
 
 #: actionsimpl.cpp:85
 #, kde-format
@@ -41,27 +41,27 @@ msgstr "Pervadinti"
 #: actionsimpl.cpp:91
 #, kde-format
 msgid "C&hange Location"
-msgstr "Pakeisti &vietą"
+msgstr "Keisti &vietą"
 
 #: actionsimpl.cpp:97
 #, kde-format
 msgid "C&hange Comment"
-msgstr "Pakeisti &komentarą"
+msgstr "Keisti &komentarą"
 
 #: actionsimpl.cpp:103
 #, kde-format
 msgid "Chan&ge Icon..."
-msgstr "Pakeisti že&nkliuką..."
+msgstr "Keisti &piktogramą..."
 
 #: actionsimpl.cpp:107
 #, kde-format
 msgid "Update Favicon"
-msgstr "Atnaujinti srities ženkliuką (favicon)"
+msgstr "Atnaujinti svetainės piktogramą"
 
 #: actionsimpl.cpp:111
 #, kde-format
 msgid "Recursive Sort"
-msgstr "Rūšiuoti rekursyviai"
+msgstr "Rikiuoti rekursyviai"
 
 #: actionsimpl.cpp:116
 #, kde-format
@@ -81,12 +81,12 @@ msgstr "Įter&pti skirtuką"
 #: actionsimpl.cpp:131
 #, kde-format
 msgid "&Sort Alphabetically"
-msgstr "&Rūšiuoti pagal abėcėlę"
+msgstr "&Rikiuoti pagal abėcėlę"
 
 #: actionsimpl.cpp:136
 #, kde-format
 msgid "Set as T&oolbar Folder"
-msgstr "Nustatyti įran&kių juostos aplanku"
+msgstr "Nustatyti kaip įran&kių juostos aplanką"
 
 #: actionsimpl.cpp:140
 #, kde-format
@@ -96,38 +96,37 @@ msgstr "&Išskleisti visus aplankus"
 #: actionsimpl.cpp:144
 #, kde-format
 msgid "Collapse &All Folders"
-msgstr "&Suskleisti aplankus"
+msgstr "&Suskleisti visus aplankus"
 
 #: actionsimpl.cpp:149
-#, fuzzy, kde-format
-#| msgid "&Open in Konqueror"
+#, kde-format
 msgid "&Open in Browser"
-msgstr "&Atverti su Konqueror"
+msgstr "&Atverti naršyklėje"
 
 #: actionsimpl.cpp:154
 #, kde-format
 msgid "Check &Status"
-msgstr "Tikrinti &būvį"
+msgstr "Tikrinti &būseną"
 
 #: actionsimpl.cpp:158
 #, kde-format
 msgid "Check Status: &All"
-msgstr "Tikrinti būvį: &visų žymelių"
+msgstr "Tikrinti būseną: &Visų žymelių"
 
 #: actionsimpl.cpp:162
 #, kde-format
 msgid "Update All &Favicons"
-msgstr "Atnaujinti visus &srities ženkliukus (favicons)"
+msgstr "Atnaujinti visas &svetainių piktogramas"
 
 #: actionsimpl.cpp:166
 #, kde-format
 msgid "Cancel &Checks"
-msgstr "Nutraukti t&ikrinimus"
+msgstr "Atsisakyti t&ikrinimų"
 
 #: actionsimpl.cpp:170
 #, kde-format
 msgid "Cancel &Favicon Updates"
-msgstr "&Atšaukti srities ženkliukų atnaujinimus"
+msgstr "Atsisakyti &svetainės piktogramų atnaujinimų"
 
 #: actionsimpl.cpp:176
 #, kde-format
@@ -147,7 +146,7 @@ msgstr "Importuoti &Galeon žymeles..."
 #: actionsimpl.cpp:198
 #, kde-format
 msgid "Import &KDE 2 or KDE 3 Bookmarks..."
-msgstr "Importuoti &KDE 2 or KDE 3 žymeles..."
+msgstr "Importuoti &KDE 2 аr KDE 3 žymeles..."
 
 #: actionsimpl.cpp:204
 #, kde-format
@@ -162,7 +161,7 @@ msgstr "Importuoti &Mozilla žymeles..."
 #: actionsimpl.cpp:215
 #, kde-format
 msgid "Export &Netscape Bookmarks"
-msgstr "Eksportuoti &Netscape žymeles..."
+msgstr "Eksportuoti &Netscape žymeles"
 
 #: actionsimpl.cpp:220
 #, kde-format
@@ -185,22 +184,21 @@ msgid "Export &Mozilla Bookmarks..."
 msgstr "Eksportuoti &Mozilla žymeles..."
 
 #: actionsimpl.cpp:279
-#, fuzzy, kde-format
-#| msgid "*.html|HTML Bookmark Listing"
+#, kde-format
 msgid "HTML Bookmark Listing (*.html)"
-msgstr "*.html|HTML žymelių sąrašas"
+msgstr "HTML žymelių sąrašas (*.html)"
 
 #: actionsimpl.cpp:324
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Cut Items"
-msgstr "Iškirpti objektus"
+msgstr "Iškirpti elementus"
 
 #: actionsimpl.cpp:349
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Paste"
-msgstr "Padėti"
+msgstr "Įdėti"
 
 #: actionsimpl.cpp:360
 #, kde-format
@@ -217,19 +215,19 @@ msgstr "Sukurti naują žymelių aplanką"
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Recursive Sort"
-msgstr "Rūšiuoti rekursyviai"
+msgstr "Rikiuoti rekursyviai"
 
 #: actionsimpl.cpp:522
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Sort Alphabetically"
-msgstr "Rūšiuoti pagal abėcėlę"
+msgstr "Rikiuoti pagal abėcėlę"
 
 #: actionsimpl.cpp:531
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Delete Items"
-msgstr "Ištrinti objektus"
+msgstr "Ištrinti elementus"
 
 #: bookmarkinfowidget.cpp:211
 #, kde-format
@@ -259,7 +257,7 @@ msgstr "Paskutinį kartą žiūrėta:"
 #: bookmarkinfowidget.cpp:237
 #, kde-format
 msgid "Times visited:"
-msgstr "Kartų lankyta:"
+msgstr "Kiek kartų lankyta:"
 
 #: exporters.cpp:35
 #, kde-format
@@ -274,18 +272,17 @@ msgstr "Gerai"
 #: favicons.cpp:57
 #, kde-format
 msgid "Updating favicon..."
-msgstr "Atnaujinu srities ženkliuką..."
+msgstr "Atnaujinamos svetainių piktogramos..."
 
 #: faviconupdater.cpp:62
 #, kde-format
 msgid "%1; no HTML component found (%2)"
-msgstr "%1; nerastas HTML komponentas (%2)"
+msgstr "%1; nerastas joks HTML komponentas (%2)"
 
 #: faviconupdater.cpp:74
-#, fuzzy, kde-format
-#| msgid "%1; no HTML component found (%2)"
+#, kde-format
 msgid "No browser component found"
-msgstr "%1; nerastas HTML komponentas (%2)"
+msgstr "Nerastas joks naršyklės komponentas"
 
 #: importers.cpp:41
 #, kde-format
@@ -301,13 +298,13 @@ msgstr "%1 žymelės"
 #: importers.cpp:83
 #, kde-format
 msgid "Import as a new subfolder or replace all the current bookmarks?"
-msgstr "Importuoti kaip naują aplanką ar pakeisti visas esamas žymeles?"
+msgstr "Importuoti kaip naują poaplankį ar pakeisti visas esamas žymeles?"
 
 #: importers.cpp:84
 #, kde-format
 msgctxt "@title:window"
 msgid "%1 Import"
-msgstr "%1 importuoti"
+msgstr "%1 importavimas"
 
 #: importers.cpp:85
 #, kde-format
@@ -320,16 +317,14 @@ msgid "Replace"
 msgstr "Pakeisti"
 
 #: importers.cpp:196
-#, fuzzy, kde-format
-#| msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
+#, kde-format
 msgid "Galeon Bookmark Files (*.xbel)"
-msgstr "*.xbel|Galeon žymelių failai (*.xbel)"
+msgstr "Galeon žymelių failai (*.xbel)"
 
 #: importers.cpp:204
-#, fuzzy, kde-format
-#| msgid "*.xml|KDE Bookmark Files (*.xml)"
+#, kde-format
 msgid "KDE Bookmark Files (*.xml)"
-msgstr "*.xml|KDE žymelių failai (*.xml)"
+msgstr "KDE žymelių failai (*.xml)"
 
 #: importers.h:104
 #, kde-format
@@ -369,12 +364,12 @@ msgstr "KBookmarkMerger"
 #: kbookmarkmerger.cpp:30
 #, kde-format
 msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
-msgstr "Sulieja žymeles, įdiegtas trečiųjų šalių į naudotojo žymeles"
+msgstr "Sulieja trečiųjų šalių įdiegtas žymeles į naudotojo žymeles"
 
 #: kbookmarkmerger.cpp:32
 #, kde-format
 msgid "Copyright © 2005 Frerich Raabe"
-msgstr "Copyright © 2005 Frerich Raabe"
+msgstr "Autorių teisės © 2005 Frerich Raabe"
 
 #: kbookmarkmerger.cpp:33
 #, kde-format
@@ -419,25 +414,25 @@ msgstr "Kopijuoti %1"
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Icon Change"
-msgstr "Ženkliuko pakeitimas"
+msgstr "Piktogramos keitimas"
 
 #: kbookmarkmodel/commands.cpp:187
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Title Change"
-msgstr "Pavadinimo pakeitimas"
+msgstr "Pavadinimo keitimas"
 
 #: kbookmarkmodel/commands.cpp:189
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "URL Change"
-msgstr "Nuorodos pakeitimas"
+msgstr "URL adreso keitimas"
 
 #: kbookmarkmodel/commands.cpp:191
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Comment Change"
-msgstr "Komentaro pakeitimas"
+msgstr "Komentaro keitimas"
 
 #: kbookmarkmodel/commands.cpp:350
 #, kde-format
@@ -449,19 +444,19 @@ msgstr "Perkelti %1"
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Set as Bookmark Toolbar"
-msgstr "Nustatyti kaip žymelių įrankinę"
+msgstr "Nustatyti kaip žymelių įrankių juostą"
 
 #: kbookmarkmodel/commands.cpp:517
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Copy Items"
-msgstr "Kopijuoti objektus"
+msgstr "Kopijuoti elementus"
 
 #: kbookmarkmodel/commands.cpp:517
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Move Items"
-msgstr "Perkelti objektus"
+msgstr "Perkelti elementus"
 
 #: kbookmarkmodel/model.cpp:109
 #, kde-format
@@ -507,7 +502,7 @@ msgstr "Visi matomi stulpeliai"
 #, kde-format
 msgctxt "Column number %1"
 msgid "Column No. %1"
-msgstr "Stulpelis Nr. %1"
+msgstr "Stulpelis nr. %1"
 
 #: kebsearchline.cpp:602
 #, kde-format
@@ -524,13 +519,13 @@ msgstr "&Failas"
 #: keditbookmarks-genui.rc:14 keditbookmarksui.rc:33
 #, kde-format
 msgid "&Edit"
-msgstr "&Keisti"
+msgstr "&Taisa"
 
 #. i18n: ectx: Menu (view)
 #: keditbookmarks-genui.rc:26 keditbookmarksui.rc:45
 #, kde-format
 msgid "&View"
-msgstr "&Rodymas"
+msgstr "&Rodinys"
 
 #. i18n: ectx: Menu (folder)
 #: keditbookmarks-genui.rc:31 keditbookmarksui.rc:50
@@ -542,7 +537,7 @@ msgstr "&Aplankas"
 #: keditbookmarks-genui.rc:39 keditbookmarksui.rc:59
 #, kde-format
 msgid "&Bookmark"
-msgstr "Ž&ymelės"
+msgstr "Ž&ymelė"
 
 #. i18n: ectx: Menu (settings)
 #: keditbookmarks-genui.rc:43 keditbookmarksui.rc:75
@@ -554,7 +549,7 @@ msgstr "&Nuostatos"
 #: keditbookmarks-genui.rc:49 keditbookmarksui.rc:82
 #, kde-format
 msgid "Main Toolbar"
-msgstr "Pagrindinė įrankinė"
+msgstr "Pagrindinė įrankių juosta"
 
 #. i18n: ectx: Menu (import)
 #: keditbookmarksui.rc:11
@@ -572,7 +567,7 @@ msgstr "&Eksportuoti"
 #: keditbookmarksui.rc:67
 #, kde-format
 msgid "&Tools"
-msgstr "Įrank&iai"
+msgstr "Įran&kiai"
 
 #: main.cpp:54
 #, kde-format
@@ -581,21 +576,21 @@ msgid ""
 "another instance or continue work in the same instance?\n"
 "Please note that, unfortunately, duplicate views are read-only."
 msgstr ""
-"Vienas %1 procesas jau veikia. Ar tikrai norite paleisti dar vieną, ar tęsti "
-"darbą tame pačiame procese?\n"
-"Atsižvelkite į tai, kad, deja, pakartotini rodymai atveriami tik skaitymo "
-"veiksena."
+"Yra kitas jau veikiantis %1 egzempliorius. Ar tikrai norite atverti dar "
+"vieną egzempliorių, ar tęsti darbą tame pačiame egzemplioriuje?\n"
+"Turėkite omenyje, kad, deja, pasikartojantys rodiniai atveriami tik skaitymo "
+"veiksenoje."
 
 #: main.cpp:58
 #, kde-format
 msgctxt "@title:window"
 msgid "Warning"
-msgstr "Dėmesio"
+msgstr "Įspėjimas"
 
 #: main.cpp:59
 #, kde-format
 msgid "Run Another"
-msgstr "Leisti kitą"
+msgstr "Paleisti dar vieną"
 
 #: main.cpp:60
 #, kde-format
@@ -610,13 +605,12 @@ msgstr "Žymelių redaktorius"
 #: main.cpp:91
 #, kde-format
 msgid "Bookmark Organizer and Editor"
-msgstr "Žymelių tvarkyklė ir redaktorius"
+msgstr "Žymelių tvarkytuvė ir redaktorius"
 
 #: main.cpp:93
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2007, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "Copyright 2000-2007, KDE programuotojai"
+msgstr "Copyright 2000–2023, KDE plėtotojai"
 
 #: main.cpp:94
 #, kde-format
@@ -626,7 +620,7 @@ msgstr "David Faure"
 #: main.cpp:94
 #, kde-format
 msgid "Initial author"
-msgstr "Pirminis autorius"
+msgstr "Pradinis autorius"
 
 #: main.cpp:95
 #, kde-format
@@ -651,7 +645,7 @@ msgstr "Importuoti žymeles iš Netscape (4.x ir ankstesnio) formato failo"
 #: main.cpp:108
 #, kde-format
 msgid "Import bookmarks from a file in Internet Explorer's Favorites format"
-msgstr "Importuoti Internet Explorer Favorites formato žymeles"
+msgstr "Importuoti žymeles iš Internet Explorer Favorites formato failo"
 
 #: main.cpp:109
 #, kde-format
@@ -686,7 +680,7 @@ msgstr "Eksportuoti žymeles į spausdintino HTML formato failą"
 #: main.cpp:115
 #, kde-format
 msgid "Export bookmarks to a file in Internet Explorer's Favorites format"
-msgstr "Eksportuoti žymeles į Internet Explorer Favorites formatą"
+msgstr "Eksportuoti žymeles į Internet Explorer Favorites formato failą"
 
 #: main.cpp:116
 #, kde-format
@@ -701,7 +695,7 @@ msgstr "Atverti nurodytoje žymelių failo vietoje"
 #: main.cpp:118
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
-msgstr "Nurodyti naudotojui įskaitomą antraštę, pvz., „Konsole“"
+msgstr "Nustatyti naudotojui suprantamą pavadinimą, pvz., „Konsole“"
 
 #: main.cpp:119
 #, kde-format
@@ -709,13 +703,7 @@ msgid "Hide all browser related functions"
 msgstr "Slėpti visas su naršykle susijusias funkcijas"
 
 #: main.cpp:120
-#, fuzzy, kde-format
-#| msgid ""
-#| "A unique name that represents this bookmark collection, usually the "
-#| "kinstance name.\n"
-#| "This should be \"konqueror\" for the Konqueror bookmarks, \"kfile\" for "
-#| "KFileDialog bookmarks, etc.\n"
-#| "The final D-Bus object path is /KBookmarkManager/dbusObjectName"
+#, kde-format
 msgid ""
 "A unique name that represents this bookmark collection, usually the "
 "kinstance name.\n"
@@ -723,16 +711,16 @@ msgid ""
 "KFileDialog bookmarks, etc.\n"
 "The final D-Bus object path is /KBookmarkManager/<dbusObjectName>"
 msgstr ""
-"Unikalus pavadinimas, apibūdinantis žymelių rinkinį, dažniausiai – programos "
-"pavadinimas.\n"
+"Unikalus pavadinimas, apibūdinantis šį žymelių rinkinį, dažniausiai – "
+"programos pavadinimas.\n"
 "Tai turi būti „konqueror“ Konqueror žymelių atveju, „kfile“ KFileDialog "
 "žymelių atveju, ir t.t.\n"
-"Failų D-Bus objekto kelias yra /KBookmarkManager/dbusObjektoPavadinimas"
+"Galutinis D-Bus objekto kelias yra /KBookmarkManager/<dbusObjektoPavadinimas>"
 
 #: main.cpp:124
 #, kde-format
 msgid "File to edit"
-msgstr "Redaguojamas failas"
+msgstr "Failas, kurį taisyti"
 
 #: main.cpp:212
 #, kde-format
