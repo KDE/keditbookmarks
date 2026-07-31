@@ -705,7 +705,7 @@ msgstr "An der angegebenen Position in der Lesezeichendatei öffnen"
 #: main.cpp:118
 #, kde-format
 msgid "Set the user-readable caption, for example \"Konsole\""
-msgstr "Titel/Beschriftung festlegen, z. B. „Konsole“"
+msgstr "Titel/Beschriftung festlegen, z. B. „Konsole“"
 
 #: main.cpp:119
 #, kde-format
