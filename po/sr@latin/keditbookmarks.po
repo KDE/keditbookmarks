@@ -1,13 +1,14 @@
 # Translation of keditbookmarks.po into Serbian.
 # Chusslove Illich <caslav.ilic@gmx.net>, 2007, 2008, 2009, 2010, 2011, 2016, 2017.
 # Dalibor Djuric <daliborddjuric@gmail.com>, 2009, 2010.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2017-06-25 23:15+0200\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"PO-Revision-Date: 2026-10-04 23:13+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr@latin\n"
 "MIME-Version: 1.0\n"
@@ -22,12 +23,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Časlav Ilić"
+msgstr "Časlav Ilić,Nemanja Hiršl"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "caslav.ilic@gmx.net"
+msgstr "caslav.ilic@gmx.net,nemhirsl@gmail.com"
 
 #: actionsimpl.cpp:79
 #, kde-format
@@ -100,10 +101,9 @@ msgid "Collapse &All Folders"
 msgstr "&Sažmi sve fascikle"
 
 #: actionsimpl.cpp:149
-#, fuzzy, kde-format
-#| msgid "&Open in Konqueror"
+#, kde-format
 msgid "&Open in Browser"
-msgstr "&Otvori u K‑osvajaču"
+msgstr "&Otvori u pregledaču"
 
 #: actionsimpl.cpp:154
 #, kde-format
@@ -283,10 +283,9 @@ msgid "%1; no HTML component found (%2)"
 msgstr "%1; nije nađena HTML komponenta (%2)"
 
 #: faviconupdater.cpp:74
-#, fuzzy, kde-format
-#| msgid "%1; no HTML component found (%2)"
+#, kde-format
 msgid "No browser component found"
-msgstr "%1; nije nađena HTML komponenta (%2)"
+msgstr "Nije nađena komponenta pregledača"
 
 # >> @action %1 is app name
 #: importers.cpp:41
@@ -637,10 +636,9 @@ msgid "Bookmark Organizer and Editor"
 msgstr "Organizovanje i uređivanje obeleživača"
 
 #: main.cpp:93
-#, fuzzy, kde-format
-#| msgid "Copyright 2000-2017, KDE developers"
+#, kde-format
 msgid "Copyright 2000-2023, KDE developers"
-msgstr "© 2000–2017, programeri KDE‑a"
+msgstr "© 2000–2023, programeri KDE‑a"
 
 #: main.cpp:94
 #, kde-format
