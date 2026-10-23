@@ -14,6 +14,8 @@
 #include <KBookmarkManager>
 #include <KLocalizedString>
 
+#include <QDir>
+
 QString KEBMacroCommand::affectedBookmarks() const
 {
     const int commandCount = childCount();
@@ -171,14 +173,7 @@ EditCommand::EditCommand(KBookmarkModel *model, const QString &address, int col,
     , mCol(col)
 {
     qCDebug(KEDITBOOKMARKS_LOG) << address << col << newValue;
-    if (mCol == 1) {
-        const QUrl u(newValue);
-        if (!(u.isEmpty() && !newValue.isEmpty())) // prevent emptied line if the currently entered url is invalid
-            mNewValue = u.toString();
-        else
-            mNewValue = newValue;
-    } else
-        mNewValue = newValue;
+    mNewValue = newValue;
 
     // -2 is "toolbar" attribute change, but that's only used internally.
     if (mCol == -1)
@@ -210,7 +205,8 @@ void EditCommand::redo()
     } else if (mCol == 1) {
         if (mOldValue.isEmpty())
             mOldValue = bk.url().toDisplayString();
-        const QUrl newUrl(mNewValue);
+        // An absolute path is a local file, anything else (e.g. a Konsole command) stays as typed
+        const QUrl newUrl = QDir::isAbsolutePath(mNewValue) ? QUrl::fromLocalFile(mNewValue) : QUrl(mNewValue);
         if (!(newUrl.isEmpty() && !mNewValue.isEmpty())) // prevent emptied line if the currently entered url is invalid
             bk.setUrl(newUrl);
     } else if (mCol == 2) {
@@ -241,14 +237,7 @@ void EditCommand::undo()
 
 void EditCommand::modify(const QString &newValue)
 {
-    if (mCol == 1) {
-        const QUrl u(newValue);
-        if (!(u.isEmpty() && !newValue.isEmpty())) // prevent emptied line if the currently entered url is invalid
-            mNewValue = u.toString();
-        else
-            mNewValue = newValue;
-    } else
-        mNewValue = newValue;
+    mNewValue = newValue;
 }
 
 /* -------------------------------------- */

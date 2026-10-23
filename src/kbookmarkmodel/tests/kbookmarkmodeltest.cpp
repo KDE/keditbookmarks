@@ -118,6 +118,44 @@ private Q_SLOTS:
         delete deleteCmd;
     }
 
+    void testEditUrl_data()
+    {
+        QTest::addColumn<QString>("input");
+        QTest::addColumn<QUrl>("expectedUrl");
+
+        QTest::newRow("path") << QStringLiteral("/tmp/x") << QUrl::fromLocalFile(QStringLiteral("/tmp/x"));
+        QTest::newRow("path_with_percent") << QStringLiteral("/tmp/100%done") << QUrl::fromLocalFile(QStringLiteral("/tmp/100%done"));
+        QTest::newRow("path_with_hash") << QStringLiteral("/tmp/a#b") << QUrl::fromLocalFile(QStringLiteral("/tmp/a#b"));
+        QTest::newRow("url") << QStringLiteral("https://kde.org/a%20b") << QUrl(QStringLiteral("https://kde.org/a%20b"));
+        QTest::newRow("command") << QStringLiteral("ls") << QUrl(QStringLiteral("ls"));
+        QTest::newRow("command_with_quotes") << QStringLiteral("awk 'NR>=7'") << QUrl(QStringLiteral("awk 'NR>=7'"));
+    }
+
+    void testEditUrl()
+    {
+        QFETCH(QString, input);
+        QFETCH(QUrl, expectedUrl);
+
+        const QUrl origUrl(QStringLiteral("https://www.kde.org"));
+        CreateCommand *cmd = new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("test_bk"), QStringLiteral("www"), origUrl);
+        cmd->redo();
+
+        // Typing in the URL line edit creates the command, then modifies it
+        EditCommand editCmd(m_model, QStringLiteral("/0"), 1, input.left(1));
+        editCmd.modify(input);
+        editCmd.redo();
+        QCOMPARE(m_bookmarkManager->findByAddress(QStringLiteral("/0")).url(), expectedUrl);
+        editCmd.undo();
+        QCOMPARE(m_bookmarkManager->findByAddress(QStringLiteral("/0")).url(), origUrl);
+
+        EditCommand directCmd(m_model, QStringLiteral("/0"), 1, input);
+        directCmd.redo();
+        QCOMPARE(m_bookmarkManager->findByAddress(QStringLiteral("/0")).url(), expectedUrl);
+
+        cmd->undo();
+        delete cmd;
+    }
+
     void testCreateFolder() // and test moving stuff around
     {
         CreateCommand *folderCmd = new CreateCommand(m_model, QStringLiteral("/0"), QStringLiteral("folder"), QStringLiteral("folder"), true /*open*/);
