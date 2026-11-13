@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % Arabic "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<!--moved from konqueror docbook -->
+
+<article id="keditbookmarks" lang="&language;">
+<articleinfo>
+<title
+>يفتح محرر العلامات</title>
+<authorgroup>
+<author
+>&Pamela.Roberts;</author>
+<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2016-11-04</date>
+
+<releaseinfo
+>تطبيقات 16.12</releaseinfo>
+
+<keywordset>
+<keyword
+>علامات</keyword>
+<keyword
+>محرر</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>في العديد من التطبيقات (مثل &konqueror; و&konsole; و&konversation;) يفتح خيار <menuchoice
+><guimenu
+>العلامات</guimenu
+><guimenuitem
+>حرّر العلامات</guimenuitem
+> </menuchoice
+> <guilabel
+>محرّر العلامات</guilabel
+>.</para>
+<para
+>بدلًا من ذلك يمكنك تشغيل المحرّر كتطبيق مستقل لتحرير علامات المتصفّح.</para>
+<para
+>يُظهر المحرّر عرضًا شجريًا لعلاماتك ومجلداتها الفرعية. وكالمعتاد في العروض الشجرية في &kde;، تُظهر المجلدات الفرعية بسهم صغير <keycap
+>&gt;</keycap
+> على يسار اسم المجلد؛ النقر <mousebutton
+>الأيسر</mousebutton
+> عليه يوسّع العرض لإظهار محتويات ذلك المجلد الفرعي ويتحوّل السهم <keycap
+>&gt;</keycap
+> إلى <keycap
+>v</keycap
+>؛ النقر <mousebutton
+>الأيسر</mousebutton
+> على السهم <keycap
+>v</keycap
+> يطوي عرض المجلد الفرعي.</para>
+
+<para
+>لتحديد عنصر في القائمة يمكنك النقر <mousebutton
+>الأيسر</mousebutton
+> عليه، أو يمكنك التنقل عبر القائمة باستخدام مفتاحي <keysym
+>أعلى</keysym
+> و<keysym
+>أسفل</keysym
+> للتحرك، و<keysym
+>يمين</keysym
+> لتوسيع مجلد فرعي و<keysym
+>يسار</keysym
+> لطيّه.</para>
+
+<para
+>يمكنك نقل عنصر إلى مكان مختلف في القائمة باستخدام طرق السحب والإفلات العادية أو <guimenuitem
+>قص</guimenuitem
+> و<guimenuitem
+>لصق</guimenuitem
+>. الترتيب الذي تظهر به العناصر في <guilabel
+>محرّر العلامات</guilabel
+> هو الترتيب الذي ستظهر به في القائمة المنسدلة <guimenu
+>العلامات</guimenu
+>. يمكن استخدام خيار <menuchoice
+><guimenu
+>المجلد </guimenu
+><guimenuitem
+>أدرج فاصلًا</guimenuitem
+></menuchoice
+> لإدراج خطوط فاصلة في القائمة أينما تشاء.</para>
+
+<para
+>يمكن إنشاء مجلد فرعي جديد عند النقطة المحددة في القائمة باستخدام خيار <guimenuitem
+>مجلد جديد...</guimenuitem
+> في قائمة <guimenu
+>المجلد</guimenu
+> أو من القائمة المنسدلة التي تظهر عند النقر <mousebutton
+>الأيمن</mousebutton
+> على عنصر في الجزء الرئيس من النافذة، أو باستخدام <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </para>
+
+<para
+>لتغيير اسم علامة أو مجلد حدّده ثم اضغط <keycap
+>F2</keycap
+> أو اختر عنصر <guimenuitem
+>أعد التسمية</guimenuitem
+> من قائمة <guimenu
+>تحرير</guimenu
+> أو القائمة المنبثقة التي تظهر عند النقر <mousebutton
+>الأيمن</mousebutton
+> على العنصر. وبالمثل، يمكنك تحرير &URL; بالضغط على <keycap
+>F3</keycap
+> أو باختيار عنصر القائمة <guimenuitem
+>غيّر الموقع</guimenuitem
+>.</para>
+
+<para
+>يتيح لك <guilabel
+>محرّر العلامات</guilabel
+> استيراد العلامات من مجموعة من المتصفّحات الأخرى إلى قائمة علامات &konqueror;، ووضعها في مجلد جديد أو استبدال جميع العلامات الحالية. لفعل ذلك اختر <guisubmenu
+>استورد</guisubmenu
+> من قائمة <guimenu
+>ملف</guimenu
+>. يمكن استخدام خيار <menuchoice
+><guimenu
+>ملف</guimenu
+><guisubmenu
+>صدّر</guisubmenu
+> </menuchoice
+> لتصدير علامات &konqueror; إلى متصفّح Mozilla.</para>
+
+<para
+>لتحديد أي مجلد فرعي للعلامات يُستخدم لحفظ عناصر شريط أدوات العلامات حدّد المجلد الفرعي ثم اختر <guimenuitem
+>عيّن كمجلد شريط أدوات</guimenuitem
+> من قائمة <guimenu
+>المجلد</guimenu
+>.</para>
+
+<para
+>إذا كنت ترتب علاماتك ونسيت ما هي صفحة ويب معينة، يمكنك فتحها بسهولة من داخل <guilabel
+>محرّر العلامات</guilabel
+> بالنقر <mousebutton
+>الأيمن</mousebutton
+> على العنصر واختيار <guimenuitem
+>افتح في Konqueror</guimenuitem
+> من القائمة المنبثقة. إذا أردت فقط التحقق من أن &URL; لا يزال صالحًا فاختر <guimenuitem
+>تحقق من الحالة</guimenuitem
+> بدلًا من ذلك.</para>
+
+<note
+><para
+>تُحفظ جميع تغييراتك آليًا إذا أغلقت <guilabel
+>محرّر العلامات</guilabel
+>. </para
+></note>
+
+<para
+>الترجمة: زايد السعيدي <email
+>zayed.alsaidi@gmail.com</email
+></para
+> 
+
+&underFDL;
+&underGPL;
+
+</article>
