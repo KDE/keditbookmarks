@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<!-- vim:set ts=4 noet syntax=xml: -->
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Arabic "INCLUDE">
+<!ENTITY kbookmarkmerger "<command
+>kbookmarkmerger</command
+>">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+	<title
+>دليل مستخدم &kbookmarkmerger;</title>
+	<author
+>&Frerich.Raabe; &Frerich.Raabe.mail; </author>
+	<date
+>2016-11-07</date>
+	<releaseinfo
+>تطبيقات 16.12</releaseinfo>
+	<productname
+>تطبيقات كِيدِي</productname>
+</refentryinfo>
+
+<refmeta>
+	<refentrytitle
+>&kbookmarkmerger;</refentrytitle>
+	<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+	<refname
+>&kbookmarkmerger;</refname>
+	<refpurpose
+>برنامج لدمج مجموعة محددة من العلامات المرجعية في قائمة العلامات المرجعية للمستخدم.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+>&kbookmarkmerger; <arg choice="req"
+>دليل</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>الوصف</title>
+<para
+>&kbookmarkmerger; هو برنامج لدمج مجموعة محددة من العلامات المرجعية في مجموعة العلامات المرجعية للمستخدم؛ إذا لم يكن لدى المستخدم أي علامات مرجعية منشأة بعد، تُنشأ قائمة علامات مرجعية جديدة وتُدرج العلامات المرجعية المحددة فيها. أثناء ذلك، يتتبع &kbookmarkmerger; أي الملفات دُمجت في تشغيل سابق بالفعل، لذا لن تُثبّت أي علامة مرجعية في علامات المستخدم المرجعية أكثر من مرة.</para>
+
+<para
+>النهج المستخدم تقليديًا لتحقيق شيء كهذا كان استخدام أدلة منزلية هيكلية مصنوعة بعناية عند إنشاء حساب مستخدم جديد، لتزويد المستخدم بمجموعة قياسية من العلامات المرجعية. المشكلة في هذا النهج هي أنه بعد إنشاء حساب المستخدم، لا يمكن نشر علامات مرجعية جديدة.</para>
+
+<para
+>هذه الآلية مفيدة لمديري الأنظمة الذين يرغبون في نشر علامة مرجعية تشير إلى مستند معين (مثل ملاحظات مهمة حول النظام) لجميع المستخدمين. قد يجدها الموزعون مفيدة أيضًا، على سبيل المثال بتعزيز حزم البرامج التي يوردونها بملفات علامات مرجعية يدمجها &kbookmarkmerger; في قائمة العلامات المرجعية للمستخدم عند تثبيت الحزمة. بهذه الطريقة، تكون الوثائق المشحونة مع حزمة برامج متاحة بسهولة ووضوح فور تثبيت الحزمة.</para>
+
+<para
+>المعامل الوحيد المطلوب من &kbookmarkmerger; هو اسم دليل سيُمسح بحثًا عن ملفات العلامات المرجعية. جميع الملفات في الدليل المحدد ستُعتبر لدمجها في إعدادات المستخدم. يجب أن تكون الملفات في الدليل المحدد ملفات <acronym
+>XBEL</acronym
+> صالحة.</para>
+</refsect1>
+
+<refsect1>
+<title
+>انظر أيضًا</title>
+<simplelist>
+<member
+><ulink url="help:/konqueror/index.html"
+>دليل &konqueror;</ulink
+></member>
+<member
+>kf6options(7)</member>
+<member
+>qt6options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>أمثلة</title>
+<screen
+>joe@hal9000:~
+> <command
+>kbookmarkmerger <filename
+>/usr/local/extra-bookmarks</filename
+></command
+></screen>
+<para
+>يدمج جميع ملفات العلامات المرجعية المخزنة في <filename
+>/usr/local/extra-bookmarks</filename
+> في قائمة العلامات المرجعية لـ joe.</para>
+</refsect1>
+
+<refsect1>
+<title
+>المعايير</title>
+<variablelist>
+<varlistentry
+><term/><listitem
+><para>
+	<ulink url="http://pyxml.sourceforge.net/topics/xbel/"
+>مواصفات <acronym
+>XBEL</acronym
+></ulink>
+</para
+></listitem
+></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>التقييدات</title>
+<para
+>عند تحديد ما إذا كان ملف علامات مرجعية معين قد دُمج في علامات المستخدم المرجعية بالفعل أم لا، ينظر &kbookmarkmerger; فقط إلى اسم ملف العلامات المرجعية - لا تُفحص المحتويات على الإطلاق. هذا يعني أن تغيير ملف علامات مرجعية دُمج بالفعل في علامات مستخدم مرجعية لن يؤدي إلى دمجه مرة أخرى.</para>
+
+<para
+>لاحظ أيضًا أنه في حال عدّل مستخدم علامة مرجعية دُمجت في إعداداته، سيُترك ملف العلامات المرجعية الأصلي دون تعديل.</para>
+</refsect1>
+
+<refsect1>
+<title
+>المؤلف</title>
+<para
+>&Frerich.Raabe; &Frerich.Raabe.mail;</para>
+</refsect1>
+</refentry>
